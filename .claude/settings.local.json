@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(git clone:*)",
+      "Bash(npm install:*)",
+      "Bash(npx:*)",
+      "Bash(ls:*)",
+      "Bash(claude mcp:*)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "mcp__anki__list_decks"
+    ],
+    "deny": []
+  }
+}
