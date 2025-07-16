@@ -12,7 +12,16 @@
       "mcp__anki__create_note",
       "Bash(unzip:*)",
       "Bash(mkdir:*)",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Bash(ssh:*)",
+      "Bash(sudo systemctl:*)",
+      "Bash(systemctl status:*)",
+      "Bash(mosh:*)",
+      "mcp__anki__get_note_type_info",
+      "mcp__anki__update_note",
+      "Bash(ufw status:*)",
+      "Bash(ss:*)",
+      "Bash(curl:*)"
     ],
     "deny": []
   }
