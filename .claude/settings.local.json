@@ -8,7 +8,11 @@
       "Bash(ls:*)",
       "Bash(claude mcp:*)",
       "WebFetch(domain:docs.anthropic.com)",
-      "mcp__anki__list_decks"
+      "mcp__anki__list_decks",
+      "mcp__anki__create_note",
+      "Bash(unzip:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)"
     ],
     "deny": []
   }
