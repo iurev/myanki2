@@ -1,0 +1,14 @@
+{
+  "name": "chapter-splitter",
+  "version": "1.0.0",
+  "description": "Split chapters using OpenRouter API",
+  "main": "chapter-splitter.js",
+  "scripts": {
+    "start": "node chapter-splitter.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "fs": "^0.0.1-security"
+  },
+  "type": "module"
+}

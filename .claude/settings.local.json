@@ -21,7 +21,9 @@
       "mcp__anki__update_note",
       "Bash(ufw status:*)",
       "Bash(ss:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "mcp__anki__search_notes",
+      "Bash(node:*)"
     ],
     "deny": []
   }
