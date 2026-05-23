@@ -23,7 +23,10 @@
       "Bash(ss:*)",
       "Bash(curl:*)",
       "mcp__anki__search_notes",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(tmux new-window:*)",
+      "mcp__anki__list_note_types",
+      "WebFetch(domain:foosoft.net)"
     ],
     "deny": []
   }
