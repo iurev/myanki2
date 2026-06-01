@@ -3,14 +3,18 @@
 Portuguese vocabulary → Anki, driven from plain-text word lists and synced over
 [AnkiConnect](https://foosoft.net/projects/anki-connect/) (port 8765).
 
-## Decks
+## Deck
 
-| deck    | source       | notes | content                                  |
-|---------|--------------|-------|------------------------------------------|
-| `words` | `verbs.yaml` | 185   | every verb from `verbs.md`               |
-| `nouns` | `nouns.yaml` | 283   | every noun from `nouns.md`               |
+One deck, `words` (468 notes), fed by two yaml files:
 
-Both use the `words` note type: fields `id, word, front, back, chapter`.
+| source       | notes | content                    |
+|--------------|-------|----------------------------|
+| `verbs.yaml` | 185   | every verb from `verbs.md` |
+| `nouns.yaml` | 283   | every noun from `nouns.md` |
+
+All cards use the `words` note type: fields `id, word, front, back, chapter`.
+Noun ids are prefixed `n####` so they don't collide with verb ids (Anki's
+duplicate check is on the first field, per note type).
 
 ## Card design
 

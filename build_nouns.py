@@ -16,7 +16,7 @@ import yaml
 
 NOUNS_MD = "nouns.md"
 OUT_YAML = "nouns.yaml"
-DECK = "nouns"
+DECK = "words"
 
 SECTIONS = {
     "Abstract nouns", "Animals & nature", "Body", "City & services", "Clothing",
