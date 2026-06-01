@@ -1,0 +1,180 @@
+deck: words
+model: words
+cards:
+- id: 0590
+  word: um / uma
+  front: '1'
+  back: um / uma
+  chapter: —
+- id: 0591
+  word: dois / duas
+  front: '2'
+  back: dois / duas
+  chapter: —
+- id: 0592
+  word: três
+  front: '3'
+  back: três
+  chapter: —
+- id: 0593
+  word: quatro
+  front: '4'
+  back: quatro
+  chapter: —
+- id: 0594
+  word: cinco
+  front: '5'
+  back: cinco
+  chapter: —
+- id: 0595
+  word: seis
+  front: '6'
+  back: seis
+  chapter: —
+- id: 0596
+  word: sete
+  front: '7'
+  back: sete
+  chapter: —
+- id: 0597
+  word: oito
+  front: '8'
+  back: oito
+  chapter: —
+- id: 0598
+  word: nove
+  front: '9'
+  back: nove
+  chapter: —
+- id: 0599
+  word: dez
+  front: '10'
+  back: dez
+  chapter: —
+- id: '0600'
+  word: onze
+  front: '11'
+  back: onze
+  chapter: —
+- id: '0601'
+  word: doze
+  front: '12'
+  back: doze
+  chapter: —
+- id: '0602'
+  word: treze
+  front: '13'
+  back: treze
+  chapter: —
+- id: '0603'
+  word: catorze
+  front: '14'
+  back: catorze
+  chapter: —
+- id: '0604'
+  word: quinze
+  front: '15'
+  back: quinze
+  chapter: —
+- id: '0605'
+  word: dezasseis
+  front: '16'
+  back: 'dezasseis
+
+
+    rule: 16–19 = dez + a + unit'
+  chapter: —
+- id: '0606'
+  word: dezassete
+  front: '17'
+  back: 'dezassete
+
+
+    rule: 16–19 = dez + a + unit'
+  chapter: —
+- id: '0607'
+  word: dezoito
+  front: '18'
+  back: 'dezoito
+
+
+    rule: dez + oito → dezoito'
+  chapter: —
+- id: 0608
+  word: dezanove
+  front: '19'
+  back: 'dezanove
+
+
+    rule: dez + a + nove → dezanove'
+  chapter: —
+- id: 0609
+  word: vinte
+  front: '20'
+  back: vinte
+  chapter: —
+- id: '0610'
+  word: trinta
+  front: '30'
+  back: trinta
+  chapter: —
+- id: '0611'
+  word: trinta e um
+  front: '31'
+  back: 'trinta e um
+
+
+    rule: 21–99: tens + e + unit'
+  chapter: —
+- id: '0612'
+  word: trinta e sete
+  front: '37'
+  back: 'trinta e sete
+
+
+    rule: 21–99: tens + e + unit  (30 + 7)'
+  chapter: —
+- id: '0613'
+  word: quarenta
+  front: '40'
+  back: 'quarenta
+
+
+    rule: combine: quarenta e um = 41'
+  chapter: —
+- id: '0614'
+  word: cinquenta
+  front: '50'
+  back: 'cinquenta
+
+
+    rule: combine: cinquenta e dois = 52'
+  chapter: —
+- id: '0615'
+  word: sessenta
+  front: '60'
+  back: sessenta
+  chapter: —
+- id: '0616'
+  word: setenta
+  front: '70'
+  back: setenta
+  chapter: —
+- id: '0617'
+  word: oitenta
+  front: '80'
+  back: oitenta
+  chapter: —
+- id: 0618
+  word: noventa
+  front: '90'
+  back: noventa
+  chapter: —
+- id: 0619
+  word: cem
+  front: '100'
+  back: 'cem
+
+
+    rule: cem alone; cento e um = 101'
+  chapter: —

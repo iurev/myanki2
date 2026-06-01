@@ -5,16 +5,24 @@ Portuguese vocabulary → Anki, driven from plain-text word lists and synced ove
 
 ## Deck
 
-One deck, `words` (468 notes), fed by two yaml files:
+One deck, `words` (724 notes), fed from the book glossary by category. `id` is a
+single global sequence (the `word` field stays unique, so Anki never sees a
+duplicate first field):
 
-| source       | notes | content                    |
-|--------------|-------|----------------------------|
-| `verbs.yaml` | 185   | every verb from `verbs.md` |
-| `nouns.yaml` | 283   | every noun from `nouns.md` |
+| source            | ids         | notes | content                              |
+|-------------------|-------------|-------|--------------------------------------|
+| `verbs.yaml`      | 0001-0185   | 185   | verbs (`verbs.md`)                   |
+| `nouns.yaml`      | 0186-0468   | 283   | nouns (`nouns.md`)                   |
+| `adjectives.yaml` | 0469-0570   | 102   | adjectives + colors (`adjectives.md`)|
+| `location.yaml`   | 0571-0589   | 19    | place prepositions (`location.md`)   |
+| `numbers.yaml`    | 0590-0619   | 30    | numbers 1-20, tens, +rule            |
+| `phrases.yaml`    | 0620-0724   | 105   | time words + useful phrases          |
 
 All cards use the `words` note type: fields `id, word, front, back, chapter`.
-Noun ids are prefixed `n####` so they don't collide with verb ids (Anki's
-duplicate check is on the first field, per note type).
+Verbs/nouns/adjectives/location are cloze sentences (front blanks the word with
+its English gloss); numbers are digit→word; phrases are English→Portuguese.
+Each `build_*.py` writes its yaml from the matching `.md`; `sync.py <file>.yaml`
+pushes it. Keep the id ranges above non-overlapping when adding a category.
 
 ## Card design
 

@@ -17,6 +17,7 @@ import yaml
 NOUNS_MD = "nouns.md"
 OUT_YAML = "nouns.yaml"
 DECK = "words"
+START_ID = 186          # ids are one global sequence; verbs take 0001-0185
 
 SECTIONS = {
     "Abstract nouns", "Animals & nature", "Body", "City & services", "Clothing",
@@ -112,7 +113,7 @@ def main():
         num = "pl" if r["plural"] else r["gender"]
         tag = f"({r['lemma']}, {num})"
         back = f"{pt}\n{en}  {tag}"
-        out["cards"].append(dict(id=f"n{i:04d}", word=r["lemma"], front=front,
+        out["cards"].append(dict(id=f"{START_ID + i - 1:04d}", word=r["lemma"], front=front,
                                  back=back, chapter="—"))
         if "--yaml" not in sys.argv:
             print(f"{r['section'][:12]:12} | {front}")
