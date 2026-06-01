@@ -1,0 +1,1984 @@
+deck: nouns
+model: words
+cards:
+- id: n0001
+  word: arqueologia
+  front: A {{archeology}} é importante.
+  back: 'A arqueologia é importante.
+
+    Archeology is important.  (arqueologia, f)'
+  chapter: —
+- id: n0002
+  word: arte
+  front: A {{art}} é importante.
+  back: 'A arte é importante.
+
+    Art is important.  (arte, f)'
+  chapter: —
+- id: n0003
+  word: aventura
+  front: A {{adventure}} é importante.
+  back: 'A aventura é importante.
+
+    Adventure is important.  (aventura, f)'
+  chapter: —
+- id: n0004
+  word: burocracia
+  front: A {{bureaucracy}} é importante.
+  back: 'A burocracia é importante.
+
+    Bureaucracy is important.  (burocracia, f)'
+  chapter: —
+- id: n0005
+  word: ciência
+  front: A {{science}} é importante.
+  back: 'A ciência é importante.
+
+    Science is important.  (ciência, f)'
+  chapter: —
+- id: n0006
+  word: coincidência
+  front: A {{coincidence}} é importante.
+  back: 'A coincidência é importante.
+
+    Coincidence is important.  (coincidência, f)'
+  chapter: —
+- id: n0007
+  word: explicação
+  front: A {{explanation}} é importante.
+  back: 'A explicação é importante.
+
+    Explanation is important.  (explicação, f)'
+  chapter: —
+- id: n0008
+  word: hipótese
+  front: A {{hypothesis}} é importante.
+  back: 'A hipótese é importante.
+
+    Hypothesis is important.  (hipótese, f)'
+  chapter: —
+- id: n0009
+  word: história
+  front: A {{history}} é importante.
+  back: 'A história é importante.
+
+    History is important.  (história, f)'
+  chapter: —
+- id: n0010
+  word: informação
+  front: A {{information}} é importante.
+  back: 'A informação é importante.
+
+    Information is important.  (informação, f)'
+  chapter: —
+- id: n0011
+  word: lenda
+  front: A {{legend}} é importante.
+  back: 'A lenda é importante.
+
+    Legend is important.  (lenda, f)'
+  chapter: —
+- id: n0012
+  word: literatura
+  front: A {{literature}} é importante.
+  back: 'A literatura é importante.
+
+    Literature is important.  (literatura, f)'
+  chapter: —
+- id: n0013
+  word: matemática
+  front: A {{mathematics}} é importante.
+  back: 'A matemática é importante.
+
+    Mathematics is important.  (matemática, f)'
+  chapter: —
+- id: n0014
+  word: mistério
+  front: O {{mystery}} é importante.
+  back: 'O mistério é importante.
+
+    Mystery is important.  (mistério, m)'
+  chapter: —
+- id: n0015
+  word: mito
+  front: O {{myth}} é importante.
+  back: 'O mito é importante.
+
+    Myth is important.  (mito, m)'
+  chapter: —
+- id: n0016
+  word: notícia
+  front: A {{news}} é importante.
+  back: 'A notícia é importante.
+
+    News is important.  (notícia, f)'
+  chapter: —
+- id: n0017
+  word: oportunidade
+  front: A {{opportunity}} é importante.
+  back: 'A oportunidade é importante.
+
+    Opportunity is important.  (oportunidade, f)'
+  chapter: —
+- id: n0018
+  word: paciência
+  front: A {{patience}} é importante.
+  back: 'A paciência é importante.
+
+    Patience is important.  (paciência, f)'
+  chapter: —
+- id: n0019
+  word: palavra
+  front: A {{word}} é importante.
+  back: 'A palavra é importante.
+
+    Word is important.  (palavra, f)'
+  chapter: —
+- id: n0020
+  word: piada
+  front: A {{joke}} é importante.
+  back: 'A piada é importante.
+
+    Joke is important.  (piada, f)'
+  chapter: —
+- id: n0021
+  word: poesia
+  front: A {{poetry}} é importante.
+  back: 'A poesia é importante.
+
+    Poetry is important.  (poesia, f)'
+  chapter: —
+- id: n0022
+  word: proposta
+  front: A {{proposal}} é importante.
+  back: 'A proposta é importante.
+
+    Proposal is important.  (proposta, f)'
+  chapter: —
+- id: n0023
+  word: salvação
+  front: A {{salvation}} é importante.
+  back: 'A salvação é importante.
+
+    Salvation is important.  (salvação, f)'
+  chapter: —
+- id: n0024
+  word: segredo
+  front: O {{secret}} é importante.
+  back: 'O segredo é importante.
+
+    Secret is important.  (segredo, m)'
+  chapter: —
+- id: n0025
+  word: significado
+  front: O {{meaning}} é importante.
+  back: 'O significado é importante.
+
+    Meaning is important.  (significado, m)'
+  chapter: —
+- id: n0026
+  word: símbolo
+  front: O {{symbol}} é importante.
+  back: 'O símbolo é importante.
+
+    Symbol is important.  (símbolo, m)'
+  chapter: —
+- id: n0027
+  word: sonho
+  front: O {{dream}} é importante.
+  back: 'O sonho é importante.
+
+    Dream is important.  (sonho, m)'
+  chapter: —
+- id: n0028
+  word: teoria
+  front: A {{theory}} é importante.
+  back: 'A teoria é importante.
+
+    Theory is important.  (teoria, f)'
+  chapter: —
+- id: n0029
+  word: texto
+  front: O {{text}} é importante.
+  back: 'O texto é importante.
+
+    Text is important.  (texto, m)'
+  chapter: —
+- id: n0030
+  word: vida
+  front: A {{life}} é importante.
+  back: 'A vida é importante.
+
+    Life is important.  (vida, f)'
+  chapter: —
+- id: n0031
+  word: alforreca
+  front: Eu vejo a {{jellyfish}}.
+  back: 'Eu vejo a alforreca.
+
+    I see the jellyfish.  (alforreca, f)'
+  chapter: —
+- id: n0032
+  word: alga
+  front: Eu vejo a {{seaweed}}.
+  back: 'Eu vejo a alga.
+
+    I see the seaweed.  (alga, f)'
+  chapter: —
+- id: n0033
+  word: ar
+  front: Eu vejo o {{air}}.
+  back: 'Eu vejo o ar.
+
+    I see the air.  (ar, m)'
+  chapter: —
+- id: n0034
+  word: cachalote
+  front: Eu vejo o {{sperm whale}}.
+  back: 'Eu vejo o cachalote.
+
+    I see the sperm whale.  (cachalote, m)'
+  chapter: —
+- id: n0035
+  word: campo
+  front: Eu vejo o {{countryside}}.
+  back: 'Eu vejo o campo.
+
+    I see the countryside.  (campo, m)'
+  chapter: —
+- id: n0036
+  word: cão
+  front: Eu vejo o {{dog}}.
+  back: 'Eu vejo o cão.
+
+    I see the dog.  (cão, m)'
+  chapter: —
+- id: n0037
+  word: céu
+  front: Eu vejo o {{sky}}.
+  back: 'Eu vejo o céu.
+
+    I see the sky.  (céu, m)'
+  chapter: —
+- id: n0038
+  word: cobra
+  front: Eu vejo a {{snake}}.
+  back: 'Eu vejo a cobra.
+
+    I see the snake.  (cobra, f)'
+  chapter: —
+- id: n0039
+  word: coral
+  front: Eu vejo o {{coral}}.
+  back: 'Eu vejo o coral.
+
+    I see the coral.  (coral, m)'
+  chapter: —
+- id: n0040
+  word: criatura
+  front: Eu vejo a {{creature}}.
+  back: 'Eu vejo a criatura.
+
+    I see the creature.  (criatura, f)'
+  chapter: —
+- id: n0041
+  word: erva
+  front: Eu vejo a {{grass}}.
+  back: 'Eu vejo a erva.
+
+    I see the grass.  (erva, f)'
+  chapter: —
+- id: n0042
+  word: estrela
+  front: Eu vejo a {{star}}.
+  back: 'Eu vejo a estrela.
+
+    I see the star.  (estrela, f)'
+  chapter: —
+- id: n0043
+  word: flor
+  front: Eu vejo a {{flower}}.
+  back: 'Eu vejo a flor.
+
+    I see the flower.  (flor, f)'
+  chapter: —
+- id: n0044
+  word: gato
+  front: Eu vejo o {{cat}}.
+  back: 'Eu vejo o gato.
+
+    I see the cat.  (gato, m)'
+  chapter: —
+- id: n0045
+  word: grau
+  front: Eu vejo o {{degree}}.
+  back: 'Eu vejo o grau.
+
+    I see the degree.  (grau, m)'
+  chapter: —
+- id: n0046
+  word: ilha
+  front: Eu vejo a {{island}}.
+  back: 'Eu vejo a ilha.
+
+    I see the island.  (ilha, f)'
+  chapter: —
+- id: n0047
+  word: lula
+  front: Eu vejo a {{squid}}.
+  back: 'Eu vejo a lula.
+
+    I see the squid.  (lula, f)'
+  chapter: —
+- id: n0048
+  word: madeira
+  front: Eu vejo a {{wood}}.
+  back: 'Eu vejo a madeira.
+
+    I see the wood.  (madeira, f)'
+  chapter: —
+- id: n0049
+  word: mar
+  front: Eu vejo o {{sea}}.
+  back: 'Eu vejo o mar.
+
+    I see the sea.  (mar, m)'
+  chapter: —
+- id: n0050
+  word: natureza
+  front: Eu vejo a {{nature}}.
+  back: 'Eu vejo a natureza.
+
+    I see the nature.  (natureza, f)'
+  chapter: —
+- id: n0051
+  word: nuvem
+  front: Eu vejo a {{cloud}}.
+  back: 'Eu vejo a nuvem.
+
+    I see the cloud.  (nuvem, f)'
+  chapter: —
+- id: n0052
+  word: pássaro
+  front: Eu vejo o {{bird}}.
+  back: 'Eu vejo o pássaro.
+
+    I see the bird.  (pássaro, m)'
+  chapter: —
+- id: n0053
+  word: pedra
+  front: Eu vejo a {{stone}}.
+  back: 'Eu vejo a pedra.
+
+    I see the stone.  (pedra, f)'
+  chapter: —
+- id: n0054
+  word: planta
+  front: Eu vejo a {{plant}}.
+  back: 'Eu vejo a planta.
+
+    I see the plant.  (planta, f)'
+  chapter: —
+- id: n0055
+  word: praia
+  front: Eu vejo a {{beach}}.
+  back: 'Eu vejo a praia.
+
+    I see the beach.  (praia, f)'
+  chapter: —
+- id: n0056
+  word: rato
+  front: Eu vejo o {{mouse}}.
+  back: 'Eu vejo o rato.
+
+    I see the mouse.  (rato, m)'
+  chapter: —
+- id: n0057
+  word: sol
+  front: Eu vejo o {{sun}}.
+  back: 'Eu vejo o sol.
+
+    I see the sun.  (sol, m)'
+  chapter: —
+- id: n0058
+  word: temperatura
+  front: Eu vejo a {{temperature}}.
+  back: 'Eu vejo a temperatura.
+
+    I see the temperature.  (temperatura, f)'
+  chapter: —
+- id: n0059
+  word: tempo
+  front: Eu vejo o {{weather}}.
+  back: 'Eu vejo o tempo.
+
+    I see the weather.  (tempo, m)'
+  chapter: —
+- id: n0060
+  word: vento
+  front: Eu vejo o {{wind}}.
+  back: 'Eu vejo o vento.
+
+    I see the wind.  (vento, m)'
+  chapter: —
+- id: n0061
+  word: barba
+  front: Eu vejo a {{beard}}.
+  back: 'Eu vejo a barba.
+
+    I see the beard.  (barba, f)'
+  chapter: —
+- id: n0062
+  word: barriga
+  front: Eu vejo a {{belly}}.
+  back: 'Eu vejo a barriga.
+
+    I see the belly.  (barriga, f)'
+  chapter: —
+- id: n0063
+  word: bebé
+  front: Eu vejo o {{baby}}.
+  back: 'Eu vejo o bebé.
+
+    I see the baby.  (bebé, m)'
+  chapter: —
+- id: n0064
+  word: boca
+  front: Eu vejo a {{mouth}}.
+  back: 'Eu vejo a boca.
+
+    I see the mouth.  (boca, f)'
+  chapter: —
+- id: n0065
+  word: braço
+  front: Eu vejo o {{arm}}.
+  back: 'Eu vejo o braço.
+
+    I see the arm.  (braço, m)'
+  chapter: —
+- id: n0066
+  word: cabeça
+  front: Eu vejo a {{head}}.
+  back: 'Eu vejo a cabeça.
+
+    I see the head.  (cabeça, f)'
+  chapter: —
+- id: n0067
+  word: cabelo
+  front: Eu vejo o {{hair}}.
+  back: 'Eu vejo o cabelo.
+
+    I see the hair.  (cabelo, m)'
+  chapter: —
+- id: n0068
+  word: cara
+  front: Eu vejo a {{face}}.
+  back: 'Eu vejo a cara.
+
+    I see the face.  (cara, f)'
+  chapter: —
+- id: n0069
+  word: costas
+  front: Eu vejo as {{back}}.
+  back: 'Eu vejo as costas.
+
+    I see the back.  (costas, pl)'
+  chapter: —
+- id: n0070
+  word: criança
+  front: Eu vejo a {{child}}.
+  back: 'Eu vejo a criança.
+
+    I see the child.  (criança, f)'
+  chapter: —
+- id: n0071
+  word: dente
+  front: Eu vejo o {{tooth}}.
+  back: 'Eu vejo o dente.
+
+    I see the tooth.  (dente, m)'
+  chapter: —
+- id: n0072
+  word: homem
+  front: Eu vejo o {{man}}.
+  back: 'Eu vejo o homem.
+
+    I see the man.  (homem, m)'
+  chapter: —
+- id: n0073
+  word: humano
+  front: Eu vejo o {{human}}.
+  back: 'Eu vejo o humano.
+
+    I see the human.  (humano, m)'
+  chapter: —
+- id: n0074
+  word: lábio
+  front: Eu vejo o {{lip}}.
+  back: 'Eu vejo o lábio.
+
+    I see the lip.  (lábio, m)'
+  chapter: —
+- id: n0075
+  word: mão
+  front: Eu vejo a {{hand}}.
+  back: 'Eu vejo a mão.
+
+    I see the hand.  (mão, f)'
+  chapter: —
+- id: n0076
+  word: mulher
+  front: Eu vejo a {{woman}}.
+  back: 'Eu vejo a mulher.
+
+    I see the woman.  (mulher, f)'
+  chapter: —
+- id: n0077
+  word: nariz
+  front: Eu vejo o {{nose}}.
+  back: 'Eu vejo o nariz.
+
+    I see the nose.  (nariz, m)'
+  chapter: —
+- id: n0078
+  word: olho
+  front: Eu vejo o {{eye}}.
+  back: 'Eu vejo o olho.
+
+    I see the eye.  (olho, m)'
+  chapter: —
+- id: n0079
+  word: ombro
+  front: Eu vejo o {{shoulder}}.
+  back: 'Eu vejo o ombro.
+
+    I see the shoulder.  (ombro, m)'
+  chapter: —
+- id: n0080
+  word: pele
+  front: Eu vejo a {{skin}}.
+  back: 'Eu vejo a pele.
+
+    I see the skin.  (pele, f)'
+  chapter: —
+- id: n0081
+  word: perna
+  front: Eu vejo a {{leg}}.
+  back: 'Eu vejo a perna.
+
+    I see the leg.  (perna, f)'
+  chapter: —
+- id: n0082
+  word: pescoço
+  front: Eu vejo o {{neck}}.
+  back: 'Eu vejo o pescoço.
+
+    I see the neck.  (pescoço, m)'
+  chapter: —
+- id: n0083
+  word: pessoa
+  front: Eu vejo a {{person}}.
+  back: 'Eu vejo a pessoa.
+
+    I see the person.  (pessoa, f)'
+  chapter: —
+- id: n0084
+  word: pulmão
+  front: Eu vejo o {{lung}}.
+  back: 'Eu vejo o pulmão.
+
+    I see the lung.  (pulmão, m)'
+  chapter: —
+- id: n0085
+  word: rapariga
+  front: Eu vejo a {{girl}}.
+  back: 'Eu vejo a rapariga.
+
+    I see the girl.  (rapariga, f)'
+  chapter: —
+- id: n0086
+  word: sangue
+  front: Eu vejo o {{blood}}.
+  back: 'Eu vejo o sangue.
+
+    I see the blood.  (sangue, m)'
+  chapter: —
+- id: n0087
+  word: arco
+  front: Eu vejo o {{arch}}.
+  back: 'Eu vejo o arco.
+
+    I see the arch.  (arco, m)'
+  chapter: —
+- id: n0088
+  word: atração
+  front: Eu vejo a {{attraction}}.
+  back: 'Eu vejo a atração.
+
+    I see the attraction.  (atração, f)'
+  chapter: —
+- id: n0089
+  word: aula
+  front: Eu vejo a {{class}}.
+  back: 'Eu vejo a aula.
+
+    I see the class.  (aula, f)'
+  chapter: —
+- id: n0090
+  word: banco
+  front: Eu vejo o {{bank}}.
+  back: 'Eu vejo o banco.
+
+    I see the bank.  (banco, m)'
+  chapter: —
+- id: n0091
+  word: biblioteca
+  front: Eu vejo a {{library}}.
+  back: 'Eu vejo a biblioteca.
+
+    I see the library.  (biblioteca, f)'
+  chapter: —
+- id: n0092
+  word: bilhete
+  front: Eu vejo o {{ticket}}.
+  back: 'Eu vejo o bilhete.
+
+    I see the ticket.  (bilhete, m)'
+  chapter: —
+- id: n0093
+  word: café
+  front: Eu vejo o {{coffee}}.
+  back: 'Eu vejo o café.
+
+    I see the coffee.  (café, m)'
+  chapter: —
+- id: n0094
+  word: cais
+  front: Eu vejo o {{pier}}.
+  back: 'Eu vejo o cais.
+
+    I see the pier.  (cais, m)'
+  chapter: —
+- id: n0095
+  word: caminho
+  front: Eu vejo o {{path}}.
+  back: 'Eu vejo o caminho.
+
+    I see the path.  (caminho, m)'
+  chapter: —
+- id: n0096
+  word: cêntimo
+  front: Eu vejo o {{cent}}.
+  back: 'Eu vejo o cêntimo.
+
+    I see the cent.  (cêntimo, m)'
+  chapter: —
+- id: n0097
+  word: cidade
+  front: Eu vejo a {{city}}.
+  back: 'Eu vejo a cidade.
+
+    I see the city.  (cidade, f)'
+  chapter: —
+- id: n0098
+  word: cinema
+  front: Eu vejo o {{movie theater}}.
+  back: 'Eu vejo o cinema.
+
+    I see the movie theater.  (cinema, m)'
+  chapter: —
+- id: n0099
+  word: correios
+  front: Eu vejo os {{post office}}.
+  back: 'Eu vejo os correios.
+
+    I see the post office.  (correios, pl)'
+  chapter: —
+- id: n0100
+  word: conta
+  front: Eu vejo a {{check}}.
+  back: 'Eu vejo a conta.
+
+    I see the check.  (conta, f)'
+  chapter: —
+- id: n0101
+  word: cúpula
+  front: Eu vejo a {{dome}}.
+  back: 'Eu vejo a cúpula.
+
+    I see the dome.  (cúpula, f)'
+  chapter: —
+- id: n0102
+  word: dinheiro
+  front: Eu vejo o {{money}}.
+  back: 'Eu vejo o dinheiro.
+
+    I see the money.  (dinheiro, m)'
+  chapter: —
+- id: n0103
+  word: edifício
+  front: Eu vejo o {{building}}.
+  back: 'Eu vejo o edifício.
+
+    I see the building.  (edifício, m)'
+  chapter: —
+- id: n0104
+  word: escola
+  front: Eu vejo a {{school}}.
+  back: 'Eu vejo a escola.
+
+    I see the school.  (escola, f)'
+  chapter: —
+- id: n0105
+  word: espetáculo
+  front: Eu vejo o {{show}}.
+  back: 'Eu vejo o espetáculo.
+
+    I see the show.  (espetáculo, m)'
+  chapter: —
+- id: n0106
+  word: estação
+  front: Eu vejo a {{station}}.
+  back: 'Eu vejo a estação.
+
+    I see the station.  (estação, f)'
+  chapter: —
+- id: n0107
+  word: farmácia
+  front: Eu vejo a {{pharmacy}}.
+  back: 'Eu vejo a farmácia.
+
+    I see the pharmacy.  (farmácia, f)'
+  chapter: —
+- id: n0108
+  word: ginásio
+  front: Eu vejo o {{gym}}.
+  back: 'Eu vejo o ginásio.
+
+    I see the gym.  (ginásio, m)'
+  chapter: —
+- id: n0109
+  word: hospital
+  front: Eu vejo o {{hospital}}.
+  back: 'Eu vejo o hospital.
+
+    I see the hospital.  (hospital, m)'
+  chapter: —
+- id: n0110
+  word: hotel
+  front: Eu vejo o {{hotel}}.
+  back: 'Eu vejo o hotel.
+
+    I see the hotel.  (hotel, m)'
+  chapter: —
+- id: n0111
+  word: jardim
+  front: Eu vejo o {{garden}}.
+  back: 'Eu vejo o jardim.
+
+    I see the garden.  (jardim, m)'
+  chapter: —
+- id: n0112
+  word: livraria
+  front: Eu vejo a {{bookstore}}.
+  back: 'Eu vejo a livraria.
+
+    I see the bookstore.  (livraria, f)'
+  chapter: —
+- id: n0113
+  word: lugar
+  front: Eu vejo o {{place}}.
+  back: 'Eu vejo o lugar.
+
+    I see the place.  (lugar, m)'
+  chapter: —
+- id: n0114
+  word: mapa
+  front: Eu vejo o {{map}}.
+  back: 'Eu vejo o mapa.
+
+    I see the map.  (mapa, m)'
+  chapter: —
+- id: n0115
+  word: moeda
+  front: Eu vejo a {{coin}}.
+  back: 'Eu vejo a moeda.
+
+    I see the coin.  (moeda, f)'
+  chapter: —
+- id: n0116
+  word: morada
+  front: Eu vejo a {{address}}.
+  back: 'Eu vejo a morada.
+
+    I see the address.  (morada, f)'
+  chapter: —
+- id: n0117
+  word: museu
+  front: Eu vejo o {{museum}}.
+  back: 'Eu vejo o museu.
+
+    I see the museum.  (museu, m)'
+  chapter: —
+- id: n0118
+  word: palácio
+  front: Eu vejo o {{palace}}.
+  back: 'Eu vejo o palácio.
+
+    I see the palace.  (palácio, m)'
+  chapter: —
+- id: n0119
+  word: paragem
+  front: Eu vejo a {{bus stop}}.
+  back: 'Eu vejo a paragem.
+
+    I see the bus stop.  (paragem, f)'
+  chapter: —
+- id: n0120
+  word: parque
+  front: Eu vejo o {{park}}.
+  back: 'Eu vejo o parque.
+
+    I see the park.  (parque, m)'
+  chapter: —
+- id: n0121
+  word: polícia
+  front: Eu vejo a {{police (institution)}}.
+  back: 'Eu vejo a polícia.
+
+    I see the police (institution).  (polícia, f)'
+  chapter: —
+- id: n0122
+  word: polícia
+  front: Eu vejo o {{police officer}}.
+  back: 'Eu vejo o polícia.
+
+    I see the police officer.  (polícia, m)'
+  chapter: —
+- id: n0123
+  word: ponte
+  front: Eu vejo a {{bridge}}.
+  back: 'Eu vejo a ponte.
+
+    I see the bridge.  (ponte, f)'
+  chapter: —
+- id: n0124
+  word: preço
+  front: Eu vejo o {{price}}.
+  back: 'Eu vejo o preço.
+
+    I see the price.  (preço, m)'
+  chapter: —
+- id: n0125
+  word: reserva
+  front: Eu vejo a {{reservation}}.
+  back: 'Eu vejo a reserva.
+
+    I see the reservation.  (reserva, f)'
+  chapter: —
+- id: n0126
+  word: restaurante
+  front: Eu vejo o {{restaurant}}.
+  back: 'Eu vejo o restaurante.
+
+    I see the restaurant.  (restaurante, m)'
+  chapter: —
+- id: n0127
+  word: rua
+  front: Eu vejo a {{road}}.
+  back: 'Eu vejo a rua.
+
+    I see the road.  (rua, f)'
+  chapter: —
+- id: n0128
+  word: supermercado
+  front: Eu vejo o {{supermarket}}.
+  back: 'Eu vejo o supermercado.
+
+    I see the supermarket.  (supermercado, m)'
+  chapter: —
+- id: n0129
+  word: templo
+  front: Eu vejo o {{temple}}.
+  back: 'Eu vejo o templo.
+
+    I see the temple.  (templo, m)'
+  chapter: —
+- id: n0130
+  word: torre
+  front: Eu vejo a {{tower}}.
+  back: 'Eu vejo a torre.
+
+    I see the tower.  (torre, f)'
+  chapter: —
+- id: n0131
+  word: blusa
+  front: Eu uso a {{blouse}}.
+  back: 'Eu uso a blusa.
+
+    I wear the blouse.  (blusa, f)'
+  chapter: —
+- id: n0132
+  word: calças
+  front: Eu uso as {{pants}}.
+  back: 'Eu uso as calças.
+
+    I wear the pants.  (calças, pl)'
+  chapter: —
+- id: n0133
+  word: casaco
+  front: Eu uso o {{coat}}.
+  back: 'Eu uso o casaco.
+
+    I wear the coat.  (casaco, m)'
+  chapter: —
+- id: n0134
+  word: chapéu
+  front: Eu uso o {{hat}}.
+  back: 'Eu uso o chapéu.
+
+    I wear the hat.  (chapéu, m)'
+  chapter: —
+- id: n0135
+  word: cinto
+  front: Eu uso o {{belt}}.
+  back: 'Eu uso o cinto.
+
+    I wear the belt.  (cinto, m)'
+  chapter: —
+- id: n0136
+  word: fato
+  front: Eu uso o {{suit}}.
+  back: 'Eu uso o fato.
+
+    I wear the suit.  (fato, m)'
+  chapter: —
+- id: n0137
+  word: roupa
+  front: Eu uso a {{clothing}}.
+  back: 'Eu uso a roupa.
+
+    I wear the clothing.  (roupa, f)'
+  chapter: —
+- id: n0138
+  word: saia
+  front: Eu uso a {{skirt}}.
+  back: 'Eu uso a saia.
+
+    I wear the skirt.  (saia, f)'
+  chapter: —
+- id: n0139
+  word: sapato
+  front: Eu uso o {{shoe}}.
+  back: 'Eu uso o sapato.
+
+    I wear the shoe.  (sapato, m)'
+  chapter: —
+- id: n0140
+  word: vestido
+  front: Eu uso o {{dress}}.
+  back: 'Eu uso o vestido.
+
+    I wear the dress.  (vestido, m)'
+  chapter: —
+- id: n0141
+  word: avó
+  front: A minha {{grandmother}} está em casa.
+  back: 'A minha avó está em casa.
+
+    My grandmother is at home.  (avó, f)'
+  chapter: —
+- id: n0142
+  word: avô
+  front: O meu {{grandfather}} está em casa.
+  back: 'O meu avô está em casa.
+
+    My grandfather is at home.  (avô, m)'
+  chapter: —
+- id: n0143
+  word: família
+  front: A minha {{family}} está em casa.
+  back: 'A minha família está em casa.
+
+    My family is at home.  (família, f)'
+  chapter: —
+- id: n0144
+  word: filho
+  front: O meu {{son}} está em casa.
+  back: 'O meu filho está em casa.
+
+    My son is at home.  (filho, m)'
+  chapter: —
+- id: n0145
+  word: filha
+  front: A minha {{daughter}} está em casa.
+  back: 'A minha filha está em casa.
+
+    My daughter is at home.  (filha, f)'
+  chapter: —
+- id: n0146
+  word: irmã
+  front: A minha {{sister}} está em casa.
+  back: 'A minha irmã está em casa.
+
+    My sister is at home.  (irmã, f)'
+  chapter: —
+- id: n0147
+  word: irmão
+  front: O meu {{brother}} está em casa.
+  back: 'O meu irmão está em casa.
+
+    My brother is at home.  (irmão, m)'
+  chapter: —
+- id: n0148
+  word: mãe
+  front: A minha {{mother}} está em casa.
+  back: 'A minha mãe está em casa.
+
+    My mother is at home.  (mãe, f)'
+  chapter: —
+- id: n0149
+  word: pai
+  front: O meu {{father}} está em casa.
+  back: 'O meu pai está em casa.
+
+    My father is at home.  (pai, m)'
+  chapter: —
+- id: n0150
+  word: pais
+  front: Os meus {{parents}} estão em casa.
+  back: 'Os meus pais estão em casa.
+
+    My parents are at home.  (pais, pl)'
+  chapter: —
+- id: n0151
+  word: primo
+  front: O meu {{cousin (man)}} está em casa.
+  back: 'O meu primo está em casa.
+
+    My cousin (man) is at home.  (primo, m)'
+  chapter: —
+- id: n0152
+  word: prima
+  front: A minha {{cousin (woman)}} está em casa.
+  back: 'A minha prima está em casa.
+
+    My cousin (woman) is at home.  (prima, f)'
+  chapter: —
+- id: n0153
+  word: água
+  front: Eu gosto de {{water}}.
+  back: 'Eu gosto de água.
+
+    I like water.  (água, f)'
+  chapter: —
+- id: n0154
+  word: almoço
+  front: Eu gosto de {{lunch}}.
+  back: 'Eu gosto de almoço.
+
+    I like lunch.  (almoço, m)'
+  chapter: —
+- id: n0155
+  word: bolacha
+  front: Eu gosto de {{cookie}}.
+  back: 'Eu gosto de bolacha.
+
+    I like cookie.  (bolacha, f)'
+  chapter: —
+- id: n0156
+  word: bolo
+  front: Eu gosto de {{cake}}.
+  back: 'Eu gosto de bolo.
+
+    I like cake.  (bolo, m)'
+  chapter: —
+- id: n0157
+  word: café
+  front: Eu gosto de {{coffee}}.
+  back: 'Eu gosto de café.
+
+    I like coffee.  (café, m)'
+  chapter: —
+- id: n0158
+  word: carne
+  front: Eu gosto de {{meat}}.
+  back: 'Eu gosto de carne.
+
+    I like meat.  (carne, f)'
+  chapter: —
+- id: n0159
+  word: cerveja
+  front: Eu gosto de {{beer}}.
+  back: 'Eu gosto de cerveja.
+
+    I like beer.  (cerveja, f)'
+  chapter: —
+- id: n0160
+  word: chá
+  front: Eu gosto de {{tea}}.
+  back: 'Eu gosto de chá.
+
+    I like tea.  (chá, m)'
+  chapter: —
+- id: n0161
+  word: chocolate
+  front: Eu gosto de {{chocolate}}.
+  back: 'Eu gosto de chocolate.
+
+    I like chocolate.  (chocolate, m)'
+  chapter: —
+- id: n0162
+  word: comida
+  front: Eu gosto de {{food}}.
+  back: 'Eu gosto de comida.
+
+    I like food.  (comida, f)'
+  chapter: —
+- id: n0163
+  word: fome
+  front: Eu gosto de {{hunger}}.
+  back: 'Eu gosto de fome.
+
+    I like hunger.  (fome, f)'
+  chapter: —
+- id: n0164
+  word: frigideira
+  front: Eu gosto de {{pan}}.
+  back: 'Eu gosto de frigideira.
+
+    I like pan.  (frigideira, f)'
+  chapter: —
+- id: n0165
+  word: garrafa
+  front: Eu gosto de {{bottle}}.
+  back: 'Eu gosto de garrafa.
+
+    I like bottle.  (garrafa, f)'
+  chapter: —
+- id: n0166
+  word: laranja
+  front: Eu gosto de {{orange}}.
+  back: 'Eu gosto de laranja.
+
+    I like orange.  (laranja, f)'
+  chapter: —
+- id: n0167
+  word: legume
+  front: Eu gosto de {{vegetable}}.
+  back: 'Eu gosto de legume.
+
+    I like vegetable.  (legume, m)'
+  chapter: —
+- id: n0168
+  word: marisco
+  front: Eu gosto de {{seafood}}.
+  back: 'Eu gosto de marisco.
+
+    I like seafood.  (marisco, m)'
+  chapter: —
+- id: n0169
+  word: menu
+  front: Eu gosto de {{menu}}.
+  back: 'Eu gosto de menu.
+
+    I like menu.  (menu, m)'
+  chapter: —
+- id: n0170
+  word: jantar
+  front: Eu gosto de {{dinner}}.
+  back: 'Eu gosto de jantar.
+
+    I like dinner.  (jantar, m)'
+  chapter: —
+- id: n0171
+  word: pão
+  front: Eu gosto de {{bread}}.
+  back: 'Eu gosto de pão.
+
+    I like bread.  (pão, m)'
+  chapter: —
+- id: n0172
+  word: peixe
+  front: Eu gosto de {{fish}}.
+  back: 'Eu gosto de peixe.
+
+    I like fish.  (peixe, m)'
+  chapter: —
+- id: n0173
+  word: pequeno-almoço
+  front: Eu gosto de {{breakfast}}.
+  back: 'Eu gosto de pequeno-almoço.
+
+    I like breakfast.  (pequeno-almoço, m)'
+  chapter: —
+- id: n0174
+  word: pizza
+  front: Eu gosto de {{pizza}}.
+  back: 'Eu gosto de pizza.
+
+    I like pizza.  (pizza, f)'
+  chapter: —
+- id: n0175
+  word: prato
+  front: Eu gosto de {{dish}}.
+  back: 'Eu gosto de prato.
+
+    I like dish.  (prato, m)'
+  chapter: —
+- id: n0176
+  word: receita
+  front: Eu gosto de {{recipe}}.
+  back: 'Eu gosto de receita.
+
+    I like recipe.  (receita, f)'
+  chapter: —
+- id: n0177
+  word: salada
+  front: Eu gosto de {{salad}}.
+  back: 'Eu gosto de salada.
+
+    I like salad.  (salada, f)'
+  chapter: —
+- id: n0178
+  word: sopa
+  front: Eu gosto de {{soup}}.
+  back: 'Eu gosto de sopa.
+
+    I like soup.  (sopa, f)'
+  chapter: —
+- id: n0179
+  word: sumo
+  front: Eu gosto de {{juice}}.
+  back: 'Eu gosto de sumo.
+
+    I like juice.  (sumo, m)'
+  chapter: —
+- id: n0180
+  word: vinho branco
+  front: Eu gosto de {{white wine}}.
+  back: 'Eu gosto de vinho branco.
+
+    I like white wine.  (vinho branco, m)'
+  chapter: —
+- id: n0181
+  word: vinho tinto
+  front: Eu gosto de {{red wine}}.
+  back: 'Eu gosto de vinho tinto.
+
+    I like red wine.  (vinho tinto, m)'
+  chapter: —
+- id: n0182
+  word: cadeira
+  front: Eu limpo a {{chair}}.
+  back: 'Eu limpo a cadeira.
+
+    I clean the chair.  (cadeira, f)'
+  chapter: —
+- id: n0183
+  word: cama
+  front: Eu limpo a {{bed}}.
+  back: 'Eu limpo a cama.
+
+    I clean the bed.  (cama, f)'
+  chapter: —
+- id: n0184
+  word: candeeiro
+  front: Eu limpo o {{lamp}}.
+  back: 'Eu limpo o candeeiro.
+
+    I clean the lamp.  (candeeiro, m)'
+  chapter: —
+- id: n0185
+  word: canto
+  front: Eu limpo o {{corner}}.
+  back: 'Eu limpo o canto.
+
+    I clean the corner.  (canto, m)'
+  chapter: —
+- id: n0186
+  word: casa
+  front: Eu limpo a {{house}}.
+  back: 'Eu limpo a casa.
+
+    I clean the house.  (casa, f)'
+  chapter: —
+- id: n0187
+  word: casa
+  front: Eu limpo a {{home}}.
+  back: 'Eu limpo a casa.
+
+    I clean the home.  (casa, f)'
+  chapter: —
+- id: n0188
+  word: casa de banho
+  front: Eu limpo a {{bathroom}}.
+  back: 'Eu limpo a casa de banho.
+
+    I clean the bathroom.  (casa de banho, f)'
+  chapter: —
+- id: n0189
+  word: chão
+  front: Eu limpo o {{floor}}.
+  back: 'Eu limpo o chão.
+
+    I clean the floor.  (chão, m)'
+  chapter: —
+- id: n0190
+  word: corredor
+  front: Eu limpo o {{corridor}}.
+  back: 'Eu limpo o corredor.
+
+    I clean the corridor.  (corredor, m)'
+  chapter: —
+- id: n0191
+  word: cozinha
+  front: Eu limpo a {{kitchen}}.
+  back: 'Eu limpo a cozinha.
+
+    I clean the kitchen.  (cozinha, f)'
+  chapter: —
+- id: n0192
+  word: duche
+  front: Eu limpo o {{shower}}.
+  back: 'Eu limpo o duche.
+
+    I clean the shower.  (duche, m)'
+  chapter: —
+- id: n0193
+  word: escritório
+  front: Eu limpo o {{office}}.
+  back: 'Eu limpo o escritório.
+
+    I clean the office.  (escritório, m)'
+  chapter: —
+- id: n0194
+  word: estante
+  front: Eu limpo a {{bookcase}}.
+  back: 'Eu limpo a estante.
+
+    I clean the bookcase.  (estante, f)'
+  chapter: —
+- id: n0195
+  word: gaveta
+  front: Eu limpo a {{drawer}}.
+  back: 'Eu limpo a gaveta.
+
+    I clean the drawer.  (gaveta, f)'
+  chapter: —
+- id: n0196
+  word: janela
+  front: Eu limpo a {{window}}.
+  back: 'Eu limpo a janela.
+
+    I clean the window.  (janela, f)'
+  chapter: —
+- id: n0197
+  word: luz
+  front: Eu limpo a {{light}}.
+  back: 'Eu limpo a luz.
+
+    I clean the light.  (luz, f)'
+  chapter: —
+- id: n0198
+  word: mesa
+  front: Eu limpo a {{table}}.
+  back: 'Eu limpo a mesa.
+
+    I clean the table.  (mesa, f)'
+  chapter: —
+- id: n0199
+  word: parede
+  front: Eu limpo a {{wall}}.
+  back: 'Eu limpo a parede.
+
+    I clean the wall.  (parede, f)'
+  chapter: —
+- id: n0200
+  word: porta
+  front: Eu limpo a {{door}}.
+  back: 'Eu limpo a porta.
+
+    I clean the door.  (porta, f)'
+  chapter: —
+- id: n0201
+  word: portão
+  front: Eu limpo o {{gate}}.
+  back: 'Eu limpo o portão.
+
+    I clean the gate.  (portão, m)'
+  chapter: —
+- id: n0202
+  word: quarto
+  front: Eu limpo o {{(bed)room}}.
+  back: 'Eu limpo o quarto.
+
+    I clean the (bed)room.  (quarto, m)'
+  chapter: —
+- id: n0203
+  word: sala
+  front: Eu limpo a {{room}}.
+  back: 'Eu limpo a sala.
+
+    I clean the room.  (sala, f)'
+  chapter: —
+- id: n0204
+  word: televisão
+  front: Eu limpo a {{television}}.
+  back: 'Eu limpo a televisão.
+
+    I clean the television.  (televisão, f)'
+  chapter: —
+- id: n0205
+  word: terraço
+  front: Eu limpo o {{terrace}}.
+  back: 'Eu limpo o terraço.
+
+    I clean the terrace.  (terraço, m)'
+  chapter: —
+- id: n0206
+  word: teto
+  front: Eu limpo o {{ceiling}}.
+  back: 'Eu limpo o teto.
+
+    I clean the ceiling.  (teto, m)'
+  chapter: —
+- id: n0207
+  word: álbum
+  front: Eu uso o {{album}}.
+  back: 'Eu uso o álbum.
+
+    I use the album.  (álbum, m)'
+  chapter: —
+- id: n0208
+  word: armadilha
+  front: Eu uso a {{trap}}.
+  back: 'Eu uso a armadilha.
+
+    I use the trap.  (armadilha, f)'
+  chapter: —
+- id: n0209
+  word: boneca
+  front: Eu uso a {{doll}}.
+  back: 'Eu uso a boneca.
+
+    I use the doll.  (boneca, f)'
+  chapter: —
+- id: n0210
+  word: caderno
+  front: Eu uso o {{notebook}}.
+  back: 'Eu uso o caderno.
+
+    I use the notebook.  (caderno, m)'
+  chapter: —
+- id: n0211
+  word: caneca
+  front: Eu uso a {{mug}}.
+  back: 'Eu uso a caneca.
+
+    I use the mug.  (caneca, f)'
+  chapter: —
+- id: n0212
+  word: caneta
+  front: Eu uso a {{pen}}.
+  back: 'Eu uso a caneta.
+
+    I use the pen.  (caneta, f)'
+  chapter: —
+- id: n0213
+  word: carta
+  front: Eu uso a {{letter}}.
+  back: 'Eu uso a carta.
+
+    I use the letter.  (carta, f)'
+  chapter: —
+- id: n0214
+  word: carteira
+  front: Eu uso a {{wallet}}.
+  back: 'Eu uso a carteira.
+
+    I use the wallet.  (carteira, f)'
+  chapter: —
+- id: n0215
+  word: chave
+  front: Eu uso a {{key}}.
+  back: 'Eu uso a chave.
+
+    I use the key.  (chave, f)'
+  chapter: —
+- id: n0216
+  word: chávena
+  front: Eu uso a {{cup}}.
+  back: 'Eu uso a chávena.
+
+    I use the cup.  (chávena, f)'
+  chapter: —
+- id: n0217
+  word: coisa
+  front: Eu uso a {{thing}}.
+  back: 'Eu uso a coisa.
+
+    I use the thing.  (coisa, f)'
+  chapter: —
+- id: n0218
+  word: colar
+  front: Eu uso o {{necklace}}.
+  back: 'Eu uso o colar.
+
+    I use the necklace.  (colar, m)'
+  chapter: —
+- id: n0219
+  word: documento
+  front: Eu uso o {{document}}.
+  back: 'Eu uso o documento.
+
+    I use the document.  (documento, m)'
+  chapter: —
+- id: n0220
+  word: encomenda
+  front: Eu uso a {{parcel}}.
+  back: 'Eu uso a encomenda.
+
+    I use the parcel.  (encomenda, f)'
+  chapter: —
+- id: n0221
+  word: envelope
+  front: Eu uso o {{envelope}}.
+  back: 'Eu uso o envelope.
+
+    I use the envelope.  (envelope, m)'
+  chapter: —
+- id: n0222
+  word: ferramenta
+  front: Eu uso a {{tool}}.
+  back: 'Eu uso a ferramenta.
+
+    I use the tool.  (ferramenta, f)'
+  chapter: —
+- id: n0223
+  word: formulário
+  front: Eu uso o {{form}}.
+  back: 'Eu uso o formulário.
+
+    I use the form.  (formulário, m)'
+  chapter: —
+- id: n0224
+  word: fotografia
+  front: Eu uso a {{photography}}.
+  back: 'Eu uso a fotografia.
+
+    I use the photography.  (fotografia, f)'
+  chapter: —
+- id: n0225
+  word: jarro
+  front: Eu uso o {{jug}}.
+  back: 'Eu uso o jarro.
+
+    I use the jug.  (jarro, m)'
+  chapter: —
+- id: n0226
+  word: jornal
+  front: Eu uso o {{newspaper}}.
+  back: 'Eu uso o jornal.
+
+    I use the newspaper.  (jornal, m)'
+  chapter: —
+- id: n0227
+  word: lápis
+  front: Eu uso o {{pencil}}.
+  back: 'Eu uso o lápis.
+
+    I use the pencil.  (lápis, m)'
+  chapter: —
+- id: n0228
+  word: livro
+  front: Eu uso o {{book}}.
+  back: 'Eu uso o livro.
+
+    I use the book.  (livro, m)'
+  chapter: —
+- id: n0229
+  word: loiça
+  front: Eu uso a {{crockery}}.
+  back: 'Eu uso a loiça.
+
+    I use the crockery.  (loiça, f)'
+  chapter: —
+- id: n0230
+  word: mala
+  front: Eu uso a {{bag}}.
+  back: 'Eu uso a mala.
+
+    I use the bag.  (mala, f)'
+  chapter: —
+- id: n0231
+  word: máscara
+  front: Eu uso a {{mask}}.
+  back: 'Eu uso a máscara.
+
+    I use the mask.  (máscara, f)'
+  chapter: —
+- id: n0232
+  word: medalha
+  front: Eu uso a {{medal}}.
+  back: 'Eu uso a medalha.
+
+    I use the medal.  (medalha, f)'
+  chapter: —
+- id: n0233
+  word: mochila
+  front: Eu uso a {{backpack}}.
+  back: 'Eu uso a mochila.
+
+    I use the backpack.  (mochila, f)'
+  chapter: —
+- id: n0234
+  word: óculos
+  front: Eu uso os {{glasses}}.
+  back: 'Eu uso os óculos.
+
+    I use the glasses.  (óculos, pl)'
+  chapter: —
+- id: n0235
+  word: página
+  front: Eu uso a {{page}}.
+  back: 'Eu uso a página.
+
+    I use the page.  (página, f)'
+  chapter: —
+- id: n0236
+  word: papel
+  front: Eu uso o {{paper}}.
+  back: 'Eu uso o papel.
+
+    I use the paper.  (papel, m)'
+  chapter: —
+- id: n0237
+  word: passaporte
+  front: Eu uso o {{passport}}.
+  back: 'Eu uso o passaporte.
+
+    I use the passport.  (passaporte, m)'
+  chapter: —
+- id: n0238
+  word: peça
+  front: Eu uso a {{part}}.
+  back: 'Eu uso a peça.
+
+    I use the part.  (peça, f)'
+  chapter: —
+- id: n0239
+  word: piano
+  front: Eu uso o {{piano}}.
+  back: 'Eu uso o piano.
+
+    I use the piano.  (piano, m)'
+  chapter: —
+- id: n0240
+  word: revista
+  front: Eu uso a {{magazine}}.
+  back: 'Eu uso a revista.
+
+    I use the magazine.  (revista, f)'
+  chapter: —
+- id: n0241
+  word: telefone
+  front: Eu uso o {{telephone}}.
+  back: 'Eu uso o telefone.
+
+    I use the telephone.  (telefone, m)'
+  chapter: —
+- id: n0242
+  word: tesouro
+  front: Eu uso o {{treasure}}.
+  back: 'Eu uso o tesouro.
+
+    I use the treasure.  (tesouro, m)'
+  chapter: —
+- id: n0243
+  word: tinta
+  front: Eu uso a {{ink}}.
+  back: 'Eu uso a tinta.
+
+    I use the ink.  (tinta, f)'
+  chapter: —
+- id: n0244
+  word: advogado
+  front: Ele é {{lawyer}}.
+  back: 'Ele é advogado.
+
+    He is a lawyer.  (advogado, m)'
+  chapter: —
+- id: n0245
+  word: aluno
+  front: Ele é {{student}}.
+  back: 'Ele é aluno.
+
+    He is a student.  (aluno, m)'
+  chapter: —
+- id: n0246
+  word: amigo
+  front: Ele é {{friend}}.
+  back: 'Ele é amigo.
+
+    He is a friend.  (amigo, m)'
+  chapter: —
+- id: n0247
+  word: biólogo
+  front: Ele é {{biologist}}.
+  back: 'Ele é biólogo.
+
+    He is a biologist.  (biólogo, m)'
+  chapter: —
+- id: n0248
+  word: cantor
+  front: Ele é {{singer}}.
+  back: 'Ele é cantor.
+
+    He is a singer.  (cantor, m)'
+  chapter: —
+- id: n0249
+  word: cliente
+  front: Ele é {{client}}.
+  back: 'Ele é cliente.
+
+    He is a client.  (cliente, m)'
+  chapter: —
+- id: n0250
+  word: cozinheiro
+  front: Ele é {{cook}}.
+  back: 'Ele é cozinheiro.
+
+    He is a cook.  (cozinheiro, m)'
+  chapter: —
+- id: n0251
+  word: diretor
+  front: Ele é {{director}}.
+  back: 'Ele é diretor.
+
+    He is a director.  (diretor, m)'
+  chapter: —
+- id: n0252
+  word: empregado
+  front: Ele é {{employee}}.
+  back: 'Ele é empregado.
+
+    He is a employee.  (empregado, m)'
+  chapter: —
+- id: n0253
+  word: enfermeiro
+  front: Ele é {{nurse}}.
+  back: 'Ele é enfermeiro.
+
+    He is a nurse.  (enfermeiro, m)'
+  chapter: —
+- id: n0254
+  word: engenheiro
+  front: Ele é {{engineer}}.
+  back: 'Ele é engenheiro.
+
+    He is a engineer.  (engenheiro, m)'
+  chapter: —
+- id: n0255
+  word: escritor
+  front: Ele é {{writer}}.
+  back: 'Ele é escritor.
+
+    He is a writer.  (escritor, m)'
+  chapter: —
+- id: n0256
+  word: faroleiro
+  front: Ele é {{lighthouse keeper}}.
+  back: 'Ele é faroleiro.
+
+    He is a lighthouse keeper.  (faroleiro, m)'
+  chapter: —
+- id: n0257
+  word: guarda
+  front: Ele é {{guard}}.
+  back: 'Ele é guarda.
+
+    He is a guard.  (guarda, m)'
+  chapter: —
+- id: n0258
+  word: guardião
+  front: Ele é {{guardian}}.
+  back: 'Ele é guardião.
+
+    He is a guardian.  (guardião, m)'
+  chapter: —
+- id: n0259
+  word: guia
+  front: Ele é {{guide}}.
+  back: 'Ele é guia.
+
+    He is a guide.  (guia, m)'
+  chapter: —
+- id: n0260
+  word: historiador
+  front: Ele é {{historian}}.
+  back: 'Ele é historiador.
+
+    He is a historian.  (historiador, m)'
+  chapter: —
+- id: n0261
+  word: ladrão
+  front: Ele é {{burglar}}.
+  back: 'Ele é ladrão.
+
+    He is a burglar.  (ladrão, m)'
+  chapter: —
+- id: n0262
+  word: médico
+  front: Ele é {{doctor}}.
+  back: 'Ele é médico.
+
+    He is a doctor.  (médico, m)'
+  chapter: —
+- id: n0263
+  word: paciente
+  front: Ele é {{patient}}.
+  back: 'Ele é paciente.
+
+    He is a patient.  (paciente, m)'
+  chapter: —
+- id: n0264
+  word: pescador
+  front: Ele é {{fisherman}}.
+  back: 'Ele é pescador.
+
+    He is a fisherman.  (pescador, m)'
+  chapter: —
+- id: n0265
+  word: polícia
+  front: Ele é {{police officer}}.
+  back: 'Ele é polícia.
+
+    He is a police officer.  (polícia, m)'
+  chapter: —
+- id: n0266
+  word: príncipe
+  front: Ele é {{prince}}.
+  back: 'Ele é príncipe.
+
+    He is a prince.  (príncipe, m)'
+  chapter: —
+- id: n0267
+  word: prisioneiro
+  front: Ele é {{prisoner}}.
+  back: 'Ele é prisioneiro.
+
+    He is a prisoner.  (prisioneiro, m)'
+  chapter: —
+- id: n0268
+  word: professor
+  front: Ele é {{teacher}}.
+  back: 'Ele é professor.
+
+    He is a teacher.  (professor, m)'
+  chapter: —
+- id: n0269
+  word: rei
+  front: Ele é {{king}}.
+  back: 'Ele é rei.
+
+    He is a king.  (rei, m)'
+  chapter: —
+- id: n0270
+  word: recém-chegado
+  front: Ele é {{newcomer}}.
+  back: 'Ele é recém-chegado.
+
+    He is a newcomer.  (recém-chegado, m)'
+  chapter: —
+- id: n0271
+  word: reformado
+  front: Ele é {{retired}}.
+  back: 'Ele é reformado.
+
+    He is a retired.  (reformado, m)'
+  chapter: —
+- id: n0272
+  word: secretário
+  front: Ele é {{secretary}}.
+  back: 'Ele é secretário.
+
+    He is a secretary.  (secretário, m)'
+  chapter: —
+- id: n0273
+  word: turista
+  front: Ele é {{tourist}}.
+  back: 'Ele é turista.
+
+    He is a tourist.  (turista, m)'
+  chapter: —
+- id: n0274
+  word: vendedor
+  front: Ele é {{seller}}.
+  back: 'Ele é vendedor.
+
+    He is a seller.  (vendedor, m)'
+  chapter: —
+- id: n0275
+  word: vizinho
+  front: Ele é {{neighbor}}.
+  back: 'Ele é vizinho.
+
+    He is a neighbor.  (vizinho, m)'
+  chapter: —
+- id: n0276
+  word: autocarro
+  front: Eu vou de {{bus}}.
+  back: 'Eu vou de autocarro.
+
+    I go by bus.  (autocarro, m)'
+  chapter: —
+- id: n0277
+  word: avião
+  front: Eu vou de {{plane}}.
+  back: 'Eu vou de avião.
+
+    I go by plane.  (avião, m)'
+  chapter: —
+- id: n0278
+  word: barco
+  front: Eu vou de {{boat}}.
+  back: 'Eu vou de barco.
+
+    I go by boat.  (barco, m)'
+  chapter: —
+- id: n0279
+  word: bicicleta
+  front: Eu vou de {{bicycle}}.
+  back: 'Eu vou de bicicleta.
+
+    I go by bicycle.  (bicicleta, f)'
+  chapter: —
+- id: n0280
+  word: carro
+  front: Eu vou de {{car}}.
+  back: 'Eu vou de carro.
+
+    I go by car.  (carro, m)'
+  chapter: —
+- id: n0281
+  word: comboio
+  front: Eu vou de {{train}}.
+  back: 'Eu vou de comboio.
+
+    I go by train.  (comboio, m)'
+  chapter: —
+- id: n0282
+  word: elétrico
+  front: Eu vou de {{tram}}.
+  back: 'Eu vou de elétrico.
+
+    I go by tram.  (elétrico, m)'
+  chapter: —
+- id: n0283
+  word: a pé
+  front: Eu vou {{on foot}}.
+  back: 'Eu vou a pé.
+
+    I go on foot.  (a pé, m)'
+  chapter: —

@@ -1,2 +1,5 @@
 anki-mcp-server
 node_modules
+
+__pycache__/
+*.pyc
