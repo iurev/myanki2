@@ -292,14 +292,14 @@ cards:
   back: igualmente
   chapter: —
 - id: 0678
-  word: ''
-  front: omo está? How are you? (formal)
-  back: ''
+  word: Como está?
+  front: How are you? (formal)
+  back: Como está?
   chapter: —
 - id: 0679
-  word: ''
-  front: omo estás? How are you? (informal)
-  back: ''
+  word: Como estás?
+  front: How are you? (informal)
+  back: Como estás?
   chapter: —
 - id: 0680
   word: Bem, obrigado.
@@ -307,14 +307,14 @@ cards:
   back: Bem, obrigado.
   chapter: —
 - id: 0681
-  word: ''
-  front: ueria… I would like...
-  back: ''
+  word: Queria…
+  front: I would like…
+  back: Queria…
   chapter: —
 - id: 0682
-  word: ''
-  front: odia...? Could you...?
-  back: ''
+  word: Podia...?
+  front: Could you...?
+  back: Podia...?
   chapter: —
 - id: 0683
   word: não há problema

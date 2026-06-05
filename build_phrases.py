@@ -28,9 +28,12 @@ def parse():
                 pt = left[:g.start()].strip() + f" ({g.group(1)})"
             else:
                 pt = left
-        else:                                          # "Portuguese. English."
-            i = s.find(". ")
-            pt, en = s[:i + 1].strip(), s[i + 2:].strip()
+        else:                                          # "Portuguese<.?…> English"
+            m = re.search(r"[.?…]+\s", s)               # first PT sentence-end + space
+            if m:
+                pt, en = s[:m.end()].strip(), s[m.end():].strip()
+            else:
+                pt, en = s, ""
         rows.append((en, pt))
     return rows
 
