@@ -643,8 +643,9 @@
 
   /* ── the 28 cards and the 10 off-deck words ───────────────────────── */
   const PRO = [
-    { pt: "escola", gl: "school", g: "f", lvl: "A1", src: "schola", note: "sch·",
-      ex: ["Eu vejo a <b>escola</b>.", "I see the school.", "card 0289"] },
+    { pt: "escola", gl: "school", g: "f", lvl: "A1", src: "σχολή → schola", note: "sch· · Greek, see layer 09",
+      ex: ["Eu vejo a <b>escola</b>.", "I see the school.", "card 0289"],
+      flag: "The extra e is this page's rule and it is not in doubt. What the word did after that is: had it been fully spoken, the l between vowels would have gone the way of layer 02 and left escoa. It did not, so the word is half book and half speech. Layer 09 has the Greek side." },
     { pt: "escrever", gl: "to write", lvl: "A1", src: "scrībere", note: "scr·",
       ex: ["Eu <b>escrevo</b> uma carta.", "I write a letter.", "card 0073"] },
     { pt: "estrela", gl: "star", g: "f", lvl: "A1", src: "stēllam", note: "st·",
@@ -693,7 +694,7 @@
       flag: "This one is printed on card 0159, in the sentence for ser. You read it every time that card comes up, and it still has no card of its own." },
     { pt: "espaço", gl: "space", g: "m", lvl: "A2", src: "spatium", note: "sp·",
       ex: ["A sala tem muito <b>espaço</b>.", "The room has a lot of space.", "no card"] },
-    { pt: "estômago", gl: "stomach", g: "m", lvl: "A2", src: "stomachum", note: "st·",
+    { pt: "estômago", gl: "stomach", g: "m", lvl: "A2", src: "στόμαχος → stomachum", note: "st· · Greek, see layer 09",
       ex: ["Eu tenho o <b>estômago</b> cheio.", "My stomach is full.", "no card"] },
     { pt: "esperança", gl: "hope", g: "f", lvl: "B1", src: "spērāre", note: "sp·, from esperar",
       ex: ["Eu tenho <b>esperança</b>.", "I have hope.", "no card"],
@@ -928,7 +929,7 @@
   /* ── anchors ──────────────────────────────────────────────────────── */
   (function () {
     const H = [
-      { c: "pro", pair: '<span class="a">escola</span><span class="eq">=</span>school<span class="eq">=</span>школа', root: "Greek scholē · spare time", lvl: "A1",
+      { c: "pro", pair: '<span class="a">escola</span><span class="eq">=</span>school<span class="eq">=</span>школа', root: "Greek σχολή skholḗ · spare time", lvl: "A1",
         why: "The Greek word meant free time. You needed free time in order to learn. So the word for the time became the word for the place.",
         ex: ["Eu vejo a <b>escola</b>.", "I see the school.", "card 0289"] },
       { c: "pro", pair: '<span class="a">estar</span><span class="eq">=</span>stand<span class="eq">=</span>стоять', root: "*steh₂- · to stand", lvl: "A1",
