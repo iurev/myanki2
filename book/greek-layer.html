@@ -1,0 +1,712 @@
+<title>ph th y — Greek, spelled the Latin way</title>
+
+<style>
+  :root {
+    --paper: #F2F3EF; --paper-2: #E9EBE5;
+    --ink: #141A20; --ink-2: #4E5A66; --ink-3: #5A656F;
+    --rule: #D3D7CE; --rule-soft: #E0E3DB;
+
+    --anc: #1F5FBF; --neo: #0A744E; --spo: #A6501C; --not: #9E3A90;
+    --anc-wash: #1F5FBF14; --neo-wash: #0A744E14; --spo-wash: #A6501C14; --not-wash: #9E3A9014;
+
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans:  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    --mono:  ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    --max: 1080px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #12151A; --paper-2: #191D24;
+      --ink: #E6E9E4; --ink-2: #9AA5AF; --ink-3: #858F99;
+      --rule: #272D35; --rule-soft: #1F242B;
+      --anc: #4E8BE0; --neo: #0FA06B; --spo: #D0783C; --not: #C95CAB;
+      --anc-wash: #4E8BE01f; --neo-wash: #0FA06B1f; --spo-wash: #D0783C1f; --not-wash: #C95CAB1f;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #12151A; --paper-2: #191D24;
+    --ink: #E6E9E4; --ink-2: #9AA5AF; --ink-3: #858F99;
+    --rule: #272D35; --rule-soft: #1F242B;
+    --anc: #4E8BE0; --neo: #0FA06B; --spo: #D0783C; --not: #C95CAB;
+    --anc-wash: #4E8BE01f; --neo-wash: #0FA06B1f; --spo-wash: #D0783C1f; --not-wash: #C95CAB1f;
+  }
+  :root[data-theme="light"] {
+    --paper: #F2F3EF; --paper-2: #E9EBE5;
+    --ink: #141A20; --ink-2: #4E5A66; --ink-3: #5A656F;
+    --rule: #D3D7CE; --rule-soft: #E0E3DB;
+    --anc: #1F5FBF; --neo: #0A744E; --spo: #A6501C; --not: #9E3A90;
+    --anc-wash: #1F5FBF14; --neo-wash: #0A744E14; --spo-wash: #A6501C14; --not-wash: #9E3A9014;
+  }
+
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: var(--sans); font-size: 16px; line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 600; text-wrap: balance; margin: 0; }
+  .eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3); }
+  .dek { color: var(--ink-2); max-width: 62ch; margin: 0; }
+  .term { margin: 0; max-width: 64ch; font-size: 14px; color: var(--ink-2); padding: 12px 15px; border-left: 3px solid var(--ink-3); background: var(--paper-2); }
+  .term b { font-family: var(--serif); font-size: 16px; color: var(--ink); }
+  .mono-in { font-family: var(--mono); font-size: .82em; }
+  em.lat { font-family: var(--serif); font-style: italic; }
+  em.gk { font-family: var(--serif); font-style: normal; }
+
+  section { border-top: 1px solid var(--rule); padding: 54px 0 8px; }
+  section > .wrap { display: flex; flex-direction: column; gap: 24px; }
+  .sec-head { display: flex; flex-direction: column; gap: 8px; }
+  .sec-head h2 { font-size: clamp(22px, 3vw, 30px); letter-spacing: -.01em; }
+  h3.grp { font-size: 17px; color: var(--ink-2); margin-top: 6px; }
+
+  .ex { display: flex; flex-direction: column; gap: 1px; }
+  .ex .p { font-family: var(--serif); font-size: 15.5px; line-height: 1.35; }
+  .ex .p b { font-weight: 600; color: var(--c, var(--ink)); }
+  .ex .e { font-size: 12px; color: var(--ink-3); }
+  .cid { font-family: var(--mono); font-size: 9px; letter-spacing: .07em; text-transform: uppercase; border: 1px solid var(--rule); border-radius: 2px; padding: 1px 4px; color: var(--ink-3); margin-left: 5px; white-space: nowrap; }
+  .cid.new { border-style: dashed; }
+  .cid.nocard { border-style: dotted; }
+
+  .lv { font-family: var(--mono); font-size: 9px; font-weight: 600; letter-spacing: .06em;
+        padding: 1px 4px; border-radius: 2px; border: 1px solid var(--ink-3);
+        color: var(--ink-3); white-space: nowrap; }
+  .lv.a1 { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+  .lv.a2 { background: var(--ink-2); border-color: var(--ink-2); color: var(--paper); }
+  .lv.b1 { border-color: var(--ink-2); color: var(--ink-2); }
+  .lv.b2 { border-style: dashed; }
+  .levels { border: 1px solid var(--rule); }
+  .levels .lh { padding: 11px 15px; background: var(--paper-2); border-bottom: 1px solid var(--rule); font-family: var(--serif); font-size: 16px; }
+  .lrow { display: grid; grid-template-columns: 44px 92px 1fr; gap: 4px 14px; align-items: baseline; padding: 10px 15px; border-bottom: 1px solid var(--rule-soft); }
+  .lrow:last-child { border-bottom: 0; }
+  .lrow .t { font-size: 13.5px; color: var(--ink-2); }
+  .lrow .t b { color: var(--ink); }
+  .lvline { display: flex; flex-wrap: wrap; gap: 7px 12px; align-items: center; font-size: 12.5px; color: var(--ink-3); }
+  .wrow .pt .lv, .hook .lv { margin-left: 6px; }
+  @media (max-width: 620px) { .lrow { grid-template-columns: 44px 1fr; } }
+
+  header { padding: 66px 0 50px; }
+  header > .wrap { display: flex; flex-direction: column; gap: 30px; }
+  .rulecard { display: flex; flex-wrap: wrap; align-items: baseline; gap: 16px 22px; font-family: var(--serif); }
+  .rule-from { font-size: clamp(28px, 5.5vw, 52px); color: var(--ink-3); display: flex; gap: 16px; flex-wrap: wrap; }
+  .rule-arrow { font-size: clamp(22px, 3.6vw, 34px); color: var(--ink-3); }
+  .rule-to { font-size: clamp(44px, 8.5vw, 84px); color: var(--anc); line-height: 1; display: flex; gap: 18px; }
+  h1 { font-size: clamp(27px, 4.2vw, 40px); letter-spacing: -.015em; line-height: 1.14; }
+
+  .specimens { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(290px, 100%), 1fr)); gap: 14px; }
+  .spec { display: flex; flex-direction: column; gap: 5px; padding: 12px 14px; border: 1px solid var(--rule-soft); border-left: 3px solid var(--anc); }
+  .spec .line { font-family: var(--serif); font-size: 20px; display: flex; align-items: baseline; gap: 9px; flex-wrap: wrap; }
+  .spec .line .gk { color: var(--ink-2); }
+  .spec .line .lat { color: var(--ink-2); font-style: italic; }
+  .spec .line .ar { font-family: var(--sans); font-size: 12px; color: var(--ink-3); }
+  .spec .line .pt b { color: var(--anc); }
+  .spec .gl { font-size: 12.5px; color: var(--ink-3); }
+
+  .stats { display: flex; flex-wrap: wrap; gap: 0; border-top: 1px solid var(--rule); }
+  .stat { flex: 1 1 118px; padding: 13px 18px 13px 0; border-right: 1px solid var(--rule-soft); display: flex; flex-direction: column; gap: 2px; }
+  .stat:last-child { border-right: 0; }
+  .stat b { font-family: var(--serif); font-size: 29px; font-weight: 600; font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .stat span { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+
+  .scope { border: 1px solid var(--rule); }
+  .scope-head { padding: 12px 15px; background: var(--paper-2); border-bottom: 1px solid var(--rule); font-family: var(--serif); font-size: 16px; }
+  .srow { display: grid; grid-template-columns: 210px 78px 1fr; gap: 4px 14px; align-items: baseline; padding: 11px 15px; border-bottom: 1px solid var(--rule-soft); border-left: 3px solid var(--c); }
+  .srow:last-child { border-bottom: 0; }
+  .srow .v { font-family: var(--serif); font-size: 17px; color: var(--c); }
+  .srow .n { font-family: var(--mono); font-size: 11px; color: var(--ink-2); }
+  .srow .why { font-size: 13.5px; color: var(--ink-2); }
+  @media (max-width: 720px) { .srow { grid-template-columns: 1fr; } }
+
+  .wtab { border: 1px solid var(--rule-soft); border-top: 3px solid var(--c); break-inside: avoid; }
+  .wtab .th { display: flex; align-items: baseline; gap: 9px; padding: 11px 14px; border-bottom: 1px solid var(--rule); background: var(--w); flex-wrap: wrap; }
+  .wtab .th b { font-family: var(--serif); font-size: 18px; }
+  .wtab .th .sub { font-size: 12.5px; color: var(--ink-2); }
+  .wtab .th .n { margin-left: auto; font-family: var(--mono); font-size: 10px; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-2); }
+  .wrow { display: grid; grid-template-columns: 136px 150px 1fr; gap: 4px 12px; align-items: baseline; padding: 10px 14px; border-bottom: 1px solid var(--rule-soft); }
+  .wrow:last-child { border-bottom: 0; }
+  .wrow .pt { font-family: var(--serif); font-size: 17px; color: var(--c); }
+  .wrow .pt small { font-family: var(--sans); font-size: 11.5px; color: var(--ink-3); display: block; }
+  .wrow .src { font-family: var(--serif); font-size: 14px; color: var(--ink-2); }
+  .wrow .src small { font-family: var(--mono); font-size: 10px; color: var(--ink-3); display: block; letter-spacing: .04em; }
+  .wrow.q { background: var(--paper-2); }
+  .wrow.d { background: var(--paper-2); outline: 1.5px dashed var(--ink-3); outline-offset: -4px; }
+  .wrow .mark { font-family: var(--mono); font-size: 9px; letter-spacing: .07em; text-transform: uppercase;
+        border: 1px dashed var(--ink-3); border-radius: 2px; padding: 1px 4px; color: var(--ink-3);
+        margin-left: 6px; white-space: nowrap; }
+  .wrow.off .pt::after { content: "no card"; font-family: var(--mono); font-size: 8.5px;
+        letter-spacing: .07em; text-transform: uppercase; color: var(--ink-3);
+        border: 1px dotted var(--ink-3); border-radius: 2px; padding: 1px 4px;
+        margin-left: 6px; white-space: nowrap; vertical-align: 2px; }
+  .wrow .flagline { grid-column: 1 / -1; font-size: 12px; color: var(--ink-2); border-top: 1px dotted var(--rule); padding-top: 6px; }
+  @media (max-width: 760px) { .wrow { grid-template-columns: 1fr; } }
+
+  .tabs2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 20px; align-items: start; }
+
+  figure { margin: 0; display: flex; flex-direction: column; gap: 12px; }
+  .plot { width: 100%; overflow-x: auto; }
+  .plot svg { display: block; width: 100%; height: auto; min-width: 540px; }
+  figcaption { font-size: 12.5px; color: var(--ink-3); max-width: 68ch; }
+  svg text { font-family: var(--sans); fill: var(--ink); }
+  svg .t-serif { font-family: var(--serif); }
+  svg .t-mono { font-family: var(--mono); letter-spacing: .06em; }
+  svg .t-mute { fill: var(--ink-3); }
+  svg .t-sub { fill: var(--ink-2); }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: center; }
+  .lg { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; color: var(--ink-2); }
+  .sw { width: 13px; height: 13px; border-radius: 2px; flex: none; }
+
+  .mx-scroll { overflow-x: auto; }
+  table.mx { border-collapse: collapse; width: 100%; min-width: 660px; }
+  table.mx th, table.mx td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--rule-soft); }
+  table.mx thead th { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); font-weight: 400; border-bottom: 1px solid var(--rule); }
+  table.mx td { font-family: var(--serif); font-size: 16px; }
+  table.mx td.gk { color: var(--ink-2); }
+  table.mx td.lat { font-style: italic; color: var(--ink-2); }
+  table.mx td.head { font-weight: 600; color: var(--anc); }
+  table.mx td .out { display: block; font-family: var(--mono); font-size: 9.5px; letter-spacing: .05em; color: var(--ink-3); font-weight: 400; font-style: normal; }
+
+  .gen { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(238px, 100%), 1fr)); gap: 1px; background: var(--rule-soft); border: 1px solid var(--rule-soft); }
+  .gcard { background: var(--paper); padding: 16px; display: flex; flex-direction: column; gap: 7px; break-inside: avoid; border-top: 3px solid var(--anc); }
+  .gcard .w { font-family: var(--serif); font-size: clamp(20px, 2.8vw, 24px); color: var(--anc); }
+  .gcard .art { font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+  .gcard .why { font-size: 12.5px; color: var(--ink-2); }
+
+  .checks { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 14px; }
+  .chk { border: 1px solid var(--rule-soft); border-left: 3px solid var(--ink-3); padding: 12px 14px; display: flex; flex-direction: column; gap: 5px; break-inside: avoid; }
+  .chk b { font-family: var(--serif); font-size: 15.5px; }
+  .chk p { margin: 0; font-size: 12.5px; color: var(--ink-2); }
+
+  footer { border-top: 1px solid var(--rule); padding: 32px 0 58px; }
+  footer > .wrap { display: flex; flex-direction: column; gap: 10px; }
+  footer p { margin: 0; font-size: 12.5px; color: var(--ink-3); max-width: 72ch; }
+
+  @media print {
+    :root, :root:not([data-theme="light"]), :root[data-theme="dark"], :root[data-theme="light"] {
+      --paper: #FFFFFF; --paper-2: #EDEEE9;
+      --ink: #111418; --ink-2: #454F59; --ink-3: #616B75;
+      --rule: #C2C7BC; --rule-soft: #D8DCD2;
+      --anc: #1F5FBF; --neo: #0A744E; --spo: #A6501C; --not: #9E3A90;
+      --anc-wash: #1F5FBF14; --neo-wash: #0A744E14; --spo-wash: #A6501C14; --not-wash: #9E3A9014;
+    }
+    body { background: #fff; font-size: 10.5pt; }
+    section { padding: 24px 0 4px; }
+    header { padding: 10px 0 22px; }
+    .wrap { padding: 0 10px; max-width: none; }
+    .plot, .mx-scroll { overflow: visible; }
+    .plot svg { min-width: 0; }
+    table.mx { min-width: 0; }
+    .sec-head, h1, h2, h3, .scope-head { break-after: avoid; }
+    figcaption, .legend { break-before: avoid; }
+    .sec-head, figure, .term, .spec, .gcard, .chk, .ex { break-inside: avoid; }
+    p { orphans: 3; widows: 3; }
+  }
+</style>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Origin layer 09 · European Portuguese · 21 cards · 12 words with no card</div>
+
+    <div class="rulecard">
+      <span class="rule-from"><span>ph</span><span>th</span><span>y</span></span>
+      <span class="rule-arrow">→</span>
+      <span class="rule-to"><span>f</span><span>t</span><span>i</span></span>
+    </div>
+
+    <h1>Greek words did not come to Portuguese from Greece.<br />They came through Latin, and Latin respelled them.</h1>
+
+    <p class="dek">Greek had sounds Latin did not. Roman writers wrote them with two letters — <span class="mono-in">ph</span>, <span class="mono-in">th</span>, <span class="mono-in">ch</span> — and used the Greek letter <span class="mono-in">y</span> for a vowel they did not own. Portuguese later simplified all of it. Those simplifications are still visible, and they are a reliable sign that a word passed through Greek.</p>
+
+    <p class="term"><b>Through Latin</b> — Portuguese borrowed almost no word directly from Greek. A Greek word reached Roman writing first, was spelled the Latin way, and only then reached Portuguese. So the Greek is real, and the spelling you see is Latin's.</p>
+
+    <div class="specimens">
+      <div class="spec">
+        <span class="line"><span class="gk">φαρμακεία</span><span class="ar">→</span><span class="lat">pharmacīa</span><span class="ar">→</span><span class="pt"><b>f</b>armácia</span></span>
+        <span class="gl">pharmacy · ph became f</span>
+      </div>
+      <div class="spec">
+        <span class="line"><span class="gk">θεωρία</span><span class="ar">→</span><span class="lat">theōria</span><span class="ar">→</span><span class="pt"><b>t</b>eoria</span></span>
+        <span class="gl">theory · th became t</span>
+      </div>
+      <div class="spec">
+        <span class="line"><span class="gk">σύμβολον</span><span class="ar">→</span><span class="lat">symbolum</span><span class="ar">→</span><span class="pt">s<b>í</b>mbolo</span></span>
+        <span class="gl">symbol · y became i</span>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>21</b><span>cards from greek</span></div>
+      <div class="stat"><b style="color:var(--anc)">13</b><span>came with latin</span></div>
+      <div class="stat"><b style="color:var(--neo)">6</b><span>built much later</span></div>
+      <div class="stat"><b style="color:var(--spo)">2</b><span>came through speech</span></div>
+      <div class="stat"><b>12</b><span>words with no card</span></div>
+    </div>
+
+    <div class="lvline">
+      <span>Level of the 21 cards:</span>
+      <span><span class="lv a1">A1</span> 8</span>
+      <span><span class="lv a2">A2</span> 4</span>
+      <span><span class="lv b1">B1</span> 9</span>
+      <span>— the B1 half is the abstract-noun set, which is the part that pays off in reading.</span>
+    </div>
+
+    <div class="lvline">
+      <span>Level of the 12 words with <span class="mono-in">no card</span>:</span>
+      <span><span class="lv a1">A1</span> 3</span>
+      <span><span class="lv a2">A2</span> 3</span>
+      <span><span class="lv b1">B1</span> 6</span>
+      <span>— <em>música</em>, <em>igreja</em> and <em>problema</em> are the ones to add first.</span>
+    </div>
+  </div>
+</header>
+
+<!-- ══ scope ══════════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">What is on this page</div>
+      <h2>Twenty-one cards go back to Greek. They took three different roads, and four more only look as if they did.</h2>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— 21 cards (8 A1, 4 A2, 9 B1) and 12 words with no card. Read the scope block before the tables.</span></p>
+    </div>
+
+    <div class="scope">
+      <div class="scope-head">The same Greek origin, reached three different ways.</div>
+      <div class="srow" style="--c:var(--anc)">
+        <span class="v">Came with Latin</span><span class="n">13 cards<br />+ 7 no card</span>
+        <span class="why">Real Greek words that Roman writers borrowed and respelled, and that Portuguese later took from Latin books. These carry the spelling fingerprints and are the subject of the page.</span>
+      </div>
+      <div class="srow" style="--c:var(--neo)">
+        <span class="v">Built much later, out of Greek parts</span><span class="n">6 cards<br />+ 3 no card</span>
+        <span class="why">Not Greek words at all. Nobody in Athens said <em>fotografia</em> or <em>telefone</em>. Scientists in the 1800s took Greek pieces and made new words with them, so the parts are ancient and the word is modern.</span>
+      </div>
+      <div class="srow" style="--c:var(--spo)">
+        <span class="v">Came through speech</span><span class="n">2 cards<br />+ 2 no card</span>
+        <span class="why">A short list of Greek words that ordinary Latin speakers used, not just writers. They wore down like any spoken word, and two of them picked up the extra <em>e</em> of layer 05.</span>
+      </div>
+      <div class="srow" style="--c:var(--not)">
+        <span class="v">Only look Greek</span><span class="n">4 cards</span>
+        <span class="why">Printed for contrast, and in none of the counts above. <em>família</em>, <em>mapa</em>, <em>teatro</em>-like shapes and a false <span class="mono-in">-ma</span> word. They are here because the fingerprints on this page are useful only if you also know what they do not catch.</span>
+      </div>
+    </div>
+
+    <p class="term"><b>No card</b> — a word that fits this page and is <em>not</em> in your deck. Those rows carry a dotted <span class="mono-in">no card</span> tag and are counted on their own, never added into the card totals. Every one is A1–B1.</p>
+
+    <div class="levels">
+      <div class="lh">Every modern word on this page carries a level flag. This is what the flags mean.</div>
+      <div class="lrow"><span><span class="lv a1">A1</span></span><span class="t">learn now</span>
+        <span class="t">First 500 words. You need this in normal days. <b>Learn it now.</b></span></div>
+      <div class="lrow"><span><span class="lv a2">A2</span></span><span class="t">learn now</span>
+        <span class="t">Still basic. You will meet it soon. <b>Learn it now.</b></span></div>
+      <div class="lrow"><span><span class="lv b1">B1</span></span><span class="t">later</span>
+        <span class="t">Useful, but not every day. Keep the card. Do not push it.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ the three fingerprints ═════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Main chart</div>
+      <h2>Three spellings that give a Greek word away</h2>
+      <p class="dek">Latin needed two letters for three Greek sounds, and borrowed one Greek letter outright. Portuguese kept none of it. When you see <span class="mono-in">f</span> where English writes <span class="mono-in">ph</span>, or <span class="mono-in">t</span> where English writes <span class="mono-in">th</span>, you are looking at a Greek word that English respelled less than Portuguese did.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— covers all 13 cards that came with Latin and the 7 words with no card beside them.</span></p>
+    </div>
+
+    <figure>
+      <div class="plot">
+        <svg viewBox="0 0 960 300" role="img" aria-label="Three Greek letters pass through Latin spelling and arrive simplified in Portuguese: ph becomes f, th becomes t, y becomes i">
+          <g id="fp"></g>
+        </svg>
+      </div>
+      <figcaption>The middle row is what Roman writers wrote. Portuguese dropped the second letter each time. English kept the Latin spelling, which is why the English word usually looks older than the Portuguese one.</figcaption>
+    </figure>
+
+    <div class="legend">
+      <span class="lg"><span class="sw" style="background:var(--anc)"></span>came with Latin — 13 cards, 7 words with no card</span>
+      <span class="lg"><span class="sw" style="background:var(--neo)"></span>built much later — 6 cards, 3 words with no card</span>
+      <span class="lg"><span class="sw" style="background:var(--spo)"></span>came through speech — 2 cards, 2 words with no card</span>
+      <span class="lg"><span class="sw" style="background:var(--not)"></span>only looks Greek — 4 cards, in none of the counts</span>
+    </div>
+
+    <h3 class="grp">The words, one table per fingerprint</h3>
+    <div class="tabs2" id="sorter"></div>
+  </div>
+</section>
+
+<!-- ══ two roads ══════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The fork</div>
+      <h2>An old Greek word and a modern one look exactly alike</h2>
+      <p class="dek">Both halves of this table are built from Greek. Only the left half is a Greek word. The right half was assembled in the nineteenth century by scientists who needed a name and reached for Greek the way a chemist reaches for a shelf. The spelling gives you no way to tell, so the page tells you.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a2">A2</span><span>— 6 cards were built late; 4 of them are A1 or A2, so you meet the modern ones first.</span></p>
+    </div>
+    <div class="tabs2" id="fork"></div>
+  </div>
+</section>
+
+<!-- ══ the -ma payoff ═════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The payoff</div>
+      <h2>Words ending in <span class="mono-in">-ma</span> are masculine</h2>
+      <p class="dek">Portuguese nouns in <span class="mono-in">-a</span> are almost all feminine, so these look like an exception you must memorise. They are not. Greek had a third gender, neuter, and its neuter nouns ended in <span class="mono-in">-ma</span>. Latin kept them neuter. Portuguese lost the neuter and sent every one of them to the masculine, ending and all.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— one rule, six words, and it stops a gender mistake you would otherwise make every time.</span></p>
+    </div>
+
+    <div class="gen" id="ma"></div>
+
+    <p class="term"><b>Neuter</b> — a third gender, beside masculine and feminine. Latin and Greek had it; Portuguese does not. When Portuguese dropped it, neuter nouns had to go somewhere, and these went to the masculine.</p>
+
+    <p class="dek">The rule is worth stating in reverse too, because that is how you will use it: <strong>if a word ends in <span class="mono-in">-ma</span> and names something abstract or technical, say <em>o</em>, not <em>a</em>.</strong> The everyday feminine words in <span class="mono-in">-ma</span> — <em>cama</em>, <em>forma</em>, <em>lama</em> — are ordinary Latin words that never went near Greek.</p>
+  </div>
+</section>
+
+<!-- ══ english mirror ═════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Compare</div>
+      <h2>English kept the Latin spelling, Portuguese did not</h2>
+      <p class="dek">This is the most useful table on the page if you already read English. English borrowed the same Greek words from the same Latin books and left the spelling alone. So an English word with <span class="mono-in">ph</span> or <span class="mono-in">th</span> is a Portuguese word waiting to be guessed.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a2">A2</span><span>— 8 rows, all of them cards you already have.</span></p>
+    </div>
+
+    <figure>
+      <div class="mx-scroll"><table class="mx" id="mx"></table></div>
+      <figcaption>Read the last column as a rule you can run in your head: strip the <em>h</em>, turn <em>y</em> into <em>i</em>, and adjust the ending.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ══ contrast ═══════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Not on this page</div>
+      <h2>Four cards that look Greek and are not</h2>
+      <p class="dek">The fingerprints are useful because they are narrow. These four have the shape and none of the history, and they are printed here so the rule does not spread further than it should.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— 4 contrast cards, in none of the page's counts. All A1 or A2.</span></p>
+    </div>
+    <div class="tabs2" id="contrast"></div>
+  </div>
+</section>
+
+<!-- ══ deck check ═════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Your deck</div>
+      <h2>What this layer found in the deck</h2>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— four findings. The first two are worth acting on today.</span></p>
+    </div>
+    <div class="checks" id="checks"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Source: <span class="mono-in">myanki2</span> — 724 cards, 720 distinct words. Origin layer 09. Sentences from your own cards show the card number. Sentences marked <em>new</em> were written for this page because your deck has no sentence for that word yet, and rows tagged <em>no card</em> are words your deck does not contain at all.</p>
+    <p>The colours mean something different on each layer. Here the colour is <strong>how the Greek word reached Portuguese</strong>: blue = came with Latin, green = built much later out of Greek parts, orange = came through ordinary speech, purple = not Greek at all. Colour is never the only channel; every group is named in its table header and in the legend.</p>
+    <p><strong>About the level flags.</strong> <span class="lv a1">A1</span> <span class="lv a2">A2</span> <span class="lv b1">B1</span> are CEFR levels. Your deck stores no level for nouns, adjectives or phrases. It does mark 145 verb cards <em>(A1)</em>, but that is the level of the course book they were taken from, not a judgement about each word. One verb card appears here, <em>telefonar a</em>, and it carries that mark; this page flags it A1 as well, so no flag here sits above the deck. Everything else on the page is a noun and carries no mark at all. So the flags here are an estimate, following how common the word is in everyday European Portuguese.</p>
+    <p><strong>Where the origin is not firm.</strong> Two rows carry a dashed <em>Sources disagree</em> mark. <em>papel</em> reaches Greek <em class="gk">πάπυρος</em> through Latin <em class="lat">papȳrus</em>, but Greek itself very likely took the word from Egyptian, so the Greek step is real and the Greek origin is not. <em>cadeira</em> is agreed to come from <em class="lat">cathedra</em> ← <em class="gk">καθέδρα</em>; what is disputed is whether Portuguese inherited it through speech or took it from writing, and that decides which group it belongs to on this page.</p>
+    <p>Counts: 21 cards go back to Greek — 13 came with Latin, 6 were built much later out of Greek parts, 2 came through ordinary speech. By level: 8 A1, 4 A2, 9 B1. Twelve more words fit the page and have no card — 7, 3 and 2 by the same three roads; by level 3 A1, 3 A2, 6 B1. Four further cards are printed for contrast and are in none of those numbers. Cards, missing words and contrast cards are never added into one number.</p>
+  </div>
+</footer>
+
+<script>
+  const NS = "http://www.w3.org/2000/svg";
+  const el = (n, a = {}) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); return e; };
+  const ex = (pt, en, id, isNew) =>
+    '<span class="ex"><span class="p">' + pt + '</span><span class="e">' + en +
+    '<span class="cid' + (id === "no card" ? " nocard" : isNew ? " new" : "") + '">' + id +
+    "</span></span></span>";
+  const lv = c => '<span class="lv ' + c.toLowerCase() + '">' + c + "</span>";
+  const lvcount = rows => {
+    const o = {};
+    rows.forEach(r => { if (r.lvl) o[r.lvl] = (o[r.lvl] || 0) + 1; });
+    return ["A1", "A2", "B1", "B2"].filter(k => o[k]).map(k => lv(k) + " " + o[k]).join(" ");
+  };
+  const off = rows => rows.map(r => ({ ...r, off: true }));
+
+  const wtab = (host, cls, title, sub, rows) => {
+    const d = document.createElement("div");
+    d.className = "wtab";
+    d.style.setProperty("--c", "var(--" + cls + ")");
+    d.style.setProperty("--w", "var(--" + cls + "-wash)");
+    const isOff = rows.length > 0 && rows.every(r => r.off);
+    d.innerHTML =
+      '<div class="th"><b>' + title + '</b><span class="sub">' + sub + '</span><span class="n">' +
+        lvcount(rows) + " &nbsp;·&nbsp; " + rows.length +
+        (isOff ? (rows.length === 1 ? " word, no card" : " words, no card") : " cards") + "</span></div>" +
+      rows.map(r =>
+        '<div class="wrow' + (r.off ? " off" : "") + (r.mark ? " d" : r.flag ? " q" : "") + '">' +
+          '<span class="pt">' + r.pt + " " + lv(r.lvl) +
+            (r.mark ? '<span class="mark">' + r.mark + "</span>" : "") + "<small>" + r.gl + "</small></span>" +
+          '<span class="src">' + r.src + "<small>" + r.note + "</small></span>" +
+          ex(r.ex[0], r.ex[1], r.ex[2], r.ex[3]) +
+          (r.flag ? '<span class="flagline">' + r.flag + "</span>" : "") +
+        "</div>").join("");
+    host.appendChild(d);
+  };
+
+  /* ── fingerprint chart ────────────────────────────────────────────── */
+  (function () {
+    const g = document.getElementById("fp");
+    const COL = [
+      { x: 160, gk: "φ", lat: "ph", pt: "f",  w: "φαρμακεία → farmácia", en: "pharmacy" },
+      { x: 480, gk: "θ", lat: "th", pt: "t",  w: "θεωρία → teoria",      en: "theory" },
+      { x: 800, gk: "υ", lat: "y",  pt: "i",  w: "σύμβολον → símbolo",   en: "symbol" }
+    ];
+    const row = (y, label) => {
+      const t = el("text", { x: 30, y, "font-size": 10, class: "t-mono t-mute" });
+      t.textContent = label; g.appendChild(t);
+    };
+    row(56, "GREEK"); row(136, "LATIN WROTE"); row(216, "PORTUGUESE");
+
+    COL.forEach(c => {
+      const a = el("text", { x: c.x, y: 62, "text-anchor": "middle", "font-size": 40, class: "t-serif t-sub" });
+      a.textContent = c.gk;
+      const b = el("text", { x: c.x, y: 142, "text-anchor": "middle", "font-size": 34, class: "t-serif" });
+      b.setAttribute("fill", "var(--ink-2)"); b.textContent = c.lat;
+      const d = el("text", { x: c.x, y: 222, "text-anchor": "middle", "font-size": 40, class: "t-serif" });
+      d.setAttribute("fill", "var(--anc)"); d.textContent = c.pt;
+      g.appendChild(a); g.appendChild(b); g.appendChild(d);
+      g.appendChild(el("path", { d: "M" + c.x + " 74 V 118", fill: "none", stroke: "var(--ink-3)", "stroke-width": 1.5 }));
+      g.appendChild(el("path", { d: "M" + c.x + " 154 V 198", fill: "none", stroke: "var(--anc)", "stroke-width": 2 }));
+      const w = el("text", { x: c.x, y: 256, "text-anchor": "middle", "font-size": 13, class: "t-serif t-sub" });
+      w.textContent = c.w;
+      const e2 = el("text", { x: c.x, y: 274, "text-anchor": "middle", "font-size": 10.5, class: "t-mute" });
+      e2.textContent = c.en;
+      g.appendChild(w); g.appendChild(e2);
+    });
+  })();
+
+  /* ── the words ────────────────────────────────────────────────────── */
+  (function () {
+    const host = document.getElementById("sorter");
+
+    wtab(host, "anc", "ph became f", "Greek φ, written ph by Rome", [
+      { pt: "farmácia", gl: "pharmacy", lvl: "A2", src: "φαρμακεία → pharmacīa", note: "f · a farmácia",
+        ex: ["Eu vejo a <b>farmácia</b>.", "I see the pharmacy.", "card 0292"],
+        flag: "Greek φάρμακον was a drug — and also a poison, which is the same ambiguity English keeps in a pharmacist dispensing what could kill you. English pharmacy still writes the Latin ph." }
+    ]);
+
+    wtab(host, "anc", "th became t", "Greek θ, written th by Rome", [
+      { pt: "biblioteca", gl: "library", lvl: "A2", src: "βιβλιοθήκη → bibliothēca", note: "t · a biblioteca",
+        ex: ["Eu vejo a <b>biblioteca</b>.", "I see the library.", "card 0276"],
+        flag: "βιβλίον a book plus θήκη a box: a book-box. The same θήκη is in discoteca, a record-box, which is where the modern word for a nightclub came from." },
+      { pt: "matemática", gl: "mathematics", lvl: "B1", src: "μαθηματική → mathēmatica", note: "t · a matemática",
+        ex: ["A <b>matemática</b> é importante.", "Mathematics is important.", "card 0198"],
+        flag: "From μάθημα, a thing learned. In Greek it meant any subject of study; the narrowing to number came later." },
+      { pt: "teoria", gl: "theory", lvl: "B1", src: "θεωρία → theōria", note: "t · a teoria",
+        ex: ["A <b>teoria</b> é importante.", "Theory is important.", "card 0213"],
+        flag: "θεωρία was a looking-at, a viewing. A theory is what you get from watching something carefully — the sense English keeps in spectator and theatre, from the same root." },
+      { pt: "mito", gl: "myth", lvl: "B1", src: "μῦθος → mythus", note: "t and i · o mito",
+        ex: ["O <b>mito</b> é importante.", "Myth is important.", "card 0200"],
+        flag: "This word carries two of the three fingerprints at once: the θ became t and the υ became i. English myth kept both Latin spellings." },
+      { pt: "hipótese", gl: "hypothesis", lvl: "B1", src: "ὑπόθεσις → hypothesis", note: "t and i · a hipótese",
+        ex: ["A <b>hipótese</b> é importante.", "Hypothesis is important.", "card 0193"],
+        flag: "ὑπό under plus θέσις a placing: what you put underneath an argument to hold it up. Two fingerprints again, and the h at the front is gone in Portuguese but kept in English." }
+    ]);
+
+    wtab(host, "anc", "y became i", "Greek υ, borrowed as the letter y", [
+      { pt: "símbolo", gl: "symbol", lvl: "B1", src: "σύμβολον → symbolum", note: "i · o símbolo",
+        ex: ["O <b>símbolo</b> é importante.", "Symbol is important.", "card 0211"],
+        flag: "σύν together plus βάλλω I throw: two halves of a broken token thrown together to prove who you were. A symbol was originally a physical object." },
+      { pt: "mistério", gl: "mystery", lvl: "B1", src: "μυστήριον → mystērium", note: "i · o mistério",
+        ex: ["O <b>mistério</b> é importante.", "Mystery is important.", "card 0199"],
+        flag: "From μύστης, someone initiated into a secret rite. The word meant the secret itself long before it meant a puzzle." }
+    ]);
+
+    wtab(host, "anc", "Greek, with no fingerprint left", "the spelling gives nothing away", [
+      { pt: "história", gl: "history, story", lvl: "A2", src: "ἱστορία → historia", note: "f · a história",
+        ex: ["A <b>história</b> é importante.", "History is important.", "card 0194"],
+        flag: "One Portuguese word for both history and story, exactly as in Greek: ἱστορία was an inquiry, then an account of what you found. English split the two words; Portuguese did not." },
+      { pt: "poesia", gl: "poetry", lvl: "B1", src: "ποίησις → poēsis", note: "f · a poesia",
+        ex: ["A <b>poesia</b> é importante.", "Poetry is important.", "card 0206"],
+        flag: "ποίησις is a making, from ποιέω I make. A poet is literally a maker — which is what the Scots word makar for a poet still means." },
+      { pt: "papel", gl: "paper", lvl: "A1", src: "πάπυρος → papȳrus", note: "m · o papel",
+        ex: ["Eu uso o <b>papel</b>.", "I use the paper.", "card 0421"],
+        mark: "Sources disagree",
+        flag: "The Greek step is certain and the Greek origin is not: πάπυρος is itself very likely a loan from Egyptian, so Greek was a way-station rather than the source. The Portuguese form came through Catalan paper, which is why it ends in l rather than in the o you would expect." }
+    ]);
+
+    wtab(host, "anc", "Came with Latin — and you have no card", "same road, missing from your deck", off([
+      { pt: "música", gl: "music", lvl: "A1", src: "μουσική → mūsica", note: "f · a música",
+        ex: ["Eu gosto de <b>música</b>.", "I like music.", "no card"],
+        flag: "μουσική τέχνη, the art of the Muses. You already read this word inside two cards — 0006 and 0114 — and it has none of its own. One of the plainest gaps in the deck." },
+      { pt: "problema", gl: "problem", lvl: "A1", src: "πρόβλημα → problēma", note: "m · o problema",
+        ex: ["Isto é um <b>problema</b>.", "This is a problem.", "no card"],
+        flag: "Your card 0683 is the phrase não há problema, so you already say the word. The noun on its own has no card, and it is the clearest example of the ·ma rule below." },
+      { pt: "época", gl: "period, age", lvl: "B1", src: "ἐποχή → epocha", note: "f · a época",
+        ex: ["Esta <b>época</b> é importante.", "This period is important.", "no card"],
+        flag: "ἐποχή was a stopping-point — the moment you halt and start counting from. English epoch keeps the Latin ch." },
+      { pt: "ideia", gl: "idea", lvl: "A2", src: "ἰδέα → idea", note: "f · a ideia",
+        ex: ["Eu tenho uma boa <b>ideia</b>.", "I have a good idea.", "no card"],
+        flag: "From the same root as the verb to see. An idea was the look of a thing, its visible form, before Plato made it the form behind the thing." },
+      { pt: "sistema", gl: "system", lvl: "B1", src: "σύστημα → systēma", note: "m · o sistema",
+        ex: ["O <b>sistema</b> é novo.", "The system is new.", "no card"],
+        flag: "σύν together plus ἵστημι I set up: things set up together. Another ·ma word, and another masculine one." },
+      { pt: "planeta", gl: "planet", lvl: "B1", src: "πλανήτης → planēta", note: "m · o planeta",
+        ex: ["O <b>planeta</b> é grande.", "The planet is big.", "no card"],
+        flag: "πλανήτης means a wanderer. The planets were the stars that moved against the fixed ones. Masculine despite the ·a, but for a different reason than the ·ma words: Greek had masculine nouns in ·της too." },
+      { pt: "estômago", gl: "stomach", lvl: "B1", src: "στόμαχος → stomachus", note: "m · o estômago",
+        ex: ["Dói-me o <b>estômago</b>.", "My stomach hurts.", "no card"],
+        flag: "From στόμα, a mouth — the stomach was named as the mouth of the gut. It also took the extra e of layer 05, which is why it is estômago and not stômago." }
+    ]));
+
+    wtab(host, "spo", "Came through ordinary speech", "used by Latin speakers, not only by writers", [
+      { pt: "escola", gl: "school", lvl: "A1", src: "σχολή → schola", note: "f · a escola",
+        ex: ["Eu vejo a <b>escola</b>.", "I see the school.", "card 0289"],
+        flag: "σχολή meant leisure — free time, and then what you do with it if you are serious. The word was common enough in spoken Latin that it took the extra e of layer 05: sch· could not start a Portuguese word." },
+      { pt: "cadeira", gl: "chair", lvl: "A1", src: "καθέδρα → cathedra", note: "f · a cadeira",
+        ex: ["Eu limpo a <b>cadeira</b>.", "I clean the chair.", "card 0367"],
+        mark: "Sources disagree",
+        flag: "κατά down plus ἕδρα a seat. The θ went and the word wore right down to cadeira, which is speech, not writing. What is disputed is whether it came down through speech or was reshaped later. English took the same Latin word twice and left it whole both times: cathedral is the church with the bishop's seat in it." }
+    ]);
+
+    wtab(host, "spo", "Came through speech — and you have no card", "same road, missing from your deck", off([
+      { pt: "igreja", gl: "church", lvl: "A1", src: "ἐκκλησία → ecclēsia", note: "f · a igreja",
+        ex: ["Eu vejo a <b>igreja</b>.", "I see the church.", "no card"],
+        flag: "ἐκκλησία was an assembly, a meeting of citizens called out to gather. Worn down hard in speech — ecclēsia to igreja is a long way — which is exactly what tells you it was spoken and not read. English ecclesiastical is the same word taken from a book." },
+      { pt: "anjo", gl: "angel", lvl: "B1", src: "ἄγγελος → angelus", note: "m · o anjo",
+        ex: ["O <b>anjo</b> é bonito.", "The angel is beautiful.", "no card"],
+        flag: "ἄγγελος meant a messenger, any messenger, before it meant a heavenly one. The same root is in the evangelho, the good message." }
+    ]));
+  })();
+
+  /* ── the fork ─────────────────────────────────────────────────────── */
+  (function () {
+    const host = document.getElementById("fork");
+
+    wtab(host, "anc", "A Greek word", "somebody in Athens said this", [
+      { pt: "escola", gl: "school", lvl: "A1", src: "σχολή", note: "leisure, then study",
+        ex: ["Eu vejo a <b>escola</b>.", "I see the school.", "card 0289"] },
+      { pt: "história", gl: "history, story", lvl: "A2", src: "ἱστορία", note: "an inquiry",
+        ex: ["A <b>história</b> é importante.", "History is important.", "card 0194"] },
+      { pt: "teoria", gl: "theory", lvl: "B1", src: "θεωρία", note: "a viewing",
+        ex: ["A <b>teoria</b> é importante.", "Theory is important.", "card 0213"] }
+    ]);
+
+    wtab(host, "neo", "Built much later, out of Greek parts", "nobody in Athens said this", [
+      { pt: "fotografia", gl: "photography", lvl: "A2", src: "φῶς light + γράφω I write", note: "coined 1839",
+        ex: ["Eu uso a <b>fotografia</b>.", "I use the photography.", "card 0409"],
+        flag: "Light-writing. The word was made in the 1830s, in English and French at almost the same moment, for a thing that had just been invented. Both Greek pieces are ancient; the compound is younger than the railway." },
+      { pt: "telefone", gl: "telephone", lvl: "A1", src: "τῆλε far + φωνή voice", note: "coined 1830s",
+        ex: ["Eu uso o <b>telefone</b>.", "I use the telephone.", "card 0426"],
+        flag: "Far-voice. Same pattern, same century. The τῆλε is in televisão too, where it is glued to a Latin word instead of a Greek one — a mixed compound that classicists complained about at the time." },
+      { pt: "telefonar a", gl: "to phone", lvl: "A1", src: "telefone + ·ar", note: "verb · eu telefono",
+        ex: ["Eu <b>telefono</b> à minha mãe.", "I call my mother.", "card 0166"],
+        flag: "Built inside Portuguese from the noun, with the ordinary ·ar ending. So this is a Portuguese verb made from a modern word made from ancient Greek pieces — three layers in one card." },
+      { pt: "arqueologia", gl: "archaeology", lvl: "B1", src: "ἀρχαῖος ancient + λόγος study", note: "coined 17c",
+        ex: ["A <b>arqueologia</b> é importante.", "Archeology is important.", "card 0186"],
+        flag: "The ·logia ending is the most productive Greek piece of all: biologia, psicologia, geologia, and any new field you care to name. Once you know it means the study of, half the word is free." },
+      { pt: "biólogo", gl: "biologist", lvl: "B1", src: "βίος life + λόγος study", note: "m · o biólogo",
+        ex: ["Ele é <b>biólogo</b>.", "He is a biologist.", "card 0432"],
+        flag: "The person, not the field: biologia is the subject and biólogo is who does it. Greek βίος is life, the same piece as in biografia and antibiótico." },
+      { pt: "cinema", gl: "cinema", lvl: "A1", src: "κίνημα movement", note: "m · o cinema",
+        ex: ["Eu vejo o <b>cinema</b>.", "I see the cinema.", "card 0283"],
+        flag: "Shortened from cinematógrafo, movement-writing, coined in French in the 1890s. κίνημα is a real Greek word, and it is a ·ma word, which is why cinema is masculine." }
+    ]);
+
+    wtab(host, "neo", "Built much later — and you have no card", "same road, missing from your deck", off([
+      { pt: "programa", gl: "programme", lvl: "A2", src: "πρόγραμμα", note: "m · o programa",
+        ex: ["O <b>programa</b> é bom.", "The programme is good.", "no card"],
+        flag: "The Greek word existed — a public notice written up in advance — but the modern senses, a broadcast and a plan, are nineteenth and twentieth century. A ·ma word, so masculine." },
+      { pt: "clima", gl: "climate", lvl: "B1", src: "κλίμα", note: "m · o clima",
+        ex: ["O <b>clima</b> está a mudar.", "The climate is changing.", "no card"],
+        flag: "κλίμα was a slope — the tilt of the earth towards the sun, which is what makes one place hotter than another. Another ·ma word, and another masculine one." },
+      { pt: "teatro", gl: "theatre", lvl: "A2", src: "θέατρον → theātrum", note: "m · o teatro",
+        ex: ["Eu vou ao <b>teatro</b>.", "I go to the theatre.", "no card"],
+        flag: "A seeing-place, from the same θεά, a looking, as teoria. The th became t here too, so this one belongs with the fingerprints; it is in this table because your deck has neither it nor the building." }
+    ]));
+  })();
+
+  /* ── the -ma cards ────────────────────────────────────────────────── */
+  (function () {
+    const host = document.getElementById("ma");
+    const M = [
+      { w: "problema", a: "o problema", why: "Greek πρόβλημα, neuter. Your deck has it only inside the phrase não há problema." },
+      { w: "sistema", a: "o sistema", why: "Greek σύστημα, neuter. No card." },
+      { w: "cinema", a: "o cinema", why: "Greek κίνημα, neuter — and the reason a shortened French word is masculine in Portuguese." },
+      { w: "programa", a: "o programa", why: "Greek πρόγραμμα, neuter. No card." },
+      { w: "clima", a: "o clima", why: "Greek κλίμα, neuter. No card." },
+      { w: "tema", a: "o tema", why: "Greek θέμα, neuter — a thing set down. No card." }
+    ];
+    M.forEach(m => {
+      const d = document.createElement("div");
+      d.className = "gcard";
+      d.innerHTML = '<span class="w">' + m.w + '</span><span class="art">' + m.a +
+                    '</span><span class="why">' + m.why + "</span>";
+      host.appendChild(d);
+    });
+  })();
+
+  /* ── english mirror ───────────────────────────────────────────────── */
+  (function () {
+    const R = [
+      ["φαρμακεία", "pharmacīa", "pharmacy", "farmácia", "drop the h"],
+      ["βιβλιοθήκη", "bibliothēca", "bibliotheca", "biblioteca", "drop the h"],
+      ["θεωρία", "theōria", "theory", "teoria", "drop the h"],
+      ["μῦθος", "mythus", "myth", "mito", "drop the h, y → i"],
+      ["ὑπόθεσις", "hypothesis", "hypothesis", "hipótese", "drop both h, y → i"],
+      ["σύμβολον", "symbolum", "symbol", "símbolo", "y → i"],
+      ["μυστήριον", "mystērium", "mystery", "mistério", "y → i"],
+      ["ἱστορία", "historia", "history", "história", "nothing to strip"]
+    ];
+    const t = document.getElementById("mx");
+    t.innerHTML = "<thead><tr><th>Greek</th><th>Latin wrote</th><th>English kept</th><th>Portuguese</th><th>The rule</th></tr></thead>";
+    const tb = document.createElement("tbody");
+    R.forEach(r => {
+      const tr = document.createElement("tr");
+      const cell = (h, c) => { const td = document.createElement("td"); if (c) td.className = c; td.innerHTML = h; return td; };
+      tr.appendChild(cell(r[0], "gk"));
+      tr.appendChild(cell(r[1], "lat"));
+      tr.appendChild(cell(r[2]));
+      tr.appendChild(cell(r[3], "head"));
+      tr.appendChild(cell('<span class="out">' + r[4] + "</span>"));
+      tb.appendChild(tr);
+    });
+    t.appendChild(tb);
+  })();
+
+  /* ── contrast ─────────────────────────────────────────────────────── */
+  (function () {
+    const host = document.getElementById("contrast");
+    wtab(host, "not", "Only look Greek", "printed for contrast · in none of the counts", [
+      { pt: "família", gl: "family", lvl: "A1", src: "familia ← famulus", note: "Latin, not Greek",
+        ex: ["A minha <b>família</b> está em casa.", "My family is at home.", "card 0328"],
+        flag: "The ·ia ending is the trap: it looks like farmácia and arqueologia. But famulus was a household servant, and the word is Latin all the way down. An ending is not a fingerprint." },
+      { pt: "mapa", gl: "map", lvl: "A1", src: "mappa", note: "Latin, probably Punic",
+        ex: ["Eu vejo o <b>mapa</b>.", "I see the map.", "card 0299"],
+        flag: "Ends in ·a and is masculine, so it looks like a ·ma word. It is not: mappa was a cloth, and Roman writers said the word came from Carthage. The masculine here is an accident, not the Greek neuter rule." },
+      { pt: "matemática", gl: "mathematics", lvl: "B1", src: "μαθηματική", note: "Greek — the control",
+        ex: ["A <b>matemática</b> é importante.", "Mathematics is important.", "card 0198"],
+        flag: "Printed here as the control: it has the same ·ica shape as several Latin words, and this one really is Greek. Shape alone would not have told you. The th is what tells you." },
+      { pt: "escritório", gl: "office", lvl: "A2", src: "scriptōrium", note: "Latin, not Greek",
+        ex: ["Eu limpo o <b>escritório</b>.", "I clean the office.", "card 0378"],
+        flag: "It starts with the same es· as escola and estômago, so it looks like it took the extra e for the same reason. It did take the extra e — that is layer 05 — but from Latin scribere, with no Greek anywhere in it." }
+    ]);
+  })();
+
+  /* ── deck check ───────────────────────────────────────────────────── */
+  (function () {
+    const host = document.getElementById("checks");
+    const C = [
+      ["Three A1 words with no card", "<em>música</em>, <em>igreja</em> and <em>problema</em> are all first-500 words and none has a card. <em>música</em> is read inside cards 0006 and 0114; <em>problema</em> only inside the phrase 0683. These three are the best thing on this page to act on."],
+      ["The ·ma rule has almost nothing to stand on", "Only <em>cinema</em> is in the deck as a plain <span class=\"mono-in\">-ma</span> noun. The rule that saves you a gender mistake needs <em>problema</em>, <em>sistema</em>, <em>programa</em> and <em>tema</em> to be worth learning, and the deck has none of them."],
+      ["Eleven cards share one sentence frame", "<em>A matemática é importante.</em>, <em>A teoria é importante.</em>, <em>O símbolo é importante.</em> and eight more differ only in the noun. They teach the word but not how it is used, and reviewing them is nearly free, which makes them feel learned when they are not."],
+      ["Two English glosses read oddly", "Card 0409 glosses <em>fotografia</em> as <em>the photography</em>, which is not English for a photograph. Card 0283 glosses <em>cinema</em> as <em>movie theater</em>, which is American; in Portugal this is the cinema."]
+    ];
+    C.forEach(c => {
+      const d = document.createElement("div");
+      d.className = "chk";
+      d.innerHTML = "<b>" + c[0] + "</b><p>" + c[1] + "</p>";
+      host.appendChild(d);
+    });
+  })();
+</script>

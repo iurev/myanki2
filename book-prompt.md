@@ -314,7 +314,11 @@ goes back to the author instead of being fixed.
 Scoped against the deck, not guessed. Each passes the test at the top of this
 file — one arrow, enough cards, a real fork, a minimal pair.
 
-**08 — the three conjugations.** Latin had four (`-āre`, `-ēre`, `-ĕre`, `-īre`);
+**08 — the three conjugations. SKIPPED by the author, 2026-08.** The slot is
+left open rather than renumbered, so this page can still be built later without
+shifting every layer after it. The plan below stands as written.
+
+Latin had four (`-āre`, `-ēre`, `-ĕre`, `-īre`);
 Portuguese has three. 185 verb cards in the deck covering 168 verbs, once the
 reflexive `-se` forms are folded into their base: 100 `-ar`, 43 `-er`, 24 `-ir`,
 and `pôr`. (An earlier draft of this file said 91 / 50 / 25, which is wrong and
