@@ -3,7 +3,7 @@
 <style>
   :root {
     --paper: #F2F3EF; --paper-2: #E9EBE5;
-    --ink: #141A20; --ink-2: #4E5A66; --ink-3: #5F6A75;
+    --ink: #141A20; --ink-2: #4E5A66; --ink-3: #5A656F;
     --rule: #D3D7CE; --rule-soft: #E0E3DB;
 
     --es:  #1F5FBF; --sed: #0A744E; --ire: #994716; --vad: #9E3A90; --fu: #B03A5B; --sta: #5540A8;
@@ -18,7 +18,7 @@
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       --paper: #12151A; --paper-2: #191D24;
-      --ink: #E6E9E4; --ink-2: #9AA5AF; --ink-3: #7C8690;
+      --ink: #E6E9E4; --ink-2: #9AA5AF; --ink-3: #858F99;
       --rule: #272D35; --rule-soft: #1F242B;
       --es: #4E8BE0; --sed: #0FA06B; --ire: #D0783C; --vad: #D06BB4; --fu: #DE6383; --sta: #A48CF2;
       --es-wash: #4E8BE01f; --sed-wash: #0FA06B1f;
@@ -27,7 +27,7 @@
   }
   :root[data-theme="dark"] {
     --paper: #12151A; --paper-2: #191D24;
-    --ink: #E6E9E4; --ink-2: #9AA5AF; --ink-3: #7C8690;
+    --ink: #E6E9E4; --ink-2: #9AA5AF; --ink-3: #858F99;
     --rule: #272D35; --rule-soft: #1F242B;
     --es: #4E8BE0; --sed: #0FA06B; --ire: #D0783C; --vad: #D06BB4; --fu: #DE6383; --sta: #A48CF2;
     --es-wash: #4E8BE01f; --sed-wash: #0FA06B1f;
@@ -35,7 +35,7 @@
   }
   :root[data-theme="light"] {
     --paper: #F2F3EF; --paper-2: #E9EBE5;
-    --ink: #141A20; --ink-2: #4E5A66; --ink-3: #5F6A75;
+    --ink: #141A20; --ink-2: #4E5A66; --ink-3: #5A656F;
     --rule: #D3D7CE; --rule-soft: #E0E3DB;
     --es: #1F5FBF; --sed: #0A744E; --ire: #994716; --vad: #9E3A90; --fu: #B03A5B; --sta: #5540A8;
     --es-wash: #1F5FBF14; --sed-wash: #0A744E14;
@@ -194,6 +194,13 @@
   .conj-foot { padding: 10px 14px; border-top: 1px solid var(--rule); background: var(--paper-2); }
   .conj-note { padding: 10px 14px; border-top: 1px dashed var(--ink-3); background: var(--paper-2); font-size: 12.5px; color: var(--ink-2); }
   .conj-head .dismark { display: block; margin-top: 3px; font-style: normal; }
+  /* narrow screens: the sentence drops to its own line so nothing scrolls sideways */
+  @media (max-width: 480px) {
+    .crow, .crow.min { grid-template-columns: 62px 1fr; }
+    .crow .ex { grid-column: 1 / -1; }
+    .lrow { grid-template-columns: 44px 1fr; }
+    .lrow .t + .t { grid-column: 1 / -1; }
+  }
 
   /* ── english mirror ───────────────────────────────────────────────── */
   .mirror { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(228px, 100%), 1fr)); gap: 1px; background: var(--rule-soft); border: 1px solid var(--rule-soft); }
@@ -283,13 +290,13 @@
 
 <header>
   <div class="wrap">
-    <div class="eyebrow">Origin layer 03 · European Portuguese · 14 deck words · 11 words with no card</div>
+    <div class="eyebrow">Origin layer 03 · European Portuguese · 14 deck words · 12 words with no card</div>
 
     <div class="twoverbs">
       <div class="tv" style="--c:var(--sed)">
         <span class="pt">ser</span>
-        <span class="from">← sedēre</span>
-        <span class="means">to sit</span>
+        <span class="from">← sedēre <span class="dismark">sources disagree</span></span>
+        <span class="means">to sit — the other reading is <em class="lat">*essere</em>, below</span>
       </div>
       <div class="tv" style="--c:var(--sta)">
         <span class="pt">estar</span>
@@ -300,11 +307,11 @@
 
     <h1>Portuguese has two verbs for “to be”.<br />One of them used to mean “to sit”. The other used to mean “to stand”.</h1>
 
-    <p class="dek">Latin had one verb for “to be”: <em class="lat">esse</em>. Most of its forms did not survive. Portuguese replaced them with two normal verbs: <em class="lat">sedēre</em> (to sit) and <em class="lat">stāre</em> (to stand). The tenses that were still missing were filled with parts of other verbs. So <em>ser</em> and <em>ir</em> each hold three old Latin verbs, joined into one. Dictionaries do not fully agree about the infinitive <em>ser</em> itself; the chart below prints both answers.</p>
+    <p class="dek">Latin had one verb for “to be”: <em class="lat">esse</em>. Portuguese kept its present and its imperfect. The infinitive, the future and the past were all lost. An ordinary verb stepped into the gap: <em class="lat">sedēre</em>, “to sit”. A second ordinary verb, <em class="lat">stāre</em>, “to stand”, became a second word for “to be” — <em>estar</em>. The past came from somewhere else again. So <em>ser</em> and <em>ir</em> each hold three old Latin verbs, joined into one. Dictionaries do not fully agree about the infinitive <em>ser</em> itself; the chart below prints both answers.</p>
 
     <p class="term"><b>Suppletion</b> — the word for this. It means one verb is built from parts of several different older verbs. It is why <em>ser</em> and <em>ir</em> look irregular. They are not irregular. They are mixed.</p>
 
-    <p class="term"><b>The star <span class="mono-in">*</span></b> — a form with a star was never written down. Nobody found it in a Latin text. Experts worked it back from the modern words. <span class="mono-in">*h₁es-</span> is a root of Proto-Indo-European, the shared ancestor of Latin, English, German and Russian. <span class="mono-in">*essere</span> and <span class="mono-in">*stēvī</span> are later Latin forms nobody wrote down. Forms with no star are real Latin, printed in books we still have.</p>
+    <p class="term"><b>The star <span class="mono-in">*</span></b> — a form with a star was never written down. Nobody found it in a Latin text. Experts worked it back from the modern words. <span class="mono-in">*h₁es-</span> is a root of Proto-Indo-European, the shared ancestor of Latin, English, German and Russian. <span class="mono-in">*essere</span>, <span class="mono-in">*stēvī</span> and <span class="mono-in">*sedentāre</span> are later Latin forms nobody wrote down. Forms with no star are real Latin, printed in books we still have.</p>
 
     <div class="scope">
       <div class="scope-head">Who is on this page, and why. Three reasons, in this order.</div>
@@ -313,7 +320,7 @@
           <span class="v">ser <span class="lv a1">A1</span></span><span class="g">to be</span>
           <span class="why"><b>Mixed.</b> Built from three Latin verbs: <em class="lat">esse</em>, <em class="lat">sedēre</em> and <em class="lat">fuī</em>.</span>
         </div>
-        <div class="srow" style="--c:var(--vad)">
+        <div class="srow" style="--c:var(--ire)">
           <span class="v">ir <span class="lv a1">A1</span></span><span class="g">to go</span>
           <span class="why"><b>Mixed.</b> Built from three Latin verbs: <em class="lat">īre</em>, <em class="lat">vādere</em> and <em class="lat">fuī</em>. Its past tense is the same as the past tense of <em>ser</em> — both use <em>fui, foste, foi</em>. That shared past is why the two verbs are on one page.</span>
         </div>
@@ -322,7 +329,7 @@
           <span class="why"><b>Support, not mixed.</b> One Latin verb, <em class="lat">stāre</em>, in every tense but the past. It is here because you cannot use <em>ser</em> correctly without it.</span>
         </div>
         <div class="srow" style="--c:var(--ink-3)">
-          <span class="v">pôr · ter · vir · ver</span><span class="g">put · have · come · see</span>
+          <span class="v">pôr · ter · vir · ver <span class="lv a1">A1</span></span><span class="g">put · have · come · see</span>
           <span class="why"><b>Contrast.</b> These four are <em>not</em> mixed, and they are on the page to show what a short infinitive looks like when suppletion is <em>not</em> the reason. Their story is a lost letter, not a lost verb.</span>
         </div>
       </div>
@@ -340,6 +347,14 @@
       <span>Level of the three verbs:</span>
       <span><span class="lv a1">A1</span> ser · ir · estar</span>
       <span>— you cannot say one sentence without them. This is the highest-value page in the book.</span>
+    </p>
+
+    <p class="lvline">
+      <span>All 26 words on the page:</span>
+      <span><span class="lv a1">A1</span> 12</span>
+      <span><span class="lv a2">A2</span> 8</span>
+      <span><span class="lv b1">B1</span> 6</span>
+      <span>— 14 of them are in your deck, 12 are not. Tenses carry their own flags in the tables.</span>
     </p>
 
     <div class="levels">
@@ -443,7 +458,7 @@
       <div class="same">those endings are the short present of <em>haver</em>: hei · hás · há · hemos · hão</div>
 
       <div class="fbody">
-        <p><b>Why.</b> Latin had a future tense of its own — <em class="lat">erō</em> “I will be”, <em class="lat">ībō</em> “I will go”. Portuguese lost both. It built a new future out of the infinitive plus the present of <em>haver</em> “to have”. So <em>serei</em> is <em>ser</em> + <em>hei</em>, and <em>irei</em> is <em>ir</em> + <em>hei</em>. The whole of Romance did this.</p>
+        <p><b>Why.</b> Latin had a future tense of its own — <em class="lat">erō</em> “I will be”, <em class="lat">ībō</em> “I will go”. Portuguese lost both. It built a new future out of the infinitive plus the present of <em>haver</em> “to have”. So <em>serei</em> is <em>ser</em> + <em>hei</em>, and <em>irei</em> is <em>ir</em> + <em>hei</em>. Spanish, French and Italian all built their future the same way.</p>
 
         <p><b>Why <em>hemos</em> and not <em>havemos</em>.</b> The <em>nós</em> ending is <span class="mono-in">-emos</span>, not <span class="mono-in">-avemos</span>. The short form <em>hemos</em> is what got stuck on the infinitive. On its own today <em>haver</em> says <em>havemos</em>, so the ending and the living verb no longer match.</p>
 
@@ -460,7 +475,7 @@
           </div>
         </div>
 
-        <p class="rule"><b>Missing card.</b> <em>haver</em> is not in your deck, in any form. <em>há</em> “there is / there are” is one of the first hundred words of the language and it is the strongest candidate for a new card on this page.</p>
+        <p class="rule"><b>Missing card.</b> <em>haver</em> <span class="lv a1">A1</span> is not in your deck, in any form. <em>há</em> “there is / there are” is one of the first hundred words of the language and it is the strongest candidate for a new card on this page.</p>
       </div>
     </div>
   </div>
@@ -551,10 +566,10 @@
 <footer>
   <div class="wrap">
     <p>Source: <span class="mono-in">myanki2</span> — 724 cards, 720 distinct words. The verb cards are 185, covering 168 distinct verbs: 100 <span class="mono-in">-ar</span>, 43 <span class="mono-in">-er</span>, 24 <span class="mono-in">-ir</span>, and <em>pôr</em>. Origin layer 03.</p>
-    <p><strong>What the tags mean.</strong> A plain tag (<span class="cid">card 0159</span>, <span class="cid">in deck</span>) means the sentence is your card's own text, copied exactly. A dashed <span class="cid new">new</span> means the sentence was written for this page. A dotted <span class="cid nocard">no card</span> on a word means your deck does not contain that word at all. There are 11 of those: <em>presente</em>, <em>ausente</em>, <em>interesse</em>, <em>futuro</em>, <em>presidente</em>, <em>sessão</em>, <em>custar</em>, <em>estado</em>, <em>distância</em>, <em>instante</em> in the family tables, and <em>haver</em> in the future-tense box. They are counted on their own and never added into the verb counts or the 14 deck words. The strongest candidates for new cards are <em>haver</em> — its present form <em>há</em> “there is” is one of the first hundred words of the language — and <em>presente</em>, which is A1 in both its meanings, “present” and “gift”.</p>
-    <p><strong>Reconstructed forms.</strong> A star means the form was never written down and was worked back from later languages: <span class="mono-in">*h₁es-</span>, <span class="mono-in">*bʰuH-</span>, <span class="mono-in">*sed-</span>, <span class="mono-in">*h₁ey-</span>, <span class="mono-in">*weh₂dʰ-</span> and <span class="mono-in">*steh₂-</span> are Proto-Indo-European roots; <span class="mono-in">*essere</span> and <span class="mono-in">*stēvī</span> are unwritten later Latin. Everything without a star is attested Latin. Where two sources give different parents for the same word, the row carries a dashed <em>sources disagree</em> mark and both readings are printed, together with a line saying which part is argued about. Exactly two rows carry it: the infinitive <em>ser</em>, where the form is settled and the parent verb is not, and the past <em>estive</em>, where the forms are settled and the source of the stem is not. The <em>ser</em> dispute passes down to <em>serei</em> and <em>sido</em>, which are built on the infinitive; the notes say so. A grey label with no outline, such as <em>vamos: see below</em>, is only a pointer to a note and is not a dispute.</p>
+    <p><strong>What the tags mean.</strong> A plain tag (<span class="cid">card 0159</span>, <span class="cid">in deck</span>) means the sentence is a deck card's own text, copied exactly. A dashed <span class="cid new">new</span> means the sentence was written for this page. A dotted <span class="cid nocard">no card</span> on a word means your deck does not contain that word at all. There are 12 of those: <em>presente</em>, <em>ausente</em>, <em>interesse</em>, <em>futuro</em>, <em>sentar-se</em>, <em>presidente</em>, <em>sessão</em>, <em>custar</em>, <em>estado</em>, <em>distância</em>, <em>instante</em> in the family tables, and <em>haver</em> in the future-tense box. They are counted on their own and never added into the verb counts or the 14 deck words. The strongest candidates for new cards are <em>haver</em> — its present form <em>há</em> “there is” is one of the first hundred words of the language — <em>sentar-se</em>, which is the plain everyday verb for the meaning this whole page is built on, and <em>presente</em>, which is A1 in both its meanings, “present” and “gift”.</p>
+    <p><strong>Reconstructed forms.</strong> A star means the form was never written down and was worked back from later languages: <span class="mono-in">*h₁es-</span>, <span class="mono-in">*bʰuH-</span>, <span class="mono-in">*sed-</span>, <span class="mono-in">*h₁ey-</span>, <span class="mono-in">*weh₂dʰ-</span> and <span class="mono-in">*steh₂-</span> are Proto-Indo-European roots; <span class="mono-in">*essere</span>, <span class="mono-in">*stēvī</span> and <span class="mono-in">*sedentāre</span> are unwritten later Latin. Everything without a star is attested Latin. Where two sources give different parents for the same word, the mark is a dashed <em>sources disagree</em> outline, both readings are printed, and a line says which part is argued about. It appears on the hero and on exactly two rows: the infinitive <em>ser</em>, where the form is settled and the parent verb is not, and the past <em>estive</em>, where the forms are settled and the source of the stem is not. The <em>ser</em> dispute passes down to <em>serei</em> and <em>sido</em>, which are built on the infinitive; the notes say so. A grey label with no outline, such as <em>vamos: see below</em>, is only a pointer to a note and is not a dispute.</p>
     <p><strong>About the level flags.</strong> <span class="lv a1">A1</span> <span class="lv a2">A2</span> <span class="lv b1">B1</span> <span class="lv b2">B2</span> <span class="lv c1">C1</span> are CEFR levels. Your deck stores no level for nouns, adjectives or phrases. It does mark 145 verb cards <em>(A1)</em>, but that is the level of the course book they were taken from, not a judgement about each word — it covers <em>mergulhar</em> “to dive” as readily as <em>falar</em>. So the flags here are still an estimate, and a few of them sit above that mark on purpose. For words they follow how common the word is in everyday European Portuguese. For tenses they follow the normal order of an A1–B1 course: present first, then <em>imperfeito</em> and <em>pretérito</em>, then <em>futuro</em>. Treat them as a reading order, not as a rule.</p>
-    <p><strong>The colours.</strong> They mean something different on each layer. Here each colour is one Latin verb, and only that verb: <span style="color:var(--es)">■</span> <em class="lat">esse</em>, <span style="color:var(--fu)">■</span> <em class="lat">fuī</em>, <span style="color:var(--sed)">■</span> <em class="lat">sedēre</em>, <span style="color:var(--ire)">■</span> <em class="lat">īre</em>, <span style="color:var(--vad)">■</span> <em class="lat">vādere</em>, <span style="color:var(--sta)">■</span> <em class="lat">stāre</em>. Nothing else on the page is coloured — the four short-infinitive verbs (<em>pôr, ter, vir, ver</em>) come from none of the six, so they are printed in plain ink with the lost letter double-underlined instead. Every coloured row also names its Latin verb in words, so the page works in black and white. One exception, on purpose: in the family tables at the end the colour marks the <em>root</em>, not the single verb, because that is what those tables are grouped by. Any word that reached Portuguese by a different verb — <em>cadeira</em>, <em>existir</em>, <em>assistir a</em>, <em>restaurante</em> — sits in its own labelled block with its real source printed beside it.</p>
+    <p><strong>The colours.</strong> They mean something different on each layer. Here each colour is one Latin verb, and only that verb: <span style="color:var(--es)">■</span> <em class="lat">esse</em>, <span style="color:var(--fu)">■</span> <em class="lat">fuī</em>, <span style="color:var(--sed)">■</span> <em class="lat">sedēre</em>, <span style="color:var(--ire)">■</span> <em class="lat">īre</em>, <span style="color:var(--vad)">■</span> <em class="lat">vādere</em>, <span style="color:var(--sta)">■</span> <em class="lat">stāre</em>. Nothing else on the page is coloured — the four short-infinitive verbs (<em>pôr, ter, vir, ver</em>) come from none of the six, so they are printed in plain ink with the lost letter double-underlined instead. One table inside a coloured verb is plain ink too: the past of <em>estar</em>, because the parent of <em>estive</em> is disputed and a colour there would settle an argument the page says is open. Every coloured row also names its Latin verb in words, so the page works in black and white. One exception, on purpose: in the family tables at the end the colour marks the <em>root</em>, not the single verb, because that is what those tables are grouped by. Any word that reached Portuguese by a different verb — <em>cadeira</em>, <em>existir</em>, <em>assistir a</em>, <em>restaurante</em> — sits in its own labelled block with its real source printed beside it.</p>
     <p>The tables are European Portuguese. The second person plural (<em>sois, ides, estais</em>) is left out of every table because EP does not use it. It appears only in running text, where the history needs it: the old <em>ides</em> is one of the last traces of <em class="lat">īre</em> in the present tense.</p>
   </div>
 </footer>
@@ -713,10 +728,10 @@
         ]},
         { v: "estar", t: "imperfeito", lvl: "A2", s: "sta", forms: ["estava", "estavas", "estava", "estávamos", "estavam"],
           foot: ["Eu <b>estava</b> cansado.", "I was tired.", "new", 1] },
-        { v: "estar", t: "pretérito", lvl: "A2", s: "sta", from: "*stēvī / tive", dis: "sources disagree",
+        { v: "estar", t: "pretérito", lvl: "A2", s: "sta", plain: 1, from: "*stēvī / tive", dis: "sources disagree",
           forms: ["estive", "estiveste", "esteve", "estivemos", "estiveram"],
           foot: ["Eu <b>estive</b> em casa.", "I was at home.", "new", 1],
-          note: "The one place <em>estar</em> is not clean. Latin <em class='lat'>stāre</em> had the past <em class='lat'>stetī</em>, and it did not survive. What replaced it is disputed — the <em>forms</em> are not. Wiktionary puts the <span class='mono-in'>estiv·</span> stem on a later Latin <em class='lat'>*stēvī</em>, a form nobody wrote down. Others say the stem was copied from <em>tive</em>, the past of <em>ter</em>, along with the other strong pasts. Line them up and the copy is hard to miss: <em>tive · tiveste · teve</em> beside <em>estive · estiveste · esteve</em>. So the argument is about where the stem came from, not about how the verb is spoken today." }
+          note: "This table is printed in plain ink, not in the <em class='lat'>stāre</em> colour, because nobody can say for certain that <em class='lat'>stāre</em> gave it. Latin <em class='lat'>stāre</em> had the past <em class='lat'>stetī</em>, and it did not survive. What replaced it is disputed — the <em>forms</em> are not. Wiktionary puts the <span class='mono-in'>estiv·</span> stem on a later Latin <em class='lat'>*stēvī</em>, a form nobody wrote down. Others say the stem was copied from <em>tive</em>, the past of <em>ter</em>, along with the other strong pasts. Line them up and the copy is hard to miss: <em>tive · tiveste · teve</em> beside <em>estive · estiveste · esteve</em>. So the argument is about where the stem came from, not about how the verb is spoken today." }
       ]
     };
 
@@ -726,8 +741,10 @@
         const s = SRC[t.s];
         const card = document.createElement("div");
         card.className = "conj";
-        card.style.setProperty("--c", "var(--" + s.c + ")");
-        card.style.setProperty("--w", "var(--" + s.c + "-wash)");
+        /* a tense whose source is genuinely unsettled gets no role colour, so the
+           colour can never claim a parent the page says is in doubt. */
+        card.style.setProperty("--c", t.plain ? "var(--ink-3)" : "var(--" + s.c + ")");
+        card.style.setProperty("--w", t.plain ? "var(--paper-2)" : "var(--" + s.c + "-wash)");
 
         let html = '<div class="conj-head"><b>' + t.v + '</b><span class="tense">' + t.t +
                    "</span>" + lv(t.lvl) +
@@ -831,9 +848,11 @@
       ]},
 
       { c: "sed", g: "sit", root: "*sed- · sedēre", blocks: [
-        { head: "From sedēre itself", sub: "the verb, prae + the verb, and the participle sessum", rows: [
+        { head: "From sedēre itself", sub: "the verb, prae + the verb, and both participles", rows: [
           ["ser", "to be", "sedēre", "“to sit”",
-            ["Eu <b>sou</b> estudante.", "I am a student.", "card 0159", 0], "A1", 0],
+            ["Eu devo <b>ser</b> responsável.", "I must be responsible.", "in deck", 0], "A1", 0],
+          ["sentar-se", "to sit down", "*sedentāre", "from sedentem, “sitting”",
+            ["Eu <b>sento-me</b> na cadeira.", "I sit down on the chair.", "new", 1], "A2", 1],
           ["presidente", "president", "praesidentem", "“sitting in front”",
             ["O <b>presidente</b> fala hoje.", "The president speaks today.", "new", 1], "A2", 1],
           ["sessão", "session, showing", "sessiōnem", "“a sitting”",
@@ -878,7 +897,7 @@
     ];
     const FNOTE = {
       es: "<b>Portuguese kept <em class='lat'>esse</em> as a noun.</b> The verb <em>ser</em> may or may not carry the infinitive <em class='lat'>esse</em> — that is the argument in the main chart. But one Portuguese noun is that infinitive, whole and unchanged: <em>interesse</em> is Latin <em class='lat'>interesse</em>, “to be between, to matter”. Portuguese took it from law books, where it named what a case was worth to you. So the form Latin lost from the verb is still on the page, spelled the same, doing a different job.",
-      sed: "<b>The first row is the disputed one.</b> <em>ser</em> is filed here under the Priberam reading, <em class='lat'>sedēre</em>. Wiktionary builds it on <em class='lat'>*essere</em> instead, and the main chart prints both. <em>presidente</em> and <em>sessão</em> are not in doubt.<br><br><b>Why cadeira is in its own block.</b> The root is the same, but the road is not. Greek made <em class='lat'>kathédra</em> “seat” from <em class='lat'>hedra</em>, Latin borrowed it as <em class='lat'>cathedra</em>, and Portuguese wore that down to <em>cadeira</em>. It never passed through the verb <em class='lat'>sedēre</em>. English took the same Latin word twice: <em>cathedral</em> and <em>chair</em>.",
+      sed: "<b>The first row is the disputed one.</b> <em>ser</em> is filed here under the Priberam reading, <em class='lat'>sedēre</em>. Wiktionary builds it on <em class='lat'>*essere</em> instead, and the main chart prints both. <em>sentar-se</em>, <em>presidente</em> and <em>sessão</em> are not in doubt.<br><br><b>Why the <em>ser</em> row borrows a sentence.</b> The deck's own <em>ser</em> card says <em>Eu sou estudante</em>, and <em>sou</em> is <em class='lat'>esse</em>, not <em class='lat'>sedēre</em>. Printing it here would colour an <em class='lat'>esse</em> form green. The sentence used instead is the deck's <em>dever</em> card, which carries the infinitive itself.<br><br><b>Why cadeira is in its own block.</b> The root is the same, but the road is not. Greek made <em class='lat'>kathédra</em> “seat” from <em class='lat'>hedra</em>, Latin borrowed it as <em class='lat'>cathedra</em>, and Portuguese wore that down to <em>cadeira</em>. It never passed through the verb <em class='lat'>sedēre</em>. English took the same Latin word twice: <em>cathedral</em> and <em>chair</em>.",
       sta: "<b>Why the last block is separate.</b> <em class='lat'>sistere</em> is not <em class='lat'>stāre</em>: Latin made it by doubling the front of the same root, and it means “to make stand, to stop”. So <em>existir</em> and <em>assistir</em> are cousins of <em>estar</em>, not children of it. <em>restaurante</em> is further out again — Portuguese took it from French <em>restaurant</em> in the 1800s, French built it on <em class='lat'>restaurāre</em>, and <em class='lat'>restaurāre</em> is built on <em class='lat'>-staurāre</em>, an old word for setting a post upright. Same root, different verb, and a French detour on top. It does not mean “makes you stand again”."
     };
     const host = document.getElementById("fams");

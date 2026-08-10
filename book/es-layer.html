@@ -3,7 +3,7 @@
 <style>
   :root {
     --paper: #F2F3EF; --paper-2: #E9EBE5;
-    --ink: #141A20; --ink-2: #4E5A66; --ink-3: #5F6A75;
+    --ink: #141A20; --ink-2: #4E5A66; --ink-3: #5A656F;
     --rule: #D3D7CE; --rule-soft: #E0E3DB;
 
     --pro: #1F5FBF; --pre: #A6501C; --alr: #0A744E; --unk: #9E3A90;
@@ -17,7 +17,7 @@
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       --paper: #12151A; --paper-2: #191D24;
-      --ink: #E6E9E4; --ink-2: #9AA5AF; --ink-3: #7C8690;
+      --ink: #E6E9E4; --ink-2: #9AA5AF; --ink-3: #858F99;
       --rule: #272D35; --rule-soft: #1F242B;
       --pro: #4E8BE0; --pre: #D0783C; --alr: #0FA06B; --unk: #C95CAB;
       --pro-wash: #4E8BE01f; --pre-wash: #D0783C1f; --alr-wash: #0FA06B1f; --unk-wash: #C95CAB1f;
@@ -25,14 +25,14 @@
   }
   :root[data-theme="dark"] {
     --paper: #12151A; --paper-2: #191D24;
-    --ink: #E6E9E4; --ink-2: #9AA5AF; --ink-3: #7C8690;
+    --ink: #E6E9E4; --ink-2: #9AA5AF; --ink-3: #858F99;
     --rule: #272D35; --rule-soft: #1F242B;
     --pro: #4E8BE0; --pre: #D0783C; --alr: #0FA06B; --unk: #C95CAB;
     --pro-wash: #4E8BE01f; --pre-wash: #D0783C1f; --alr-wash: #0FA06B1f; --unk-wash: #C95CAB1f;
   }
   :root[data-theme="light"] {
     --paper: #F2F3EF; --paper-2: #E9EBE5;
-    --ink: #141A20; --ink-2: #4E5A66; --ink-3: #5F6A75;
+    --ink: #141A20; --ink-2: #4E5A66; --ink-3: #5A656F;
     --rule: #D3D7CE; --rule-soft: #E0E3DB;
     --pro: #1F5FBF; --pre: #A6501C; --alr: #0A744E; --unk: #9E3A90;
     --pro-wash: #1F5FBF14; --pre-wash: #A6501C14; --alr-wash: #0A744E14; --unk-wash: #9E3A9014;
@@ -667,7 +667,7 @@
       ex: ["O inverno é a <b>estação do ano</b> mais fria.", "Winter is the coldest season.", "card 0646", true] },
     { pt: "estante", gl: "bookcase", g: "f", lvl: "A2", src: "stantem", note: "st·, from stāre",
       ex: ["Eu limpo a <b>estante</b>.", "I clean the bookcase.", "card 0379"] },
-    { pt: "estacionar", gl: "to park", lvl: "A2", src: "statiōnem", note: "st·, from estação",
+    { pt: "estacionar", gl: "to park", lvl: "A2", src: "estação + ·ar", note: "made in Portuguese",
       ex: ["Eu <b>estaciono</b> o carro na rua.", "I park the car on the street.", "card 0077"] },
     { pt: "espetáculo", gl: "show", g: "m", lvl: "B1", src: "spectāculum", note: "sp·",
       ex: ["Eu vejo o <b>espetáculo</b>.", "I see the show.", "card 0290"] },
@@ -769,8 +769,10 @@
       ex: ["Eu <b>sei</b> tudo sobre história.", "I know everything about history.", "card 0153"] },
     { pt: "sair", gl: "to leave", lvl: "A1", src: "salīre", note: "s + vowel",
       ex: ["Eu <b>saio</b> de casa às oito.", "I leave home at eight.", "card 0154"] },
-    { pt: "ser", gl: "to be", lvl: "A1", src: "sedēre", note: "s + vowel",
-      ex: ["Eu <b>sou</b> estudante.", "I am a student.", "card 0159"] },
+    { pt: "ser", gl: "to be", lvl: "A1", src: "sedēre or *essere", note: "s + vowel",
+      ex: ["Eu <b>sou</b> estudante.", "I am a student.", "card 0159"],
+      mark: "Sources disagree",
+      flag: "Which Latin verb the infinitive comes from is contested, not how it sounds: Priberam builds it on sedēre “to sit”, Wiktionary on *essere, a spoken reworking of esse “to be”. Either way it begins with s and a vowel, so it never grew an e — which is all this page claims. Layer 03 follows the same split and shows what each root gave." },
     { pt: "subir", gl: "to go up", lvl: "A1", src: "subīre", note: "s + vowel",
       ex: ["Eu <b>subo</b> as escadas.", "I go up the stairs.", "card 0165"] },
     { pt: "sonho", gl: "dream", g: "m", lvl: "A2", src: "somnium", note: "s + vowel",

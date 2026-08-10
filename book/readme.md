@@ -86,10 +86,19 @@ protanopia. Current values, all ≥4.5:1 on both surfaces in both themes and
 | orange | `#A6501C` | `#D0783C` |
 | purple | `#9E3A90` | `#C95CAB` |
 
-**`--ink-3` was raised in 2026-08 too.** It carries every English gloss under
-every Portuguese sentence, at 12px, and it sat at 3.28:1 — below AA for small
-text. Now `#5F6A75` light (4.95 / 4.59), `#7C8690` dark (4.94 / 4.56) and
-`#616B75` in print (5.43 / 4.66). All five pages share it.
+**`--ink-3` was raised twice in 2026-08.** It carries every English gloss under
+every Portuguese sentence, at 12px, and it started at 3.28:1 — below AA for small
+text. The first fix took it to `#5F6A75` light and `#7C8690` dark, measured
+against `--paper` and `--paper-2`.
+
+That was not enough. A review pass on layer 03 measured it against a **role
+wash** — the tinted background a table header sits on — and got **4.40:1 light,
+4.14:1 dark**. The washes had never been in the test set, and `--ink-3` carries
+the tense labels, the `·` separators and the disputed marks. Now `#5A656F` light,
+`#858F99` dark, `#616B75` print, on all seven pages.
+
+The lesson generalises: measure a colour against every surface it actually lands
+on, not just the two named paper tokens.
 
 Layer 03 carries a fifth role (`--fu`, crimson `#B03A5B` / `#D14E72`) that has
 **not** been validated against the other four. Check it before relying on it.
