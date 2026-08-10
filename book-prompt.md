@@ -177,9 +177,9 @@ The reader is spending their effort on Portuguese. English must cost nothing.
 
 ---
 
-## Five review passes, run one after another
+## Three review passes, run one after another
 
-A finished draft is not a finished layer. Every layer goes through **five review
+A finished draft is not a finished layer. Every layer goes through **three review
 passes, strictly sequentially** — each reads the file as it stands after the
 previous one, and edits it in place. Never run two at once: they edit the same
 file, and a reviewer that cannot see the previous fix will undo it.
@@ -192,9 +192,24 @@ bucket and report it as correct, and a prose reviewer told to leave facts alone
 will smooth the wording of a false claim. Every pass checks **everything** and
 fixes **everything** it finds.
 
-Five identical passes are not waste. Each one starts from a cleaner file and
+Identical repeated passes are not waste. Each one starts from a cleaner file and
 finds what the previous one was too busy to see. The list below is what every
 pass runs through, top to bottom.
+
+**On the count: this was five until 2026-08, and the author cut it to three.**
+Record what that costs, because the evidence is unambiguous. Layers 01–07 ran
+five, and the fourth and fifth passes were not mopping up — they were the passes
+that found fabricated etymology. Pass 4 on layer 02 killed five invented roads
+in one sitting (`guardião`, `televisão`, `avião`, `alemão`, `verão`), all of
+which passes 1–3 had read past. Pass 5 on layer 01 found three sentences
+attributed to cards that carry no sentence. Pass 5 on layer 04 found `melhor` —
+the commonest `lh` word in the language — missing from deck and page alike.
+
+Three passes will miss things of that kind. Two partial compensations: the
+checklist now leads with etymology instead of burying it under the counts, and
+`book/deck-digest.txt` removes the deck-parsing work that used to eat a pass's
+attention. Neither is a substitute. If a page matters more than the rest — a
+capstone, or one with a lot of new claims — run five on that page and say so.
 
 **The Portuguese itself — check this first, every time.** The reader is learning
 this language from these pages. A wrong sentence here teaches a mistake, and no

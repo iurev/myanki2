@@ -4,8 +4,9 @@ Origin layers of the deck, as standalone HTML pages. Each page is self-contained
 (no external CSS, JS, fonts or images) and is meant to be printed to PDF.
 
 Written to the rules in `../artifact-rules.md`. How a layer is *chosen* — which
-sound law, which words qualify, what evidence to print, and the five review
-passes every layer goes through — is in `../book-prompt.md`.
+sound law, which words qualify, what evidence to print, and the review passes
+every layer goes through — is in `../book-prompt.md`. Layers 01–07 each had five
+identical passes; from 2026-08 the standard is three.
 
 ## Pages
 
