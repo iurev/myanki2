@@ -19,16 +19,16 @@
       --paper: #12151A; --paper-2: #191D24;
       --ink: #E6E9E4; --ink-2: #9AA5AF; --ink-3: #858F99;
       --rule: #272D35; --rule-soft: #1F242B;
-      --anc: #4E8BE0; --neo: #0FA06B; --spo: #D0783C; --not: #C95CAB;
-      --anc-wash: #4E8BE01f; --neo-wash: #0FA06B1f; --spo-wash: #D0783C1f; --not-wash: #C95CAB1f;
+      --anc: #4E8BE0; --neo: #0FA06B; --spo: #D0783C; --not: #D06CB4;
+      --anc-wash: #4E8BE01f; --neo-wash: #0FA06B1f; --spo-wash: #D0783C1f; --not-wash: #D06CB41f;
     }
   }
   :root[data-theme="dark"] {
     --paper: #12151A; --paper-2: #191D24;
     --ink: #E6E9E4; --ink-2: #9AA5AF; --ink-3: #858F99;
     --rule: #272D35; --rule-soft: #1F242B;
-    --anc: #4E8BE0; --neo: #0FA06B; --spo: #D0783C; --not: #C95CAB;
-    --anc-wash: #4E8BE01f; --neo-wash: #0FA06B1f; --spo-wash: #D0783C1f; --not-wash: #C95CAB1f;
+    --anc: #4E8BE0; --neo: #0FA06B; --spo: #D0783C; --not: #D06CB4;
+    --anc-wash: #4E8BE01f; --neo-wash: #0FA06B1f; --spo-wash: #D0783C1f; --not-wash: #D06CB41f;
   }
   :root[data-theme="light"] {
     --paper: #F2F3EF; --paper-2: #E9EBE5;
@@ -167,10 +167,12 @@
   table.mx td .out { display: block; font-family: var(--mono); font-size: 9.5px; letter-spacing: .05em; color: var(--ink-3); font-weight: 400; font-style: normal; }
 
   .gen { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(238px, 100%), 1fr)); gap: 1px; background: var(--rule-soft); border: 1px solid var(--rule-soft); }
-  .gcard { background: var(--paper); padding: 16px; display: flex; flex-direction: column; gap: 7px; break-inside: avoid; border-top: 3px solid var(--anc); }
-  .gcard .w { font-family: var(--serif); font-size: clamp(20px, 2.8vw, 24px); color: var(--anc); }
+  .gcard { background: var(--paper); padding: 16px; display: flex; flex-direction: column; gap: 7px; break-inside: avoid; border-top: 3px solid var(--c, var(--anc)); }
+  .gcard .w { font-family: var(--serif); font-size: clamp(20px, 2.8vw, 24px); color: var(--c, var(--anc)); display: flex; align-items: baseline; gap: 7px; flex-wrap: wrap; }
   .gcard .art { font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+  .gcard .road { font-size: 11.5px; color: var(--ink-2); }
   .gcard .why { font-size: 12.5px; color: var(--ink-2); }
+  .gcard .ex .p b { color: var(--c, var(--anc)); }
 
   .checks { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 14px; }
   .chk { border: 1px solid var(--rule-soft); border-left: 3px solid var(--ink-3); padding: 12px 14px; display: flex; flex-direction: column; gap: 5px; break-inside: avoid; }
@@ -205,7 +207,7 @@
 
 <header>
   <div class="wrap">
-    <div class="eyebrow">Origin layer 09 · European Portuguese · 24 cards · 12 words with no card</div>
+    <div class="eyebrow">Origin layer 09 · European Portuguese · 27 cards · 12 words with no card</div>
 
     <div class="rulecard">
       <span class="rule-from"><span>ph</span><span>th</span><span>ch</span><span>y</span></span>
@@ -235,18 +237,18 @@
     </div>
 
     <div class="stats">
-      <div class="stat"><b>24</b><span>cards from greek</span></div>
-      <div class="stat"><b style="color:var(--anc)">14</b><span>came with latin</span></div>
-      <div class="stat"><b style="color:var(--neo)">7</b><span>modern arrivals</span></div>
-      <div class="stat"><b style="color:var(--spo)">3</b><span>came through speech</span></div>
+      <div class="stat"><b>27</b><span>cards from greek</span></div>
+      <div class="stat"><b style="color:var(--anc)">15</b><span>came with latin</span></div>
+      <div class="stat"><b style="color:var(--neo)">8</b><span>modern arrivals</span></div>
+      <div class="stat"><b style="color:var(--spo)">4</b><span>came through speech</span></div>
       <div class="stat"><b>12</b><span>words with no card</span></div>
     </div>
 
     <div class="lvline">
-      <span>Level of the 24 cards:</span>
+      <span>Level of the 27 cards:</span>
       <span><span class="lv a1">A1</span> 8</span>
-      <span><span class="lv a2">A2</span> 7</span>
-      <span><span class="lv b1">B1</span> 9</span>
+      <span><span class="lv a2">A2</span> 9</span>
+      <span><span class="lv b1">B1</span> 10</span>
       <span>— the B1 group is the abstract-noun set, which is the part that pays off in reading.</span>
     </div>
 
@@ -265,23 +267,23 @@
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">What is on this page</div>
-      <h2>Twenty-four cards go back to Greek. They took three different roads, and three more only look as if they did.</h2>
-      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— 24 cards (8 A1, 7 A2, 9 B1) and 12 words with no card. Read the scope block before the tables.</span></p>
+      <h2>Twenty-seven cards go back to Greek. They took three different roads, and three more only look as if they did.</h2>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— 27 cards (8 A1, 9 A2, 10 B1) and 12 words with no card. Read the scope block before the tables.</span></p>
     </div>
 
     <div class="scope">
       <div class="scope-head">The same Greek origin, reached three different ways.</div>
       <div class="srow" style="--c:var(--anc)">
-        <span class="v">Came with Latin</span><span class="n">14 cards<br />+ 8 no card</span>
+        <span class="v">Came with Latin</span><span class="n">15 cards<br />+ 7 no card</span>
         <span class="why">Real Greek words that Latin writers borrowed and respelled, and that Portuguese later took from Latin books. These carry the spelling fingerprints and are the subject of the page.</span>
       </div>
       <div class="srow" style="--c:var(--neo)">
-        <span class="v">Modern arrivals</span><span class="n">7 cards<br />+ 2 no card</span>
-        <span class="why">Words whose life in Portuguese began in the last two hundred years. Most were assembled out of Greek pieces by scientists — nobody in Athens said <em>fotografia</em> or <em>telefone</em>. A few were real Greek words that were given a new job: <em class="gk">πρόγραμμα</em> (prógramma) existed, but a television programme did not.</span>
+        <span class="v">Modern arrivals</span><span class="n">8 cards<br />+ 2 no card</span>
+        <span class="why">Words that entered Portuguese in the last two hundred years, or that entered it much earlier and only took their present meaning then. Most were assembled out of Greek pieces by scientists — nobody in Athens said <em>fotografia</em> or <em>telefone</em>. Others are real Greek words given a new job: <em class="gk">πρόγραμμα</em> (prógramma) existed, but a television programme did not.</span>
       </div>
       <div class="srow" style="--c:var(--spo)">
-        <span class="v">Came through speech</span><span class="n">3 cards<br />+ 2 no card</span>
-        <span class="why">A short list of Greek words that ordinary Latin speakers used, not just writers. They wore down like any spoken word, and <em>igreja</em> wore down furthest of all.</span>
+        <span class="v">Came through speech</span><span class="n">4 cards<br />+ 3 no card</span>
+        <span class="why">A short list of Greek words that ordinary Latin speakers used, not just writers. They wore down like any spoken word — <em>pedra</em> voiced its t to d, <em>estômago</em> voiced its c to g — and <em>igreja</em> wore down furthest of all. <em>escola</em> is the half-case, and its row says why.</span>
       </div>
       <div class="srow" style="--c:var(--not)">
         <span class="v">Only look Greek</span><span class="n">3 cards</span>
@@ -315,7 +317,7 @@
       <h2>Four spellings that give a Greek word away</h2>
       <p class="dek">Latin needed two letters for three Greek sounds, and borrowed one Greek letter outright. Portuguese kept none of it. When you see <span class="mono-in">f</span> where English writes <span class="mono-in">ph</span>, or <span class="mono-in">t</span> where English writes <span class="mono-in">th</span>, you are looking at a Greek word that English respelled less than Portuguese did.</p>
       <p class="dek">The chart shows the three main ones. A fourth is rarer and gets its own small table below: Greek <em class="gk">χ</em> was written <span class="mono-in">ch</span> in Latin, and Portuguese writes it <span class="mono-in">c</span> — <em class="lat">charta</em> to <em>carta</em>.</p>
-      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— covers all 14 cards that came with Latin, the 3 that came through speech, and the 10 words with no card beside them.</span></p>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— covers all 15 cards that came with Latin, the 4 that came through speech, and the 10 words with no card beside them.</span></p>
     </div>
 
     <p class="term"><b>Fingerprint</b> — a letter in the Portuguese word that only got there because the word passed through Greek and then through Latin spelling. There are four on this page: <span class="mono-in">f</span> for <span class="mono-in">ph</span>, <span class="mono-in">t</span> for <span class="mono-in">th</span>, <span class="mono-in">c</span> for <span class="mono-in">ch</span>, and <span class="mono-in">i</span> for <span class="mono-in">y</span>. A fingerprint is good evidence and never proof: plenty of Portuguese words have an <span class="mono-in">f</span> or a <span class="mono-in">t</span> for ordinary Latin reasons.</p>
@@ -326,17 +328,17 @@
           <g id="fp"></g>
         </svg>
       </div>
-      <figcaption>The middle row is what Latin writers wrote. Portuguese simplified each one: it dropped the <span class="mono-in">h</span> from <span class="mono-in">ph</span> and <span class="mono-in">th</span>, changed the <span class="mono-in">p</span> to <span class="mono-in">f</span>, and replaced the borrowed letter <span class="mono-in">y</span> with <span class="mono-in">i</span>. English kept the Latin spelling, which is why the English word usually looks older than the Portuguese one.</figcaption>
+      <figcaption>The middle row is what Latin writers wrote. Portuguese simplified each one, and each one differently. For <span class="mono-in">ph</span> it writes <span class="mono-in">f</span>, the letter for the sound the Greek φ had come to have. For <span class="mono-in">th</span> it drops the <span class="mono-in">h</span> and keeps the <span class="mono-in">t</span>. For the borrowed letter <span class="mono-in">y</span> it writes <span class="mono-in">i</span>. The fourth change, <span class="mono-in">ch</span> to <span class="mono-in">c</span>, is in its own table below. English kept the Latin spelling, which is why the English word usually looks older than the Portuguese one.</figcaption>
     </figure>
 
     <div class="legend">
-      <span class="lg"><span class="sw" style="background:var(--anc)"></span>came with Latin — 14 cards, 8 words with no card</span>
-      <span class="lg"><span class="sw" style="background:var(--neo)"></span>modern arrival — 7 cards, 2 words with no card</span>
-      <span class="lg"><span class="sw" style="background:var(--spo)"></span>came through speech — 3 cards, 2 words with no card</span>
+      <span class="lg"><span class="sw" style="background:var(--anc)"></span>came with Latin — 15 cards, 7 words with no card</span>
+      <span class="lg"><span class="sw" style="background:var(--neo)"></span>modern arrival — 8 cards, 2 words with no card</span>
+      <span class="lg"><span class="sw" style="background:var(--spo)"></span>came through speech — 4 cards, 3 words with no card</span>
       <span class="lg"><span class="sw" style="background:var(--not)"></span>only looks Greek — 3 cards, in none of the counts</span>
     </div>
 
-    <h3 class="grp">The words, one table per fingerprint</h3>
+    <h3 class="grp">The words, grouped by fingerprint and then by road</h3>
     <div class="tabs2" id="sorter"></div>
   </div>
 </section>
@@ -347,8 +349,8 @@
     <div class="sec-head">
       <div class="eyebrow">The fork</div>
       <h2>An old Greek word and a modern one look exactly alike</h2>
-      <p class="dek">Every table here is built from Greek. Only the first one is a Greek word doing its old job. The rest are modern, and they are modern in two different ways: some of the words did not exist until the nineteenth century, and some existed in Greek but were given a new meaning. The spelling gives you no way to tell, so the page tells you.</p>
-      <p class="lvline"><span>Topic level</span><span class="lv a2">A2</span><span>— 7 modern cards and 2 words with no card. Five of the cards are A1 or A2, so you meet the modern ones first.</span></p>
+      <p class="dek">Every table here is built from Greek. Only the first table holds words still doing their old Greek job. The rest are modern, and they are modern in two different ways. Some of the words did not exist at all until a few hundred years ago. Some existed in Greek and were later given a new meaning. The spelling gives you no way to tell them apart, so the page tells you.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a2">A2</span><span>— 8 modern cards and 2 words with no card. Six of the cards are A1 or A2, so you meet the modern ones first.</span></p>
     </div>
     <div class="tabs2" id="fork"></div>
   </div>
@@ -366,15 +368,17 @@
 
     <div class="gen" id="ma"></div>
 
+    <p class="dek">Each card above is coloured by the road that word took, in the same colours the rest of the page uses, and the road is written out under the word as well. These six took two of the three roads, and the rule holds on both: <em>problema</em> came with Latin, <em>clima</em> is a modern arrival, and both are masculine.</p>
+
     <p class="term"><b>Neuter</b> — a third gender, beside masculine and feminine. Latin and Greek had it; Portuguese does not. When Portuguese dropped it, neuter nouns had to go somewhere, and these went to the masculine.</p>
 
     <p class="dek">The rule is worth stating in reverse too, because that is how you will use it: <strong>if a word ends in <span class="mono-in">-ma</span> and names something abstract or technical, say <em>o</em>, not <em>a</em>.</strong> The everyday feminine words in <span class="mono-in">-ma</span> — <em>cama</em>, <em>forma</em>, <em>lama</em> — are plain Latin words. Priberam gives late Latin <em class="lat">cama</em>, Latin <em class="lat">forma</em> and Latin <em class="lat">lama</em>, and none of them comes from a Greek neuter in <span class="mono-in">-μα</span>.</p>
 
     <div class="scope">
       <div class="scope-head">The minimal pair: two A1 cards, both ending in <span class="mono-in">-ma</span>, opposite genders</div>
-      <div class="srow" style="--c:var(--anc)">
+      <div class="srow" style="--c:var(--neo)">
         <span class="v">o cinema</span><span class="n">card 0283<br />masculine</span>
-        <span class="why">Greek <em class="gk">κίνημα</em>, a neuter noun. <em>Eu vejo <strong>o</strong> cinema.</em> — I see the cinema.</span>
+        <span class="why">Greek <em class="gk">κίνημα</em> (kínēma), a neuter noun, through French. Green, because it is a modern arrival. <em>Eu vejo <strong>o</strong> cinema.</em> — I see the cinema.</span>
       </div>
       <div class="srow" style="--c:var(--not)">
         <span class="v">a cama</span><span class="n">card 0368<br />feminine</span>
@@ -392,8 +396,8 @@
     <div class="sec-head">
       <div class="eyebrow">Compare</div>
       <h2>English kept the Latin spelling, Portuguese did not</h2>
-      <p class="dek">This is the most useful table on the page if you already read English. English borrowed the same Greek words from the same Latin books and left the spelling alone. So an English word with <span class="mono-in">ph</span> or <span class="mono-in">th</span> is a Portuguese word waiting to be guessed.</p>
-      <p class="lvline"><span>Topic level</span><span class="lv a2">A2</span><span>— 9 rows, all of them cards you already have.</span></p>
+      <p class="dek">This is the most useful table on the page if you already read English. English took most of the same Greek words from the same Latin books, and left the Latin spelling alone. So an English word with <span class="mono-in">ph</span> or <span class="mono-in">th</span> is a Portuguese word waiting to be guessed. One row is not a pair of book words: Portuguese <em>tesouro</em> came through speech, and only English <em>thesaurus</em> came from the book.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a2">A2</span><span>— 10 rows, all of them cards you already have.</span></p>
     </div>
 
     <figure>
@@ -431,11 +435,11 @@
 <footer>
   <div class="wrap">
     <p>Source: <span class="mono-in">myanki2</span> — 724 cards, 720 distinct words. Origin layer 09. Sentences from your own cards show the card number and are copied exactly. Rows tagged <em>no card</em> are words your deck does not contain at all; there the word and the sentence were both written for this page, using deck vocabulary wherever a natural sentence allowed it. Two sentences borrow a verb the deck lacks — <em>doer</em> in <em>Dói-me o estômago</em> and <em>mudar</em> in <em>O clima está a mudar</em> — because the deck word would have sounded wrong.</p>
-    <p>The colours mean something different on each layer. Here the colour is <strong>how the Greek word reached Portuguese</strong>: blue = came with Latin, green = a modern arrival, orange = came through ordinary speech, purple = not Greek at all. Colour is never the only channel; every group is named in its table header and in the legend. <em>matemática</em> is printed with the contrast cards but is coloured blue, because it is Greek and the purple would say otherwise. Two places use blue for something else and say so here: the big arrow at the top and the bottom row of the fingerprint chart, where the blue marks the spelling change itself and not a group of words.</p>
+    <p>The colours mean something different on each layer. Here the colour is <strong>how the Greek word reached Portuguese</strong>: blue = came with Latin, green = a modern arrival, orange = came through ordinary speech, purple = not Greek at all. Colour is never the only channel; every group is named in its table header, in the legend, and — in the <span class="mono-in">-ma</span> grid — in a line under each word. <em>matemática</em> is printed with the contrast cards but is coloured blue, because it is Greek and the purple would say otherwise. The <span class="mono-in">-ma</span> grid mixes blue and green on purpose: <em>cinema</em>, <em>programa</em> and <em>clima</em> are modern arrivals and <em>problema</em>, <em>sistema</em> and <em>tema</em> came with Latin. Two places use blue for something else and say so here: the big arrow at the top and the bottom row of the fingerprint chart, where the blue marks the spelling change itself and not a group of words.</p>
     <p><strong>The Greek script.</strong> Every Greek word on the page is printed next to its Latin spelling or its transliteration, and its meaning is given in English, so nothing on the page depends on being able to read Greek. Greek and Latin forms carry no level flag: they are evidence, not vocabulary.</p>
     <p><strong>About the level flags.</strong> <span class="lv a1">A1</span> <span class="lv a2">A2</span> <span class="lv b1">B1</span> are CEFR levels. Your deck stores no level for nouns, adjectives or phrases. It does mark 145 verb cards <em>(A1)</em>, but that is the level of the course book they were taken from, not a judgement about each word. One verb card appears here, <em>telefonar a</em>, and it carries that mark; this page flags it A1 as well, so no flag here sits above the deck. Everything else on the page is a noun and carries no mark at all. So the flags here are an estimate, following how common the word is in everyday European Portuguese.</p>
-    <p><strong>Where the origin is not firm.</strong> Three rows carry a dashed mark. <em>papel</em> and <em>carta</em> are marked <em>Greek is only a stage</em>: the Greek step is certain, but <em class="gk">πάπυρος</em> and <em class="gk">χάρτης</em> were themselves very likely borrowed into Greek, so Greek is not the source. <em>época</em> is marked <em>Sources disagree</em>: Priberam takes it straight from Greek <em class="gk">ἐποχή</em>, while other sources route it through the scholars' Latin <em class="lat">epocha</em> of about 1600 and French <em>époque</em>. <em>cadeira</em> carries no mark: Priberam, Infopédia and layer 03 of this book all give <em class="lat">cathedra</em> ← <em class="gk">καθέδρα</em>, and the learned twin <em>cátedra</em> shows plainly that <em>cadeira</em> is the spoken outcome.</p>
-    <p>Counts: 24 cards go back to Greek — 14 came with Latin, 7 are modern arrivals, 3 came through ordinary speech. By level: 8 A1, 7 A2, 9 B1. Twelve more words fit the page and have no card — 8, 2 and 2 by the same three roads; by level 3 A1, 4 A2, 5 B1. Three further cards are printed for contrast and are in none of those numbers. <em>matemática</em> is printed a second time as the control and is counted once only, with the cards that came with Latin. Cards, missing words and contrast cards are never added into one number.</p>
+    <p><strong>Where the origin is not firm.</strong> Four rows carry a dashed mark. <em>papel</em> and <em>carta</em> are marked <em>Greek is only a stage</em>: the Greek step is certain, but <em class="gk">πάπυρος</em> and <em class="gk">χάρτης</em> were themselves very likely borrowed into Greek, so Greek is not the source. <em>época</em> is marked <em>Sources disagree</em>: Priberam takes it straight from Greek <em class="gk">ἐποχή</em>, while other sources route it through the scholars' Latin <em class="lat">epocha</em> of about 1600 and French <em>époque</em>. <em>escola</em> is marked <em>half book, half speech</em>: the open o says speech, the surviving l says book, and the handbooks call it semi-learned. <em>cadeira</em> carries no mark: Priberam, Infopédia and layer 03 of this book all give <em class="lat">cathedra</em> ← <em class="gk">καθέδρα</em>, and the learned twin <em>cátedra</em> shows plainly that <em>cadeira</em> is the spoken outcome.</p>
+    <p>Counts: 27 cards go back to Greek — 15 came with Latin, 8 are modern arrivals, 4 came through ordinary speech. By level: 8 A1, 9 A2, 10 B1. Twelve more words fit the page and have no card — 7, 2 and 3 by the same three roads; by level 3 A1, 4 A2, 5 B1. Three further cards are printed for contrast and are in none of those numbers. <em>matemática</em> is printed a second time as the control and is counted once only, with the cards that came with Latin. Cards, missing words and contrast cards are never added into one number.</p>
   </div>
 </footer>
 
@@ -514,23 +518,20 @@
     wtab(host, "anc", "ph became f", "Greek φ (phi), written ph in Latin", [
       { pt: "farmácia", gl: "pharmacy", lvl: "A2", src: "φαρμακεία → pharmacia", note: "ph → f · a farmácia, as farmácias",
         ex: ["Eu vejo a <b>farmácia</b>.", "I see the pharmacy.", "card 0292"],
-        flag: "Greek φάρμακον (phármakon) was a drug — and also a poison. The Latin form pharmacia is medieval, not Roman: the Greek word is old, the Latin spelling of it is not. English pharmacy still writes the Latin ph." }
+        flag: "Greek φάρμακον (phármakon) was a drug — and also a poison. Priberam calls the Latin form late Latin, not classical: the Greek word is old, the Latin spelling of it is later. English pharmacy still writes the Latin ph." }
     ]);
 
     wtab(host, "anc", "th became t", "Greek θ (theta), written th in Latin", [
       { pt: "biblioteca", gl: "library", lvl: "A2", src: "βιβλιοθήκη → bibliothēca", note: "th → t · a biblioteca, as bibliotecas",
         ex: ["Eu vejo a <b>biblioteca</b>.", "I see the library.", "card 0276"],
         flag: "βιβλίον (biblíon) a book plus θήκη (thḗkē) a box: a book-box. The same θήκη is in discoteca, a record-box. French built discothèque on the model of bibliothèque in the 1930s, and the nightclub sense came after." },
-      { pt: "tesouro", gl: "treasure", lvl: "A2", src: "θησαυρός → thēsaurus", note: "th → t · o tesouro, os tesouros",
-        ex: ["Eu uso o <b>tesouro</b>.", "I use the treasure.", "card 0427"],
-        flag: "θησαυρός (thēsaurós) was a store or a strongroom, then what was kept in it. English took the Latin word whole for thesaurus, a store of words, and took the French form for treasure." },
       { pt: "matemática", gl: "mathematics", lvl: "B1", src: "μαθηματική → mathēmatica", note: "th → t · a matemática · singular only",
         ex: ["A <b>matemática</b> é importante.", "Mathematics is important.", "card 0198"],
         flag: "From μάθημα (máthēma), a thing learned. In Greek it meant any subject of study; the narrowing to number came later. This word comes back at the end of the page as the control." },
       { pt: "teoria", gl: "theory", lvl: "B1", src: "θεωρία → theōria", note: "th → t · a teoria, as teorias",
         ex: ["A <b>teoria</b> é importante.", "Theory is important.", "card 0213"],
         flag: "θεωρία (theōría) was a looking-at, a viewing. A theory is what you get from watching something carefully. Greek θέα (théa) a sight is in it, and in θέατρον (théatron), a seeing-place — teatro. English spectator is not related: that is Latin spectāre." },
-      { pt: "mito", gl: "myth", lvl: "B1", src: "μῦθος → mythus", note: "th → t, y → i · o mito, os mitos",
+      { pt: "mito", gl: "myth", lvl: "B1", src: "μῦθος → mythos", note: "th → t, y → i · o mito, os mitos",
         ex: ["O <b>mito</b> é importante.", "Myth is important.", "card 0200"],
         flag: "This word carries two fingerprints at once: the θ became t and the υ became i. English myth kept both Latin spellings." },
       { pt: "hipótese", gl: "hypothesis", lvl: "B1", src: "ὑπόθεσις → hypothesis", note: "th → t, y → i · a hipótese, as hipóteses",
@@ -544,7 +545,10 @@
         flag: "σύν (sýn) together plus βάλλω (bállō) I throw. A σύμβολον was a token broken in two, so that the two halves could later be put together to prove who you were. A symbol started as a physical object." },
       { pt: "mistério", gl: "mystery", lvl: "B1", src: "μυστήριον → mystērium", note: "y → i · o mistério, os mistérios",
         ex: ["O <b>mistério</b> é importante.", "Mystery is important.", "card 0199"],
-        flag: "From μύστης (mýstēs), someone initiated into a secret rite. The word meant the secret rite itself long before it meant a puzzle." }
+        flag: "From μύστης (mýstēs), someone initiated into a secret rite. The word meant the secret rite itself long before it meant a puzzle." },
+      { pt: "ginásio", gl: "gym", lvl: "A2", src: "γυμνάσιον → gymnasium", note: "y → i · o ginásio, os ginásios",
+        ex: ["Eu vejo o <b>ginásio</b>.", "I see the gym.", "card 0293"],
+        flag: "γυμνάσιον (gymnásion) was a place for training, from γυμνός (gymnós) naked, because that is how Greek men trained. Priberam gives Latin gymnasium, and the υ came out as i, exactly as in símbolo above. Your card glosses it gym, which is the everyday Portuguese sense." }
     ]);
 
     wtab(host, "anc", "ch became c", "Greek χ (chi), written ch in Latin", [
@@ -563,7 +567,10 @@
         flag: "μουσεῖον (mouseîon) was a place of the Muses. The first one was a research institute in Alexandria, not a room full of objects. Same Muses as in música below." },
       { pt: "poesia", gl: "poetry", lvl: "B1", src: "ποίησις → poēsis", note: "no fingerprint · a poesia, as poesias",
         ex: ["A <b>poesia</b> é importante.", "Poetry is important.", "card 0206"],
-        flag: "ποίησις (poíēsis) is a making, from ποιέω (poiéō) I make. A poet is literally a maker — which is what the Scots word makar for a poet still means." },
+        flag: "ποίησις (poíēsis) is a making, from ποιέω (poiéō) I make. A poet is literally a maker — which is what the Scots word makar for a poet still means. Priberam gives Latin poesis; the -ia ending was added later, on the road into Portuguese." },
+      { pt: "coral", gl: "coral", lvl: "B1", src: "κοράλλιον → corallium", note: "no fingerprint · o coral, os corais",
+        ex: ["Eu vejo o <b>coral</b>.", "I see the coral.", "card 0224"],
+        flag: "κοράλλιον (korállion) is the Greek name for the red stone-like growth in the sea. Do not mix it with the other coral in Portuguese, the choir one: that is late Latin choralis, from χορός (khorós) a ring-dance, and it is a different word." },
       { pt: "papel", gl: "paper", lvl: "A1", src: "πάπυρος → papȳrus", note: "no fingerprint · o papel, os papéis",
         ex: ["Eu uso o <b>papel</b>.", "I use the paper.", "card 0421"],
         mark: "Greek is only a stage",
@@ -576,47 +583,51 @@
         flag: "μουσικὴ τέχνη (mousikḕ tékhnē), the art of the Muses. You already read this word inside two cards — 0006 and 0114 — and it has none of its own. One of the plainest gaps in the deck." },
       { pt: "problema", gl: "problem", lvl: "A1", src: "πρόβλημα → problēma", note: "o problema, os problemas",
         ex: ["Isto é um <b>problema</b>.", "This is a problem.", "no card"],
-        flag: "πρόβλημα (próblēma) is a thing thrown in front of you. You already read the word on two cards — 0147, Eu resolvo o problema, and the phrase 0683, não há problema — but the noun itself has no card. It is the clearest example of the ·ma rule below." },
+        flag: "πρόβλημα (próblēma) is a thing thrown in front of you. You already read the word on two cards — 0147, Eu resolvo o problema, and the phrase 0683, não há problema — but the noun itself has no card. It is the clearest example of the -ma rule below." },
       { pt: "teatro", gl: "theatre", lvl: "A2", src: "θέατρον → theātrum", note: "th → t · o teatro, os teatros",
         ex: ["Eu vou ao <b>teatro</b>.", "I go to the theatre.", "no card"],
         flag: "θέατρον (théatron) is a seeing-place, from the same θέα (théa), a sight, as teoria above. The th became t here too, so this word carries a fingerprint even though it has no card." },
       { pt: "ideia", gl: "idea", lvl: "A2", src: "ἰδέα → idea", note: "a ideia, as ideias",
         ex: ["Eu tenho uma boa <b>ideia</b>.", "I have a good idea.", "no card"],
         flag: "ἰδέα (idéa) comes from the same root as the Greek verb to see. An idea was the look of a thing, its visible form, before Plato made it the form behind the thing." },
-      { pt: "estômago", gl: "stomach", lvl: "A2", src: "στόμαχος → stomachus", note: "ch → g · o estômago, os estômagos",
-        ex: ["Dói-me o <b>estômago</b>.", "My stomach hurts.", "no card"],
-        flag: "From στόμα (stóma), a mouth — the stomach was named as the mouth of the gut. Here the Latin ch came out as g rather than c. It also took the extra e of layer 05, which is why it is estômago and not stômago. Layer 05 asks for this word too." },
       { pt: "época", gl: "period, age", lvl: "B1", src: "ἐποχή → epocha", note: "ch → c · a época, as épocas",
         ex: ["Esta <b>época</b> é importante.", "This period is important.", "no card"],
         mark: "Sources disagree",
         flag: "ἐποχή (epokhḗ) was a stopping-point — the moment you halt and start counting from. Priberam takes the word straight from Greek; other sources route it through the scholars' Latin epocha, coined around 1600, and French époque. The Greek word is ancient either way; the Latin one is not. English epoch keeps the ch." },
       { pt: "sistema", gl: "system", lvl: "B1", src: "σύστημα → systēma", note: "y → i · o sistema, os sistemas",
         ex: ["O <b>sistema</b> é novo.", "The system is new.", "no card"],
-        flag: "σύν (sýn) together plus ἵστημι (hístēmi) I set up: things set up together. Another ·ma word, and another masculine one." },
+        flag: "σύν (sýn) together plus ἵστημι (hístēmi) I set up: things set up together. Another -ma word, and another masculine one." },
       { pt: "planeta", gl: "planet", lvl: "B1", src: "πλανήτης → planēta", note: "o planeta, os planetas",
         ex: ["O <b>planeta</b> é grande.", "The planet is big.", "no card"],
-        flag: "πλανήτης (planḗtēs) means a wanderer. The planets were the stars that moved against the fixed ones. Masculine despite the ·a, but not by the ·ma rule below: Greek had masculine nouns ending in ·της, and this is one of them." }
+        flag: "πλανήτης (planḗtēs) means a wanderer. The planets were the stars that moved against the fixed ones. Masculine despite the -a, but not by the -ma rule below: Greek had masculine nouns ending in -της, and this is one of them." }
     ]));
 
     wtab(host, "spo", "Came through ordinary speech", "used by Latin speakers, not only by writers", [
       { pt: "escola", gl: "school", lvl: "A1", src: "σχολή → schola", note: "ch → c · a escola, as escolas",
         ex: ["Eu vejo a <b>escola</b>.", "I see the school.", "card 0289"],
-        flag: "σχολή (skholḗ) meant leisure — free time, and then what a serious person does with it. Latin schŏla had a short o, and the o in escola is open, which is what a short Latin o becomes in a spoken word. Spanish took the same word through speech and turned that o into ue: escuela. The extra e is layer 05 and proves nothing here — book words took it too, as escritório shows at the end of this page." },
+        mark: "half book, half speech",
+        flag: "σχολή (skholḗ) meant leisure — free time, and then what a serious person does with it. Two facts pull opposite ways. Latin schŏla had a short o, and the o in escola is open, which is what a short Latin o becomes in a spoken word; Spanish escuela shows the same short o breaking into ue. But layer 02 of this book deletes an l between two vowels — dolōrem gave dor, colōrem gave cor — and escola kept its l. A word carried all the way by speech would be escoa. So escola is what the handbooks call semi-learned: spoken, and held in shape by the place it names. The extra e is layer 05 and proves nothing here — book words took it too, as escritório shows at the end of this page." },
       { pt: "pedra", gl: "stone", lvl: "A1", src: "πέτρα → petra", note: "a pedra, as pedras",
         ex: ["Eu vejo a <b>pedra</b>.", "I see the stone.", "card 0238"],
         flag: "πέτρα (pétra) is a rock. Latin had its own words, lapis and saxum, and borrowed this one anyway; then it beat them both. The t between vowels became d, which only happens to words that came through speech — the same change as in vīta → vida and cīvitātem → cidade." },
+      { pt: "tesouro", gl: "treasure", lvl: "A2", src: "θησαυρός → thēsaurus", note: "th → t, au → ou · o tesouro, os tesouros",
+        ex: ["Eu uso o <b>tesouro</b>.", "I use the treasure.", "card 0427"],
+        flag: "θησαυρός (thēsaurós) was a store or a strongroom, then what was kept in it. The proof of speech is the au: Latin aurum gave ouro and thēsaurum gave tesouro, while every word taken from a book kept its au — causa, pausa. Wiktionary calls tesouro inherited and names its book twin, tesauro. English took the Latin word whole for thesaurus, a store of words, and took the French form for treasure." },
       { pt: "cadeira", gl: "chair", lvl: "A1", src: "καθέδρα → cathedra", note: "th → d · a cadeira, as cadeiras",
         ex: ["Eu limpo a <b>cadeira</b>.", "I clean the chair.", "card 0367"],
-        flag: "κατά (katá) down plus ἕδρα (hédra) a seat. Portuguese has the same Latin word twice: cátedra, taken from the book and barely changed, and cadeira, worn down in the mouth. Two forms of one word is the strongest evidence a page like this can print. English did the same: cathedral is the church with the bishop's seat in it." }
+        flag: "κατά (katá) down plus ἕδρα (hédra) a seat. Portuguese has the same Latin word twice: cátedra, taken from the book and barely changed, and cadeira, worn down in the mouth. Two forms of one word is the strongest evidence a page like this can print, and tesouro / tesauro just above is a second pair. English did the same: cathedral is the church with the bishop's seat in it." }
     ]);
 
     wtab(host, "spo", "Came through speech — and you have no card", "same road, missing from your deck", off([
       { pt: "igreja", gl: "church", lvl: "A1", src: "ἐκκλησία → ecclēsia", note: "a igreja, as igrejas",
         ex: ["Eu vejo a <b>igreja</b>.", "I see the church.", "no card"],
-        flag: "ἐκκλησία (ekklēsía) was an assembly, a meeting of citizens called out to gather. Count the changes from ecclēsia to igreja: e became i, cc became gr, s became j, and the ending fell. Nothing read off a page wears down that far. English ecclesiastical is the same word taken from a book." },
+        flag: "ἐκκλησία (ekklēsía) was an assembly, a meeting of citizens called out to gather. Count the changes from ecclēsia to igreja: the first e became i, the cl became gl and then gr, the si became j, and the last two vowels came out as one a. Nothing read off a page wears down that far. English ecclesiastical is the same word taken from a book." },
+      { pt: "estômago", gl: "stomach", lvl: "A2", src: "στόμαχος → stomachus", note: "ch → g · o estômago, os estômagos",
+        ex: ["Dói-me o <b>estômago</b>.", "My stomach hurts.", "no card"],
+        flag: "From στόμα (stóma), a mouth — the stomach was named as the mouth of the gut. The Latin ch was said as k, and here it came out as g. That voicing between vowels is the same speech change as the t → d of pedra above, which is why this word sits on the speech road and not with the book words. It also took the extra e of layer 05, which is why it is estômago and not stômago. Layer 05 asks for this word too." },
       { pt: "anjo", gl: "angel", lvl: "B1", src: "ἄγγελος → angelus", note: "o anjo, os anjos",
         ex: ["O <b>anjo</b> é bonito.", "The angel is beautiful.", "no card"],
-        flag: "ἄγγελος (ángelos) meant a messenger, any messenger, before it meant a heavenly one. The same root is in evangelho, the good message." }
+        flag: "ἄγγελος (ángelos) meant a messenger, any messenger, before it meant a heavenly one. Latin angelus lost its middle vowel and the ge became j: angelus → anjo. The same root is in evangelho, the good message." }
     ]));
   })();
 
@@ -640,33 +651,36 @@
       { pt: "telefone", gl: "telephone", lvl: "A1", src: "τῆλε far + φωνή voice", note: "coined 1830s · o telefone, os telefones",
         ex: ["Eu uso o <b>telefone</b>.", "I use the telephone.", "card 0426"],
         flag: "τῆλε (têle) far and φωνή (phōnḗ) voice: far-voice. The word was first used in the 1830s for a signalling device; it was moved to Bell's machine in 1876. The τῆλε is in televisão too, where it is glued to a Latin word instead of a Greek one — a mixed compound that classicists complained about at the time." },
-      { pt: "telefonar a", gl: "to phone", lvl: "A1", src: "telefone + ·ar", note: "verb · eu telefono, tu telefonas",
+      { pt: "telefonar a", gl: "to phone", lvl: "A1", src: "telefone + -ar", note: "verb · eu telefono, tu telefonas",
         ex: ["Eu <b>telefono</b> à minha mãe.", "I call my mother.", "card 0166"],
-        flag: "The noun with the ordinary Portuguese ·ar ending. French made téléphoner the same way at the same time. So this is a verb built on a modern word built on ancient Greek pieces — three layers in one card." },
-      { pt: "biólogo", gl: "biologist", lvl: "B1", src: "βίος life + λόγος study", note: "o biólogo, a bióloga",
+        flag: "The noun with the ordinary Portuguese -ar ending. French made téléphoner the same way at the same time. So this is a verb built on a modern word built on ancient Greek pieces — three layers in one card." },
+      { pt: "biólogo", gl: "biologist", lvl: "B1", src: "βίος life + λόγος study", note: "o biólogo, os biólogos · a bióloga",
         ex: ["Ele é <b>biólogo</b>.", "He is a biologist.", "card 0432"],
-        flag: "Biologia, the field, was named around 1800. The person, biólogo, follows the field. Greek βίος (bíos) is life, the same piece as in biografia and antibiótico. The ·logia ending is the most productive Greek piece of all: psicologia, geologia, and any new field you care to name." },
+        flag: "Biologia, the field, was named around 1800. The person, biólogo, follows the field. Greek βίος (bíos) is life, the same piece as in biografia and antibiótico. The -logia ending is the most productive Greek piece of all: psicologia, geologia, and any new field you care to name." },
       { pt: "cinema", gl: "cinema", lvl: "A1", src: "κίνημα movement", note: "o cinema, os cinemas",
         ex: ["Eu vejo o <b>cinema</b>.", "I see the cinema.", "card 0283"],
-        flag: "Shortened from cinematógrafo, movement-writing, coined in French in the 1890s. κίνημα (kínēma) is a real Greek word and a ·ma word. Portuguese took cinema from French le cinéma, already masculine, and the ·ma rule below agrees with that." }
+        flag: "Shortened from cinematógrafo, movement-writing, coined in French in the 1890s. Priberam says only that: a reduction of cinematógrafo. κίνημα (kínēma) is a real Greek word and a -ma word, so the -ma rule below and the French le cinéma agree on the gender." },
+      { pt: "elétrico", gl: "tram; electric", lvl: "A2", src: "ἤλεκτρον amber", note: "o elétrico, os elétricos · adjective elétrica",
+        ex: ["Eu vou de <b>elétrico</b>.", "I go by tram.", "card 0467"],
+        flag: "ἤλεκτρον (ḗlektron) was amber, the stone that picks up dust when you rub it. Latin took it as electrum, and in 1600 the English scientist William Gilbert made the new Latin word electricus from it. Priberam prints the whole road: French électrique, from English electric, from scientific Latin electricus. In Portugal o elétrico is the tram, because it was the electric carriage." }
     ]);
 
     wtab(host, "neo", "The word is ancient, the meaning is modern", "Athens had the word and not the thing", [
       { pt: "arqueologia", gl: "archaeology", lvl: "B1", src: "ἀρχαῖος ancient + λόγος study", note: "a arqueologia · singular only",
         ex: ["A <b>arqueologia</b> é importante.", "Archeology is important.", "card 0186"],
         flag: "ἀρχαιολογία (arkhaiología) is in Plato, and it meant the telling of old stories — antiquarian talk, not a science. The science was named in the seventeenth century and became a dug-in-the-ground discipline in the nineteenth. Old word, new job." },
-      { pt: "polícia", gl: "police; police officer", lvl: "A2", src: "πολιτεία → polītīa", note: "a polícia the force · o polícia the officer",
+      { pt: "polícia", gl: "police; police officer", lvl: "A2", src: "πολιτεία → politia", note: "a polícia the force · o polícia, os polícias the officer",
         ex: ["Eu vejo a <b>polícia</b>.", "I see the police (institution).", "card 0306"],
-        flag: "πολιτεία (politeía) was citizenship, then the running of a city — Plato's Republic is Πολιτεία. Latin polītīa kept that sense. The uniformed force is an eighteenth-century idea and took the old word with it. Note the two genders: a polícia is the force, o polícia is one officer, cards 0306 and 0307." }
+        flag: "πολιτεία (politeía) was citizenship, then the running of a city — Plato's Republic is Πολιτεία. Priberam gives Latin politia, the running of a state. Portuguese had the word in that older sense long before it had police officers; the uniformed force is an eighteenth-century idea and took the old word with it. Note the two genders: a polícia is the force, o polícia is one officer, cards 0306 and 0307." }
     ]);
 
     wtab(host, "neo", "Modern — and you have no card", "same road, missing from your deck", off([
       { pt: "programa", gl: "programme", lvl: "A2", src: "πρόγραμμα → programma", note: "o programa, os programas",
         ex: ["O <b>programa</b> é bom.", "The programme is good.", "no card"],
-        flag: "πρόγραμμα (prógramma) is a real Greek word: a public notice written up in advance. The word is ancient; the senses you need — a broadcast, a plan, a piece of software — are nineteenth and twentieth century. A ·ma word, so masculine." },
+        flag: "πρόγραμμα (prógramma) is a real Greek word: a public notice written up in advance. The word is ancient; the senses you need — a broadcast, a plan, a piece of software — are nineteenth and twentieth century. A -ma word, so masculine." },
       { pt: "clima", gl: "climate", lvl: "B1", src: "κλίμα → clima", note: "o clima, os climas",
         ex: ["O <b>clima</b> está a mudar.", "The climate is changing.", "no card"],
-        flag: "κλίμα (klíma) is a real Greek word too: a slope, the tilt of the earth towards the sun, which is what makes one place hotter than another. Greek geographers used it for a band of latitude. Weather over many years is the modern sense. Another ·ma word, and another masculine one." }
+        flag: "κλίμα (klíma) is a real Greek word too: a slope, the tilt of the earth towards the sun, which is what makes one place hotter than another. Greek geographers used it for a band of latitude. Weather over many years is the modern sense. Another -ma word, and another masculine one." }
     ]));
   })();
 
@@ -674,18 +688,32 @@
   (function () {
     const host = document.getElementById("ma");
     const M = [
-      { w: "cinema", a: "o cinema · os cinemas", why: "Greek κίνημα (kínēma), neuter — a movement. The only plain <span class=\"mono-in\">-ma</span> noun with a card of its own, card 0283." },
-      { w: "problema", a: "o problema · os problemas", why: "Greek πρόβλημα (próblēma), neuter — a thing thrown in front of you. No card; you read it on cards 0147 and 0683." },
-      { w: "sistema", a: "o sistema · os sistemas", why: "Greek σύστημα (sýstēma), neuter — things set up together. No card." },
-      { w: "programa", a: "o programa · os programas", why: "Greek πρόγραμμα (prógramma), neuter — a notice written up in advance. No card." },
-      { w: "clima", a: "o clima · os climas", why: "Greek κλίμα (klíma), neuter — a slope. No card." },
-      { w: "tema", a: "o tema · os temas", why: "Greek θέμα (théma), neuter — a thing set down. No card." }
+      { w: "cinema", lvl: "A1", c: "neo", road: "a modern arrival",
+        a: "o cinema · os cinemas", why: "Greek κίνημα (kínēma), neuter — a movement. The only plain <span class=\"mono-in\">-ma</span> noun with a card of its own, card 0283.",
+        ex: ["Eu vejo o <b>cinema</b>.", "I see the cinema.", "card 0283"] },
+      { w: "problema", lvl: "A1", c: "anc", road: "came with Latin",
+        a: "o problema · os problemas", why: "Greek πρόβλημα (próblēma), neuter — a thing thrown in front of you. No card; you read it on cards 0147 and 0683.",
+        ex: ["Isto é um <b>problema</b>.", "This is a problem.", "no card"] },
+      { w: "sistema", lvl: "B1", c: "anc", road: "came with Latin",
+        a: "o sistema · os sistemas", why: "Greek σύστημα (sýstēma), neuter — things set up together. No card.",
+        ex: ["O <b>sistema</b> é novo.", "The system is new.", "no card"] },
+      { w: "programa", lvl: "A2", c: "neo", road: "a modern arrival",
+        a: "o programa · os programas", why: "Greek πρόγραμμα (prógramma), neuter — a notice written up in advance. No card.",
+        ex: ["O <b>programa</b> é bom.", "The programme is good.", "no card"] },
+      { w: "clima", lvl: "B1", c: "neo", road: "a modern arrival",
+        a: "o clima · os climas", why: "Greek κλίμα (klíma), neuter — a slope. No card.",
+        ex: ["O <b>clima</b> está a mudar.", "The climate is changing.", "no card"] },
+      { w: "tema", lvl: "B1", c: "anc", road: "came with Latin",
+        a: "o tema · os temas", why: "Greek θέμα (théma), neuter — a thing set down. Latin wrote it thema, so this one carries the <span class=\"mono-in\">th → t</span> fingerprint as well. No card.",
+        ex: ["O <b>tema</b> é interessante.", "The theme is interesting.", "no card"] }
     ];
     M.forEach(m => {
       const d = document.createElement("div");
       d.className = "gcard";
-      d.innerHTML = '<span class="w">' + m.w + '</span><span class="art">' + m.a +
-                    '</span><span class="why">' + m.why + "</span>";
+      d.style.setProperty("--c", "var(--" + m.c + ")");
+      d.innerHTML = '<span class="w">' + m.w + " " + lv(m.lvl) + '</span><span class="art">' + m.a +
+                    '</span><span class="road">' + m.road + '</span><span class="why">' + m.why + "</span>" +
+                    ex(m.ex[0], m.ex[1], m.ex[2]);
       host.appendChild(d);
     });
   })();
@@ -697,10 +725,11 @@
       ["θησαυρός", "thēsaurus", "thesaurus", "tesouro", "th → t"],
       ["θεωρία", "theōria", "theory", "teoria", "th → t"],
       ["χάρτης", "charta", "chart", "carta", "ch → c"],
-      ["μῦθος", "mythus", "myth", "mito", "th → t, y → i"],
+      ["μῦθος", "mythos", "myth", "mito", "th → t, y → i"],
       ["ὑπόθεσις", "hypothesis", "hypothesis", "hipótese", "th → t, y → i, no h"],
       ["σύμβολον", "symbolum", "symbol", "símbolo", "y → i"],
       ["μυστήριον", "mystērium", "mystery", "mistério", "y → i"],
+      ["γυμνάσιον", "gymnasium", "gymnasium", "ginásio", "y → i"],
       ["ἱστορία", "historia", "history", "história", "nothing to change"]
     ];
     const t = document.getElementById("mx");
@@ -723,21 +752,21 @@
   (function () {
     const host = document.getElementById("contrast");
     wtab(host, "not", "Only look Greek", "printed for contrast · in none of the counts", [
-      { pt: "família", gl: "family", lvl: "A1", src: "familia ← famulus", note: "Latin, not Greek · a família",
+      { pt: "família", gl: "family", lvl: "A1", src: "familia ← famulus", note: "Latin, not Greek · a família, as famílias",
         ex: ["A minha <b>família</b> está em casa.", "My family is at home.", "card 0328"],
-        flag: "The ·ia ending is the trap: it looks like farmácia and arqueologia. But famulus was a household servant, and the word is Latin all the way down. An ending is not a fingerprint." },
-      { pt: "mapa", gl: "map", lvl: "A1", src: "mappa", note: "Latin, probably Punic · o mapa",
+        flag: "The -ia ending is the trap: it looks like farmácia and arqueologia. But famulus was a household servant, and the word is Latin all the way down. An ending is not a fingerprint." },
+      { pt: "mapa", gl: "map", lvl: "A1", src: "mappa, through Italian", note: "Latin, probably Punic · o mapa, os mapas",
         ex: ["Eu vejo o <b>mapa</b>.", "I see the map.", "card 0299"],
-        flag: "Ends in ·a and is masculine, so it looks like a ·ma word. It is not. Latin mappa was a cloth, and Quintilian wrote that the Carthaginians claimed the word as theirs. And mappa was feminine, as Portuguese mapa itself was at first; the switch to masculine happened inside Portuguese, long after Greek could have had anything to do with it." },
-      { pt: "escritório", gl: "office", lvl: "A2", src: "scriptōrium ← scrībere", note: "Latin, not Greek · o escritório",
+        flag: "Ends in -a and is masculine, so it looks like a -ma word. It is not. Latin mappa was a cloth, and Quintilian wrote that the Carthaginians claimed the word as theirs. Latin mappa was feminine; Priberam brings the word to Portuguese through Italian mappa, and the masculine article belongs to that late road, not to any Greek neuter." },
+      { pt: "escritório", gl: "office", lvl: "A2", src: "scriptōrium ← scrībere", note: "Latin, not Greek · o escritório, os escritórios",
         ex: ["Eu limpo o <b>escritório</b>.", "I clean the office.", "card 0378"],
         flag: "It starts with the same es· as escola and estômago, so it looks like it took the extra e for the same reason. It did take the extra e — that is layer 05 — but it is a book word from Latin scrībere, with no Greek anywhere in it. This is why the extra e proves nothing about Greek or about speech." }
     ]);
 
     wtab(host, "anc", "The control", "same shape, and this one is Greek", [
-      { pt: "matemática", gl: "mathematics", lvl: "B1", src: "μαθηματική → mathēmatica", note: "Greek · a matemática",
+      { pt: "matemática", gl: "mathematics", lvl: "B1", src: "μαθηματική → mathēmatica", note: "Greek · a matemática · singular only",
         ex: ["A <b>matemática</b> é importante.", "Mathematics is important.", "card 0198"],
-        flag: "Printed here as the control, in the blue of the Greek group, and counted once above with the cards that came with Latin. It has the same ·ica shape as Latin words like fábrica and república, and this one really is Greek. The th under the t is what tells you." }
+        flag: "Printed here as the control, in the blue of the Greek group, and counted once above with the cards that came with Latin. It has the same -ica shape as Latin words like fábrica and república, and this one really is Greek. The th under the t is what tells you." }
     ]);
   })();
 
@@ -746,7 +775,7 @@
     const host = document.getElementById("checks");
     const C = [
       ["Three A1 words with no card", "<em>música</em>, <em>igreja</em> and <em>problema</em> are all first-500 words and none has a card of its own. <em>música</em> is read inside cards 0006 and 0114; <em>problema</em> inside cards 0147 and 0683. These three are the best thing on this page to act on."],
-      ["The ·ma rule has almost nothing to stand on", "Only <em>cinema</em> is in the deck as a plain <span class=\"mono-in\">-ma</span> noun. The rule that saves you a gender mistake needs <em>problema</em>, <em>sistema</em>, <em>programa</em> and <em>tema</em> to be worth learning, and the deck has none of them."],
+      ["The -ma rule has almost nothing to stand on", "Only <em>cinema</em> is in the deck as a plain <span class=\"mono-in\">-ma</span> noun. The rule that saves you a gender mistake needs <em>problema</em>, <em>sistema</em>, <em>programa</em> and <em>tema</em> to be worth learning, and the deck has none of them."],
       ["Nine of these cards share one sentence frame", "<em>A matemática é importante.</em>, <em>A teoria é importante.</em>, <em>O símbolo é importante.</em> and six more on this page differ only in the noun; 30 cards in the deck use the frame in all. They teach the word but not how it is used, and reviewing them is nearly free, which makes them feel learned when they are not."],
       ["Two English glosses read oddly", "Card 0409 glosses <em>fotografia</em> as <em>the photography</em>, which is not English for a photograph. Card 0283 glosses <em>cinema</em> as <em>movie theater</em>, which is American; in Portugal this is the cinema."],
       ["<em>polícia</em> is three cards and two genders", "Cards 0306, 0307 and 0450 all carry the word <em>polícia</em>. <em>a polícia</em> is the force and <em>o polícia</em> is one officer. Nothing on the cards says the article is the whole difference, so it is worth adding that line to 0306."]
