@@ -1,0 +1,1854 @@
+DECK DIGEST — generated from myanki2/*.yaml. Read this instead of the yaml.
+724 notes, 720 distinct word values.
+
+Columns: id | file | word | portuguese sentence | english line
+A word is a LEMMA only if it appears in the `word` column below.
+Appearing inside another card's sentence does NOT make it a lemma.
+====================================================================================================
+0001 | verbs | abanar | Eu abano a cabeça. | I shake my head.  (A1)
+0002 | verbs | abraçar | Eu abraço a minha mãe. | I hug my mother.  (A1)
+0003 | verbs | abrir | Podia abrir a janela? | Could you open the window?  (ch.5)
+0004 | verbs | abrir-se | A porta abre-se devagar. | The door opens slowly.  (A1)
+0005 | verbs | acabar | Eu tento acabar o exercício. | I try to finish the exercise.  (ch.5)
+0006 | verbs | acalmar-se | Eu acalmo-me com música. | I calm down with music.  (A1)
+0007 | verbs | aceitar | Eu aceito o convite. | I accept the invitation.  (A1)
+0008 | verbs | acender | Eu acendo a luz. | I turn on the light.  (A1)
+0009 | verbs | achar | Eu acho que este restaurante é bom. | I think that this restaurant is good.  (ch.13)
+0010 | verbs | acordar | O João acorda num lugar estranho. | João wakes up in a strange place.  (ch.6)
+0011 | verbs | acreditar em | Eu acredito no político. | I believe the politician.  (ch.27)
+0012 | verbs | adorar | Eu adoro marisco. | I love seafood.  (ch.7)
+0013 | verbs | afundar | O barco afunda no mar. | The boat sinks in the sea.  (A1)
+0014 | verbs | agarrar-se a | O passageiro agarra-se ao banco. | The passenger holds on to the seat.  (ch.23)
+0015 | verbs | aguentar | Eu não aguento este calor. | I can't stand this heat.  (A1)
+0016 | verbs | ajudar | Eu ajudo o Pedro a limpar a casa. | I help Pedro clean the house.  (ch.13)
+0017 | verbs | almoçar | Eu almoço ao meio-dia. | I have lunch at noon.  (A1)
+0018 | verbs | alucinar | Ele alucina com a febre. | He hallucinates from the fever.  (A1)
+0019 | verbs | alugar | Eu quero alugar um carro. | I want to rent a car.  (A1)
+0020 | verbs | amar | Eu amo a minha família. | I love my family.  (A1)
+0021 | verbs | andar até a | Eu ando até à cozinha. | I walk to the kitchen.  (ch.4)
+0022 | verbs | apaixonar-se por | O Joaquim apaixona-se por todas as mulheres. | Joaquim falls in love with all women.  (ch.28)
+0023 | verbs | apanhar | Eu apanho o autocarro. | I catch the bus.  (A1)
+0024 | verbs | aparecer | O sol aparece de manhã. | The sun appears in the morning.  (A1)
+0025 | verbs | apontar para | Ele aponta para a porta. | He points at the door.  (A1)
+0026 | verbs | aprender | Eu aprendo português há um ano. | I have been learning Portuguese for a year.  (ch.5)
+0027 | verbs | aproximar-se de | Eu aproximo-me da casa. | I approach the house.  (ch.11)
+0028 | verbs | aquecer | Eu aqueço a sopa. | I warm up the soup.  (A1)
+0029 | verbs | assinar | Eu assino o documento. | I sign the document.  (A1)
+0030 | verbs | assistir a | Eu assisto ao jogo. | I watch the game.  (A1)
+0031 | verbs | aterrar | O avião aterra às três. | The plane lands at three.  (A1)
+0032 | verbs | atravessar | Eu atravesso a rua. | I cross the street.  (A1)
+0033 | verbs | bater | Alguém bate à porta. | Someone knocks at the door.  (A1)
+0034 | verbs | beber | Eles bebem o vinho. | They drink the wine.  (ch.4)
+0035 | verbs | brincar | As crianças brincam no parque. | The children play in the park.  (A1)
+0036 | verbs | cair em | O livro cai no chão. | The book falls on the floor.  (A1)
+0037 | verbs | chamar | Eu chamo o táxi. | I call the taxi.  (A1)
+0038 | verbs | chamar-se | Eu chamo-me João. | My name is João. (lit. I call myself João)  (A1)
+0039 | verbs | chegar a | Eu chego a casa às seis. | I arrive home at six.  (A1)
+0040 | verbs | cheirar a | A cozinha cheira a café. | The kitchen smells like coffee.  (A1)
+0041 | verbs | chover | Hoje chove muito. | Today it rains a lot.  (A1)
+0042 | verbs | começar | A aula começa às nove. | The class starts at nine.  (A1)
+0043 | verbs | comer | Eu como tudo. | I eat everything.  (ch.18)
+0044 | verbs | comprar | Ele compra vinho. | He buys wine.  (ch.2)
+0045 | verbs | compreender | Eu compreendo a lição. | I understand the lesson.  (A1)
+0046 | verbs | confiar em | Eu confio nas pessoas. | I trust people.  (ch.18)
+0047 | verbs | conhecer | Eu conheço Lisboa. | I know Lisbon.  (A1)
+0048 | verbs | continuar | Eu continuo a estudar português. | I continue to study Portuguese.  (ch.5)
+0049 | verbs | controlar | Eu controlo o carro. | I control the car.  (A1)
+0050 | verbs | correr até a | Eu corro até à estação. | I run to the station.  (ch.4)
+0051 | verbs | cozinhar | Eu cozinho massa para o jantar. | I cook pasta for dinner.  (A1)
+0052 | verbs | cumprimentar | Eu cumprimento o vizinho. | I greet the neighbour.  (A1)
+0053 | verbs | cumprir | Eu cumpro as regras. | I follow the rules.  (A1)
+0054 | verbs | dar a | A Ana dá a flor à amiga. | Ana gives the flower to the friend.  (ch.9)
+0055 | verbs | dar um passeio | Eu dou um passeio no parque todos os dias. | I go for a walk in the park every day.  (ch.5)
+0056 | verbs | decidir | Eu decido ir para casa. | I decide to go home.  (ch.13)
+0057 | verbs | deixar | Eu deixo o livro na mesa. | I leave the book on the table.  (A1)
+0058 | verbs | desaparecer | O gato desaparece no jardim. | The cat disappears in the garden.  (A1)
+0059 | verbs | descobrir | Eu descubro um segredo. | I discover a secret.  (A1)
+0060 | verbs | despir | Eu dispo o casaco. | I take off the coat.  (A1)
+0061 | verbs | detestar | Eu detesto a segunda-feira. | I hate Monday.  (A1)
+0062 | verbs | dever | Eu devo ser responsável. | I must be responsible.  (ch.9)
+0063 | verbs | disparar | O homem dispara a arma. | The man shoots the gun.  (A1)
+0064 | verbs | dizer | Eu digo a verdade. | I tell the truth.  (A1)
+0065 | verbs | dormir | Eu durmo oito horas. | I sleep eight hours.  (A1)
+0066 | verbs | empurrar | Eu empurro a porta. | I push the door.  (A1)
+0067 | verbs | engasgar-se | Eu engasgo-me com a água. | I choke on the water.  (A1)
+0068 | verbs | ensinar | Eu ensino inglês. | I teach English.  (A1)
+0069 | verbs | entender | Eu não entendo a pergunta. | I don't understand the question.  (A1)
+0070 | verbs | entrar | Eu entro no escritório. | I enter the office.  (ch.10)
+0071 | verbs | escolher | Eu escolho o vinho tinto. | I choose the red wine.  (A1)
+0072 | verbs | esconder | Eu escondo a chave. | I hide the key.  (A1)
+0073 | verbs | escrever | Eu escrevo uma carta. | I write a letter.  (A1)
+0074 | verbs | esfregar | Eu esfrego o chão. | I scrub the floor.  (A1)
+0075 | verbs | esperar | Eu espero pelo autocarro. | I wait for the bus.  (A1)
+0076 | verbs | esquecer-se de | O meu pai esquece-se das chaves. | My father forgets the keys.  (ch.26)
+0077 | verbs | estacionar | Eu estaciono o carro na rua. | I park the car on the street.  (A1)
+0078 | verbs | estar | O gato está atrás da árvore. | The cat is behind the tree.  (ch.5)
+0079 | verbs | estender | Ele estende a mão para me ajudar. | He holds out his hand to help me.  (A1)
+0080 | verbs | esticar | Eu estico as pernas. | I stretch my legs.  (A1)
+0081 | verbs | estudar | Eu estudo português. | I study Portuguese.  (A1)
+0082 | verbs | existir | Os dragões não existem. | Dragons don't exist.  (A1)
+0083 | verbs | explicar | O professor explica a lição. | The teacher explains the lesson.  (A1)
+0084 | verbs | falar | Ele fala português. | He speaks Portuguese.  (ch.2)
+0085 | verbs | fazer | Eu faço o jantar. | I make dinner.  (A1)
+0086 | verbs | fazer anos | Eu faço anos em maio. | My birthday is in May. (lit. I make years in May)  (A1)
+0087 | verbs | fazer sentido | Isso não faz sentido. | That doesn't make sense.  (A1)
+0088 | verbs | ficar | Eu fico em casa. | I stay at home.  (ch.7)
+0089 | verbs | fugir | Os criminosos fogem da prisão. | The criminals escape from prison.  (ch.13)
+0090 | verbs | gostar de | Eu gosto de desenhar. | I like to draw.  (ch.7)
+0091 | verbs | guardar | Eu guardo o dinheiro no banco. | I keep the money in the bank.  (A1)
+0092 | verbs | guiar | O homem guia o barco. | The man steers the boat.  (A1)
+0093 | verbs | iluminar-se | O céu ilumina-se com o sol. | The sky lights up with the sun.  (A1)
+0094 | verbs | inspirar | Eu inspiro ar puro. | I breathe in fresh air.  (A1)
+0095 | verbs | ir | Eu vou à escola. | I go to school.  (A1)
+0096 | verbs | ir embora | Eu vou embora agora. | I am going away now.  (A1)
+0097 | verbs | lavar-se | Eu lavo-me de manhã. | I wash up in the morning.  (A1)
+0098 | verbs | levantar-se | Eu levanto-me às sete. | I get up at seven.  (A1)
+0099 | verbs | levar | Eu levo o guarda-chuva. | I take the umbrella.  (A1)
+0100 | verbs | libertar-se | O gato liberta-se da caixa. | The cat frees itself from the box.  (ch.12)
+0101 | verbs | limpar | Eu limpo a casa. | I clean the house.  (A1)
+0102 | verbs | lutar | Os soldados lutam na guerra. | The soldiers fight in the war.  (A1)
+0103 | verbs | matar | O caçador mata o lobo. | The hunter kills the wolf.  (A1)
+0104 | verbs | mentir | Tu mentes sempre. | You always lie.  (A1)
+0105 | verbs | mergulhar | Eu mergulho no mar. | I dive into the sea.  (A1)
+0106 | verbs | mexer | Eu mexo a sopa. | I stir the soup.  (A1)
+0107 | verbs | morar em | Eu moro em Portugal desde 2015. | I have lived in Portugal since 2015.  (ch.16)
+0108 | verbs | mostrar | Eu mostro a foto. | I show the photo.  (A1)
+0109 | verbs | movimentar-se | A bailarina movimenta-se sem dificuldade. | The dancer moves without difficulty.  (ch.25)
+0110 | verbs | nadar até a | A tartaruga nada até à praia. | The turtle swims to the beach.  (ch.4)
+0111 | verbs | observar | Eu observo as estrelas. | I observe the stars.  (A1)
+0112 | verbs | olhar para | Eu olho para os carros. | I look at the cars.  (ch.2)
+0113 | verbs | olhar por | Eu olho pela janela. | I look out through the window.  (A1)
+0114 | verbs | ouvir | Eu ouço música. | I listen to music.  (A1)
+0115 | verbs | pagar | Eu pago a conta. | I pay the bill.  (A1)
+0116 | verbs | parar | O carro para no semáforo. | The car stops at the traffic light.  (A1)
+0117 | verbs | parecer | Ele parece cansado. | He seems tired.  (A1)
+0118 | verbs | partir | O comboio parte às oito. | The train leaves at eight.  (A1)
+0119 | verbs | passar em | Eu passo pela loja. | I pass by the shop.  (A1)
+0120 | verbs | passar-se | O que se passa aqui? | What is happening here?  (A1)
+0121 | verbs | pedir | Eu peço um café. | I ask for a coffee.  (A1)
+0122 | verbs | pegar em | Eu pego numa flor. | I pick up a flower.  (ch.9)
+0123 | verbs | pensar em | Eu penso em ti. | I think about you.  (A1)
+0124 | verbs | perceber | Eu percebo tudo. | I understand everything.  (A1)
+0125 | verbs | perder | Eu perco sempre as chaves. | I always lose the keys.  (A1)
+0126 | verbs | perder-se | Eu nunca me perco. | I never get lost.  (ch.26)
+0127 | verbs | perguntar | Eu pergunto as horas. | I ask the time.  (A1)
+0128 | verbs | permanecer | As lojas permanecem abertas ao domingo. | The shops stay open on Sunday.  (A1)
+0129 | verbs | permitir | Eu permito a entrada. | I allow the entry.  (A1)
+0130 | verbs | pertencer | A que equipa pertences? | Which team do you belong to?  (A1)
+0131 | verbs | pescar | O homem pesca no rio. | The man fishes in the river.  (A1)
+0132 | verbs | poder | Pode ajudar-me? | Can you help me?  (ch.1)
+0133 | verbs | pôr | Eu ponho o livro na mesa. | I put the book on the table.  (A1)
+0134 | verbs | pôr a mesa | Eu ponho a mesa para o jantar. | I set the table for dinner.  (A1)
+0135 | verbs | precisar de | Eu preciso de pão. | I need bread.  (ch.4)
+0136 | verbs | preencher | Eu preencho o formulário. | I fill in the form.  (A1)
+0137 | verbs | prender | A polícia prende o ladrão. | The police arrest the thief.  (A1)
+0138 | verbs | procurar | Eu procuro as chaves. | I look for the keys.  (A1)
+0139 | verbs | proteger | Eu protejo a minha família. | I protect my family.  (A1)
+0140 | verbs | provar | Eu provo a sopa. | I taste the soup.  (A1)
+0141 | verbs | puxar | Eu puxo a corda. | I pull the rope.  (A1)
+0142 | verbs | querer | Eu quero água. | I want water.  (A1)
+0143 | verbs | receber | Eu recebo uma carta. | I receive a letter.  (A1)
+0144 | verbs | recomendar | Eu recomendo este livro. | I recommend this book.  (A1)
+0145 | verbs | reconhecer | Eu reconheço a voz dela. | I recognize her voice.  (A1)
+0146 | verbs | regressar | Eu regresso a casa. | I return home.  (A1)
+0147 | verbs | resolver | Eu resolvo o problema. | I solve the problem.  (A1)
+0148 | verbs | respirar | Eu respiro fundo. | I breathe deeply.  (A1)
+0149 | verbs | responder | Eu respondo à pergunta. | I answer the question.  (A1)
+0150 | verbs | revelar | Eu revelo o segredo. | I reveal the secret.  (A1)
+0151 | verbs | rir | Eu rio muito. | I laugh a lot.  (A1)
+0152 | verbs | roubar | O ladrão rouba o dinheiro. | The thief steals the money.  (A1)
+0153 | verbs | saber | Eu sei tudo sobre história. | I know everything about history.  (ch.18)
+0154 | verbs | sair | Eu saio de casa às oito. | I leave home at eight.  (A1)
+0155 | verbs | saltar até a | Eu salto até ao teto. | I jump to the ceiling.  (ch.4)
+0156 | verbs | segurar | Eu seguro o bebé. | I hold the baby.  (A1)
+0157 | verbs | sentir | Eu sinto frio. | I feel cold.  (A1)
+0158 | verbs | sentir-se | Eu sinto-me bem. | I feel good.  (ch.11)
+0159 | verbs | ser | Eu sou estudante. | I am a student.  (A1)
+0160 | verbs | ser capaz de | Eu sou capaz de nadar. | I am able to swim.  (A1)
+0161 | verbs | servir para | Isto serve para cozinhar. | This is used for cooking.  (A1)
+0162 | verbs | ser responsável por | Eu sou responsável por isto. | I am responsible for this.  (A1)
+0163 | verbs | sonhar | Eu sonho com o mar. | I dream about the sea.  (A1)
+0164 | verbs | sorrir | A menina sorri. | The girl smiles.  (A1)
+0165 | verbs | subir | Eu subo as escadas. | I go up the stairs.  (A1)
+0166 | verbs | telefonar a | Eu telefono à minha mãe. | I call my mother.  (A1)
+0167 | verbs | tentar | Eu tento acabar o exercício. | I try to finish the exercise.  (ch.5)
+0168 | verbs | ter | Eu tenho um carro. | I have a car.  (A1)
+0169 | verbs | ter a ver com | Isto tem a ver com o trabalho. | This has to do with work.  (A1)
+0170 | verbs | ter de | Eu tenho de estudar hoje. | I have to study today.  (A1)
+0171 | verbs | ter medo de | Eu tenho medo de aranhas. | I am afraid of spiders.  (A1)
+0172 | verbs | ter um encontro | Eu tenho um encontro às oito. | I have a date at eight.  (A1)
+0173 | verbs | tirar de | Ele tira a caneta da mala. | He takes the pen from the bag.  (ch.11)
+0174 | verbs | tocar em | O médico toca no braço. | The doctor touches the arm.  (A1)
+0175 | verbs | tomar | Eu tomo um café de manhã. | I have a coffee in the morning.  (A1)
+0176 | verbs | trabalhar | Eu trabalho num banco. | I work in a bank.  (A1)
+0177 | verbs | trazer | Eu trago o pão. | I bring the bread.  (A1)
+0178 | verbs | ultrapassar | O carro ultrapassa o camião. | The car overtakes the truck.  (A1)
+0179 | verbs | vender | Eu vendo o carro. | I sell the car.  (A1)
+0180 | verbs | ver | Eu vejo o mar. | I see the sea.  (ch.2)
+0181 | verbs | vestir | Eu visto o casaco. | I put on the coat.  (A1)
+0182 | verbs | viajar | Eu viajo para Portugal. | I travel to Portugal.  (A1)
+0183 | verbs | vir | A encomenda vem hoje. | The order comes today.  (ch.4)
+0184 | verbs | virar-se | Ela vira-se para trás. | She turns around.  (A1)
+0185 | verbs | viver | Eu vivo em Lisboa. | I live in Lisbon.  (A1)
+0186 | nouns | arqueologia | A arqueologia é importante. | Archeology is important.  (arqueologia, f)
+0187 | nouns | arte | A arte é importante. | Art is important.  (arte, f)
+0188 | nouns | aventura | A aventura é importante. | Adventure is important.  (aventura, f)
+0189 | nouns | burocracia | A burocracia é importante. | Bureaucracy is important.  (burocracia, f)
+0190 | nouns | ciência | A ciência é importante. | Science is important.  (ciência, f)
+0191 | nouns | coincidência | A coincidência é importante. | Coincidence is important.  (coincidência, f)
+0192 | nouns | explicação | A explicação é importante. | Explanation is important.  (explicação, f)
+0193 | nouns | hipótese | A hipótese é importante. | Hypothesis is important.  (hipótese, f)
+0194 | nouns | história | A história é importante. | History is important.  (história, f)
+0195 | nouns | informação | A informação é importante. | Information is important.  (informação, f)
+0196 | nouns | lenda | A lenda é importante. | Legend is important.  (lenda, f)
+0197 | nouns | literatura | A literatura é importante. | Literature is important.  (literatura, f)
+0198 | nouns | matemática | A matemática é importante. | Mathematics is important.  (matemática, f)
+0199 | nouns | mistério | O mistério é importante. | Mystery is important.  (mistério, m)
+0200 | nouns | mito | O mito é importante. | Myth is important.  (mito, m)
+0201 | nouns | notícia | A notícia é importante. | News is important.  (notícia, f)
+0202 | nouns | oportunidade | A oportunidade é importante. | Opportunity is important.  (oportunidade, f)
+0203 | nouns | paciência | A paciência é importante. | Patience is important.  (paciência, f)
+0204 | nouns | palavra | A palavra é importante. | Word is important.  (palavra, f)
+0205 | nouns | piada | A piada é importante. | Joke is important.  (piada, f)
+0206 | nouns | poesia | A poesia é importante. | Poetry is important.  (poesia, f)
+0207 | nouns | proposta | A proposta é importante. | Proposal is important.  (proposta, f)
+0208 | nouns | salvação | A salvação é importante. | Salvation is important.  (salvação, f)
+0209 | nouns | segredo | O segredo é importante. | Secret is important.  (segredo, m)
+0210 | nouns | significado | O significado é importante. | Meaning is important.  (significado, m)
+0211 | nouns | símbolo | O símbolo é importante. | Symbol is important.  (símbolo, m)
+0212 | nouns | sonho | O sonho é importante. | Dream is important.  (sonho, m)
+0213 | nouns | teoria | A teoria é importante. | Theory is important.  (teoria, f)
+0214 | nouns | texto | O texto é importante. | Text is important.  (texto, m)
+0215 | nouns | vida | A vida é importante. | Life is important.  (vida, f)
+0216 | nouns | alforreca | Eu vejo a alforreca. | I see the jellyfish.  (alforreca, f)
+0217 | nouns | alga | Eu vejo a alga. | I see the seaweed.  (alga, f)
+0218 | nouns | ar | Eu vejo o ar. | I see the air.  (ar, m)
+0219 | nouns | cachalote | Eu vejo o cachalote. | I see the sperm whale.  (cachalote, m)
+0220 | nouns | campo | Eu vejo o campo. | I see the countryside.  (campo, m)
+0221 | nouns | cão | Eu vejo o cão. | I see the dog.  (cão, m)
+0222 | nouns | céu | Eu vejo o céu. | I see the sky.  (céu, m)
+0223 | nouns | cobra | Eu vejo a cobra. | I see the snake.  (cobra, f)
+0224 | nouns | coral | Eu vejo o coral. | I see the coral.  (coral, m)
+0225 | nouns | criatura | Eu vejo a criatura. | I see the creature.  (criatura, f)
+0226 | nouns | erva | Eu vejo a erva. | I see the grass.  (erva, f)
+0227 | nouns | estrela | Eu vejo a estrela. | I see the star.  (estrela, f)
+0228 | nouns | flor | Eu vejo a flor. | I see the flower.  (flor, f)
+0229 | nouns | gato | Eu vejo o gato. | I see the cat.  (gato, m)
+0230 | nouns | grau | Eu vejo o grau. | I see the degree.  (grau, m)
+0231 | nouns | ilha | Eu vejo a ilha. | I see the island.  (ilha, f)
+0232 | nouns | lula | Eu vejo a lula. | I see the squid.  (lula, f)
+0233 | nouns | madeira | Eu vejo a madeira. | I see the wood.  (madeira, f)
+0234 | nouns | mar | Eu vejo o mar. | I see the sea.  (mar, m)
+0235 | nouns | natureza | Eu vejo a natureza. | I see the nature.  (natureza, f)
+0236 | nouns | nuvem | Eu vejo a nuvem. | I see the cloud.  (nuvem, f)
+0237 | nouns | pássaro | Eu vejo o pássaro. | I see the bird.  (pássaro, m)
+0238 | nouns | pedra | Eu vejo a pedra. | I see the stone.  (pedra, f)
+0239 | nouns | planta | Eu vejo a planta. | I see the plant.  (planta, f)
+0240 | nouns | praia | Eu vejo a praia. | I see the beach.  (praia, f)
+0241 | nouns | rato | Eu vejo o rato. | I see the mouse.  (rato, m)
+0242 | nouns | sol | Eu vejo o sol. | I see the sun.  (sol, m)
+0243 | nouns | temperatura | Eu vejo a temperatura. | I see the temperature.  (temperatura, f)
+0244 | nouns | tempo | Eu vejo o tempo. | I see the weather.  (tempo, m)
+0245 | nouns | vento | Eu vejo o vento. | I see the wind.  (vento, m)
+0246 | nouns | barba | Eu vejo a barba. | I see the beard.  (barba, f)
+0247 | nouns | barriga | Eu vejo a barriga. | I see the belly.  (barriga, f)
+0248 | nouns | bebé | Eu vejo o bebé. | I see the baby.  (bebé, m)
+0249 | nouns | boca | Eu vejo a boca. | I see the mouth.  (boca, f)
+0250 | nouns | braço | Eu vejo o braço. | I see the arm.  (braço, m)
+0251 | nouns | cabeça | Eu vejo a cabeça. | I see the head.  (cabeça, f)
+0252 | nouns | cabelo | Eu vejo o cabelo. | I see the hair.  (cabelo, m)
+0253 | nouns | cara | Eu vejo a cara. | I see the face.  (cara, f)
+0254 | nouns | costas | Eu vejo as costas. | I see the back.  (costas, pl)
+0255 | nouns | criança | Eu vejo a criança. | I see the child.  (criança, f)
+0256 | nouns | dente | Eu vejo o dente. | I see the tooth.  (dente, m)
+0257 | nouns | homem | Eu vejo o homem. | I see the man.  (homem, m)
+0258 | nouns | humano | Eu vejo o humano. | I see the human.  (humano, m)
+0259 | nouns | lábio | Eu vejo o lábio. | I see the lip.  (lábio, m)
+0260 | nouns | mão | Eu vejo a mão. | I see the hand.  (mão, f)
+0261 | nouns | mulher | Eu vejo a mulher. | I see the woman.  (mulher, f)
+0262 | nouns | nariz | Eu vejo o nariz. | I see the nose.  (nariz, m)
+0263 | nouns | olho | Eu vejo o olho. | I see the eye.  (olho, m)
+0264 | nouns | ombro | Eu vejo o ombro. | I see the shoulder.  (ombro, m)
+0265 | nouns | pele | Eu vejo a pele. | I see the skin.  (pele, f)
+0266 | nouns | perna | Eu vejo a perna. | I see the leg.  (perna, f)
+0267 | nouns | pescoço | Eu vejo o pescoço. | I see the neck.  (pescoço, m)
+0268 | nouns | pessoa | Eu vejo a pessoa. | I see the person.  (pessoa, f)
+0269 | nouns | pulmão | Eu vejo o pulmão. | I see the lung.  (pulmão, m)
+0270 | nouns | rapariga | Eu vejo a rapariga. | I see the girl.  (rapariga, f)
+0271 | nouns | sangue | Eu vejo o sangue. | I see the blood.  (sangue, m)
+0272 | nouns | arco | Eu vejo o arco. | I see the arch.  (arco, m)
+0273 | nouns | atração | Eu vejo a atração. | I see the attraction.  (atração, f)
+0274 | nouns | aula | Eu vejo a aula. | I see the class.  (aula, f)
+0275 | nouns | banco | Eu vejo o banco. | I see the bank.  (banco, m)
+0276 | nouns | biblioteca | Eu vejo a biblioteca. | I see the library.  (biblioteca, f)
+0277 | nouns | bilhete | Eu vejo o bilhete. | I see the ticket.  (bilhete, m)
+0278 | nouns | café | Eu vejo o café. | I see the coffee.  (café, m)
+0279 | nouns | cais | Eu vejo o cais. | I see the pier.  (cais, m)
+0280 | nouns | caminho | Eu vejo o caminho. | I see the path.  (caminho, m)
+0281 | nouns | cêntimo | Eu vejo o cêntimo. | I see the cent.  (cêntimo, m)
+0282 | nouns | cidade | Eu vejo a cidade. | I see the city.  (cidade, f)
+0283 | nouns | cinema | Eu vejo o cinema. | I see the movie theater.  (cinema, m)
+0284 | nouns | correios | Eu vejo os correios. | I see the post office.  (correios, pl)
+0285 | nouns | conta | Eu vejo a conta. | I see the check.  (conta, f)
+0286 | nouns | cúpula | Eu vejo a cúpula. | I see the dome.  (cúpula, f)
+0287 | nouns | dinheiro | Eu vejo o dinheiro. | I see the money.  (dinheiro, m)
+0288 | nouns | edifício | Eu vejo o edifício. | I see the building.  (edifício, m)
+0289 | nouns | escola | Eu vejo a escola. | I see the school.  (escola, f)
+0290 | nouns | espetáculo | Eu vejo o espetáculo. | I see the show.  (espetáculo, m)
+0291 | nouns | estação | Eu vejo a estação. | I see the station.  (estação, f)
+0292 | nouns | farmácia | Eu vejo a farmácia. | I see the pharmacy.  (farmácia, f)
+0293 | nouns | ginásio | Eu vejo o ginásio. | I see the gym.  (ginásio, m)
+0294 | nouns | hospital | Eu vejo o hospital. | I see the hospital.  (hospital, m)
+0295 | nouns | hotel | Eu vejo o hotel. | I see the hotel.  (hotel, m)
+0296 | nouns | jardim | Eu vejo o jardim. | I see the garden.  (jardim, m)
+0297 | nouns | livraria | Eu vejo a livraria. | I see the bookstore.  (livraria, f)
+0298 | nouns | lugar | Eu vejo o lugar. | I see the place.  (lugar, m)
+0299 | nouns | mapa | Eu vejo o mapa. | I see the map.  (mapa, m)
+0300 | nouns | moeda | Eu vejo a moeda. | I see the coin.  (moeda, f)
+0301 | nouns | morada | Eu vejo a morada. | I see the address.  (morada, f)
+0302 | nouns | museu | Eu vejo o museu. | I see the museum.  (museu, m)
+0303 | nouns | palácio | Eu vejo o palácio. | I see the palace.  (palácio, m)
+0304 | nouns | paragem | Eu vejo a paragem. | I see the bus stop.  (paragem, f)
+0305 | nouns | parque | Eu vejo o parque. | I see the park.  (parque, m)
+0306 | nouns | polícia | Eu vejo a polícia. | I see the police (institution).  (polícia, f)
+0307 | nouns | polícia | Eu vejo o polícia. | I see the police officer.  (polícia, m)
+0308 | nouns | ponte | Eu vejo a ponte. | I see the bridge.  (ponte, f)
+0309 | nouns | preço | Eu vejo o preço. | I see the price.  (preço, m)
+0310 | nouns | reserva | Eu vejo a reserva. | I see the reservation.  (reserva, f)
+0311 | nouns | restaurante | Eu vejo o restaurante. | I see the restaurant.  (restaurante, m)
+0312 | nouns | rua | Eu vejo a rua. | I see the road.  (rua, f)
+0313 | nouns | supermercado | Eu vejo o supermercado. | I see the supermarket.  (supermercado, m)
+0314 | nouns | templo | Eu vejo o templo. | I see the temple.  (templo, m)
+0315 | nouns | torre | Eu vejo a torre. | I see the tower.  (torre, f)
+0316 | nouns | blusa | Eu uso a blusa. | I wear the blouse.  (blusa, f)
+0317 | nouns | calças | Eu uso as calças. | I wear the pants.  (calças, pl)
+0318 | nouns | casaco | Eu uso o casaco. | I wear the coat.  (casaco, m)
+0319 | nouns | chapéu | Eu uso o chapéu. | I wear the hat.  (chapéu, m)
+0320 | nouns | cinto | Eu uso o cinto. | I wear the belt.  (cinto, m)
+0321 | nouns | fato | Eu uso o fato. | I wear the suit.  (fato, m)
+0322 | nouns | roupa | Eu uso a roupa. | I wear the clothing.  (roupa, f)
+0323 | nouns | saia | Eu uso a saia. | I wear the skirt.  (saia, f)
+0324 | nouns | sapato | Eu uso o sapato. | I wear the shoe.  (sapato, m)
+0325 | nouns | vestido | Eu uso o vestido. | I wear the dress.  (vestido, m)
+0326 | nouns | avó | A minha avó está em casa. | My grandmother is at home.  (avó, f)
+0327 | nouns | avô | O meu avô está em casa. | My grandfather is at home.  (avô, m)
+0328 | nouns | família | A minha família está em casa. | My family is at home.  (família, f)
+0329 | nouns | filho | O meu filho está em casa. | My son is at home.  (filho, m)
+0330 | nouns | filha | A minha filha está em casa. | My daughter is at home.  (filha, f)
+0331 | nouns | irmã | A minha irmã está em casa. | My sister is at home.  (irmã, f)
+0332 | nouns | irmão | O meu irmão está em casa. | My brother is at home.  (irmão, m)
+0333 | nouns | mãe | A minha mãe está em casa. | My mother is at home.  (mãe, f)
+0334 | nouns | pai | O meu pai está em casa. | My father is at home.  (pai, m)
+0335 | nouns | pais | Os meus pais estão em casa. | My parents are at home.  (pais, pl)
+0336 | nouns | primo | O meu primo está em casa. | My cousin (man) is at home.  (primo, m)
+0337 | nouns | prima | A minha prima está em casa. | My cousin (woman) is at home.  (prima, f)
+0338 | nouns | água | Eu gosto de água. | I like water.  (água, f)
+0339 | nouns | almoço | Eu gosto de almoço. | I like lunch.  (almoço, m)
+0340 | nouns | bolacha | Eu gosto de bolacha. | I like cookie.  (bolacha, f)
+0341 | nouns | bolo | Eu gosto de bolo. | I like cake.  (bolo, m)
+0342 | nouns | café | Eu gosto de café. | I like coffee.  (café, m)
+0343 | nouns | carne | Eu gosto de carne. | I like meat.  (carne, f)
+0344 | nouns | cerveja | Eu gosto de cerveja. | I like beer.  (cerveja, f)
+0345 | nouns | chá | Eu gosto de chá. | I like tea.  (chá, m)
+0346 | nouns | chocolate | Eu gosto de chocolate. | I like chocolate.  (chocolate, m)
+0347 | nouns | comida | Eu gosto de comida. | I like food.  (comida, f)
+0348 | nouns | fome | Eu gosto de fome. | I like hunger.  (fome, f)
+0349 | nouns | frigideira | Eu gosto de frigideira. | I like pan.  (frigideira, f)
+0350 | nouns | garrafa | Eu gosto de garrafa. | I like bottle.  (garrafa, f)
+0351 | nouns | laranja | Eu gosto de laranja. | I like orange.  (laranja, f)
+0352 | nouns | legume | Eu gosto de legume. | I like vegetable.  (legume, m)
+0353 | nouns | marisco | Eu gosto de marisco. | I like seafood.  (marisco, m)
+0354 | nouns | menu | Eu gosto de menu. | I like menu.  (menu, m)
+0355 | nouns | jantar | Eu gosto de jantar. | I like dinner.  (jantar, m)
+0356 | nouns | pão | Eu gosto de pão. | I like bread.  (pão, m)
+0357 | nouns | peixe | Eu gosto de peixe. | I like fish.  (peixe, m)
+0358 | nouns | pequeno-almoço | Eu gosto de pequeno-almoço. | I like breakfast.  (pequeno-almoço, m)
+0359 | nouns | pizza | Eu gosto de pizza. | I like pizza.  (pizza, f)
+0360 | nouns | prato | Eu gosto de prato. | I like dish.  (prato, m)
+0361 | nouns | receita | Eu gosto de receita. | I like recipe.  (receita, f)
+0362 | nouns | salada | Eu gosto de salada. | I like salad.  (salada, f)
+0363 | nouns | sopa | Eu gosto de sopa. | I like soup.  (sopa, f)
+0364 | nouns | sumo | Eu gosto de sumo. | I like juice.  (sumo, m)
+0365 | nouns | vinho branco | Eu gosto de vinho branco. | I like white wine.  (vinho branco, m)
+0366 | nouns | vinho tinto | Eu gosto de vinho tinto. | I like red wine.  (vinho tinto, m)
+0367 | nouns | cadeira | Eu limpo a cadeira. | I clean the chair.  (cadeira, f)
+0368 | nouns | cama | Eu limpo a cama. | I clean the bed.  (cama, f)
+0369 | nouns | candeeiro | Eu limpo o candeeiro. | I clean the lamp.  (candeeiro, m)
+0370 | nouns | canto | Eu limpo o canto. | I clean the corner.  (canto, m)
+0371 | nouns | casa | Eu limpo a casa. | I clean the house.  (casa, f)
+0372 | nouns | casa | Eu limpo a casa. | I clean the home.  (casa, f)
+0373 | nouns | casa de banho | Eu limpo a casa de banho. | I clean the bathroom.  (casa de banho, f)
+0374 | nouns | chão | Eu limpo o chão. | I clean the floor.  (chão, m)
+0375 | nouns | corredor | Eu limpo o corredor. | I clean the corridor.  (corredor, m)
+0376 | nouns | cozinha | Eu limpo a cozinha. | I clean the kitchen.  (cozinha, f)
+0377 | nouns | duche | Eu limpo o duche. | I clean the shower.  (duche, m)
+0378 | nouns | escritório | Eu limpo o escritório. | I clean the office.  (escritório, m)
+0379 | nouns | estante | Eu limpo a estante. | I clean the bookcase.  (estante, f)
+0380 | nouns | gaveta | Eu limpo a gaveta. | I clean the drawer.  (gaveta, f)
+0381 | nouns | janela | Eu limpo a janela. | I clean the window.  (janela, f)
+0382 | nouns | luz | Eu limpo a luz. | I clean the light.  (luz, f)
+0383 | nouns | mesa | Eu limpo a mesa. | I clean the table.  (mesa, f)
+0384 | nouns | parede | Eu limpo a parede. | I clean the wall.  (parede, f)
+0385 | nouns | porta | Eu limpo a porta. | I clean the door.  (porta, f)
+0386 | nouns | portão | Eu limpo o portão. | I clean the gate.  (portão, m)
+0387 | nouns | quarto | Eu limpo o quarto. | I clean the (bed)room.  (quarto, m)
+0388 | nouns | sala | Eu limpo a sala. | I clean the room.  (sala, f)
+0389 | nouns | televisão | Eu limpo a televisão. | I clean the television.  (televisão, f)
+0390 | nouns | terraço | Eu limpo o terraço. | I clean the terrace.  (terraço, m)
+0391 | nouns | teto | Eu limpo o teto. | I clean the ceiling.  (teto, m)
+0392 | nouns | álbum | Eu uso o álbum. | I use the album.  (álbum, m)
+0393 | nouns | armadilha | Eu uso a armadilha. | I use the trap.  (armadilha, f)
+0394 | nouns | boneca | Eu uso a boneca. | I use the doll.  (boneca, f)
+0395 | nouns | caderno | Eu uso o caderno. | I use the notebook.  (caderno, m)
+0396 | nouns | caneca | Eu uso a caneca. | I use the mug.  (caneca, f)
+0397 | nouns | caneta | Eu uso a caneta. | I use the pen.  (caneta, f)
+0398 | nouns | carta | Eu uso a carta. | I use the letter.  (carta, f)
+0399 | nouns | carteira | Eu uso a carteira. | I use the wallet.  (carteira, f)
+0400 | nouns | chave | Eu uso a chave. | I use the key.  (chave, f)
+0401 | nouns | chávena | Eu uso a chávena. | I use the cup.  (chávena, f)
+0402 | nouns | coisa | Eu uso a coisa. | I use the thing.  (coisa, f)
+0403 | nouns | colar | Eu uso o colar. | I use the necklace.  (colar, m)
+0404 | nouns | documento | Eu uso o documento. | I use the document.  (documento, m)
+0405 | nouns | encomenda | Eu uso a encomenda. | I use the parcel.  (encomenda, f)
+0406 | nouns | envelope | Eu uso o envelope. | I use the envelope.  (envelope, m)
+0407 | nouns | ferramenta | Eu uso a ferramenta. | I use the tool.  (ferramenta, f)
+0408 | nouns | formulário | Eu uso o formulário. | I use the form.  (formulário, m)
+0409 | nouns | fotografia | Eu uso a fotografia. | I use the photography.  (fotografia, f)
+0410 | nouns | jarro | Eu uso o jarro. | I use the jug.  (jarro, m)
+0411 | nouns | jornal | Eu uso o jornal. | I use the newspaper.  (jornal, m)
+0412 | nouns | lápis | Eu uso o lápis. | I use the pencil.  (lápis, m)
+0413 | nouns | livro | Eu uso o livro. | I use the book.  (livro, m)
+0414 | nouns | loiça | Eu uso a loiça. | I use the crockery.  (loiça, f)
+0415 | nouns | mala | Eu uso a mala. | I use the bag.  (mala, f)
+0416 | nouns | máscara | Eu uso a máscara. | I use the mask.  (máscara, f)
+0417 | nouns | medalha | Eu uso a medalha. | I use the medal.  (medalha, f)
+0418 | nouns | mochila | Eu uso a mochila. | I use the backpack.  (mochila, f)
+0419 | nouns | óculos | Eu uso os óculos. | I use the glasses.  (óculos, pl)
+0420 | nouns | página | Eu uso a página. | I use the page.  (página, f)
+0421 | nouns | papel | Eu uso o papel. | I use the paper.  (papel, m)
+0422 | nouns | passaporte | Eu uso o passaporte. | I use the passport.  (passaporte, m)
+0423 | nouns | peça | Eu uso a peça. | I use the part.  (peça, f)
+0424 | nouns | piano | Eu uso o piano. | I use the piano.  (piano, m)
+0425 | nouns | revista | Eu uso a revista. | I use the magazine.  (revista, f)
+0426 | nouns | telefone | Eu uso o telefone. | I use the telephone.  (telefone, m)
+0427 | nouns | tesouro | Eu uso o tesouro. | I use the treasure.  (tesouro, m)
+0428 | nouns | tinta | Eu uso a tinta. | I use the ink.  (tinta, f)
+0429 | nouns | advogado | Ele é advogado. | He is a lawyer.  (advogado, m)
+0430 | nouns | aluno | Ele é aluno. | He is a student.  (aluno, m)
+0431 | nouns | amigo | Ele é amigo. | He is a friend.  (amigo, m)
+0432 | nouns | biólogo | Ele é biólogo. | He is a biologist.  (biólogo, m)
+0433 | nouns | cantor | Ele é cantor. | He is a singer.  (cantor, m)
+0434 | nouns | cliente | Ele é cliente. | He is a client.  (cliente, m)
+0435 | nouns | cozinheiro | Ele é cozinheiro. | He is a cook.  (cozinheiro, m)
+0436 | nouns | diretor | Ele é diretor. | He is a director.  (diretor, m)
+0437 | nouns | empregado | Ele é empregado. | He is a employee.  (empregado, m)
+0438 | nouns | enfermeiro | Ele é enfermeiro. | He is a nurse.  (enfermeiro, m)
+0439 | nouns | engenheiro | Ele é engenheiro. | He is a engineer.  (engenheiro, m)
+0440 | nouns | escritor | Ele é escritor. | He is a writer.  (escritor, m)
+0441 | nouns | faroleiro | Ele é faroleiro. | He is a lighthouse keeper.  (faroleiro, m)
+0442 | nouns | guarda | Ele é guarda. | He is a guard.  (guarda, m)
+0443 | nouns | guardião | Ele é guardião. | He is a guardian.  (guardião, m)
+0444 | nouns | guia | Ele é guia. | He is a guide.  (guia, m)
+0445 | nouns | historiador | Ele é historiador. | He is a historian.  (historiador, m)
+0446 | nouns | ladrão | Ele é ladrão. | He is a burglar.  (ladrão, m)
+0447 | nouns | médico | Ele é médico. | He is a doctor.  (médico, m)
+0448 | nouns | paciente | Ele é paciente. | He is a patient.  (paciente, m)
+0449 | nouns | pescador | Ele é pescador. | He is a fisherman.  (pescador, m)
+0450 | nouns | polícia | Ele é polícia. | He is a police officer.  (polícia, m)
+0451 | nouns | príncipe | Ele é príncipe. | He is a prince.  (príncipe, m)
+0452 | nouns | prisioneiro | Ele é prisioneiro. | He is a prisoner.  (prisioneiro, m)
+0453 | nouns | professor | Ele é professor. | He is a teacher.  (professor, m)
+0454 | nouns | rei | Ele é rei. | He is a king.  (rei, m)
+0455 | nouns | recém-chegado | Ele é recém-chegado. | He is a newcomer.  (recém-chegado, m)
+0456 | nouns | reformado | Ele é reformado. | He is a retired.  (reformado, m)
+0457 | nouns | secretário | Ele é secretário. | He is a secretary.  (secretário, m)
+0458 | nouns | turista | Ele é turista. | He is a tourist.  (turista, m)
+0459 | nouns | vendedor | Ele é vendedor. | He is a seller.  (vendedor, m)
+0460 | nouns | vizinho | Ele é vizinho. | He is a neighbor.  (vizinho, m)
+0461 | nouns | autocarro | Eu vou de autocarro. | I go by bus.  (autocarro, m)
+0462 | nouns | avião | Eu vou de avião. | I go by plane.  (avião, m)
+0463 | nouns | barco | Eu vou de barco. | I go by boat.  (barco, m)
+0464 | nouns | bicicleta | Eu vou de bicicleta. | I go by bicycle.  (bicicleta, f)
+0465 | nouns | carro | Eu vou de carro. | I go by car.  (carro, m)
+0466 | nouns | comboio | Eu vou de comboio. | I go by train.  (comboio, m)
+0467 | nouns | elétrico | Eu vou de elétrico. | I go by tram.  (elétrico, m)
+0468 | nouns | a pé | Eu vou a pé. | I go on foot.  (a pé, m)
+0469 | adjectives | aberto | A porta está aberta. | The door is open.
+0470 | adjectives | afiado | Isto é afiado. | This is sharp.
+0471 | adjectives | agradável | Isto é agradável. | This is pleasant.
+0472 | adjectives | alto | Isto é alto. | This is high.
+0473 | adjectives | apertado | Isto é apertado. | This is tight.
+0474 | adjectives | assustado | Ele está assustado. | He is scared.
+0475 | adjectives | atrasado | Ele está atrasado. | He is late.
+0476 | adjectives | atribulado | Isto é atribulado. | This is eventful.
+0477 | adjectives | baixo | Isto é baixo. | This is low.
+0478 | adjectives | barato | Isto é barato. | This is cheap.
+0479 | adjectives | bom | Isto é bom. | This is good.
+0480 | adjectives | bonito | Isto é bonito. | This is pretty.
+0481 | adjectives | brilhante | Isto é brilhante. | This is bright.
+0482 | adjectives | caro | Isto é caro. | This is expensive.
+0483 | adjectives | cansado | Ele está cansado. | He is tired.
+0484 | adjectives | chateado | Ele está chateado. | He is upset.
+0485 | adjectives | cheio | A garrafa está cheia. | The bottle is full.
+0486 | adjectives | colorido | Isto é colorido. | This is colorful.
+0487 | adjectives | complicado | Isto é complicado. | This is complicated.
+0488 | adjectives | comprido | Isto é comprido. | This is long.
+0489 | adjectives | confuso | Ele está confuso. | He is confused.
+0490 | adjectives | contente | Ele está contente. | He is happy.
+0491 | adjectives | correto | Isto é correto. | This is correct.
+0492 | adjectives | cuidadoso | Ele é cuidadoso. | He is careful.
+0493 | adjectives | curioso | Ele é curioso. | He is curious.
+0494 | adjectives | curto | Isto é curto. | This is short.
+0495 | adjectives | deitado | Ele está deitado. | He is lying down.
+0496 | adjectives | desarrumado | A casa está desarrumada. | The house is messy.
+0497 | adjectives | desconfortável | Isto é desconfortável. | This is uncomfortable.
+0498 | adjectives | desconhecido | Isto é desconhecido. | This is unknown.
+0499 | adjectives | desiludido | Ele está desiludido. | He is disappointed.
+0500 | adjectives | despenteado | Ele está despenteado. | He is disheveled.
+0501 | adjectives | distraído | Ele está distraído. | He is distracted.
+0502 | adjectives | doente | Ele está doente. | He is sick.
+0503 | adjectives | enorme | Isto é enorme. | This is huge.
+0504 | adjectives | escondido | A chave está escondida. | The key is hidden.
+0505 | adjectives | escuro | Isto é escuro. | This is dark.
+0506 | adjectives | espantado | Ele está espantado. | He is surprised.
+0507 | adjectives | estranho | Isto é estranho. | This is strange.
+0508 | adjectives | fácil | Isto é fácil. | This is easy.
+0509 | adjectives | fechado | A porta está fechada. | The door is closed.
+0510 | adjectives | feliz | Ele está feliz. | He is happy.
+0511 | adjectives | final | Isto é final. | This is final.
+0512 | adjectives | fresco | A água está fresca. | The water is fresh.
+0513 | adjectives | frio | A água está fria. | The water is cold.
+0514 | adjectives | gelado | A água está gelada. | The water is freezing.
+0515 | adjectives | gigante | Isto é gigante. | This is gigantic.
+0516 | adjectives | grande | Isto é grande. | This is big.
+0517 | adjectives | grelhado | Isto é grelhado. | This is grilled.
+0518 | adjectives | incrível | Isto é incrível. | This is incredible.
+0519 | adjectives | indeciso | Ele é indeciso. | He is indecisive.
+0520 | adjectives | inteligente | Ele é inteligente. | He is intelligent.
+0521 | adjectives | interessante | Isto é interessante. | This is interesting.
+0522 | adjectives | inútil | Isto é inútil. | This is useless.
+0523 | adjectives | lento | Isto é lento. | This is slow.
+0524 | adjectives | lindo | Isto é lindo. | This is beautiful.
+0525 | adjectives | luminoso | Isto é luminoso. | This is luminous.
+0526 | adjectives | maluco | Ele é maluco. | He is crazy.
+0527 | adjectives | mau | Isto é mau. | This is bad.
+0528 | adjectives | moderno | Isto é moderno. | This is modern.
+0529 | adjectives | nervoso | Ele está nervoso. | He is nervous.
+0530 | adjectives | novo | Isto é novo. | This is new.
+0531 | adjectives | ocupado | Ele está ocupado. | He is busy.
+0532 | adjectives | ótimo | Isto é ótimo. | This is great.
+0533 | adjectives | partido | A chávena está partida. | The cup is broken.
+0534 | adjectives | perigoso | Isto é perigoso. | This is dangerous.
+0535 | adjectives | pesado | Isto é pesado. | This is heavy.
+0536 | adjectives | precioso | Isto é precioso. | This is precious.
+0537 | adjectives | preocupado | Ele está preocupado. | He is worried.
+0538 | adjectives | pronto | Ele está pronto. | He is ready.
+0539 | adjectives | quente | A sopa está quente. | The soup is warm.
+0540 | adjectives | rabugento | Ele é rabugento. | He is grumpy.
+0541 | adjectives | rápido | Isto é rápido. | This is fast.
+0542 | adjectives | redondo | Isto é redondo. | This is round.
+0543 | adjectives | relaxado | Ele está relaxado. | He is relaxed.
+0544 | adjectives | restrito | Isto é restrito. | This is restricted.
+0545 | adjectives | secreto | Isto é secreto. | This is secret.
+0546 | adjectives | seguro | Isto é seguro. | This is safe.
+0547 | adjectives | simpático | Ele é simpático. | He is nice.
+0548 | adjectives | simples | Isto é simples. | This is simple.
+0549 | adjectives | sozinho | Ele está sozinho. | He is alone.
+0550 | adjectives | suave | Isto é suave. | This is soft.
+0551 | adjectives | submerso | A cidade está submersa. | The city is submerged.
+0552 | adjectives | sujo | A roupa está suja. | The clothing is dirty.
+0553 | adjectives | surpreso | Ele está surpreso. | He is surprised.
+0554 | adjectives | ténue | Isto é ténue. | This is tenuous.
+0555 | adjectives | transparente | Isto é transparente. | This is transparent.
+0556 | adjectives | triste | Ele está triste. | He is sad.
+0557 | adjectives | urgente | Isto é urgente. | This is urgent.
+0558 | adjectives | velho | Isto é velho. | This is old.
+0559 | adjectives | venenoso | Isto é venenoso. | This is poisonous.
+0560 | adjectives | amarelo | Isto é amarelo. | This is yellow.
+0561 | adjectives | azul | Isto é azul. | This is blue.
+0562 | adjectives | branco | Isto é branco. | This is white.
+0563 | adjectives | castanho | Isto é castanho. | This is brown.
+0564 | adjectives | cinzento | Isto é cinzento. | This is gray.
+0565 | adjectives | cor-de-laranja | Isto é cor-de-laranja. | This is orange.
+0566 | adjectives | cor-de-rosa | Isto é cor-de-rosa. | This is pink.
+0567 | adjectives | preto | Isto é preto. | This is black.
+0568 | adjectives | roxo | Isto é roxo. | This is purple.
+0569 | adjectives | verde | Isto é verde. | This is green.
+0570 | adjectives | vermelho | Isto é vermelho. | This is red.
+0571 | location | à direita | O gato está à direita. | The cat is on the right.
+0572 | location | à esquerda | O gato está à esquerda. | The cat is on the left.
+0573 | location | à frente de | O gato está à frente da casa. | The cat is in front of the house.
+0574 | location | à volta de | O gato está à volta da casa. | The cat is around the house.
+0575 | location | ao lado de | O gato está ao lado da casa. | The cat is next to the house.
+0576 | location | atrás de | O gato está atrás da casa. | The cat is behind the house.
+0577 | location | debaixo de | O gato está debaixo da casa. | The cat is under the house.
+0578 | location | dentro de | O gato está dentro da casa. | The cat is inside of the house.
+0579 | location | do lado direito | O gato está do lado direito. | The cat is on the right side.
+0580 | location | do lado esquerdo | O gato está do lado esquerdo. | The cat is on the left side.
+0581 | location | em | O gato está em casa. | The cat is at home.
+0582 | location | em cima de | O gato está em cima da casa. | The cat is on the house.
+0583 | location | em direção a | O gato está em direção à casa. | The cat is toward the house.
+0584 | location | em frente | O gato está em frente. | The cat is in front.
+0585 | location | fora de | O gato está fora da casa. | The cat is outside of the house.
+0586 | location | longe de | O gato está longe da casa. | The cat is far from the house.
+0587 | location | no fundo de | O gato está no fundo da casa. | The cat is at the bottom of the house.
+0588 | location | no meio de | O gato está no meio da casa. | The cat is in the middle of the house.
+0589 | location | perto de | O gato está perto da casa. | The cat is close to the house.
+0590 | numbers | um / uma | um / uma | 
+0591 | numbers | dois / duas | dois / duas | 
+0592 | numbers | três | três | 
+0593 | numbers | quatro | quatro | 
+0594 | numbers | cinco | cinco | 
+0595 | numbers | seis | seis | 
+0596 | numbers | sete | sete | 
+0597 | numbers | oito | oito | 
+0598 | numbers | nove | nove | 
+0599 | numbers | dez | dez | 
+0600 | numbers | onze | onze | 
+0601 | numbers | doze | doze | 
+0602 | numbers | treze | treze | 
+0603 | numbers | catorze | catorze | 
+0604 | numbers | quinze | quinze | 
+0605 | numbers | dezasseis | dezasseis | 
+0606 | numbers | dezassete | dezassete | 
+0607 | numbers | dezoito | dezoito | 
+0608 | numbers | dezanove | dezanove | 
+0609 | numbers | vinte | vinte | 
+0610 | numbers | trinta | trinta | 
+0611 | numbers | trinta e um | trinta e um | 
+0612 | numbers | trinta e sete | trinta e sete | 
+0613 | numbers | quarenta | quarenta | 
+0614 | numbers | cinquenta | cinquenta | 
+0615 | numbers | sessenta | sessenta | 
+0616 | numbers | setenta | setenta | 
+0617 | numbers | oitenta | oitenta | 
+0618 | numbers | noventa | noventa | 
+0619 | numbers | cem | cem | 
+0620 | phrases | dia | dia (m) | 
+0621 | phrases | semana | semana (f) | 
+0622 | phrases | mês | mês (m) | 
+0623 | phrases | ano | ano (m) | 
+0624 | phrases | segundo | segundo (m) | 
+0625 | phrases | minuto | minuto (m) | 
+0626 | phrases | hora | hora (f) | 
+0627 | phrases | segunda-feira | segunda-feira (f) | 
+0628 | phrases | terça-feira | terça-feira (f) | 
+0629 | phrases | quarta-feira | quarta-feira (f) | 
+0630 | phrases | quinta-feira | quinta-feira (f) | 
+0631 | phrases | sexta-feira | sexta-feira (f) | 
+0632 | phrases | sábado | sábado (m) | 
+0633 | phrases | domingo | domingo (m) | 
+0634 | phrases | janeiro | janeiro (m) | 
+0635 | phrases | fevereiro | fevereiro (m) | 
+0636 | phrases | março | março (m) | 
+0637 | phrases | abril | abril (m) | 
+0638 | phrases | maio | maio (m) | 
+0639 | phrases | junho | junho (m) | 
+0640 | phrases | julho | julho (m) | 
+0641 | phrases | agosto | agosto (m) | 
+0642 | phrases | setembro | setembro (m) | 
+0643 | phrases | outubro | outubro (m) | 
+0644 | phrases | novembro | novembro (m) | 
+0645 | phrases | dezembro | dezembro (m) | 
+0646 | phrases | estação do ano | estação do ano (f) | 
+0647 | phrases | primavera | primavera (f) | 
+0648 | phrases | verão | verão (m) | 
+0649 | phrases | outono | outono (m) | 
+0650 | phrases | inverno | inverno (m) | 
+0651 | phrases | relógio | relógio (m) | 
+0652 | phrases | meia-noite | meia-noite (f) | 
+0653 | phrases | meio-dia | meio-dia (m) | 
+0654 | phrases | de manhã | de manhã | 
+0655 | phrases | de tarde, à tarde | de tarde, à tarde | 
+0656 | phrases | de noite, à noite | de noite, à noite | 
+0657 | phrases | cedo | cedo | 
+0658 | phrases | tarde | tarde | 
+0659 | phrases | agora | agora | 
+0660 | phrases | hoje | hoje | 
+0661 | phrases | amanhã | amanhã | 
+0662 | phrases | antes | antes | 
+0663 | phrases | depois | depois | 
+0664 | phrases | regularmente | regularmente | 
+0665 | phrases | muitas vezes | muitas vezes | 
+0666 | phrases | todos os dias | todos os dias | 
+0667 | phrases | nunca | nunca | 
+0668 | phrases | sempre | sempre | 
+0669 | phrases | São duas horas. | São duas horas. | 
+0670 | phrases | São duas e um quarto. | São duas e um quarto. | 
+0671 | phrases | São duas e meia. | São duas e meia. | 
+0672 | phrases | olá | olá | 
+0673 | phrases | bom dia | bom dia | 
+0674 | phrases | boa tarde | boa tarde | 
+0675 | phrases | boa noite | boa noite | 
+0676 | phrases | muito prazer | muito prazer | 
+0677 | phrases | igualmente | igualmente | 
+0678 | phrases | Como está? | Como está? | 
+0679 | phrases | Como estás? | Como estás? | 
+0680 | phrases | Bem, obrigado. | Bem, obrigado. | 
+0681 | phrases | Queria… | Queria… | 
+0682 | phrases | Podia...? | Podia...? | 
+0683 | phrases | não há problema | não há problema | 
+0684 | phrases | um momento | um momento | 
+0685 | phrases | por favor | por favor | 
+0686 | phrases | desculpe | desculpe | 
+0687 | phrases | desculpa | desculpa | 
+0688 | phrases | peço desculpa | peço desculpa | 
+0689 | phrases | (muito) obrigado | (muito) obrigado | 
+0690 | phrases | (muito) obrigada | (muito) obrigada | 
+0691 | phrases | de nada | de nada | 
+0692 | phrases | até já | até já | 
+0693 | phrases | até logo | até logo | 
+0694 | phrases | até amanhã | até amanhã | 
+0695 | phrases | até à próxima | até à próxima | 
+0696 | phrases | tchau | tchau | 
+0697 | phrases | adeus | adeus | 
+0698 | phrases | sim | sim | 
+0699 | phrases | não | não | 
+0700 | phrases | e | e | 
+0701 | phrases | mas | mas | 
+0702 | phrases | se | se | 
+0703 | phrases | por isso | por isso | 
+0704 | phrases | tenho a certeza | tenho a certeza | 
+0705 | phrases | acho que sim | acho que sim | 
+0706 | phrases | acho que não | acho que não | 
+0707 | phrases | pois | pois | 
+0708 | phrases | com certeza | com certeza | 
+0709 | phrases | isso mesmo | isso mesmo | 
+0710 | phrases | talvez | talvez | 
+0711 | phrases | se calhar | se calhar | 
+0712 | phrases | exato | exato | 
+0713 | phrases | está bem | está bem | 
+0714 | phrases | faz sentido | faz sentido | 
+0715 | phrases | cuidado | cuidado | 
+0716 | phrases | olhe | olhe | 
+0717 | phrases | que disparate | que disparate | 
+0718 | phrases | que pena | que pena | 
+0719 | phrases | só | só | 
+0720 | phrases | quase | quase | 
+0721 | phrases | ainda | ainda | 
+0722 | phrases | ainda não | ainda não | 
+0723 | phrases | já | já | 
+0724 | phrases | já não | já não | 
+
+====================================================================================================
+ALL DISTINCT LEMMAS, one per line — the authoritative in-deck test.
+Gender suffixes like ' (m)' have been stripped, so look the bare word up here.
+Test:  grep -qx 'melhor' deck-digest.txt  ->  in deck / not in deck
+====================================================================================================
+(muito) obrigada
+(muito) obrigado
+Bem, obrigado.
+Como está?
+Como estás?
+Podia...?
+Queria…
+São duas e meia.
+São duas e um quarto.
+São duas horas.
+a pé
+abanar
+aberto
+abraçar
+abril
+abrir
+abrir-se
+acabar
+acalmar-se
+aceitar
+acender
+achar
+acho que não
+acho que sim
+acordar
+acreditar em
+adeus
+adorar
+advogado
+afiado
+afundar
+agarrar-se a
+agora
+agosto
+agradável
+aguentar
+ainda
+ainda não
+ajudar
+alforreca
+alga
+almoçar
+almoço
+alto
+alucinar
+alugar
+aluno
+amanhã
+amar
+amarelo
+amigo
+andar até a
+ano
+antes
+ao lado de
+apaixonar-se por
+apanhar
+aparecer
+apertado
+apontar para
+aprender
+aproximar-se de
+aquecer
+ar
+arco
+armadilha
+arqueologia
+arte
+assinar
+assistir a
+assustado
+aterrar
+atrasado
+atravessar
+atração
+atribulado
+atrás de
+até amanhã
+até já
+até logo
+até à próxima
+aula
+autocarro
+aventura
+avião
+avó
+avô
+azul
+baixo
+banco
+barato
+barba
+barco
+barriga
+bater
+beber
+bebé
+biblioteca
+bicicleta
+bilhete
+biólogo
+blusa
+boa noite
+boa tarde
+boca
+bolacha
+bolo
+bom
+bom dia
+boneca
+bonito
+branco
+braço
+brilhante
+brincar
+burocracia
+cabelo
+cabeça
+cachalote
+cadeira
+caderno
+café
+cair em
+cais
+calças
+cama
+caminho
+campo
+candeeiro
+caneca
+caneta
+cansado
+canto
+cantor
+cara
+carne
+caro
+carro
+carta
+carteira
+casa
+casa de banho
+casaco
+castanho
+catorze
+cedo
+cem
+cerveja
+chamar
+chamar-se
+chapéu
+chateado
+chave
+chegar a
+cheio
+cheirar a
+chocolate
+chover
+chá
+chávena
+chão
+cidade
+cinco
+cinema
+cinquenta
+cinto
+cinzento
+ciência
+cliente
+cobra
+coincidência
+coisa
+colar
+colorido
+com certeza
+comboio
+comer
+começar
+comida
+complicado
+comprar
+compreender
+comprido
+confiar em
+confuso
+conhecer
+conta
+contente
+continuar
+controlar
+cor-de-laranja
+cor-de-rosa
+coral
+corredor
+correios
+correr até a
+correto
+costas
+cozinha
+cozinhar
+cozinheiro
+criança
+criatura
+cuidado
+cuidadoso
+cumprimentar
+cumprir
+curioso
+curto
+cão
+céu
+cêntimo
+cúpula
+dar a
+dar um passeio
+de manhã
+de nada
+de noite, à noite
+de tarde, à tarde
+debaixo de
+decidir
+deitado
+deixar
+dente
+dentro de
+depois
+desaparecer
+desarrumado
+descobrir
+desconfortável
+desconhecido
+desculpa
+desculpe
+desiludido
+despenteado
+despir
+detestar
+dever
+dez
+dezanove
+dezasseis
+dezassete
+dezembro
+dezoito
+dia
+dinheiro
+diretor
+disparar
+distraído
+dizer
+do lado direito
+do lado esquerdo
+documento
+doente
+dois / duas
+domingo
+dormir
+doze
+duche
+e
+edifício
+elétrico
+em
+em cima de
+em direção a
+em frente
+empregado
+empurrar
+encomenda
+enfermeiro
+engasgar-se
+engenheiro
+enorme
+ensinar
+entender
+entrar
+envelope
+erva
+escola
+escolher
+esconder
+escondido
+escrever
+escritor
+escritório
+escuro
+esfregar
+espantado
+esperar
+espetáculo
+esquecer-se de
+estacionar
+estante
+estar
+estação
+estação do ano
+estender
+esticar
+estranho
+estrela
+estudar
+está bem
+exato
+existir
+explicar
+explicação
+falar
+família
+farmácia
+faroleiro
+fato
+faz sentido
+fazer
+fazer anos
+fazer sentido
+fechado
+feliz
+ferramenta
+fevereiro
+ficar
+filha
+filho
+final
+flor
+fome
+fora de
+formulário
+fotografia
+fresco
+frigideira
+frio
+fugir
+fácil
+garrafa
+gato
+gaveta
+gelado
+gigante
+ginásio
+gostar de
+grande
+grau
+grelhado
+guarda
+guardar
+guardião
+guia
+guiar
+hipótese
+historiador
+história
+hoje
+homem
+hora
+hospital
+hotel
+humano
+igualmente
+ilha
+iluminar-se
+incrível
+indeciso
+informação
+inspirar
+inteligente
+interessante
+inverno
+inútil
+ir
+ir embora
+irmã
+irmão
+isso mesmo
+janeiro
+janela
+jantar
+jardim
+jarro
+jornal
+julho
+junho
+já
+já não
+ladrão
+laranja
+lavar-se
+legume
+lenda
+lento
+levantar-se
+levar
+libertar-se
+limpar
+lindo
+literatura
+livraria
+livro
+loiça
+longe de
+lugar
+lula
+luminoso
+lutar
+luz
+lábio
+lápis
+madeira
+maio
+mala
+maluco
+mapa
+mar
+marisco
+março
+mas
+matar
+matemática
+mau
+medalha
+meia-noite
+meio-dia
+mentir
+menu
+mergulhar
+mesa
+mexer
+minuto
+mistério
+mito
+mochila
+moderno
+moeda
+morada
+morar em
+mostrar
+movimentar-se
+muitas vezes
+muito prazer
+mulher
+museu
+máscara
+mãe
+mão
+médico
+mês
+nadar até a
+nariz
+natureza
+nervoso
+no fundo de
+no meio de
+notícia
+nove
+novembro
+noventa
+novo
+nunca
+nuvem
+não
+não há problema
+observar
+ocupado
+oitenta
+oito
+olhar para
+olhar por
+olhe
+olho
+olá
+ombro
+onze
+oportunidade
+outono
+outubro
+ouvir
+paciente
+paciência
+pagar
+pai
+pais
+palavra
+palácio
+papel
+paragem
+parar
+parecer
+parede
+parque
+partido
+partir
+passaporte
+passar em
+passar-se
+pedir
+pedra
+pegar em
+peixe
+pele
+pensar em
+pequeno-almoço
+perceber
+perder
+perder-se
+perguntar
+perigoso
+permanecer
+permitir
+perna
+pertencer
+perto de
+pesado
+pescador
+pescar
+pescoço
+pessoa
+peça
+peço desculpa
+piada
+piano
+pizza
+planta
+poder
+poesia
+pois
+polícia
+ponte
+por favor
+por isso
+porta
+portão
+praia
+prato
+precioso
+precisar de
+preencher
+prender
+preocupado
+preto
+preço
+prima
+primavera
+primo
+prisioneiro
+procurar
+professor
+pronto
+proposta
+proteger
+provar
+príncipe
+pulmão
+puxar
+página
+pássaro
+pão
+pôr
+pôr a mesa
+quarenta
+quarta-feira
+quarto
+quase
+quatro
+que disparate
+que pena
+quente
+querer
+quinta-feira
+quinze
+rabugento
+rapariga
+rato
+receber
+receita
+recomendar
+reconhecer
+recém-chegado
+redondo
+reformado
+regressar
+regularmente
+rei
+relaxado
+relógio
+reserva
+resolver
+respirar
+responder
+restaurante
+restrito
+revelar
+revista
+rir
+roubar
+roupa
+roxo
+rua
+rápido
+saber
+saia
+sair
+sala
+salada
+saltar até a
+salvação
+sangue
+sapato
+se
+se calhar
+secreto
+secretário
+segredo
+segunda-feira
+segundo
+segurar
+seguro
+seis
+semana
+sempre
+sentir
+sentir-se
+ser
+ser capaz de
+ser responsável por
+servir para
+sessenta
+sete
+setembro
+setenta
+sexta-feira
+significado
+sim
+simples
+simpático
+sol
+sonhar
+sonho
+sopa
+sorrir
+sozinho
+suave
+subir
+submerso
+sujo
+sumo
+supermercado
+surpreso
+sábado
+símbolo
+só
+talvez
+tarde
+tchau
+telefonar a
+telefone
+televisão
+temperatura
+templo
+tempo
+tenho a certeza
+tentar
+teoria
+ter
+ter a ver com
+ter de
+ter medo de
+ter um encontro
+terraço
+terça-feira
+tesouro
+teto
+texto
+tinta
+tirar de
+tocar em
+todos os dias
+tomar
+torre
+trabalhar
+transparente
+trazer
+treze
+trinta
+trinta e sete
+trinta e um
+triste
+três
+turista
+ténue
+ultrapassar
+um / uma
+um momento
+urgente
+velho
+vendedor
+vender
+venenoso
+vento
+ver
+verde
+vermelho
+verão
+vestido
+vestir
+viajar
+vida
+vinho branco
+vinho tinto
+vinte
+vir
+virar-se
+viver
+vizinho
+à direita
+à esquerda
+à frente de
+à volta de
+água
+álbum
+óculos
+ótimo
+
+====================================================================================================
+CAUTION — these cards store the gender inside the `word` field, so a
+lookup on the raw yaml misses them. They ARE in the deck:
+====================================================================================================
+abril (m)   -> lemma is `abril`
+agosto (m)   -> lemma is `agosto`
+ano (m)   -> lemma is `ano`
+dezembro (m)   -> lemma is `dezembro`
+dia (m)   -> lemma is `dia`
+domingo (m)   -> lemma is `domingo`
+estação do ano (f)   -> lemma is `estação do ano`
+fevereiro (m)   -> lemma is `fevereiro`
+hora (f)   -> lemma is `hora`
+inverno (m)   -> lemma is `inverno`
+janeiro (m)   -> lemma is `janeiro`
+julho (m)   -> lemma is `julho`
+junho (m)   -> lemma is `junho`
+maio (m)   -> lemma is `maio`
+março (m)   -> lemma is `março`
+meia-noite (f)   -> lemma is `meia-noite`
+meio-dia (m)   -> lemma is `meio-dia`
+minuto (m)   -> lemma is `minuto`
+mês (m)   -> lemma is `mês`
+novembro (m)   -> lemma is `novembro`
+outono (m)   -> lemma is `outono`
+outubro (m)   -> lemma is `outubro`
+primavera (f)   -> lemma is `primavera`
+quarta-feira (f)   -> lemma is `quarta-feira`
+quinta-feira (f)   -> lemma is `quinta-feira`
+relógio (m)   -> lemma is `relógio`
+segunda-feira (f)   -> lemma is `segunda-feira`
+segundo (m)   -> lemma is `segundo`
+semana (f)   -> lemma is `semana`
+setembro (m)   -> lemma is `setembro`
+sexta-feira (f)   -> lemma is `sexta-feira`
+sábado (m)   -> lemma is `sábado`
+terça-feira (f)   -> lemma is `terça-feira`
+verão (m)   -> lemma is `verão`
+
+====================================================================================================
+WORDS THAT APPEAR ONLY INSIDE SENTENCES AND ARE NOT LEMMAS
+(these are the 'no card' candidates — count >= 1):
+====================================================================================================
+a  x176
+abano  x1
+aberta  x1
+abertas  x1
+abraço  x1
+abre-se  x1
+acalmo-me  x1
+aceito  x1
+acendo  x1
+acho  x3
+acorda  x1
+acredito  x1
+adoro  x1
+afunda  x1
+agarra-se  x1
+aguento  x1
+ajudar-me  x1
+ajudo  x1
+alguém  x1
+alucina  x1
+amiga  x1
+amo  x1
+ana  x1
+ando  x1
+anos  x1
+ao  x6
+apaixona-se  x1
+apanho  x1
+aparece  x1
+aponta  x1
+aprendo  x1
+aproximo-me  x1
+aqueço  x1
+aqui  x1
+aranhas  x1
+arma  x1
+as  x12
+assino  x1
+assisto  x1
+aterra  x1
+atravesso  x1
+atrás  x2
+até  x8
+bailarina  x1
+banho  x1
+bate  x1
+bebem  x1
+bem  x3
+boa  x2
+brincam  x1
+cai  x1
+caixa  x1
+calhar  x1
+calor  x1
+camião  x1
+capaz  x1
+carros  x1
+caçador  x1
+certeza  x2
+chamo  x1
+chamo-me  x1
+chaves  x3
+chego  x1
+cheia  x1
+cheira  x1
+chove  x1
+cima  x1
+com  x7
+começa  x1
+como  x3
+compra  x1
+compreendo  x1
+confio  x1
+conheço  x1
+continuo  x1
+controlo  x1
+convite  x1
+corda  x1
+corro  x1
+cozinho  x1
+crianças  x1
+criminosos  x1
+cumprimento  x1
+cumpro  x1
+da  x17
+das  x1
+de  x50
+debaixo  x1
+decido  x1
+deixo  x1
+dela  x1
+dentro  x1
+desaparece  x1
+desarrumada  x1
+descubro  x1
+desde  x1
+desenhar  x1
+detesto  x1
+devagar  x1
+devo  x1
+dias  x2
+dificuldade  x1
+digo  x1
+direita  x1
+direito  x1
+direção  x1
+dispara  x1
+disparate  x1
+dispo  x1
+do  x3
+dois  x1
+dou  x1
+dragões  x1
+duas  x4
+durmo  x1
+dá  x1
+ela  x1
+ele  x67
+eles  x1
+embora  x1
+empurro  x1
+encontro  x1
+engasgo-me  x1
+ensino  x1
+entendo  x1
+entrada  x1
+entro  x1
+equipa  x1
+escadas  x1
+escolho  x1
+escondida  x1
+escondo  x1
+escrevo  x1
+esfrego  x1
+espero  x1
+esquece-se  x1
+esquerda  x1
+esquerdo  x1
+estaciono  x1
+este  x3
+estende  x1
+estico  x1
+estrelas  x1
+estudante  x1
+estudo  x1
+está  x66
+estás  x1
+estão  x1
+eu  x339
+exercício  x2
+existem  x1
+explica  x1
+f  x10
+fala  x1
+favor  x1
+faz  x2
+faço  x2
+febre  x1
+fechada  x1
+fico  x1
+fogem  x1
+fora  x1
+foto  x1
+frente  x2
+fresca  x1
+fria  x1
+fundo  x2
+gelada  x1
+gosto  x30
+guarda-chuva  x1
+guardo  x1
+guerra  x1
+horas  x3
+há  x2
+ilumina-se  x1
+importante  x30
+inglês  x1
+inspiro  x1
+isso  x3
+isto  x65
+joaquim  x1
+jogo  x1
+joão  x2
+lado  x3
+lavo-me  x1
+levanto-me  x1
+levo  x1
+liberta-se  x1
+limpo  x26
+lisboa  x2
+lição  x2
+lobo  x1
+logo  x1
+loja  x1
+lojas  x1
+longe  x1
+lutam  x1
+m  x24
+manhã  x4
+massa  x1
+mata  x1
+me  x2
+medo  x1
+meia  x1
+meio  x1
+menina  x1
+mentes  x1
+mergulho  x1
+mesmo  x1
+meu  x6
+meus  x1
+mexo  x1
+minha  x10
+momento  x1
+moro  x1
+mostro  x1
+movimenta-se  x1
+muitas  x1
+muito  x5
+mulheres  x1
+música  x2
+na  x4
+nada  x2
+nadar  x1
+nas  x1
+no  x14
+noite  x3
+num  x2
+numa  x1
+o  x174
+obrigada  x1
+obrigado  x2
+observo  x1
+os  x9
+ouço  x1
+pago  x1
+para  x10
+parece  x1
+parte  x1
+partida  x1
+passa  x1
+passageiro  x1
+passeio  x1
+passo  x1
+pedro  x1
+pego  x1
+pela  x2
+pelo  x1
+pena  x1
+penso  x1
+percebo  x1
+perco  x2
+pergunta  x2
+pergunto  x1
+permanecem  x1
+permito  x1
+pernas  x1
+pertences  x1
+perto  x1
+pesca  x1
+pessoas  x1
+peço  x2
+pode  x1
+podia  x2
+político  x1
+ponho  x2
+por  x4
+portugal  x2
+português  x4
+prazer  x1
+preciso  x1
+preencho  x1
+prende  x1
+prisão  x1
+problema  x2
+procuro  x1
+protejo  x1
+provo  x1
+próxima  x1
+puro  x1
+puxo  x1
+pé  x1
+que  x7
+queria  x1
+quero  x2
+recebo  x1
+recomendo  x1
+reconheço  x1
+regras  x1
+regresso  x1
+resolvo  x1
+respiro  x1
+respondo  x1
+responsável  x2
+revelo  x1
+rio  x2
+rouba  x1
+saio  x1
+salto  x1
+sei  x1
+sem  x1
+semáforo  x1
+sentido  x2
+serve  x1
+sinto  x1
+sinto-me  x1
+sobre  x1
+soldados  x1
+sorri  x1
+sou  x3
+submersa  x1
+subo  x1
+suja  x1
+são  x3
+tartaruga  x1
+telefono  x1
+tem  x1
+tenho  x5
+tento  x2
+ti  x1
+tinto  x2
+tira  x1
+toca  x1
+todas  x1
+todos  x2
+tomo  x1
+trabalho  x2
+trago  x1
+trás  x1
+tu  x1
+tudo  x3
+táxi  x1
+ultrapassa  x1
+um  x12
+uma  x3
+uso  x47
+vejo  x101
+vem  x1
+vendo  x1
+verdade  x1
+vezes  x1
+viajo  x1
+vinho  x5
+vira-se  x1
+visto  x1
+vivo  x1
+volta  x1
+vou  x10
+voz  x1
+à  x16
+às  x7
+árvore  x1
+é  x132

@@ -1,0 +1,896 @@
+<title>-it- — the letter that turned into a vowel</title>
+
+<style>
+  :root {
+    --paper: #F2F3EF; --paper-2: #E9EBE5;
+    --ink: #141A20; --ink-2: #4E5A66; --ink-3: #5F6A75;
+    --rule: #D3D7CE; --rule-soft: #E0E3DB;
+
+    --it: #1F5FBF; --ut: #A6501C; --ab: #0A744E; --imp: #9E3A90;
+    --it-wash: #1F5FBF14; --ut-wash: #A6501C14; --ab-wash: #0A744E14; --imp-wash: #9E3A9014;
+    /* grey: the contrast cards, which no colour role produced */
+    --ctl: var(--ink-2); --ctl-wash: var(--paper-2);
+
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans:  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    --mono:  ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    --max: 1080px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #12151A; --paper-2: #191D24;
+      --ink: #E6E9E4; --ink-2: #9AA5AF; --ink-3: #7C8690;
+      --rule: #272D35; --rule-soft: #1F242B;
+      --it: #4E8BE0; --ut: #D0783C; --ab: #0FA06B; --imp: #C95CAB;
+      --it-wash: #4E8BE01f; --ut-wash: #D0783C1f; --ab-wash: #0FA06B1f; --imp-wash: #C95CAB1f;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #12151A; --paper-2: #191D24;
+    --ink: #E6E9E4; --ink-2: #9AA5AF; --ink-3: #7C8690;
+    --rule: #272D35; --rule-soft: #1F242B;
+    --it: #4E8BE0; --ut: #D0783C; --ab: #0FA06B; --imp: #C95CAB;
+    --it-wash: #4E8BE01f; --ut-wash: #D0783C1f; --ab-wash: #0FA06B1f; --imp-wash: #C95CAB1f;
+  }
+  :root[data-theme="light"] {
+    --paper: #F2F3EF; --paper-2: #E9EBE5;
+    --ink: #141A20; --ink-2: #4E5A66; --ink-3: #5F6A75;
+    --rule: #D3D7CE; --rule-soft: #E0E3DB;
+    --it: #1F5FBF; --ut: #A6501C; --ab: #0A744E; --imp: #9E3A90;
+    --it-wash: #1F5FBF14; --ut-wash: #A6501C14; --ab-wash: #0A744E14; --imp-wash: #9E3A9014;
+  }
+
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: var(--sans); font-size: 16px; line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 600; text-wrap: balance; margin: 0; }
+  .eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3); }
+  .dek { color: var(--ink-2); max-width: 62ch; margin: 0; }
+  .term { margin: 0; max-width: 64ch; font-size: 14px; color: var(--ink-2); padding: 12px 15px; border-left: 3px solid var(--ink-3); background: var(--paper-2); }
+  .term b { font-family: var(--serif); font-size: 16px; color: var(--ink); }
+  .terms { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 12px; }
+  .mono-in { font-family: var(--mono); font-size: .82em; }
+  em.lat { font-family: var(--serif); font-style: italic; }
+
+  section { border-top: 1px solid var(--rule); padding: 54px 0 8px; }
+  section > .wrap { display: flex; flex-direction: column; gap: 24px; }
+  .sec-head { display: flex; flex-direction: column; gap: 8px; }
+  .sec-head h2 { font-size: clamp(22px, 3vw, 30px); letter-spacing: -.01em; }
+  h3.grp { font-size: 17px; color: var(--ink-2); margin-top: 6px; }
+
+  /* ── example sentence ─────────────────────────────────────────────── */
+  .ex { display: flex; flex-direction: column; gap: 1px; }
+  .ex .p { font-family: var(--serif); font-size: 15.5px; line-height: 1.35; }
+  .ex .p b { font-weight: 600; color: var(--c, var(--ink)); }
+  .ex .e { font-size: 12px; color: var(--ink-3); }
+  .cid { font-family: var(--mono); font-size: 9px; letter-spacing: .07em; text-transform: uppercase; border: 1px solid var(--rule); border-radius: 2px; padding: 1px 4px; color: var(--ink-3); margin-left: 5px; white-space: nowrap; }
+  .cid.new { border-style: dashed; }
+  /* the word itself is missing from the deck — dotted, and never confused
+     with `new`, which only means the sentence was written for the page */
+  .cid.nocard { border-style: dotted; border-color: var(--ink-2); color: var(--ink); }
+  .wrow.off .pt::after { content: "no card"; font-family: var(--mono); font-size: 8.5px;
+    letter-spacing: .07em; text-transform: uppercase; color: var(--ink-2);
+    border: 1px dotted var(--ink-2); border-radius: 2px; padding: 0 4px; margin-left: 6px;
+    white-space: nowrap; vertical-align: 2px; }
+
+  /* ── CEFR level flag ──────────────────────────────────────────────── */
+  .lv { font-family: var(--mono); font-size: 9px; font-weight: 600; letter-spacing: .06em;
+        padding: 1px 4px; border-radius: 2px; border: 1px solid var(--ink-3);
+        color: var(--ink-3); white-space: nowrap; }
+  .lv.a1 { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+  .lv.a2 { background: var(--ink-2); border-color: var(--ink-2); color: var(--paper); }
+  .lv.b1 { border-color: var(--ink-2); color: var(--ink-2); }
+  .lv.b2 { border-style: dashed; }
+  .lv.c1 { border-style: dotted; }
+  .levels { border: 1px solid var(--rule); }
+  .levels .lh { padding: 11px 15px; background: var(--paper-2); border-bottom: 1px solid var(--rule); font-family: var(--serif); font-size: 16px; }
+  .lrow { display: grid; grid-template-columns: 44px 92px 1fr; gap: 4px 14px; align-items: baseline; padding: 10px 15px; border-bottom: 1px solid var(--rule-soft); }
+  .lrow:last-child { border-bottom: 0; }
+  .lrow .n { font-family: var(--mono); font-size: 12px; color: var(--ink-2); }
+  .lrow .t { font-size: 13.5px; color: var(--ink-2); }
+  .lrow .t b { color: var(--ink); }
+  .lvline { display: flex; flex-wrap: wrap; gap: 7px 12px; align-items: center; font-size: 12.5px; color: var(--ink-3); margin: 0; }
+  .wrow .pt .lv, .hook .lv { margin-left: 6px; }
+  @media (max-width: 620px) { .lrow { grid-template-columns: 44px 1fr; } }
+
+  /* ── hero ─────────────────────────────────────────────────────────── */
+  header { padding: 66px 0 50px; }
+  header > .wrap { display: flex; flex-direction: column; gap: 30px; }
+  .rulecard { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 22px; font-family: var(--serif); }
+  .rule-from { font-size: clamp(21px, 3.6vw, 34px); color: var(--ink-3); display: flex; gap: 8px 15px; flex-wrap: wrap; }
+  .rule-from span { color: var(--c, var(--ink-3)); white-space: nowrap; }
+  .rule-arrow { font-size: clamp(22px, 3.6vw, 34px); color: var(--ink-3); }
+  .rule-to { font-size: clamp(44px, 8.5vw, 78px); line-height: 1; }
+  .rulenote { display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: baseline; font-family: var(--mono);
+              font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); margin-top: -18px; }
+  .rulenote b { color: var(--c); font-weight: 400; }
+  h1 { font-size: clamp(27px, 4.2vw, 40px); letter-spacing: -.015em; line-height: 1.14; }
+
+  .specimens { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(290px, 100%), 1fr)); gap: 14px; }
+  .spec { display: flex; flex-direction: column; gap: 5px; padding: 12px 14px; border: 1px solid var(--rule-soft); border-left: 3px solid var(--c); }
+  .spec .line { font-family: var(--serif); font-size: 21px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .spec .line .lat { color: var(--ink-2); font-style: italic; }
+  .spec .line .lat u { text-decoration: none; color: var(--c); }
+  .spec .line .lat s { text-decoration-color: var(--c); color: var(--ink-3); }
+  .spec .line .ar { font-family: var(--sans); font-size: 12px; color: var(--ink-3); }
+  .spec .line .pt b { color: var(--c); }
+  .spec .gl { font-size: 12.5px; color: var(--ink-3); }
+
+  .stats { display: flex; flex-wrap: wrap; gap: 0; border-top: 1px solid var(--rule); }
+  .stat { flex: 1 1 118px; padding: 13px 18px 13px 0; border-right: 1px solid var(--rule-soft); display: flex; flex-direction: column; gap: 2px; }
+  .stat:last-child { border-right: 0; }
+  .stat b { font-family: var(--serif); font-size: 29px; font-weight: 600; font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .stat span { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+
+  /* ── scope ────────────────────────────────────────────────────────── */
+  .scope { border: 1px solid var(--rule); }
+  .scope-head { padding: 12px 15px; background: var(--paper-2); border-bottom: 1px solid var(--rule); font-family: var(--serif); font-size: 16px; }
+  .srow { display: grid; grid-template-columns: 210px 68px 1fr; gap: 4px 14px; align-items: baseline; padding: 11px 15px; border-bottom: 1px solid var(--rule-soft); border-left: 3px solid var(--c); }
+  .srow:last-child { border-bottom: 0; }
+  .srow .v { font-family: var(--serif); font-size: 17px; color: var(--c); }
+  .srow .n { font-family: var(--mono); font-size: 11px; color: var(--ink-2); }
+  .srow .why { font-size: 13.5px; color: var(--ink-2); }
+  @media (max-width: 720px) { .srow { grid-template-columns: 1fr; } }
+
+  /* ── word tables ──────────────────────────────────────────────────── */
+  .wtab { border: 1px solid var(--rule-soft); border-top: 3px solid var(--c); break-inside: avoid; }
+  .wtab .th { display: flex; align-items: baseline; gap: 9px; padding: 11px 14px; border-bottom: 1px solid var(--rule); background: var(--w); flex-wrap: wrap; }
+  .wtab .th b { font-family: var(--serif); font-size: 18px; }
+  /* --ink-3 on the tinted .th wash lands at 4.4:1 — below AA for 12.5px.
+     The sub-label uses --ink-2 (5.7 light / 6.3 dark) instead. */
+  .wtab .th .sub { font-size: 12.5px; color: var(--ink-2); }
+  .wtab .th .n { margin-left: auto; font-family: var(--mono); font-size: 10px; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-2); }
+  .wrow { display: grid; grid-template-columns: 152px 148px 1fr; gap: 4px 12px; align-items: baseline; padding: 10px 14px; border-bottom: 1px solid var(--rule-soft); }
+  .wrow:last-child { border-bottom: 0; }
+  .wrow .pt { font-family: var(--serif); font-size: 17px; color: var(--c); }
+  .wrow .pt small { font-family: var(--sans); font-size: 11.5px; color: var(--ink-3); display: block; }
+  .wrow .pt small i { font-style: normal; font-family: var(--mono); font-size: 9.5px; letter-spacing: .06em; }
+  .wrow .src { font-family: var(--serif); font-style: italic; font-size: 14px; color: var(--ink-2); }
+  .wrow .src small { font-family: var(--mono); font-size: 10px; font-style: normal; color: var(--ink-3); display: block; letter-spacing: .04em; }
+  .wrow.q { background: var(--paper-2); }
+  .wrow .flagline { grid-column: 1 / -1; font-size: 12px; color: var(--ink-2); border-top: 1px dotted var(--rule); padding-top: 6px; }
+  @media (max-width: 760px) { .wrow { grid-template-columns: 1fr; } }
+
+  /* ── disputed: dashed edge + a word, so it survives black and white ── */
+  .wrow.d { background: var(--paper-2); outline: 1.5px dashed var(--ink-3); outline-offset: -4px; }
+  .mark { font-family: var(--mono); font-size: 9px; letter-spacing: .08em; text-transform: uppercase;
+          border: 1px dashed var(--ink-3); border-radius: 2px; padding: 1px 5px; color: var(--ink);
+          white-space: nowrap; }
+  .flagline .mark { margin-right: 8px; }
+
+  .tabs2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 20px; align-items: start; }
+
+  /* ── figures ──────────────────────────────────────────────────────── */
+  figure { margin: 0; display: flex; flex-direction: column; gap: 12px; }
+  .plot { width: 100%; overflow-x: auto; }
+  .plot svg { display: block; width: 100%; height: auto; min-width: 540px; }
+  figcaption { font-size: 12.5px; color: var(--ink-3); max-width: 68ch; }
+  svg text { font-family: var(--sans); fill: var(--ink); }
+  svg .t-serif { font-family: var(--serif); }
+  svg .t-mono { font-family: var(--mono); letter-spacing: .06em; }
+  svg .t-mute { fill: var(--ink-3); }
+  svg .t-sub { fill: var(--ink-2); }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: center; }
+  .lg { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; color: var(--ink-2); }
+  .sw { width: 13px; height: 13px; border-radius: 2px; flex: none; }
+
+  /* ── matrices ─────────────────────────────────────────────────────── */
+  .mx-scroll { overflow-x: auto; }
+  table.mx { border-collapse: collapse; width: 100%; min-width: 680px; }
+  table.mx th, table.mx td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--rule-soft); vertical-align: baseline; }
+  table.mx thead th { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); font-weight: 400; border-bottom: 1px solid var(--rule); }
+  table.mx td { font-family: var(--serif); font-size: 16px; }
+  table.mx td.lat { font-style: italic; color: var(--ink-2); white-space: nowrap; }
+  table.mx td.head { font-weight: 600; white-space: nowrap; }
+  table.mx td .out { display: block; font-family: var(--mono); font-size: 9.5px; letter-spacing: .05em; color: var(--ink-3); font-weight: 400; font-style: normal; }
+  table.mx td.note { font-family: var(--sans); font-size: 13px; color: var(--ink-2); }
+  table.mx td.gone { color: var(--ink-3); font-style: normal; }
+  table.mx tr.hi td { background: var(--paper-2); }
+
+  /* ── evidence box ─────────────────────────────────────────────────── */
+  .evi { border: 1px solid var(--rule); background: var(--paper-2); padding: 16px 18px; display: flex; flex-direction: column; gap: 7px; break-inside: avoid; }
+  .erow { display: grid; grid-template-columns: 118px 148px 26px 1fr; gap: 10px; align-items: baseline; }
+  .erow .lbl { font-family: var(--mono); font-size: 10px; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-3); }
+  .erow .lat { font-family: var(--serif); font-style: italic; font-size: 18px; color: var(--ink-2); }
+  .erow .lat u { text-decoration: none; font-weight: 600; color: var(--e, var(--ink)); }
+  .erow .lat s { text-decoration-color: var(--e, var(--ink-3)); color: var(--ink-3); }
+  .erow .ar { color: var(--ink-3); font-size: 12px; }
+  .erow .pt { font-family: var(--serif); font-size: 19px; }
+  .erow .pt b { color: var(--e, var(--ink)); }
+  .erow .pt small { font-family: var(--sans); font-size: 11.5px; color: var(--ink-3); margin-left: 8px; }
+  .same { font-size: 13px; color: var(--ink-2); border-top: 1px dotted var(--rule); padding-top: 7px; }
+  @media (max-width: 700px) { .erow { grid-template-columns: 1fr; gap: 1px; } .erow .ar { display: none; } }
+
+  /* ── the test ─────────────────────────────────────────────────────── */
+  .test { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 18px; }
+  .tcard { border: 1px solid var(--rule-soft); border-top: 3px solid var(--c); break-inside: avoid; }
+  .tcard .th { padding: 12px 15px; background: var(--w); border-bottom: 1px solid var(--rule); }
+  .tcard .th b { font-family: var(--serif); font-size: 17px; display: block; }
+  .tcard .th span { font-size: 12.5px; color: var(--ink-3); }
+  .trow { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; align-items: baseline; padding: 8px 15px; border-bottom: 1px solid var(--rule-soft); }
+  .trow:last-child { border-bottom: 0; }
+  .trow .a { font-family: var(--serif); font-size: 16px; color: var(--c); }
+  .trow .b { font-family: var(--serif); font-size: 15px; color: var(--ink-2); }
+  .trow .b i { font-style: normal; color: var(--ink-3); font-size: 11.5px; display: block; font-family: var(--sans); }
+
+  /* ── anchors ──────────────────────────────────────────────────────── */
+  .hooks { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(238px, 100%), 1fr)); gap: 1px; background: var(--rule-soft); border: 1px solid var(--rule-soft); }
+  .hook { background: var(--paper); padding: 18px 16px; display: flex; flex-direction: column; gap: 8px; break-inside: avoid; border-top: 3px solid var(--c); }
+  .hook .pair { font-family: var(--serif); font-size: clamp(19px, 2.6vw, 24px); line-height: 1.2; }
+  .hook .pair .a { color: var(--c); }
+  .hook .pair .eq { color: var(--ink-3); margin: 0 6px; font-size: .68em; vertical-align: 3px; }
+  .hook .why { font-size: 12.5px; color: var(--ink-2); }
+  .hook .root { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); }
+
+  /* ── deck check ───────────────────────────────────────────────────── */
+  .fix { border: 1px solid var(--rule); border-left: 3px solid var(--ink-3); padding: 15px 17px; display: flex; flex-direction: column; gap: 8px; break-inside: avoid; }
+  .fix .h { font-family: var(--serif); font-size: 17px; }
+  .fix p { margin: 0; font-size: 13.5px; color: var(--ink-2); max-width: 70ch; }
+  .fix code { font-family: var(--mono); font-size: 12.5px; background: var(--paper-2); padding: 2px 6px; border: 1px solid var(--rule-soft); }
+  .fixes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(330px, 100%), 1fr)); gap: 16px; }
+
+  /* ── alphabetical index ───────────────────────────────────────────── */
+  .index { columns: 4; column-gap: 30px; border-top: 1px solid var(--rule); padding-top: 4px; }
+  .ix { break-inside: avoid; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0 10px;
+        padding: 4px 0; border-bottom: 1px dotted var(--rule-soft); }
+  .ix .w { font-family: var(--serif); font-size: 15px; color: var(--c); }
+  .ix .b { font-family: var(--mono); font-size: 8.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); white-space: nowrap; }
+  @media (max-width: 940px) { .index { columns: 3; } }
+  @media (max-width: 660px) { .index { columns: 2; } }
+
+  footer { border-top: 1px solid var(--rule); padding: 32px 0 58px; }
+  footer > .wrap { display: flex; flex-direction: column; gap: 10px; }
+  footer p { margin: 0; font-size: 12.5px; color: var(--ink-3); max-width: 72ch; }
+
+  @media print {
+    /* the light palette is forced: printing from a dark browser must not
+       give white text on white paper. The :not() selector is here on purpose —
+       without it the dark media-query rule outranks a bare :root and the
+       un-stamped system default still prints dark. */
+    :root, :root:not([data-theme="light"]),
+    :root[data-theme="dark"], :root[data-theme="light"] {
+      --paper: #FFFFFF; --paper-2: #EDEEE9;
+      --ink: #111418; --ink-2: #454F59; --ink-3: #616B75;
+      --rule: #C2C7BC; --rule-soft: #D8DCD2;
+      --it: #1F5FBF; --ut: #A6501C; --ab: #0A744E; --imp: #9E3A90;
+      --it-wash: #1F5FBF14; --ut-wash: #A6501C14; --ab-wash: #0A744E14; --imp-wash: #9E3A9014;
+    }
+    body { background: #fff; font-size: 10.5pt; }
+    section { break-inside: auto; padding: 24px 0 4px; }
+    header { padding: 10px 0 22px; }
+    .wrap { padding: 0 10px; max-width: none; }
+
+    .plot, .mx-scroll { overflow: visible; }
+    .plot svg { min-width: 0; }
+    table.mx { min-width: 0; }
+    table.mx th, table.mx td { padding: 6px 8px; }
+    table.mx td { font-size: 11.5px; }
+    table.mx td.lat, table.mx td.head { white-space: normal; }
+
+    .sec-head, h1, h2, h3.grp, .wtab .th, .tcard .th, .scope-head, .levels .lh,
+    .terms, .rulecard { break-after: avoid; }
+    figcaption, .legend { break-before: avoid; }
+
+    .sec-head, figure, .term, .spec, .stats, .stat, .scope, .levels, .srow, .lrow,
+    .wrow, .trow, .evi, .erow, .hook, .fix, .ex, .lvline, .rulecard, .legend { break-inside: avoid; }
+    .wtab, .tcard { break-inside: auto; }
+    p, .why, .same { orphans: 3; widows: 3; }
+    .index { columns: 3; }
+  }
+</style>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Origin layer 06 · European Portuguese · 18 cards + 10 missing words + 4 for contrast</div>
+
+    <div class="rulecard">
+      <span class="rule-from"
+        ><span>c·t</span
+        ><span>p·t</span
+        ><span>l·t</span
+      ></span>
+      <span class="rule-arrow">→</span>
+      <span class="rule-to" style="color:var(--it)">·it·</span>
+    </div>
+    <div class="rulenote">
+      <span style="--c:var(--it)"><b>■</b> the first letter became an i</span>
+      <span style="--c:var(--ut)"><b>■</b> the word ended up with a u</span>
+      <span style="--c:var(--ab)"><b>■</b> it left no letter at all</span>
+      <span style="--c:var(--imp)"><b>■</b> only looks like the rule</span>
+    </div>
+
+    <h1>Latin had <em>ct</em>, <em>pt</em> and <em>lt</em> in the middle of words.<br />In Portuguese the first letter melted into a vowel.</h1>
+
+    <p class="dek">The first consonant softened until it was no longer a consonant. It stayed in the word as part of the vowel in front of it. In <em class="lat">noctem</em> the <em>c</em> turned into the <em>i</em> of <em>noite</em>.</p>
+
+    <p class="dek">Eighteen cards belong here: seventeen the rule changed, and one that only looks changed. Ten more words belong here and are <strong>not in your deck</strong>, marked <span class="cid nocard">no card</span>. Two of those ten are <em>noite</em> and <em>muito</em>, which you read constantly inside other cards and cannot study on their own.</p>
+
+    <div class="terms">
+      <p class="term"><b>Sound law</b> — a change in the way words are said. It hit every word that had that sound in that place. If you know the law, you can work out words you have never seen.</p>
+      <p class="term"><b>Melted</b> — the word this page uses for the change. The letter turned into a vowel sound and joined the vowel beside it, instead of dropping out of the word.</p>
+      <p class="term"><b>A star before a word</b> means nobody ever wrote that word down. Scholars work it back from the modern words. A starred form is a good guess, not a record.</p>
+    </div>
+
+    <div class="specimens">
+      <div class="spec" style="--c:var(--it)">
+        <span class="line"><span class="lat">no<u>ct</u>em</span><span class="ar">→</span><span class="pt">no<b>it</b>e</span></span>
+        <span class="gl">night — the c became an i · no card of its own · A1</span>
+      </div>
+      <div class="spec" style="--c:var(--it)">
+        <span class="line"><span class="lat">o<u>ct</u>ō</span><span class="ar">→</span><span class="pt">o<b>it</b>o</span></span>
+        <span class="gl">eight — same two letters, same result · card 0597 · A1</span>
+      </div>
+      <div class="spec" style="--c:var(--ut)">
+        <span class="line"><span class="lat">o<u>ct</u>ōbrius</span><span class="ar">→</span><span class="pt">o<b>ut</b>ubro</span></span>
+        <span class="gl">October — built on the same Latin number as oito, and it went the other way · card 0643 · A1</span>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>18</b><span>cards in this layer</span></div>
+      <div class="stat"><b style="color:var(--it)">15</b><span>became ·it·</span></div>
+      <div class="stat"><b style="color:var(--ut)">1</b><span>became ·ut·</span></div>
+      <div class="stat"><b style="color:var(--ab)">1</b><span>left no letter</span></div>
+      <div class="stat"><b style="color:var(--imp)">1</b><span>only looks the same</span></div>
+      <div class="stat"><b>10</b><span>words with no card</span></div>
+      <div class="stat"><b style="color:var(--ctl)">4</b><span>cards here for contrast</span></div>
+    </div>
+
+    <div class="lvline">
+      <span>Level of the 18 cards:</span>
+      <span><span class="lv a1">A1</span> 13</span>
+      <span><span class="lv a2">A2</span> 4</span>
+      <span><span class="lv b1">B1</span> 1</span>
+      <span>— thirteen are first-500 words. This is the cheapest page in the book.</span>
+    </div>
+    <div class="lvline">
+      <span>Level of the 10 missing words:</span>
+      <span><span class="lv a1">A1</span> 5</span>
+      <span><span class="lv a2">A2</span> 3</span>
+      <span><span class="lv b1">B1</span> 2</span>
+      <span>— <em>noite</em>, <em>muito</em>, <em>outro</em>, <em>leite</em> and <em>direito</em> are A1 and have no card. Add those first.</span>
+    </div>
+  </div>
+</header>
+
+<!-- ══ scope ══════════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">What is on this page</div>
+      <h2>Eighteen cards, and why each one is here</h2>
+      <p class="dek">Three groups were made by the rule and ended in different letters. One card only looks as if it belongs. Ten more words fit the page and have no card. Four cards are printed for contrast and are counted apart.</p>
+    </div>
+
+    <div class="scope">
+      <div class="scope-head">One rule, three results, one look-alike, ten missing words, and a contrast group.</div>
+      <div class="srow" style="--c:var(--it)">
+        <span class="v">Became ·it·</span><span class="n">15 cards</span>
+        <span class="why">The normal result. Latin <span class="mono-in">ct</span>, <span class="mono-in">pt</span> or <span class="mono-in">lt</span> in the middle of a word: the first letter became an <em>i</em>. <em class="lat">noctem</em> → <em>noite</em>, <em class="lat">multās</em> → <em>muitas</em>, <em class="lat">acceptāre</em> → <em>aceitar</em>.</span>
+      </div>
+      <div class="srow" style="--c:var(--ut)">
+        <span class="v">Became ·ut· instead</span><span class="n">1 card</span>
+        <span class="why"><em>outubro</em>, and off the deck <em>outro</em>. The two got their <em>u</em> in different ways. In <em>outubro</em> a <em>c</em> melted, and the new sound settled on <em>ou</em>, while in <em>oito</em> the same <em>c</em> settled on <em>oi</em>. In <em>outro</em> it is the <em>l</em> that turned into a <em>u</em>, which is what an <em>l</em> before a consonant normally did.</span>
+      </div>
+      <div class="srow" style="--c:var(--ab)">
+        <span class="v">Left no letter</span><span class="n">1 card</span>
+        <span class="why"><em>lutar</em>, and off the deck <em>luta</em> and <em>escrito</em>. The letter melted into an <em>i</em> as usual, and that <em>i</em> is no longer written. In <em>escrito</em> it fell together with an <em>i</em> that was already there. In <em>luta</em> it was dropped later, after centuries of <em>luita</em>. Nothing extra is left in the spelling, so the word looks untouched.</span>
+      </div>
+      <div class="srow" style="--c:var(--imp)">
+        <span class="v">Only looks the same</span><span class="n">1 card</span>
+        <span class="why"><em>fato</em> “suit”. Latin <em class="lat">factum</em> did go through the rule, and it gave <em>feito</em>. The word for a suit is a different word — Gothic or Arabic, sources disagree — and it never had a <span class="mono-in">ct</span> at all.</span>
+      </div>
+      <div class="srow" style="--c:var(--ink-2)">
+        <span class="v">Not in your deck</span><span class="n">10 words</span>
+        <span class="why">Common words that fit this page and have no card: <em>noite</em>, <em>muito</em>, <em>outro</em>, <em>leite</em>, <em>direito</em>, <em>feito</em>, <em>peito</em>, <em>escrito</em>, <em>luta</em>, <em>estreito</em>. All A1 to B1. Each is marked <span class="cid nocard">no card</span>.</span>
+      </div>
+      <div class="srow" style="--c:var(--ctl)">
+        <span class="v">Here for contrast</span><span class="n">4 cards</span>
+        <span class="why"><em>exato</em>, <em>teto</em>, <em>diretor</em> and <em>restrito</em> all had <span class="mono-in">ct</span> in Latin and none of them melted, because all four were taken from written Latin centuries after the rule had stopped working. They show where the rule ends. They are not part of the 18.</span>
+      </div>
+    </div>
+
+    <div class="levels">
+      <div class="lh">Every word on this page carries a level flag. This is what the flags mean.</div>
+      <div class="lrow"><span class="n"><span class="lv a1">A1</span></span><span class="t">learn now</span>
+        <span class="t">First 500 words. You need this word in normal days. <b>Learn it now.</b></span></div>
+      <div class="lrow"><span class="n"><span class="lv a2">A2</span></span><span class="t">learn now</span>
+        <span class="t">Still basic. You will meet it soon. <b>Learn it now.</b></span></div>
+      <div class="lrow"><span class="n"><span class="lv b1">B1</span></span><span class="t">later</span>
+        <span class="t">Useful, but not every day. Keep the card. Do not push it.</span></div>
+      <div class="lrow"><span class="n"><span class="lv b2">B2</span></span><span class="t">later</span>
+        <span class="t">Rare in speech. Read it here for the pattern, not for the word.</span></div>
+      <div class="lrow"><span class="n"><span class="lv c1">C1</span></span><span class="t">much later</span>
+        <span class="t">Books and formal writing only.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ main chart ═════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Main chart</div>
+      <h2>What the first letter turned into</h2>
+      <p class="dek">Read each row left to right. The Latin word is on the left, with the pair of letters marked. Only the first letter of that pair melted; the <em>t</em> stayed a <em>t</em>. The middle column is what the melted letter became.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— 8 examples: 4 cards and 4 words with no card. By level: 6 A1, 1 A2, 1 B1. The whole rule on one screen. Read this first.</span></p>
+    </div>
+
+    <figure>
+      <div class="plot">
+        <svg viewBox="0 0 960 424" role="img" aria-label="Latin ct, pt and lt in the middle of a word: the first letter becomes an i in noite, oito, aceitar and muitas, an i that later moved to u in outubro, a u in outro, and no letter at all in luta and escrito">
+          <g id="melt"></g>
+        </svg>
+      </div>
+      <figcaption>Eight words from the tables below: four on the first road, two on the second, two on the third. <span class="mono-in">ct</span> and <span class="mono-in">pt</span> behave alike. <span class="mono-in">lt</span> is the loose one: it gave an <em>i</em> in <em>muitas</em> and a <em>u</em> in <em>outro</em>. <em>outubro</em> is the odd one on the second road, and its row shows two steps: its <em>c</em> became an <em>i</em> first, and <em>oi</em> only later moved to <em>ou</em>. The evidence section below prints the old spelling that shows it.</figcaption>
+    </figure>
+
+    <div class="legend">
+      <span class="lg" style="flex-basis:100%; color:var(--ink-3)">The colour key for the whole page. The chart above draws the first three roads. The last two rows of this key belong to sections further down.</span>
+      <span class="lg"><span class="sw" style="background:var(--it)"></span>became ·it· — 15 cards, 7 words with no card</span>
+      <span class="lg"><span class="sw" style="background:var(--ut)"></span>became ·ut· — 1 card, 1 word with no card</span>
+      <span class="lg"><span class="sw" style="background:var(--ab)"></span>left no letter — 1 card, 2 words with no card</span>
+      <span class="lg"><span class="sw" style="background:var(--imp)"></span>only looks the same — 1 card</span>
+      <span class="lg"><span class="sw" style="background:var(--ctl)"></span>here for contrast — 4 cards</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ the words ══════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The words</div>
+      <h2>All eighteen cards and all ten missing words</h2>
+      <p class="dek">Every row shows where the word came from and a sentence. Two rows have a dashed edge. Those are the two origins that are not firm, and the row says which kind of doubt it is.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— 18 cards, 13 A1 / 4 A2 / 1 B1, and 10 missing words, 5 A1 / 3 A2 / 2 B1. Read the A1 rows today and leave the rest.</span></p>
+    </div>
+    <div id="sorter" style="display:flex;flex-direction:column;gap:20px"></div>
+  </div>
+</section>
+
+<!-- ══ evidence: oito / outubro ═══════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Evidence</div>
+      <h2>Two cards from the same Latin number</h2>
+      <p class="dek">You learn <em>oito</em> as a number and <em>outubro</em> as a month. The same Latin number <em class="lat">octō</em> is inside both. <em>October</em> was the <strong>eighth</strong> month of the Roman year, which began in March. The number is still inside the name.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— 2 cards from this layer, both A1, plus one old spelling that is only evidence. The table below adds 6 more cards you already have, also A1, that are not part of this layer. The best thing on the page to remember.</span></p>
+    </div>
+
+    <div class="evi">
+      <div class="erow" style="--e:var(--it)"><span class="lbl">the number</span><span class="lat">o<u>ct</u>ō</span><span class="ar">→</span><span class="pt">o<b>it</b>o<small>eight · card 0597 · A1</small></span></div>
+      <div class="erow" style="--e:var(--ut)"><span class="lbl">the month</span><span class="lat">o<u>ct</u>ōbrius</span><span class="ar">→</span><span class="pt">o<b>ut</b>ubro<small>October · card 0643 · A1</small></span></div>
+      <div class="erow" style="--e:var(--it)"><span class="lbl">the month, then</span><span class="lat">o<u>ct</u>ōbrius</span><span class="ar">→</span><span class="pt">o<b>it</b>ubro<small>the old spelling of the month · not a modern word, do not learn it</small></span></div>
+      <div class="same">Both words begin <em class="lat">oct-</em> and both melted the <em>c</em>. The number settled on <em>oi</em>; the month settled on <em>ou</em>. Old Portuguese wrote the month both ways, <em>oitubro</em> and <em>outubro</em>, before <em>outubro</em> won. Other words still swap the two today — <em>ouro</em> and <em>oiro</em> for gold, <em>touro</em> and <em>toiro</em> for bull — though there the <em>ou</em> came out of a Latin <em class="lat">au</em>, not out of a <span class="mono-in">ct</span>.</div>
+    </div>
+
+    <figure>
+      <div class="mx-scroll"><table class="mx" id="months"></table></div>
+      <figcaption>The Roman year started in March. Four month names still count from there, and all four numbers are cards you already have. Only <em>outubro</em> was touched by this page's rule. The <span class="mono-in">pt</span> of <em class="lat">septem</em> had already become a plain <em>t</em> in spoken Latin, long before Portuguese began, so <em>sete</em> and <em>setembro</em> have no <em>i</em>.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ══ fato vs feito ══════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The look-alike</div>
+      <h2><em>fato</em> did not come from <em class="lat">factum</em></h2>
+      <p class="dek">Card 0321 is <em>fato</em>, a suit. It has the shape of a word this rule made. It is not one. Latin <em class="lat">factum</em> went through the rule normally and came out as <em>feito</em>, which your deck does not have.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a2">A2</span><span>— 2 words in the box below: 1 card and 1 missing word. Read this if you are ever tempted to guess an origin from spelling.</span></p>
+    </div>
+
+    <div class="evi">
+      <div class="erow" style="--e:var(--it)"><span class="lbl">latin</span><span class="lat">fa<u>ct</u>um</span><span class="ar">→</span><span class="pt">fe<b>it</b>o<small>done · no card · A2</small></span></div>
+      <div class="erow" style="--e:var(--imp)"><span class="lbl">not from latin</span><span class="lat">*fat</span><span class="ar">→</span><span class="pt">fato<small>suit · card 0321 · A2</small></span></div>
+      <div class="same">Two different words that ended up looking alike. Sources disagree about where <em>fato</em> itself came from: many say a Gothic word for clothing, Portuguese dictionaries say an Arabic one. They agree it is not <em class="lat">factum</em>. Portuguese then took <em class="lat">factum</em> a second time, straight from books. That one is spelled <em>facto</em>, “fact”, and in Portugal its <em>c</em> is still written and still said. So one Latin word gave two Portuguese words, <em>feito</em> and <em>facto</em>, and <em>fato</em> is a third word that only looks like them. Your deck has neither <em>feito</em> nor <em>facto</em>. <em>feito</em> is one of the ten missing words above; <em>facto</em> is a book word, like the four in the contrast section below, and this page does not count it.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ the quiet case ═════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The quiet case</div>
+      <h2>Where the rule leaves no letter</h2>
+      <p class="dek">The melted letter became an <em>i</em>. In these words that <em>i</em> is not written today. In one it fell together with an <em>i</em> that was already there. In the other it was dropped centuries later. The word then looks as if the rule skipped it.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv b1">B1</span><span>— the group is 3 words: 1 card and 2 missing words. Two of the three are shown below, with <em>noite</em> beside them for comparison. Small, and it explains two words that otherwise look broken.</span></p>
+    </div>
+
+    <div class="evi">
+      <div class="erow" style="--e:var(--it)"><span class="lbl">latin, and the i shows</span><span class="lat">no<u>ct</u>em</span><span class="ar">→</span><span class="pt">no<b>it</b>e<small>night · no card · A1</small></span></div>
+      <div class="erow" style="--e:var(--it)"><span class="lbl">latin → the 1200s</span><span class="lat">lu<u>ct</u>a</span><span class="ar">→</span><span class="pt">lu<b>it</b>a<small>how Portuguese wrote “fight” then · not a modern word</small></span></div>
+      <div class="erow" style="--e:var(--ab)"><span class="lbl">the 1200s → today</span><span class="lat">lu<u>i</u>ta</span><span class="ar">→</span><span class="pt">l<b>u</b>ta<small>fight · no card · B1</small></span></div>
+      <div class="erow" style="--e:var(--ab)"><span class="lbl">latin → today</span><span class="lat">scrī<u>pt</u>um</span><span class="ar">→</span><span class="pt">escr<b>i</b>to<small>written · no card · A2</small></span></div>
+      <div class="same">The <em>luita</em> row is the proof that the rule did run in <em>luta</em>. Portuguese wrote that <em>i</em> for centuries, as <em>luita</em> and <em>luitar</em>, and dropped it only later — the same way <em>fruito</em> became <em>fruto</em> and <em>truita</em> became <em>truta</em>. Why the <em>i</em> went there and stayed in <em>muito</em> is not settled. Galician writes <em>loita</em> to this day. <em>escrito</em> shows no such step. Latin <em class="lat">scrīptum</em> already carried a long <em>ī</em> in that exact place, so a melted <em>p</em> would have had nothing to add. Nobody ever wrote an extra <em>i</em> there. <em>escrito</em> is in this group for its result, not for any written proof.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ contrast: the book words ═══════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Here for contrast</div>
+      <h2>Four cards where the <span class="mono-in">ct</span> never melted</h2>
+      <p class="dek">The rule only worked on words that were handed down by speech. A word taken later out of written Latin arrived after the rule had stopped, so its <span class="mono-in">ct</span> was never melted. Your deck holds a whole set of these. Four are printed here, and two of the four have a spoken twin still in use: <em>restrito</em> beside <em>estreito</em>, and <em>diretor</em> beside <em>direito</em>.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a2">A2</span><span>— 4 cards: 3 A2, 1 B1, plus the missing word <em>estreito</em> (B1) in the box below. Read it for the pattern. It tells you when <em>not</em> to expect an <em>i</em>.</span></p>
+    </div>
+    <div id="ctrl"></div>
+    <div class="evi">
+      <div class="erow" style="--e:var(--it)"><span class="lbl">by speech</span><span class="lat">stri<u>ct</u>um</span><span class="ar">→</span><span class="pt">estre<b>it</b>o<small>narrow · no card · B1</small></span></div>
+      <div class="erow" style="--e:var(--ctl)"><span class="lbl">from books</span><span class="lat">restri<u>ct</u>um</span><span class="ar">→</span><span class="pt">restr<b>it</b>o<small>restricted · card 0544 · B1</small></span></div>
+      <div class="same">One Latin stem, <em class="lat">strict-</em>, two Portuguese words. The inherited one melted the <em>c</em> and grew an <em>ei</em>. The borrowed one melted nothing: its <em>c</em> was never said in Portuguese, and is not written. That gives you a test, and it works in one direction only. A word with <em>ei</em> or <em>oi</em> where Latin had <span class="mono-in">ct</span> came down by speech. A plain vowel means either a book word, like the four in the table above, or one of the three words on this page where the <em>i</em> is no longer written.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ anchors ════════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Anchors</div>
+      <h2>Five words you already know in another language</h2>
+      <p class="dek">Same root, same meaning, different coat. English usually kept the Latin <span class="mono-in">ct</span>, so it shows you what Portuguese melted.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— 5 words: 4 cards and 1 with no card. All five are A1. Best value on the page today.</span></p>
+    </div>
+    <div class="hooks" id="hooks"></div>
+  </div>
+</section>
+
+<!-- ══ deck check ═════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Deck check</div>
+      <h2>Five things this layer found in your own cards</h2>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— 5 findings, three of them about A1 words and two about A2 words. Read this when you next edit your deck.</span></p>
+    </div>
+
+    <div class="fixes">
+      <div class="fix" style="border-left-color:var(--it)">
+        <span class="h"><em>noite</em> and <em>muito</em> have no cards</span>
+        <p>You read <em>noite</em> on four cards — 0652 <em>meia-noite</em>, 0656 <em>de noite, à noite</em>, 0675 <em>boa noite</em>, and inside the second sentence of 0128 <em>permanecer</em>. You read <em>muito</em> on five: 0676, 0689, 0690, 0041 <em>chove muito</em> and 0151 <em>Eu rio muito</em>. Card 0665 is a sixth card, and gives a second form, <em>muitas</em>. No card teaches either word on its own. <em>muito</em> is one of the most used words in European Portuguese, and it changes form: <em>muito, muita, muitos, muitas</em>.</p>
+        <p>Suggested cards: <code>noite (f, -s): night</code>, <code>muito (muita, -s): much, many, very</code></p>
+      </div>
+      <div class="fix" style="border-left-color:var(--it)">
+        <span class="h"><em>direito</em> is only ever a direction</span>
+        <p>Cards 0571 and 0579 teach <em>à direita</em> and <em>do lado direito</em>. The word on its own also means right-hand, straight, and a legal right, and it is the everyday adjective.</p>
+        <p>Suggested card: <code>direito (direita, -s): right, straight</code></p>
+      </div>
+      <div class="fix">
+        <span class="h">Eleven of the eighteen cards have no sentence</span>
+        <p>The numbers (0597, 0607, 0617), the month (0643) and the seven phrases (0652, 0656, 0665, 0675, 0676, 0689, 0690) are bare: the front holds the English and the back holds the Portuguese again, with no example. All eleven had to be given a sentence written for this book, tagged <em>new</em>.</p>
+        <p><em>oito</em> shows how odd that is. You read it in four real deck sentences on other cards — 0065 <em>Eu durmo oito horas</em>, 0118 <em>O comboio parte às oito</em>, 0154 <em>Eu saio de casa às oito</em>, 0172 <em>Eu tenho um encontro às oito</em> — and its own card 0597 still has none.</p>
+        <p>Suggested edit: give each one an example sentence. The ones on this page are a starting point.</p>
+      </div>
+      <div class="fix" style="border-left-color:var(--it)">
+        <span class="h">Card 0361 <em>receita</em> reads oddly</span>
+        <p>The sentence is <em>Eu gosto de receita.</em> Portuguese wants an article or a plural here: <em>Eu gosto da receita</em> for a particular one, or <em>Eu gosto de receitas</em> in general. The page prints the card as it stands.</p>
+        <p>Suggested edit: <code>Eu gosto desta receita.</code> — I like this recipe.</p>
+      </div>
+      <div class="fix" style="border-left-color:var(--ctl)">
+        <span class="h">Card 0712 <em>exato</em> is glossed as the wrong part of speech</span>
+        <p>The front says <em>exactly</em>. <em>exato</em> is an adjective and means <em>exact</em>. The adverb <em>exactly</em> is <em>exatamente</em>. The card also has no sentence, and no gender or plural forms, although <em>exato</em> takes them: <em>exato, exata, exatos, exatas</em>.</p>
+        <p>Suggested edit: <code>exato (exata, -s): exact</code>, with the sentence <code>Este é o preço exato.</code></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ index ══════════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Index</div>
+      <h2>The 18 cards and the 10 missing words, in alphabetical order</h2>
+      <p class="dek">For coming back to. Each word names its result in words, so this works in black and white.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— the same 18 cards and 10 missing words, nothing new. A list to come back to, not something to read through.</span></p>
+    </div>
+    <div class="index" id="index"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Source: <span class="mono-in">myanki2</span> — 724 cards, 720 distinct words. Origin layer 06. Sentences from your own cards show the card number. Sentences marked <em>new</em> were written for this page: the word has a card, the sentence does not. Rows marked <span class="cid nocard">no card</span> are different — there the <em>word</em> is missing from your deck, and both word and sentence were added for this page.</p>
+    <p>The colours mean something different on each layer. Here the colour is <strong>what the melted letter left in the word</strong>: blue = an <em>i</em>, orange = a <em>u</em> in the end, green = no letter at all, because the new <em>i</em> is not written today, purple = the word only looks as if the rule touched it. Grey marks anything no colour role produced: the contrast cards, the scope line for the missing words, and the deck note that covers more than one group. In the tables and the index each missing word is painted in its own result's colour. Colour is never the only channel — every result is also named in words.</p>
+    <p><strong>About the level flags.</strong> <span class="lv a1">A1</span> <span class="lv a2">A2</span> <span class="lv b1">B1</span> <span class="lv b2">B2</span> <span class="lv c1">C1</span> are CEFR levels. Your deck stores no level for nouns, adjectives or phrases. It does mark 145 verb cards <em>(A1)</em>, but that is the level of the course book they were taken from, not a judgement about each word — it covers <em>mergulhar</em> “to dive” as readily as <em>falar</em>. So the flags here are still an estimate, and a few of them sit above that mark on purpose. They follow how common the word is in everyday European Portuguese and where it normally appears in A1–B1 course books. Treat them as a reading order, not as a rule. If a word feels easy and it says B1, learn it.</p>
+    <p><strong>Where the origin is not firm.</strong> Two rows carry a dashed edge, and the two marks mean different things. <em>deitado</em> is marked <em>starred form</em>: the spoken-Latin verb behind it, <em class="lat">*dēctāre</em>, is worked back and was never written down. <em>fato</em> is marked <em>sources disagree</em>: many trace it to a Gothic word <em class="lat">*fat</em>, while the Portuguese dictionaries Priberam and Infopédia prefer an Arabic one, <em class="lat">hatu</em>. No source derives it from <em class="lat">factum</em>, which is the only claim this page needs.</p>
+    <p><strong>Why <em>oi</em> and <em>ou</em> both exist.</strong> This is not settled in detail. What is agreed is that both have been in use for centuries, that Old Portuguese wrote some words both ways, and that different words later fixed on different spellings. The page says which word went which way and does not claim to explain why each one chose.</p>
+    <p>Counts: 18 cards were changed by this rule or look as if they were — 15 became <em>·it·</em>, 1 became <em>·ut·</em>, 1 left no letter, 1 only looks the same. By level: 13 A1, 4 A2, 1 B1. Ten more words fit the page and have no card: 7 became <em>·it·</em>, 1 became <em>·ut·</em>, 2 left no letter; by level 5 A1, 3 A2, 2 B1. Four further cards — <em>exato</em>, <em>teto</em>, <em>diretor</em> and <em>restrito</em> — are printed for contrast and are in none of those numbers. Cards, missing words and contrast cards are never added into one number.</p>
+  </div>
+</footer>
+
+<script>
+  const NS = "http://www.w3.org/2000/svg";
+  const el = (n, a = {}) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); return e; };
+  const ex = (pt, en, id, isNew) => {
+    const cls = id === "no card" ? " nocard" : isNew ? " new" : "";
+    return '<span class="ex"><span class="p">' + pt + '</span><span class="e">' + en +
+      '<span class="cid' + cls + '">' + id + "</span></span></span>";
+  };
+
+  const lv = c => '<span class="lv ' + c.toLowerCase() + '">' + c + "</span>";
+  const lvcount = rows => {
+    const o = {};
+    rows.forEach(r => { if (r.lvl) o[r.lvl] = (o[r.lvl] || 0) + 1; });
+    return ["A1", "A2", "B1", "B2", "C1"].filter(k => o[k]).map(k => lv(k) + " " + o[k]).join(" ");
+  };
+
+  const wtab = (host, cls, title, sub, rows, unit) => {
+    const d = document.createElement("div");
+    d.className = "wtab";
+    d.style.setProperty("--c", "var(--" + cls + ")");
+    d.style.setProperty("--w", "var(--" + cls + "-wash)");
+    d.innerHTML =
+      '<div class="th"><b>' + title + '</b><span class="sub">' + sub + '</span><span class="n">' +
+        lvcount(rows) + " &nbsp;·&nbsp; " + rows.length + " " +
+        (unit || ["card", "cards"])[rows.length === 1 ? 0 : 1] + "</span></div>" +
+      rows.map(r =>
+        '<div class="wrow' + (r.off ? " off" : "") + (r.mark ? " d" : r.flag ? " q" : "") + '">' +
+          '<span class="pt">' + r.pt + " " + lv(r.lvl) +
+            "<small>" + r.gl + (r.g ? " <i>" + r.g + "</i>" : "") + "</small></span>" +
+          '<span class="src">' + r.src + "<small>" + r.note + "</small></span>" +
+          ex(r.ex[0], r.ex[1], r.ex[2], r.ex[3]) +
+          (r.flag ? '<span class="flagline">' +
+            (r.mark ? '<span class="mark">' + r.mark + "</span>" : "") + r.flag + "</span>" : "") +
+        "</div>").join("");
+    host.appendChild(d);
+  };
+
+  /* ── the 18 cards ─────────────────────────────────────────────────── */
+  const IT = [
+    { pt: "oito", gl: "eight", lvl: "A1", src: "octō", note: "ct → it",
+      ex: ["São <b>oito</b> horas.", "It is eight o'clock.", "card 0597", true] },
+    { pt: "dezoito", gl: "eighteen", lvl: "A1", src: "decem + octō", note: "ct → it",
+      ex: ["Ele tem <b>dezoito</b> anos.", "He is eighteen years old.", "card 0607", true] },
+    { pt: "oitenta", gl: "eighty", lvl: "A1", src: "octōgintā", note: "ct → it",
+      ex: ["O meu pai tem <b>oitenta</b> anos.", "My father is eighty years old.", "card 0617", true] },
+    { pt: "de noite, à noite", gl: "at night", lvl: "A1", src: "noctem", note: "ct → it",
+      ex: ["<b>De noite</b> está frio. <b>À noite</b> estudo português.", "At night it is cold. At night I study Portuguese.", "card 0656", true],
+      flag: "The card teaches two forms. English says “at night” for both. In Portuguese de noite is “by night, during the dark hours”, and à noite is “at night, in the evening”. In Portugal à noite is the more common of the two." },
+    { pt: "boa noite", gl: "good night, good evening", lvl: "A1", src: "noctem", note: "ct → it",
+      ex: ["<b>Boa noite</b>, até amanhã.", "Good night, see you tomorrow.", "card 0675", true] },
+    { pt: "meia-noite", gl: "midnight", g: "f", lvl: "A1", src: "mediam noctem", note: "ct → it",
+      ex: ["Chego a casa à <b>meia-noite</b>.", "I get home at midnight.", "card 0652", true] },
+    { pt: "muitas vezes", gl: "often", lvl: "A1", src: "multās vicēs", note: "lt → it",
+      ex: ["Vou <b>muitas vezes</b> à praia.", "I often go to the beach.", "card 0665", true],
+      flag: "An l before a consonant usually turned into a u, as it did in outro from alterum and souto from saltum. After a Latin u it came out as an i instead: multās gave muitas. Galician — the language next door, in the north-west corner of Spain — did the same and says moitas, with the i still in place." },
+    { pt: "muito prazer", gl: "pleased to meet you", lvl: "A1", src: "multum", note: "lt → it",
+      ex: ["<b>Muito prazer</b>, chamo-me João.", "Pleased to meet you, my name is João.", "card 0676", true] },
+    { pt: "(muito) obrigado", gl: "thank you (very much), man speaking", lvl: "A1", src: "multum", note: "lt → it",
+      ex: ["<b>Muito obrigado</b> pelo café.", "Thank you very much for the coffee.", "card 0689", true] },
+    { pt: "(muito) obrigada", gl: "thank you (very much), woman speaking", lvl: "A1", src: "multum", note: "lt → it",
+      ex: ["<b>Muito obrigada</b> pelo chá.", "Thank you very much for the tea.", "card 0690", true] },
+    { pt: "à direita", gl: "on the right", lvl: "A1", src: "dīrēctam", note: "ct → it",
+      ex: ["O gato está <b>à direita</b>.", "The cat is on the right.", "card 0571"] },
+    { pt: "aceitar", gl: "to accept", lvl: "A1", src: "acceptāre", note: "pt → it",
+      ex: ["Eu <b>aceito</b> o convite.", "I accept the invitation.", "card 0007"] },
+    { pt: "do lado direito", gl: "on the right side", lvl: "A2", src: "dīrēctum", note: "ct → it",
+      ex: ["O gato está <b>do lado direito</b>.", "The cat is on the right side.", "card 0579"] },
+    { pt: "receita", gl: "recipe", g: "f", lvl: "A2", src: "recepta", note: "pt → it",
+      ex: ["Eu gosto de <b>receita</b>.", "I like recipe.", "card 0361"],
+      flag: "The card's own sentence is printed here as it stands. Portuguese wants an article or a plural: Eu gosto da receita, or Eu gosto de receitas. See the deck check below." },
+    { pt: "deitado", gl: "lying down", g: "f: deitada", lvl: "A2", src: "*dēctāre", note: "ct → it",
+      ex: ["Ele está <b>deitado</b>.", "He is lying down.", "card 0495"],
+      mark: "Starred form",
+      flag: "Written Latin has dēiectāre, built on dēicere “to throw down”, itself dē- “down” plus iacere “to throw”. To lie down is to throw yourself down. The spoken form that actually gave deitar, *dēctāre, is worked back from the modern word and was never written." }
+  ];
+
+  const UT = [
+    { pt: "outubro", gl: "October", g: "m", lvl: "A1", src: "octōbrius", note: "ct → ut · late Latin, from octōber",
+      ex: ["Em <b>outubro</b> chove muito.", "In October it rains a lot.", "card 0643", true],
+      flag: "Built on octō, the same Latin number as oito, and the c melted in both. Old Portuguese wrote the month both ways, oitubro and outubro, and outubro won. October was the eighth month, because the Roman year began in March." }
+  ];
+
+  const AB = [
+    { pt: "lutar", gl: "to fight", lvl: "B1", src: "luctārī", note: "ct → it, then lost" ,
+      ex: ["Os soldados <b>lutam</b> na guerra.", "The soldiers fight in the war.", "card 0102"],
+      flag: "The c did melt here: Old Portuguese wrote luitar for centuries. The i went later, and the same thing happened in fruito → fruto and truita → truta. Why muito kept its i and these three lost theirs is not settled. Some read it as a plain sound change; others say the book spellings luctar and fructo, in use in the 1500s and 1600s, pushed the old forms out. Galician still writes loitar." }
+  ];
+
+  const IMP = [
+    { pt: "fato", gl: "suit", g: "m", lvl: "A2", src: "*fat", note: "Gothic, or Arabic hatu · never had ct",
+      ex: ["Eu uso o <b>fato</b>.", "I wear the suit.", "card 0321"],
+      mark: "Sources disagree",
+      flag: "Many sources take fato from a Gothic word *fat for a vessel or for clothing; the Portuguese dictionaries Priberam and Infopédia prefer an Arabic source, hatu. The star means the Gothic form is worked back, not written down. Every source agrees on the part this page needs: Latin factum gave feito, not fato." }
+  ];
+
+  /* ── the 4 contrast cards: Latin ct that never melted ─────────────── */
+  const CTRL = [
+    { pt: "exato", gl: "exact", g: "f: exata", lvl: "A2", src: "exāctum", note: "ct never melted",
+      ex: ["Este é o preço <b>exato</b>.", "This is the exact price.", "card 0712", true],
+      flag: "Taken from written Latin, so the c was never melted into an i. Portugal wrote exacto, with a c nobody said, until the 1990 spelling agreement, which it began to apply in 2009. Compare facto, which kept its c because in Portugal that c is still said." },
+    { pt: "teto", gl: "ceiling", g: "m", lvl: "A2", src: "tēctum", note: "ct never melted",
+      ex: ["Eu limpo o <b>teto</b>.", "I clean the ceiling.", "card 0391"],
+      flag: "Portuguese did have the spoken form once. Old Portuguese wrote teito, and this book word pushed it out. Galician still writes teito today. Portugal wrote tecto until the 1990 spelling agreement." },
+    { pt: "diretor", gl: "director", g: "m", lvl: "A2", src: "dīrēctōrem", note: "ct never melted",
+      ex: ["Ele é <b>diretor</b>.", "He is a director.", "card 0436"],
+      flag: "The book twin of direito. Latin dīrēctum came down by speech and gave direito; dīrēctōrem was taken out of books much later, and its c was never melted. Portugal wrote director until the 1990 spelling agreement." },
+    { pt: "restrito", gl: "restricted", g: "f: restrita", lvl: "B1", src: "restrictum", note: "ct never melted",
+      ex: ["Isto é <b>restrito</b>.", "This is restricted.", "card 0544"],
+      flag: "Same story: written Latin, and no melting. The inherited twin of the same Latin stem is estreito, which did melt. One Latin stem, two very different Portuguese shapes." }
+  ];
+
+  /* ── the 10 missing words ─────────────────────────────────────────── */
+  const IT_OFF = [
+    { pt: "noite", gl: "night", g: "f", lvl: "A1", src: "noctem", note: "ct → it",
+      ex: ["A <b>noite</b> está fria.", "The night is cold.", "no card"],
+      flag: "You already read this word on four cards, and it has no card of its own. It is the clearest example of the rule in the language." },
+    { pt: "muito", gl: "much, many, very", g: "f: muita", lvl: "A1", src: "multum", note: "lt → it",
+      ex: ["Trabalho <b>muito</b>.", "I work a lot.", "no card"],
+      flag: "On five of your cards and none of its own. It changes form: muito, muita, muitos, muitas. The l went to an i here and to a u in outro. The Latin u already standing in front of the l is what made the difference." },
+    { pt: "leite", gl: "milk", g: "m", lvl: "A1", src: "lacte", note: "ct → it",
+      ex: ["Gosto de <b>leite</b>.", "I like milk.", "no card"],
+      flag: "English kept the ct in lactose and lactic. Portuguese melted it." },
+    { pt: "direito", gl: "right, straight", g: "f: direita", lvl: "A1", src: "dīrēctum", note: "ct → it",
+      ex: ["Escrevo com a mão <b>direita</b>.", "I write with my right hand.", "no card"] },
+    { pt: "feito", gl: "done, made", g: "f: feita", lvl: "A2", src: "factum", note: "ct → it",
+      ex: ["O trabalho está <b>feito</b>.", "The work is done.", "no card"],
+      flag: "The real result of factum, and the reason fato cannot be from it." },
+    { pt: "peito", gl: "chest", g: "m", lvl: "A2", src: "pectus", note: "ct → it",
+      ex: ["O bebé dorme no meu <b>peito</b>.", "The baby sleeps on my chest.", "no card"] },
+    { pt: "estreito", gl: "narrow", g: "f: estreita", lvl: "B1", src: "strictum", note: "ct → it",
+      ex: ["O corredor é <b>estreito</b>.", "The corridor is narrow.", "no card"],
+      flag: "Two rules in one word: an e at the front from layer 05, and ct → it here. English strict is the same word, with neither change. Your deck has the book-word twin, restrito, card 0544." }
+  ];
+
+  const UT_OFF = [
+    { pt: "outro", gl: "other, another", g: "f: outra", lvl: "A1", src: "alterum", note: "l → u",
+      ex: ["Quero <b>outro</b> chá.", "I want another tea.", "no card"],
+      flag: "The u here is the l itself. An l before a consonant regularly turned into a u in Portuguese, which is also why falcem gave fouce and saltum gave souto. Only after a Latin u did it come out as an i instead, as in muito. Your card 0472 alto kept its l because it is a book word; the old spoken form outo dropped out of use, and the same ou is still there inside outeiro, a hill. This is a different road from outubro, where it was a c that melted." }
+  ];
+
+  const AB_OFF = [
+    { pt: "escrito", gl: "written", g: "f: escrita", lvl: "A2", src: "scrīptum", note: "pt → it, then merged",
+      ex: ["O nome está <b>escrito</b> na porta.", "The name is written on the door.", "no card"],
+      flag: "Latin already had a long ī in front of the pt. The p may have melted into an i and merged with it, or it may have simply dropped. Either way the word comes out the same, and no source can tell the two apart. Unlike luta, escrito left no old spelling that shows the step. Also a layer 05 word: the e at the front was added. Your deck has escritor, card 0440, from the same Latin stem." },
+    { pt: "luta", gl: "fight", g: "f", lvl: "B1", src: "lucta", note: "ct → it, then lost",
+      ex: ["A <b>luta</b> foi difícil.", "The fight was hard.", "no card"],
+      flag: "The noun of lutar, card 0102. Old Portuguese wrote luita; Galician still writes loita. The i was dropped later, and why is not settled — see the lutar row above." }
+  ];
+
+  (function () {
+    const host = document.getElementById("sorter");
+    const off = rows => rows.map(r => ({ ...r, off: true }));
+    const NOCARD = ["word, no card", "words, no card"];
+    wtab(host, "it", "Became ·it·", "the melted letter is written i", IT);
+    wtab(host, "it", "Became ·it· — and you have no card", "same result, missing from your deck", off(IT_OFF), NOCARD);
+    wtab(host, "ut", "Became ·ut·", "the melted letter is written u", UT);
+    wtab(host, "ut", "Became ·ut· — and you have no card", "same result, missing from your deck", off(UT_OFF), NOCARD);
+    wtab(host, "ab", "Left no letter", "the new i is not written today", AB);
+    wtab(host, "ab", "Left no letter — and you have no card", "same result, missing from your deck", off(AB_OFF), NOCARD);
+    wtab(host, "imp", "Only looks the same", "the rule never touched it", IMP);
+
+    wtab(document.getElementById("ctrl"), "ctl", "Here for contrast",
+      "Latin ct that arrived too late to melt", CTRL);
+  })();
+
+  /* ── main chart ───────────────────────────────────────────────────── */
+  (function () {
+    const g = document.getElementById("melt");
+    const ROWS = [
+      { lat: "no<tspan class='hl'>ct</tspan>em", pt: "noite", i: "i", col: "var(--it)", gl: "night", y: 62 },
+      { lat: "o<tspan class='hl'>ct</tspan>ō", pt: "oito", i: "i", col: "var(--it)", gl: "eight", y: 108 },
+      { lat: "acce<tspan class='hl'>pt</tspan>āre", pt: "aceitar", i: "i", col: "var(--it)", gl: "to accept", y: 154 },
+      { lat: "mu<tspan class='hl'>lt</tspan>ās", pt: "muitas", i: "i", col: "var(--it)", gl: "many", y: 200 },
+      { lat: "o<tspan class='hl'>ct</tspan>ōbrius", pt: "outubro", i: "i→u", col: "var(--ut)", gl: "October", y: 246 },
+      { lat: "a<tspan class='hl'>lt</tspan>erum", pt: "outro", i: "u", col: "var(--ut)", gl: "another", y: 292 },
+      { lat: "lu<tspan class='hl'>ct</tspan>a", pt: "luta", i: "—", col: "var(--ab)", gl: "fight", y: 338 },
+      { lat: "scrī<tspan class='hl'>pt</tspan>um", pt: "escrito", i: "—", col: "var(--ab)", gl: "written", y: 384 }
+    ];
+    const st = el("style");
+    st.textContent = ".hl{fill:var(--ink);font-weight:600}";
+    g.appendChild(st);
+
+    const h = el("text", { x: 40, y: 30, class: "t-mono t-mute", "font-size": 10 }); h.textContent = "LATIN";
+    const h2 = el("text", { x: 470, y: 30, class: "t-mono t-mute", "font-size": 10, "text-anchor": "middle" }); h2.textContent = "BECAME";
+    const h3 = el("text", { x: 600, y: 30, class: "t-mono t-mute", "font-size": 10 }); h3.textContent = "PORTUGUESE";
+    g.appendChild(h); g.appendChild(h2); g.appendChild(h3);
+
+    ROWS.forEach(r => {
+      const t = el("text", { x: 40, y: r.y, class: "t-serif t-sub", "font-size": 21, "font-style": "italic" });
+      t.innerHTML = r.lat;
+      g.appendChild(t);
+
+      g.appendChild(el("path", { d: "M300 " + (r.y - 6) + " H430", fill: "none", stroke: r.col,
+        "stroke-width": 1.5, opacity: .6 }));
+      const b = el("text", { x: 470, y: r.y, class: "t-serif",
+        "font-size": r.i.length > 1 ? 19 : 24, "text-anchor": "middle" });
+      b.setAttribute("fill", r.col); b.textContent = r.i;
+      g.appendChild(b);
+      g.appendChild(el("path", { d: "M510 " + (r.y - 6) + " H580", fill: "none", stroke: r.col,
+        "stroke-width": 1.5, opacity: .6 }));
+
+      const p = el("text", { x: 600, y: r.y, class: "t-serif", "font-size": 22 });
+      p.setAttribute("fill", r.col); p.textContent = r.pt;
+      g.appendChild(p);
+      const gl = el("text", { x: 920, y: r.y, class: "t-mute", "font-size": 12, "text-anchor": "end" });
+      gl.textContent = r.gl;
+      g.appendChild(gl);
+    });
+  })();
+
+  /* ── the Roman months ─────────────────────────────────────────────── */
+  (function () {
+    const rows = [
+      ["septem", "seven", "setembro", "0642", "A1", "the seventh month", "sete", "0596"],
+      ["octō", "eight", "outubro", "0643", "A1", "the eighth month", "oito", "0597"],
+      ["novem", "nine", "novembro", "0644", "A1", "the ninth month", "nove", "0598"],
+      ["decem", "ten", "dezembro", "0645", "A1", "the tenth month", "dez", "0599"]
+    ];
+    const t = document.getElementById("months");
+    t.innerHTML = "<thead><tr><th>Latin number</th><th>Meaning</th><th>Month</th><th>Level</th><th>What the name says</th><th>The number you study</th></tr></thead>";
+    const tb = document.createElement("tbody");
+    rows.forEach(r => {
+      const tr = document.createElement("tr");
+      if (r[2] === "outubro") tr.className = "hi";
+      const cell = (h, c, st) => { const td = document.createElement("td"); if (c) td.className = c; td.innerHTML = h; if (st) td.setAttribute("style", st); return td; };
+      tr.appendChild(cell(r[0], "lat"));
+      tr.appendChild(cell(r[1], "note"));
+      tr.appendChild(cell(r[2] + '<span class="out">card ' + r[3] + "</span>", "head",
+        r[2] === "outubro" ? "color:var(--ut)" : ""));
+      tr.appendChild(cell(lv(r[4])));
+      tr.appendChild(cell(r[5], "note"));
+      tr.appendChild(cell(r[6] + '<span class="out">card ' + r[7] + "</span>", "head",
+        r[6] === "oito" ? "color:var(--it)" : ""));
+      tb.appendChild(tr);
+    });
+    t.appendChild(tb);
+  })();
+
+  /* ── anchors ──────────────────────────────────────────────────────── */
+  (function () {
+    const H = [
+      { c: "it", pair: '<span class="a">oito</span><span class="eq">=</span>eight<span class="eq">=</span>octopus', root: "*oḱtṓw · eight", lvl: "A1",
+        why: "An octopus has eight arms. English <em>eight</em> and Latin <em>octō</em> grew from one very old word, and Portuguese melted the <em>c</em> out of it.",
+        ex: ["São <b>oito</b> horas.", "It is eight o'clock.", "card 0597", true] },
+      { c: "it", pair: '<span class="a">noite</span><span class="eq">=</span>night<span class="eq">=</span>ночь', root: "*nókʷts · night", lvl: "A1",
+        why: "Latin <em>noctem</em>, English <em>night</em> and Russian <em>ночь</em> grew from one word. English still writes the old consonant as <em>gh</em> and no longer says it.",
+        ex: ["<b>À noite</b> estudo português.", "At night I study Portuguese.", "card 0656", true] },
+      { c: "it", pair: '<span class="a">leite</span><span class="eq">=</span>lactose', root: "Latin lacte · milk", lvl: "A1",
+        why: "English borrowed the Latin word later and kept the <em>ct</em>: <em>lactose</em>, <em>lactic</em>. Portuguese inherited it and melted the <em>c</em>.",
+        ex: ["Gosto de <b>leite</b>.", "I like milk.", "no card"] },
+      { c: "it", pair: '<span class="a">direita</span><span class="eq">=</span>direct', root: "Latin dīrēctam · straight", lvl: "A1",
+        why: "The Latin word meant straight. English kept it whole in <em>direct</em>. Portuguese melted it, and the straight side became the right side.",
+        ex: ["O gato está <b>à direita</b>.", "The cat is on the right.", "card 0571"] },
+      { c: "it", pair: '<span class="a">aceitar</span><span class="eq">=</span>accept', root: "Latin acceptāre · to receive", lvl: "A1",
+        why: "Same word, one letter apart. English kept the <em>pt</em>. Portuguese melted the <em>p</em> into an <em>i</em>.",
+        ex: ["Eu <b>aceito</b> o convite.", "I accept the invitation.", "card 0007"] }
+    ];
+    const host = document.getElementById("hooks");
+    H.forEach(h => {
+      const d = document.createElement("div");
+      d.className = "hook";
+      d.style.setProperty("--c", "var(--" + h.c + ")");
+      d.innerHTML = '<div class="pair">' + h.pair + lv(h.lvl) + '</div><div class="why">' + h.why +
+        '</div><div class="root">' + h.root + "</div>" + ex(h.ex[0], h.ex[1], h.ex[2], h.ex[3]);
+      host.appendChild(d);
+    });
+  })();
+
+  /* ── index ────────────────────────────────────────────────────────── */
+  (function () {
+    const all = []
+      .concat(IT.map(r => [r.pt, "it", "became it"]))
+      .concat(IT_OFF.map(r => [r.pt, "it", "became it · no card"]))
+      .concat(UT.map(r => [r.pt, "ut", "became ut"]))
+      .concat(UT_OFF.map(r => [r.pt, "ut", "became ut · no card"]))
+      .concat(AB.map(r => [r.pt, "ab", "left no letter"]))
+      .concat(AB_OFF.map(r => [r.pt, "ab", "left no letter · no card"]))
+      .concat(IMP.map(r => [r.pt, "imp", "only looks the same"]));
+    all.sort((a, b) => a[0].localeCompare(b[0], "pt"));
+    document.getElementById("index").innerHTML = all.map(r =>
+      '<div class="ix" style="--c:var(--' + r[1] + ')"><span class="w">' + r[0] +
+      '</span><span class="b">' + r[2] + "</span></div>").join("");
+  })();
+</script>

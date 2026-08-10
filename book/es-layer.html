@@ -1,0 +1,970 @@
+<title>es· — three roads to the same two letters</title>
+
+<style>
+  :root {
+    --paper: #F2F3EF; --paper-2: #E9EBE5;
+    --ink: #141A20; --ink-2: #4E5A66; --ink-3: #5F6A75;
+    --rule: #D3D7CE; --rule-soft: #E0E3DB;
+
+    --pro: #1F5FBF; --pre: #A6501C; --alr: #0A744E; --unk: #9E3A90;
+    --pro-wash: #1F5FBF14; --pre-wash: #A6501C14; --alr-wash: #0A744E14; --unk-wash: #9E3A9014;
+
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans:  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    --mono:  ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    --max: 1080px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #12151A; --paper-2: #191D24;
+      --ink: #E6E9E4; --ink-2: #9AA5AF; --ink-3: #7C8690;
+      --rule: #272D35; --rule-soft: #1F242B;
+      --pro: #4E8BE0; --pre: #D0783C; --alr: #0FA06B; --unk: #C95CAB;
+      --pro-wash: #4E8BE01f; --pre-wash: #D0783C1f; --alr-wash: #0FA06B1f; --unk-wash: #C95CAB1f;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #12151A; --paper-2: #191D24;
+    --ink: #E6E9E4; --ink-2: #9AA5AF; --ink-3: #7C8690;
+    --rule: #272D35; --rule-soft: #1F242B;
+    --pro: #4E8BE0; --pre: #D0783C; --alr: #0FA06B; --unk: #C95CAB;
+    --pro-wash: #4E8BE01f; --pre-wash: #D0783C1f; --alr-wash: #0FA06B1f; --unk-wash: #C95CAB1f;
+  }
+  :root[data-theme="light"] {
+    --paper: #F2F3EF; --paper-2: #E9EBE5;
+    --ink: #141A20; --ink-2: #4E5A66; --ink-3: #5F6A75;
+    --rule: #D3D7CE; --rule-soft: #E0E3DB;
+    --pro: #1F5FBF; --pre: #A6501C; --alr: #0A744E; --unk: #9E3A90;
+    --pro-wash: #1F5FBF14; --pre-wash: #A6501C14; --alr-wash: #0A744E14; --unk-wash: #9E3A9014;
+  }
+
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: var(--sans); font-size: 16px; line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 600; text-wrap: balance; margin: 0; }
+  .eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3); }
+  .dek { color: var(--ink-2); max-width: 62ch; margin: 0; }
+  .term { margin: 0; max-width: 64ch; font-size: 14px; color: var(--ink-2); padding: 12px 15px; border-left: 3px solid var(--ink-3); background: var(--paper-2); }
+  .term b { font-family: var(--serif); font-size: 16px; color: var(--ink); }
+  .terms { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 12px; }
+  .mono-in { font-family: var(--mono); font-size: .82em; }
+  em.lat { font-family: var(--serif); font-style: italic; }
+
+  section { border-top: 1px solid var(--rule); padding: 54px 0 8px; }
+  section > .wrap { display: flex; flex-direction: column; gap: 24px; }
+  .sec-head { display: flex; flex-direction: column; gap: 8px; }
+  .sec-head h2 { font-size: clamp(22px, 3vw, 30px); letter-spacing: -.01em; }
+  h3.grp { font-size: 17px; color: var(--ink-2); margin-top: 6px; }
+
+  /* ── example sentence ─────────────────────────────────────────────── */
+  .ex { display: flex; flex-direction: column; gap: 1px; }
+  .ex .p { font-family: var(--serif); font-size: 15.5px; line-height: 1.35; }
+  .ex .p b { font-weight: 600; color: var(--c, var(--ink)); }
+  .ex .e { font-size: 12px; color: var(--ink-3); }
+  .cid { font-family: var(--mono); font-size: 9px; letter-spacing: .07em; text-transform: uppercase; border: 1px solid var(--rule); border-radius: 2px; padding: 1px 4px; color: var(--ink-3); margin-left: 5px; white-space: nowrap; }
+  .cid.new { border-style: dashed; }
+  /* the word itself is missing from the deck — dotted, and never confused
+     with `new`, which only means the sentence was written for the page */
+  .cid.nocard { border-style: dotted; border-color: var(--ink-2); color: var(--ink); }
+  .wrow.off .pt::after { content: "no card"; font-family: var(--mono); font-size: 8.5px;
+    letter-spacing: .07em; text-transform: uppercase; color: var(--ink-2);
+    border: 1px dotted var(--ink-2); border-radius: 2px; padding: 0 4px; margin-left: 6px;
+    white-space: nowrap; vertical-align: 2px; }
+
+  /* ── CEFR level flag ──────────────────────────────────────────────── */
+  .lv { font-family: var(--mono); font-size: 9px; font-weight: 600; letter-spacing: .06em;
+        padding: 1px 4px; border-radius: 2px; border: 1px solid var(--ink-3);
+        color: var(--ink-3); white-space: nowrap; }
+  .lv.a1 { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+  .lv.a2 { background: var(--ink-2); border-color: var(--ink-2); color: var(--paper); }
+  .lv.b1 { border-color: var(--ink-2); color: var(--ink-2); }
+  .lv.b2 { border-style: dashed; }
+  .lv.c1 { border-style: dotted; }
+  .levels { border: 1px solid var(--rule); }
+  .levels .lh { padding: 11px 15px; background: var(--paper-2); border-bottom: 1px solid var(--rule); font-family: var(--serif); font-size: 16px; }
+  .lrow { display: grid; grid-template-columns: 44px 92px 1fr; gap: 4px 14px; align-items: baseline; padding: 10px 15px; border-bottom: 1px solid var(--rule-soft); }
+  .lrow:last-child { border-bottom: 0; }
+  .lrow .n { font-family: var(--mono); font-size: 12px; color: var(--ink-2); }
+  .lrow .t { font-size: 13.5px; color: var(--ink-2); }
+  .lrow .t b { color: var(--ink); }
+  .lvline { display: flex; flex-wrap: wrap; gap: 7px 12px; align-items: center; font-size: 12.5px; color: var(--ink-3); margin: 0; }
+  .wrow .pt .lv, .hook .lv { margin-left: 6px; }
+  @media (max-width: 620px) { .lrow { grid-template-columns: 44px 1fr; } }
+
+  /* ── hero ─────────────────────────────────────────────────────────── */
+  header { padding: 66px 0 50px; }
+  header > .wrap { display: flex; flex-direction: column; gap: 30px; }
+  .rulecard { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 22px; font-family: var(--serif); }
+  .rule-from { font-size: clamp(21px, 3.6vw, 34px); color: var(--ink-3); display: flex; gap: 8px 15px; flex-wrap: wrap; }
+  .rule-from span { color: var(--c, var(--ink-3)); white-space: nowrap; }
+  .rule-arrow { font-size: clamp(22px, 3.6vw, 34px); color: var(--ink-3); }
+  .rule-to { font-size: clamp(44px, 8.5vw, 78px); line-height: 1; }
+  .rulenote { display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: baseline; font-family: var(--mono);
+              font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); margin-top: -18px; }
+  .rulenote b { color: var(--c); font-weight: 400; }
+  h1 { font-size: clamp(27px, 4.2vw, 40px); letter-spacing: -.015em; line-height: 1.14; }
+
+  .specimens { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(290px, 100%), 1fr)); gap: 14px; }
+  .spec { display: flex; flex-direction: column; gap: 5px; padding: 12px 14px; border: 1px solid var(--rule-soft); border-left: 3px solid var(--c); }
+  .spec .line { font-family: var(--serif); font-size: 21px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .spec .line .lat { color: var(--ink-2); font-style: italic; }
+  .spec .line .lat u { text-decoration: none; color: var(--c); }
+  .spec .line .lat s { text-decoration-color: var(--c); color: var(--ink-3); }
+  .spec .line .ar { font-family: var(--sans); font-size: 12px; color: var(--ink-3); }
+  .spec .line .pt b { color: var(--c); }
+  .spec .gl { font-size: 12.5px; color: var(--ink-3); }
+
+  .stats { display: flex; flex-wrap: wrap; gap: 0; border-top: 1px solid var(--rule); }
+  .stat { flex: 1 1 118px; padding: 13px 18px 13px 0; border-right: 1px solid var(--rule-soft); display: flex; flex-direction: column; gap: 2px; }
+  .stat:last-child { border-right: 0; }
+  .stat b { font-family: var(--serif); font-size: 29px; font-weight: 600; font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .stat span { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+
+  /* ── scope ────────────────────────────────────────────────────────── */
+  .scope { border: 1px solid var(--rule); }
+  .scope-head { padding: 12px 15px; background: var(--paper-2); border-bottom: 1px solid var(--rule); font-family: var(--serif); font-size: 16px; }
+  .srow { display: grid; grid-template-columns: 210px 68px 1fr; gap: 4px 14px; align-items: baseline; padding: 11px 15px; border-bottom: 1px solid var(--rule-soft); border-left: 3px solid var(--c); }
+  .srow:last-child { border-bottom: 0; }
+  .srow .v { font-family: var(--serif); font-size: 17px; color: var(--c); }
+  .srow .n { font-family: var(--mono); font-size: 11px; color: var(--ink-2); }
+  .srow .why { font-size: 13.5px; color: var(--ink-2); }
+  @media (max-width: 720px) { .srow { grid-template-columns: 1fr; } }
+
+  /* ── word tables ──────────────────────────────────────────────────── */
+  .wtab { border: 1px solid var(--rule-soft); border-top: 3px solid var(--c); break-inside: avoid; }
+  .wtab .th { display: flex; align-items: baseline; gap: 9px; padding: 11px 14px; border-bottom: 1px solid var(--rule); background: var(--w); flex-wrap: wrap; }
+  .wtab .th b { font-family: var(--serif); font-size: 18px; }
+  .wtab .th .sub { font-size: 12.5px; color: var(--ink-2); }
+  .wtab .th .n { margin-left: auto; font-family: var(--mono); font-size: 10px; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-2); }
+  .wrow { display: grid; grid-template-columns: 152px 148px 1fr; gap: 4px 12px; align-items: baseline; padding: 10px 14px; border-bottom: 1px solid var(--rule-soft); }
+  .wrow:last-child { border-bottom: 0; }
+  .wrow .pt { font-family: var(--serif); font-size: 17px; color: var(--c); }
+  .wrow .pt small { font-family: var(--sans); font-size: 11.5px; color: var(--ink-3); display: block; }
+  .wrow .pt small i { font-style: normal; font-family: var(--mono); font-size: 9.5px; letter-spacing: .06em; }
+  .wrow .src { font-family: var(--serif); font-style: italic; font-size: 14px; color: var(--ink-2); }
+  .wrow .src small { font-family: var(--mono); font-size: 10px; font-style: normal; color: var(--ink-3); display: block; letter-spacing: .04em; }
+  .wrow.q { background: var(--paper-2); }
+  .wrow .flagline { grid-column: 1 / -1; font-size: 12px; color: var(--ink-2); border-top: 1px dotted var(--rule); padding-top: 6px; }
+  @media (max-width: 760px) { .wrow { grid-template-columns: 1fr; } }
+
+  /* ── disputed: dashed edge + a word, so it survives black and white ── */
+  .wrow.d { background: var(--paper-2); outline: 1.5px dashed var(--ink-3); outline-offset: -4px; }
+  .mark { font-family: var(--mono); font-size: 9px; letter-spacing: .08em; text-transform: uppercase;
+          border: 1px dashed var(--ink-3); border-radius: 2px; padding: 1px 5px; color: var(--ink);
+          white-space: nowrap; }
+  .flagline .mark { margin-right: 8px; }
+
+  .tabs2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 20px; align-items: start; }
+
+  /* ── figures ──────────────────────────────────────────────────────── */
+  figure { margin: 0; display: flex; flex-direction: column; gap: 12px; }
+  .plot { width: 100%; overflow-x: auto; }
+  .plot svg { display: block; width: 100%; height: auto; min-width: 540px; }
+  figcaption { font-size: 12.5px; color: var(--ink-3); max-width: 68ch; }
+  svg text { font-family: var(--sans); fill: var(--ink); }
+  svg .t-serif { font-family: var(--serif); }
+  svg .t-mono { font-family: var(--mono); letter-spacing: .06em; }
+  svg .t-mute { fill: var(--ink-3); }
+  svg .t-sub { fill: var(--ink-2); }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: center; }
+  .lg { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; color: var(--ink-2); }
+  .sw { width: 13px; height: 13px; border-radius: 2px; flex: none; }
+
+  /* ── matrices ─────────────────────────────────────────────────────── */
+  .mx-scroll { overflow-x: auto; }
+  table.mx { border-collapse: collapse; width: 100%; min-width: 680px; }
+  table.mx th, table.mx td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--rule-soft); vertical-align: baseline; }
+  table.mx thead th { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); font-weight: 400; border-bottom: 1px solid var(--rule); }
+  table.mx td { font-family: var(--serif); font-size: 16px; }
+  table.mx td.lat { font-style: italic; color: var(--ink-2); white-space: nowrap; }
+  table.mx td.head { font-weight: 600; white-space: nowrap; }
+  table.mx td .out { display: block; font-family: var(--mono); font-size: 9.5px; letter-spacing: .05em; color: var(--ink-3); font-weight: 400; font-style: normal; }
+  table.mx td.note { font-family: var(--sans); font-size: 13px; color: var(--ink-2); }
+  table.mx td.gone { color: var(--ink-3); font-style: normal; }
+  table.mx tr.hi td { background: var(--paper-2); }
+
+  /* ── evidence box ─────────────────────────────────────────────────── */
+  .evi { border: 1px solid var(--rule); background: var(--paper-2); padding: 16px 18px; display: flex; flex-direction: column; gap: 7px; break-inside: avoid; }
+  .erow { display: grid; grid-template-columns: 118px 148px 26px 1fr; gap: 10px; align-items: baseline; }
+  .erow .lbl { font-family: var(--mono); font-size: 10px; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-3); }
+  .erow .lat { font-family: var(--serif); font-style: italic; font-size: 18px; color: var(--ink-2); }
+  .erow .lat u { text-decoration: none; font-weight: 600; color: var(--e, var(--ink)); }
+  .erow .lat s { text-decoration-color: var(--e, var(--ink-3)); color: var(--ink-3); }
+  .erow .ar { color: var(--ink-3); font-size: 12px; }
+  .erow .pt { font-family: var(--serif); font-size: 19px; }
+  .erow .pt b { color: var(--e, var(--ink)); }
+  .erow .pt small { font-family: var(--sans); font-size: 11.5px; color: var(--ink-3); margin-left: 8px; }
+  .same { font-size: 13px; color: var(--ink-2); border-top: 1px dotted var(--rule); padding-top: 7px; }
+  @media (max-width: 700px) { .erow { grid-template-columns: 1fr; gap: 1px; } .erow .ar { display: none; } }
+
+  /* ── the test ─────────────────────────────────────────────────────── */
+  .test { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 18px; }
+  .tcard { border: 1px solid var(--rule-soft); border-top: 3px solid var(--c); break-inside: avoid; }
+  .tcard .th { padding: 12px 15px; background: var(--w); border-bottom: 1px solid var(--rule); }
+  .tcard .th b { font-family: var(--serif); font-size: 17px; display: block; }
+  .tcard .th span { font-size: 12.5px; color: var(--ink-3); }
+  .trow { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; align-items: baseline; padding: 8px 15px; border-bottom: 1px solid var(--rule-soft); }
+  .trow:last-child { border-bottom: 0; }
+  .trow .a { font-family: var(--serif); font-size: 16px; color: var(--c); }
+  .trow .b { font-family: var(--serif); font-size: 15px; color: var(--ink-2); }
+  .trow .b i { font-style: normal; color: var(--ink-3); font-size: 11.5px; display: block; font-family: var(--sans); }
+
+  /* ── anchors ──────────────────────────────────────────────────────── */
+  .hooks { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(238px, 100%), 1fr)); gap: 1px; background: var(--rule-soft); border: 1px solid var(--rule-soft); }
+  .hook { background: var(--paper); padding: 18px 16px; display: flex; flex-direction: column; gap: 8px; break-inside: avoid; border-top: 3px solid var(--c); }
+  .hook .pair { font-family: var(--serif); font-size: clamp(19px, 2.6vw, 24px); line-height: 1.2; }
+  .hook .pair .a { color: var(--c); }
+  .hook .pair .eq { color: var(--ink-3); margin: 0 6px; font-size: .68em; vertical-align: 3px; }
+  .hook .why { font-size: 12.5px; color: var(--ink-2); }
+  .hook .root { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); }
+
+  /* ── deck check ───────────────────────────────────────────────────── */
+  .fix { border: 1px solid var(--rule); border-left: 3px solid var(--ink-3); padding: 15px 17px; display: flex; flex-direction: column; gap: 8px; break-inside: avoid; }
+  .fix .h { font-family: var(--serif); font-size: 17px; }
+  .fix p { margin: 0; font-size: 13.5px; color: var(--ink-2); max-width: 70ch; }
+  .fix code { font-family: var(--mono); font-size: 12.5px; background: var(--paper-2); padding: 2px 6px; border: 1px solid var(--rule-soft); }
+  .fixes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(330px, 100%), 1fr)); gap: 16px; }
+
+  /* ── alphabetical index ───────────────────────────────────────────── */
+  .index { columns: 4; column-gap: 30px; border-top: 1px solid var(--rule); padding-top: 4px; }
+  .ix { break-inside: avoid; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0 10px;
+        padding: 4px 0; border-bottom: 1px dotted var(--rule-soft); }
+  .ix .w { font-family: var(--serif); font-size: 15px; color: var(--c); }
+  .ix .b { font-family: var(--mono); font-size: 8.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); white-space: nowrap; }
+  @media (max-width: 940px) { .index { columns: 3; } }
+  @media (max-width: 660px) { .index { columns: 2; } }
+
+  footer { border-top: 1px solid var(--rule); padding: 32px 0 58px; }
+  footer > .wrap { display: flex; flex-direction: column; gap: 10px; }
+  footer p { margin: 0; font-size: 12.5px; color: var(--ink-3); max-width: 72ch; }
+
+  @media print {
+    /* the light palette is forced: printing from a dark browser must not
+       give white text on white paper. The :not() selector is here on purpose —
+       without it the dark media-query rule outranks a bare :root and the
+       un-stamped system default still prints dark. */
+    :root, :root:not([data-theme="light"]),
+    :root[data-theme="dark"], :root[data-theme="light"] {
+      --paper: #FFFFFF; --paper-2: #EDEEE9;
+      --ink: #111418; --ink-2: #454F59; --ink-3: #616B75;
+      --rule: #C2C7BC; --rule-soft: #D8DCD2;
+      --pro: #1F5FBF; --pre: #A6501C; --alr: #0A744E; --unk: #9E3A90;
+      --pro-wash: #1F5FBF14; --pre-wash: #A6501C14; --alr-wash: #0A744E14; --unk-wash: #9E3A9014;
+    }
+    body { background: #fff; font-size: 10.5pt; }
+    section { break-inside: auto; padding: 24px 0 4px; }
+    header { padding: 10px 0 22px; }
+    .wrap { padding: 0 10px; max-width: none; }
+
+    .plot, .mx-scroll { overflow: visible; }
+    .plot svg { min-width: 0; }
+    table.mx { min-width: 0; }
+    table.mx th, table.mx td { padding: 6px 8px; }
+    table.mx td { font-size: 11.5px; }
+    table.mx td.lat, table.mx td.head { white-space: normal; }
+
+    .sec-head, h1, h2, h3.grp, .wtab .th, .tcard .th, .scope-head, .levels .lh,
+    .terms, .rulecard { break-after: avoid; }
+    figcaption, .legend { break-before: avoid; }
+
+    .sec-head, figure, .term, .spec, .stats, .stat, .scope, .levels, .srow, .lrow,
+    .wrow, .trow, .evi, .erow, .hook, .fix, .ex, .lvline, .rulecard, .legend { break-inside: avoid; }
+    .wtab, .tcard { break-inside: auto; }
+    p, .why, .same { orphans: 3; widows: 3; }
+    .index { columns: 3; }
+  }
+</style>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Origin layer 05 · European Portuguese · 28 cards + 10 missing words</div>
+
+    <div class="rulecard">
+      <span class="rule-from"
+        ><span style="--c:var(--pro)">sc·</span
+        ><span style="--c:var(--pro)">sp·</span
+        ><span style="--c:var(--pro)">st·</span
+        ><span style="--c:var(--pre)">ex·</span
+        ><span style="--c:var(--pre)">abs·</span
+        ><span style="--c:var(--pre)">obs·</span
+      ></span>
+      <span class="rule-arrow">→</span>
+      <span class="rule-to">es·</span>
+    </div>
+    <div class="rulenote">
+      <span style="--c:var(--pro)"><b>■</b> an e was added at the front</span>
+      <span style="--c:var(--pre)"><b>■</b> a prefix wore down</span>
+      <span style="--c:var(--alr)"><b>■</b> the word arrived with es· already</span>
+      <span style="--c:var(--unk)"><b>■</b> the origin is unclear</span>
+    </div>
+
+    <h1>Portuguese cannot start a word with <em>s</em> and another consonant.<br />Three different histories all end in <em>es-</em>.</h1>
+
+    <p class="dek">Twenty-eight cards carry a word that starts with <span class="mono-in">es</span> and a consonant. Sixteen grew that <em>e</em>, because the word was hard to say without it. Nine gained nothing. They began with a longer piece, and that piece wore away until only <em>es</em> was left. Two hold one Basque word that arrived with <em>es</em> already there. One is still argued over. On paper all twenty-eight look alike.</p>
+
+    <p class="dek">Ten more words belong on this page and are <strong>not in your deck</strong>. They are marked <span class="cid nocard">no card</span> and they are all A1 to B1. Four of them are A1, so they are worth adding today.</p>
+
+    <div class="terms">
+      <p class="term"><b>Prosthesis</b> — an extra sound put at the front of a word only to make it easier to say. It carries no meaning of its own. The <em>e</em> in <em>escola</em> is one.</p>
+      <p class="term"><b>Prefix</b> — a piece put at the front that <em>does</em> carry meaning. Latin <em class="lat">ex-</em> meant “out” and <em class="lat">abs-</em> meant “away”. In <em class="lat">obscūrum</em> the prefix is <em class="lat">ob-</em> “over”, and the <em>s</em> after it belongs to the next piece. The front of the word wears down the same way in all three.</p>
+      <p class="term"><b>Starred form</b> — an old word or root with a <em>*</em> in front of it, like <em class="lat">*exfricāre</em>. Nobody ever wrote that form down. Scholars work it back from the words we do have. It is a good guess, not a record.</p>
+    </div>
+
+    <div class="specimens">
+      <div class="spec" style="--c:var(--pro)">
+        <span class="line"><span class="lat">schola</span><span class="ar">→</span><span class="pt"><b>e</b>scola</span></span>
+        <span class="gl">school — an e appeared in front · card 0289 · A1</span>
+      </div>
+      <div class="spec" style="--c:var(--pre)">
+        <span class="line"><span class="lat"><u>ex</u>trāneum</span><span class="ar">→</span><span class="pt"><b>es</b>tranho</span></span>
+        <span class="gl">strange — nothing was added, ex wore down to es · card 0507 · A2</span>
+      </div>
+      <div class="spec" style="--c:var(--alr)">
+        <span class="line"><span class="lat">ezkerra</span><span class="ar">→</span><span class="pt"><b>es</b>querda</span></span>
+        <span class="gl">left — Basque, not Latin; it arrived with es· already · card 0572 · A1</span>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>28</b><span>cards carry an es· word</span></div>
+      <div class="stat"><b style="color:var(--pro)">16</b><span>grew an e</span></div>
+      <div class="stat"><b style="color:var(--pre)">9</b><span>wore a prefix down</span></div>
+      <div class="stat"><b style="color:var(--alr)">2</b><span>came with es· already</span></div>
+      <div class="stat"><b style="color:var(--unk)">1</b><span>origin unclear</span></div>
+      <div class="stat"><b>10</b><span>words with no card</span></div>
+    </div>
+
+    <div class="lvline">
+      <span>Level of the 28 <span class="mono-in">es·</span> cards:</span>
+      <span><span class="lv a1">A1</span> 13</span>
+      <span><span class="lv a2">A2</span> 10</span>
+      <span><span class="lv b1">B1</span> 5</span>
+      <span>— twenty-three are A1 or A2, so this page pays off now.</span>
+    </div>
+    <div class="lvline">
+      <span>Level of the 10 missing words:</span>
+      <span><span class="lv a1">A1</span> 4</span>
+      <span><span class="lv a2">A2</span> 4</span>
+      <span><span class="lv b1">B1</span> 2</span>
+      <span>— <em>espelho</em>, <em>escada</em>, <em>estrada</em> and <em>estudante</em> are A1 and missing. Add those first.</span>
+    </div>
+  </div>
+</header>
+
+<!-- ══ scope ══════════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">What is on this page</div>
+      <h2>Twenty-eight cards, and why each one is here</h2>
+      <p class="dek">Three histories put them there, and one card cannot be placed. Two more groups are printed: ten words the deck is missing, and a control group the rule never touched.</p>
+    </div>
+
+    <div class="scope">
+      <div class="scope-head">Same two letters. Three stories and one open question, plus the gaps and a control group.</div>
+      <div class="srow" style="--c:var(--pro)">
+        <span class="v">Grew an e at the front</span><span class="n">16 cards</span>
+        <span class="why">The Latin word began with <em>s</em> and another consonant. Speakers could not start a word that way, so they put an <em>e</em> in front of it. <em class="lat">schola</em> → <em>escola</em>.</span>
+      </div>
+      <div class="srow" style="--c:var(--pre)">
+        <span class="v">Wore a prefix down</span><span class="n">9 cards</span>
+        <span class="why">The Latin word began with the letters <em class="lat">ex</em>, <em class="lat">abs</em> or <em class="lat">obs</em>, and those letters carried a meaning of their own. Nothing was added. The front of the word simply wore down to <em>es</em>. <em class="lat">extrāneum</em> → <em>estranho</em>.</span>
+      </div>
+      <div class="srow" style="--c:var(--alr)">
+        <span class="v">Came with es· already</span><span class="n">2 cards</span>
+        <span class="why"><em>esquerda</em> is not a Latin word. Portuguese took it from Basque <em>ezkerra</em>, which already began with a vowel. There was nothing to repair. Two cards carry it: <em>à esquerda</em> and <em>do lado esquerdo</em>.</span>
+      </div>
+      <div class="srow" style="--c:var(--unk)">
+        <span class="v">Origin unclear</span><span class="n">1 card</span>
+        <span class="why"><em>esticar</em>. Sources do not agree on where this word comes from, so the page puts it in no group.</span>
+      </div>
+      <div class="srow" style="--c:var(--ink-2)">
+        <span class="v">Not in your deck</span><span class="n">10 words</span>
+        <span class="why">Common words that fit this page and have no card: <em>espelho</em>, <em>escada</em>, <em>estrada</em>, <em>estudante</em>, <em>espaço</em>, <em>estômago</em>, <em>escolha</em>, <em>estrangeiro</em>, <em>esperança</em>, <em>esperto</em>. All A1 to B1. Each is marked <span class="cid nocard">no card</span>.</span>
+      </div>
+      <div class="srow" style="--c:var(--ink-3)">
+        <span class="v">Here for contrast</span><span class="n">55 cards</span>
+        <span class="why">These start with <em>s</em> and a <strong>vowel</strong>: <em>sol</em>, <em>sopa</em>, <em>sala</em>, <em>saber</em>, <em>sair</em>, <em>ser</em>, <em>sonho</em>, <em>subir</em>. The rule never applied, because there was nothing hard to say. Eight of the 55 are shown below.</span>
+      </div>
+    </div>
+
+    <div class="levels">
+      <div class="lh">Every word on this page carries a level flag. This is what the flags mean.</div>
+      <div class="lrow"><span class="n"><span class="lv a1">A1</span></span><span class="t">learn now</span>
+        <span class="t">First 500 words. You need this word in normal days. <b>Learn it now.</b></span></div>
+      <div class="lrow"><span class="n"><span class="lv a2">A2</span></span><span class="t">learn now</span>
+        <span class="t">Still basic. You will meet it soon. <b>Learn it now.</b></span></div>
+      <div class="lrow"><span class="n"><span class="lv b1">B1</span></span><span class="t">later</span>
+        <span class="t">Useful, but not every day. Keep the card. Do not push it.</span></div>
+      <div class="lrow"><span class="n"><span class="lv b2">B2</span></span><span class="t">later</span>
+        <span class="t">Rare in speech. Read it here for the pattern, not for the word.</span></div>
+      <div class="lrow"><span class="n"><span class="lv c1">C1</span></span><span class="t">much later</span>
+        <span class="t">Books and formal writing only.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ main chart ═════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Main chart</div>
+      <h2>Two roads to the same two letters</h2>
+      <p class="dek">One road adds. The other road removes. They meet at <span class="mono-in">es</span>, and after that you cannot tell them apart by looking.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— covers all 28 cards: 13 A1, 10 A2, 5 B1. This is the map for the whole page.</span></p>
+    </div>
+
+    <figure>
+      <div class="plot">
+        <svg viewBox="0 0 960 380" role="img" aria-label="Two roads meet at es-: Latin s plus consonant gains an e in front, while a Latin word starting ex, abs or obs wears that front down to es. 16 cards took the first road, 9 took the second, and 1 card, esticar, cannot be placed on either.">
+          <g id="roads"></g>
+        </svg>
+      </div>
+      <figcaption>Numbers are counted from your own deck. The left road adds a letter. The right road wears the front of the word down. Two cards are not on this chart: <em>à esquerda</em> and <em>do lado esquerdo</em> came from Basque with <em>es</em> already there, so they took neither road.</figcaption>
+    </figure>
+
+    <div class="legend">
+      <span class="lg"><span class="sw" style="background:var(--pro)"></span>an e was added at the front — 16 cards</span>
+      <span class="lg"><span class="sw" style="background:var(--pre)"></span>a prefix wore down — 9 cards</span>
+      <span class="lg"><span class="sw" style="background:var(--alr)"></span>came with es· already — 2 cards, not drawn</span>
+      <span class="lg"><span class="sw" style="background:var(--unk)"></span>origin unclear — 1 card</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ the words ══════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The words</div>
+      <h2>All twenty-eight cards and the ten missing words, sorted by road</h2>
+      <p class="dek">Every row shows where the word came from and a sentence. Most sources are Latin; three are not. Six rows have a dashed edge, because their origin is not firm. Five of them start from a starred form. On one, <em>esticar</em>, the sources disagree. Rows tagged <span class="cid nocard">no card</span> are words your deck does not have.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— 28 cards: 13 A1, 10 A2, 5 B1. Plus 10 missing words: 4 A1, 4 A2, 2 B1. Read the A1 rows today.</span></p>
+    </div>
+    <div id="sorter" style="display:flex;flex-direction:column;gap:20px"></div>
+  </div>
+</section>
+
+<!-- ══ evidence ═══════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Evidence</div>
+      <h2>Two cards that both begin <span class="mono-in">estr</span></h2>
+      <p class="dek">This is the whole page in two lines. One word grew, the other shrank. <em>estrela</em> has an <em>e</em> its Latin word never had. In <em>estranho</em> the <em>es</em> is Latin <em>ex</em>, worn down. Nothing on the surface tells you which is which.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— 2 cards: 1 A1, 1 A2. The cheapest thing on the page to remember.</span></p>
+    </div>
+
+    <div class="evi">
+      <div class="erow" style="--e:var(--pro)"><span class="lbl">an e added</span><span class="lat">stēllam</span><span class="ar">→</span><span class="pt"><b>e</b>strela<small>star · card 0227 · A1</small></span></div>
+      <div class="erow" style="--e:var(--pre)"><span class="lbl">a prefix worn</span><span class="lat"><u>ex</u>trāneum</span><span class="ar">→</span><span class="pt"><b>es</b>tranho<small>strange · card 0507 · A2</small></span></div>
+      <div class="same">Read the front of each Latin word. <em class="lat">stēllam</em> starts with <em>st</em>, and Portuguese puts an <em>e</em> before it. <em class="lat">extrāneum</em> starts with <em>ex</em>, and Portuguese wears that down to <em>es</em>. The finished words look like a matched pair. Their histories run in opposite directions.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ the test ═══════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">A test you can run yourself</div>
+      <h2>English kept the evidence for both roads</h2>
+      <p class="dek">English borrowed the same Latin words, and it left the front of each one alone. So English still shows you which road a Portuguese word took. Cover the right column, look at the Portuguese word, and say the English one first.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— 14 cards used here: 9 A1, 2 A2, 3 B1. The most useful section for guessing new words.</span></p>
+    </div>
+
+    <div class="test">
+      <div class="tcard" style="--c:var(--pro);--w:var(--pro-wash)">
+        <div class="th"><b>Take the <em>e</em> off, and an English relative appears</b>
+          <span>Then the <em>e</em> was only a helper. The English relative never had one.</span></div>
+        <div id="testpro"></div>
+      </div>
+      <div class="tcard" style="--c:var(--pre);--w:var(--pre-wash)">
+        <div class="th"><b>Put the Latin pieces back, and an English relative appears</b>
+          <span>Then the <em>es</em> is a worn prefix, not a helper. Each row prints the two Latin pieces.</span></div>
+        <div id="testpre"></div>
+      </div>
+    </div>
+
+    <p class="term"><b>English once had the <em>e</em> too</b> — the English word <em>strange</em> came from Old French <em>estrange</em>. That is <em class="lat">extrāneum</em> after exactly the same wearing down. English later dropped the <em>e</em> and kept the rest. Portuguese <em>estranho</em> and English <em>strange</em> are the same word, and your card 0507 is the older-looking of the two.</p>
+  </div>
+</section>
+
+<!-- ══ siblings ═══════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Compare</div>
+      <h2>The same four Latin words in Spanish, French, Italian and English</h2>
+      <p class="dek">One Latin word, five results. Portuguese and Spanish added the <em>e</em> and kept it. French added it, then dropped the <em>s</em> instead and marked the loss with an accent. Italian never needed a repair.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— 4 cards, all A1. Use this now if you already read Spanish or French.</span></p>
+    </div>
+
+    <figure>
+      <div class="mx-scroll"><table class="mx" id="sib"></table></div>
+      <figcaption>The accent on French <em>é</em> is the missing <em>s</em>. Once you see that, <em>école</em> and <em>escola</em> stop looking different.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ══ controls ═══════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Control group</div>
+      <h2>Fifty-five cards start with <em>s</em> and a vowel</h2>
+      <p class="dek">The rule only applied before a consonant. A word starting with <em>s</em> and a vowel was easy to say already, so no <em>e</em> was added to it. Eight of the 55 are shown here.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— 8 cards shown: 7 A1, 1 A2. They are here to prove the rule, not to be studied.</span></p>
+    </div>
+    <div id="ctrl"></div>
+  </div>
+</section>
+
+<!-- ══ anchors ════════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Anchors</div>
+      <h2>Five cards you already know in another language</h2>
+      <p class="dek">Same root, same meaning, different coat.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— all five are A1. Best value on the page today.</span></p>
+    </div>
+    <div class="hooks" id="hooks"></div>
+  </div>
+</section>
+
+<!-- ══ deck check ═════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Deck check</div>
+      <h2>Five things this layer found in your own cards</h2>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— 5 findings, all about A1 or A2 words. Read this when you next edit your deck.</span></p>
+    </div>
+
+    <div class="fixes">
+      <div class="fix">
+        <span class="h"><em>estação</em> and <em>estação do ano</em> are one Latin word</span>
+        <p>Card 0291 is <code>estação</code> “station”. Card 0646 is <code>estação do ano</code> “season”. Both come from Latin <em class="lat">statiōnem</em>, “a standing, a stopping place”. A season is where the year stops for a while. Studied apart, the two look unrelated.</p>
+        <p>Suggested edit: cross-reference the two cards, and note the shared root with <code>estar</code> (0078).</p>
+      </div>
+      <div class="fix">
+        <span class="h">Four of the 28 cards have no sentence</span>
+        <p><code>estação do ano</code> (0646), <code>está bem</code> (0713), <code>Como está?</code> (0678) and <code>Como estás?</code> (0679) are bare phrase cards: the front holds the English, and the back holds only the Portuguese words again, with no example. All four are on this page, so all four had to be given a sentence written for the book. They are the four rows tagged <em>new</em>.</p>
+        <p>Suggested edit: give each one an example sentence built from words the deck already has.</p>
+      </div>
+      <div class="fix">
+        <span class="h"><em>esticar</em> cannot be placed</span>
+        <p>Card 0080. Sources do not agree on where this word comes from. One traces it to Old French <em>estrikier</em> and a Germanic verb “to stretch”, which would put the <em>e</em> on the added road. Another calls the origin obscure and stops there. It is the only card on the page that cannot be put on any road, so it is printed on its own with the disagreement marked.</p>
+        <p>No edit suggested. The card is fine; the history is not settled.</p>
+      </div>
+      <div class="fix" style="border-left-color:var(--pro)">
+        <span class="h">Four A1 words are missing: <em>espelho</em>, <em>escada</em>, <em>estrada</em>, <em>estudante</em></span>
+        <p>All four are everyday words and all four fit this page. Two of them are already printed on cards you own without having a card of their own: <em>escada</em> inside card 0165, and <em>estudante</em> inside card 0159.</p>
+        <p>Suggested cards: <code>espelho (m, -s): mirror</code>, <code>escada (f, -s): staircase</code>, <code>estrada (f, -s): road</code>, <code>estudante (m/f, -s): student</code></p>
+      </div>
+      <div class="fix" style="border-left-color:var(--pro)">
+        <span class="h"><em>espelho</em> is the one to add first</span>
+        <p>Two layers changed it, like <em>escolher</em> and <em>estranho</em> above. <em>espelho</em> shows both changes most clearly. Latin <em class="lat">speculum</em> gained an <em>e</em> at the front. That is this page. Then it lost its <em>u</em>, so <em>c</em> and <em>l</em> met and became <em>lh</em>. That is layer 04. The path is <em class="lat">speculum</em> → <em class="lat">especulum</em> → <em class="lat">espec'lum</em> → <em>espelho</em>, and the apostrophe stands for the lost <em>u</em>.</p>
+        <p>Suggested card: <code>espelho (m, -s): mirror</code> — <em>Eu vejo-me no espelho.</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ index ══════════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Index</div>
+      <h2>The 28 cards and the 10 missing words, in alphabetical order</h2>
+      <p class="dek">For coming back to. Each word names its road in words, so this works in black and white.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— the same 28 cards and 10 missing words, nothing new. Come back to this list, not to the tables.</span></p>
+    </div>
+    <div class="index" id="index"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Source: <span class="mono-in">myanki2</span> — 724 cards, 720 distinct words. Origin layer 05. Sentences from your own cards show the card number. Sentences marked <em>new</em> were written for this page: the word has a card, the sentence does not. Rows marked <span class="cid nocard">no card</span> are different — there the <em>word</em> is missing from your deck, and both word and sentence were added for this page.</p>
+    <p>The colours mean something different on each layer. Here the colour is <strong>which road the word took</strong>: blue = an <em>e</em> was added at the front, orange = a prefix wore down, green = the word arrived with <em>es</em> already, purple = the origin is unclear. Grey marks the two groups that have no road of their own: the contrast cards, and the scope line for the missing words. In the tables and the index each missing word is painted in its own road's colour. Colour is never the only channel — every road is also named in words.</p>
+    <p><strong>About the level flags.</strong> <span class="lv a1">A1</span> <span class="lv a2">A2</span> <span class="lv b1">B1</span> <span class="lv b2">B2</span> <span class="lv c1">C1</span> are CEFR levels. Your deck stores no level for nouns, adjectives or phrases. It does mark 145 verb cards <em>(A1)</em>, but that is the level of the course book they were taken from, not a judgement about each word — it covers <em>mergulhar</em> “to dive” as readily as <em>falar</em>. So the flags here are still an estimate, and a few of them sit above that mark on purpose. They follow how common the word is in everyday European Portuguese and where it normally appears in A1–B1 course books. Treat them as a reading order, not as a rule. If a word feels easy and it says B1, learn it.</p>
+    <p><strong>Where the origin is not firm.</strong> Six rows carry a dashed edge. One is marked <em>sources disagree</em>: <em>esticar</em> cannot be placed on either road. Five are marked <em>starred form</em>: <em>escolher</em>, <em>escolha</em>, <em>esquecer-se de</em>, <em>esfregar</em> and <em>espantado</em> start from Latin forms that were never written down. Scholars work those back from the modern words, and a star marks a form like that. A starred form is a good guess, not a record. Five of the six rows are cards; <em>escolha</em> is one of the ten words with no card. A row with a grey background but no dashed edge is not in doubt: the grey only says the row carries a note under it.</p>
+    <p>Counts: 28 cards carry a word beginning with <em>es</em> and a consonant — 24 of them start with it, and four more hold it inside a phrase (<em>à esquerda</em>, <em>do lado esquerdo</em>, <em>Como está?</em>, <em>Como estás?</em>). Of the 28, 16 grew an <em>e</em>, 9 wore a prefix down, 2 came with <em>es</em> already, 1 is unclear. By level: 13 A1, 10 A2, 5 B1. Ten more words fit the page and have no card: 7 grew an <em>e</em>, 3 wore a prefix down; by level 4 A1, 4 A2, 2 B1. Cards and missing words are never added into one number. The control group is 55 cards whose word begins with <em>s</em> and a vowel; 8 of them are printed. Phrase cards count on both sides, but the two sides are counted a little differently. A card joins the 28 if the <em>es</em> word sits anywhere in it, so <em>à esquerda</em> is in. A card joins the 55 only if it <em>begins</em> with the <em>s</em> word, so <em>São duas horas.</em> is in and <em>faz sentido</em> is out.</p>
+  </div>
+</footer>
+
+<script>
+  const NS = "http://www.w3.org/2000/svg";
+  const el = (n, a = {}) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); return e; };
+  const ex = (pt, en, id, isNew) => {
+    const cls = id === "no card" ? " nocard" : isNew ? " new" : "";
+    return '<span class="ex"><span class="p">' + pt + '</span><span class="e">' + en +
+      '<span class="cid' + cls + '">' + id + "</span></span></span>";
+  };
+
+  const lv = c => '<span class="lv ' + c.toLowerCase() + '">' + c + "</span>";
+  const lvcount = rows => {
+    const o = {};
+    rows.forEach(r => { if (r.lvl) o[r.lvl] = (o[r.lvl] || 0) + 1; });
+    return ["A1", "A2", "B1", "B2", "C1"].filter(k => o[k]).map(k => lv(k) + " " + o[k]).join(" ");
+  };
+
+  const wtab = (host, cls, title, sub, rows) => {
+    /* cards and off-deck words are never counted in the same number */
+    const one = rows.length === 1;
+    const unit = rows.length && rows.every(r => r.off)
+      ? (one ? " word, no card" : " words, no card")
+      : (one ? " card" : " cards");
+    const d = document.createElement("div");
+    d.className = "wtab";
+    d.style.setProperty("--c", "var(--" + cls + ")");
+    d.style.setProperty("--w", "var(--" + cls + "-wash)");
+    d.innerHTML =
+      '<div class="th"><b>' + title + '</b><span class="sub">' + sub + '</span><span class="n">' +
+        lvcount(rows) + " &nbsp;·&nbsp; " + rows.length + unit + "</span></div>" +
+      rows.map(r =>
+        '<div class="wrow' + (r.off ? " off" : "") + (r.mark ? " d" : r.flag ? " q" : "") + '">' +
+          '<span class="pt">' + r.pt + " " + lv(r.lvl) +
+            "<small>" + r.gl + (r.g ? " <i>" + r.g + "</i>" : "") + "</small></span>" +
+          '<span class="src">' + r.src + "<small>" + r.note + "</small></span>" +
+          ex(r.ex[0], r.ex[1], r.ex[2], r.ex[3]) +
+          (r.flag ? '<span class="flagline">' +
+            (r.mark ? '<span class="mark">' + r.mark + "</span>" : "") + r.flag + "</span>" : "") +
+        "</div>").join("");
+    host.appendChild(d);
+  };
+
+  /* ── the 28 cards and the 10 off-deck words ───────────────────────── */
+  const PRO = [
+    { pt: "escola", gl: "school", g: "f", lvl: "A1", src: "schola", note: "sch·",
+      ex: ["Eu vejo a <b>escola</b>.", "I see the school.", "card 0289"] },
+    { pt: "escrever", gl: "to write", lvl: "A1", src: "scrībere", note: "scr·",
+      ex: ["Eu <b>escrevo</b> uma carta.", "I write a letter.", "card 0073"] },
+    { pt: "estrela", gl: "star", g: "f", lvl: "A1", src: "stēllam", note: "st·",
+      ex: ["Eu vejo a <b>estrela</b>.", "I see the star.", "card 0227"] },
+    { pt: "estar", gl: "to be", lvl: "A1", src: "stāre", note: "st·",
+      ex: ["O gato <b>está</b> atrás da árvore.", "The cat is behind the tree.", "card 0078"] },
+    { pt: "estação", gl: "station", g: "f", lvl: "A1", src: "statiōnem", note: "st·",
+      ex: ["Eu vejo a <b>estação</b>.", "I see the station.", "card 0291"] },
+    { pt: "está bem", gl: "all right", lvl: "A1", src: "stāre", note: "st·, same verb",
+      ex: ["<b>Está bem</b>, eu espero.", "All right, I will wait.", "card 0713", true] },
+    { pt: "estudar", gl: "to study", lvl: "A1", src: "studium", note: "st·, via estudo",
+      ex: ["Eu <b>estudo</b> português.", "I study Portuguese.", "card 0081"] },
+    { pt: "esperar", gl: "to wait", lvl: "A1", src: "spērāre", note: "sp·",
+      ex: ["Eu <b>espero</b> pelo autocarro.", "I wait for the bus.", "card 0075"] },
+    { pt: "escritor", gl: "writer", g: "m", lvl: "A2", src: "scrīptōrem", note: "scr·",
+      ex: ["Ele é <b>escritor</b>.", "He is a writer.", "card 0440"] },
+    { pt: "escritório", gl: "office", g: "m", lvl: "A2", src: "scrīptōrium", note: "scr·",
+      ex: ["Eu limpo o <b>escritório</b>.", "I clean the office.", "card 0378"] },
+    { pt: "estação do ano", gl: "season", g: "f", lvl: "A2", src: "statiōnem", note: "st·, same noun",
+      ex: ["O inverno é a <b>estação do ano</b> mais fria.", "Winter is the coldest season.", "card 0646", true] },
+    { pt: "estante", gl: "bookcase", g: "f", lvl: "A2", src: "stantem", note: "st·, from stāre",
+      ex: ["Eu limpo a <b>estante</b>.", "I clean the bookcase.", "card 0379"] },
+    { pt: "estacionar", gl: "to park", lvl: "A2", src: "statiōnem", note: "st·, from estação",
+      ex: ["Eu <b>estaciono</b> o carro na rua.", "I park the car on the street.", "card 0077"] },
+    { pt: "espetáculo", gl: "show", g: "m", lvl: "B1", src: "spectāculum", note: "sp·",
+      ex: ["Eu vejo o <b>espetáculo</b>.", "I see the show.", "card 0290"] },
+    { pt: "Como está?", gl: "How are you? (formal)", lvl: "A1", src: "stāre", note: "st·, same verb",
+      ex: ["Bom dia, professor. <b>Como está</b>?", "Good morning, professor. How are you?", "card 0678", true] },
+    { pt: "Como estás?", gl: "How are you? (to a friend)", lvl: "A1", src: "stāre", note: "st·, same verb",
+      ex: ["Olá, João. <b>Como estás</b>?", "Hello, João. How are you?", "card 0679", true] }
+  ];
+
+  /* words that belong on this page and are missing from the deck */
+  const PRO_OFF = [
+    { pt: "espelho", gl: "mirror", g: "m", lvl: "A1", src: "speculum", note: "sp· → esp·",
+      ex: ["Eu vejo-me no <b>espelho</b>.", "I see myself in the mirror.", "no card"],
+      flag: "The best word on the page, and your deck does not have it. It was changed twice. An e was added at the front, and later the c and l met in the middle and became lh. Layer 04 explains the second half." },
+    { pt: "escada", gl: "staircase", g: "f", lvl: "A1", src: "scālāta", note: "sc·, from scāla",
+      ex: ["A <b>escada</b> é velha.", "The staircase is old.", "no card"],
+      flag: "The word is already in your deck, but only inside another card: “Eu subo as escadas” on card 0165. It has no card of its own." },
+    { pt: "estrada", gl: "road", g: "f", lvl: "A1", src: "strāta", note: "st·",
+      ex: ["Eu vejo a <b>estrada</b>.", "I see the road.", "no card"],
+      flag: "Latin strāta meant a paved way. English street is the same word, borrowed early and never given an e." },
+    { pt: "estudante", gl: "student", g: "m/f", lvl: "A1", src: "studentem", note: "st·, from estudar",
+      ex: ["Eu sou <b>estudante</b>.", "I am a student.", "card 0159"],
+      flag: "This one is printed on card 0159, in the sentence for ser. You read it every time that card comes up, and it still has no card of its own." },
+    { pt: "espaço", gl: "space", g: "m", lvl: "A2", src: "spatium", note: "sp·",
+      ex: ["A sala tem muito <b>espaço</b>.", "The room has a lot of space.", "no card"] },
+    { pt: "estômago", gl: "stomach", g: "m", lvl: "A2", src: "stomachum", note: "st·",
+      ex: ["Eu tenho o <b>estômago</b> cheio.", "My stomach is full.", "no card"] },
+    { pt: "esperança", gl: "hope", g: "f", lvl: "B1", src: "spērāre", note: "sp·, from esperar",
+      ex: ["Eu tenho <b>esperança</b>.", "I have hope.", "no card"],
+      flag: "Built on esperar, card 0075. In Portuguese the same verb covers waiting and hoping." }
+  ];
+
+  const PRE = [
+    { pt: "escolher", gl: "to choose", lvl: "A1", src: "*excolligere", note: "ex + colligere",
+      ex: ["Eu <b>escolho</b> o vinho tinto.", "I choose the red wine.", "card 0071"],
+      mark: "Starred form",
+      flag: "The Latin verb is starred: nobody wrote it down. What is agreed is that the word starts with ex-. The same card is also on layer 04: the lh in the middle was built by a later change. This page explains the front of the word." },
+    { pt: "escuro", gl: "dark", lvl: "A1", src: "obscūrum", note: "obs·",
+      ex: ["Isto é <b>escuro</b>.", "This is dark.", "card 0505"] },
+    { pt: "esconder", gl: "to hide", lvl: "A2", src: "abscondere", note: "abs·",
+      ex: ["Eu <b>escondo</b> a chave.", "I hide the key.", "card 0072"] },
+    { pt: "escondido", gl: "hidden", g: "f: escondida", lvl: "A2", src: "abscondere", note: "abs·, same verb",
+      ex: ["A chave está <b>escondida</b>.", "The key is hidden.", "card 0504"] },
+    { pt: "estranho", gl: "strange", lvl: "A2", src: "extrāneum", note: "ex·",
+      ex: ["Isto é <b>estranho</b>.", "This is strange.", "card 0507"],
+      flag: "Also on layer 04: the nh in estranho was built from the -ne- in extrāneum. This page explains the front of the word, layer 04 explains the end." },
+    { pt: "esquecer-se de", gl: "to forget", lvl: "A2", src: "*excadēscere", note: "ex·",
+      ex: ["O meu pai <b>esquece-se</b> das chaves.", "My father forgets the keys.", "card 0076"],
+      mark: "Starred form",
+      flag: "The Latin verb is starred: nobody wrote it down. What is agreed is that the word starts with ex-." },
+    { pt: "estender", gl: "to stretch out", lvl: "B1", src: "extendere", note: "ex·",
+      ex: ["Ele <b>estende</b> a mão para me ajudar.", "He holds out his hand to help me.", "card 0079"] },
+    { pt: "esfregar", gl: "to scrub", lvl: "B1", src: "*exfricāre", note: "ex + fricāre",
+      ex: ["Eu <b>esfrego</b> o chão.", "I scrub the floor.", "card 0074"],
+      mark: "Starred form",
+      flag: "The Latin verb is starred. The plain verb fricāre “to rub” is well recorded; the one with ex- is not." },
+    { pt: "espantado", gl: "surprised", lvl: "B1", src: "*expaventāre", note: "ex + pavēre",
+      ex: ["Ele está <b>espantado</b>.", "He is surprised.", "card 0506"],
+      mark: "Starred form",
+      flag: "The Latin verb is starred. It is built on pavēre “to be afraid”, so the older sense was closer to frightened than surprised." }
+  ];
+
+  const PRE_OFF = [
+    { pt: "escolha", gl: "choice", g: "f", lvl: "A2", src: "*excolligere", note: "ex·, from escolher",
+      ex: ["A <b>escolha</b> é importante.", "The choice is important.", "no card"],
+      mark: "Starred form",
+      flag: "The noun of escolher, card 0071. You have the verb and not the noun. It starts from the same starred Latin verb." },
+    { pt: "estrangeiro", gl: "foreigner", g: "m", lvl: "A2", src: "extrāneum", note: "ex·, via Old French",
+      ex: ["Ele é <b>estrangeiro</b>.", "He is a foreigner.", "no card"],
+      flag: "Portuguese took this one from Old French estrangier, which had worn extrāneum down in the same way. So it shares a root with estranho, card 0507: a stranger and a foreigner are one word in Latin, someone from outside." },
+    { pt: "esperto", gl: "clever", lvl: "B1", src: "expertum", note: "ex·",
+      ex: ["Ele é <b>esperto</b>.", "He is clever.", "no card"],
+      flag: "English kept the prefix and says expert. Portuguese wore it down, and the meaning moved from experienced to clever." }
+  ];
+
+  const ALR = [
+    { pt: "à esquerda", gl: "on the left", lvl: "A1", src: "Basque ezkerra", note: "not Latin",
+      ex: ["O gato está <b>à esquerda</b>.", "The cat is on the left.", "card 0572"],
+      flag: "Your card 0571 is à direita, from Latin dīrēctam. Left and right come from two different languages. Neither one ever needed an e: direita never began with s, and esquerda arrived with its own vowel already." },
+    { pt: "do lado esquerdo", gl: "on the left side", lvl: "A2", src: "Basque ezkerra", note: "same word",
+      ex: ["O gato está <b>do lado esquerdo</b>.", "The cat is on the left side.", "card 0580"] }
+  ];
+
+  const UNK = [
+    { pt: "esticar", gl: "to stretch", lvl: "B1", src: "not settled", note: "—",
+      ex: ["Eu <b>estico</b> as pernas.", "I stretch my legs.", "card 0080"],
+      mark: "Sources disagree",
+      flag: "One source starts it from Old French estrikier, from a Germanic verb meaning “to stretch”. That would make the e an added helper, and put the card on the left road. Another calls the origin simply obscure. Until that is settled, the card cannot be put on either road." }
+  ];
+
+  const CTRL = [
+    { pt: "sol", gl: "sun", g: "m", lvl: "A1", src: "sōlem", note: "s + vowel",
+      ex: ["Eu vejo o <b>sol</b>.", "I see the sun.", "card 0242"] },
+    { pt: "sopa", gl: "soup", g: "f", lvl: "A1", src: "suppa", note: "s + vowel",
+      ex: ["Eu gosto de <b>sopa</b>.", "I like soup.", "card 0363"] },
+    { pt: "sala", gl: "room", g: "f", lvl: "A1", src: "Germanic sala", note: "s + vowel",
+      ex: ["Eu limpo a <b>sala</b>.", "I clean the room.", "card 0388"] },
+    { pt: "saber", gl: "to know", lvl: "A1", src: "sapēre", note: "s + vowel",
+      ex: ["Eu <b>sei</b> tudo sobre história.", "I know everything about history.", "card 0153"] },
+    { pt: "sair", gl: "to leave", lvl: "A1", src: "salīre", note: "s + vowel",
+      ex: ["Eu <b>saio</b> de casa às oito.", "I leave home at eight.", "card 0154"] },
+    { pt: "ser", gl: "to be", lvl: "A1", src: "sedēre", note: "s + vowel",
+      ex: ["Eu <b>sou</b> estudante.", "I am a student.", "card 0159"] },
+    { pt: "subir", gl: "to go up", lvl: "A1", src: "subīre", note: "s + vowel",
+      ex: ["Eu <b>subo</b> as escadas.", "I go up the stairs.", "card 0165"] },
+    { pt: "sonho", gl: "dream", g: "m", lvl: "A2", src: "somnium", note: "s + vowel",
+      ex: ["O <b>sonho</b> é importante.", "The dream is important.", "card 0212"] }
+  ];
+
+  (function () {
+    const host = document.getElementById("sorter");
+    const off = rows => rows.map(r => ({ ...r, off: true }));
+    wtab(host, "pro", "Grew an e at the front", "Latin sc· sp· st· — the e is only a helper", PRO);
+    wtab(host, "pro", "Grew an e — and you have no card", "same road, missing from your deck", off(PRO_OFF));
+    wtab(host, "pre", "Wore a prefix down", "Latin ex· abs· obs· — nothing was added", PRE);
+    wtab(host, "pre", "Wore a prefix down — and you have no card", "same road, missing from your deck", off(PRE_OFF));
+    wtab(host, "alr", "Came with es· already", "not Latin — nothing needed repairing", ALR);
+    wtab(host, "unk", "Origin unclear", "cannot be put on any road", UNK);
+
+    const c = document.getElementById("ctrl");
+    const d = document.createElement("div");
+    d.className = "wtab";
+    d.style.setProperty("--c", "var(--ink-2)");
+    d.style.setProperty("--w", "var(--paper-2)");
+    d.innerHTML =
+      '<div class="th"><b>Here for contrast</b><span class="sub">s + a vowel — the rule never applied</span>' +
+      '<span class="n">' + lvcount(CTRL) + " &nbsp;·&nbsp; 8 of 55 cards</span></div>" +
+      CTRL.map(r =>
+        '<div class="wrow">' +
+          '<span class="pt">' + r.pt + " " + lv(r.lvl) +
+            "<small>" + r.gl + (r.g ? " <i>" + r.g + "</i>" : "") + "</small></span>" +
+          '<span class="src">' + r.src + "<small>" + r.note + "</small></span>" +
+          ex(r.ex[0], r.ex[1], r.ex[2]) +
+        "</div>").join("");
+    c.appendChild(d);
+  })();
+
+  /* ── main chart: two roads ────────────────────────────────────────── */
+  (function () {
+    const g = document.getElementById("roads");
+    const mid = 480;
+
+    const box = (x, col, lat, lab, n, sub) => {
+      g.appendChild(el("rect", { x: x - 168, y: 16, width: 336, height: 74, rx: 3,
+        fill: "none", stroke: col, "stroke-width": 1.4 }));
+      const t = el("text", { x, y: 44, class: "t-serif", "font-size": 21, "text-anchor": "middle", "font-style": "italic" });
+      t.setAttribute("fill", "var(--ink-2)"); t.textContent = lat;
+      const l = el("text", { x, y: 64, class: "t-mono", "font-size": 10, "text-anchor": "middle" });
+      l.setAttribute("fill", col); l.textContent = lab;
+      const s = el("text", { x, y: 81, "font-size": 11.5, "text-anchor": "middle", class: "t-sub" });
+      s.textContent = sub;
+      const c = el("text", { x: x + 152, y: 34, class: "t-serif", "font-size": 17, "text-anchor": "end" });
+      c.setAttribute("fill", col); c.textContent = n;
+      g.appendChild(t); g.appendChild(l); g.appendChild(s); g.appendChild(c);
+    };
+
+    box(196, "var(--pro)", "schola · stēllam · spērāre", "LATIN s + CONSONANT", 16, "hard to start a word this way");
+    box(764, "var(--pre)", "extrāneum · abscondere", "LATIN ex· abs· obs·", 9, "a prefix with a meaning");
+
+    // the two roads
+    g.appendChild(el("path", { d: "M196 90 V150 Q196 196 300 196 H" + (mid - 66),
+      fill: "none", stroke: "var(--pro)", "stroke-width": 5, opacity: .55, "stroke-linecap": "round" }));
+    g.appendChild(el("path", { d: "M764 90 V150 Q764 196 660 196 H" + (mid + 66),
+      fill: "none", stroke: "var(--pre)", "stroke-width": 3.5, opacity: .55, "stroke-linecap": "round" }));
+
+    const step = (x, col, txt, sub) => {
+      const t = el("text", { x, y: 130, "font-size": 13.5, "text-anchor": "middle" });
+      t.setAttribute("fill", col); t.textContent = txt;
+      const s = el("text", { x, y: 148, "font-size": 11, "text-anchor": "middle", class: "t-mute" });
+      s.textContent = sub;
+      g.appendChild(t); g.appendChild(s);
+    };
+    step(196, "var(--pro)", "add an e in front", "escola · estrela · esperar");
+    step(764, "var(--pre)", "wear the prefix down", "estranho · esconder");
+
+    // meeting point
+    g.appendChild(el("circle", { cx: mid, cy: 196, r: 62, fill: "var(--paper)", stroke: "var(--ink)", "stroke-width": 2 }));
+    const m = el("text", { x: mid, y: 208, class: "t-serif", "font-size": 42, "text-anchor": "middle" });
+    m.textContent = "es·";
+    g.appendChild(m);
+    const mc = el("text", { x: mid, y: 280, class: "t-mono t-mute", "font-size": 11, "text-anchor": "middle" });
+    mc.textContent = "25 CARDS";
+    g.appendChild(mc);
+
+    const note = el("text", { x: mid, y: 306, "font-size": 12.5, "text-anchor": "middle", class: "t-sub" });
+    note.textContent = "After this point the two roads cannot be told apart by looking.";
+    g.appendChild(note);
+
+    // the unclear one, off to the side
+    g.appendChild(el("path", { d: "M" + mid + " 258 V330", fill: "none", stroke: "var(--unk)",
+      "stroke-width": 1.5, "stroke-dasharray": "5 4" }));
+    const u = el("text", { x: mid, y: 348, "font-size": 13, "text-anchor": "middle" });
+    u.setAttribute("fill", "var(--unk)"); u.textContent = "esticar — 1 card, road unknown";
+    g.appendChild(u);
+  })();
+
+  /* ── the English test ─────────────────────────────────────────────── */
+  (function () {
+    const T = [
+      ["testpro", [
+        ["escola", "school", "English borrowed Latin schola too", "A1"],
+        ["estrela", "star", "stellar, constellation", "A1"],
+        ["estudar", "study", "student, studio", "A1"],
+        ["estação", "station", "and a station is where you stand", "A1"],
+        ["escrever", "scribe", "describe, scripture", "A1"],
+        ["esperar", "desperate", "no plain English word here: spērāre is kept inside desperate and prosper", "A1"],
+        ["espetáculo", "spectacle", "spectator, inspect", "B1"],
+        ["estar", "stand", "stable, state, statue — not star, which is estrela", "A1"]
+      ]],
+      ["testpre", [
+        ["escolher", "collect", "ex + colligere: gather out of a pile", "A1"],
+        ["esconder", "abscond", "abs + condere: to store away", "A2"],
+        ["escuro", "obscure", "ob + scūrum: covered over", "A1"],
+        ["estranho", "extraneous", "extrā + -āneus: from outside — and English strange, by the same road", "A2"],
+        ["estender", "extend", "ex + tendere: to stretch out", "B1"],
+        ["esfregar", "friction", "ex + fricāre: to rub", "B1"]
+      ]]
+    ];
+    T.forEach(([id, rows]) => {
+      const host = document.getElementById(id);
+      host.innerHTML = rows.map(r =>
+        '<div class="trow"><span class="a">' + r[0] + " " + lv(r[3]) + '</span>' +
+        '<span class="b">' + r[1] + "<i>" + r[2] + "</i></span></div>").join("");
+    });
+  })();
+
+  /* ── siblings ─────────────────────────────────────────────────────── */
+  (function () {
+    const rows = [
+      ["schola", "school", "escola", "0289", "A1", ["escuela", "e added"], ["école", "e added, then s lost"], ["scuola", "no repair"], "school"],
+      ["stēllam", "star", "estrela", "0227", "A1", ["estrella", "e added"], ["étoile", "e added, then s lost"], ["stella", "no repair"], "stellar"],
+      ["scrībere", "to write", "escrever", "0073", "A1", ["escribir", "e added"], ["écrire", "e added, then s lost"], ["scrivere", "no repair"], "scribe"],
+      ["studium", "study, zeal", "estudar", "0081", "A1", ["estudiar", "e added"], ["étudier", "e added, then s lost"], ["studiare", "no repair"], "study"]
+    ];
+    const t = document.getElementById("sib");
+    t.innerHTML = "<thead><tr><th>Latin</th><th>Portuguese</th><th>Level</th><th>Spanish</th><th>French</th><th>Italian</th><th>English</th></tr></thead>";
+    const tb = document.createElement("tbody");
+    rows.forEach(r => {
+      const tr = document.createElement("tr");
+      const cell = (h, c, st) => { const td = document.createElement("td"); if (c) td.className = c; td.innerHTML = h; if (st) td.setAttribute("style", st); return td; };
+      const pair = p => p[0] + '<span class="out">' + p[1] + "</span>";
+      tr.appendChild(cell(r[0] + '<span class="out">' + r[1] + "</span>", "lat"));
+      tr.appendChild(cell(r[2] + '<span class="out">card ' + r[3] + "</span>", "head", "color:var(--pro)"));
+      tr.appendChild(cell(lv(r[4])));
+      tr.appendChild(cell(pair(r[5])));
+      tr.appendChild(cell(pair(r[6])));
+      tr.appendChild(cell(pair(r[7]), "gone"));
+      const last = cell(r[8] + '<span class="out">no repair</span>');
+      last.style.color = "var(--ink-2)"; last.style.fontSize = "14px";
+      tr.appendChild(last);
+      tb.appendChild(tr);
+    });
+    t.appendChild(tb);
+  })();
+
+  /* ── anchors ──────────────────────────────────────────────────────── */
+  (function () {
+    const H = [
+      { c: "pro", pair: '<span class="a">escola</span><span class="eq">=</span>school<span class="eq">=</span>школа', root: "Greek scholē · spare time", lvl: "A1",
+        why: "The Greek word meant free time. You needed free time in order to learn. So the word for the time became the word for the place.",
+        ex: ["Eu vejo a <b>escola</b>.", "I see the school.", "card 0289"] },
+      { c: "pro", pair: '<span class="a">estar</span><span class="eq">=</span>stand<span class="eq">=</span>стоять', root: "*steh₂- · to stand", lvl: "A1",
+        why: "Latin <em>stāre</em>, English <em>stand</em> and Russian <em>стоять</em> hold one root. Portuguese uses it for being somewhere right now, which is still a kind of standing.",
+        ex: ["O gato <b>está</b> atrás da árvore.", "The cat is behind the tree.", "card 0078"] },
+      { c: "pro", pair: '<span class="a">estrela</span><span class="eq">=</span>star', root: "*h₂stḗr · star", lvl: "A1",
+        why: "Latin <em>stēllam</em> and English <em>star</em> grew from one root. English also took the Greek form in <em>asterisk</em> and in <em>disaster</em>, which means a bad star.",
+        ex: ["Eu vejo a <b>estrela</b>.", "I see the star.", "card 0227"] },
+      { c: "pro", pair: '<span class="a">escrever</span><span class="eq">=</span>scribe', root: "Latin scrībere · to write", lvl: "A1",
+        why: "English kept the Latin verb whole in <em>describe</em>, <em>scripture</em> and <em>manuscript</em>. Portuguese wore it down and put an <em>e</em> in front.",
+        ex: ["Eu <b>escrevo</b> uma carta.", "I write a letter.", "card 0073"] },
+      { c: "pre", pair: '<span class="a">escuro</span><span class="eq">=</span>obscure', root: "Latin obscūrum · covered over", lvl: "A1",
+        why: "English kept the front whole and says <em>obscure</em>. Portuguese wore <em>obs</em> down to <em>es</em>. Same word, and the Portuguese one is the everyday word for dark.",
+        ex: ["Isto é <b>escuro</b>.", "This is dark.", "card 0505"] }
+    ];
+    const host = document.getElementById("hooks");
+    H.forEach(h => {
+      const d = document.createElement("div");
+      d.className = "hook";
+      d.style.setProperty("--c", "var(--" + h.c + ")");
+      d.innerHTML = '<div class="pair">' + h.pair + lv(h.lvl) + '</div><div class="why">' + h.why +
+        '</div><div class="root">' + h.root + "</div>" + ex(h.ex[0], h.ex[1], h.ex[2]);
+      host.appendChild(d);
+    });
+  })();
+
+  /* ── index ────────────────────────────────────────────────────────── */
+  (function () {
+    const all = []
+      .concat(PRO.map(r => [r.pt, "pro", "e added"]))
+      .concat(PRO_OFF.map(r => [r.pt, "pro", "e added · no card"]))
+      .concat(PRE.map(r => [r.pt, "pre", "prefix worn"]))
+      .concat(PRE_OFF.map(r => [r.pt, "pre", "prefix worn · no card"]))
+      .concat(ALR.map(r => [r.pt, "alr", "came with es·"]))
+      .concat(UNK.map(r => [r.pt, "unk", "unclear"]));
+    all.sort((a, b) => a[0].localeCompare(b[0], "pt"));
+    document.getElementById("index").innerHTML = all.map(r =>
+      '<div class="ix" style="--c:var(--' + r[1] + ')"><span class="w">' + r[0] +
+      '</span><span class="b">' + r[2] + "</span></div>").join("");
+  })();
+</script>
