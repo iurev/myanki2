@@ -216,19 +216,48 @@ looks wrong, report it as a deck defect. Sentences written for the page carry th
 dashed `new` tag and are entirely the book's responsibility — check those hardest,
 and check that they use only vocabulary the deck already has.
 
-**Facts and the deck.** Is every etymology defensible? Does every quoted sentence
-match the card's own text? Are the `new` sentences genuinely absent from the deck,
-and built only from deck vocabulary? Is every row tagged `no card` really missing
-from the deck, and every untagged row really present? Card numbers themselves are
-not checked any more — see the rule above. Contested etymologies carry a visible *sources
-disagree* mark rather than being stated flatly. Every word sits in the bucket its
-history actually puts it in — a wrong bucket has turned up on every layer so far.
+**The etymology. This is what the book is for.** Every origin on the page must be
+defensible against real sources — Priberam, Infopédia, Wiktionary, and the
+standard handbooks — not against what a form looks like it ought to be. Check:
 
-**Numbers.** Recount everything from the rendered page: totals, bucket counts,
-level splits, per-section topic counts, stats row, hero line, footer summary, the
-number of rows actually marked disputed. They must agree with each other, with
-the tables, and with the deck. Counts drift during editing; this is the most
-common defect by a wide margin.
+- **the source form is attested.** Fabricated Latin has got through more than
+  once: `prae + in + plēre` for `preencher`, `fasciculum` for `fechar`,
+  `armātum + -īcula` for `armadilha`, `capitānum` for `capitão`. None of those
+  words ever existed. If a form is reconstructed it takes a star, and the page
+  must say what a star means.
+- **the road is real.** Not just the endpoints. `dinheiro` did not get its `nh`
+  by metathesis; `praça` would not have been `chã`; `avião` is not built on
+  `voar`. A plausible-looking chain is the easiest thing to get wrong.
+- **the macrons are right**, because they decide the outcome. `canem` and `manum`
+  have a short `a`; printing `-ānem` as the group label was wrong on both.
+- **the bucket matches the history.** A wrong bucket has turned up on every layer
+  so far, and it is worse than a wrong date because the colour repeats it.
+- **cognate claims are checked too.** `corn` is not Latin `grānum`, `wool` is not
+  `lāna` by descent, `salūtem` and `salīre` are not the same root. These read as
+  harmless colour and are exactly as wrong as a bad etymon.
+- **contested stays contested** — a visible *sources disagree* mark and both
+  readings, never a clean arrow. And say what is actually disputed: for
+  `cheirar a` the *form* is settled and only the sense is, which is a different
+  claim from "nobody knows".
+
+**Structure and readability come next.** Does the order build, or does a section
+arrive before the thing it depends on? Is each table doing one job? Is the
+surprising fact given room, or buried between two reference tables? Is there a
+sentence a learner would have to read twice? Would the page reward a second visit?
+
+**The deck boundary.** Is every row tagged `no card` really missing from the deck,
+and every untagged row really present? This has been wrong in both directions on
+the same page. Use `book/deck-digest.txt`, never the raw yaml — twelve cards
+store the gender inside the `word` field (`verão (m)`, `hora (f)`) and a bare
+lookup silently reports them absent. Does every quoted sentence match the card's
+own text? Card numbers themselves are not checked any more — see the rule above.
+
+**Counts are low priority.** Keep them honest and internally consistent when a
+section is being edited anyway, and never fold cards, missing words and contrast
+cards into one number. But do not spend a pass reconciling arithmetic: the author
+has ruled that a stale total matters far less than a wrong etymology, a muddled
+structure or a sentence that does not read. If a count and the tables disagree
+and the fix is not obvious, say so in the report and move on.
 
 **The rules.** `artifact-rules.md`, one rule at a time. Nothing gated behind
 hover or a click. Every word and form has a sentence. One job per table. Join
@@ -271,8 +300,12 @@ Scoped against the deck, not guessed. Each passes the test at the top of this
 file — one arrow, enough cards, a real fork, a minimal pair.
 
 **08 — the three conjugations.** Latin had four (`-āre`, `-ēre`, `-ĕre`, `-īre`);
-Portuguese has three. 168 verbs in the deck: 91 `-ar`, 50 `-er`, 25 `-ir`, and
-`pôr`. The arrow is `4 → 3`: the two `-ere` classes merged. The fork is which one
+Portuguese has three. 185 verb cards in the deck covering 168 verbs, once the
+reflexive `-se` forms are folded into their base: 100 `-ar`, 43 `-er`, 24 `-ir`,
+and `pôr`. (An earlier draft of this file said 91 / 50 / 25, which is wrong and
+does not even sum to 168. `suppletion-layer.html` has the right split. Count it
+from `book/deck-digest.txt`, and decide explicitly whether `chamar-se` is one
+verb or two — the answer moves the total by 17.) The arrow is `4 → 3`: the two `-ere` classes merged. The fork is which one
 a verb came from, which is what explains its stress and its irregularities.
 The minimal pair is `beber` ← `bibĕre` against `dever` ← `dēbēre` — both `-er`
 now, different classes then. And `pôr` is the leftover: the only Portuguese verb
