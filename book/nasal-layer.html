@@ -1,0 +1,951 @@
+<title>-ão — three Latin endings, one ending in Portuguese</title>
+
+<style>
+  :root {
+    --paper: #F2F3EF; --paper-2: #E9EBE5;
+    --ink: #141A20; --ink-2: #4E5A66; --ink-3: #5F6A75;
+    --rule: #D3D7CE; --rule-soft: #E0E3DB;
+
+    --a1: #1F5FBF;   /* -anem → plural -ães */
+    --a2: #0A744E;   /* -anum → plural -ãos */
+    --a3: #A6501C;   /* -ōnem → plural -ões */
+    --fl: #9E3A90;   /* does not follow its ending */
+
+    --a1-wash: #1F5FBF14; --a2-wash: #0A744E14; --a3-wash: #A6501C14; --fl-wash: #9E3A9014;
+    --ink-2-wash: #4E5A660F;   /* grey: no ending role, the mechanism tables */
+
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    --sans:  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    --mono:  ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    --max: 1080px;
+  }
+  @media (prefers-color-scheme: dark) {
+    /* the :not() is on purpose: it keeps an explicit light stamp winning over
+       a dark system setting, whatever the source order */
+    :root:not([data-theme="light"]) {
+      --paper: #12151A; --paper-2: #191D24;
+      --ink: #E6E9E4; --ink-2: #9AA5AF; --ink-3: #7C8690;
+      --rule: #272D35; --rule-soft: #1F242B;
+      --a1: #4E8BE0; --a2: #0FA06B; --a3: #D0783C; --fl: #C95CAB;
+      --a1-wash: #4E8BE01f; --a2-wash: #0FA06B1f; --a3-wash: #D0783C1f; --fl-wash: #C95CAB1f;
+      --ink-2-wash: #9AA5AF14;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #12151A; --paper-2: #191D24;
+    --ink: #E6E9E4; --ink-2: #9AA5AF; --ink-3: #7C8690;
+    --rule: #272D35; --rule-soft: #1F242B;
+    --a1: #4E8BE0; --a2: #0FA06B; --a3: #D0783C; --fl: #C95CAB;
+    --a1-wash: #4E8BE01f; --a2-wash: #0FA06B1f; --a3-wash: #D0783C1f; --fl-wash: #C95CAB1f;
+    --ink-2-wash: #9AA5AF14;
+  }
+  :root[data-theme="light"] {
+    --paper: #F2F3EF; --paper-2: #E9EBE5;
+    --ink: #141A20; --ink-2: #4E5A66; --ink-3: #5F6A75;
+    --rule: #D3D7CE; --rule-soft: #E0E3DB;
+    --a1: #1F5FBF; --a2: #0A744E; --a3: #A6501C; --fl: #9E3A90;
+    --a1-wash: #1F5FBF14; --a2-wash: #0A744E14; --a3-wash: #A6501C14; --fl-wash: #9E3A9014;
+    --ink-2-wash: #4E5A660F;
+  }
+
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: var(--sans); font-size: 16px; line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 600; text-wrap: balance; margin: 0; }
+  .eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3); }
+  .dek { color: var(--ink-2); max-width: 62ch; margin: 0; }
+  .term { margin: 0; max-width: 64ch; font-size: 14px; color: var(--ink-2); padding: 12px 15px; border-left: 3px solid var(--ink-3); background: var(--paper-2); }
+  .term b { font-family: var(--serif); font-size: 16px; color: var(--ink); }
+  .term + .term { margin-top: -12px; }
+  .mono-in { font-family: var(--mono); font-size: .82em; }
+  em.lat { font-family: var(--serif); font-style: italic; }
+
+  section { border-top: 1px solid var(--rule); padding: 54px 0 8px; }
+  section > .wrap { display: flex; flex-direction: column; gap: 24px; }
+  .sec-head { display: flex; flex-direction: column; gap: 8px; }
+  .sec-head h2 { font-size: clamp(22px, 3vw, 30px); letter-spacing: -.01em; }
+  h3.grp { font-size: 17px; color: var(--ink-2); margin-top: 6px; }
+
+  /* ── example sentence ─────────────────────────────────────────────── */
+  .ex { display: flex; flex-direction: column; gap: 1px; }
+  .ex .p { font-family: var(--serif); font-size: 15.5px; line-height: 1.35; }
+  .ex .p b { font-weight: 600; color: var(--c, var(--ink)); }
+  .ex .e { font-size: 12px; color: var(--ink-3); }
+  .cid { font-family: var(--mono); font-size: 9px; letter-spacing: .07em; text-transform: uppercase; border: 1px solid var(--rule); border-radius: 2px; padding: 1px 4px; color: var(--ink-3); margin-left: 5px; white-space: nowrap; }
+  .cid.new { border-style: dashed; }
+  .cid.nocard { border-style: dotted; }
+
+  /* ── CEFR level flag ──────────────────────────────────────────────── */
+  .lv { font-family: var(--mono); font-size: 9px; font-weight: 600; letter-spacing: .06em;
+        padding: 1px 4px; border-radius: 2px; border: 1px solid var(--ink-3);
+        color: var(--ink-3); white-space: nowrap; }
+  .lv.a1 { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+  .lv.a2 { background: var(--ink-2); border-color: var(--ink-2); color: var(--paper); }
+  .lv.b1 { border-color: var(--ink-2); color: var(--ink-2); }
+  .lv.b2 { border-style: dashed; }
+  .lv.c1 { border-style: dotted; }
+  .levels { border: 1px solid var(--rule); }
+  .levels .lh { padding: 11px 15px; background: var(--paper-2); border-bottom: 1px solid var(--rule); font-family: var(--serif); font-size: 16px; }
+  .lrow { display: grid; grid-template-columns: 44px 92px 1fr; gap: 4px 14px; align-items: baseline; padding: 10px 15px; border-bottom: 1px solid var(--rule-soft); }
+  .lrow:last-child { border-bottom: 0; }
+  .lrow .t { font-size: 13.5px; color: var(--ink-2); }
+  .lrow .t b { color: var(--ink); }
+  .lvline { display: flex; flex-wrap: wrap; gap: 7px 12px; align-items: center; font-size: 12.5px; color: var(--ink-3); margin: 0; }
+  @media (max-width: 620px) { .lrow { grid-template-columns: 44px 1fr; } }
+
+  /* ── hero ─────────────────────────────────────────────────────────── */
+  header { padding: 66px 0 50px; }
+  header > .wrap { display: flex; flex-direction: column; gap: 30px; }
+  .rulecard { display: flex; flex-wrap: wrap; align-items: baseline; gap: 14px 26px; font-family: var(--serif); }
+  .dead { position: relative; font-size: clamp(40px, 7.5vw, 72px); color: var(--ink-3); letter-spacing: .02em; }
+  /* the strike is grey on purpose: the four hues on this page mean a Latin
+     ending, and a dropped letter is not an ending */
+  .dead::after { content: ""; position: absolute; left: -5%; right: -5%; top: 52%; height: 3px; background: var(--ink-3); }
+  .dead-note { font-family: var(--sans); font-size: 14px; color: var(--ink-2); max-width: 34ch; }
+  h1 { font-size: clamp(27px, 4.2vw, 40px); letter-spacing: -.015em; line-height: 1.14; }
+
+  .specimens { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 14px; }
+  .spec { display: flex; flex-direction: column; gap: 5px; padding: 12px 14px; border: 1px solid var(--rule-soft); border-left: 3px solid var(--c); }
+  .spec .line { font-family: var(--serif); font-size: 21px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .spec .line .lat { color: var(--ink-2); font-style: italic; }
+  .spec .line .lat s { text-decoration-color: var(--ink-3); color: var(--ink-3); }
+  .spec .line .ar { font-family: var(--sans); font-size: 12px; color: var(--ink-3); }
+  .spec .line .pt b { color: var(--c); }
+  .spec .gl { font-size: 12.5px; color: var(--ink-3); }
+
+  .stats { display: flex; flex-wrap: wrap; gap: 0; border-top: 1px solid var(--rule); }
+  .stat { flex: 1 1 118px; padding: 13px 18px 13px 0; border-right: 1px solid var(--rule-soft); display: flex; flex-direction: column; gap: 2px; }
+  .stat:last-child { border-right: 0; }
+  .stat b { font-family: var(--serif); font-size: 29px; font-weight: 600; font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .stat span { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+
+  /* ── scope ────────────────────────────────────────────────────────── */
+  .scope { border: 1px solid var(--rule); }
+  .scope-head { padding: 12px 15px; background: var(--paper-2); border-bottom: 1px solid var(--rule); font-family: var(--serif); font-size: 16px; }
+  .srow { display: grid; grid-template-columns: 210px 62px 1fr; gap: 4px 14px; align-items: baseline; padding: 11px 15px; border-bottom: 1px solid var(--rule-soft); border-left: 3px solid var(--c); }
+  .srow:last-child { border-bottom: 0; }
+  .srow .v { font-family: var(--serif); font-size: 17px; color: var(--c); }
+  .srow .n { font-family: var(--mono); font-size: 11px; color: var(--ink-2); }
+  .srow .why { font-size: 13.5px; color: var(--ink-2); }
+  @media (max-width: 720px) { .srow { grid-template-columns: 1fr; } }
+
+  /* ── word tables ──────────────────────────────────────────────────── */
+  .tabs2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 20px; align-items: start; }
+  .wtab { border: 1px solid var(--rule-soft); border-top: 3px solid var(--c); break-inside: avoid; }
+  .wtab .th { display: flex; align-items: baseline; gap: 9px; padding: 11px 14px; border-bottom: 1px solid var(--rule); background: var(--w); flex-wrap: wrap; }
+  .wtab .th b { font-family: var(--serif); font-size: 18px; }
+  .wtab .th .sub { font-size: 12.5px; color: var(--ink-2); }
+  .wtab .th .n { margin-left: auto; font-family: var(--mono); font-size: 10px; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-2); }
+  .wrow { display: grid; grid-template-columns: 132px 118px 1fr; gap: 4px 12px; align-items: baseline; padding: 10px 14px; border-bottom: 1px solid var(--rule-soft); }
+  .wrow:last-child { border-bottom: 0; }
+  .wrow .pt { font-family: var(--serif); font-size: 17px; color: var(--c); }
+  .wrow .pt .lv { margin-left: 6px; }
+  .wrow .pt small { font-family: var(--sans); font-size: 11.5px; color: var(--ink-3); display: block; }
+  .wrow .forms { font-family: var(--serif); font-size: 14.5px; color: var(--ink-2); }
+  .wrow .forms b { color: var(--c); font-weight: 600; }
+  .wrow .forms small { font-family: var(--mono); font-size: 10px; font-style: normal; color: var(--ink-3); display: block; letter-spacing: .04em; }
+  .wrow.q { background: var(--paper-2); }
+  .wrow.off .pt::after { content: "no card"; font-family: var(--mono); font-size: 8.5px;
+        letter-spacing: .07em; text-transform: uppercase; color: var(--ink-3);
+        border: 1px dotted var(--ink-3); border-radius: 2px; padding: 1px 4px;
+        margin-left: 6px; white-space: nowrap; vertical-align: 2px; }
+  .wrow.d { background: var(--paper-2); outline: 1.5px dashed var(--ink-3); outline-offset: -4px; }
+  .mark { font-family: var(--mono); font-size: 9px; letter-spacing: .07em; text-transform: uppercase;
+        border: 1px dashed var(--ink-3); border-radius: 2px; padding: 1px 4px; color: var(--ink-3);
+        margin-left: 6px; white-space: nowrap; }
+  .wrow .flagline { grid-column: 1 / -1; font-size: 12px; color: var(--ink-2); border-top: 1px dotted var(--rule); padding-top: 6px; }
+  @media (max-width: 760px) { .wrow { grid-template-columns: 1fr; } }
+
+  /* ── evidence box ─────────────────────────────────────────────────── */
+  .evi { border: 1px solid var(--c); break-inside: avoid; }
+  .evi .eh { padding: 12px 16px; background: var(--w); border-bottom: 1px solid var(--c); font-family: var(--serif); font-size: 18px; }
+  .erow { display: grid; grid-template-columns: 96px 150px 34px 1fr; gap: 4px 14px; align-items: baseline; padding: 8px 16px; }
+  .erow .lbl { font-family: var(--mono); font-size: 9.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+  .erow .lat { font-family: var(--serif); font-style: italic; font-size: 17px; color: var(--ink-2); }
+  .erow .ar { color: var(--ink-3); font-size: 12px; }
+  .erow .pt { font-family: var(--serif); font-size: 19px; color: var(--rc, var(--c)); font-weight: 600; }
+  .evi .same { margin: 2px 16px 12px; padding-left: 110px; font-family: var(--mono); font-size: 9.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--c); border-top: 1px solid var(--c); padding-top: 5px; }
+  .evi .ebody { padding: 13px 16px 16px; border-top: 1px solid var(--rule-soft); display: flex; flex-direction: column; gap: 11px; }
+  .evi .ebody p { margin: 0; font-size: 14px; color: var(--ink-2); max-width: 68ch; }
+  .evi .ebody p b { color: var(--ink); }
+  .evi .ebody .rule { background: var(--paper-2); padding: 11px 13px; }
+  @media (max-width: 620px) { .erow { grid-template-columns: 1fr; } .evi .same { padding-left: 0; } }
+
+  /* ── figures ──────────────────────────────────────────────────────── */
+  figure { margin: 0; display: flex; flex-direction: column; gap: 12px; }
+  .plot { width: 100%; overflow-x: auto; }
+  .plot svg { display: block; width: 100%; height: auto; min-width: 560px; }
+  figcaption { font-size: 12.5px; color: var(--ink-3); max-width: 68ch; }
+  svg text { font-family: var(--sans); fill: var(--ink); }
+  svg .t-serif { font-family: var(--serif); }
+  svg .t-mono { font-family: var(--mono); letter-spacing: .06em; }
+  svg .t-mute { fill: var(--ink-3); }
+  svg .t-sub { fill: var(--ink-2); }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: center; }
+  .lg { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; color: var(--ink-2); }
+  .sw { width: 13px; height: 13px; border-radius: 2px; flex: none; }
+
+  /* ── minimal pairs ────────────────────────────────────────────────── */
+  .pairs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 1px; background: var(--rule-soft); border: 1px solid var(--rule-soft); }
+  .pr { background: var(--paper); padding: 17px 16px; display: flex; flex-direction: column; gap: 9px; break-inside: avoid; }
+  .pr .duo { font-family: var(--serif); font-size: clamp(21px, 3vw, 28px); line-height: 1.15; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  /* grey by default: only the cão / mão pair is about a Latin ending, and only
+     that pair gets the ending colours */
+  .pr .duo .l { color: var(--cl, var(--ink)); }
+  .pr .duo .r { color: var(--cr, var(--ink-2)); }
+  .pr .duo .vs { font-size: .5em; color: var(--ink-3); font-family: var(--sans); }
+  .pr .lat { font-family: var(--serif); font-style: italic; font-size: 13.5px; color: var(--ink-3); }
+  .pr .why { font-size: 13px; color: var(--ink-2); }
+  .pr .exs { display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--rule-soft); padding-top: 9px; }
+
+  /* ── converter ────────────────────────────────────────────────────── */
+  .conv { border: 1px solid var(--rule-soft); border-top: 3px solid var(--a3); }
+  .conv-rule { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 20px; padding: 15px 16px; background: var(--a3-wash); border-bottom: 1px solid var(--rule-soft); }
+  .conv-rule .r { font-family: var(--serif); font-size: clamp(20px, 3vw, 27px); color: var(--a3); }
+  .conv-rule .tags { display: flex; gap: 8px; flex-wrap: wrap; }
+  .conv-rule .tag { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); border: 1px solid var(--rule); padding: 3px 8px; border-radius: 2px; }
+  .crow { display: grid; grid-template-columns: 116px 148px 128px 1fr; gap: 4px 12px; align-items: baseline; padding: 9px 16px; border-bottom: 1px solid var(--rule-soft); }
+  .crow:last-child { border-bottom: 0; }
+  .crow .en { font-size: 14px; color: var(--ink-3); }
+  .crow .pt { font-family: var(--serif); font-size: 17px; color: var(--a3); }
+  .crow .pt .lv { margin-left: 6px; }
+  .crow .forms { font-family: var(--serif); font-size: 14px; color: var(--ink-2); }
+  .crow .ex .p b { color: var(--a3); }
+  .crow.gen { background: var(--paper-2); }
+  @media (max-width: 860px) { .crow { grid-template-columns: 1fr; } }
+
+  /* ── deck check ───────────────────────────────────────────────────── */
+  .checks { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 18px; align-items: start; }
+  /* grey, not purple: purple means "does not follow its Latin ending", and a
+     deck defect is not that */
+  .check { border: 1px solid var(--ink-3); break-inside: avoid; }
+  .check .ch-h { padding: 12px 16px; background: var(--ink-2-wash); border-bottom: 1px solid var(--ink-3); font-family: var(--serif); font-size: 18px; }
+  .check .ch-b { padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; }
+  .check p { margin: 0; font-size: 13.5px; color: var(--ink-2); max-width: 70ch; }
+  .check code { font-family: var(--mono); font-size: 12px; background: var(--paper-2); padding: 2px 6px; border-radius: 2px; color: var(--ink); }
+
+  footer { border-top: 1px solid var(--rule); padding: 32px 0 58px; }
+  footer > .wrap { display: flex; flex-direction: column; gap: 10px; }
+  footer p { margin: 0; font-size: 12.5px; color: var(--ink-3); max-width: 72ch; }
+
+  @media print {
+    /* the light palette is forced: printing from a dark browser must not
+       give white text on white paper. The :not() selector is here on purpose —
+       without it the dark media-query rule outranks a bare :root and the
+       un-stamped system default still prints dark. */
+    :root, :root:not([data-theme="light"]),
+    :root[data-theme="dark"], :root[data-theme="light"] {
+      --paper: #FFFFFF; --paper-2: #EDEEE9;
+      --ink: #111418; --ink-2: #454F59; --ink-3: #616B75;
+      --rule: #C2C7BC; --rule-soft: #D8DCD2;
+      --a1: #1F5FBF;   /* -anem → plural -ães */
+      --a2: #0A744E;   /* -anum → plural -ãos */
+      --a3: #A6501C;   /* -ōnem → plural -ões */
+      --fl: #9E3A90;   /* does not follow its ending */
+      --a1-wash: #1F5FBF14; --a2-wash: #0A744E14; --a3-wash: #A6501C14; --fl-wash: #9E3A9014;
+      --ink-2-wash: #454F590F;
+    }
+    body { background: #fff; font-size: 10.5pt; }
+    section { padding: 24px 0 4px; }
+    header { padding: 10px 0 22px; }
+    .wrap { padding: 0 10px; max-width: none; }
+    .plot, .mx-scroll { overflow: visible; }
+    .plot svg { min-width: 0; }
+    table.mx { min-width: 0; }
+    .sec-head, h1, h2, h3, .scope-head { break-after: avoid; }
+    figcaption, .legend { break-before: avoid; }
+    .sec-head, figure, .term, .spec, .evi, .hook, .ex { break-inside: avoid; }
+    p { orphans: 3; widows: 3; }
+  }
+</style>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Origin layer 02 · European Portuguese · 18 noun cards end in ·ão or ·ã · 23 words with no card</div>
+
+    <div class="rulecard">
+      <span class="dead">·n·</span>
+      <span class="dead">·l·</span>
+      <span class="dead-note">Between two vowels, Latin <em>n</em> and <em>l</em> stopped being spoken. Portuguese never put them back.</span>
+    </div>
+
+    <h1>Portuguese dropped two letters from the middle of Latin words.<br />The plural still shows which letter was there.</h1>
+
+    <p class="dek">Latin had three different endings: <em class="lat">-anem</em>, <em class="lat">-anum</em> and <em class="lat">-ōnem</em>. After the <em>n</em> was dropped, all three became one ending in Portuguese: <span class="mono-in">-ão</span>. So the singular tells you nothing. The plural still tells you everything.</p>
+
+    <p class="term"><b>Between two vowels</b> — the rule only worked when the letter had a vowel on each side. <em class="lat">ca<b>n</b>em</em> lost its <em>n</em>, and <em class="lat">sō<b>l</b>um</em> lost its <em>l</em>, because both letters had a vowel in front and a vowel behind. <em class="lat">sō<b>l</b>em</em> “sun” kept its <em>l</em>: Portuguese dropped the ending <em>-em</em> very early, so the <em>l</em> came to stand last in the word with nothing behind it.</p>
+    <p class="term"><b>Nasal vowel</b> — the sound written <span class="mono-in">ão</span>, <span class="mono-in">ã</span>, <span class="mono-in">õe</span>. The <em>n</em> is gone, but you still send the air through the nose. This is what makes Portuguese sound different from Spanish.</p>
+
+    <div class="specimens">
+      <div class="spec" style="--c:var(--a1)">
+        <span class="line"><span class="lat">ca<s>n</s>em</span><span class="ar">→</span><span class="pt"><b>cão</b></span></span>
+        <span class="gl">dog · plural cães</span>
+      </div>
+      <div class="spec" style="--c:var(--a2)">
+        <span class="line"><span class="lat">ma<s>n</s>um</span><span class="ar">→</span><span class="pt"><b>mão</b></span></span>
+        <span class="gl">hand · plural mãos</span>
+      </div>
+      <div class="spec" style="--c:var(--a3)">
+        <span class="line"><span class="lat">pulmō<s>n</s>em</span><span class="ar">→</span><span class="pt"><b>pulmão</b></span></span>
+        <span class="gl">lung · plural pulmões</span>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>18</b><span>·ão / ·ã noun cards</span></div>
+      <div class="stat"><b style="color:var(--a1)">2</b><span>plural ·ães</span></div>
+      <div class="stat"><b style="color:var(--a2)">4</b><span>plural ·ãos / ·ãs</span></div>
+      <div class="stat"><b style="color:var(--a3)">10</b><span>plural ·ões</span></div>
+      <div class="stat"><b style="color:var(--fl)">2</b><span>plural not from the ending</span></div>
+      <div class="stat"><b>23</b><span>words with no card</span></div>
+    </div>
+
+    <p class="lvline">
+      <span>Level of the 18 <span class="mono-in">·ão</span> / <span class="mono-in">·ã</span> noun cards:</span>
+      <span><span class="lv a1">A1</span> 9</span>
+      <span><span class="lv a2">A2</span> 3</span>
+      <span><span class="lv b1">B1</span> 4</span>
+      <span><span class="lv b2">B2</span> 2</span>
+      <span>— twelve are A1 or A2, so the plural rule is worth learning now.</span>
+    </p>
+
+    <p class="lvline">
+      <span>Level of the 23 words with <span class="mono-in">no card</span>:</span>
+      <span><span class="lv a1">A1</span> 8</span>
+      <span><span class="lv a2">A2</span> 7</span>
+      <span><span class="lv b1">B1</span> 8</span>
+      <span>— these fit the page and your deck does not have them. <em>lua</em>, <em>dor</em> and <em>coração</em> are the ones to add first.</span>
+    </p>
+  </div>
+</header>
+
+<!-- ══ scope ══════════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">What is on this page</div>
+      <h2>One sound change, four groups of cards</h2>
+    </div>
+
+    <div class="scope">
+      <div class="scope-head">Every word here has to do with a lost <em>n</em> or a lost <em>l</em>. They are here for four different reasons.</div>
+      <div class="srow" style="--c:var(--ink-3)">
+        <span class="v">Made by the rule: nouns ending in ·ão or ·ã</span><span class="n">18 cards<br />+ 12 no card</span>
+        <span class="why">You must know the plural, and the plural is decided by the Latin ending you cannot see. This is the main subject of the page. Two of the 18 did not start out as Latin words — <em>guardião</em> is Germanic, and <em>avião</em> was made in France in the 19th century — but both wear the same <span class="mono-in">·ão</span> ending and take a plural from it. Among the words with no card, <em>alemão</em> and <em>limão</em> arrived the same way. Each row says where the word came from.</span>
+      </div>
+      <div class="srow" style="--c:var(--ink-3)">
+        <span class="v">Made by the rule: other words</span><span class="n">13 cards<br />+ 11 no card</span>
+        <span class="why"><em>só, céu, mau, sair, bom, um, pessoa, moeda, ter, vir, pôr, cheio, amanhã</em>. Same change, no plural to learn. They are short, or nasal, because a letter fell out. Knowing this makes them stop looking irregular. <em>amanhã</em> is the one that does end in <span class="mono-in">·ã</span>, but it is an adverb and has no plural, so it is not in the plural tables.</span>
+      </div>
+      <div class="srow" style="--c:var(--ink-3)">
+        <span class="v">Same result, shorter road</span><span class="n">1 card</span>
+        <span class="why"><em>não</em>. Latin <em class="lat">nōn</em> already ended in the <em>n</em>, so nothing had to fall away before the nasal sound could form. It is printed with the nasal words because the result is the same and the word is A1.</span>
+      </div>
+      <div class="srow" style="--c:var(--ink-3)">
+        <span class="v">The control: one word that did not change</span><span class="n">1 card</span>
+        <span class="why"><em>sol</em> <span class="lv a1">A1</span>. Latin <em class="lat">sōlem</em> lost its ending <em>-em</em> very early, so the <em>l</em> ended up last in the word and the rule could not reach it. Put next to <em>só</em>, from <em class="lat">sōlum</em>, it shows that position decided everything.</span>
+      </div>
+    </div>
+
+    <p class="term"><b>No card</b> — a word that fits this page and is <em>not</em> in your deck. Those rows carry a dotted <span class="mono-in">no card</span> tag and are counted on their own, never added into the card totals. Every one is A1–B1. <em>grão</em> is printed twice, once for its loss and once for its plural, so 24 rows show 23 different words. The <span class="mono-in">·ção</span> table near the end adds four more, counted on their own again.</p>
+
+    <p class="term"><b><span class="mono-in">Sources disagree</span></b> — a dashed tag on a word the dictionaries do not settle. Both readings are printed beside it. Three rows on this page carry it: <em>capitão</em>, <em>coração</em> and <em>limão</em>. For all three the doubt is about the road the word took, not about its plural.</p>
+
+    <p class="term"><b>The star</b> — a form with <span class="mono-in">*</span> in front of it was never written down. Scholars work it back from the modern words. It is a good guess, not a record. Two forms on this page carry a star: <em class="lat">*maneāna</em> behind <em>amanhã</em>, and <em class="lat">*corāceōnem</em>, one of the two readings of <em>coração</em>.</p>
+
+    <div class="levels">
+      <div class="lh">Every word on this page carries a level flag. This is what the flags mean.</div>
+      <div class="lrow"><span><span class="lv a1">A1</span></span><span class="t">learn now</span>
+        <span class="t">First 500 words. You need this word in normal days. <b>Learn it now.</b></span></div>
+      <div class="lrow"><span><span class="lv a2">A2</span></span><span class="t">learn now</span>
+        <span class="t">Still basic. You will meet it soon. <b>Learn it now.</b></span></div>
+      <div class="lrow"><span><span class="lv b1">B1</span></span><span class="t">later</span>
+        <span class="t">Useful, but not every day. Keep the card. Do not push it.</span></div>
+      <div class="lrow"><span><span class="lv b2">B2</span></span><span class="t">later</span>
+        <span class="t">Rare in speech. Read it here for the pattern, not for the word.</span></div>
+      <div class="lrow"><span><span class="lv c1">C1</span></span><span class="t">much later</span>
+        <span class="t">Books and formal writing only.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ the two losses ═════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">The mechanism</div>
+      <h2>What each dropped letter left behind</h2>
+      <p class="dek">When <em>l</em> was dropped, the two vowels simply met. When <em>n</em> was dropped, the vowels met <em>and</em> stayed nasal. That nasal sound is all that is left of the <em>n</em>. At the end of a word the nasal sound stayed. In the middle of a word it later faded away.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— 16 of these 18 cards are A1, the other two are A2. Thirteen more words fit here and have no card, <em>lua</em> and <em>dor</em> first among them. This is the part to read today.</span></p>
+
+      <p class="term"><b>Old pt.</b> — Portuguese as it was written before about 1500. Some rows print it, because it is the step between the Latin word and the modern one. <em class="lat">bonum</em> → old pt. <em>bõo</em> → <em>bom</em>. Old Portuguese is evidence, not vocabulary: those forms carry no level flag and you are never meant to learn them.</p>
+    </div>
+
+    <figure>
+      <div class="plot">
+        <svg viewBox="0 0 960 250" role="img" aria-label="Branch diagram: dropping l gives an oral vowel pair; dropping n gives either a nasal vowel at the end of the word or a plain vowel pair in the middle">
+          <g id="deaths"></g>
+        </svg>
+      </div>
+      <figcaption>Three results, three tables below, each followed by a table of words your deck is missing. Each lane prints its card count and its no-card count separately. This figure is grey on purpose: the colours on this page mean a Latin ending, and here the subject is a dropped letter.</figcaption>
+    </figure>
+
+    <div class="tabs2" id="losstabs"></div>
+  </div>
+</section>
+
+<!-- ══ the hourglass ══════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Main chart</div>
+      <h2>Three Latin endings, one Portuguese ending, three plurals</h2>
+      <p class="dek">Latin had three endings that all ended up as <span class="mono-in">-ão</span>. The plural did not merge. So the plural is not random: it is the old Latin ending, still working.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a2">A2</span><span>— you need this the day you start using plurals. 12 of the 18 cards are A1 or A2, and 11 more words with no card are sorted into the same groups below.</span></p>
+    </div>
+
+    <figure>
+      <div class="plot">
+        <svg viewBox="0 0 960 430" role="img" aria-label="Hourglass diagram: Latin -anem, -anum and -onem merge into Portuguese -ao, then split again into three plural endings, with 2, 4 and 10 cards">
+          <g id="glass"></g>
+        </svg>
+      </div>
+      <figcaption>Card counts from your own deck. The line is drawn thicker where the group is bigger; it is not drawn to scale. Two further cards — <em>guardião</em> and <em>verão</em> — do not take the plural their ending points to, so they are in none of the three lanes. All the words are in the tables below. A note on the first two group names: the <em>a</em> was long in some of these words (<em class="lat">pānem</em>, <em class="lat">germānum</em>) and short in others (<em class="lat">canem</em>, <em class="lat">manum</em>). The group is the shape of the ending, not the length of its vowel, so the name is written without a mark.</figcaption>
+    </figure>
+
+    <div class="legend">
+      <span class="lg"><span class="sw" style="background:var(--a1)"></span>Latin <span class="mono-in">-anem</span> → plural <em>-ães</em></span>
+      <span class="lg"><span class="sw" style="background:var(--a2)"></span>Latin <span class="mono-in">-anum</span> → plural <em>-ãos</em></span>
+      <span class="lg"><span class="sw" style="background:var(--a3)"></span>Latin <span class="mono-in">-ōnem</span> → plural <em>-ões</em></span>
+      <span class="lg"><span class="sw" style="background:var(--fl)"></span>does not follow its Latin ending</span>
+    </div>
+
+    <div class="evi" style="--c:var(--ink-2);--w:var(--ink-2-wash)">
+      <div class="eh">The proof: two words, same singular ending, different plural</div>
+
+      <div class="erow"><span class="lbl">latin sing.</span><span class="lat">canem</span><span class="ar">→</span><span class="pt" style="--rc:var(--a1)">cão</span></div>
+      <div class="erow"><span class="lbl">latin sing.</span><span class="lat">manum</span><span class="ar">→</span><span class="pt" style="--rc:var(--a2)">mão</span></div>
+      <div class="same">the same ending in Portuguese</div>
+
+      <div class="erow"><span class="lbl">latin plural</span><span class="lat">can<b>ēs</b></span><span class="ar">→</span><span class="pt" style="--rc:var(--a1)">cães</span></div>
+      <div class="erow"><span class="lbl">latin plural</span><span class="lat">man<b>ūs</b></span><span class="ar">→</span><span class="pt" style="--rc:var(--a2)">mãos</span></div>
+      <div class="same">two different endings, exactly as in Latin</div>
+
+      <div class="ebody">
+        <p><b>Read the four lines again.</b> In the singular, <em class="lat">canem</em> and <em class="lat">manum</em> arrive at the same word ending. In the plural, <em class="lat">canēs</em> and <em class="lat">manūs</em> do not. Portuguese kept the Latin difference in the plural and lost it in the singular.</p>
+        <p class="rule"><b>What to do with this.</b> You cannot see the Latin ending, so learn the plural together with the word, the way you already learn the gender. Three plural groups cover sixteen of your eighteen cards, and one group alone holds ten of them.</p>
+      </div>
+    </div>
+
+    <h3 class="grp">The eighteen cards, one table per plural group. Three of the groups are followed by the words your deck is missing.</h3>
+    <div class="tabs2" id="classtabs"></div>
+  </div>
+</section>
+
+<!-- ══ minimal pairs ══════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Compare</div>
+      <h2>Four pairs to read side by side</h2>
+      <p class="dek">The first three pairs show the rule doing two different things to almost the same Latin. The last one shows it doing the same thing to two verbs you use every day.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— 8 cards, all A1, plus <em>boa</em>, the feminine form printed on the <em>bom</em> card. Read this section out loud.</span></p>
+    </div>
+
+    <div class="pairs" id="pairs"></div>
+  </div>
+</section>
+
+<!-- ══ the -ção machine ═══════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">One ending you can guess</div>
+      <h2>English <span class="mono-in">-tion</span> is Portuguese <span class="mono-in">-ção</span></h2>
+      <p class="dek">Latin <em class="lat">-tiōnem</em> became <span class="mono-in">-tion</span> in English and <span class="mono-in">-ção</span> in Portuguese. Gender and plural come free: always feminine, always <span class="mono-in">-ções</span>. Every one of them belongs to the <span class="mono-in">·ões</span> group above, because <em class="lat">-tiōnem</em> is <em class="lat">-ōnem</em> with a <em>t</em> in front.</p>
+      <p class="lvline"><span>Topic level</span><span class="lv a2">A2</span><span>— the rule is A2. 5 cards and 4 words with no card. Single words in it can be B1 or B2, and you do not need to learn them one by one.</span></p>
+    </div>
+
+    <div class="conv" id="conv"></div>
+    <p class="dek" style="font-size:13px">The grey rows are the four words your deck does not have. They were built with the rule, not looked up: take the English word, cut <span class="mono-in">-tion</span>, write <span class="mono-in">-ção</span>. That is the point of the group — one rule replaces a word list. Those four are counted on their own, apart from the 23 words with no card in the tables above.</p>
+  </div>
+</section>
+
+<!-- ══ deck check ═════════════════════════════════════════════════════ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Deck check</div>
+      <h2>Five things this layer found in your own cards</h2>
+      <p class="lvline"><span>Topic level</span><span class="lv a1">A1</span><span>— 5 findings: three about cards you already have, two about cards you do not.</span></p>
+    </div>
+
+    <div class="checks">
+      <div class="check">
+        <div class="ch-h">guardião — the plural in your deck is not standard <span class="lv b2">B2</span></div>
+        <div class="ch-b">
+          <p><code>nouns.md:277</code> has <code>guardião (guardiã, -s): guardian</code>. The <code>-s</code> makes the plural <em>guardiãos</em>.</p>
+          <p>Standard European Portuguese has two plurals for this word: <em>guardiães</em> and <em>guardiões</em>. <em>guardiãos</em> is not one of them.</p>
+          <p><b>Why it is worth fixing.</b> Every other card on this page follows the plural rule. This one teaches the rule wrong.</p>
+          <p><b>Suggested edit:</b> <code>guardião (guardiã, -ães/-ões): guardian</code>.</p>
+        </div>
+      </div>
+
+      <div class="check">
+        <div class="ch-h">Two English lines on your cards are wrong <span class="lv b1">B1</span></div>
+        <div class="ch-b">
+          <p>The <em>explicação</em> card reads <em>Explanation is important.</em> It needs <em>The</em> in front. The <em>ladrão</em> card reads <em>He is a burglar.</em>, and <code>nouns.md</code> glosses the word <em>burglar, thief</em>. A <em>ladrão</em> is any thief. The Portuguese for a burglar is <em>assaltante</em>, someone who breaks into a house.</p>
+          <p>Both rows on this page print the corrected English. Layer 01 carries the same note on the <em>explicação</em> card.</p>
+          <p><b>Suggested edits:</b> <code>The explanation is important.</code>, <code>He is a thief.</code> and <code>ladrão (ladra(s), ladrões): thief</code>.</p>
+        </div>
+      </div>
+
+      <div class="check">
+        <div class="ch-h">Five cards on this page carry no sentence <span class="lv a1">A1</span></div>
+        <div class="ch-b">
+          <p><code>só</code>, <code>não</code>, <code>verão</code>, <code>amanhã</code> and <code>um / uma</code> are bare cards: the front holds the English, the back holds the Portuguese again. There is nothing to read aloud.</p>
+          <p>Their five rows above therefore carry a sentence written for this page, tagged <span class="cid new">new</span>.</p>
+          <p><b>Suggested edit:</b> give each back the two lines the noun cards already have. For <em>verão</em>: <code>O verão é quente. / Summer is hot.</code></p>
+        </div>
+      </div>
+
+      <div class="check">
+        <div class="ch-h">There is no card for <em>cor</em> <span class="lv a1">A1</span></div>
+        <div class="ch-b">
+          <p>The word is printed on two cards and owns neither: <code>cor-de-rosa</code> (0566) and <code>cor-de-laranja</code> (0565). Both are adjectives that never change, so neither can teach you that <em>cor</em> is feminine and makes <em>as cores</em>.</p>
+          <p><em>cor</em> is A1, and it is the twin of <em>dor</em>: <em class="lat">colōrem</em> and <em class="lat">dolōrem</em> lost the same <em>l</em> and came out the same shape.</p>
+          <p><b>Suggested card:</b> <code>cor (f, -es): colour</code>.</p>
+        </div>
+      </div>
+
+      <div class="check">
+        <div class="ch-h">Of the 23 words with no card, add these three first <span class="lv a1">A1</span></div>
+        <div class="ch-b">
+          <p><em>lua</em> is the clearest example on the page: <em class="lat">lūnam</em> lost its <em>n</em> and left two plain vowels. <em>dor</em> is the one you need at the doctor. <em>coração</em> is A1 in every course book and in every song.</p>
+          <p>Eight of the 23 are A1: <em>cor</em>, <em>dor</em>, <em>lua</em>, <em>bem</em>, <em>alemão</em>, <em>coração</em>, <em>lição</em> and <em>limão</em>. <em>cor</em> has its own box beside this one. <em>bem</em> is the other one worth a card: you already read it on the <code>está bem</code> card and inside the <code>sentir-se</code> sentence, and it owns neither.</p>
+          <p><b>Suggested cards:</b> <code>lua (f, -s): moon</code>, <code>dor (f, -es): pain</code>, <code>coração (m, -ões): heart</code>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Source: <span class="mono-in">myanki2</span> — 724 cards, 720 distinct words. Origin layer 02. Sentences from your own cards show the card number. Sentences marked <em>new</em> were written for this page because your deck has no sentence for that word yet, and rows tagged <em>no card</em> are words your deck does not contain at all. One row is both: <em>cor</em> has no card of its own, and its sentence comes from card 0566, <span class="mono-in">cor-de-rosa</span>.</p>
+    <p>Counts: 18 noun cards end in <span class="mono-in">·ão</span> or <span class="mono-in">·ã</span> — 2 take the plural <span class="mono-in">·ães</span>, 4 take <span class="mono-in">·ãos</span> or <span class="mono-in">·ãs</span>, 10 take <span class="mono-in">·ões</span>, and 2 do not follow their ending. By level: 9 A1, 3 A2, 4 B1, 2 B2. Thirteen further cards lost the same <em>n</em> or <em>l</em> and have no plural to learn: <em>só, céu, mau, sair, bom, um, pessoa, moeda, ter, vir, pôr, cheio</em> and <em>amanhã</em>. Of those, only <em>amanhã</em> ends in <span class="mono-in">·ã</span>, and it is an adverb, which is why it is not in the plural tables. <em>não</em> is printed with them although its <em>n</em> was already the last letter in Latin, and <em>sol</em> is printed as the control. That is 33 cards in all. Twenty-three more words fit the page and have no card — 12 of them end in <span class="mono-in">·ão</span> or <span class="mono-in">·ã</span> and 11 do not; by level 8 A1, 7 A2, 8 B1. <em>grão</em> is printed twice, once for its loss and once for its plural, so those 23 words fill 24 rows. The <span class="mono-in">·ção</span> table adds four more words with no card — <em>direção</em>, <em>nação</em>, <em>condição</em> and <em>tradição</em> — printed to show the rule still working, and counted on their own. <em>direção</em> is already printed inside card 0583, <span class="mono-in">em direção a</span>, and still has no card of its own. Cards, missing words, the <em>·ção</em> four and the control card are never added into one number.</p>
+    <p>The colours mean something different on each layer. Here the colour is <strong>the Latin ending the word came from</strong>: blue = <span class="mono-in">-anem</span>, green = <span class="mono-in">-anum</span>, orange = <span class="mono-in">-ōnem</span>, purple = does not follow its ending. On layer 01 the same colours meant something else: how the word got its <span class="mono-in">ch·</span>. Where a Latin ending is not the subject — the scope block, the branch figure, the six tables under it, the frame of the proof box, three of the four pairs and the deck check — the page is grey on purpose, so that a hue never claims an ending the word did not have. Inside the proof box the four Portuguese words do carry the ending colours, because there the ending is the subject.</p>
+    <p><strong>About the level flags.</strong> <span class="lv a1">A1</span> <span class="lv a2">A2</span> <span class="lv b1">B1</span> <span class="lv b2">B2</span> <span class="lv c1">C1</span> are CEFR levels. Your deck stores no level for nouns, adjectives or phrases. It does mark 145 verb cards <em>(A1)</em>, but that is the level of the course book they were taken from, not a judgement about each word — it covers <em>mergulhar</em> “to dive” as readily as <em>falar</em>. Three verb cards on this page carry that mark — <em>sair</em>, <em>ter</em> and <em>pôr</em> — and this page flags all three <span class="lv a1">A1</span> as well, so no flag here sits above the deck. A fourth verb, <em>vir</em>, carries a chapter marker instead, <span class="mono-in">(ch.4)</span>, which is not a level. <em>pôr</em> is flagged A1 on layers 03 and 04 too. Everything else on the page is a noun, an adjective, a number or a phrase, and carries no mark at all. So the flags here are an estimate. They follow how common the word is in everyday European Portuguese and where it normally appears in A1–B1 course books. Treat them as a reading order, not as a rule. If a word feels easy and it says B1, learn it.</p>
+    <p><strong>Where the origin is not firm.</strong> Three rows carry a dashed <span class="mono-in">Sources disagree</span> mark and print both readings. <em>coração</em>: Wiktionary builds it on a Vulgar Latin <em class="lat">*corāceōnem</em>; the Portuguese and Spanish dictionaries take it as Latin <em class="lat">cor</em> plus a plain big-thing ending. Either way the ending is the one that gives <span class="mono-in">·ões</span>, so the plural is not in doubt. <em>capitão</em>: Wiktionary sends it through Genoese <em>capitan</em> from Late Latin <em class="lat">capitānus</em>, and the Portuguese dictionaries take it straight from <em class="lat">capitāneum</em>. <em>limão</em>: the word is Arabic <em>laymūn</em>, from Persian, and sources split on whether Portuguese took it from Arabic directly or through Medieval Latin <em class="lat">limōnem</em>. A grey row background is not a mark: it only says the row carries a note underneath.</p>
+  </div>
+</footer>
+
+<script>
+  const NS = "http://www.w3.org/2000/svg";
+  const el = (n, a = {}) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); return e; };
+  const ex = (pt, en, id, isNew) =>
+    '<span class="ex"><span class="p">' + pt + '</span><span class="e">' + en +
+    '<span class="cid' + (id === "no card" ? " nocard" : isNew ? " new" : "") + '">' + id +
+    "</span></span></span>";
+  const off = rows => rows.map(r => ({ ...r, off: true }));
+  const lv = c => '<span class="lv ' + c.toLowerCase() + '">' + c + "</span>";
+  const lvcount = rows => {
+    const o = {};
+    rows.forEach(r => { if (r.lvl) o[r.lvl] = (o[r.lvl] || 0) + 1; });
+    return ["A1", "A2", "B1", "B2", "C1"].filter(k => o[k]).map(k => lv(k) + " " + o[k]).join(" ");
+  };
+
+  const wtab = (host, cls, title, sub, rows) => {
+    const d = document.createElement("div");
+    d.className = "wtab";
+    d.style.setProperty("--c", "var(--" + cls + ")");
+    d.style.setProperty("--w", "var(--" + cls + "-wash)");
+    const isOff = rows.length > 0 && rows.every(r => r.off);
+    d.innerHTML =
+      '<div class="th"><b>' + title + '</b><span class="sub">' + sub + '</span><span class="n">' +
+        lvcount(rows) + " &nbsp;·&nbsp; " + rows.length +
+        (isOff ? (rows.length === 1 ? " word, no card" : " words, no card") : " cards") + "</span></div>" +
+      rows.map(r =>
+        '<div class="wrow' + (r.off ? " off" : "") + (r.mark ? " d" : r.flag ? " q" : "") + '">' +
+          '<span class="pt">' + r.pt + " " + lv(r.lvl) +
+            (r.mark ? '<span class="mark">' + r.mark + "</span>" : "") +
+            "<small>" + r.gl + "</small></span>" +
+          '<span class="forms">' + r.forms + "<small>" + r.src + "</small></span>" +
+          ex(r.ex[0], r.ex[1], r.ex[2], r.ex[3]) +
+          (r.flag ? '<span class="flagline">' + r.flag + "</span>" : "") +
+        "</div>").join("");
+    host.appendChild(d);
+  };
+
+  /* ── fig 1 : the two losses ───────────────────────────────────────── */
+  (function () {
+    const g = document.getElementById("deaths");
+
+    const head = (x, glyph, label, sub, col) => {
+      const a = el("text", { x, y: 42, "text-anchor": "middle", "font-size": 30, class: "t-serif", fill: col });
+      a.textContent = glyph;
+      const b = el("text", { x, y: 63, "text-anchor": "middle", "font-size": 10.5, class: "t-mono", fill: col });
+      b.textContent = label;
+      const c = el("text", { x, y: 83, "text-anchor": "middle", "font-size": 12, class: "t-sub" });
+      c.textContent = sub;
+      g.appendChild(a); g.appendChild(b); g.appendChild(c);
+    };
+    head(180, "·l·", "DROPPED", "the vowels just meet", "var(--ink)");
+    head(640, "·n·", "DROPPED", "the vowels meet, and stay nasal", "var(--ink)");
+
+    g.appendChild(el("line", { x1: 180, y1: 96, x2: 180, y2: 132, stroke: "var(--ink-3)", "stroke-width": 2 }));
+    g.appendChild(el("path", { d: "M640 96 V116 H480 V132", fill: "none", stroke: "var(--ink-3)", "stroke-width": 2 }));
+    g.appendChild(el("path", { d: "M640 96 V116 H800 V132", fill: "none", stroke: "var(--ink-3)", "stroke-width": 2 }));
+
+    const lane = (x, big, title, note, note2) => {
+      const t0 = el("text", { x, y: 168, "text-anchor": "middle", "font-size": 27, class: "t-serif", fill: "var(--ink)" });
+      t0.textContent = big;
+      const t1 = el("text", { x, y: 192, "text-anchor": "middle", "font-size": 13.5, class: "t-serif" });
+      t1.textContent = title;
+      const t2 = el("text", { x, y: 212, "text-anchor": "middle", "font-size": 11.5, class: "t-mute" });
+      t2.textContent = note;
+      const t3 = el("text", { x, y: 231, "text-anchor": "middle", "font-size": 11, class: "t-mono t-mute" });
+      t3.textContent = note2;
+      g.appendChild(t0); g.appendChild(t1); g.appendChild(t2); g.appendChild(t3);
+    };
+    lane(180, "só", "plain vowels", "no nasal sound", "4 CARDS · 6 NO CARD");
+    lane(480, "cão", "nasal vowel", "nasal at the end of the word", "8 CARDS · 3 NO CARD");
+    lane(800, "ter", "plain vowels", "the nasal faded in the middle", "6 CARDS · 4 NO CARD");
+  })();
+
+  /* ── tables under fig 1 ───────────────────────────────────────────── */
+  (function () {
+    const host = document.getElementById("losstabs");
+
+    wtab(host, "ink-2", "The l was dropped", "no nasal sound left", [
+      { pt: "só", gl: "only, alone", lvl: "A1", forms: "<b>só</b> · pl. sós · cf. sozinho", src: "sōlum · so-o → só",
+        ex: ["Sinto-me <b>só</b>.", "I feel alone.", "new", 1] },
+      { pt: "céu", gl: "sky", lvl: "A2", forms: "o <b>céu</b> · os céus", src: "caelum · ce-o → céu",
+        ex: ["Eu vejo o <b>céu</b>.", "I see the sky.", "card 0222"],
+        flag: "The l did not turn into the u. It fell out, and the old Portuguese word was ceo. The o at the end later became the u you write today." },
+      { pt: "mau", gl: "bad", lvl: "A1", forms: "<b>mau</b> · má · maus · más", src: "malum · ma-o → mau",
+        ex: ["Isto é <b>mau</b>.", "This is bad.", "card 0527"],
+        flag: "Same road as céu: old Portuguese mao, then mau. The feminine má comes from malam the same way — two vowels met and ran together into one." },
+      { pt: "sair", gl: "to leave", lvl: "A1", forms: "eu <b>saio</b> · ele sai", src: "salīre · sa-ir",
+        ex: ["Eu <b>saio</b> de casa às oito.", "I leave home at eight.", "card 0154"] }
+    ]);
+
+    wtab(host, "ink-2", "The l was dropped — and you have no card", "same loss, missing from your deck", off([
+      { pt: "cor", gl: "colour", lvl: "A1", forms: "a <b>cor</b> · as cores", src: "colōrem · co-or → cor",
+        ex: ["Isto é <b>cor</b>-de-rosa.", "This is pink.", "card 0566"],
+        flag: "Your deck has no card for cor on its own. It lives inside cor-de-rosa (card 0566) and cor-de-laranja (card 0565), which literally mean “rose-coloured” and “orange-coloured”. The sentence above is that card's own; the word still has no card. See the deck check at the end." },
+      { pt: "dor", gl: "pain, ache", lvl: "A1", forms: "a <b>dor</b> · as dores", src: "dolōrem · do-or → dor",
+        ex: ["Eu tenho uma <b>dor</b> nas costas.", "I have a pain in my back.", "no card"],
+        flag: "The exact twin of cor above: dolōrem lost its l between vowels, the two o’s ran together, and the word came out one syllable long. English dolorous and condolences keep the l, because books copied them whole." },
+      { pt: "voar", gl: "to fly", lvl: "A2", forms: "eu <b>voo</b> · ele voa", src: "volāre · vo-ar",
+        ex: ["O avião <b>voa</b> alto.", "The plane flies high.", "no card"],
+        flag: "English volatile is built on the same Latin verb, and books kept its l. Do not read avião into this row: that word was built in France on Latin avis “bird”, not on this verb." },
+      { pt: "doer", gl: "to hurt", lvl: "A2", forms: "<b>dói</b>-me · doem-me", src: "dolēre · do-er",
+        ex: ["<b>Dói</b>-me a cabeça.", "My head hurts.", "no card"],
+        flag: "The verb beside dor. In European Portuguese it is normally used this way round — the thing that hurts is the subject, and the person is a pronoun stuck on the verb: dói-me, literally “it hurts to me”." },
+      { pt: "saúde", gl: "health", lvl: "A2", forms: "a <b>saúde</b> · rarely plural", src: "salūtem · sa-ú-de",
+        ex: ["A <b>saúde</b> é importante.", "Health is important.", "no card"],
+        flag: "Same road as sair above: the l stood between two vowels and went, and the two vowels stayed apart. It is a different Latin word, not the same root. saúde is also what you say instead of “cheers” when you raise a glass, and what you say when somebody sneezes." },
+      { pt: "fio", gl: "thread, wire", lvl: "B1", forms: "o <b>fio</b> · os fios", src: "fīlum · fi-o",
+        ex: ["O <b>fio</b> é comprido.", "The thread is long.", "no card"],
+        flag: "English file (a line of people) and profile are the same Latin word. Portuguese dropped the l and was left with two vowels." }
+    ]));
+
+    wtab(host, "ink-2", "The n was dropped, at the end", "the vowel stayed nasal", [
+      { pt: "cão", gl: "dog", lvl: "A1", forms: "o <b>cão</b> · os cães", src: "canem · old pt. can",
+        ex: ["Eu vejo o <b>cão</b>.", "I see the dog.", "card 0221"] },
+      { pt: "pão", gl: "bread", lvl: "A1", forms: "o <b>pão</b> · os pães", src: "pānem · pānēs",
+        ex: ["Eu gosto de <b>pão</b>.", "I like bread.", "card 0356"] },
+      { pt: "mão", gl: "hand", lvl: "A1", forms: "a <b>mão</b> · as mãos", src: "manum · ma-o → mão",
+        ex: ["Eu vejo a <b>mão</b>.", "I see the hand.", "card 0260"] },
+      { pt: "irmã", gl: "sister", lvl: "A1", forms: "a <b>irmã</b> · as irmãs", src: "germānam · old pt. irmãa",
+        ex: ["A minha <b>irmã</b> está em casa.", "My sister is at home.", "card 0331"] },
+      { pt: "bom", gl: "good", lvl: "A1", forms: "<b>bom</b> · boa · bons · boas", src: "bonum · old pt. bõo",
+        ex: ["Isto é <b>bom</b>.", "This is good.", "card 0479"],
+        flag: "Old Portuguese wrote bõo and bõa. In the masculine the two o’s ran together and kept the nasal sound: bom. In the feminine the two vowels stayed apart and the nasal sound faded: boa. The second pair below prints both." },
+      { pt: "um", gl: "one; a, an", lvl: "A1", forms: "<b>um</b> · uma · uns · umas", src: "ūnum · old pt. ũu",
+        ex: ["Eu tenho <b>um</b> irmão e <b>uma</b> irmã.", "I have a brother and a sister.", "new", 1],
+        flag: "The same road as bom, and the feminine went a different way. Old Portuguese wrote ũu and ũa. The masculine ran together into um. In the feminine the nasal sound stayed and was written as an m: ũa became uma. Compare bõa, which lost the nasal and became boa. Spanish kept the n in both: uno, una." },
+      { pt: "não", gl: "no, not", lvl: "A1", forms: "<b>não</b> · never changes", src: "nōn · old pt. non",
+        ex: ["Eu <b>não</b> vejo o cão.", "I do not see the dog.", "new", 1],
+        flag: "The shortest road on the page. Latin nōn already ended in the n, so nothing had to fall away first. The n stopped being a consonant, the vowel kept the nasal sound, and the result looks exactly like cão." },
+      { pt: "amanhã", gl: "tomorrow", lvl: "A1", forms: "<b>amanhã</b> · never changes", src: "ad + *maneāna",
+        ex: ["<b>Amanhã</b> trabalho em casa.", "Tomorrow I work at home.", "new", 1],
+        flag: "Two n’s, two different results. The first one stood before a vowel and built the nh (that is layer 04). The second one stood between two a’s and fell out, which is this layer: manhãa became manhã. The starred form was never written down. Spanish lost neither n: mañana." }
+    ]);
+
+    wtab(host, "ink-2", "The n was dropped at the end — and you have no card", "same loss, missing from your deck", off([
+      { pt: "bem", gl: "well", lvl: "A1", forms: "<b>bem</b> · never changes", src: "bene · old pt. bẽe",
+        ex: ["Estou <b>bem</b>, obrigado.", "I am well, thank you.", "no card"],
+        flag: "You already read this word on the está bem card and inside the sentir-se sentence, and it has no card of its own. Same road as bom and um: the n fell out between the vowels, the two vowels ran together, and the nasal sound is written as an m." },
+      { pt: "grão", gl: "grain, bean", lvl: "B1", forms: "o <b>grão</b> · os grãos", src: "grānum",
+        ex: ["O <b>grão</b> de café é pequeno.", "The coffee bean is small.", "no card"],
+        flag: "English grain came from French, from this Latin word. English corn is its far cousin: it came down through Germanic and was never borrowed. The plural is grãos, so this word also belongs to the ·anum group further down the page." },
+      { pt: "lã", gl: "wool", lvl: "B1", forms: "a <b>lã</b> · as lãs", src: "lānam",
+        ex: ["O casaco é de <b>lã</b>.", "The coat is made of wool.", "no card"],
+        flag: "Latin ·am gave ·ã and not ·ão, exactly as in irmã above. English wool and Latin lānam go back to the same very old word, but wool did not come from Latin. lanolin, the fat in wool, did." }
+    ]));
+
+    wtab(host, "ink-2", "The n was dropped, in the middle", "the nasal sound faded away", [
+      { pt: "pessoa", gl: "person", lvl: "A1", forms: "a <b>pessoa</b> · as pessoas", src: "persōnam · pesso-a",
+        ex: ["Eu vejo a <b>pessoa</b>.", "I see the person.", "card 0268"] },
+      { pt: "moeda", gl: "coin", lvl: "A2", forms: "a <b>moeda</b> · as moedas", src: "monētam · mo-eda",
+        ex: ["Eu vejo a <b>moeda</b>.", "I see the coin.", "card 0300"] },
+      { pt: "ter", gl: "to have", lvl: "A1", forms: "eu <b>tenho</b> · ele tem", src: "tenēre · te-er → ter",
+        ex: ["Eu <b>tenho</b> um carro.", "I have a car.", "card 0168"] },
+      { pt: "vir", gl: "to come", lvl: "A1", forms: "eu <b>venho</b> · ele vem", src: "venīre · ve-ir → vir",
+        ex: ["A encomenda <b>vem</b> hoje.", "The order comes today.", "card 0183"] },
+      { pt: "pôr", gl: "to put", lvl: "A1", forms: "eu <b>ponho</b> · ele põe", src: "pōnere · old pt. põer",
+        ex: ["Eu <b>ponho</b> o livro na mesa.", "I put the book on the table.", "card 0133"],
+        flag: "The third verb with this story, and the shortest of all: pōnere → põer → pôr. It is the only Portuguese verb that ends in neither ·ar, ·er nor ·ir, and that is why. The nasal sound is still there in ponho and in põe." },
+      { pt: "cheio", gl: "full", lvl: "A1", forms: "<b>cheio</b> · cheia · cheios · cheias", src: "plēnum · che-o → cheio",
+        ex: ["A garrafa está <b>cheia</b>.", "The bottle is full.", "card 0485"],
+        flag: "Two rules hit this word: pl· became ch· (layer 01) and the n between vowels was dropped (this layer)." }
+    ]);
+
+    wtab(host, "ink-2", "The n was dropped in the middle — and you have no card", "same loss, missing from your deck", off([
+      { pt: "lua", gl: "moon", lvl: "A1", forms: "a <b>lua</b> · as luas", src: "lūnam · lu-a",
+        ex: ["Eu vejo a <b>lua</b>.", "I see the moon.", "no card"],
+        flag: "The clearest example of the whole page, and your deck does not have it. Latin lūna lost its n and left two plain vowels. English lunar and lunatic kept the n, because books copied them whole. Spanish luna lost nothing." },
+      { pt: "areia", gl: "sand", lvl: "A2", forms: "a <b>areia</b> · as areias", src: "arēnam · are-a",
+        ex: ["A <b>areia</b> da praia é quente.", "The sand on the beach is hot.", "no card"],
+        flag: "A Roman arena was a sand floor — the sand was what soaked up the blood. English took arena from books with the n; Portuguese spoke it and lost the n." },
+      { pt: "veia", gl: "vein", lvl: "B1", forms: "a <b>veia</b> · as veias", src: "vēnam · ve-a",
+        ex: ["Eu vejo a <b>veia</b> no braço.", "I see the vein in the arm.", "no card"],
+        flag: "The same word as English vein, which came through French and kept the n. Card 0271 gives you sangue." },
+      { pt: "coroa", gl: "crown", lvl: "B1", forms: "a <b>coroa</b> · as coroas", src: "corōnam · coro-a",
+        ex: ["O rei usa uma <b>coroa</b>.", "The king wears a crown.", "no card"],
+        flag: "English crown and corona are the same Latin word twice: one worn down through French, one copied whole. Card 0454 gives you rei." }
+    ]));
+  })();
+
+  /* ── fig 2 : the hourglass ────────────────────────────────────────── */
+  (function () {
+    const g = document.getElementById("glass");
+    const L = [
+      { x: 160, col: "var(--a1)", lat: "-anem", pl: "-ães", n: 2, note: "LATIN GROUP 1" },
+      { x: 480, col: "var(--a2)", lat: "-anum", pl: "-ãos", n: 4, note: "LATIN GROUP 2" },
+      { x: 800, col: "var(--a3)", lat: "-ōnem", pl: "-ões", n: 10, note: "LATIN GROUP 3" }
+    ];
+    /* the line is as thick as the group is big: 2, 4 and 10 cards */
+    const w = n => 1.4 + n * 0.46;
+
+    L.forEach(l => {
+      g.appendChild(el("rect", { x: l.x - 88, y: 14, width: 176, height: 50, rx: 3, fill: "none", stroke: l.col, "stroke-width": 1.5 }));
+      const a = el("text", { x: l.x, y: 40, "text-anchor": "middle", "font-size": 22, class: "t-serif", fill: l.col, "font-style": "italic" });
+      a.textContent = l.lat;
+      const b = el("text", { x: l.x, y: 57, "text-anchor": "middle", "font-size": 10, class: "t-mono t-mute" });
+      b.textContent = l.note;
+      g.appendChild(a); g.appendChild(b);
+      g.appendChild(el("path", { d: "M" + l.x + " 64 C " + l.x + " 108, 480 106, 480 138", fill: "none", stroke: l.col, "stroke-width": w(l.n), opacity: .6 }));
+    });
+
+    g.appendChild(el("rect", { x: 372, y: 138, width: 216, height: 72, rx: 3, fill: "var(--paper-2)", stroke: "currentColor", style: "color:var(--rule)" }));
+    const nk = el("text", { x: 480, y: 180, "text-anchor": "middle", "font-size": 42, class: "t-serif" }); nk.textContent = "-ão";
+    const nl = el("text", { x: 480, y: 200, "text-anchor": "middle", "font-size": 10.5, class: "t-mono t-mute" }); nl.textContent = "ALL THREE LOOK THE SAME";
+    const hint = el("text", { x: 604, y: 176, "font-size": 12, class: "t-sub" }); hint.textContent = "the singular tells you nothing";
+    g.appendChild(nk); g.appendChild(nl); g.appendChild(hint);
+
+    L.forEach(l => {
+      g.appendChild(el("path", { d: "M480 210 C 480 250, " + l.x + " 246, " + l.x + " 284", fill: "none", stroke: l.col, "stroke-width": w(l.n), opacity: .6 }));
+      const p = el("text", { x: l.x, y: 316, "text-anchor": "middle", "font-size": 32, class: "t-serif", fill: l.col });
+      p.textContent = l.pl;
+      const c = el("text", { x: l.x, y: 337, "text-anchor": "middle", "font-size": 10.5, class: "t-mono", fill: l.col });
+      c.textContent = l.n + (l.n === 1 ? " CARD" : " CARDS");
+      const e = el("text", { x: l.x, y: 362, "text-anchor": "middle", "font-size": 12, class: "t-sub" });
+      e.textContent = l.pl === "-ães" ? "cão → cães" : l.pl === "-ãos" ? "mão → mãos" : "pulmão → pulmões";
+      g.appendChild(p); g.appendChild(c); g.appendChild(e);
+    });
+
+    /* the two cards the three lanes do not cover */
+    g.appendChild(el("line", { x1: 100, y1: 396, x2: 860, y2: 396, stroke: "var(--rule)", "stroke-width": 1 }));
+    const o1 = el("text", { x: 480, y: 419, "text-anchor": "middle", "font-size": 12.5, class: "t-sub" });
+    o1.textContent = "2 more cards do not take the plural their ending points to: guardião → guardiães / guardiões, verão → verões";
+    g.appendChild(o1);
+  })();
+
+  /* ── the three plural classes ─────────────────────────────────────── */
+  (function () {
+    const host = document.getElementById("classtabs");
+
+    wtab(host, "a1", "Plural ·ães", "Latin ·anem — 2 cards", [
+      { pt: "cão", gl: "dog", lvl: "A1", forms: "o cão · os <b>cães</b>", src: "canem · canēs",
+        ex: ["Eu vejo o <b>cão</b>.", "I see the dog.", "card 0221"] },
+      { pt: "pão", gl: "bread", lvl: "A1", forms: "o pão · os <b>pães</b>", src: "pānem · pānēs",
+        ex: ["Eu gosto de <b>pão</b>.", "I like bread.", "card 0356"] }
+    ]);
+
+    wtab(host, "a1", "Plural ·ães — and you have no card", "same group, missing from your deck", off([
+      { pt: "alemão", gl: "German", lvl: "A1", forms: "o alemão · os <b>alemães</b> · f. alemã", src: "Alemannum",
+        ex: ["O meu amigo é <b>alemão</b>.", "My friend is German.", "no card"],
+        flag: "Not a Latin word to begin with: the Alemanni were a Germanic people, written in Latin as Alemannī. The word reached old Portuguese ending in ·an, the same shape ·anem arrived at, so its plural came out ·ães like cães. The feminine is alemã, like irmã. Card 0431 gives you amigo." },
+      { pt: "capitão", gl: "captain", lvl: "B1", mark: "Sources disagree", forms: "o capitão · os <b>capitães</b>", src: "capitāneum or capitānus",
+        ex: ["O <b>capitão</b> está no barco.", "The captain is on the boat.", "no card"],
+        flag: "From caput “head”, the same Latin word behind chefe on layer 01. Wiktionary sends it through Genoese capitan from Late Latin capitānus; the Portuguese dictionaries take it straight from capitāneum. Under either reading the word reached Portuguese ending in ·an, so it takes ·ães. Card 0463 gives you barco." }
+    ]));
+
+    wtab(host, "a2", "Plural ·ãos and ·ãs", "Latin ·anum — 4 cards", [
+      { pt: "mão", gl: "hand", lvl: "A1", forms: "a mão · as <b>mãos</b>", src: "manum · manūs",
+        ex: ["Eu vejo a <b>mão</b>.", "I see the hand.", "card 0260"],
+        flag: "Feminine, although it ends in -ão. Latin manus was feminine too, so the gender did not change — only the spelling did." },
+      { pt: "irmão", gl: "brother", lvl: "A1", forms: "o irmão · os <b>irmãos</b>", src: "germānum",
+        ex: ["O meu <b>irmão</b> está em casa.", "My brother is at home.", "card 0332"] },
+      { pt: "irmã", gl: "sister", lvl: "A1", forms: "a irmã · as <b>irmãs</b>", src: "germānam",
+        ex: ["A minha <b>irmã</b> está em casa.", "My sister is at home.", "card 0331"],
+        flag: "The feminine of irmão. The Latin ending -am gave -ã, not -ão, so this word never joined the -ão group." },
+      { pt: "chão", gl: "floor", lvl: "A2", forms: "o chão · os <b>chãos</b>", src: "plānum",
+        ex: ["Eu limpo o <b>chão</b>.", "I clean the floor.", "card 0374"],
+        flag: "Also a layer-01 word: Latin pl· became ch·. Two rules, one card." }
+    ]);
+
+    wtab(host, "a2", "Plural ·ãos — and you have no card", "same group, missing from your deck", off([
+      { pt: "grão", gl: "grain, bean", lvl: "B1", forms: "o grão · os <b>grãos</b>", src: "grānum",
+        ex: ["O <b>grão</b> de café é pequeno.", "The coffee bean is small.", "no card"],
+        flag: "The same word as further up the page. It is here because its plural is the plain one, made by adding s to ·ão." },
+      { pt: "cidadão", gl: "citizen", lvl: "B1", forms: "o cidadão · os <b>cidadãos</b>", src: "cidade + ·ão · lat. ·anum",
+        ex: ["Ele é <b>cidadão</b> de Portugal.", "He is a citizen of Portugal.", "no card"],
+        flag: "Built on cidade, card 0282, with the ·anum ending — so it lands in this group by its ending, not by accident. The feminine is cidadã." },
+      { pt: "cristão", gl: "Christian", lvl: "B1", forms: "o cristão · os <b>cristãos</b>", src: "chrīstiānum",
+        ex: ["Ele é <b>cristão</b>.", "He is a Christian.", "no card"],
+        flag: "A Greek word that came through Latin with the ·anum ending already on it, which is why it takes this plural. The feminine is cristã." }
+    ]));
+
+    wtab(host, "a3", "Plural ·ões", "Latin ·ōnem — 10 cards, the biggest group", [
+      { pt: "avião", gl: "plane", lvl: "A1", forms: "o avião · os <b>aviões</b>", src: "fr. avion · avis + ·ão",
+        ex: ["Eu vou de <b>avião</b>.", "I go by plane.", "card 0462"],
+        flag: "The one word in this table that Latin never had. It was made in France in the 19th century, from Latin avis “bird” plus the same ·ão ending, and Portuguese took it whole. The ending still works today, so the plural is aviões like every other word in this table." },
+      { pt: "estação", gl: "station, season", lvl: "A1", forms: "a estação · as <b>estações</b>", src: "statiōnem",
+        ex: ["Eu vejo a <b>estação</b>.", "I see the station.", "card 0291"],
+        flag: "One word, two meanings: a place where you stand, and a part of the year. The root is stāre, the same verb as estar on layer 03." },
+      { pt: "televisão", gl: "television", lvl: "A1", forms: "a televisão · as <b>televisões</b>", src: "·visiōnem",
+        ex: ["Eu limpo a <b>televisão</b>.", "I clean the television.", "card 0389"] },
+      { pt: "portão", gl: "gate", lvl: "A2", forms: "o portão · os <b>portões</b>", src: "porta + ·ão",
+        ex: ["Eu limpo o <b>portão</b>.", "I clean the gate.", "card 0386"],
+        flag: "porta = door. The ending ·ão also means “big”, so portão is a big door. That “big” ending is the same ·ōnem." },
+      { pt: "informação", gl: "information", lvl: "A2", forms: "a informação · as <b>informações</b>", src: "informātiōnem",
+        ex: ["A <b>informação</b> é importante.", "Information is important.", "card 0195"] },
+      { pt: "pulmão", gl: "lung", lvl: "B1", forms: "o pulmão · os <b>pulmões</b>", src: "pulmōnem",
+        ex: ["Eu vejo o <b>pulmão</b>.", "I see the lung.", "card 0269"] },
+      { pt: "ladrão", gl: "thief", lvl: "B1", forms: "o ladrão · os <b>ladrões</b>", src: "latrōnem · old pt. ladron",
+        ex: ["Ele é <b>ladrão</b>.", "He is a thief.", "card 0446"],
+        flag: "Card 0446 reads “He is a burglar.” A ladrão is any thief. This row prints the corrected English. See the deck check at the end of the page." },
+      { pt: "explicação", gl: "explanation", lvl: "B1", forms: "a explicação · as <b>explicações</b>", src: "explicātiōnem",
+        ex: ["A <b>explicação</b> é importante.", "The explanation is important.", "card 0192"],
+        flag: "Card 0192 reads “Explanation is important.” This row prints the corrected English, with The in front, as layer 01 does. See the deck check at the end of the page." },
+      { pt: "atração", gl: "attraction", lvl: "B1", forms: "a atração · as <b>atrações</b>", src: "attractiōnem",
+        ex: ["Eu vejo a <b>atração</b>.", "I see the attraction.", "card 0273"] },
+      { pt: "salvação", gl: "salvation", lvl: "B2", forms: "a salvação · as <b>salvações</b>", src: "salvātiōnem",
+        ex: ["A <b>salvação</b> é importante.", "Salvation is important.", "card 0208"] }
+    ]);
+
+    wtab(host, "a3", "Plural ·ões — and you have no card", "the biggest group, and these are missing from your deck", off([
+      { pt: "coração", gl: "heart", lvl: "A1", mark: "Sources disagree", forms: "o coração · os <b>corações</b>", src: "cor + an ending in ·ōnem",
+        ex: ["Eu vejo o <b>coração</b>.", "I see the heart.", "no card"],
+        flag: "Latin cor was the heart — the same cor behind English cordial, courage and record, which is something learned by heart. What Portuguese hung on it is not settled: Wiktionary reads a Vulgar Latin *corāceōnem, the Portuguese and Spanish dictionaries read a plain big-thing ending, which would make a coração a big heart. Both endings go back to ·ōnem, so the plural is corações either way. Do not confuse it with cor “colour” further up: different Latin word, same three letters." },
+      { pt: "lição", gl: "lesson", lvl: "A1", forms: "a lição · as <b>lições</b>", src: "lectiōnem",
+        ex: ["A <b>lição</b> é fácil.", "The lesson is easy.", "no card"],
+        flag: "You already read this word inside two cards — 0083 and 0045 — and it has none of its own. From legere “to read”, so a lesson is a reading: the same root as English lecture and legible." },
+      { pt: "limão", gl: "lemon", lvl: "A1", mark: "Sources disagree", forms: "o limão · os <b>limões</b>", src: "Arabic laymūn · med. lat. limōnem",
+        ex: ["Eu gosto de <b>limão</b>.", "I like lemon.", "no card"],
+        flag: "Not a Latin word originally: Arabic laymūn, itself from Persian. Sources split on whether Portuguese took it from Arabic directly or through Medieval Latin limōnem. Either road put the ·ōnem ending on it, and that is why the plural is limões." },
+      { pt: "razão", gl: "reason", lvl: "A2", forms: "a razão · as <b>razões</b>", src: "ratiōnem",
+        ex: ["Tu tens <b>razão</b>.", "You are right.", "no card"],
+        flag: "The everyday use is ter razão, “to be right” — literally to have reason. English ration and rational are the same Latin word, copied from books, which is why they still show the t." },
+      { pt: "leão", gl: "lion", lvl: "A2", forms: "o leão · os <b>leões</b>", src: "leōnem",
+        ex: ["Eu vejo o <b>leão</b>.", "I see the lion.", "no card"],
+        flag: "The feminine is leoa, where the n was lost between vowels and nothing nasal is left — the same loss as in coroa above." },
+      { pt: "canção", gl: "song", lvl: "A2", forms: "a canção · as <b>canções</b>", src: "cantiōnem",
+        ex: ["Eu gosto desta <b>canção</b>.", "I like this song.", "no card"],
+        flag: "From cantāre “to sing”. English chant, canticle and enchant come from the same root, and so does the Portuguese verb cantar, which your deck does not have either." }
+    ]));
+
+    wtab(host, "fl", "Does not follow its ending", "the ending does not decide the plural — 2 cards", [
+      { pt: "verão", gl: "summer", lvl: "A1", forms: "o verão · os <b>verões</b>", src: "vērānum",
+        ex: ["O <b>verão</b> é quente.", "Summer is hot.", "new", 1],
+        flag: "By its Latin ending ·anum this should be verãos, like irmãos and chãos. The standard plural is verões instead, taken over from the big ·ões group, and verãos is now dated. So the ending is a good guide and not a law — which is exactly why the page tells you to learn the plural with the word. Card 0539 gives you quente." },
+      { pt: "guardião", gl: "guardian", lvl: "B2", forms: "o guardião · os <b>guardiães / guardiões</b>", src: "Germanic wardja + ·ão",
+        ex: ["Ele é <b>guardião</b>.", "He is a guardian.", "card 0443"],
+        flag: "Never had a Latin ending to follow: the word is Germanic, not Latin. It ended up with two plurals instead, guardiães and guardiões, one from each of the other groups. Your deck lists the plural as -s, which gives guardiãos, and that is not one of them. See the deck check at the end of the page." }
+    ]);
+  })();
+
+  /* ── minimal pairs ────────────────────────────────────────────────── */
+  (function () {
+    const P = [
+      { duo: '<span class="l">sol</span><span class="vs">vs</span><span class="r">só</span>',
+        lat: "sōlem · sōlum",
+        why: "Two different Latin words. In <em>sōlem</em> “sun” the ending <em>-em</em> fell away very early, so the <em>l</em> came to stand last in the word and stayed. In <em>sōlum</em> “alone” the <em>-o</em> stayed, so the <em>l</em> kept a vowel on each side and went. The meaning had no part in this. Only the position did.",
+        exs: [["Eu vejo o <b>sol</b>.", "I see the sun.", "card 0242", 0],
+              ["Sinto-me <b>só</b>.", "I feel alone.", "new", 1]] },
+      { duo: '<span class="l">bom</span><span class="vs">vs</span><span class="r">boa</span>',
+        lat: "bonum · bonam",
+        why: "One Latin word, two genders. Both lost the <em>n</em> between vowels, and old Portuguese wrote <em>bõo</em> and <em>bõa</em>. In the masculine the two <em>o</em>’s ran together into one nasal sound: <em>bom</em>. In the feminine the two vowels stayed apart and the nasal sound faded: <em>boa</em>. The same split gave <em>leão</em> and <em>leoa</em>.",
+        exs: [["Isto é <b>bom</b>.", "This is good.", "card 0479", 0],
+              ["A comida é <b>boa</b>.", "The food is good.", "new", 1]] },
+      { cl: "var(--a1)", cr: "var(--a2)",
+        duo: '<span class="l">cão → cães</span><span class="vs">·</span><span class="r">mão → mãos</span>',
+        lat: "canem, canēs &nbsp;&nbsp;|&nbsp;&nbsp; manum, manūs",
+        why: "The same ending in the singular, two different endings in the plural. The Latin <em>-ēs</em> and <em>-ūs</em> are still there. You only hear them when you make the word plural. This is the one pair on this page that carries the ending colours, blue and green, because this pair is about the ending.",
+        exs: [["Eu vejo o <b>cão</b>.", "I see the dog.", "card 0221", 0],
+              ["Eu vejo a <b>mão</b>.", "I see the hand.", "card 0260", 0]] },
+      { duo: '<span class="l">ter</span><span class="vs">·</span><span class="r">vir</span>',
+        lat: "tenēre · venīre",
+        why: "Two of your most used verbs are short for one reason: the <em>n</em> in the middle was dropped and three syllables became one. Spanish kept its <em>n</em>: <em>tener</em>, <em>venir</em>. The <em>n</em> is still in the Portuguese forms <em>tenho</em> and <em>venho</em>. <em>pôr</em> is the third one, from <em>pōnere</em>, and the shortest of all.",
+        exs: [["Eu <b>tenho</b> um carro.", "I have a car.", "card 0168", 0],
+              ["A encomenda <b>vem</b> hoje.", "The order comes today.", "card 0183", 0],
+              ["Eu <b>ponho</b> o livro na mesa.", "I put the book on the table.", "card 0133", 0]] }
+    ];
+    const host = document.getElementById("pairs");
+    P.forEach(p => {
+      const d = document.createElement("div");
+      d.className = "pr";
+      if (p.cl) d.style.setProperty("--cl", p.cl);
+      if (p.cr) d.style.setProperty("--cr", p.cr);
+      d.innerHTML = '<div class="duo">' + p.duo + '</div><div class="lat">' + p.lat +
+        '</div><div class="why">' + p.why + '</div><div class="exs">' +
+        p.exs.map(e => ex(e[0], e[1], e[2], e[3])).join("") + "</div>";
+      host.appendChild(d);
+    });
+  })();
+
+  /* ── the -ção machine ─────────────────────────────────────────────── */
+  (function () {
+    const R = [
+      ["explanation", "explicação", "B1", 0, ["A <b>explicação</b> é importante.", "The explanation is important.", "card 0192"]],
+      ["information", "informação", "A2", 0, ["A <b>informação</b> é importante.", "Information is important.", "card 0195"]],
+      ["station", "estação", "A1", 0, ["Eu vejo a <b>estação</b>.", "I see the station.", "card 0291"]],
+      ["attraction", "atração", "B1", 0, ["Eu vejo a <b>atração</b>.", "I see the attraction.", "card 0273"]],
+      ["salvation", "salvação", "B2", 0, ["A <b>salvação</b> é importante.", "Salvation is important.", "card 0208"]],
+      ["direction", "direção", "A2", 1, ["Ele vai na <b>direção</b> da praia.", "He is going in the direction of the beach.", "no card"]],
+      ["nation", "nação", "B1", 1, ["Portugal é uma <b>nação</b> pequena.", "Portugal is a small nation.", "no card"]],
+      ["condition", "condição", "B1", 1, ["Eu aceito, com uma <b>condição</b>.", "I accept, on one condition.", "no card"]],
+      ["tradition", "tradição", "B1", 1, ["É uma <b>tradição</b> da família.", "It is a family tradition.", "no card"]]
+    ];
+    const c = document.getElementById("conv");
+
+    const head = document.createElement("div");
+    head.className = "conv-rule";
+    head.innerHTML =
+      '<span class="r">·tion &nbsp;→&nbsp; ·ção</span>' +
+      '<span class="tags"><span class="tag">always feminine</span>' +
+      '<span class="tag">plural ·ções</span><span class="tag">from ·tiōnem</span>' +
+      '<span class="tag">5 cards · 4 no card</span></span>';
+    c.appendChild(head);
+
+    R.forEach(r => {
+      const d = document.createElement("div");
+      d.className = "crow" + (r[3] ? " gen" : "");
+      d.innerHTML =
+        '<span class="en">' + r[0] + "</span>" +
+        '<span class="pt">a ' + r[1] + " " + lv(r[2]) + "</span>" +
+        '<span class="forms">as ' + r[1].replace(/ção$/, "ções") + "</span>" +
+        ex(r[4][0], r[4][1], r[4][2]);
+      c.appendChild(d);
+    });
+  })();
+</script>
