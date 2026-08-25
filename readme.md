@@ -1,3 +1,7 @@
+---
+permalink: /readme.html
+---
+
 # myanki2
 
 Portuguese vocabulary → Anki, driven from plain-text word lists and synced over
