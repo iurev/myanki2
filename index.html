@@ -1,0 +1,51 @@
+---
+layout: default
+title: MyAnki pages
+---
+
+<style>
+  .page-search { width: 100%; box-sizing: border-box; padding: .75rem 1rem; margin: 1rem 0; border: 1px solid #d0d7de; border-radius: .5rem; font-size: 1rem; }
+  .page-list { columns: 2 20rem; padding-left: 1.25rem; }
+  .page-list li { break-inside: avoid; margin: .35rem 0; }
+  .page-count { color: #57606a; }
+  @media (max-width: 600px) { .page-list { columns: 1; } }
+</style>
+
+# MyAnki pages
+
+Use the search box or pick any Markdown or HTML page below.
+
+<input class="page-search" id="page-search" type="search" placeholder="Search pages…" aria-label="Search pages">
+<p class="page-count" id="page-count"></p>
+
+<ul class="page-list" id="page-list">
+{% assign sorted_pages = site.pages | sort: "path" %}
+{% for item in sorted_pages %}
+  {% assign extension = item.path | split: "." | last | downcase %}
+  {% if item.path != "index.html" %}
+    {% if extension == "md" or extension == "html" %}
+    <li><a href="{{ item.url | relative_url }}">{{ item.path }}</a></li>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</ul>
+
+<script>
+  const search = document.querySelector('#page-search');
+  const items = [...document.querySelectorAll('#page-list li')];
+  const count = document.querySelector('#page-count');
+
+  function filterPages() {
+    const query = search.value.trim().toLocaleLowerCase();
+    let visible = 0;
+    for (const item of items) {
+      const match = item.textContent.toLocaleLowerCase().includes(query);
+      item.hidden = !match;
+      if (match) visible += 1;
+    }
+    count.textContent = `${visible} page${visible === 1 ? '' : 's'}`;
+  }
+
+  search.addEventListener('input', filterPages);
+  filterPages();
+</script>

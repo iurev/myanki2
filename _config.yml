@@ -1,0 +1,5 @@
+title: MyAnki
+description: Browse the Markdown and HTML pages in this repository.
+theme: jekyll-theme-cayman
+include:
+  - .claude
