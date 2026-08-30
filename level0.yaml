@@ -113,7 +113,7 @@ cards:
 
 # Prepositions and contractions
 - {id: '0825', word: em, front: 'O livro está em casa.', back: 'The book is at home.\nem = in/at; no article is used in em casa.', tags: [level0]}
-- {id: '0826', word: no, front: 'O cão está no parque.', back: 'The dog is in the park.\nno = em + o.', tags: [level0]}
+- {id: '0826', word: 'no', front: 'O cão está no parque.', back: 'The dog is in the park.\nno = em + o.', tags: [level0]}
 - {id: '0827', word: na, front: 'A chave está na mesa.', back: 'The key is on the table.\nna = em + a.', tags: [level0]}
 - {id: '0828', word: num, front: 'A Maria trabalha num café.', back: 'Maria works in a café.\nnum = em + um.', tags: [level0]}
 - {id: '0829', word: numa, front: 'O Pedro mora numa casa pequena.', back: 'Pedro lives in a small house.\nnuma = em + uma.', tags: [level0]}
