@@ -1,232 +1,222 @@
 # Level 0 Portuguese reading cards.
 # Front = normal Portuguese sentence.
 # Back = English translation + short explanation of the target small/function word.
+# Cards deliberately repeat function words in different positions/uses for reading fluency.
 # All cards are tagged level0 in Anki.
 deck: words
 model: words
 cards:
-  - id: "0725"
-    word: "e"
-    front: "Tenho pão e queijo."
-    back: "I have bread and cheese.\ne = and; from Latin et."
-    tags: [level0]
-  - id: "0726"
-    word: "mas"
-    front: "Está frio, mas a janela está aberta."
-    back: "It is cold, but the window is open.\nmas = but; contrasts two ideas."
-    tags: [level0]
-  - id: "0727"
-    word: "porque"
-    front: "Eu como porque tenho fome."
-    back: "I eat because I am hungry.\nporque introduces the reason: por + que historically."
-    tags: [level0]
-  - id: "0728"
-    word: "por isso"
-    front: "Tenho fome. Por isso, como pão."
-    back: "I am hungry. So / therefore, I eat bread.\npor isso introduces a result: literally roughly 'because of that'."
-    tags: [level0]
-  - id: "0729"
-    word: "se"
-    front: "Se tenho tempo, vou ao café."
-    back: "If I have time, I go to the café.\nse = if; introduces a condition."
-    tags: [level0]
-  - id: "0730"
-    word: "quando"
-    front: "Quando acordo, bebo café."
-    back: "When I wake up, I drink coffee.\nquando = when; introduces the time of another action."
-    tags: [level0]
-  - id: "0731"
-    word: "que"
-    front: "Eu sei que o Pedro está em casa."
-    back: "I know that Pedro is at home.\nque = that here; it introduces another idea/clause."
-    tags: [level0]
-  - id: "0732"
-    word: "onde"
-    front: "Este é o café onde a Maria trabalha."
-    back: "This is the café where Maria works.\nonde = where; connects a place to what happens there."
-    tags: [level0]
-  - id: "0733"
-    word: "antes de"
-    front: "Eu como antes de ir para o trabalho."
-    back: "I eat before going to work.\nantes de = before; before a verb, Portuguese uses de + infinitive."
-    tags: [level0]
-  - id: "0734"
-    word: "depois"
-    front: "Eu como e depois bebo café."
-    back: "I eat and afterwards / then I drink coffee.\ndepois = afterwards / then."
-    tags: [level0]
-  - id: "0735"
-    word: "em"
-    front: "Eu moro em Lisboa."
-    back: "I live in Lisbon.\nem = in / at / on, depending on context."
-    tags: [level0]
-  - id: "0736"
-    word: "de"
-    front: "A chave está perto de casa."
-    back: "The key is near the house / home.\nde = of / from; it also links expressions such as perto de."
-    tags: [level0]
-  - id: "0737"
-    word: "a"
-    front: "Eu acordo às oito."
-    back: "I wake up at eight.\na is a preposition here meaning at; a + as (horas) = às."
-    tags: [level0]
-  - id: "0738"
-    word: "para"
-    front: "O Rui vai para o quarto."
-    back: "Rui goes to the bedroom.\npara marks a destination/direction; here: goes to the bedroom."
-    tags: [level0]
-  - id: "0739"
-    word: "com"
-    front: "Eu bebo café com leite."
-    back: "I drink coffee with milk.\ncom = with."
-    tags: [level0]
-  - id: "0740"
-    word: "sem"
-    front: "Eu bebo café sem açúcar."
-    back: "I drink coffee without sugar.\nsem = without."
-    tags: [level0]
-  - id: "0741"
-    word: "por"
-    front: "Eu passo pelo parque."
-    back: "I pass through the park.\npor can mean through/by/for/because of; por + o = pelo."
-    tags: [level0]
-  - id: "0742"
-    word: "também"
-    front: "A Maria também trabalha aqui."
-    back: "Maria also works here.\ntambém = also / too."
-    tags: [level0]
-  - id: "0743"
-    word: "ainda"
-    front: "O Pedro ainda está em casa."
-    back: "Pedro is still at home.\nainda = still here; in other contexts it can mean yet."
-    tags: [level0]
-  - id: "0744"
-    word: "já"
-    front: "A Maria já está no trabalho."
-    back: "Maria is already at work.\njá = already / by now; context can change the best English translation."
-    tags: [level0]
-  - id: "0745"
-    word: "só"
-    front: "Hoje só bebo água."
-    back: "Today I only drink water.\nsó = only / just."
-    tags: [level0]
-  - id: "0746"
-    word: "muito"
-    front: "O João está muito cansado."
-    back: "João is very tired.\nmuito = very before an adjective; it can also mean much/a lot."
-    tags: [level0]
-  - id: "0747"
-    word: "pouco"
-    front: "Hoje tenho pouco tempo."
-    back: "Today I have little time.\npouco = little / not much."
-    tags: [level0]
-  - id: "0748"
-    word: "mais"
-    front: "Quero mais água."
-    back: "I want more water.\nmais = more."
-    tags: [level0]
-  - id: "0749"
-    word: "menos"
-    front: "Hoje tenho menos trabalho."
-    back: "Today I have less work.\nmenos = less / fewer."
-    tags: [level0]
-  - id: "0750"
-    word: "sempre"
-    front: "Eu sempre bebo café de manhã."
-    back: "I always drink coffee in the morning.\nsempre = always."
-    tags: [level0]
-  - id: "0751"
-    word: "nunca"
-    front: "Eu nunca bebo café à noite."
-    back: "I never drink coffee at night.\nnunca = never."
-    tags: [level0]
-  - id: "0752"
-    word: "às vezes"
-    front: "Às vezes, vou ao parque de manhã."
-    back: "Sometimes I go to the park in the morning.\nàs vezes = sometimes; literally 'at the times'."
-    tags: [level0]
-  - id: "0753"
-    word: "aqui"
-    front: "O meu livro está aqui."
-    back: "My book is here.\naqui = here, near the speaker."
-    tags: [level0]
-  - id: "0754"
-    word: "ali"
-    front: "O café está ali."
-    back: "The café is there.\nali = there, at a place away from the speaker."
-    tags: [level0]
-  - id: "0755"
-    word: "agora"
-    front: "Agora estou em casa."
-    back: "Now I am at home.\nagora = now."
-    tags: [level0]
-  - id: "0756"
-    word: "então"
-    front: "Tenho tempo, então vou ao café."
-    back: "I have time, so / then I go to the café.\nentão can mean then or so, depending on the logical/time relationship."
-    tags: [level0]
-  - id: "0757"
-    word: "assim"
-    front: "Eu faço assim."
-    back: "I do it like this.\nassim = like this / in this way; it can also mean thus/so."
-    tags: [level0]
-  - id: "0758"
-    word: "como"
-    front: "Eu trabalho como professor."
-    back: "I work as a teacher.\ncomo = as / like here; it can also mean how, and como is also 'I eat' from comer."
-    tags: [level0]
-  - id: "0759"
-    word: "por exemplo"
-    front: "Gosto de fruta, por exemplo, maçãs."
-    back: "I like fruit, for example, apples.\npor exemplo = for example."
-    tags: [level0]
-  - id: "0760"
-    word: "porém"
-    front: "Está frio. Porém, o João vai ao parque."
-    back: "It is cold. However, João goes to the park.\nporém = however; it introduces contrast, like a more formal mas."
-    tags: [level0]
-  - id: "0761"
-    word: "enquanto"
-    front: "Eu bebo café enquanto leio o livro."
-    back: "I drink coffee while I read the book.\nenquanto = while; two things happen during the same time."
-    tags: [level0]
-  - id: "0762"
-    word: "até"
-    front: "Eu trabalho até às oito."
-    back: "I work until eight.\naté = until / up to; in other contexts it can mean even."
-    tags: [level0]
-  - id: "0763"
-    word: "desde"
-    front: "Eu trabalho aqui desde segunda-feira."
-    back: "I have worked / have been working here since Monday.\ndesde = since / from; it marks a starting point."
-    tags: [level0]
-  - id: "0764"
-    word: "durante"
-    front: "Eu trabalho durante a manhã."
-    back: "I work during the morning.\ndurante = during; it marks a span of time."
-    tags: [level0]
-  - id: "0765"
-    word: "entre"
-    front: "O café fica entre a casa e o parque."
-    back: "The café is between the house and the park.\nentre = between / among."
-    tags: [level0]
-  - id: "0766"
-    word: "sobre"
-    front: "O livro está sobre a mesa."
-    back: "The book is on / over the table.\nsobre = on / over; it can also mean about."
-    tags: [level0]
-  - id: "0767"
-    word: "contra"
-    front: "A cadeira está contra a parede."
-    back: "The chair is against the wall.\ncontra = against."
-    tags: [level0]
-  - id: "0768"
-    word: "apesar de"
-    front: "Apesar do frio, o Pedro vai ao parque."
-    back: "Despite the cold, Pedro goes to the park.\napesar de = despite / in spite of; de + o frio contracts to do frio."
-    tags: [level0]
-  - id: "0769"
-    word: "embora"
-    front: "Embora esteja frio, o Pedro vai ao parque."
-    back: "Although it is cold, Pedro goes to the park.\nembora = although here. It often introduces a contrasting subordinate clause."
-    tags: [level0]
+- {id: '0725', word: e, front: 'Tenho pão e queijo.', back: 'I have bread and cheese.\ne = and; from Latin et.', tags: [level0]}
+- {id: '0726', word: mas, front: 'Está frio, mas a janela está aberta.', back: 'It is cold, but the window is open.\nmas = but; contrasts two ideas.', tags: [level0]}
+- {id: '0727', word: porque, front: 'Eu como porque tenho fome.', back: 'I eat because I am hungry.\nporque introduces the reason.', tags: [level0]}
+- {id: '0728', word: por isso, front: 'Tenho fome. Por isso, como pão.', back: 'I am hungry. Therefore, I eat bread.\npor isso introduces a result: roughly because of that.', tags: [level0]}
+- {id: '0729', word: se, front: 'Se tenho tempo, vou ao café.', back: 'If I have time, I go to the café.\nse = if; introduces a condition.', tags: [level0]}
+- {id: '0730', word: quando, front: 'Quando acordo, bebo café.', back: 'When I wake up, I drink coffee.\nquando = when.', tags: [level0]}
+- {id: '0731', word: que, front: 'Eu sei que o Pedro está em casa.', back: 'I know that Pedro is at home.\nque = that here; it introduces another clause.', tags: [level0]}
+- {id: '0732', word: onde, front: 'Este é o café onde a Maria trabalha.', back: 'This is the café where Maria works.\nonde = where.', tags: [level0]}
+- {id: '0733', word: antes de, front: 'Eu como antes de ir para o trabalho.', back: 'I eat before going to work.\nantes de + infinitive = before doing something.', tags: [level0]}
+- {id: '0734', word: depois, front: 'Eu como e depois bebo café.', back: 'I eat and then I drink coffee.\ndepois = afterwards / then.', tags: [level0]}
+- {id: '0735', word: em, front: 'Eu moro em Lisboa.', back: 'I live in Lisbon.\nem = in / at / on depending on context.', tags: [level0]}
+- {id: '0736', word: de, front: 'A chave está perto de casa.', back: 'The key is near home.\nde = of / from; it also links expressions such as perto de.', tags: [level0]}
+- {id: '0737', word: a, front: 'Eu acordo às oito.', back: 'I wake up at eight.\nPreposition a + as (horas) = às.', tags: [level0]}
+- {id: '0738', word: para, front: 'O Rui vai para o quarto.', back: 'Rui goes to the bedroom.\npara marks destination/direction here.', tags: [level0]}
+- {id: '0739', word: com, front: 'Eu bebo café com leite.', back: 'I drink coffee with milk.\ncom = with.', tags: [level0]}
+- {id: '0740', word: sem, front: 'Eu bebo café sem açúcar.', back: 'I drink coffee without sugar.\nsem = without.', tags: [level0]}
+- {id: '0741', word: por, front: 'Eu passo pelo parque.', back: 'I pass through the park.\npor can mean through/by/for/because of; por + o = pelo.', tags: [level0]}
+- {id: '0742', word: também, front: 'A Maria também trabalha aqui.', back: 'Maria also works here.\ntambém = also / too.', tags: [level0]}
+- {id: '0743', word: ainda, front: 'O Pedro ainda está em casa.', back: 'Pedro is still at home.\nainda = still here; it can also mean yet.', tags: [level0]}
+- {id: '0744', word: já, front: 'A Maria já está no trabalho.', back: 'Maria is already at work.\njá = already / by now here.', tags: [level0]}
+- {id: '0745', word: só, front: 'Hoje só bebo água.', back: 'Today I only drink water.\nsó = only / just.', tags: [level0]}
+- {id: '0746', word: muito, front: 'O João está muito cansado.', back: 'João is very tired.\nmuito = very before an adjective.', tags: [level0]}
+- {id: '0747', word: pouco, front: 'Hoje tenho pouco tempo.', back: 'Today I have little time.\npouco = little / not much.', tags: [level0]}
+- {id: '0748', word: mais, front: 'Quero mais água.', back: 'I want more water.\nmais = more.', tags: [level0]}
+- {id: '0749', word: menos, front: 'Hoje tenho menos trabalho.', back: 'Today I have less work.\nmenos = less / fewer.', tags: [level0]}
+- {id: '0750', word: sempre, front: 'Eu sempre bebo café de manhã.', back: 'I always drink coffee in the morning.\nsempre = always.', tags: [level0]}
+- {id: '0751', word: nunca, front: 'Eu nunca bebo café à noite.', back: 'I never drink coffee at night.\nnunca = never.', tags: [level0]}
+- {id: '0752', word: às vezes, front: 'Às vezes, vou ao parque de manhã.', back: 'Sometimes I go to the park in the morning.\nàs vezes = sometimes.', tags: [level0]}
+- {id: '0753', word: aqui, front: 'O meu livro está aqui.', back: 'My book is here.\naqui = here.', tags: [level0]}
+- {id: '0754', word: ali, front: 'O café está ali.', back: 'The café is there.\nali = there.', tags: [level0]}
+- {id: '0755', word: agora, front: 'Agora estou em casa.', back: 'Now I am at home.\nagora = now.', tags: [level0]}
+- {id: '0756', word: então, front: 'Tenho tempo, então vou ao café.', back: 'I have time, so I go to the café.\nentão can mean then or so.', tags: [level0]}
+- {id: '0757', word: assim, front: 'Eu faço assim.', back: 'I do it like this.\nassim = like this / in this way.', tags: [level0]}
+- {id: '0758', word: como, front: 'Eu trabalho como professor.', back: 'I work as a teacher.\ncomo = as / like here; como can also mean how.', tags: [level0]}
+- {id: '0759', word: por exemplo, front: 'Gosto de fruta, por exemplo, maçãs.', back: 'I like fruit, for example apples.\npor exemplo = for example.', tags: [level0]}
+- {id: '0760', word: porém, front: 'Está frio. Porém, o João vai ao parque.', back: 'It is cold. However, João goes to the park.\nporém = however.', tags: [level0]}
+- {id: '0761', word: enquanto, front: 'Eu bebo café enquanto leio o livro.', back: 'I drink coffee while I read the book.\nenquanto = while.', tags: [level0]}
+- {id: '0762', word: até, front: 'Eu trabalho até às oito.', back: 'I work until eight.\naté = until / up to here.', tags: [level0]}
+- {id: '0763', word: desde, front: 'Eu trabalho aqui desde segunda-feira.', back: 'I have been working here since Monday.\ndesde = since / from; starting point.', tags: [level0]}
+- {id: '0764', word: durante, front: 'Eu trabalho durante a manhã.', back: 'I work during the morning.\ndurante = during.', tags: [level0]}
+- {id: '0765', word: entre, front: 'O café fica entre a casa e o parque.', back: 'The café is between the house and the park.\nentre = between / among.', tags: [level0]}
+- {id: '0766', word: sobre, front: 'O livro está sobre a mesa.', back: 'The book is on the table.\nsobre = on / over; it can also mean about.', tags: [level0]}
+- {id: '0767', word: contra, front: 'A cadeira está contra a parede.', back: 'The chair is against the wall.\ncontra = against.', tags: [level0]}
+- {id: '0768', word: apesar de, front: 'Apesar do frio, o Pedro vai ao parque.', back: 'Despite the cold, Pedro goes to the park.\napesar de = despite; de + o = do.', tags: [level0]}
+- {id: '0769', word: embora, front: 'Embora esteja frio, o Pedro vai ao parque.', back: 'Although it is cold, Pedro goes to the park.\nembora = although here.', tags: [level0]}
+
+# Repeated exposure: connectors and clause structure
+- {id: '0770', word: e, front: 'A Ana lê e o Pedro trabalha.', back: 'Ana reads and Pedro works.\ne joins two clauses.', tags: [level0]}
+- {id: '0771', word: e, front: 'Vou à cozinha e bebo água.', back: 'I go to the kitchen and drink water.\ne joins two actions.', tags: [level0]}
+- {id: '0772', word: e, front: 'A casa é pequena e bonita.', back: 'The house is small and beautiful.\ne joins two descriptions.', tags: [level0]}
+- {id: '0773', word: mas, front: 'Tenho fome, mas não tenho comida.', back: 'I am hungry, but I have no food.\nmas introduces contrast.', tags: [level0]}
+- {id: '0774', word: mas, front: 'O café é pequeno, mas é bonito.', back: 'The café is small, but it is beautiful.\nmas contrasts two descriptions.', tags: [level0]}
+- {id: '0775', word: mas, front: 'Quero sair, mas está frio.', back: 'I want to go out, but it is cold.\nmas = but.', tags: [level0]}
+- {id: '0776', word: porque, front: 'Bebo água porque tenho sede.', back: 'I drink water because I am thirsty.\nThe clause after porque gives the reason.', tags: [level0]}
+- {id: '0777', word: porque, front: 'Fico em casa porque está frio.', back: 'I stay at home because it is cold.\nporque = because.', tags: [level0]}
+- {id: '0778', word: porque, front: 'A Maria vai ao café porque tem tempo.', back: 'Maria goes to the café because she has time.\nResult first; reason after porque.', tags: [level0]}
+- {id: '0779', word: por isso, front: 'Está frio. Por isso, fico em casa.', back: 'It is cold. Therefore, I stay at home.\nCause first; por isso introduces the result.', tags: [level0]}
+- {id: '0780', word: por isso, front: 'Não tenho tempo. Por isso, não vou ao café.', back: 'I do not have time. Therefore, I do not go to the café.\npor isso = therefore / so.', tags: [level0]}
+- {id: '0781', word: por isso, front: 'A Ana tem sede. Por isso, bebe água.', back: 'Ana is thirsty. Therefore, she drinks water.\npor isso points back to the previous reason.', tags: [level0]}
+- {id: '0782', word: se, front: 'Se está frio, fico em casa.', back: 'If it is cold, I stay at home.\nPattern: Se X, Y.', tags: [level0]}
+- {id: '0783', word: se, front: 'Vou ao parque se tenho tempo.', back: 'I go to the park if I have time.\nPattern: Y se X.', tags: [level0]}
+- {id: '0784', word: se, front: 'Se a Maria tem fome, come pão.', back: 'If Maria is hungry, she eats bread.\nse introduces a condition.', tags: [level0]}
+- {id: '0785', word: se, front: 'Se não tenho trabalho, fico em casa.', back: 'If I have no work, I stay at home.\nse + negative condition.', tags: [level0]}
+- {id: '0786', word: quando, front: 'Bebo café quando acordo.', back: 'I drink coffee when I wake up.\nPattern: Y quando X.', tags: [level0]}
+- {id: '0787', word: quando, front: 'Quando tenho fome, como pão.', back: 'When I am hungry, I eat bread.\nPattern: Quando X, Y.', tags: [level0]}
+- {id: '0788', word: quando, front: 'Quando a Ana chega, bebe água.', back: 'When Ana arrives, she drinks water.\nquando introduces the time clause.', tags: [level0]}
+- {id: '0789', word: quando, front: 'Vou para casa quando estou cansado.', back: 'I go home when I am tired.\nMain action + quando + time/condition.', tags: [level0]}
+- {id: '0790', word: que, front: 'A Maria diz que está cansada.', back: 'Maria says that she is tired.\nque introduces what Maria says.', tags: [level0]}
+- {id: '0791', word: que, front: 'Eu vejo que a porta está aberta.', back: 'I see that the door is open.\nque introduces a clause.', tags: [level0]}
+- {id: '0792', word: que, front: 'Tenho um cão que é pequeno.', back: 'I have a dog that is small.\nHere que = that/which and points back to cão.', tags: [level0]}
+- {id: '0793', word: que, front: 'Este é o livro que eu leio.', back: 'This is the book that I read.\nque connects livro with information about it.', tags: [level0]}
+- {id: '0794', word: que, front: 'O Pedro sabe que a Maria trabalha aqui.', back: 'Pedro knows that Maria works here.\nque = that; clause connector.', tags: [level0]}
+- {id: '0795', word: onde, front: 'Esta é a casa onde eu moro.', back: 'This is the house where I live.\nonde refers to a place.', tags: [level0]}
+- {id: '0796', word: onde, front: 'Vou ao café onde o João trabalha.', back: 'I go to the café where João works.\nonde = where.', tags: [level0]}
+- {id: '0797', word: onde, front: 'O parque onde corro fica perto de casa.', back: 'The park where I run is near home.\nPlace + onde + action there.', tags: [level0]}
+
+# Time and sequence
+- {id: '0798', word: antes de, front: 'Bebo água antes de sair.', back: 'I drink water before leaving.\nantes de + infinitive.', tags: [level0]}
+- {id: '0799', word: antes de, front: 'A Maria come antes do trabalho.', back: 'Maria eats before work.\nantes de + o trabalho = antes do trabalho.', tags: [level0]}
+- {id: '0800', word: antes de, front: 'Antes de dormir, leio um livro.', back: 'Before sleeping, I read a book.\nThe antes de phrase can come first.', tags: [level0]}
+- {id: '0801', word: depois, front: 'Trabalho e depois vou para casa.', back: 'I work and then I go home.\ndepois marks the later action.', tags: [level0]}
+- {id: '0802', word: depois, front: 'Primeiro como. Depois, bebo café.', back: 'First I eat. Then I drink coffee.\ndepois can begin a new sentence.', tags: [level0]}
+- {id: '0803', word: depois, front: 'Depois do trabalho, vou ao parque.', back: 'After work, I go to the park.\ndepois de + o = depois do.', tags: [level0]}
+- {id: '0804', word: sempre, front: 'A Maria está sempre aqui de manhã.', back: 'Maria is always here in the morning.\nsempre = always.', tags: [level0]}
+- {id: '0805', word: sempre, front: 'Quando tenho fome, como sempre pão.', back: 'When I am hungry, I always eat bread.\nsempre marks habitual frequency.', tags: [level0]}
+- {id: '0806', word: nunca, front: 'O Pedro nunca trabalha à noite.', back: 'Pedro never works at night.\nnunca = never.', tags: [level0]}
+- {id: '0807', word: nunca, front: 'Nunca bebo café depois das oito.', back: 'I never drink coffee after eight.\nnunca can appear before the verb.', tags: [level0]}
+- {id: '0808', word: às vezes, front: 'Eu trabalho em casa às vezes.', back: 'I work at home sometimes.\nàs vezes can also appear later in the sentence.', tags: [level0]}
+- {id: '0809', word: às vezes, front: 'Às vezes, a Maria bebe café.', back: 'Sometimes Maria drinks coffee.\nàs vezes often appears at the beginning.', tags: [level0]}
+- {id: '0810', word: agora, front: 'Eu estava no café; agora estou em casa.', back: 'I was at the café; now I am at home.\nagora = now, contrasting with an earlier time.', tags: [level0]}
+- {id: '0811', word: agora, front: 'Agora não tenho tempo.', back: 'Now I do not have time.\nagora sets the current time.', tags: [level0]}
+- {id: '0812', word: ainda, front: 'A Maria ainda trabalha no café.', back: 'Maria still works at the café.\nainda = still; the situation continues.', tags: [level0]}
+- {id: '0813', word: ainda, front: 'Ainda não tenho fome.', back: 'I am not hungry yet.\nainda não = not yet.', tags: [level0]}
+- {id: '0814', word: ainda, front: 'O café ainda está aberto.', back: 'The café is still open.\nainda = still.', tags: [level0]}
+- {id: '0815', word: já, front: 'Já tenho fome.', back: 'I am already hungry.\njá = already / by now.', tags: [level0]}
+- {id: '0816', word: já, front: 'O João já não trabalha aqui.', back: 'João no longer works here.\njá não = no longer / not anymore.', tags: [level0]}
+- {id: '0817', word: já, front: 'A porta já está aberta.', back: 'The door is already open.\njá shows the state has already been reached.', tags: [level0]}
+- {id: '0818', word: até, front: 'O café está aberto até às nove.', back: 'The café is open until nine.\naté marks an end point in time.', tags: [level0]}
+- {id: '0819', word: até, front: 'Vou até ao parque.', back: 'I go as far as / to the park.\naté can mark an end point in space; até a + o = até ao.', tags: [level0]}
+- {id: '0820', word: até, front: 'Até o Pedro sabe isso.', back: 'Even Pedro knows that.\naté can also mean even.', tags: [level0]}
+- {id: '0821', word: desde, front: 'Estou aqui desde as oito.', back: 'I have been here since eight.\ndesde marks the starting time.', tags: [level0]}
+- {id: '0822', word: desde, front: 'Vou desde casa até ao parque.', back: 'I go from home to the park.\ndesde = from when marking a starting point.', tags: [level0]}
+- {id: '0823', word: durante, front: 'Leio durante uma hora.', back: 'I read for/during one hour.\ndurante marks a duration.', tags: [level0]}
+- {id: '0824', word: durante, front: 'Durante o trabalho, bebo água.', back: 'During work, I drink water.\ndurante + noun = during that period.', tags: [level0]}
+
+# Prepositions and contractions
+- {id: '0825', word: em, front: 'O livro está em casa.', back: 'The book is at home.\nem = in/at; no article is used in em casa.', tags: [level0]}
+- {id: '0826', word: no, front: 'O cão está no parque.', back: 'The dog is in the park.\nno = em + o.', tags: [level0]}
+- {id: '0827', word: na, front: 'A chave está na mesa.', back: 'The key is on the table.\nna = em + a.', tags: [level0]}
+- {id: '0828', word: num, front: 'A Maria trabalha num café.', back: 'Maria works in a café.\nnum = em + um.', tags: [level0]}
+- {id: '0829', word: numa, front: 'O Pedro mora numa casa pequena.', back: 'Pedro lives in a small house.\nnuma = em + uma.', tags: [level0]}
+- {id: '0830', word: de, front: 'Eu venho de Lisboa.', back: 'I come from Lisbon.\nde = from here.', tags: [level0]}
+- {id: '0831', word: do, front: 'A chave está ao lado do livro.', back: 'The key is next to the book.\ndo = de + o.', tags: [level0]}
+- {id: '0832', word: da, front: 'A cadeira está perto da janela.', back: 'The chair is near the window.\nda = de + a.', tags: [level0]}
+- {id: '0833', word: dos, front: 'A casa fica perto dos cafés.', back: 'The house is near the cafés.\ndos = de + os.', tags: [level0]}
+- {id: '0834', word: das, front: 'O parque fica perto das casas.', back: 'The park is near the houses.\ndas = de + as.', tags: [level0]}
+- {id: '0835', word: a, front: 'Vou a Lisboa amanhã.', back: 'I am going to Lisbon tomorrow.\na can mark movement to a destination.', tags: [level0]}
+- {id: '0836', word: ao, front: 'Vou ao café.', back: 'I go to the café.\nao = a + o.', tags: [level0]}
+- {id: '0837', word: à, front: 'Vou à cozinha.', back: 'I go to the kitchen.\nà = a + a.', tags: [level0]}
+- {id: '0838', word: aos, front: 'Vou aos cafés perto de casa.', back: 'I go to the cafés near home.\naos = a + os.', tags: [level0]}
+- {id: '0839', word: às, front: 'Acordo às sete.', back: 'I wake up at seven.\nàs = a + as; horas is understood.', tags: [level0]}
+- {id: '0840', word: para, front: 'Vou para casa depois do trabalho.', back: 'I go home after work.\npara emphasizes the destination.', tags: [level0]}
+- {id: '0841', word: para, front: 'Este café é para a Maria.', back: 'This coffee is for Maria.\npara can mark intended recipient/purpose.', tags: [level0]}
+- {id: '0842', word: para, front: 'Tenho tempo para ler.', back: 'I have time to read.\npara + infinitive can express purpose/opportunity.', tags: [level0]}
+- {id: '0843', word: com, front: 'Vou ao parque com o Pedro.', back: 'I go to the park with Pedro.\ncom = with, accompaniment.', tags: [level0]}
+- {id: '0844', word: com, front: 'A Maria escreve com uma caneta.', back: 'Maria writes with a pen.\ncom can mark the instrument used.', tags: [level0]}
+- {id: '0845', word: sem, front: 'O Pedro sai sem o casaco.', back: 'Pedro goes out without the coat.\nsem = without.', tags: [level0]}
+- {id: '0846', word: sem, front: 'Eu trabalho sem café.', back: 'I work without coffee.\nsem = without.', tags: [level0]}
+- {id: '0847', word: por, front: 'Obrigado por tudo.', back: 'Thank you for everything.\npor = for here; it gives the reason/object of thanks.', tags: [level0]}
+- {id: '0848', word: por, front: 'A porta está aberta por causa do calor.', back: 'The door is open because of the heat.\npor causa de = because of.', tags: [level0]}
+- {id: '0849', word: pelo, front: 'Ando pelo parque.', back: 'I walk through/around the park.\npelo = por + o.', tags: [level0]}
+- {id: '0850', word: pela, front: 'Ando pela casa.', back: 'I walk through/around the house.\npela = por + a.', tags: [level0]}
+- {id: '0851', word: entre, front: 'A mesa está entre a porta e a janela.', back: 'The table is between the door and the window.\nentre = between.', tags: [level0]}
+- {id: '0852', word: entre, front: 'O livro está entre os dois cafés.', back: 'The book is between the two cafés.\nentre can be followed directly by an article.', tags: [level0]}
+- {id: '0853', word: sobre, front: 'Falamos sobre o trabalho.', back: 'We talk about work.\nsobre = about here.', tags: [level0]}
+- {id: '0854', word: sobre, front: 'A chave está sobre o livro.', back: 'The key is on the book.\nsobre = on/over here.', tags: [level0]}
+- {id: '0855', word: contra, front: 'O cão está contra a porta.', back: 'The dog is against the door.\ncontra = against physically.', tags: [level0]}
+- {id: '0856', word: contra, front: 'O Pedro é contra esta ideia.', back: 'Pedro is against this idea.\ncontra can express opposition.', tags: [level0]}
+
+# Degree, quantity and focus
+- {id: '0857', word: também, front: 'Eu também tenho um cão.', back: 'I also have a dog.\ntambém adds another similar fact.', tags: [level0]}
+- {id: '0858', word: também, front: 'O café é pequeno e também é barato.', back: 'The café is small and it is also cheap.\ntambém = also.', tags: [level0]}
+- {id: '0859', word: só, front: 'Só tenho um livro.', back: 'I only have one book.\nsó limits the quantity.', tags: [level0]}
+- {id: '0860', word: só, front: 'O Pedro trabalha só de manhã.', back: 'Pedro works only in the morning.\nsó limits the time.', tags: [level0]}
+- {id: '0861', word: muito, front: 'Eu trabalho muito.', back: 'I work a lot.\nmuito modifies the verb: a lot.', tags: [level0]}
+- {id: '0862', word: muito, front: 'Tenho muito trabalho.', back: 'I have a lot of work.\nmuito modifies a noun here.', tags: [level0]}
+- {id: '0863', word: muito, front: 'A casa é muito pequena.', back: 'The house is very small.\nmuito + adjective = very.', tags: [level0]}
+- {id: '0864', word: pouco, front: 'Eu trabalho pouco hoje.', back: 'I work little today.\npouco modifies the action.', tags: [level0]}
+- {id: '0865', word: pouco, front: 'Bebo pouca água.', back: 'I drink little water.\npouca agrees with feminine água.', tags: [level0]}
+- {id: '0866', word: mais, front: 'A Maria trabalha mais do que o Pedro.', back: 'Maria works more than Pedro.\nmais = more; mais do que introduces comparison.', tags: [level0]}
+- {id: '0867', word: mais, front: 'Quero um pouco mais de café.', back: 'I want a little more coffee.\nmais de + noun = more of something.', tags: [level0]}
+- {id: '0868', word: menos, front: 'Hoje bebo menos café.', back: 'Today I drink less coffee.\nmenos = less.', tags: [level0]}
+- {id: '0869', word: menos, front: 'O João trabalha menos do que a Ana.', back: 'João works less than Ana.\nmenos do que = less than.', tags: [level0]}
+
+# Place and discourse words
+- {id: '0870', word: aqui, front: 'Eu trabalho aqui.', back: 'I work here.\naqui = here.', tags: [level0]}
+- {id: '0871', word: aqui, front: 'Aqui está o meu livro.', back: 'Here is my book.\naqui can come first for focus.', tags: [level0]}
+- {id: '0872', word: ali, front: 'A Maria trabalha ali.', back: 'Maria works there.\nali = there.', tags: [level0]}
+- {id: '0873', word: ali, front: 'Ali está o café.', back: 'There is the café.\nali can come first.', tags: [level0]}
+- {id: '0874', word: então, front: 'Está tarde. Então, vou para casa.', back: 'It is late. So, I am going home.\nentão introduces a consequence here.', tags: [level0]}
+- {id: '0875', word: então, front: 'Primeiro trabalho e então vou ao café.', back: 'First I work and then I go to the café.\nentão = then here; sequence.', tags: [level0]}
+- {id: '0876', word: assim, front: 'A Maria faz o café assim.', back: 'Maria makes the coffee like this.\nassim = in this way.', tags: [level0]}
+- {id: '0877', word: assim, front: 'Está frio; assim, fico em casa.', back: 'It is cold; thus/so, I stay at home.\nassim can introduce a consequence in more formal usage.', tags: [level0]}
+- {id: '0878', word: como, front: 'A Ana trabalha como médica.', back: 'Ana works as a doctor.\ncomo = as; role/function.', tags: [level0]}
+- {id: '0879', word: como, front: 'A casa é pequena como a minha.', back: 'The house is small like mine.\ncomo = like in a comparison.', tags: [level0]}
+- {id: '0880', word: como, front: 'Como está o Pedro?', back: 'How is Pedro?\ncomo = how in a question.', tags: [level0]}
+- {id: '0881', word: por exemplo, front: 'Tenho animais, por exemplo, um cão.', back: 'I have animals, for example a dog.\npor exemplo gives an example.', tags: [level0]}
+- {id: '0882', word: por exemplo, front: 'Podemos ir a um café, por exemplo.', back: 'We can go to a café, for example.\npor exemplo can also appear at the end.', tags: [level0]}
+
+# Richer connectors, still short sentences
+- {id: '0883', word: porém, front: 'Quero sair; porém, não tenho tempo.', back: 'I want to go out; however, I do not have time.\nporém = however; formal contrast.', tags: [level0]}
+- {id: '0884', word: porém, front: 'A casa é pequena. É, porém, bonita.', back: 'The house is small. It is, however, beautiful.\nporém can occur inside the clause.', tags: [level0]}
+- {id: '0885', word: enquanto, front: 'A Maria trabalha enquanto o Pedro lê.', back: 'Maria works while Pedro reads.\nenquanto joins simultaneous actions.', tags: [level0]}
+- {id: '0886', word: enquanto, front: 'Enquanto como, bebo água.', back: 'While I eat, I drink water.\nEnquanto X, Y.', tags: [level0]}
+- {id: '0887', word: enquanto, front: 'O João fica em casa enquanto está frio.', back: 'João stays at home while it is cold.\nenquanto = while.', tags: [level0]}
+- {id: '0888', word: apesar de, front: 'Apesar da chuva, vou ao parque.', back: 'Despite the rain, I go to the park.\napesar de + a = apesar da.', tags: [level0]}
+- {id: '0889', word: apesar de, front: 'Vou ao café apesar do frio.', back: 'I go to the café despite the cold.\napesar de can follow the main clause.', tags: [level0]}
+- {id: '0890', word: apesar de, front: 'Apesar de estar cansado, trabalho.', back: 'Despite being tired, I work.\napesar de + infinitive.', tags: [level0]}
+- {id: '0891', word: embora, front: 'Embora esteja cansada, a Maria trabalha.', back: 'Although she is tired, Maria works.\nembora introduces contrast; esteja is subjunctive.', tags: [level0]}
+- {id: '0892', word: embora, front: 'O Pedro vai ao parque, embora esteja frio.', back: 'Pedro goes to the park although it is cold.\nThe embora clause can follow the main clause.', tags: [level0]}
+
+# Mixed Level 0+ reading: known structures combined
+- {id: '0893', word: mixed, front: 'Quando acordo, vou à cozinha e bebo água.', back: 'When I wake up, I go to the kitchen and drink water.\nquando + à (a+a) + e.', tags: [level0]}
+- {id: '0894', word: mixed, front: 'Se tenho fome, como pão e depois bebo café.', back: 'If I am hungry, I eat bread and then drink coffee.\nse + e + depois.', tags: [level0]}
+- {id: '0895', word: mixed, front: 'O Pedro está em casa porque está cansado.', back: 'Pedro is at home because he is tired.\nem casa + porque.', tags: [level0]}
+- {id: '0896', word: mixed, front: 'Está frio, mas a Maria vai ao parque.', back: 'It is cold, but Maria goes to the park.\nmas + ao (a+o).', tags: [level0]}
+- {id: '0897', word: mixed, front: 'A Maria trabalha num café que fica perto de casa.', back: 'Maria works in a café that is near home.\nnum = em+um; que describes café; perto de = near.', tags: [level0]}
+- {id: '0898', word: mixed, front: 'Eu sei que o João está no café onde a Ana trabalha.', back: 'I know that João is in the café where Ana works.\nque introduces a clause; no = em+o; onde refers to café.', tags: [level0]}
+- {id: '0899', word: mixed, front: 'Antes de trabalhar, como pão e bebo água.', back: 'Before working, I eat bread and drink water.\nantes de + infinitive; e joins actions.', tags: [level0]}
+- {id: '0900', word: mixed, front: 'Depois do trabalho, vou para casa porque estou cansado.', back: 'After work, I go home because I am tired.\ndepois de+o = depois do; para destination; porque reason.', tags: [level0]}
+- {id: '0901', word: mixed, front: 'Se está frio, fico em casa; se está calor, vou ao parque.', back: 'If it is cold, I stay home; if it is hot, I go to the park.\nTwo parallel se conditions.', tags: [level0]}
+- {id: '0902', word: mixed, front: 'Quando tenho tempo, leio um livro que está na mesa.', back: 'When I have time, I read a book that is on the table.\nquando + relative que + na (em+a).', tags: [level0]}
+- {id: '0903', word: mixed, front: 'Tenho sede, por isso vou à cozinha e bebo água.', back: 'I am thirsty, so I go to the kitchen and drink water.\npor isso result; à = a+a; e.', tags: [level0]}
+- {id: '0904', word: mixed, front: 'A Maria ainda está no trabalho, mas o Pedro já está em casa.', back: 'Maria is still at work, but Pedro is already at home.\nainda = still; mas contrast; já = already.', tags: [level0]}
+- {id: '0905', word: mixed, front: 'Às vezes trabalho em casa porque o café está fechado.', back: 'Sometimes I work at home because the café is closed.\nàs vezes frequency; porque reason.', tags: [level0]}
+- {id: '0906', word: mixed, front: 'O café fica entre o parque e a casa onde moro.', back: 'The café is between the park and the house where I live.\nentre + onde.', tags: [level0]}
+- {id: '0907', word: mixed, front: 'Eu trabalho até às oito e depois vou para casa.', back: 'I work until eight and then go home.\naté às = until eight; depois = then.', tags: [level0]}
+- {id: '0908', word: mixed, front: 'Desde segunda-feira, trabalho num café perto de casa.', back: 'Since Monday, I have been working in a café near home.\ndesde starting point; num = em+um; perto de.', tags: [level0]}
+- {id: '0909', word: mixed, front: 'Enquanto a Ana trabalha, o João fica em casa.', back: 'While Ana works, João stays at home.\nenquanto introduces simultaneous time.', tags: [level0]}
+- {id: '0910', word: mixed, front: 'Apesar do frio, vou ao parque porque tenho tempo.', back: 'Despite the cold, I go to the park because I have time.\napesar do contrast; porque reason.', tags: [level0]}
+- {id: '0911', word: mixed, front: 'Embora esteja cansado, ainda tenho muito trabalho.', back: 'Although I am tired, I still have a lot of work.\nembora contrast; ainda still; muito quantity.', tags: [level0]}
+- {id: '0912', word: mixed, front: 'Só bebo café de manhã; à noite, bebo água.', back: 'I only drink coffee in the morning; at night, I drink water.\nsó limits; de manhã vs à noite.', tags: [level0]}
+- {id: '0913', word: mixed, front: 'O Pedro trabalha mais, mas a Maria tem menos tempo.', back: 'Pedro works more, but Maria has less time.\nmais / menos contrast joined by mas.', tags: [level0]}
+- {id: '0914', word: mixed, front: 'A chave está debaixo da mesa, ao lado da cadeira.', back: 'The key is under the table, next to the chair.\ndebaixo de+a = debaixo da; ao lado de+a = ao lado da.', tags: [level0]}
+- {id: '0915', word: mixed, front: 'O livro está na mesa perto da janela.', back: 'The book is on the table near the window.\nna = em+a; perto de+a = perto da.', tags: [level0]}
+- {id: '0916', word: mixed, front: 'Vou ao café com a Ana, mas o Pedro fica em casa.', back: 'I go to the café with Ana, but Pedro stays at home.\nao = a+o; com; mas.', tags: [level0]}
+- {id: '0917', word: mixed, front: 'O João sai sem casaco porque está calor.', back: 'João goes out without a coat because it is hot.\nsem = without; porque gives reason.', tags: [level0]}
+- {id: '0918', word: mixed, front: 'Passo pelo parque quando vou para o trabalho.', back: 'I pass through the park when I go to work.\npelo = por+o; quando; para destination.', tags: [level0]}
+- {id: '0919', word: mixed, front: 'Este é o café onde trabalho e onde também como.', back: 'This is the café where I work and where I also eat.\nRepeated onde; também = also.', tags: [level0]}
+- {id: '0920', word: mixed, front: 'Eu sei que a Maria nunca bebe café à noite.', back: 'I know that Maria never drinks coffee at night.\nque clause; nunca frequency; à = a+a.', tags: [level0]}
+- {id: '0921', word: mixed, front: 'Quando o café está fechado, vou para casa.', back: 'When the café is closed, I go home.\nquando clause first; para destination.', tags: [level0]}
+- {id: '0922', word: mixed, front: 'Se o livro está aqui, a chave está ali.', back: 'If the book is here, the key is there.\nse condition; aqui vs ali.', tags: [level0]}
+- {id: '0923', word: mixed, front: 'Agora tenho pouco tempo, por isso leio menos.', back: 'Now I have little time, so I read less.\nagora + pouco + por isso + menos.', tags: [level0]}
+- {id: '0924', word: mixed, front: 'A Maria diz que vai ao café depois do trabalho.', back: 'Maria says that she goes to the café after work.\nque clause; ao = a+o; depois de+o = depois do.', tags: [level0]}
