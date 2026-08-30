@@ -1,0 +1,232 @@
+# Level 0 Portuguese reading cards.
+# Front = normal Portuguese sentence.
+# Back = English translation + short explanation of the target small/function word.
+# All cards are tagged level0 in Anki.
+deck: words
+model: words
+cards:
+  - id: "0725"
+    word: "e"
+    front: "Tenho pão e queijo."
+    back: "I have bread and cheese.\ne = and; from Latin et."
+    tags: [level0]
+  - id: "0726"
+    word: "mas"
+    front: "Está frio, mas a janela está aberta."
+    back: "It is cold, but the window is open.\nmas = but; contrasts two ideas."
+    tags: [level0]
+  - id: "0727"
+    word: "porque"
+    front: "Eu como porque tenho fome."
+    back: "I eat because I am hungry.\nporque introduces the reason: por + que historically."
+    tags: [level0]
+  - id: "0728"
+    word: "por isso"
+    front: "Tenho fome. Por isso, como pão."
+    back: "I am hungry. So / therefore, I eat bread.\npor isso introduces a result: literally roughly 'because of that'."
+    tags: [level0]
+  - id: "0729"
+    word: "se"
+    front: "Se tenho tempo, vou ao café."
+    back: "If I have time, I go to the café.\nse = if; introduces a condition."
+    tags: [level0]
+  - id: "0730"
+    word: "quando"
+    front: "Quando acordo, bebo café."
+    back: "When I wake up, I drink coffee.\nquando = when; introduces the time of another action."
+    tags: [level0]
+  - id: "0731"
+    word: "que"
+    front: "Eu sei que o Pedro está em casa."
+    back: "I know that Pedro is at home.\nque = that here; it introduces another idea/clause."
+    tags: [level0]
+  - id: "0732"
+    word: "onde"
+    front: "Este é o café onde a Maria trabalha."
+    back: "This is the café where Maria works.\nonde = where; connects a place to what happens there."
+    tags: [level0]
+  - id: "0733"
+    word: "antes de"
+    front: "Eu como antes de ir para o trabalho."
+    back: "I eat before going to work.\nantes de = before; before a verb, Portuguese uses de + infinitive."
+    tags: [level0]
+  - id: "0734"
+    word: "depois"
+    front: "Eu como e depois bebo café."
+    back: "I eat and afterwards / then I drink coffee.\ndepois = afterwards / then."
+    tags: [level0]
+  - id: "0735"
+    word: "em"
+    front: "Eu moro em Lisboa."
+    back: "I live in Lisbon.\nem = in / at / on, depending on context."
+    tags: [level0]
+  - id: "0736"
+    word: "de"
+    front: "A chave está perto de casa."
+    back: "The key is near the house / home.\nde = of / from; it also links expressions such as perto de."
+    tags: [level0]
+  - id: "0737"
+    word: "a"
+    front: "Eu acordo às oito."
+    back: "I wake up at eight.\na is a preposition here meaning at; a + as (horas) = às."
+    tags: [level0]
+  - id: "0738"
+    word: "para"
+    front: "O Rui vai para o quarto."
+    back: "Rui goes to the bedroom.\npara marks a destination/direction; here: goes to the bedroom."
+    tags: [level0]
+  - id: "0739"
+    word: "com"
+    front: "Eu bebo café com leite."
+    back: "I drink coffee with milk.\ncom = with."
+    tags: [level0]
+  - id: "0740"
+    word: "sem"
+    front: "Eu bebo café sem açúcar."
+    back: "I drink coffee without sugar.\nsem = without."
+    tags: [level0]
+  - id: "0741"
+    word: "por"
+    front: "Eu passo pelo parque."
+    back: "I pass through the park.\npor can mean through/by/for/because of; por + o = pelo."
+    tags: [level0]
+  - id: "0742"
+    word: "também"
+    front: "A Maria também trabalha aqui."
+    back: "Maria also works here.\ntambém = also / too."
+    tags: [level0]
+  - id: "0743"
+    word: "ainda"
+    front: "O Pedro ainda está em casa."
+    back: "Pedro is still at home.\nainda = still here; in other contexts it can mean yet."
+    tags: [level0]
+  - id: "0744"
+    word: "já"
+    front: "A Maria já está no trabalho."
+    back: "Maria is already at work.\njá = already / by now; context can change the best English translation."
+    tags: [level0]
+  - id: "0745"
+    word: "só"
+    front: "Hoje só bebo água."
+    back: "Today I only drink water.\nsó = only / just."
+    tags: [level0]
+  - id: "0746"
+    word: "muito"
+    front: "O João está muito cansado."
+    back: "João is very tired.\nmuito = very before an adjective; it can also mean much/a lot."
+    tags: [level0]
+  - id: "0747"
+    word: "pouco"
+    front: "Hoje tenho pouco tempo."
+    back: "Today I have little time.\npouco = little / not much."
+    tags: [level0]
+  - id: "0748"
+    word: "mais"
+    front: "Quero mais água."
+    back: "I want more water.\nmais = more."
+    tags: [level0]
+  - id: "0749"
+    word: "menos"
+    front: "Hoje tenho menos trabalho."
+    back: "Today I have less work.\nmenos = less / fewer."
+    tags: [level0]
+  - id: "0750"
+    word: "sempre"
+    front: "Eu sempre bebo café de manhã."
+    back: "I always drink coffee in the morning.\nsempre = always."
+    tags: [level0]
+  - id: "0751"
+    word: "nunca"
+    front: "Eu nunca bebo café à noite."
+    back: "I never drink coffee at night.\nnunca = never."
+    tags: [level0]
+  - id: "0752"
+    word: "às vezes"
+    front: "Às vezes, vou ao parque de manhã."
+    back: "Sometimes I go to the park in the morning.\nàs vezes = sometimes; literally 'at the times'."
+    tags: [level0]
+  - id: "0753"
+    word: "aqui"
+    front: "O meu livro está aqui."
+    back: "My book is here.\naqui = here, near the speaker."
+    tags: [level0]
+  - id: "0754"
+    word: "ali"
+    front: "O café está ali."
+    back: "The café is there.\nali = there, at a place away from the speaker."
+    tags: [level0]
+  - id: "0755"
+    word: "agora"
+    front: "Agora estou em casa."
+    back: "Now I am at home.\nagora = now."
+    tags: [level0]
+  - id: "0756"
+    word: "então"
+    front: "Tenho tempo, então vou ao café."
+    back: "I have time, so / then I go to the café.\nentão can mean then or so, depending on the logical/time relationship."
+    tags: [level0]
+  - id: "0757"
+    word: "assim"
+    front: "Eu faço assim."
+    back: "I do it like this.\nassim = like this / in this way; it can also mean thus/so."
+    tags: [level0]
+  - id: "0758"
+    word: "como"
+    front: "Eu trabalho como professor."
+    back: "I work as a teacher.\ncomo = as / like here; it can also mean how, and como is also 'I eat' from comer."
+    tags: [level0]
+  - id: "0759"
+    word: "por exemplo"
+    front: "Gosto de fruta, por exemplo, maçãs."
+    back: "I like fruit, for example, apples.\npor exemplo = for example."
+    tags: [level0]
+  - id: "0760"
+    word: "porém"
+    front: "Está frio. Porém, o João vai ao parque."
+    back: "It is cold. However, João goes to the park.\nporém = however; it introduces contrast, like a more formal mas."
+    tags: [level0]
+  - id: "0761"
+    word: "enquanto"
+    front: "Eu bebo café enquanto leio o livro."
+    back: "I drink coffee while I read the book.\nenquanto = while; two things happen during the same time."
+    tags: [level0]
+  - id: "0762"
+    word: "até"
+    front: "Eu trabalho até às oito."
+    back: "I work until eight.\naté = until / up to; in other contexts it can mean even."
+    tags: [level0]
+  - id: "0763"
+    word: "desde"
+    front: "Eu trabalho aqui desde segunda-feira."
+    back: "I have worked / have been working here since Monday.\ndesde = since / from; it marks a starting point."
+    tags: [level0]
+  - id: "0764"
+    word: "durante"
+    front: "Eu trabalho durante a manhã."
+    back: "I work during the morning.\ndurante = during; it marks a span of time."
+    tags: [level0]
+  - id: "0765"
+    word: "entre"
+    front: "O café fica entre a casa e o parque."
+    back: "The café is between the house and the park.\nentre = between / among."
+    tags: [level0]
+  - id: "0766"
+    word: "sobre"
+    front: "O livro está sobre a mesa."
+    back: "The book is on / over the table.\nsobre = on / over; it can also mean about."
+    tags: [level0]
+  - id: "0767"
+    word: "contra"
+    front: "A cadeira está contra a parede."
+    back: "The chair is against the wall.\ncontra = against."
+    tags: [level0]
+  - id: "0768"
+    word: "apesar de"
+    front: "Apesar do frio, o Pedro vai ao parque."
+    back: "Despite the cold, Pedro goes to the park.\napesar de = despite / in spite of; de + o frio contracts to do frio."
+    tags: [level0]
+  - id: "0769"
+    word: "embora"
+    front: "Embora esteja frio, o Pedro vai ao parque."
+    back: "Although it is cold, Pedro goes to the park.\nembora = although here. It often introduces a contrasting subordinate clause."
+    tags: [level0]
