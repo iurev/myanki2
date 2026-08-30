@@ -16,6 +16,9 @@ If a card has a companion markdown file at `<yaml-stem>/<word>.md` (e.g.
 `verbs/permanecer.md` for verbs.yaml), its contents are appended to the back of
 the card (after an <hr>). No extra Anki field is created.
 
+Optional per-card `tags` are added to the Anki note. Example:
+    tags: [level0]
+
 Usage:
     python3 sync.py [path/to/config.yaml | all] [id]
     python3 sync.py verbs.yaml            # sync every card in one file
@@ -128,15 +131,19 @@ def sync_file(path, only_id):
             back = f"{back}\n\n<hr>\n\n{extra}"
         fields = {"id": c["id"], "word": c["word"],
                   "front": br(c["front"]), "back": br(back)}
+        tags = [str(tag) for tag in c.get("tags", [])]
         note_id = find_note(deck, c["id"])
         if note_id:
             anki("updateNoteFields", note={"id": note_id, "fields": fields})
+            if tags:
+                anki("addTags", notes=[note_id], tags=" ".join(tags))
             updated += 1
             print(f"  ~ {c['id']} {c['word']}")
         else:
-            anki("addNote", note={"deckName": deck, "modelName": model,
-                                  "fields": fields,
-                                  "options": {"allowDuplicate": False}})
+            note_id = anki("addNote", note={"deckName": deck, "modelName": model,
+                                            "fields": fields,
+                                            "tags": tags,
+                                            "options": {"allowDuplicate": False}})
             added += 1
             print(f"  + {c['id']} {c['word']}")
     return added, updated
