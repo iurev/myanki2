@@ -20,13 +20,10 @@ cards:
     (m: afiado · f: afiada · pl: afiados/afiadas)'
   chapter: —
 - id: '0471'
+  suspended: "agradável = pleasant/nice is useful, but “Isto é pleasant” is generic and several adjectives could fit."
   word: agradável
-  front: Isto é {{pleasant}}.
-  back: 'Isto é agradável.
-
-    This is pleasant.
-
-    (m/f: agradável · pl: agradáveis)'
+  front: "Foi uma conversa {{pleasant}}."
+  back: "Foi uma conversa agradável.<br>It was a pleasant conversation.<br><br><b>agradável</b> = pleasant/agreeable/nice. A concrete noun makes the adjective easier to interpret."
   chapter: —
 - id: '0472'
   word: alto
@@ -65,13 +62,10 @@ cards:
     (m: atrasado · f: atrasada · pl: atrasados/atrasadas)'
   chapter: —
 - id: '0476'
+  suspended: "atribulado is not neutral “eventful”; it usually suggests troubled/hectic/full of difficulties. The English cue can be positively 'eventful', so it is semantically off."
   word: atribulado
-  front: Isto é {{eventful}}.
-  back: 'Isto é atribulado.
-
-    This is eventful.
-
-    (m: atribulado · f: atribulada · pl: atribulados/atribuladas)'
+  front: "Foi um dia {{hectic}}."
+  back: "Foi um dia atribulado.<br>It was a hectic/troubled day.<br><br><b>atribulado</b> means troubled, hectic, full of difficulties/events — stronger and less neutral than generic English “eventful”."
   chapter: —
 - id: '0477'
   word: baixo
@@ -195,13 +189,10 @@ cards:
     (m: confuso · f: confusa · pl: confusos/confusas)'
   chapter: —
 - id: 0490
+  suspended: "contente and feliz are both currently cued as “happy”, creating a direct synonym collision."
   word: contente
-  front: Ele está {{happy}}.
-  back: 'Ele está contente.
-
-    He is happy.
-
-    (m/f: contente · pl: contentes)'
+  front: "Estou muito {{pleased}} com o resultado."
+  back: "Estou muito contente com o resultado.<br>I'm very pleased with the result.<br><br><b>contente</b> often means pleased/content/satisfied with a situation. This helps separate it from the broader <b>feliz</b> = happy."
   chapter: —
 - id: 0491
   skipped: "reason_similar"
@@ -288,13 +279,10 @@ cards:
     (m: desiludido · f: desiludida · pl: desiludidos/desiludidas)'
   chapter: —
 - id: '0500'
+  suspended: "despenteado literally focuses on uncombed/messy hair; English “disheveled” can imply clothes/general appearance too."
   word: despenteado
-  front: Ele está {{disheveled}}.
-  back: 'Ele está despenteado.
-
-    He is disheveled.
-
-    (m: despenteado · f: despenteada · pl: despenteados/despenteadas)'
+  front: "Acordei com o cabelo {{messy / uncombed}}."
+  back: "Acordei com o cabelo despenteado.<br>I woke up with messy/uncombed hair.<br><br><b>despenteado</b> specifically concerns hair that is untidy/uncombed; generic “dishevelled” is too broad."
   chapter: —
 - id: '0501'
   skipped: "reason_similar"
@@ -380,13 +368,10 @@ cards:
     (m: fechado · f: fechada · pl: fechados/fechadas)'
   chapter: —
 - id: '0510'
+  suspended: "feliz duplicates contente under the exact English cue “happy”."
   word: feliz
-  front: Ele está {{happy}}.
-  back: 'Ele está feliz.
-
-    He is happy.
-
-    (m/f: feliz · pl: felizes)'
+  front: "Ela parece {{happy}} com a vida."
+  back: "Ela parece feliz com a vida.<br>She seems happy with life.<br><br><b>feliz</b> = happy. Contrast <b>contente com X</b> = pleased/content with X."
   chapter: —
 - id: '0511'
   skipped: "reason_similar"
@@ -512,23 +497,17 @@ cards:
     (m: lento · f: lenta · pl: lentos/lentas)'
   chapter: —
 - id: '0524'
+  suspended: "lindo overlaps with bonito/belo under “beautiful”. Without nuance/context the answer is not unique."
   word: lindo
-  front: Isto é {{beautiful}}.
-  back: 'Isto é lindo.
-
-    This is beautiful.
-
-    (m: lindo · f: linda · pl: lindos/lindas)'
+  front: "Que vista {{beautiful / lovely}}!"
+  back: "Que vista linda!<br>What a beautiful/lovely view!<br><br><b>lindo/linda</b> is strongly positive and very natural in compliments/exclamations; context separates it from other “beautiful” synonyms."
   chapter: —
 - id: '0525'
+  suspended: "luminoso is a transparent cognate and can mean luminous/bright/light-filled. Generic sentence gives no clue which sense."
   skipped: "reason_similar"
   word: luminoso
-  front: Isto é {{luminous}}.
-  back: 'Isto é luminoso.
-
-    This is luminous.
-
-    (m: luminoso · f: luminosa · pl: luminosos/luminosas)'
+  front: "Este quarto é muito {{bright}}."
+  back: "Este quarto é muito luminoso.<br>This room is very bright.<br><br><b>luminoso</b> = full of light / bright / luminous. A room is a natural everyday context."
   chapter: —
 - id: '0526'
   word: maluco
@@ -660,6 +639,7 @@ cards:
     (m/f: quente · pl: quentes)'
   chapter: —
 - id: '0540'
+  suspended: "rabugento is a valid word but relatively low-value compared with more common mood vocabulary; 21 reps + 2 lapses suggest high scheduling cost for little payoff."
   word: rabugento
   front: Ele é {{grumpy}}.
   back: 'Ele é rabugento.
@@ -708,14 +688,11 @@ cards:
     (m: restrito · f: restrita · pl: restritos/restritas)'
   chapter: —
 - id: '0545'
+  suspended: "English “secret” can be noun or adjective; secreto is adjective, while segredo is the noun. Current cue does not mark part of speech clearly."
   skipped: "reason_similar"
   word: secreto
-  front: Isto é {{secret}}.
-  back: 'Isto é secreto.
-
-    This is secret.
-
-    (m: secreto · f: secreta · pl: secretos/secretas)'
+  front: "É um documento {{secret}}."
+  back: "É um documento secreto.<br>It's a secret document.<br><br><b>secreto</b> is the adjective “secret”. The noun “a secret” is <b>segredo</b>."
   chapter: —
 - id: '0546'
   word: seguro
@@ -737,6 +714,7 @@ cards:
     (m: simpático · f: simpática · pl: simpáticos/simpáticas)'
   chapter: —
 - id: 0548
+  suspended: "simples is transparent and very basic; generic sentence is unnecessary."
   skipped: "reason_similar"
   word: simples
   front: Isto é {{simple}}.
@@ -784,6 +762,7 @@ cards:
     (m: sujo · f: suja · pl: sujos/sujas)'
   chapter: —
 - id: '0553'
+  suspended: "surpreso is useful, but generic template makes it easy/forgettable rather than contextual."
   skipped: "reason_similar"
   word: surpreso
   front: Ele está {{surprised}}.
@@ -794,6 +773,7 @@ cards:
     (m: surpreso · f: surpresa · pl: surpresos/surpresas)'
   chapter: —
 - id: '0554'
+  suspended: "ténue is relatively advanced and polysemous: faint, slight, tenuous, dim. “tenuous” is only one sense and not very A1-relevant."
   skipped: "reason_similar"
   word: ténue
   front: Isto é {{tenuous}}.
@@ -842,6 +822,7 @@ cards:
     (m: velho · f: velha · pl: velhos/velhas)'
   chapter: —
 - id: 0559
+  suspended: "venenoso = poisonous is valid, but low-frequency for daily A1 and overlaps conceptually with tóxico."
   word: venenoso
   front: Isto é {{poisonous}}.
   back: 'Isto é venenoso.

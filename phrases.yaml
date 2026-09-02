@@ -323,18 +323,21 @@ cards:
   back: igualmente
   chapter: —
 - id: 0678
+  suspended: "Como está? is not simply “formal”; it is the 3rd-person/polite-address form and can be used with o senhor/a senhora/você or omitted subject. The register label is oversimplified."
   skipped: "reason_phrase"
   word: Como está?
-  front: How are you? (formal)
-  back: Como está?
+  front: "How are you? (polite / 3rd-person address)"
+  back: "Como está?<br>How are you?<br><br><b>Como está?</b> uses the 3rd-person verb form and is appropriate with polite/implicit <i>você / o senhor / a senhora</i> depending context. Contrast informal <b>Como estás?</b>."
   chapter: —
 - id: 0679
+  suspended: "Como estás? is specifically tu 2nd-person singular. “informal” is broadly right but the grammatical reason matters more than the label."
   skipped: "reason_phrase"
   word: Como estás?
-  front: How are you? (informal)
-  back: Como estás?
+  front: "How are you? (informal <i>tu</i>)"
+  back: "Como estás?<br>How are you?<br><br><b>estás</b> is the <i>tu</i> form of <i>estar</i>. Contrast polite/3rd-person <b>Como está?</b>."
   chapter: —
 - id: 0680
+  suspended: "Bem, obrigado. is extremely basic and predictable."
   skipped: "reason_phrase"
   word: Bem, obrigado.
   front: Well, thanks.
@@ -381,10 +384,11 @@ cards:
   back: desculpa
   chapter: —
 - id: 0688
+  suspended: "Peço desculpa is standard/polite “I’m sorry / I apologize”; calling it “formal” is too narrow."
   skipped: "reason_phrase"
   word: peço desculpa
-  front: I apologize (formal)
-  back: peço desculpa
+  front: "I apologize / I'm sorry for the delay."
+  back: "Peço desculpa pelo atraso.<br>I apologize / I'm sorry for the delay.<br><br><b>pedir desculpa</b> literally “ask forgiveness” = apologize/say sorry. <b>pelo = por + o</b>. Very normal in Portugal."
   chapter: —
 - id: 0689
   word: (muito) obrigado
@@ -392,11 +396,13 @@ cards:
   back: (muito) obrigado
   chapter: —
 - id: 0690
+  suspended: "The card teaches only obrigada, i.e. the form said by a female speaker. For production this is wrong for a male learner; for recognition it is incomplete."
   word: (muito) obrigada
   front: thank you (very much) (says a woman)
   back: (muito) obrigada
   chapter: —
 - id: 0691
+  suspended: "de nada is basic and highly overlearned."
   skipped: "reason_phrase"
   word: de nada
   front: you're welcome
@@ -409,6 +415,7 @@ cards:
   back: até já
   chapter: —
 - id: 0693
+  suspended: "até logo is basic and likely already automatic."
   skipped: "reason_phrase"
   word: até logo
   front: see you later
@@ -497,10 +504,11 @@ cards:
   back: com certeza
   chapter: —
 - id: 0709
+  suspended: "isso mesmo has several natural renderings: exactly, that’s right, that’s it, precisely. The English cue allows multiple interpretations and gives no usage context."
   skipped: "reason_phrase"
   word: isso mesmo
-  front: that's right, that’s it
-  back: isso mesmo
+  front: "— É esta rua? — {{That's right / exactly.}}"
+  back: "— É esta rua? — Isso mesmo.<br>— Is it this street? — That's right / Exactly.<br><br><b>isso mesmo</b> confirms that the other person has identified or understood the right thing."
   chapter: —
 - id: '0710'
   word: talvez
@@ -508,10 +516,11 @@ cards:
   back: talvez
   chapter: —
 - id: '0711'
+  suspended: "se calhar is a very useful EP expression, but plain “maybe” collides directly with talvez and loses the colloquial/register nuance."
   skipped: "reason_phrase"
   word: se calhar
-  front: maybe
-  back: se calhar
+  front: "{{Maybe}} amanhã chove."
+  back: "Se calhar amanhã chove.<br>Maybe it'll rain tomorrow.<br><br><b>se calhar</b> = maybe/perhaps, extremely common in conversational European Portuguese. Despite containing <i>se</i>, learn it as a fixed discourse chunk."
   chapter: —
 - id: '0712'
   skipped: "reason_similar"
@@ -542,18 +551,21 @@ cards:
   back: olhe
   chapter: —
 - id: '0717'
+  suspended: "que disparate is valid but relatively situational; “what nonsense” is acceptable. Likely suspended as low priority, not because wrong."
   skipped: "reason_phrase"
   word: que disparate
   front: what nonsense
   back: que disparate
   chapter: —
 - id: 0718
+  suspended: "que pena is often “what a pity / that’s too bad”. English “what a shame” can also suggest que vergonha, creating a semantic collision."
   skipped: "reason_phrase"
   word: que pena
-  front: what a shame
-  back: que pena
+  front: "— O concerto foi cancelado. — {{That's too bad.}}"
+  back: "— O concerto foi cancelado. — Que pena.<br>— The concert was cancelled. — That's too bad / What a pity.<br><br><b>que pena!</b> expresses regret or sympathy about an unfortunate situation."
   chapter: —
 - id: 0719
+  suspended: "só conflates at least “only/just” and “alone”. A single English cue “just, only” does not teach its important ambiguity, and Level0 now covers só in context."
   word: só
   front: just, only
   back: só
@@ -569,6 +581,7 @@ cards:
   back: ainda
   chapter: —
 - id: '0722'
+  suspended: "ainda não = not yet is correct, but this was suspended after your Level0 work and is now directly redundant with richer contextual Level0 cards."
   skipped: "reason_phrase"
   word: ainda não
   front: not yet
