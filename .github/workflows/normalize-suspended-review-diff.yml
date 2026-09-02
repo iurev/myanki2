@@ -1,0 +1,177 @@
+name: Normalize suspended card review diff
+
+on:
+  push:
+    branches:
+      - review/suspended-portuguese-cards
+    paths:
+      - .github/workflows/normalize-suspended-review-diff.yml
+
+permissions:
+  contents: write
+
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: review/suspended-portuguese-cards
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install PyYAML
+        run: python -m pip install --disable-pip-version-check pyyaml
+
+      - name: Reset source YAML formatting to master
+        run: git checkout origin/master -- verbs.yaml nouns.yaml adjectives.yaml location.yaml phrases.yaml
+
+      - name: Reapply approved review as a minimal textual patch
+        run: |
+          python - <<'PY'
+          from __future__ import annotations
+          import json
+          import re
+          import subprocess
+          from pathlib import Path
+          import yaml
+
+          ROOT = Path('.')
+          REVIEW_COMMIT = 'ddaf7ac5d46bfc3264a1be69c4e5af215577020f'
+          REVIEW_FILES = [
+              'adjectives.yaml', 'location.yaml',
+              'nouns-0186-0307.yaml', 'nouns-0308-0414.yaml', 'nouns-0415-0468.yaml',
+              'phrases.yaml', 'verbs.yaml',
+          ]
+
+          def source_for_id(card_id: str) -> Path:
+              n = int(card_id)
+              if n <= 185: return ROOT / 'verbs.yaml'
+              if n <= 468: return ROOT / 'nouns.yaml'
+              if n <= 570: return ROOT / 'adjectives.yaml'
+              if n <= 589: return ROOT / 'location.yaml'
+              if n <= 619: return ROOT / 'numbers.yaml'
+              return ROOT / 'phrases.yaml'
+
+          reviews = []
+          for name in REVIEW_FILES:
+              raw = subprocess.check_output(
+                  ['git', 'show', f'{REVIEW_COMMIT}:suspended-review/{name}'],
+                  text=True,
+              )
+              data = yaml.safe_load(raw) or {}
+              reviews.extend(data.get('cards', []))
+          assert len(reviews) == 134
+
+          def ystr(value: str) -> str:
+              return json.dumps(str(value), ensure_ascii=False)
+
+          def locate(lines, card_id: str):
+              pat = re.compile(r'^(?P<i>\s*)-\s+id:\s*["\']?' + re.escape(card_id) + r'["\']?\s*$')
+              for i, line in enumerate(lines):
+                  m = pat.match(line.rstrip('\n'))
+                  if not m:
+                      continue
+                  next_card = re.compile(r'^' + re.escape(m.group('i')) + r'-\s+id:\s*')
+                  j = i + 1
+                  while j < len(lines) and not next_card.match(lines[j]):
+                      j += 1
+                  return i, j
+              raise KeyError(f'{card_id} not found')
+
+          def next_field_index(block, start, indent):
+              field = re.compile(r'^' + re.escape(indent) + r'[A-Za-z_][A-Za-z0-9_-]*\s*:')
+              for j in range(start, len(block)):
+                  if field.match(block[j]):
+                      return j
+              return len(block)
+
+          def set_field(block, key, value):
+              pat = re.compile(r'^(?P<i>\s+)' + re.escape(key) + r'\s*:')
+              for i, line in enumerate(block):
+                  m = pat.match(line)
+                  if m:
+                      indent = m.group('i')
+                      j = next_field_index(block, i + 1, indent)
+                      block[i:j] = [f'{indent}{key}: {ystr(value)}\n']
+                      return block
+
+              # Suspended is intentionally placed immediately after id.
+              indent = '    '
+              for line in block[1:]:
+                  m = re.match(r'^(\s+)[A-Za-z_][A-Za-z0-9_-]*\s*:', line)
+                  if m:
+                      indent = m.group(1)
+                      break
+              position = 1 if key == 'suspended' else len(block)
+              block.insert(position, f'{indent}{key}: {ystr(value)}\n')
+              return block
+
+          by_source = {}
+          for review in reviews:
+              by_source.setdefault(source_for_id(str(review['id'])), []).append(review)
+
+          repaired_cards = set()
+          for source, source_reviews in by_source.items():
+              lines = source.read_text(encoding='utf-8').splitlines(keepends=True)
+              located = []
+              for review in source_reviews:
+                  cid = str(review['id']).zfill(4)
+                  a, b = locate(lines, cid)
+                  located.append((a, b, review))
+              located.sort(reverse=True, key=lambda x: x[0])
+
+              for a, b, review in located:
+                  cid = str(review['id']).zfill(4)
+                  block = lines[a:b]
+                  block = set_field(block, 'suspended', review['suspended'])
+                  if review.get('proposed_front'):
+                      block = set_field(block, 'front', review['proposed_front'])
+                      repaired_cards.add(cid)
+                  if review.get('proposed_back'):
+                      block = set_field(block, 'back', review['proposed_back'])
+                      repaired_cards.add(cid)
+                  lines[a:b] = block
+
+              source.write_text(''.join(lines), encoding='utf-8')
+
+          # Parse and verify exact values after the textual patch.
+          source_indexes = {}
+          for review in reviews:
+              source = source_for_id(str(review['id']))
+              if source not in source_indexes:
+                  doc = yaml.safe_load(source.read_text(encoding='utf-8')) or {}
+                  source_indexes[source] = {str(c.get('id')).zfill(4): c for c in doc.get('cards', [])}
+
+          for review in reviews:
+              cid = str(review['id']).zfill(4)
+              card = source_indexes[source_for_id(cid)][cid]
+              assert card.get('suspended') == review['suspended'], f'{cid}: reason mismatch'
+              if review.get('proposed_front'):
+                  assert card.get('front') == review['proposed_front'], f'{cid}: front mismatch'
+              if review.get('proposed_back'):
+                  assert card.get('back') == review['proposed_back'], f'{cid}: back mismatch'
+
+          assert len(repaired_cards) == 79, len(repaired_cards)
+          migration = [
+              line.strip() for line in (ROOT / 'migrations/unsuspend-after-suspended-review.txt').read_text().splitlines()
+              if line.strip() and not line.lstrip().startswith('#')
+          ]
+          assert len(migration) == 72
+          print(f'verified 134 reasons, {len(repaired_cards)} repaired cards, {len(migration)} migration ids')
+          PY
+
+      - name: Show normalized diff size
+        run: git diff --stat origin/master -- verbs.yaml nouns.yaml adjectives.yaml location.yaml phrases.yaml migrations/unsuspend-after-suspended-review.txt tools/unsuspend_ids.py
+
+      - name: Remove this temporary workflow and commit
+        run: |
+          rm -f .github/workflows/normalize-suspended-review-diff.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Normalize suspended-card changes to minimal YAML diff"
+          git push origin HEAD:review/suspended-portuguese-cards
