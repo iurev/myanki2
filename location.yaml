@@ -1,176 +1,170 @@
 deck: words
 model: words
 cards:
-- id: '0571'
-  word: à direita
-  front: O gato está {{on the right}}.
-  back: 'O gato está à direita.
+  - id: '0571'
+    word: à direita
+    front: O gato está {{on the right}}.
+    back: 'O gato está à direita.
 
-    The cat is on the right.
+      The cat is on the right.
 
-    (à direita)'
-  chapter: —
-- id: '0572'
-  word: à esquerda
-  front: O gato está {{on the left}}.
-  back: 'O gato está à esquerda.
+      (à direita)'
+    chapter: —
+  - id: '0572'
+    word: à esquerda
+    front: O gato está {{on the left}}.
+    back: 'O gato está à esquerda.
 
-    The cat is on the left.
+      The cat is on the left.
 
-    (à esquerda)'
-  chapter: —
-- id: '0573'
-  word: à frente de
-  front: O gato está {{in front of}} casa.
-  back: 'O gato está à frente da casa.
+      (à esquerda)'
+    chapter: —
+  - id: '0573'
+    word: à frente de
+    front: O gato está {{in front of}} casa.
+    back: 'O gato está à frente da casa.
 
-    The cat is in front of the house.
+      The cat is in front of the house.
 
-    (à frente de)'
-  chapter: —
-- id: '0574'
-  word: à volta de
-  front: O gato está {{around}} casa.
-  back: 'O gato está à volta da casa.
+      (à frente de)'
+    chapter: —
+  - id: '0574'
+    word: à volta de
+    front: O gato está {{around}} casa.
+    back: 'O gato está à volta da casa.
 
-    The cat is around the house.
+      The cat is around the house.
 
-    (à volta de)'
-  chapter: —
-- id: '0575'
-  word: ao lado de
-  front: O gato está {{next to}} casa.
-  back: 'O gato está ao lado da casa.
+      (à volta de)'
+    chapter: —
+  - id: '0575'
+    word: ao lado de
+    front: O gato está {{next to}} casa.
+    back: 'O gato está ao lado da casa.
 
-    The cat is next to the house.
+      The cat is next to the house.
 
-    (ao lado de)'
-  chapter: —
-- id: '0576'
-  word: atrás de
-  front: O gato está {{behind}} casa.
-  back: 'O gato está atrás da casa.
+      (ao lado de)'
+    chapter: —
+  - id: '0576'
+    word: atrás de
+    front: O gato está {{behind}} casa.
+    back: 'O gato está atrás da casa.
 
-    The cat is behind the house.
+      The cat is behind the house.
 
-    (atrás de)'
-  chapter: —
-- id: '0577'
-  word: debaixo de
-  front: O gato está {{under}} casa.
-  back: 'O gato está debaixo da casa.
+      (atrás de)'
+    chapter: —
+  - id: '0577'
+    word: debaixo de
+    front: O gato está {{under}} casa.
+    back: 'O gato está debaixo da casa.
 
-    The cat is under the house.
+      The cat is under the house.
 
-    (debaixo de)'
-  chapter: —
-- id: 0578
-  word: dentro de
-  front: O gato está {{inside of}} casa.
-  back: 'O gato está dentro da casa.
+      (debaixo de)'
+    chapter: —
+  - id: 0578
+    word: dentro de
+    front: O gato está {{inside of}} casa.
+    back: 'O gato está dentro da casa.
 
-    The cat is inside of the house.
+      The cat is inside of the house.
 
-    (dentro de)'
-  chapter: —
-- id: 0579
-  word: do lado direito
-  front: O gato está {{on the right side}}.
-  back: 'O gato está do lado direito.
+      (dentro de)'
+    chapter: —
+  - id: 0579
+    word: do lado direito
+    front: O gato está {{on the right side}}.
+    back: 'O gato está do lado direito.
 
-    The cat is on the right side.
+      The cat is on the right side.
 
-    (do lado direito)'
-  chapter: —
-- id: 0580
-  word: do lado esquerdo
-  front: O gato está {{on the left side}}.
-  back: 'O gato está do lado esquerdo.
+      (do lado direito)'
+    chapter: —
+  - id: 0580
+    word: do lado esquerdo
+    front: O gato está {{on the left side}}.
+    back: 'O gato está do lado esquerdo.
 
-    The cat is on the left side.
+      The cat is on the left side.
 
-    (do lado esquerdo)'
-  chapter: —
-- id: 0581
-  word: em
-  front: O gato está {{in}} casa.
-  back: 'O gato está em casa.
+      (do lado esquerdo)'
+    chapter: —
+  - id: 0581
+    word: em
+    front: O gato está {{in}} casa.
+    back: 'O gato está em casa.
 
-    The cat is at home.
+      The cat is at home.
 
-    (em)'
-  chapter: —
-- id: 0582
-  word: em cima de
-  front: O gato está {{on}} casa.
-  back: 'O gato está em cima da casa.
+      (em)'
+    chapter: —
+  - id: 0582
+    word: em cima de
+    front: O gato está {{on}} casa.
+    back: 'O gato está em cima da casa.
 
-    The cat is on the house.
+      The cat is on the house.
 
-    (em cima de)'
-  chapter: —
-- id: 0583
-  skipped: "reason_phrase"
-  word: em direção a
-  front: O gato está {{toward}} casa.
-  back: 'O gato está em direção à casa.
+      (em cima de)'
+    chapter: —
+  - id: 0583
+    suspended: “O gato está em direção à casa” is unnatural because em direção a expresses movement/orientation toward a goal; estar is a poor verb here. English “toward” is also a preposition while the Portuguese target is a phrase.
+    skipped: "reason_phrase"
+    word: em direção a
+    front: O gato caminha {{toward}} a casa.
+    back: 'O gato caminha em direção à casa.<br>The cat walks toward the house.<br><br><b>em direção a</b> = toward / in the direction of. Before feminine <i>a casa</i>: <b>a + a → à</b>.'
+    chapter: —
+  - id: 0584
+    suspended: 'em frente is ambiguous/incomplete here: it can mean straight ahead / opposite / in front depending construction. “O gato está em frente” lacks the reference point expected by English “in front”.'
+    skipped: "reason_phrase"
+    word: em frente
+    front: Siga {{straight ahead}}.
+    back: 'Siga em frente.<br>Go straight ahead.<br><br><b>em frente</b> is the fixed directions phrase “straight ahead/forward”. This is more useful and less ambiguous than the original location fragment.'
+    chapter: —
+  - id: 0585
+    word: fora de
+    front: O gato está {{outside of}} casa.
+    back: 'O gato está fora da casa.
 
-    The cat is toward the house.
+      The cat is outside of the house.
 
-    (em direção a)'
-  chapter: —
-- id: 0584
-  skipped: "reason_phrase"
-  word: em frente
-  front: O gato está {{in front}}.
-  back: 'O gato está em frente.
+      (fora de)'
+    chapter: —
+  - id: 0586
+    word: longe de
+    front: O gato está {{far from}} casa.
+    back: 'O gato está longe da casa.
 
-    The cat is in front.
+      The cat is far from the house.
 
-    (em frente)'
-  chapter: —
-- id: 0585
-  word: fora de
-  front: O gato está {{outside of}} casa.
-  back: 'O gato está fora da casa.
+      (longe de)'
+    chapter: —
+  - id: 0587
+    word: no fundo de
+    front: O gato está {{at the bottom of}} casa.
+    back: 'O gato está no fundo da casa.
 
-    The cat is outside of the house.
+      The cat is at the bottom of the house.
 
-    (fora de)'
-  chapter: —
-- id: 0586
-  word: longe de
-  front: O gato está {{far from}} casa.
-  back: 'O gato está longe da casa.
+      (no fundo de)'
+    chapter: —
+  - id: 0588
+    word: no meio de
+    front: O gato está {{in the middle of}} casa.
+    back: 'O gato está no meio da casa.
 
-    The cat is far from the house.
+      The cat is in the middle of the house.
 
-    (longe de)'
-  chapter: —
-- id: 0587
-  word: no fundo de
-  front: O gato está {{at the bottom of}} casa.
-  back: 'O gato está no fundo da casa.
+      (no meio de)'
+    chapter: —
+  - id: 0589
+    word: perto de
+    front: O gato está {{close to}} casa.
+    back: 'O gato está perto da casa.
 
-    The cat is at the bottom of the house.
+      The cat is close to the house.
 
-    (no fundo de)'
-  chapter: —
-- id: 0588
-  word: no meio de
-  front: O gato está {{in the middle of}} casa.
-  back: 'O gato está no meio da casa.
-
-    The cat is in the middle of the house.
-
-    (no meio de)'
-  chapter: —
-- id: 0589
-  word: perto de
-  front: O gato está {{close to}} casa.
-  back: 'O gato está perto da casa.
-
-    The cat is close to the house.
-
-    (perto de)'
-  chapter: —
+      (perto de)'
+    chapter: —

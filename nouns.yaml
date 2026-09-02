@@ -1,2069 +1,2062 @@
 deck: words
 model: words
 cards:
-- id: 0186
-  skipped: "reason_similar"
-  word: arqueologia
-  front: A {{archeology}} é importante.
-  back: 'A arqueologia é importante.
-
-    Archeology is important.  (arqueologia, f)'
-  chapter: —
-- id: 0187
-  skipped: "reason_similar"
-  word: arte
-  front: A {{art}} é importante.
-  back: 'A arte é importante.
-
-    Art is important.  (arte, f)'
-  chapter: —
-- id: 0188
-  skipped: "reason_similar"
-  word: aventura
-  front: A {{adventure}} é importante.
-  back: 'A aventura é importante.
-
-    Adventure is important.  (aventura, f)'
-  chapter: —
-- id: 0189
-  skipped: "reason_similar"
-  word: burocracia
-  front: A {{bureaucracy}} é importante.
-  back: 'A burocracia é importante.
-
-    Bureaucracy is important.  (burocracia, f)'
-  chapter: —
-- id: 0190
-  skipped: "reason_similar"
-  word: ciência
-  front: A {{science}} é importante.
-  back: 'A ciência é importante.
-
-    Science is important.  (ciência, f)'
-  chapter: —
-- id: 0191
-  skipped: "reason_similar"
-  word: coincidência
-  front: A {{coincidence}} é importante.
-  back: 'A coincidência é importante.
-
-    Coincidence is important.  (coincidência, f)'
-  chapter: —
-- id: 0192
-  skipped: "reason_similar"
-  word: explicação
-  front: A {{explanation}} é importante.
-  back: 'A explicação é importante.
-
-    Explanation is important.  (explicação, f)'
-  chapter: —
-- id: 0193
-  skipped: "reason_similar"
-  word: hipótese
-  front: A {{hypothesis}} é importante.
-  back: 'A hipótese é importante.
-
-    Hypothesis is important.  (hipótese, f)'
-  chapter: —
-- id: 0194
-  skipped: "reason_similar"
-  word: história
-  front: A {{history}} é importante.
-  back: 'A história é importante.
-
-    History is important.  (história, f)'
-  chapter: —
-- id: 0195
-  skipped: "reason_similar"
-  word: informação
-  front: A {{information}} é importante.
-  back: 'A informação é importante.
-
-    Information is important.  (informação, f)'
-  chapter: —
-- id: 0196
-  skipped: "reason_similar"
-  word: lenda
-  front: A {{legend}} é importante.
-  back: 'A lenda é importante.
-
-    Legend is important.  (lenda, f)'
-  chapter: —
-- id: 0197
-  skipped: "reason_similar"
-  word: literatura
-  front: A {{literature}} é importante.
-  back: 'A literatura é importante.
-
-    Literature is important.  (literatura, f)'
-  chapter: —
-- id: 0198
-  skipped: "reason_similar"
-  word: matemática
-  front: A {{mathematics}} é importante.
-  back: 'A matemática é importante.
-
-    Mathematics is important.  (matemática, f)'
-  chapter: —
-- id: 0199
-  skipped: "reason_similar"
-  word: mistério
-  front: O {{mystery}} é importante.
-  back: 'O mistério é importante.
-
-    Mystery is important.  (mistério, m)'
-  chapter: —
-- id: '0200'
-  skipped: "reason_similar"
-  word: mito
-  front: O {{myth}} é importante.
-  back: 'O mito é importante.
-
-    Myth is important.  (mito, m)'
-  chapter: —
-- id: '0201'
-  word: notícia
-  front: A {{news}} é importante.
-  back: 'A notícia é importante.
-
-    News is important.  (notícia, f)'
-  chapter: —
-- id: '0202'
-  skipped: "reason_similar"
-  word: oportunidade
-  front: A {{opportunity}} é importante.
-  back: 'A oportunidade é importante.
-
-    Opportunity is important.  (oportunidade, f)'
-  chapter: —
-- id: '0203'
-  skipped: "reason_similar"
-  word: paciência
-  front: A {{patience}} é importante.
-  back: 'A paciência é importante.
-
-    Patience is important.  (paciência, f)'
-  chapter: —
-- id: '0204'
-  word: palavra
-  front: A {{word}} é importante.
-  back: 'A palavra é importante.
-
-    Word is important.  (palavra, f)'
-  chapter: —
-- id: '0205'
-  word: piada
-  front: A {{joke}} é importante.
-  back: 'A piada é importante.
-
-    Joke is important.  (piada, f)'
-  chapter: —
-- id: '0206'
-  skipped: "reason_similar"
-  word: poesia
-  front: A {{poetry}} é importante.
-  back: 'A poesia é importante.
-
-    Poetry is important.  (poesia, f)'
-  chapter: —
-- id: '0207'
-  skipped: "reason_similar"
-  word: proposta
-  front: A {{proposal}} é importante.
-  back: 'A proposta é importante.
-
-    Proposal is important.  (proposta, f)'
-  chapter: —
-- id: 0208
-  skipped: "reason_similar"
-  word: salvação
-  front: A {{salvation}} é importante.
-  back: 'A salvação é importante.
-
-    Salvation is important.  (salvação, f)'
-  chapter: —
-- id: 0209
-  word: segredo
-  front: O {{secret}} é importante.
-  back: 'O segredo é importante.
-
-    Secret is important.  (segredo, m)'
-  chapter: —
-- id: '0210'
-  word: significado
-  front: O {{meaning}} é importante.
-  back: 'O significado é importante.
-
-    Meaning is important.  (significado, m)'
-  chapter: —
-- id: '0211'
-  skipped: "reason_similar"
-  word: símbolo
-  front: O {{symbol}} é importante.
-  back: 'O símbolo é importante.
-
-    Symbol is important.  (símbolo, m)'
-  chapter: —
-- id: '0212'
-  word: sonho
-  front: O {{dream}} é importante.
-  back: 'O sonho é importante.
-
-    Dream is important.  (sonho, m)'
-  chapter: —
-- id: '0213'
-  skipped: "reason_similar"
-  word: teoria
-  front: A {{theory}} é importante.
-  back: 'A teoria é importante.
-
-    Theory is important.  (teoria, f)'
-  chapter: —
-- id: '0214'
-  skipped: "reason_similar"
-  word: texto
-  front: O {{text}} é importante.
-  back: 'O texto é importante.
-
-    Text is important.  (texto, m)'
-  chapter: —
-- id: '0215'
-  word: vida
-  front: A {{life}} é importante.
-  back: 'A vida é importante.
-
-    Life is important.  (vida, f)'
-  chapter: —
-- id: '0216'
-  word: alforreca
-  front: Eu vejo a {{jellyfish}}.
-  back: 'Eu vejo a alforreca.
-
-    I see the jellyfish.  (alforreca, f)'
-  chapter: —
-- id: '0217'
-  word: alga
-  front: Eu vejo a {{seaweed}}.
-  back: 'Eu vejo a alga.
-
-    I see the seaweed.  (alga, f)'
-  chapter: —
-- id: 0218
-  word: ar
-  front: Eu vejo o {{air}}.
-  back: 'Eu vejo o ar.
-
-    I see the air.  (ar, m)'
-  chapter: —
-- id: 0219
-  word: cachalote
-  front: Eu vejo o {{sperm whale}}.
-  back: 'Eu vejo o cachalote.
-
-    I see the sperm whale.  (cachalote, m)'
-  chapter: —
-- id: '0220'
-  word: campo
-  front: Eu vejo o {{countryside}}.
-  back: 'Eu vejo o campo.
-
-    I see the countryside.  (campo, m)'
-  chapter: —
-- id: '0221'
-  word: cão
-  front: Eu vejo o {{dog}}.
-  back: 'Eu vejo o cão.
-
-    I see the dog.  (cão, m)'
-  chapter: —
-- id: '0222'
-  word: céu
-  front: Eu vejo o {{sky}}.
-  back: 'Eu vejo o céu.
-
-    I see the sky.  (céu, m)'
-  chapter: —
-- id: '0223'
-  word: cobra
-  front: Eu vejo a {{snake}}.
-  back: 'Eu vejo a cobra.
-
-    I see the snake.  (cobra, f)'
-  chapter: —
-- id: '0224'
-  skipped: "reason_similar"
-  word: coral
-  front: Eu vejo o {{coral}}.
-  back: 'Eu vejo o coral.
-
-    I see the coral.  (coral, m)'
-  chapter: —
-- id: '0225'
-  skipped: "reason_similar"
-  word: criatura
-  front: Eu vejo a {{creature}}.
-  back: 'Eu vejo a criatura.
-
-    I see the creature.  (criatura, f)'
-  chapter: —
-- id: '0226'
-  word: erva
-  front: Eu vejo a {{grass}}.
-  back: 'Eu vejo a erva.
-
-    I see the grass.  (erva, f)'
-  chapter: —
-- id: '0227'
-  word: estrela
-  front: Eu vejo a {{star}}.
-  back: 'Eu vejo a estrela.
-
-    I see the star.  (estrela, f)'
-  chapter: —
-- id: 0228
-  word: flor
-  front: Eu vejo a {{flower}}.
-  back: 'Eu vejo a flor.
-
-    I see the flower.  (flor, f)'
-  chapter: —
-- id: 0229
-  word: gato
-  front: Eu vejo o {{cat}}.
-  back: 'Eu vejo o gato.
-
-    I see the cat.  (gato, m)'
-  chapter: —
-- id: '0230'
-  word: grau
-  front: Eu vejo o {{degree}}.
-  back: 'Eu vejo o grau.
-
-    I see the degree.  (grau, m)'
-  chapter: —
-- id: '0231'
-  word: ilha
-  front: Eu vejo a {{island}}.
-  back: 'Eu vejo a ilha.
-
-    I see the island.  (ilha, f)'
-  chapter: —
-- id: '0232'
-  word: lula
-  front: Eu vejo a {{squid}}.
-  back: 'Eu vejo a lula.
-
-    I see the squid.  (lula, f)'
-  chapter: —
-- id: '0233'
-  word: madeira
-  front: Eu vejo a {{wood}}.
-  back: 'Eu vejo a madeira.
-
-    I see the wood.  (madeira, f)'
-  chapter: —
-- id: '0234'
-  word: mar
-  front: Eu vejo o {{sea}}.
-  back: 'Eu vejo o mar.
-
-    I see the sea.  (mar, m)'
-  chapter: —
-- id: '0235'
-  skipped: "reason_similar"
-  word: natureza
-  front: Eu vejo a {{nature}}.
-  back: 'Eu vejo a natureza.
-
-    I see the nature.  (natureza, f)'
-  chapter: —
-- id: '0236'
-  word: nuvem
-  front: Eu vejo a {{cloud}}.
-  back: 'Eu vejo a nuvem.
-
-    I see the cloud.  (nuvem, f)'
-  chapter: —
-- id: '0237'
-  word: pássaro
-  front: Eu vejo o {{bird}}.
-  back: 'Eu vejo o pássaro.
-
-    I see the bird.  (pássaro, m)'
-  chapter: —
-- id: 0238
-  word: pedra
-  front: Eu vejo a {{stone}}.
-  back: 'Eu vejo a pedra.
-
-    I see the stone.  (pedra, f)'
-  chapter: —
-- id: 0239
-  skipped: "reason_similar"
-  word: planta
-  front: Eu vejo a {{plant}}.
-  back: 'Eu vejo a planta.
-
-    I see the plant.  (planta, f)'
-  chapter: —
-- id: '0240'
-  word: praia
-  front: Eu vejo a {{beach}}.
-  back: 'Eu vejo a praia.
-
-    I see the beach.  (praia, f)'
-  chapter: —
-- id: '0241'
-  word: rato
-  front: Eu vejo o {{mouse}}.
-  back: 'Eu vejo o rato.
-
-    I see the mouse.  (rato, m)'
-  chapter: —
-- id: '0242'
-  word: sol
-  front: Eu vejo o {{sun}}.
-  back: 'Eu vejo o sol.
-
-    I see the sun.  (sol, m)'
-  chapter: —
-- id: '0243'
-  skipped: "reason_similar"
-  word: temperatura
-  front: Eu vejo a {{temperature}}.
-  back: 'Eu vejo a temperatura.
-
-    I see the temperature.  (temperatura, f)'
-  chapter: —
-- id: '0244'
-  word: tempo
-  front: Eu vejo o {{weather}}.
-  back: 'Eu vejo o tempo.
-
-    I see the weather.  (tempo, m)'
-  chapter: —
-- id: '0245'
-  word: vento
-  front: Eu vejo o {{wind}}.
-  back: 'Eu vejo o vento.
-
-    I see the wind.  (vento, m)'
-  chapter: —
-- id: '0246'
-  word: barba
-  front: Eu vejo a {{beard}}.
-  back: 'Eu vejo a barba.
-
-    I see the beard.  (barba, f)'
-  chapter: —
-- id: '0247'
-  word: barriga
-  front: Eu vejo a {{belly}}.
-  back: 'Eu vejo a barriga.
-
-    I see the belly.  (barriga, f)'
-  chapter: —
-- id: 0248
-  skipped: "reason_similar"
-  word: bebé
-  front: Eu vejo o {{baby}}.
-  back: 'Eu vejo o bebé.
-
-    I see the baby.  (bebé, m)'
-  chapter: —
-- id: 0249
-  word: boca
-  front: Eu vejo a {{mouth}}.
-  back: 'Eu vejo a boca.
-
-    I see the mouth.  (boca, f)'
-  chapter: —
-- id: '0250'
-  word: braço
-  front: Eu vejo o {{arm}}.
-  back: 'Eu vejo o braço.
-
-    I see the arm.  (braço, m)'
-  chapter: —
-- id: '0251'
-  word: cabeça
-  front: Eu vejo a {{head}}.
-  back: 'Eu vejo a cabeça.
-
-    I see the head.  (cabeça, f)'
-  chapter: —
-- id: '0252'
-  word: cabelo
-  front: Eu vejo o {{hair}}.
-  back: 'Eu vejo o cabelo.
-
-    I see the hair.  (cabelo, m)'
-  chapter: —
-- id: '0253'
-  word: cara
-  front: Eu vejo a {{face}}.
-  back: 'Eu vejo a cara.
-
-    I see the face.  (cara, f)'
-  chapter: —
-- id: '0254'
-  word: costas
-  front: Eu vejo as {{back}}.
-  back: 'Eu vejo as costas.
-
-    I see the back.  (costas, pl)'
-  chapter: —
-- id: '0255'
-  word: criança
-  front: Eu vejo a {{child}}.
-  back: 'Eu vejo a criança.
-
-    I see the child.  (criança, f)'
-  chapter: —
-- id: '0256'
-  word: dente
-  front: Eu vejo o {{tooth}}.
-  back: 'Eu vejo o dente.
-
-    I see the tooth.  (dente, m)'
-  chapter: —
-- id: '0257'
-  word: homem
-  front: Eu vejo o {{man}}.
-  back: 'Eu vejo o homem.
-
-    I see the man.  (homem, m)'
-  chapter: —
-- id: 0258
-  skipped: "reason_similar"
-  word: humano
-  front: Eu vejo o {{human}}.
-  back: 'Eu vejo o humano.
-
-    I see the human.  (humano, m)'
-  chapter: —
-- id: 0259
-  word: lábio
-  front: Eu vejo o {{lip}}.
-  back: 'Eu vejo o lábio.
-
-    I see the lip.  (lábio, m)'
-  chapter: —
-- id: '0260'
-  word: mão
-  front: Eu vejo a {{hand}}.
-  back: 'Eu vejo a mão.
-
-    I see the hand.  (mão, f)'
-  chapter: —
-- id: '0261'
-  word: mulher
-  front: Eu vejo a {{woman}}.
-  back: 'Eu vejo a mulher.
-
-    I see the woman.  (mulher, f)'
-  chapter: —
-- id: '0262'
-  word: nariz
-  front: Eu vejo o {{nose}}.
-  back: 'Eu vejo o nariz.
-
-    I see the nose.  (nariz, m)'
-  chapter: —
-- id: '0263'
-  word: olho
-  front: Eu vejo o {{eye}}.
-  back: 'Eu vejo o olho.
-
-    I see the eye.  (olho, m)'
-  chapter: —
-- id: '0264'
-  word: ombro
-  front: Eu vejo o {{shoulder}}.
-  back: 'Eu vejo o ombro.
-
-    I see the shoulder.  (ombro, m)'
-  chapter: —
-- id: '0265'
-  word: pele
-  front: Eu vejo a {{skin}}.
-  back: 'Eu vejo a pele.
-
-    I see the skin.  (pele, f)'
-  chapter: —
-- id: '0266'
-  word: perna
-  front: Eu vejo a {{leg}}.
-  back: 'Eu vejo a perna.
-
-    I see the leg.  (perna, f)'
-  chapter: —
-- id: '0267'
-  word: pescoço
-  front: Eu vejo o {{neck}}.
-  back: 'Eu vejo o pescoço.
-
-    I see the neck.  (pescoço, m)'
-  chapter: —
-- id: 0268
-  word: pessoa
-  front: Eu vejo a {{person}}.
-  back: 'Eu vejo a pessoa.
-
-    I see the person.  (pessoa, f)'
-  chapter: —
-- id: 0269
-  word: pulmão
-  front: Eu vejo o {{lung}}.
-  back: 'Eu vejo o pulmão.
-
-    I see the lung.  (pulmão, m)'
-  chapter: —
-- id: '0270'
-  word: rapariga
-  front: Eu vejo a {{girl}}.
-  back: 'Eu vejo a rapariga.
-
-    I see the girl.  (rapariga, f)'
-  chapter: —
-- id: '0271'
-  word: sangue
-  front: Eu vejo o {{blood}}.
-  back: 'Eu vejo o sangue.
-
-    I see the blood.  (sangue, m)'
-  chapter: —
-- id: '0272'
-  skipped: "reason_similar"
-  word: arco
-  front: Eu vejo o {{arch}}.
-  back: 'Eu vejo o arco.
-
-    I see the arch.  (arco, m)'
-  chapter: —
-- id: '0273'
-  skipped: "reason_similar"
-  word: atração
-  front: Eu vejo a {{attraction}}.
-  back: 'Eu vejo a atração.
-
-    I see the attraction.  (atração, f)'
-  chapter: —
-- id: '0274'
-  word: aula
-  front: Eu vejo a {{class}}.
-  back: 'Eu vejo a aula.
-
-    I see the class.  (aula, f)'
-  chapter: —
-- id: '0275'
-  skipped: "reason_similar"
-  word: banco
-  front: Eu vejo o {{bank}}.
-  back: 'Eu vejo o banco.
-
-    I see the bank.  (banco, m)'
-  chapter: —
-- id: '0276'
-  word: biblioteca
-  front: Eu vejo a {{library}}.
-  back: 'Eu vejo a biblioteca.
-
-    I see the library.  (biblioteca, f)'
-  chapter: —
-- id: '0277'
-  word: bilhete
-  front: Eu vejo o {{ticket}}.
-  back: 'Eu vejo o bilhete.
-
-    I see the ticket.  (bilhete, m)'
-  chapter: —
-- id: 0278
-  skipped: "reason_similar"
-  word: café
-  front: Eu vejo o {{coffee}}.
-  back: 'Eu vejo o café.
-
-    I see the coffee.  (café, m)'
-  chapter: —
-- id: 0279
-  word: cais
-  front: Eu vejo o {{pier}}.
-  back: 'Eu vejo o cais.
-
-    I see the pier.  (cais, m)'
-  chapter: —
-- id: 0280
-  word: caminho
-  front: Eu vejo o {{path}}.
-  back: 'Eu vejo o caminho.
-
-    I see the path.  (caminho, m)'
-  chapter: —
-- id: 0281
-  skipped: "reason_similar"
-  word: cêntimo
-  front: Eu vejo o {{cent}}.
-  back: 'Eu vejo o cêntimo.
-
-    I see the cent.  (cêntimo, m)'
-  chapter: —
-- id: 0282
-  word: cidade
-  front: Eu vejo a {{city}}.
-  back: 'Eu vejo a cidade.
-
-    I see the city.  (cidade, f)'
-  chapter: —
-- id: 0283
-  skipped: "reason_similar"
-  word: cinema
-  front: Eu vejo o {{movie theater}}.
-  back: 'Eu vejo o cinema.
-
-    I see the movie theater.  (cinema, m)'
-  chapter: —
-- id: 0284
-  word: correios
-  front: Eu vejo os {{post office}}.
-  back: 'Eu vejo os correios.
-
-    I see the post office.  (correios, pl)'
-  chapter: —
-- id: 0285
-  word: conta
-  front: Eu vejo a {{check}}.
-  back: 'Eu vejo a conta.
-
-    I see the check.  (conta, f)'
-  chapter: —
-- id: 0286
-  word: cúpula
-  front: Eu vejo a {{dome}}.
-  back: 'Eu vejo a cúpula.
-
-    I see the dome.  (cúpula, f)'
-  chapter: —
-- id: 0287
-  word: dinheiro
-  front: Eu vejo o {{money}}.
-  back: 'Eu vejo o dinheiro.
-
-    I see the money.  (dinheiro, m)'
-  chapter: —
-- id: 0288
-  word: edifício
-  front: Eu vejo o {{building}}.
-  back: 'Eu vejo o edifício.
-
-    I see the building.  (edifício, m)'
-  chapter: —
-- id: 0289
-  word: escola
-  front: Eu vejo a {{school}}.
-  back: 'Eu vejo a escola.
-
-    I see the school.  (escola, f)'
-  chapter: —
-- id: 0290
-  skipped: "reason_similar"
-  word: espetáculo
-  front: Eu vejo o {{show}}.
-  back: 'Eu vejo o espetáculo.
-
-    I see the show.  (espetáculo, m)'
-  chapter: —
-- id: 0291
-  word: estação
-  front: Eu vejo a {{station}}.
-  back: 'Eu vejo a estação.
-
-    I see the station.  (estação, f)'
-  chapter: —
-- id: 0292
-  skipped: "reason_similar"
-  word: farmácia
-  front: Eu vejo a {{pharmacy}}.
-  back: 'Eu vejo a farmácia.
-
-    I see the pharmacy.  (farmácia, f)'
-  chapter: —
-- id: 0293
-  skipped: "reason_similar"
-  word: ginásio
-  front: Eu vejo o {{gym}}.
-  back: 'Eu vejo o ginásio.
-
-    I see the gym.  (ginásio, m)'
-  chapter: —
-- id: 0294
-  skipped: "reason_similar"
-  word: hospital
-  front: Eu vejo o {{hospital}}.
-  back: 'Eu vejo o hospital.
-
-    I see the hospital.  (hospital, m)'
-  chapter: —
-- id: 0295
-  skipped: "reason_similar"
-  word: hotel
-  front: Eu vejo o {{hotel}}.
-  back: 'Eu vejo o hotel.
-
-    I see the hotel.  (hotel, m)'
-  chapter: —
-- id: 0296
-  word: jardim
-  front: Eu vejo o {{garden}}.
-  back: 'Eu vejo o jardim.
-
-    I see the garden.  (jardim, m)'
-  chapter: —
-- id: 0297
-  word: livraria
-  front: Eu vejo a {{bookstore}}.
-  back: 'Eu vejo a livraria.
-
-    I see the bookstore.  (livraria, f)'
-  chapter: —
-- id: 0298
-  word: lugar
-  front: Eu vejo o {{place}}.
-  back: 'Eu vejo o lugar.
-
-    I see the place.  (lugar, m)'
-  chapter: —
-- id: 0299
-  skipped: "reason_similar"
-  word: mapa
-  front: Eu vejo o {{map}}.
-  back: 'Eu vejo o mapa.
-
-    I see the map.  (mapa, m)'
-  chapter: —
-- id: '0300'
-  word: moeda
-  front: Eu vejo a {{coin}}.
-  back: 'Eu vejo a moeda.
-
-    I see the coin.  (moeda, f)'
-  chapter: —
-- id: '0301'
-  word: morada
-  front: Eu vejo a {{address}}.
-  back: 'Eu vejo a morada.
-
-    I see the address.  (morada, f)'
-  chapter: —
-- id: '0302'
-  skipped: "reason_similar"
-  word: museu
-  front: Eu vejo o {{museum}}.
-  back: 'Eu vejo o museu.
-
-    I see the museum.  (museu, m)'
-  chapter: —
-- id: '0303'
-  skipped: "reason_similar"
-  word: palácio
-  front: Eu vejo o {{palace}}.
-  back: 'Eu vejo o palácio.
-
-    I see the palace.  (palácio, m)'
-  chapter: —
-- id: '0304'
-  word: paragem
-  front: Eu vejo a {{bus stop}}.
-  back: 'Eu vejo a paragem.
-
-    I see the bus stop.  (paragem, f)'
-  chapter: —
-- id: '0305'
-  skipped: "reason_similar"
-  word: parque
-  front: Eu vejo o {{park}}.
-  back: 'Eu vejo o parque.
-
-    I see the park.  (parque, m)'
-  chapter: —
-- id: '0306'
-  skipped: "reason_similar"
-  word: polícia
-  front: Eu vejo a {{police (institution)}}.
-  back: 'Eu vejo a polícia.
-
-    I see the police (institution).  (polícia, f)'
-  chapter: —
-- id: '0307'
-  skipped: "reason_similar"
-  word: polícia
-  front: Eu vejo o {{police officer}}.
-  back: 'Eu vejo o polícia.
-
-    I see the police officer.  (polícia, m)'
-  chapter: —
-- id: 0308
-  word: ponte
-  front: Eu vejo a {{bridge}}.
-  back: 'Eu vejo a ponte.
-
-    I see the bridge.  (ponte, f)'
-  chapter: —
-- id: 0309
-  word: preço
-  front: Eu vejo o {{price}}.
-  back: 'Eu vejo o preço.
-
-    I see the price.  (preço, m)'
-  chapter: —
-- id: '0310'
-  skipped: "reason_similar"
-  word: reserva
-  front: Eu vejo a {{reservation}}.
-  back: 'Eu vejo a reserva.
-
-    I see the reservation.  (reserva, f)'
-  chapter: —
-- id: '0311'
-  skipped: "reason_similar"
-  word: restaurante
-  front: Eu vejo o {{restaurant}}.
-  back: 'Eu vejo o restaurante.
-
-    I see the restaurant.  (restaurante, m)'
-  chapter: —
-- id: '0312'
-  word: rua
-  front: Eu vejo a {{road}}.
-  back: 'Eu vejo a rua.
-
-    I see the road.  (rua, f)'
-  chapter: —
-- id: '0313'
-  skipped: "reason_similar"
-  word: supermercado
-  front: Eu vejo o {{supermarket}}.
-  back: 'Eu vejo o supermercado.
-
-    I see the supermarket.  (supermercado, m)'
-  chapter: —
-- id: '0314'
-  skipped: "reason_similar"
-  word: templo
-  front: Eu vejo o {{temple}}.
-  back: 'Eu vejo o templo.
-
-    I see the temple.  (templo, m)'
-  chapter: —
-- id: '0315'
-  word: torre
-  front: Eu vejo a {{tower}}.
-  back: 'Eu vejo a torre.
-
-    I see the tower.  (torre, f)'
-  chapter: —
-- id: '0316'
-  skipped: "reason_similar"
-  word: blusa
-  front: Eu uso a {{blouse}}.
-  back: 'Eu uso a blusa.
-
-    I wear the blouse.  (blusa, f)'
-  chapter: —
-- id: '0317'
-  word: calças
-  front: Eu uso as {{pants}}.
-  back: 'Eu uso as calças.
-
-    I wear the pants.  (calças, pl)'
-  chapter: —
-- id: 0318
-  word: casaco
-  front: Eu uso o {{coat}}.
-  back: 'Eu uso o casaco.
-
-    I wear the coat.  (casaco, m)'
-  chapter: —
-- id: 0319
-  word: chapéu
-  front: Eu uso o {{hat}}.
-  back: 'Eu uso o chapéu.
-
-    I wear the hat.  (chapéu, m)'
-  chapter: —
-- id: '0320'
-  word: cinto
-  front: Eu uso o {{belt}}.
-  back: 'Eu uso o cinto.
-
-    I wear the belt.  (cinto, m)'
-  chapter: —
-- id: '0321'
-  word: fato
-  front: Eu uso o {{suit}}.
-  back: 'Eu uso o fato.
-
-    I wear the suit.  (fato, m)'
-  chapter: —
-- id: '0322'
-  word: roupa
-  front: Eu uso a {{clothing}}.
-  back: 'Eu uso a roupa.
-
-    I wear the clothing.  (roupa, f)'
-  chapter: —
-- id: '0323'
-  word: saia
-  front: Eu uso a {{skirt}}.
-  back: 'Eu uso a saia.
-
-    I wear the skirt.  (saia, f)'
-  chapter: —
-- id: '0324'
-  word: sapato
-  front: Eu uso o {{shoe}}.
-  back: 'Eu uso o sapato.
-
-    I wear the shoe.  (sapato, m)'
-  chapter: —
-- id: '0325'
-  word: vestido
-  front: Eu uso o {{dress}}.
-  back: 'Eu uso o vestido.
-
-    I wear the dress.  (vestido, m)'
-  chapter: —
-- id: '0326'
-  word: avó
-  front: A minha {{grandmother}} está em casa.
-  back: 'A minha avó está em casa.
-
-    My grandmother is at home.  (avó, f)'
-  chapter: —
-- id: '0327'
-  word: avô
-  front: O meu {{grandfather}} está em casa.
-  back: 'O meu avô está em casa.
-
-    My grandfather is at home.  (avô, m)'
-  chapter: —
-- id: 0328
-  skipped: "reason_similar"
-  word: família
-  front: A minha {{family}} está em casa.
-  back: 'A minha família está em casa.
-
-    My family is at home.  (família, f)'
-  chapter: —
-- id: 0329
-  word: filho
-  front: O meu {{son}} está em casa.
-  back: 'O meu filho está em casa.
-
-    My son is at home.  (filho, m)'
-  chapter: —
-- id: '0330'
-  word: filha
-  front: A minha {{daughter}} está em casa.
-  back: 'A minha filha está em casa.
-
-    My daughter is at home.  (filha, f)'
-  chapter: —
-- id: '0331'
-  word: irmã
-  front: A minha {{sister}} está em casa.
-  back: 'A minha irmã está em casa.
-
-    My sister is at home.  (irmã, f)'
-  chapter: —
-- id: '0332'
-  word: irmão
-  front: O meu {{brother}} está em casa.
-  back: 'O meu irmão está em casa.
-
-    My brother is at home.  (irmão, m)'
-  chapter: —
-- id: '0333'
-  word: mãe
-  front: A minha {{mother}} está em casa.
-  back: 'A minha mãe está em casa.
-
-    My mother is at home.  (mãe, f)'
-  chapter: —
-- id: '0334'
-  word: pai
-  front: O meu {{father}} está em casa.
-  back: 'O meu pai está em casa.
-
-    My father is at home.  (pai, m)'
-  chapter: —
-- id: '0335'
-  word: pais
-  front: Os meus {{parents}} estão em casa.
-  back: 'Os meus pais estão em casa.
-
-    My parents are at home.  (pais, pl)'
-  chapter: —
-- id: '0336'
-  word: primo
-  front: O meu {{cousin (man)}} está em casa.
-  back: 'O meu primo está em casa.
-
-    My cousin (man) is at home.  (primo, m)'
-  chapter: —
-- id: '0337'
-  word: prima
-  front: A minha {{cousin (woman)}} está em casa.
-  back: 'A minha prima está em casa.
-
-    My cousin (woman) is at home.  (prima, f)'
-  chapter: —
-- id: 0338
-  word: água
-  front: Eu gosto de {{water}}.
-  back: 'Eu gosto de água.
-
-    I like water.  (água, f)'
-  chapter: —
-- id: 0339
-  word: almoço
-  front: Eu gosto de {{lunch}}.
-  back: 'Eu gosto de almoço.
-
-    I like lunch.  (almoço, m)'
-  chapter: —
-- id: '0340'
-  word: bolacha
-  front: Eu gosto de {{cookie}}.
-  back: 'Eu gosto de bolacha.
-
-    I like cookie.  (bolacha, f)'
-  chapter: —
-- id: '0341'
-  word: bolo
-  front: Eu gosto de {{cake}}.
-  back: 'Eu gosto de bolo.
-
-    I like cake.  (bolo, m)'
-  chapter: —
-- id: '0342'
-  skipped: "reason_similar"
-  word: café
-  front: Eu gosto de {{coffee}}.
-  back: 'Eu gosto de café.
-
-    I like coffee.  (café, m)'
-  chapter: —
-- id: '0343'
-  word: carne
-  front: Eu gosto de {{meat}}.
-  back: 'Eu gosto de carne.
-
-    I like meat.  (carne, f)'
-  chapter: —
-- id: '0344'
-  word: cerveja
-  front: Eu gosto de {{beer}}.
-  back: 'Eu gosto de cerveja.
-
-    I like beer.  (cerveja, f)'
-  chapter: —
-- id: '0345'
-  word: chá
-  front: Eu gosto de {{tea}}.
-  back: 'Eu gosto de chá.
-
-    I like tea.  (chá, m)'
-  chapter: —
-- id: '0346'
-  skipped: "reason_similar"
-  word: chocolate
-  front: Eu gosto de {{chocolate}}.
-  back: 'Eu gosto de chocolate.
-
-    I like chocolate.  (chocolate, m)'
-  chapter: —
-- id: '0347'
-  word: comida
-  front: Eu gosto de {{food}}.
-  back: 'Eu gosto de comida.
-
-    I like food.  (comida, f)'
-  chapter: —
-- id: 0348
-  word: fome
-  front: Eu gosto de {{hunger}}.
-  back: 'Eu gosto de fome.
-
-    I like hunger.  (fome, f)'
-  chapter: —
-- id: 0349
-  word: frigideira
-  front: Eu gosto de {{pan}}.
-  back: 'Eu gosto de frigideira.
-
-    I like pan.  (frigideira, f)'
-  chapter: —
-- id: '0350'
-  word: garrafa
-  front: Eu gosto de {{bottle}}.
-  back: 'Eu gosto de garrafa.
-
-    I like bottle.  (garrafa, f)'
-  chapter: —
-- id: '0351'
-  word: laranja
-  front: Eu gosto de {{orange}}.
-  back: 'Eu gosto de laranja.
-
-    I like orange.  (laranja, f)'
-  chapter: —
-- id: '0352'
-  word: legume
-  front: Eu gosto de {{vegetable}}.
-  back: 'Eu gosto de legume.
-
-    I like vegetable.  (legume, m)'
-  chapter: —
-- id: '0353'
-  word: marisco
-  front: Eu gosto de {{seafood}}.
-  back: 'Eu gosto de marisco.
-
-    I like seafood.  (marisco, m)'
-  chapter: —
-- id: '0354'
-  skipped: "reason_similar"
-  word: menu
-  front: Eu gosto de {{menu}}.
-  back: 'Eu gosto de menu.
-
-    I like menu.  (menu, m)'
-  chapter: —
-- id: '0355'
-  word: jantar
-  front: Eu gosto de {{dinner}}.
-  back: 'Eu gosto de jantar.
-
-    I like dinner.  (jantar, m)'
-  chapter: —
-- id: '0356'
-  word: pão
-  front: Eu gosto de {{bread}}.
-  back: 'Eu gosto de pão.
-
-    I like bread.  (pão, m)'
-  chapter: —
-- id: '0357'
-  word: peixe
-  front: Eu gosto de {{fish}}.
-  back: 'Eu gosto de peixe.
-
-    I like fish.  (peixe, m)'
-  chapter: —
-- id: 0358
-  word: pequeno-almoço
-  front: Eu gosto de {{breakfast}}.
-  back: 'Eu gosto de pequeno-almoço.
-
-    I like breakfast.  (pequeno-almoço, m)'
-  chapter: —
-- id: 0359
-  skipped: "reason_similar"
-  word: pizza
-  front: Eu gosto de {{pizza}}.
-  back: 'Eu gosto de pizza.
-
-    I like pizza.  (pizza, f)'
-  chapter: —
-- id: '0360'
-  word: prato
-  front: Eu gosto de {{dish}}.
-  back: 'Eu gosto de prato.
-
-    I like dish.  (prato, m)'
-  chapter: —
-- id: '0361'
-  word: receita
-  front: Eu gosto de {{recipe}}.
-  back: 'Eu gosto de receita.
-
-    I like recipe.  (receita, f)'
-  chapter: —
-- id: '0362'
-  skipped: "reason_similar"
-  word: salada
-  front: Eu gosto de {{salad}}.
-  back: 'Eu gosto de salada.
-
-    I like salad.  (salada, f)'
-  chapter: —
-- id: '0363'
-  word: sopa
-  front: Eu gosto de {{soup}}.
-  back: 'Eu gosto de sopa.
-
-    I like soup.  (sopa, f)'
-  chapter: —
-- id: '0364'
-  word: sumo
-  front: Eu gosto de {{juice}}.
-  back: 'Eu gosto de sumo.
-
-    I like juice.  (sumo, m)'
-  chapter: —
-- id: '0365'
-  word: vinho branco
-  front: Eu gosto de {{white wine}}.
-  back: 'Eu gosto de vinho branco.
-
-    I like white wine.  (vinho branco, m)'
-  chapter: —
-- id: '0366'
-  word: vinho tinto
-  front: Eu gosto de {{red wine}}.
-  back: 'Eu gosto de vinho tinto.
-
-    I like red wine.  (vinho tinto, m)'
-  chapter: —
-- id: '0367'
-  word: cadeira
-  front: Eu limpo a {{chair}}.
-  back: 'Eu limpo a cadeira.
-
-    I clean the chair.  (cadeira, f)'
-  chapter: —
-- id: 0368
-  word: cama
-  front: Eu limpo a {{bed}}.
-  back: 'Eu limpo a cama.
-
-    I clean the bed.  (cama, f)'
-  chapter: —
-- id: 0369
-  word: candeeiro
-  front: Eu limpo o {{lamp}}.
-  back: 'Eu limpo o candeeiro.
-
-    I clean the lamp.  (candeeiro, m)'
-  chapter: —
-- id: '0370'
-  word: canto
-  front: Eu limpo o {{corner}}.
-  back: 'Eu limpo o canto.
-
-    I clean the corner.  (canto, m)'
-  chapter: —
-- id: '0371'
-  word: casa
-  front: Eu limpo a {{house}}.
-  back: 'Eu limpo a casa.
-
-    I clean the house.  (casa, f)'
-  chapter: —
-- id: '0372'
-  word: casa
-  front: Eu limpo a {{home}}.
-  back: 'Eu limpo a casa.
-
-    I clean the home.  (casa, f)'
-  chapter: —
-- id: '0373'
-  word: casa de banho
-  front: Eu limpo a {{bathroom}}.
-  back: 'Eu limpo a casa de banho.
-
-    I clean the bathroom.  (casa de banho, f)'
-  chapter: —
-- id: '0374'
-  word: chão
-  front: Eu limpo o {{floor}}.
-  back: 'Eu limpo o chão.
-
-    I clean the floor.  (chão, m)'
-  chapter: —
-- id: '0375'
-  word: corredor
-  front: Eu limpo o {{corridor}}.
-  back: 'Eu limpo o corredor.
-
-    I clean the corridor.  (corredor, m)'
-  chapter: —
-- id: '0376'
-  word: cozinha
-  front: Eu limpo a {{kitchen}}.
-  back: 'Eu limpo a cozinha.
-
-    I clean the kitchen.  (cozinha, f)'
-  chapter: —
-- id: '0377'
-  word: duche
-  front: Eu limpo o {{shower}}.
-  back: 'Eu limpo o duche.
-
-    I clean the shower.  (duche, m)'
-  chapter: —
-- id: 0378
-  word: escritório
-  front: Eu limpo o {{office}}.
-  back: 'Eu limpo o escritório.
-
-    I clean the office.  (escritório, m)'
-  chapter: —
-- id: 0379
-  word: estante
-  front: Eu limpo a {{bookcase}}.
-  back: 'Eu limpo a estante.
-
-    I clean the bookcase.  (estante, f)'
-  chapter: —
-- id: 0380
-  word: gaveta
-  front: Eu limpo a {{drawer}}.
-  back: 'Eu limpo a gaveta.
-
-    I clean the drawer.  (gaveta, f)'
-  chapter: —
-- id: 0381
-  word: janela
-  front: Eu limpo a {{window}}.
-  back: 'Eu limpo a janela.
-
-    I clean the window.  (janela, f)'
-  chapter: —
-- id: 0382
-  word: luz
-  front: Eu limpo a {{light}}.
-  back: 'Eu limpo a luz.
-
-    I clean the light.  (luz, f)'
-  chapter: —
-- id: 0383
-  word: mesa
-  front: Eu limpo a {{table}}.
-  back: 'Eu limpo a mesa.
-
-    I clean the table.  (mesa, f)'
-  chapter: —
-- id: 0384
-  word: parede
-  front: Eu limpo a {{wall}}.
-  back: 'Eu limpo a parede.
-
-    I clean the wall.  (parede, f)'
-  chapter: —
-- id: 0385
-  word: porta
-  front: Eu limpo a {{door}}.
-  back: 'Eu limpo a porta.
-
-    I clean the door.  (porta, f)'
-  chapter: —
-- id: 0386
-  word: portão
-  front: Eu limpo o {{gate}}.
-  back: 'Eu limpo o portão.
-
-    I clean the gate.  (portão, m)'
-  chapter: —
-- id: 0387
-  word: quarto
-  front: Eu limpo o {{(bed)room}}.
-  back: 'Eu limpo o quarto.
-
-    I clean the (bed)room.  (quarto, m)'
-  chapter: —
-- id: 0388
-  word: sala
-  front: Eu limpo a {{room}}.
-  back: 'Eu limpo a sala.
-
-    I clean the room.  (sala, f)'
-  chapter: —
-- id: 0389
-  skipped: "reason_similar"
-  word: televisão
-  front: Eu limpo a {{television}}.
-  back: 'Eu limpo a televisão.
-
-    I clean the television.  (televisão, f)'
-  chapter: —
-- id: 0390
-  skipped: "reason_similar"
-  word: terraço
-  front: Eu limpo o {{terrace}}.
-  back: 'Eu limpo o terraço.
-
-    I clean the terrace.  (terraço, m)'
-  chapter: —
-- id: 0391
-  word: teto
-  front: Eu limpo o {{ceiling}}.
-  back: 'Eu limpo o teto.
-
-    I clean the ceiling.  (teto, m)'
-  chapter: —
-- id: 0392
-  skipped: "reason_similar"
-  word: álbum
-  front: Eu uso o {{album}}.
-  back: 'Eu uso o álbum.
-
-    I use the album.  (álbum, m)'
-  chapter: —
-- id: 0393
-  word: armadilha
-  front: Eu uso a {{trap}}.
-  back: 'Eu uso a armadilha.
-
-    I use the trap.  (armadilha, f)'
-  chapter: —
-- id: 0394
-  word: boneca
-  front: Eu uso a {{doll}}.
-  back: 'Eu uso a boneca.
-
-    I use the doll.  (boneca, f)'
-  chapter: —
-- id: 0395
-  word: caderno
-  front: Eu uso o {{notebook}}.
-  back: 'Eu uso o caderno.
-
-    I use the notebook.  (caderno, m)'
-  chapter: —
-- id: 0396
-  word: caneca
-  front: Eu uso a {{mug}}.
-  back: 'Eu uso a caneca.
-
-    I use the mug.  (caneca, f)'
-  chapter: —
-- id: 0397
-  word: caneta
-  front: Eu uso a {{pen}}.
-  back: 'Eu uso a caneta.
-
-    I use the pen.  (caneta, f)'
-  chapter: —
-- id: 0398
-  word: carta
-  front: Eu uso a {{letter}}.
-  back: 'Eu uso a carta.
-
-    I use the letter.  (carta, f)'
-  chapter: —
-- id: 0399
-  word: carteira
-  front: Eu uso a {{wallet}}.
-  back: 'Eu uso a carteira.
-
-    I use the wallet.  (carteira, f)'
-  chapter: —
-- id: '0400'
-  word: chave
-  front: Eu uso a {{key}}.
-  back: 'Eu uso a chave.
-
-    I use the key.  (chave, f)'
-  chapter: —
-- id: '0401'
-  word: chávena
-  front: Eu uso a {{cup}}.
-  back: 'Eu uso a chávena.
-
-    I use the cup.  (chávena, f)'
-  chapter: —
-- id: '0402'
-  word: coisa
-  front: Eu uso a {{thing}}.
-  back: 'Eu uso a coisa.
-
-    I use the thing.  (coisa, f)'
-  chapter: —
-- id: '0403'
-  word: colar
-  front: Eu uso o {{necklace}}.
-  back: 'Eu uso o colar.
-
-    I use the necklace.  (colar, m)'
-  chapter: —
-- id: '0404'
-  skipped: "reason_similar"
-  word: documento
-  front: Eu uso o {{document}}.
-  back: 'Eu uso o documento.
-
-    I use the document.  (documento, m)'
-  chapter: —
-- id: '0405'
-  word: encomenda
-  front: Eu uso a {{parcel}}.
-  back: 'Eu uso a encomenda.
-
-    I use the parcel.  (encomenda, f)'
-  chapter: —
-- id: '0406'
-  skipped: "reason_similar"
-  word: envelope
-  front: Eu uso o {{envelope}}.
-  back: 'Eu uso o envelope.
-
-    I use the envelope.  (envelope, m)'
-  chapter: —
-- id: '0407'
-  word: ferramenta
-  front: Eu uso a {{tool}}.
-  back: 'Eu uso a ferramenta.
-
-    I use the tool.  (ferramenta, f)'
-  chapter: —
-- id: 0408
-  skipped: "reason_similar"
-  word: formulário
-  front: Eu uso o {{form}}.
-  back: 'Eu uso o formulário.
-
-    I use the form.  (formulário, m)'
-  chapter: —
-- id: 0409
-  skipped: "reason_similar"
-  word: fotografia
-  front: Eu uso a {{photography}}.
-  back: 'Eu uso a fotografia.
-
-    I use the photography.  (fotografia, f)'
-  chapter: —
-- id: '0410'
-  word: jarro
-  front: Eu uso o {{jug}}.
-  back: 'Eu uso o jarro.
-
-    I use the jug.  (jarro, m)'
-  chapter: —
-- id: '0411'
-  word: jornal
-  front: Eu uso o {{newspaper}}.
-  back: 'Eu uso o jornal.
-
-    I use the newspaper.  (jornal, m)'
-  chapter: —
-- id: '0412'
-  word: lápis
-  front: Eu uso o {{pencil}}.
-  back: 'Eu uso o lápis.
-
-    I use the pencil.  (lápis, m)'
-  chapter: —
-- id: '0413'
-  word: livro
-  front: Eu uso o {{book}}.
-  back: 'Eu uso o livro.
-
-    I use the book.  (livro, m)'
-  chapter: —
-- id: '0414'
-  word: loiça
-  front: Eu uso a {{crockery}}.
-  back: 'Eu uso a loiça.
-
-    I use the crockery.  (loiça, f)'
-  chapter: —
-- id: '0415'
-  word: mala
-  front: Eu uso a {{bag}}.
-  back: 'Eu uso a mala.
-
-    I use the bag.  (mala, f)'
-  chapter: —
-- id: '0416'
-  skipped: "reason_similar"
-  word: máscara
-  front: Eu uso a {{mask}}.
-  back: 'Eu uso a máscara.
-
-    I use the mask.  (máscara, f)'
-  chapter: —
-- id: '0417'
-  skipped: "reason_similar"
-  word: medalha
-  front: Eu uso a {{medal}}.
-  back: 'Eu uso a medalha.
-
-    I use the medal.  (medalha, f)'
-  chapter: —
-- id: 0418
-  word: mochila
-  front: Eu uso a {{backpack}}.
-  back: 'Eu uso a mochila.
-
-    I use the backpack.  (mochila, f)'
-  chapter: —
-- id: 0419
-  word: óculos
-  front: Eu uso os {{glasses}}.
-  back: 'Eu uso os óculos.
-
-    I use the glasses.  (óculos, pl)'
-  chapter: —
-- id: '0420'
-  skipped: "reason_similar"
-  word: página
-  front: Eu uso a {{page}}.
-  back: 'Eu uso a página.
-
-    I use the page.  (página, f)'
-  chapter: —
-- id: '0421'
-  word: papel
-  front: Eu uso o {{paper}}.
-  back: 'Eu uso o papel.
-
-    I use the paper.  (papel, m)'
-  chapter: —
-- id: '0422'
-  skipped: "reason_similar"
-  word: passaporte
-  front: Eu uso o {{passport}}.
-  back: 'Eu uso o passaporte.
-
-    I use the passport.  (passaporte, m)'
-  chapter: —
-- id: '0423'
-  word: peça
-  front: Eu uso a {{part}}.
-  back: 'Eu uso a peça.
-
-    I use the part.  (peça, f)'
-  chapter: —
-- id: '0424'
-  skipped: "reason_similar"
-  word: piano
-  front: Eu uso o {{piano}}.
-  back: 'Eu uso o piano.
-
-    I use the piano.  (piano, m)'
-  chapter: —
-- id: '0425'
-  word: revista
-  front: Eu uso a {{magazine}}.
-  back: 'Eu uso a revista.
-
-    I use the magazine.  (revista, f)'
-  chapter: —
-- id: '0426'
-  skipped: "reason_similar"
-  word: telefone
-  front: Eu uso o {{telephone}}.
-  back: 'Eu uso o telefone.
-
-    I use the telephone.  (telefone, m)'
-  chapter: —
-- id: '0427'
-  word: tesouro
-  front: Eu uso o {{treasure}}.
-  back: 'Eu uso o tesouro.
-
-    I use the treasure.  (tesouro, m)'
-  chapter: —
-- id: 0428
-  word: tinta
-  front: Eu uso a {{ink}}.
-  back: 'Eu uso a tinta.
-
-    I use the ink.  (tinta, f)'
-  chapter: —
-- id: 0429
-  word: advogado
-  front: Ele é {{lawyer}}.
-  back: 'Ele é advogado.
-
-    He is a lawyer.  (advogado, m)'
-  chapter: —
-- id: '0430'
-  word: aluno
-  front: Ele é {{student}}.
-  back: 'Ele é aluno.
-
-    He is a student.  (aluno, m)'
-  chapter: —
-- id: '0431'
-  word: amigo
-  front: Ele é {{friend}}.
-  back: 'Ele é amigo.
-
-    He is a friend.  (amigo, m)'
-  chapter: —
-- id: '0432'
-  skipped: "reason_similar"
-  word: biólogo
-  front: Ele é {{biologist}}.
-  back: 'Ele é biólogo.
-
-    He is a biologist.  (biólogo, m)'
-  chapter: —
-- id: '0433'
-  word: cantor
-  front: Ele é {{singer}}.
-  back: 'Ele é cantor.
-
-    He is a singer.  (cantor, m)'
-  chapter: —
-- id: '0434'
-  skipped: "reason_similar"
-  word: cliente
-  front: Ele é {{client}}.
-  back: 'Ele é cliente.
-
-    He is a client.  (cliente, m)'
-  chapter: —
-- id: '0435'
-  word: cozinheiro
-  front: Ele é {{cook}}.
-  back: 'Ele é cozinheiro.
-
-    He is a cook.  (cozinheiro, m)'
-  chapter: —
-- id: '0436'
-  skipped: "reason_similar"
-  word: diretor
-  front: Ele é {{director}}.
-  back: 'Ele é diretor.
-
-    He is a director.  (diretor, m)'
-  chapter: —
-- id: '0437'
-  word: empregado
-  front: Ele é {{employee}}.
-  back: 'Ele é empregado.
-
-    He is a employee.  (empregado, m)'
-  chapter: —
-- id: 0438
-  word: enfermeiro
-  front: Ele é {{nurse}}.
-  back: 'Ele é enfermeiro.
-
-    He is a nurse.  (enfermeiro, m)'
-  chapter: —
-- id: 0439
-  skipped: "reason_similar"
-  word: engenheiro
-  front: Ele é {{engineer}}.
-  back: 'Ele é engenheiro.
-
-    He is a engineer.  (engenheiro, m)'
-  chapter: —
-- id: '0440'
-  word: escritor
-  front: Ele é {{writer}}.
-  back: 'Ele é escritor.
-
-    He is a writer.  (escritor, m)'
-  chapter: —
-- id: '0441'
-  word: faroleiro
-  front: Ele é {{lighthouse keeper}}.
-  back: 'Ele é faroleiro.
-
-    He is a lighthouse keeper.  (faroleiro, m)'
-  chapter: —
-- id: '0442'
-  word: guarda
-  front: Ele é {{guard}}.
-  back: 'Ele é guarda.
-
-    He is a guard.  (guarda, m)'
-  chapter: —
-- id: '0443'
-  word: guardião
-  front: Ele é {{guardian}}.
-  back: 'Ele é guardião.
-
-    He is a guardian.  (guardião, m)'
-  chapter: —
-- id: '0444'
-  skipped: "reason_similar"
-  word: guia
-  front: Ele é {{guide}}.
-  back: 'Ele é guia.
-
-    He is a guide.  (guia, m)'
-  chapter: —
-- id: '0445'
-  skipped: "reason_similar"
-  word: historiador
-  front: Ele é {{historian}}.
-  back: 'Ele é historiador.
-
-    He is a historian.  (historiador, m)'
-  chapter: —
-- id: '0446'
-  word: ladrão
-  front: Ele é {{burglar}}.
-  back: 'Ele é ladrão.
-
-    He is a burglar.  (ladrão, m)'
-  chapter: —
-- id: '0447'
-  word: médico
-  front: Ele é {{doctor}}.
-  back: 'Ele é médico.
-
-    He is a doctor.  (médico, m)'
-  chapter: —
-- id: 0448
-  skipped: "reason_similar"
-  word: paciente
-  front: Ele é {{patient}}.
-  back: 'Ele é paciente.
-
-    He is a patient.  (paciente, m)'
-  chapter: —
-- id: 0449
-  word: pescador
-  front: Ele é {{fisherman}}.
-  back: 'Ele é pescador.
-
-    He is a fisherman.  (pescador, m)'
-  chapter: —
-- id: '0450'
-  skipped: "reason_similar"
-  word: polícia
-  front: Ele é {{police officer}}.
-  back: 'Ele é polícia.
-
-    He is a police officer.  (polícia, m)'
-  chapter: —
-- id: '0451'
-  skipped: "reason_similar"
-  word: príncipe
-  front: Ele é {{prince}}.
-  back: 'Ele é príncipe.
-
-    He is a prince.  (príncipe, m)'
-  chapter: —
-- id: '0452'
-  skipped: "reason_similar"
-  word: prisioneiro
-  front: Ele é {{prisoner}}.
-  back: 'Ele é prisioneiro.
-
-    He is a prisoner.  (prisioneiro, m)'
-  chapter: —
-- id: '0453'
-  skipped: "reason_similar"
-  word: professor
-  front: Ele é {{teacher}}.
-  back: 'Ele é professor.
-
-    He is a teacher.  (professor, m)'
-  chapter: —
-- id: '0454'
-  word: rei
-  front: Ele é {{king}}.
-  back: 'Ele é rei.
-
-    He is a king.  (rei, m)'
-  chapter: —
-- id: '0455'
-  word: recém-chegado
-  front: Ele é {{newcomer}}.
-  back: 'Ele é recém-chegado.
-
-    He is a newcomer.  (recém-chegado, m)'
-  chapter: —
-- id: '0456'
-  word: reformado
-  front: Ele é {{retired}}.
-  back: 'Ele é reformado.
-
-    He is a retired.  (reformado, m)'
-  chapter: —
-- id: '0457'
-  skipped: "reason_similar"
-  word: secretário
-  front: Ele é {{secretary}}.
-  back: 'Ele é secretário.
-
-    He is a secretary.  (secretário, m)'
-  chapter: —
-- id: 0458
-  skipped: "reason_similar"
-  word: turista
-  front: Ele é {{tourist}}.
-  back: 'Ele é turista.
-
-    He is a tourist.  (turista, m)'
-  chapter: —
-- id: 0459
-  word: vendedor
-  front: Ele é {{seller}}.
-  back: 'Ele é vendedor.
-
-    He is a seller.  (vendedor, m)'
-  chapter: —
-- id: '0460'
-  word: vizinho
-  front: Ele é {{neighbor}}.
-  back: 'Ele é vizinho.
-
-    He is a neighbor.  (vizinho, m)'
-  chapter: —
-- id: '0461'
-  word: autocarro
-  front: Eu vou de {{bus}}.
-  back: 'Eu vou de autocarro.
-
-    I go by bus.  (autocarro, m)'
-  chapter: —
-- id: '0462'
-  word: avião
-  front: Eu vou de {{plane}}.
-  back: 'Eu vou de avião.
-
-    I go by plane.  (avião, m)'
-  chapter: —
-- id: '0463'
-  word: barco
-  front: Eu vou de {{boat}}.
-  back: 'Eu vou de barco.
-
-    I go by boat.  (barco, m)'
-  chapter: —
-- id: '0464'
-  skipped: "reason_similar"
-  word: bicicleta
-  front: Eu vou de {{bicycle}}.
-  back: 'Eu vou de bicicleta.
-
-    I go by bicycle.  (bicicleta, f)'
-  chapter: —
-- id: '0465'
-  word: carro
-  front: Eu vou de {{car}}.
-  back: 'Eu vou de carro.
-
-    I go by car.  (carro, m)'
-  chapter: —
-- id: '0466'
-  word: comboio
-  front: Eu vou de {{train}}.
-  back: 'Eu vou de comboio.
-
-    I go by train.  (comboio, m)'
-  chapter: —
-- id: '0467'
-  word: elétrico
-  front: Eu vou de {{tram}}.
-  back: 'Eu vou de elétrico.
-
-    I go by tram.  (elétrico, m)'
-  chapter: —
-- id: 0468
-  word: a pé
-  front: Eu vou {{on foot}}.
-  back: 'Eu vou a pé.
-
-    I go on foot.  (a pé, m)'
-  chapter: —
+  - id: 0186
+    skipped: "reason_similar"
+    word: arqueologia
+    front: A {{archeology}} é importante.
+    back: 'A arqueologia é importante.
+
+      Archeology is important.  (arqueologia, f)'
+    chapter: —
+  - id: 0187
+    skipped: "reason_similar"
+    word: arte
+    front: A {{art}} é importante.
+    back: 'A arte é importante.
+
+      Art is important.  (arte, f)'
+    chapter: —
+  - id: 0188
+    skipped: "reason_similar"
+    word: aventura
+    front: A {{adventure}} é importante.
+    back: 'A aventura é importante.
+
+      Adventure is important.  (aventura, f)'
+    chapter: —
+  - id: 0189
+    suspended: This belongs to the mass-suspended “A X é importante” batch. burocracia is a transparent cognate and “A burocracia é importante” is semantically empty.
+    skipped: "reason_similar"
+    word: burocracia
+    front: A {{bureaucracy}} em Portugal pode demorar.
+    back: 'A burocracia em Portugal pode demorar.<br>Bureaucracy in Portugal can take time.<br><br>This gives <b>burocracia</b> an actual administrative context instead of the empty template “X is important”.'
+    chapter: —
+  - id: 0190
+    suspended: This belongs to the mass-suspended “A X é importante” batch. ciência is a transparent cognate; the template gives no memorable context.
+    skipped: "reason_similar"
+    word: ciência
+    front: A {{science}} é importante.
+    back: 'A ciência é importante.
+
+      Science is important.  (ciência, f)'
+    chapter: —
+  - id: 0191
+    suspended: This belongs to the mass-suspended “A X é importante” batch. coincidência is transparent and the template wastes a very natural phrase.
+    skipped: "reason_similar"
+    word: coincidência
+    front: Que {{coincidence}}! Também moro em Lisboa.
+    back: 'Que coincidência! Também moro em Lisboa.<br>What a coincidence! I also live in Lisbon.<br><br><b>Que + noun!</b> is a common exclamation pattern: <i>Que coincidência!</i>'
+    chapter: —
+  - id: 0192
+    skipped: "reason_similar"
+    word: explicação
+    front: A {{explanation}} é importante.
+    back: 'A explicação é importante.
+
+      Explanation is important.  (explicação, f)'
+    chapter: —
+  - id: 0193
+    suspended: This belongs to the mass-suspended “A X é importante” batch. hipótese is transparent; “is important” does not distinguish hypothesis/chance/possibility senses.
+    skipped: "reason_similar"
+    word: hipótese
+    front: Há uma {{possibility}} de chover amanhã.
+    back: 'Há uma hipótese de chover amanhã.<br>There is a possibility that it will rain tomorrow.<br><br><b>hipótese</b> can mean a scientific hypothesis, but also a possibility/chance in everyday Portuguese. This card teaches the latter.'
+    chapter: —
+  - id: 0194
+    suspended: This belongs to the mass-suspended “A X é importante” batch. história is actually important because it can mean history or story, but the card tests only an isolated English gloss in a useless sentence.
+    skipped: "reason_similar"
+    word: história
+    front: Ele contou-me uma {{story}} engraçada.
+    back: 'Ele contou-me uma história engraçada.<br>He told me a funny story.<br><br><b>história</b> can mean both “story” and “history”. Context decides; this card deliberately trains the everyday “story” sense.'
+    chapter: —
+  - id: 0195
+    suspended: This belongs to the mass-suspended “A X é importante” batch. informação is transparent and the sentence teaches almost nothing.
+    skipped: "reason_similar"
+    word: informação
+    front: Preciso de mais {{information}} sobre a consulta.
+    back: 'Preciso de mais informação sobre a consulta.<br>I need more information about the appointment.<br><br><b>informação</b> works as a mass noun here. You will also very often see plural <i>informações</i> for pieces/details of information.'
+    chapter: —
+  - id: 0196
+    suspended: This belongs to the mass-suspended “A X é importante” batch. lenda may be useful for reading, but the generic template is poor.
+    skipped: "reason_similar"
+    word: lenda
+    front: A {{legend}} é importante.
+    back: 'A lenda é importante.
+
+      Legend is important.  (lenda, f)'
+    chapter: —
+  - id: 0197
+    suspended: This belongs to the mass-suspended “A X é importante” batch. literatura is transparent and low-information in this template.
+    skipped: "reason_similar"
+    word: literatura
+    front: A {{literature}} é importante.
+    back: 'A literatura é importante.
+
+      Literature is important.  (literatura, f)'
+    chapter: —
+  - id: 0198
+    suspended: This belongs to the mass-suspended “A X é importante” batch. matemática is transparent and the template is pure busywork.
+    skipped: "reason_similar"
+    word: matemática
+    front: A {{mathematics}} é importante.
+    back: 'A matemática é importante.
+
+      Mathematics is important.  (matemática, f)'
+    chapter: —
+  - id: 0199
+    suspended: This belongs to the mass-suspended “A X é importante” batch. mistério is transparent; the sentence is generic.
+    skipped: "reason_similar"
+    word: mistério
+    front: O {{mystery}} é importante.
+    back: 'O mistério é importante.
+
+      Mystery is important.  (mistério, m)'
+    chapter: —
+  - id: '0200'
+    suspended: This belongs to the mass-suspended “A X é importante” batch. mito is transparent; generic sentence gives no value.
+    skipped: "reason_similar"
+    word: mito
+    front: O {{myth}} é importante.
+    back: 'O mito é importante.
+
+      Myth is important.  (mito, m)'
+    chapter: —
+  - id: '0201'
+    word: notícia
+    front: A {{news}} é importante.
+    back: 'A notícia é importante.
+
+      News is important.  (notícia, f)'
+    chapter: —
+  - id: '0202'
+    suspended: This belongs to the mass-suspended “A X é importante” batch. oportunidade is useful but nearly cognate-like and deserves a real collocation.
+    skipped: "reason_similar"
+    word: oportunidade
+    front: Não quero perder esta {{opportunity}}.
+    back: 'Não quero perder esta oportunidade.<br>I don''t want to miss this opportunity.<br><br><b>perder uma oportunidade</b> = miss/lose an opportunity, a useful collocation.'
+    chapter: —
+  - id: '0203'
+    suspended: This belongs to the mass-suspended “A X é importante” batch. paciência is high-value in fixed expressions, but the generic template misses them.
+    skipped: "reason_similar"
+    word: paciência
+    front: Não tenho {{patience}} para esperar mais.
+    back: 'Não tenho paciência para esperar mais.<br>I don''t have the patience to wait any longer.<br><br><b>ter paciência</b> = have patience; <i>Tenha paciência</i> can mean “please be patient”.'
+    chapter: —
+  - id: '0204'
+    word: palavra
+    front: A {{word}} é importante.
+    back: 'A palavra é importante.
+
+      Word is important.  (palavra, f)'
+    chapter: —
+  - id: '0205'
+    word: piada
+    front: A {{joke}} é importante.
+    back: 'A piada é importante.
+
+      Joke is important.  (piada, f)'
+    chapter: —
+  - id: '0206'
+    skipped: "reason_similar"
+    word: poesia
+    front: A {{poetry}} é importante.
+    back: 'A poesia é importante.
+
+      Poetry is important.  (poesia, f)'
+    chapter: —
+  - id: '0207'
+    suspended: This belongs to the mass-suspended “A X é importante” batch. proposta can be proposal/offer/suggestion depending context; the generic sentence hides this polysemy.
+    skipped: "reason_similar"
+    word: proposta
+    front: A empresa fez-me uma {{proposal}} de trabalho.
+    back: 'A empresa fez-me uma proposta de trabalho.<br>The company made me a job proposal/offer.<br><br><b>fazer uma proposta</b> = make a proposal/offer. In work context <i>proposta</i> can overlap with English “offer”.'
+    chapter: —
+  - id: 0208
+    suspended: This belongs to the mass-suspended “A X é importante” batch. salvação is lower-frequency and often religious/literary; generic template makes it poor A1 material.
+    skipped: "reason_similar"
+    word: salvação
+    front: A {{salvation}} é importante.
+    back: 'A salvação é importante.
+
+      Salvation is important.  (salvação, f)'
+    chapter: —
+  - id: 0209
+    word: segredo
+    front: O {{secret}} é importante.
+    back: 'O segredo é importante.
+
+      Secret is important.  (segredo, m)'
+    chapter: —
+  - id: '0210'
+    suspended: This belongs to the mass-suspended “A X é importante” batch. significado is useful, but “meaning is important” is unnatural pedagogically.
+    word: significado
+    front: Qual é o {{meaning}} desta palavra?
+    back: 'Qual é o significado desta palavra?<br>What is the meaning of this word?<br><br><b>significado</b> = meaning/significance. <i>desta = de + esta</i>.'
+    chapter: —
+  - id: '0211'
+    skipped: "reason_similar"
+    word: símbolo
+    front: O {{symbol}} é importante.
+    back: 'O símbolo é importante.
+
+      Symbol is important.  (símbolo, m)'
+    chapter: —
+  - id: '0212'
+    word: sonho
+    front: O {{dream}} é importante.
+    back: 'O sonho é importante.
+
+      Dream is important.  (sonho, m)'
+    chapter: —
+  - id: '0213'
+    suspended: This belongs to the mass-suspended “A X é importante” batch. teoria is transparent; generic template adds nothing.
+    skipped: "reason_similar"
+    word: teoria
+    front: A {{theory}} é importante.
+    back: 'A teoria é importante.
+
+      Theory is important.  (teoria, f)'
+    chapter: —
+  - id: '0214'
+    suspended: This belongs to the mass-suspended “A X é importante” batch. texto is transparent/basic; generic template adds nothing.
+    skipped: "reason_similar"
+    word: texto
+    front: O {{text}} é importante.
+    back: 'O texto é importante.
+
+      Text is important.  (texto, m)'
+    chapter: —
+  - id: '0215'
+    word: vida
+    front: A {{life}} é importante.
+    back: 'A vida é importante.
+
+      Life is important.  (vida, f)'
+    chapter: —
+  - id: '0216'
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. alforreca is Portugal-relevant beach vocabulary, but “I see the jellyfish” is a weak context and the word is lower-frequency.
+    word: alforreca
+    front: Vi uma {{jellyfish}} na água.
+    back: 'Vi uma alforreca na água.<br>I saw a jellyfish in the water.<br><br><b>alforreca</b> is the common European Portuguese word for jellyfish.'
+    chapter: —
+  - id: '0217'
+    word: alga
+    front: Eu vejo a {{seaweed}}.
+    back: 'Eu vejo a alga.
+
+      I see the seaweed.  (alga, f)'
+    chapter: —
+  - id: 0218
+    word: ar
+    front: Eu vejo o {{air}}.
+    back: 'Eu vejo o ar.
+
+      I see the air.  (ar, m)'
+    chapter: —
+  - id: 0219
+    word: cachalote
+    front: Eu vejo o {{sperm whale}}.
+    back: 'Eu vejo o cachalote.
+
+      I see the sperm whale.  (cachalote, m)'
+    chapter: —
+  - id: '0220'
+    word: campo
+    front: Eu vejo o {{countryside}}.
+    back: 'Eu vejo o campo.
+
+      I see the countryside.  (campo, m)'
+    chapter: —
+  - id: '0221'
+    word: cão
+    front: Eu vejo o {{dog}}.
+    back: 'Eu vejo o cão.
+
+      I see the dog.  (cão, m)'
+    chapter: —
+  - id: '0222'
+    word: céu
+    front: Eu vejo o {{sky}}.
+    back: 'Eu vejo o céu.
+
+      I see the sky.  (céu, m)'
+    chapter: —
+  - id: '0223'
+    word: cobra
+    front: Eu vejo a {{snake}}.
+    back: 'Eu vejo a cobra.
+
+      I see the snake.  (cobra, f)'
+    chapter: —
+  - id: '0224'
+    skipped: "reason_similar"
+    word: coral
+    front: Eu vejo o {{coral}}.
+    back: 'Eu vejo o coral.
+
+      I see the coral.  (coral, m)'
+    chapter: —
+  - id: '0225'
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. criatura is a transparent/literary general noun; template adds little.
+    skipped: "reason_similar"
+    word: criatura
+    front: Eu vejo a {{creature}}.
+    back: 'Eu vejo a criatura.
+
+      I see the creature.  (criatura, f)'
+    chapter: —
+  - id: '0226'
+    word: erva
+    front: Eu vejo a {{grass}}.
+    back: 'Eu vejo a erva.
+
+      I see the grass.  (erva, f)'
+    chapter: —
+  - id: '0227'
+    word: estrela
+    front: Eu vejo a {{star}}.
+    back: 'Eu vejo a estrela.
+
+      I see the star.  (estrela, f)'
+    chapter: —
+  - id: 0228
+    word: flor
+    front: Eu vejo a {{flower}}.
+    back: 'Eu vejo a flor.
+
+      I see the flower.  (flor, f)'
+    chapter: —
+  - id: 0229
+    word: gato
+    front: Eu vejo o {{cat}}.
+    back: 'Eu vejo o gato.
+
+      I see the cat.  (gato, m)'
+    chapter: —
+  - id: '0230'
+    word: grau
+    front: Eu vejo o {{degree}}.
+    back: 'Eu vejo o grau.
+
+      I see the degree.  (grau, m)'
+    chapter: —
+  - id: '0231'
+    word: ilha
+    front: Eu vejo a {{island}}.
+    back: 'Eu vejo a ilha.
+
+      I see the island.  (ilha, f)'
+    chapter: —
+  - id: '0232'
+    word: lula
+    front: Eu vejo a {{squid}}.
+    back: 'Eu vejo a lula.
+
+      I see the squid.  (lula, f)'
+    chapter: —
+  - id: '0233'
+    word: madeira
+    front: Eu vejo a {{wood}}.
+    back: 'Eu vejo a madeira.
+
+      I see the wood.  (madeira, f)'
+    chapter: —
+  - id: '0234'
+    word: mar
+    front: Eu vejo o {{sea}}.
+    back: 'Eu vejo o mar.
+
+      I see the sea.  (mar, m)'
+    chapter: —
+  - id: '0235'
+    skipped: "reason_similar"
+    word: natureza
+    front: Eu vejo a {{nature}}.
+    back: 'Eu vejo a natureza.
+
+      I see the nature.  (natureza, f)'
+    chapter: —
+  - id: '0236'
+    word: nuvem
+    front: Eu vejo a {{cloud}}.
+    back: 'Eu vejo a nuvem.
+
+      I see the cloud.  (nuvem, f)'
+    chapter: —
+  - id: '0237'
+    word: pássaro
+    front: Eu vejo o {{bird}}.
+    back: 'Eu vejo o pássaro.
+
+      I see the bird.  (pássaro, m)'
+    chapter: —
+  - id: 0238
+    word: pedra
+    front: Eu vejo a {{stone}}.
+    back: 'Eu vejo a pedra.
+
+      I see the stone.  (pedra, f)'
+    chapter: —
+  - id: 0239
+    skipped: "reason_similar"
+    word: planta
+    front: Eu vejo a {{plant}}.
+    back: 'Eu vejo a planta.
+
+      I see the plant.  (planta, f)'
+    chapter: —
+  - id: '0240'
+    word: praia
+    front: Eu vejo a {{beach}}.
+    back: 'Eu vejo a praia.
+
+      I see the beach.  (praia, f)'
+    chapter: —
+  - id: '0241'
+    word: rato
+    front: Eu vejo o {{mouse}}.
+    back: 'Eu vejo o rato.
+
+      I see the mouse.  (rato, m)'
+    chapter: —
+  - id: '0242'
+    word: sol
+    front: Eu vejo o {{sun}}.
+    back: 'Eu vejo o sol.
+
+      I see the sun.  (sol, m)'
+    chapter: —
+  - id: '0243'
+    skipped: "reason_similar"
+    word: temperatura
+    front: Eu vejo a {{temperature}}.
+    back: 'Eu vejo a temperatura.
+
+      I see the temperature.  (temperatura, f)'
+    chapter: —
+  - id: '0244'
+    word: tempo
+    front: Eu vejo o {{weather}}.
+    back: 'Eu vejo o tempo.
+
+      I see the weather.  (tempo, m)'
+    chapter: —
+  - id: '0245'
+    word: vento
+    front: Eu vejo o {{wind}}.
+    back: 'Eu vejo o vento.
+
+      I see the wind.  (vento, m)'
+    chapter: —
+  - id: '0246'
+    word: barba
+    front: Eu vejo a {{beard}}.
+    back: 'Eu vejo a barba.
+
+      I see the beard.  (barba, f)'
+    chapter: —
+  - id: '0247'
+    word: barriga
+    front: Eu vejo a {{belly}}.
+    back: 'Eu vejo a barriga.
+
+      I see the belly.  (barriga, f)'
+    chapter: —
+  - id: 0248
+    skipped: "reason_similar"
+    word: bebé
+    front: Eu vejo o {{baby}}.
+    back: 'Eu vejo o bebé.
+
+      I see the baby.  (bebé, m)'
+    chapter: —
+  - id: 0249
+    word: boca
+    front: Eu vejo a {{mouth}}.
+    back: 'Eu vejo a boca.
+
+      I see the mouth.  (boca, f)'
+    chapter: —
+  - id: '0250'
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. braço is useful, but body vocabulary deserves a functional context; “I see the arm” is unnatural.
+    word: braço
+    front: Dói-me o {{arm}}.
+    back: 'Dói-me o braço.<br>My arm hurts.<br><br><b>braço</b> = arm. Contrast <b>mão</b> = hand. <i>Dói-me X</i> is a very useful body-pain pattern.'
+    chapter: —
+  - id: '0251'
+    word: cabeça
+    front: Eu vejo a {{head}}.
+    back: 'Eu vejo a cabeça.
+
+      I see the head.  (cabeça, f)'
+    chapter: —
+  - id: '0252'
+    word: cabelo
+    front: Eu vejo o {{hair}}.
+    back: 'Eu vejo o cabelo.
+
+      I see the hair.  (cabelo, m)'
+    chapter: —
+  - id: '0253'
+    word: cara
+    front: Eu vejo a {{face}}.
+    back: 'Eu vejo a cara.
+
+      I see the face.  (cara, f)'
+    chapter: —
+  - id: '0254'
+    word: costas
+    front: Eu vejo as {{back}}.
+    back: 'Eu vejo as costas.
+
+      I see the back.  (costas, pl)'
+    chapter: —
+  - id: '0255'
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. criança is very useful, but the article a is grammatical gender and not the child’s sex; the template can mislead.
+    word: criança
+    front: Há uma {{child}} a brincar no parque.
+    back: 'Há uma criança a brincar no parque.<br>There is a child playing in the park.<br><br><b>criança</b> is grammatically feminine even when the child is a boy; grammatical gender does not identify the child''s sex.'
+    chapter: —
+  - id: '0256'
+    word: dente
+    front: Eu vejo o {{tooth}}.
+    back: 'Eu vejo o dente.
+
+      I see the tooth.  (dente, m)'
+    chapter: —
+  - id: '0257'
+    word: homem
+    front: Eu vejo o {{man}}.
+    back: 'Eu vejo o homem.
+
+      I see the man.  (homem, m)'
+    chapter: —
+  - id: 0258
+    skipped: "reason_similar"
+    word: humano
+    front: Eu vejo o {{human}}.
+    back: 'Eu vejo o humano.
+
+      I see the human.  (humano, m)'
+    chapter: —
+  - id: 0259
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. lábio is useful health/body vocab; current sentence is artificial.
+    word: lábio
+    front: Cortei o {{lip}}.
+    back: 'Cortei o lábio.<br>I cut my lip.<br><br><b>lábio</b> = lip; plural <i>lábios</i>. The injury context makes this body word easier to retrieve.'
+    chapter: —
+  - id: '0260'
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. mão is extremely useful; current sentence is too trivial.
+    word: mão
+    front: Dói-me a {{hand}}.
+    back: 'Dói-me a mão.<br>My hand hurts.<br><br><b>mão</b> is feminine despite ending in <i>-ão</i>: <b>a mão</b>, plural <b>as mãos</b>.'
+    chapter: —
+  - id: '0261'
+    word: mulher
+    front: Eu vejo a {{woman}}.
+    back: 'Eu vejo a mulher.
+
+      I see the woman.  (mulher, f)'
+    chapter: —
+  - id: '0262'
+    word: nariz
+    front: Eu vejo o {{nose}}.
+    back: 'Eu vejo o nariz.
+
+      I see the nose.  (nariz, m)'
+    chapter: —
+  - id: '0263'
+    word: olho
+    front: Eu vejo o {{eye}}.
+    back: 'Eu vejo o olho.
+
+      I see the eye.  (olho, m)'
+    chapter: —
+  - id: '0264'
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. ombro is useful; current sentence is artificial.
+    word: ombro
+    front: Dói-me o {{shoulder}}.
+    back: 'Dói-me o ombro.<br>My shoulder hurts.<br><br><b>ombro</b> = shoulder. This is more useful than the generic “I see the shoulder” template.'
+    chapter: —
+  - id: '0265'
+    word: pele
+    front: Eu vejo a {{skin}}.
+    back: 'Eu vejo a pele.
+
+      I see the skin.  (pele, f)'
+    chapter: —
+  - id: '0266'
+    word: perna
+    front: Eu vejo a {{leg}}.
+    back: 'Eu vejo a perna.
+
+      I see the leg.  (perna, f)'
+    chapter: —
+  - id: '0267'
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. pescoço is useful; current sentence is artificial.
+    word: pescoço
+    front: Tenho dor no {{neck}}.
+    back: 'Tenho dor no pescoço.<br>I have pain in my neck.<br><br><b>no = em + o</b>. <b>dor no pescoço</b> is a normal health-context phrase.'
+    chapter: —
+  - id: 0268
+    word: pessoa
+    front: Eu vejo a {{person}}.
+    back: 'Eu vejo a pessoa.
+
+      I see the person.  (pessoa, f)'
+    chapter: —
+  - id: 0269
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. pulmão is medical vocabulary, useful for reading but not early daily speech; current sentence is artificial.
+    word: pulmão
+    front: Eu vejo o {{lung}}.
+    back: 'Eu vejo o pulmão.
+
+      I see the lung.  (pulmão, m)'
+    chapter: —
+  - id: '0270'
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. rapariga is specifically important in Portugal, but English “girl” is age/register-sensitive and the template gives no clue.
+    word: rapariga
+    front: Aquela {{young woman / girl}} trabalha aqui.
+    back: 'Aquela rapariga trabalha aqui.<br>That young woman/girl works here.<br><br>In European Portuguese <b>rapariga</b> is an ordinary word for a girl/young woman. Its connotations differ in some other Portuguese varieties.'
+    chapter: —
+  - id: '0271'
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. sangue is useful health vocabulary; “I see the blood” is strange as a learning sentence.
+    word: sangue
+    front: Há {{blood}} na camisola.
+    back: 'Há sangue na camisola.<br>There is blood on the shirt.<br><br><b>sangue</b> = blood. <b>há</b> = there is/are.'
+    chapter: —
+  - id: '0272'
+    suspended: 'This belongs to the mass-suspended “Eu vejo…” batch. arco is highly polysemous: arch, bow, arc. “I see the arch” selects one sense but the note label does not.'
+    skipped: "reason_similar"
+    word: arco
+    front: Passámos por baixo de um {{arch}} de pedra.
+    back: 'Passámos por baixo de um arco de pedra.<br>We passed under a stone arch.<br><br><b>arco</b> has several senses (arch, bow, arc). This context explicitly trains the architectural “arch” sense.'
+    chapter: —
+  - id: '0273'
+    skipped: "reason_similar"
+    word: atração
+    front: Eu vejo a {{attraction}}.
+    back: 'Eu vejo a atração.
+
+      I see the attraction.  (atração, f)'
+    chapter: —
+  - id: '0274'
+    word: aula
+    front: Eu vejo a {{class}}.
+    back: 'Eu vejo a aula.
+
+      I see the class.  (aula, f)'
+    chapter: —
+  - id: '0275'
+    skipped: "reason_similar"
+    word: banco
+    front: Eu vejo o {{bank}}.
+    back: 'Eu vejo o banco.
+
+      I see the bank.  (banco, m)'
+    chapter: —
+  - id: '0276'
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. biblioteca is useful mainly because learners confuse it with livraria; the template misses that contrast.
+    word: biblioteca
+    front: Vou à {{library}} devolver um livro.
+    back: 'Vou à biblioteca devolver um livro.<br>I''m going to the library to return a book.<br><br><b>biblioteca</b> = library. Contrast <b>livraria</b> = bookstore/bookshop. <b>à = a + a</b>.'
+    chapter: —
+  - id: '0277'
+    word: bilhete
+    front: Eu vejo o {{ticket}}.
+    back: 'Eu vejo o bilhete.
+
+      I see the ticket.  (bilhete, m)'
+    chapter: —
+  - id: 0278
+    skipped: "reason_similar"
+    word: café
+    front: Eu vejo o {{coffee}}.
+    back: 'Eu vejo o café.
+
+      I see the coffee.  (café, m)'
+    chapter: —
+  - id: 0279
+    word: cais
+    front: Eu vejo o {{pier}}.
+    back: 'Eu vejo o cais.
+
+      I see the pier.  (cais, m)'
+    chapter: —
+  - id: 0280
+    word: caminho
+    front: Eu vejo o {{path}}.
+    back: 'Eu vejo o caminho.
+
+      I see the path.  (caminho, m)'
+    chapter: —
+  - id: 0281
+    skipped: "reason_similar"
+    word: cêntimo
+    front: Eu vejo o {{cent}}.
+    back: 'Eu vejo o cêntimo.
+
+      I see the cent.  (cêntimo, m)'
+    chapter: —
+  - id: 0282
+    word: cidade
+    front: Eu vejo a {{city}}.
+    back: 'Eu vejo a cidade.
+
+      I see the city.  (cidade, f)'
+    chapter: —
+  - id: 0283
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. cinema is transparent and the sentence is low-information.
+    skipped: "reason_similar"
+    word: cinema
+    front: Eu vejo o {{movie theater}}.
+    back: 'Eu vejo o cinema.
+
+      I see the movie theater.  (cinema, m)'
+    chapter: —
+  - id: 0284
+    word: correios
+    front: Eu vejo os {{post office}}.
+    back: 'Eu vejo os correios.
+
+      I see the post office.  (correios, pl)'
+    chapter: —
+  - id: 0285
+    word: conta
+    front: Eu vejo a {{check}}.
+    back: 'Eu vejo a conta.
+
+      I see the check.  (conta, f)'
+    chapter: —
+  - id: 0286
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. cúpula is lower-priority architecture vocabulary and near-cognate “cupola/dome”.
+    word: cúpula
+    front: Eu vejo a {{dome}}.
+    back: 'Eu vejo a cúpula.
+
+      I see the dome.  (cúpula, f)'
+    chapter: —
+  - id: 0287
+    word: dinheiro
+    front: Eu vejo o {{money}}.
+    back: 'Eu vejo o dinheiro.
+
+      I see the money.  (dinheiro, m)'
+    chapter: —
+  - id: 0288
+    word: edifício
+    front: Eu vejo o {{building}}.
+    back: 'Eu vejo o edifício.
+
+      I see the building.  (edifício, m)'
+    chapter: —
+  - id: 0289
+    word: escola
+    front: Eu vejo a {{school}}.
+    back: 'Eu vejo a escola.
+
+      I see the school.  (escola, f)'
+    chapter: —
+  - id: 0290
+    skipped: "reason_similar"
+    word: espetáculo
+    front: Eu vejo o {{show}}.
+    back: 'Eu vejo o espetáculo.
+
+      I see the show.  (espetáculo, m)'
+    chapter: —
+  - id: 0291
+    word: estação
+    front: Eu vejo a {{station}}.
+    back: 'Eu vejo a estação.
+
+      I see the station.  (estação, f)'
+    chapter: —
+  - id: 0292
+    skipped: "reason_similar"
+    word: farmácia
+    front: Eu vejo a {{pharmacy}}.
+    back: 'Eu vejo a farmácia.
+
+      I see the pharmacy.  (farmácia, f)'
+    chapter: —
+  - id: 0293
+    skipped: "reason_similar"
+    word: ginásio
+    front: Eu vejo o {{gym}}.
+    back: 'Eu vejo o ginásio.
+
+      I see the gym.  (ginásio, m)'
+    chapter: —
+  - id: 0294
+    skipped: "reason_similar"
+    word: hospital
+    front: Eu vejo o {{hospital}}.
+    back: 'Eu vejo o hospital.
+
+      I see the hospital.  (hospital, m)'
+    chapter: —
+  - id: 0295
+    skipped: "reason_similar"
+    word: hotel
+    front: Eu vejo o {{hotel}}.
+    back: 'Eu vejo o hotel.
+
+      I see the hotel.  (hotel, m)'
+    chapter: —
+  - id: 0296
+    word: jardim
+    front: Eu vejo o {{garden}}.
+    back: 'Eu vejo o jardim.
+
+      I see the garden.  (jardim, m)'
+    chapter: —
+  - id: 0297
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. livraria is high-value because it is NOT library. The current template fails to exploit the false-friend contrast.
+    word: livraria
+    front: Comprei este livro numa {{bookstore}}.
+    back: 'Comprei este livro numa livraria.<br>I bought this book in a bookstore.<br><br><b>livraria</b> = bookstore/bookshop; <b>biblioteca</b> = library. <b>numa = em + uma</b>.'
+    chapter: —
+  - id: 0298
+    word: lugar
+    front: Eu vejo o {{place}}.
+    back: 'Eu vejo o lugar.
+
+      I see the place.  (lugar, m)'
+    chapter: —
+  - id: 0299
+    skipped: "reason_similar"
+    word: mapa
+    front: Eu vejo o {{map}}.
+    back: 'Eu vejo o mapa.
+
+      I see the map.  (mapa, m)'
+    chapter: —
+  - id: '0300'
+    word: moeda
+    front: Eu vejo a {{coin}}.
+    back: 'Eu vejo a moeda.
+
+      I see the coin.  (moeda, f)'
+    chapter: —
+  - id: '0301'
+    word: morada
+    front: Eu vejo a {{address}}.
+    back: 'Eu vejo a morada.
+
+      I see the address.  (morada, f)'
+    chapter: —
+  - id: '0302'
+    skipped: "reason_similar"
+    word: museu
+    front: Eu vejo o {{museum}}.
+    back: 'Eu vejo o museu.
+
+      I see the museum.  (museu, m)'
+    chapter: —
+  - id: '0303'
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. palácio is transparent and low-priority for everyday A1; template adds little.
+    skipped: "reason_similar"
+    word: palácio
+    front: Eu vejo o {{palace}}.
+    back: 'Eu vejo o palácio.
+
+      I see the palace.  (palácio, m)'
+    chapter: —
+  - id: '0304'
+    word: paragem
+    front: Eu vejo a {{bus stop}}.
+    back: 'Eu vejo a paragem.
+
+      I see the bus stop.  (paragem, f)'
+    chapter: —
+  - id: '0305'
+    skipped: "reason_similar"
+    word: parque
+    front: Eu vejo o {{park}}.
+    back: 'Eu vejo o parque.
+
+      I see the park.  (parque, m)'
+    chapter: —
+  - id: '0306'
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. This is one of three polícia cards. Institution vs individual officer is real, but the deck duplicates it awkwardly.
+    skipped: "reason_similar"
+    word: polícia
+    front: Eu vejo a {{police (institution)}}.
+    back: 'Eu vejo a polícia.
+
+      I see the police (institution).  (polícia, f)'
+    chapter: —
+  - id: '0307'
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. Duplicate of the polícia officer concept; also the gender/article usage deserves explanation rather than another template sentence.
+    skipped: "reason_similar"
+    word: polícia
+    front: Eu vejo o {{police officer}}.
+    back: 'Eu vejo o polícia.
+
+      I see the police officer.  (polícia, m)'
+    chapter: —
+  - id: 0308
+    word: ponte
+    front: Eu vejo a {{bridge}}.
+    back: 'Eu vejo a ponte.
+
+      I see the bridge.  (ponte, f)'
+    chapter: —
+  - id: 0309
+    word: preço
+    front: Eu vejo o {{price}}.
+    back: 'Eu vejo o preço.
+
+      I see the price.  (preço, m)'
+    chapter: —
+  - id: '0310'
+    suspended: 'This belongs to the mass-suspended “Eu vejo…” batch. reserva is polysemous: reservation/booking, reserve, stock. “I see a reservation” is unnatural.'
+    skipped: "reason_similar"
+    word: reserva
+    front: Tenho uma {{reservation}} em nome de Ana.
+    back: 'Tenho uma reserva em nome de Ana.<br>I have a reservation under the name Ana.<br><br><b>reserva</b> has several meanings; the restaurant/hotel booking context removes the ambiguity. <b>em nome de</b> = under/in the name of.'
+    chapter: —
+  - id: '0311'
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. restaurante is transparent/basic and “I see the restaurant” adds no value.
+    skipped: "reason_similar"
+    word: restaurante
+    front: Eu vejo o {{restaurant}}.
+    back: 'Eu vejo o restaurante.
+
+      I see the restaurant.  (restaurante, m)'
+    chapter: —
+  - id: '0312'
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. rua normally means street, not generic “road”. The English cue is imprecise.
+    word: rua
+    front: Moro nesta {{street}}.
+    back: 'Moro nesta rua.<br>I live on this street.<br><br><b>rua</b> = street. English “road” is too broad as a cue; <b>nesta = em + esta</b>.'
+    chapter: —
+  - id: '0313'
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. supermercado is transparent and basic; template adds no value.
+    skipped: "reason_similar"
+    word: supermercado
+    front: Eu vejo o {{supermarket}}.
+    back: 'Eu vejo o supermercado.
+
+      I see the supermarket.  (supermercado, m)'
+    chapter: —
+  - id: '0314'
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. templo is transparent and lower priority for everyday speech.
+    skipped: "reason_similar"
+    word: templo
+    front: Eu vejo o {{temple}}.
+    back: 'Eu vejo o templo.
+
+      I see the temple.  (templo, m)'
+    chapter: —
+  - id: '0315'
+    suspended: This belongs to the mass-suspended “Eu vejo…” batch. torre is useful reading/travel vocab, but the template is generic.
+    word: torre
+    front: Eu vejo a {{tower}}.
+    back: 'Eu vejo a torre.
+
+      I see the tower.  (torre, f)'
+    chapter: —
+  - id: '0316'
+    suspended: blusa can map to blouse/top and is clothing-specific; “I wear the blouse” is generic.
+    skipped: "reason_similar"
+    word: blusa
+    front: Tem esta {{blouse}} noutra cor?
+    back: 'Tem esta blusa noutra cor?<br>Do you have this blouse in another colour?<br><br>This shopping context makes <b>blusa</b> useful in real life. <b>noutra = em + outra</b>.'
+    chapter: —
+  - id: '0317'
+    word: calças
+    front: Eu uso as {{pants}}.
+    back: 'Eu uso as calças.
+
+      I wear the pants.  (calças, pl)'
+    chapter: —
+  - id: 0318
+    word: casaco
+    front: Eu uso o {{coat}}.
+    back: 'Eu uso o casaco.
+
+      I wear the coat.  (casaco, m)'
+    chapter: —
+  - id: 0319
+    word: chapéu
+    front: Eu uso o {{hat}}.
+    back: 'Eu uso o chapéu.
+
+      I wear the hat.  (chapéu, m)'
+    chapter: —
+  - id: '0320'
+    suspended: cinto is useful but current template gives no situational value.
+    word: cinto
+    front: Tenho de apertar o {{belt}}.
+    back: 'Tenho de apertar o cinto.<br>I need to tighten the belt.<br><br><b>cinto</b> = belt; <b>apertar</b> = tighten/fasten/squeeze depending context.'
+    chapter: —
+  - id: '0321'
+    word: fato
+    front: Eu uso o {{suit}}.
+    back: 'Eu uso o fato.
+
+      I wear the suit.  (fato, m)'
+    chapter: —
+  - id: '0322'
+    word: roupa
+    front: Eu uso a {{clothing}}.
+    back: 'Eu uso a roupa.
+
+      I wear the clothing.  (roupa, f)'
+    chapter: —
+  - id: '0323'
+    word: saia
+    front: Eu uso a {{skirt}}.
+    back: 'Eu uso a saia.
+
+      I wear the skirt.  (saia, f)'
+    chapter: —
+  - id: '0324'
+    suspended: sapato is basic and the generic sentence is easy; after a few reps it may simply have been redundant.
+    word: sapato
+    front: Eu uso o {{shoe}}.
+    back: 'Eu uso o sapato.
+
+      I wear the shoe.  (sapato, m)'
+    chapter: —
+  - id: '0325'
+    word: vestido
+    front: Eu uso o {{dress}}.
+    back: 'Eu uso o vestido.
+
+      I wear the dress.  (vestido, m)'
+    chapter: —
+  - id: '0326'
+    word: avó
+    front: A minha {{grandmother}} está em casa.
+    back: 'A minha avó está em casa.
+
+      My grandmother is at home.  (avó, f)'
+    chapter: —
+  - id: '0327'
+    suspended: avô is useful, but the real learning value is the avô/avó pronunciation and accent contrast, not the generic sentence.
+    word: avô
+    front: O meu {{grandfather}} chama-se João.
+    back: 'O meu avô chama-se João.<br>My grandfather is called João.<br><br><b>avô</b> = grandfather; <b>avó</b> = grandmother. The written accent distinguishes the pair.'
+    chapter: —
+  - id: 0328
+    skipped: "reason_similar"
+    word: família
+    front: A minha {{family}} está em casa.
+    back: 'A minha família está em casa.
+
+      My family is at home.  (família, f)'
+    chapter: —
+  - id: 0329
+    word: filho
+    front: O meu {{son}} está em casa.
+    back: 'O meu filho está em casa.
+
+      My son is at home.  (filho, m)'
+    chapter: —
+  - id: '0330'
+    word: filha
+    front: A minha {{daughter}} está em casa.
+    back: 'A minha filha está em casa.
+
+      My daughter is at home.  (filha, f)'
+    chapter: —
+  - id: '0331'
+    word: irmã
+    front: A minha {{sister}} está em casa.
+    back: 'A minha irmã está em casa.
+
+      My sister is at home.  (irmã, f)'
+    chapter: —
+  - id: '0332'
+    word: irmão
+    front: O meu {{brother}} está em casa.
+    back: 'O meu irmão está em casa.
+
+      My brother is at home.  (irmão, m)'
+    chapter: —
+  - id: '0333'
+    word: mãe
+    front: A minha {{mother}} está em casa.
+    back: 'A minha mãe está em casa.
+
+      My mother is at home.  (mãe, f)'
+    chapter: —
+  - id: '0334'
+    word: pai
+    front: O meu {{father}} está em casa.
+    back: 'O meu pai está em casa.
+
+      My father is at home.  (pai, m)'
+    chapter: —
+  - id: '0335'
+    word: pais
+    front: Os meus {{parents}} estão em casa.
+    back: 'Os meus pais estão em casa.
+
+      My parents are at home.  (pais, pl)'
+    chapter: —
+  - id: '0336'
+    word: primo
+    front: O meu {{cousin (man)}} está em casa.
+    back: 'O meu primo está em casa.
+
+      My cousin (man) is at home.  (primo, m)'
+    chapter: —
+  - id: '0337'
+    word: prima
+    front: A minha {{cousin (woman)}} está em casa.
+    back: 'A minha prima está em casa.
+
+      My cousin (woman) is at home.  (prima, f)'
+    chapter: —
+  - id: 0338
+    word: água
+    front: Eu gosto de {{water}}.
+    back: 'Eu gosto de água.
+
+      I like water.  (água, f)'
+    chapter: —
+  - id: 0339
+    word: almoço
+    front: Eu gosto de {{lunch}}.
+    back: 'Eu gosto de almoço.
+
+      I like lunch.  (almoço, m)'
+    chapter: —
+  - id: '0340'
+    word: bolacha
+    front: Eu gosto de {{cookie}}.
+    back: 'Eu gosto de bolacha.
+
+      I like cookie.  (bolacha, f)'
+    chapter: —
+  - id: '0341'
+    word: bolo
+    front: Eu gosto de {{cake}}.
+    back: 'Eu gosto de bolo.
+
+      I like cake.  (bolo, m)'
+    chapter: —
+  - id: '0342'
+    skipped: "reason_similar"
+    word: café
+    front: Eu gosto de {{coffee}}.
+    back: 'Eu gosto de café.
+
+      I like coffee.  (café, m)'
+    chapter: —
+  - id: '0343'
+    word: carne
+    front: Eu gosto de {{meat}}.
+    back: 'Eu gosto de carne.
+
+      I like meat.  (carne, f)'
+    chapter: —
+  - id: '0344'
+    word: cerveja
+    front: Eu gosto de {{beer}}.
+    back: 'Eu gosto de cerveja.
+
+      I like beer.  (cerveja, f)'
+    chapter: —
+  - id: '0345'
+    word: chá
+    front: Eu gosto de {{tea}}.
+    back: 'Eu gosto de chá.
+
+      I like tea.  (chá, m)'
+    chapter: —
+  - id: '0346'
+    skipped: "reason_similar"
+    word: chocolate
+    front: Eu gosto de {{chocolate}}.
+    back: 'Eu gosto de chocolate.
+
+      I like chocolate.  (chocolate, m)'
+    chapter: —
+  - id: '0347'
+    word: comida
+    front: Eu gosto de {{food}}.
+    back: 'Eu gosto de comida.
+
+      I like food.  (comida, f)'
+    chapter: —
+  - id: 0348
+    word: fome
+    front: Eu gosto de {{hunger}}.
+    back: 'Eu gosto de fome.
+
+      I like hunger.  (fome, f)'
+    chapter: —
+  - id: 0349
+    word: frigideira
+    front: Eu gosto de {{pan}}.
+    back: 'Eu gosto de frigideira.
+
+      I like pan.  (frigideira, f)'
+    chapter: —
+  - id: '0350'
+    word: garrafa
+    front: Eu gosto de {{bottle}}.
+    back: 'Eu gosto de garrafa.
+
+      I like bottle.  (garrafa, f)'
+    chapter: —
+  - id: '0351'
+    word: laranja
+    front: Eu gosto de {{orange}}.
+    back: 'Eu gosto de laranja.
+
+      I like orange.  (laranja, f)'
+    chapter: —
+  - id: '0352'
+    word: legume
+    front: Eu gosto de {{vegetable}}.
+    back: 'Eu gosto de legume.
+
+      I like vegetable.  (legume, m)'
+    chapter: —
+  - id: '0353'
+    word: marisco
+    front: Eu gosto de {{seafood}}.
+    back: 'Eu gosto de marisco.
+
+      I like seafood.  (marisco, m)'
+    chapter: —
+  - id: '0354'
+    skipped: "reason_similar"
+    word: menu
+    front: Eu gosto de {{menu}}.
+    back: 'Eu gosto de menu.
+
+      I like menu.  (menu, m)'
+    chapter: —
+  - id: '0355'
+    word: jantar
+    front: Eu gosto de {{dinner}}.
+    back: 'Eu gosto de jantar.
+
+      I like dinner.  (jantar, m)'
+    chapter: —
+  - id: '0356'
+    word: pão
+    front: Eu gosto de {{bread}}.
+    back: 'Eu gosto de pão.
+
+      I like bread.  (pão, m)'
+    chapter: —
+  - id: '0357'
+    word: peixe
+    front: Eu gosto de {{fish}}.
+    back: 'Eu gosto de peixe.
+
+      I like fish.  (peixe, m)'
+    chapter: —
+  - id: 0358
+    word: pequeno-almoço
+    front: Eu gosto de {{breakfast}}.
+    back: 'Eu gosto de pequeno-almoço.
+
+      I like breakfast.  (pequeno-almoço, m)'
+    chapter: —
+  - id: 0359
+    skipped: "reason_similar"
+    word: pizza
+    front: Eu gosto de {{pizza}}.
+    back: 'Eu gosto de pizza.
+
+      I like pizza.  (pizza, f)'
+    chapter: —
+  - id: '0360'
+    word: prato
+    front: Eu gosto de {{dish}}.
+    back: 'Eu gosto de prato.
+
+      I like dish.  (prato, m)'
+    chapter: —
+  - id: '0361'
+    word: receita
+    front: Eu gosto de {{recipe}}.
+    back: 'Eu gosto de receita.
+
+      I like recipe.  (receita, f)'
+    chapter: —
+  - id: '0362'
+    skipped: "reason_similar"
+    word: salada
+    front: Eu gosto de {{salad}}.
+    back: 'Eu gosto de salada.
+
+      I like salad.  (salada, f)'
+    chapter: —
+  - id: '0363'
+    word: sopa
+    front: Eu gosto de {{soup}}.
+    back: 'Eu gosto de sopa.
+
+      I like soup.  (sopa, f)'
+    chapter: —
+  - id: '0364'
+    word: sumo
+    front: Eu gosto de {{juice}}.
+    back: 'Eu gosto de sumo.
+
+      I like juice.  (sumo, m)'
+    chapter: —
+  - id: '0365'
+    suspended: vinho branco is transparent as a phrase and the sentence is low-information.
+    word: vinho branco
+    front: Eu gosto de {{white wine}}.
+    back: 'Eu gosto de vinho branco.
+
+      I like white wine.  (vinho branco, m)'
+    chapter: —
+  - id: '0366'
+    word: vinho tinto
+    front: Eu gosto de {{red wine}}.
+    back: 'Eu gosto de vinho tinto.
+
+      I like red wine.  (vinho tinto, m)'
+    chapter: —
+  - id: '0367'
+    word: cadeira
+    front: Eu limpo a {{chair}}.
+    back: 'Eu limpo a cadeira.
+
+      I clean the chair.  (cadeira, f)'
+    chapter: —
+  - id: 0368
+    word: cama
+    front: Eu limpo a {{bed}}.
+    back: 'Eu limpo a cama.
+
+      I clean the bed.  (cama, f)'
+    chapter: —
+  - id: 0369
+    suspended: candeeiro is a useful Portugal-specific household word; “I clean the lamp” is unnatural as a teaching context.
+    word: candeeiro
+    front: Pode acender o {{lamp}}?
+    back: 'Pode acender o candeeiro?<br>Can you turn on the lamp?<br><br><b>candeeiro</b> in European Portuguese = lamp/light fixture. <b>acender</b> = switch/light it on.'
+    chapter: —
+  - id: '0370'
+    suspended: 'canto is polysemous: corner, singing/song (and verb form canto = I sing). The English cue picks one sense but the note remains collision-prone.'
+    word: canto
+    front: A cadeira está no {{corner}} da sala.
+    back: 'A cadeira está no canto da sala.<br>The chair is in the corner of the room.<br><br><b>canto</b> can also mean “song/singing”; this location context forces the “corner” sense.'
+    chapter: —
+  - id: '0371'
+    word: casa
+    front: Eu limpo a {{house}}.
+    back: 'Eu limpo a casa.
+
+      I clean the house.  (casa, f)'
+    chapter: —
+  - id: '0372'
+    suspended: There is already an unsuspended casa card for “house”; this one tests “home”. Same Portuguese word, duplicate concept.
+    word: casa
+    front: Eu limpo a {{home}}.
+    back: 'Eu limpo a casa.
+
+      I clean the home.  (casa, f)'
+    chapter: —
+  - id: '0373'
+    word: casa de banho
+    front: Eu limpo a {{bathroom}}.
+    back: 'Eu limpo a casa de banho.
+
+      I clean the bathroom.  (casa de banho, f)'
+    chapter: —
+  - id: '0374'
+    word: chão
+    front: Eu limpo o {{floor}}.
+    back: 'Eu limpo o chão.
+
+      I clean the floor.  (chão, m)'
+    chapter: —
+  - id: '0375'
+    suspended: corredor can be corridor/hallway and also runner. The generic cleaning sentence hides that ambiguity.
+    word: corredor
+    front: O quarto fica no fim do {{corridor}}.
+    back: 'O quarto fica no fim do corredor.<br>The room is at the end of the corridor/hallway.<br><br><b>corredor</b> here is the household “corridor/hallway” sense.'
+    chapter: —
+  - id: '0376'
+    word: cozinha
+    front: Eu limpo a {{kitchen}}.
+    back: 'Eu limpo a cozinha.
+
+      I clean the kitchen.  (cozinha, f)'
+    chapter: —
+  - id: '0377'
+    suspended: duche is a useful EP noun, but “clean the shower” is less useful than tomar um duche / tomar banho.
+    word: duche
+    front: Vou tomar um {{shower}}.
+    back: 'Vou tomar um duche.<br>I''m going to take a shower.<br><br><b>tomar um duche</b> is the standard European Portuguese collocation.'
+    chapter: —
+  - id: 0378
+    word: escritório
+    front: Eu limpo o {{office}}.
+    back: 'Eu limpo o escritório.
+
+      I clean the office.  (escritório, m)'
+    chapter: —
+  - id: 0379
+    suspended: estante can be shelf/bookcase/shelving unit; English “bookcase” may be too narrow.
+    word: estante
+    front: Os livros estão na {{bookcase / shelving unit}}.
+    back: 'Os livros estão na estante.<br>The books are on the bookcase/shelving unit.<br><br><b>estante</b> is a shelving unit/bookcase; depending context English may use “shelf” or “bookcase”.'
+    chapter: —
+  - id: 0380
+    word: gaveta
+    front: Eu limpo a {{drawer}}.
+    back: 'Eu limpo a gaveta.
+
+      I clean the drawer.  (gaveta, f)'
+    chapter: —
+  - id: 0381
+    word: janela
+    front: Eu limpo a {{window}}.
+    back: 'Eu limpo a janela.
+
+      I clean the window.  (janela, f)'
+    chapter: —
+  - id: 0382
+    word: luz
+    front: Eu limpo a {{light}}.
+    back: 'Eu limpo a luz.
+
+      I clean the light.  (luz, f)'
+    chapter: —
+  - id: 0383
+    word: mesa
+    front: Eu limpo a {{table}}.
+    back: 'Eu limpo a mesa.
+
+      I clean the table.  (mesa, f)'
+    chapter: —
+  - id: 0384
+    word: parede
+    front: Eu limpo a {{wall}}.
+    back: 'Eu limpo a parede.
+
+      I clean the wall.  (parede, f)'
+    chapter: —
+  - id: 0385
+    word: porta
+    front: Eu limpo a {{door}}.
+    back: 'Eu limpo a porta.
+
+      I clean the door.  (porta, f)'
+    chapter: —
+  - id: 0386
+    suspended: portão is useful, but generic cleaning context is artificial.
+    word: portão
+    front: Pode fechar o {{gate}}?
+    back: 'Pode fechar o portão?<br>Can you close the gate?<br><br><b>portão</b> = a large gate, often at the entrance to a property/garage.'
+    chapter: —
+  - id: 0387
+    suspended: quarto is both room/bedroom and “fourth”; the current cue “(bed)room” still leaves ambiguity in the note.
+    word: quarto
+    front: O meu {{bedroom}} fica no primeiro andar.
+    back: 'O meu quarto fica no primeiro andar.<br>My bedroom is on the first floor.<br><br><b>quarto</b> = room/bedroom; it is also the ordinal “fourth”. This context forces the room sense.'
+    chapter: —
+  - id: 0388
+    word: sala
+    front: Eu limpo a {{room}}.
+    back: 'Eu limpo a sala.
+
+      I clean the room.  (sala, f)'
+    chapter: —
+  - id: 0389
+    skipped: "reason_similar"
+    word: televisão
+    front: Eu limpo a {{television}}.
+    back: 'Eu limpo a televisão.
+
+      I clean the television.  (televisão, f)'
+    chapter: —
+  - id: 0390
+    skipped: "reason_similar"
+    word: terraço
+    front: Eu limpo o {{terrace}}.
+    back: 'Eu limpo o terraço.
+
+      I clean the terrace.  (terraço, m)'
+    chapter: —
+  - id: 0391
+    word: teto
+    front: Eu limpo o {{ceiling}}.
+    back: 'Eu limpo o teto.
+
+      I clean the ceiling.  (teto, m)'
+    chapter: —
+  - id: 0392
+    skipped: "reason_similar"
+    word: álbum
+    front: Eu uso o {{album}}.
+    back: 'Eu uso o álbum.
+
+      I use the album.  (álbum, m)'
+    chapter: —
+  - id: 0393
+    suspended: armadilha is lower-priority and often useful figuratively; “I use the trap” is generic.
+    word: armadilha
+    front: Eu uso a {{trap}}.
+    back: 'Eu uso a armadilha.
+
+      I use the trap.  (armadilha, f)'
+    chapter: —
+  - id: 0394
+    suspended: boneca means doll but also wrist in Portuguese. The current card ignores a major second meaning.
+    word: boneca
+    front: Eu uso a {{doll}}.
+    back: 'Eu uso a boneca.
+
+      I use the doll.  (boneca, f)'
+    chapter: —
+  - id: 0395
+    suspended: caderno = notebook/exercise book; English notebook can also suggest a laptop. Generic sentence gives no clue.
+    word: caderno
+    front: Escrevi a palavra no {{notebook}}.
+    back: 'Escrevi a palavra no caderno.<br>I wrote the word in the notebook.<br><br><b>caderno</b> = paper notebook/exercise book; do not confuse it with a laptop computer.'
+    chapter: —
+  - id: 0396
+    suspended: caneca = mug is fine; the sentence is just too generic.
+    word: caneca
+    front: Queria uma {{mug}} grande para chá.
+    back: 'Queria uma caneca grande para chá.<br>I''d like a large mug for tea.<br><br><b>caneca</b> = mug, usually larger and more cylindrical than a <i>chávena</i>.'
+    chapter: —
+  - id: 0397
+    word: caneta
+    front: Eu uso a {{pen}}.
+    back: 'Eu uso a caneta.
+
+      I use the pen.  (caneta, f)'
+    chapter: —
+  - id: 0398
+    word: carta
+    front: Eu uso a {{letter}}.
+    back: 'Eu uso a carta.
+
+      I use the letter.  (carta, f)'
+    chapter: —
+  - id: 0399
+    word: carteira
+    front: Eu uso a {{wallet}}.
+    back: 'Eu uso a carteira.
+
+      I use the wallet.  (carteira, f)'
+    chapter: —
+  - id: '0400'
+    word: chave
+    front: Eu uso a {{key}}.
+    back: 'Eu uso a chave.
+
+      I use the key.  (chave, f)'
+    chapter: —
+  - id: '0401'
+    suspended: chávena is high-value EP vocabulary (cup), but generic sentence wastes it.
+    word: chávena
+    front: Queria uma {{cup}} de café.
+    back: 'Queria uma chávena de café.<br>I''d like a cup of coffee.<br><br><b>chávena</b> = cup, especially the cup used for coffee/tea in European Portuguese. Contrast <b>caneca</b> = mug.'
+    chapter: —
+  - id: '0402'
+    word: coisa
+    front: Eu uso a {{thing}}.
+    back: 'Eu uso a coisa.
+
+      I use the thing.  (coisa, f)'
+    chapter: —
+  - id: '0403'
+    word: colar
+    front: Eu uso o {{necklace}}.
+    back: 'Eu uso o colar.
+
+      I use the necklace.  (colar, m)'
+    chapter: —
+  - id: '0404'
+    skipped: "reason_similar"
+    word: documento
+    front: Eu uso o {{document}}.
+    back: 'Eu uso o documento.
+
+      I use the document.  (documento, m)'
+    chapter: —
+  - id: '0405'
+    word: encomenda
+    front: Eu uso a {{parcel}}.
+    back: 'Eu uso a encomenda.
+
+      I use the parcel.  (encomenda, f)'
+    chapter: —
+  - id: '0406'
+    skipped: "reason_similar"
+    word: envelope
+    front: Eu uso o {{envelope}}.
+    back: 'Eu uso o envelope.
+
+      I use the envelope.  (envelope, m)'
+    chapter: —
+  - id: '0407'
+    suspended: ferramenta is useful but broad; generic sentence gives no specific retrieval cue.
+    word: ferramenta
+    front: Preciso de uma {{tool}} para arranjar isto.
+    back: 'Preciso de uma ferramenta para arranjar isto.<br>I need a tool to fix this.<br><br><b>ferramenta</b> = tool. <b>arranjar</b> commonly means fix/repair in Portugal.'
+    chapter: —
+  - id: 0408
+    skipped: "reason_similar"
+    word: formulário
+    front: Eu uso o {{form}}.
+    back: 'Eu uso o formulário.
+
+      I use the form.  (formulário, m)'
+    chapter: —
+  - id: 0409
+    skipped: "reason_similar"
+    word: fotografia
+    front: Eu uso a {{photography}}.
+    back: 'Eu uso a fotografia.
+
+      I use the photography.  (fotografia, f)'
+    chapter: —
+  - id: '0410'
+    suspended: jarro can be jug/pitcher/vase depending context; “jug” alone may not uniquely map.
+    word: jarro
+    front: Pode trazer um {{jug}} de água?
+    back: 'Pode trazer um jarro de água?<br>Can you bring a jug/pitcher of water?<br><br><b>jarro</b> here = jug/pitcher. The table/water context removes other possible senses.'
+    chapter: —
+  - id: '0411'
+    suspended: jornal means newspaper; English 'journal' is a tempting false friend. Current card should exploit that rather than “I use”.
+    word: jornal
+    front: Li a notícia no {{newspaper}}.
+    back: 'Li a notícia no jornal.<br>I read the news item in the newspaper.<br><br><b>jornal</b> = newspaper/news publication. English “journal” is a false-friend trap in many contexts.'
+    chapter: —
+  - id: '0412'
+    suspended: lápis is basic and generic; likely low-value rather than wrong.
+    word: lápis
+    front: Eu uso o {{pencil}}.
+    back: 'Eu uso o lápis.
+
+      I use the pencil.  (lápis, m)'
+    chapter: —
+  - id: '0413'
+    word: livro
+    front: Eu uso o {{book}}.
+    back: 'Eu uso o livro.
+
+      I use the book.  (livro, m)'
+    chapter: —
+  - id: '0414'
+    suspended: loiça is very useful in Portugal, but “crockery” is an uncommon English cue and may be less intuitive than dishes/tableware.
+    word: loiça
+    front: Tenho de lavar a {{dishes / tableware}}.
+    back: 'Tenho de lavar a loiça.<br>I have to wash the dishes.<br><br><b>loiça</b> in European Portuguese = dishes/crockery/tableware collectively. It is commonly used as a mass noun.'
+    chapter: —
+  - id: '0415'
+    word: mala
+    front: Eu uso a {{bag}}.
+    back: 'Eu uso a mala.
+
+      I use the bag.  (mala, f)'
+    chapter: —
+  - id: '0416'
+    skipped: "reason_similar"
+    word: máscara
+    front: Eu uso a {{mask}}.
+    back: 'Eu uso a máscara.
+
+      I use the mask.  (máscara, f)'
+    chapter: —
+  - id: '0417'
+    skipped: "reason_similar"
+    word: medalha
+    front: Eu uso a {{medal}}.
+    back: 'Eu uso a medalha.
+
+      I use the medal.  (medalha, f)'
+    chapter: —
+  - id: 0418
+    suspended: mochila is useful but generic/easy.
+    word: mochila
+    front: Eu uso a {{backpack}}.
+    back: 'Eu uso a mochila.
+
+      I use the backpack.  (mochila, f)'
+    chapter: —
+  - id: 0419
+    word: óculos
+    front: Eu uso os {{glasses}}.
+    back: 'Eu uso os óculos.
+
+      I use the glasses.  (óculos, pl)'
+    chapter: —
+  - id: '0420'
+    skipped: "reason_similar"
+    word: página
+    front: Eu uso a {{page}}.
+    back: 'Eu uso a página.
+
+      I use the page.  (página, f)'
+    chapter: —
+  - id: '0421'
+    word: papel
+    front: Eu uso o {{paper}}.
+    back: 'Eu uso o papel.
+
+      I use the paper.  (papel, m)'
+    chapter: —
+  - id: '0422'
+    skipped: "reason_similar"
+    word: passaporte
+    front: Eu uso o {{passport}}.
+    back: 'Eu uso o passaporte.
+
+      I use the passport.  (passaporte, m)'
+    chapter: —
+  - id: '0423'
+    word: peça
+    front: Eu uso a {{part}}.
+    back: 'Eu uso a peça.
+
+      I use the part.  (peça, f)'
+    chapter: —
+  - id: '0424'
+    skipped: "reason_similar"
+    word: piano
+    front: Eu uso o {{piano}}.
+    back: 'Eu uso o piano.
+
+      I use the piano.  (piano, m)'
+    chapter: —
+  - id: '0425'
+    suspended: revista can mean magazine; English cue is okay, but the word also participates in other senses and the sentence is generic.
+    word: revista
+    front: Comprei uma {{magazine}} no quiosque.
+    back: 'Comprei uma revista no quiosque.<br>I bought a magazine at the kiosk.<br><br><b>revista</b> = magazine; <i>jornal</i> is newspaper.'
+    chapter: —
+  - id: '0426'
+    skipped: "reason_similar"
+    word: telefone
+    front: Eu uso o {{telephone}}.
+    back: 'Eu uso o telefone.
+
+      I use the telephone.  (telefone, m)'
+    chapter: —
+  - id: '0427'
+    word: tesouro
+    front: Eu uso o {{treasure}}.
+    back: 'Eu uso o tesouro.
+
+      I use the treasure.  (tesouro, m)'
+    chapter: —
+  - id: 0428
+    suspended: tinta can mean ink or paint. Cue “ink” selects one meaning but the note is polysemous.
+    word: tinta
+    front: Eu uso a {{ink}}.
+    back: 'Eu uso a tinta.
+
+      I use the ink.  (tinta, f)'
+    chapter: —
+  - id: 0429
+    word: advogado
+    front: Ele é {{lawyer}}.
+    back: 'Ele é advogado.
+
+      He is a lawyer.  (advogado, m)'
+    chapter: —
+  - id: '0430'
+    suspended: aluno overlaps with estudante. 'student' alone does not tell you which word to produce; aluno is more school/pupil/class-member oriented.
+    word: aluno
+    front: Ele é {{a pupil/student}} nesta escola.
+    back: 'Ele é aluno nesta escola.<br>He is a pupil/student at this school.<br><br><b>aluno</b> means a learner enrolled in a class/school/course. <b>estudante</b> is the broader “student/person who studies”.'
+    chapter: —
+  - id: '0431'
+    word: amigo
+    front: Ele é {{friend}}.
+    back: 'Ele é amigo.
+
+      He is a friend.  (amigo, m)'
+    chapter: —
+  - id: '0432'
+    skipped: "reason_similar"
+    word: biólogo
+    front: Ele é {{biologist}}.
+    back: 'Ele é biólogo.
+
+      He is a biologist.  (biólogo, m)'
+    chapter: —
+  - id: '0433'
+    word: cantor
+    front: Ele é {{singer}}.
+    back: 'Ele é cantor.
+
+      He is a singer.  (cantor, m)'
+    chapter: —
+  - id: '0434'
+    skipped: "reason_similar"
+    word: cliente
+    front: Ele é {{client}}.
+    back: 'Ele é cliente.
+
+      He is a client.  (cliente, m)'
+    chapter: —
+  - id: '0435'
+    word: cozinheiro
+    front: Ele é {{cook}}.
+    back: 'Ele é cozinheiro.
+
+      He is a cook.  (cozinheiro, m)'
+    chapter: —
+  - id: '0436'
+    suspended: diretor is a transparent cognate and profession card; after 3 reps + lapse it may simply have been not worth the scheduling cost.
+    skipped: "reason_similar"
+    word: diretor
+    front: Ele é {{director}}.
+    back: 'Ele é diretor.
+
+      He is a director.  (diretor, m)'
+    chapter: —
+  - id: '0437'
+    word: empregado
+    front: Ele é {{employee}}.
+    back: 'Ele é empregado.
+
+      He is a employee.  (empregado, m)'
+    chapter: —
+  - id: 0438
+    word: enfermeiro
+    front: Ele é {{nurse}}.
+    back: 'Ele é enfermeiro.
+
+      He is a nurse.  (enfermeiro, m)'
+    chapter: —
+  - id: 0439
+    skipped: "reason_similar"
+    word: engenheiro
+    front: Ele é {{engineer}}.
+    back: 'Ele é engenheiro.
+
+      He is a engineer.  (engenheiro, m)'
+    chapter: —
+  - id: '0440'
+    word: escritor
+    front: Ele é {{writer}}.
+    back: 'Ele é escritor.
+
+      He is a writer.  (escritor, m)'
+    chapter: —
+  - id: '0441'
+    suspended: faroleiro is niche vocabulary (lighthouse keeper).
+    word: faroleiro
+    front: Ele é {{lighthouse keeper}}.
+    back: 'Ele é faroleiro.
+
+      He is a lighthouse keeper.  (faroleiro, m)'
+    chapter: —
+  - id: '0442'
+    suspended: guarda overlaps with guardião, segurança, vigilante. Generic “guard” is not unique.
+    word: guarda
+    front: O {{guard}} está à entrada.
+    back: 'O guarda está à entrada.<br>The guard is at the entrance.<br><br><b>guarda</b> can name a guard/watchman in this context. Do not confuse this noun use with the verb <i>guardar</i>.'
+    chapter: —
+  - id: '0443'
+    suspended: guardião is near-cognate 'guardian' and overlaps guarda; low priority.
+    word: guardião
+    front: Ele é {{guardian}}.
+    back: 'Ele é guardião.
+
+      He is a guardian.  (guardião, m)'
+    chapter: —
+  - id: '0444'
+    skipped: "reason_similar"
+    word: guia
+    front: Ele é {{guide}}.
+    back: 'Ele é guia.
+
+      He is a guide.  (guia, m)'
+    chapter: —
+  - id: '0445'
+    suspended: historiador is transparent and low-priority profession vocabulary.
+    skipped: "reason_similar"
+    word: historiador
+    front: Ele é {{historian}}.
+    back: 'Ele é historiador.
+
+      He is a historian.  (historiador, m)'
+    chapter: —
+  - id: '0446'
+    word: ladrão
+    front: Ele é {{burglar}}.
+    back: 'Ele é ladrão.
+
+      He is a burglar.  (ladrão, m)'
+    chapter: —
+  - id: '0447'
+    word: médico
+    front: Ele é {{doctor}}.
+    back: 'Ele é médico.
+
+      He is a doctor.  (médico, m)'
+    chapter: —
+  - id: 0448
+    skipped: "reason_similar"
+    word: paciente
+    front: Ele é {{patient}}.
+    back: 'Ele é paciente.
+
+      He is a patient.  (paciente, m)'
+    chapter: —
+  - id: 0449
+    word: pescador
+    front: Ele é {{fisherman}}.
+    back: 'Ele é pescador.
+
+      He is a fisherman.  (pescador, m)'
+    chapter: —
+  - id: '0450'
+    suspended: Third polícia officer card; duplicate of 0307 and related to 0306.
+    skipped: "reason_similar"
+    word: polícia
+    front: Ele é {{police officer}}.
+    back: 'Ele é polícia.
+
+      He is a police officer.  (polícia, m)'
+    chapter: —
+  - id: '0451'
+    suspended: príncipe is transparent and low-priority everyday vocabulary.
+    skipped: "reason_similar"
+    word: príncipe
+    front: Ele é {{prince}}.
+    back: 'Ele é príncipe.
+
+      He is a prince.  (príncipe, m)'
+    chapter: —
+  - id: '0452'
+    suspended: prisioneiro is transparent-ish and low-priority everyday vocabulary.
+    skipped: "reason_similar"
+    word: prisioneiro
+    front: Ele é {{prisoner}}.
+    back: 'Ele é prisioneiro.
+
+      He is a prisoner.  (prisioneiro, m)'
+    chapter: —
+  - id: '0453'
+    suspended: professor can mean teacher/professor depending setting, while English “teacher” may also be professor/docente. This is a useful false-friend/semantic-range card, but current template is too crude.
+    skipped: "reason_similar"
+    word: professor
+    front: Ela é {{teacher}} numa escola primária.
+    back: 'Ela é professora numa escola primária.<br>She is a teacher at a primary school.<br><br><b>professor/professora</b> is the normal Portuguese word for teacher and also for university lecturers/professors; context supplies the level.'
+    chapter: —
+  - id: '0454'
+    word: rei
+    front: Ele é {{king}}.
+    back: 'Ele é rei.
+
+      He is a king.  (rei, m)'
+    chapter: —
+  - id: '0455'
+    suspended: recém-chegado is useful but lower priority; the compound is transparent once recém is known.
+    word: recém-chegado
+    front: Ele é {{newcomer}}.
+    back: 'Ele é recém-chegado.
+
+      He is a newcomer.  (recém-chegado, m)'
+    chapter: —
+  - id: '0456'
+    word: reformado
+    front: Ele é {{retired}}.
+    back: 'Ele é reformado.
+
+      He is a retired.  (reformado, m)'
+    chapter: —
+  - id: '0457'
+    suspended: secretário is transparent and low-priority profession vocabulary.
+    skipped: "reason_similar"
+    word: secretário
+    front: Ele é {{secretary}}.
+    back: 'Ele é secretário.
+
+      He is a secretary.  (secretário, m)'
+    chapter: —
+  - id: 0458
+    skipped: "reason_similar"
+    word: turista
+    front: Ele é {{tourist}}.
+    back: 'Ele é turista.
+
+      He is a tourist.  (turista, m)'
+    chapter: —
+  - id: 0459
+    word: vendedor
+    front: Ele é {{seller}}.
+    back: 'Ele é vendedor.
+
+      He is a seller.  (vendedor, m)'
+    chapter: —
+  - id: '0460'
+    word: vizinho
+    front: Ele é {{neighbor}}.
+    back: 'Ele é vizinho.
+
+      He is a neighbor.  (vizinho, m)'
+    chapter: —
+  - id: '0461'
+    word: autocarro
+    front: Eu vou de {{bus}}.
+    back: 'Eu vou de autocarro.
+
+      I go by bus.  (autocarro, m)'
+    chapter: —
+  - id: '0462'
+    word: avião
+    front: Eu vou de {{plane}}.
+    back: 'Eu vou de avião.
+
+      I go by plane.  (avião, m)'
+    chapter: —
+  - id: '0463'
+    word: barco
+    front: Eu vou de {{boat}}.
+    back: 'Eu vou de barco.
+
+      I go by boat.  (barco, m)'
+    chapter: —
+  - id: '0464'
+    skipped: "reason_similar"
+    word: bicicleta
+    front: Eu vou de {{bicycle}}.
+    back: 'Eu vou de bicicleta.
+
+      I go by bicycle.  (bicicleta, f)'
+    chapter: —
+  - id: '0465'
+    word: carro
+    front: Eu vou de {{car}}.
+    back: 'Eu vou de carro.
+
+      I go by car.  (carro, m)'
+    chapter: —
+  - id: '0466'
+    word: comboio
+    front: Eu vou de {{train}}.
+    back: 'Eu vou de comboio.
+
+      I go by train.  (comboio, m)'
+    chapter: —
+  - id: '0467'
+    word: elétrico
+    front: Eu vou de {{tram}}.
+    back: 'Eu vou de elétrico.
+
+      I go by tram.  (elétrico, m)'
+    chapter: —
+  - id: 0468
+    word: a pé
+    front: Eu vou {{on foot}}.
+    back: 'Eu vou a pé.
+
+      I go on foot.  (a pé, m)'
+    chapter: —
