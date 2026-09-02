@@ -1,600 +1,600 @@
 deck: words
 model: words
 cards:
-  - id: '0620'
-    word: dia (m)
-    front: day
-    back: dia (m)
-    chapter: —
-  - id: '0621'
-    word: semana (f)
-    front: week
-    back: semana (f)
-    chapter: —
-  - id: '0622'
-    word: mês (m)
-    front: month
-    back: mês (m)
-    chapter: —
-  - id: '0623'
-    word: ano (m)
-    front: year
-    back: ano (m)
-    chapter: —
-  - id: '0624'
-    skipped: "reason_phrase"
-    word: segundo (m)
-    front: second
-    back: segundo (m)
-    chapter: —
-  - id: '0625'
-    skipped: "reason_phrase"
-    word: minuto (m)
-    front: minute
-    back: minuto (m)
-    chapter: —
-  - id: '0626'
-    word: hora (f)
-    front: hour
-    back: hora (f)
-    chapter: —
-  - id: '0627'
-    word: segunda-feira (f)
-    front: Monday
-    back: segunda-feira (f)
-    chapter: —
-  - id: 0628
-    word: terça-feira (f)
-    front: Tuesday
-    back: terça-feira (f)
-    chapter: —
-  - id: 0629
-    word: quarta-feira (f)
-    front: Wednesday
-    back: quarta-feira (f)
-    chapter: —
-  - id: '0630'
-    word: quinta-feira (f)
-    front: Thursday
-    back: quinta-feira (f)
-    chapter: —
-  - id: '0631'
-    word: sexta-feira (f)
-    front: Friday
-    back: sexta-feira (f)
-    chapter: —
-  - id: '0632'
-    skipped: "reason_phrase"
-    word: sábado (m)
-    front: Saturday
-    back: sábado (m)
-    chapter: —
-  - id: '0633'
-    word: domingo (m)
-    front: Sunday
-    back: domingo (m)
-    chapter: —
-  - id: '0634'
-    skipped: "reason_phrase"
-    word: janeiro (m)
-    front: January
-    back: janeiro (m)
-    chapter: —
-  - id: '0635'
-    skipped: "reason_phrase"
-    word: fevereiro (m)
-    front: February
-    back: fevereiro (m)
-    chapter: —
-  - id: '0636'
-    skipped: "reason_phrase"
-    word: março (m)
-    front: March
-    back: março (m)
-    chapter: —
-  - id: '0637'
-    skipped: "reason_phrase"
-    word: abril (m)
-    front: April
-    back: abril (m)
-    chapter: —
-  - id: 0638
-    skipped: "reason_phrase"
-    word: maio (m)
-    front: May
-    back: maio (m)
-    chapter: —
-  - id: 0639
-    skipped: "reason_phrase"
-    word: junho (m)
-    front: June
-    back: junho (m)
-    chapter: —
-  - id: '0640'
-    skipped: "reason_phrase"
-    word: julho (m)
-    front: July
-    back: julho (m)
-    chapter: —
-  - id: '0641'
-    skipped: "reason_phrase"
-    word: agosto (m)
-    front: August
-    back: agosto (m)
-    chapter: —
-  - id: '0642'
-    skipped: "reason_phrase"
-    word: setembro (m)
-    front: September
-    back: setembro (m)
-    chapter: —
-  - id: '0643'
-    skipped: "reason_phrase"
-    word: outubro (m)
-    front: October
-    back: outubro (m)
-    chapter: —
-  - id: '0644'
-    skipped: "reason_phrase"
-    word: novembro (m)
-    front: November
-    back: novembro (m)
-    chapter: —
-  - id: '0645'
-    skipped: "reason_phrase"
-    word: dezembro (m)
-    front: December
-    back: dezembro (m)
-    chapter: —
-  - id: '0646'
-    skipped: "reason_phrase"
-    word: estação do ano (f)
-    front: season
-    back: estação do ano (f)
-    chapter: —
-  - id: '0647'
-    word: primavera (f)
-    front: Spring
-    back: primavera (f)
-    chapter: —
-  - id: 0648
-    word: verão (m)
-    front: Summer
-    back: verão (m)
-    chapter: —
-  - id: 0649
-    word: outono (m)
-    front: Autumn, Fall
-    back: outono (m)
-    chapter: —
-  - id: '0650'
-    word: inverno (m)
-    front: Winter
-    back: inverno (m)
-    chapter: —
-  - id: '0651'
-    word: relógio (m)
-    front: clock, watch
-    back: relógio (m)
-    chapter: —
-  - id: '0652'
-    skipped: "reason_phrase"
-    word: meia-noite (f)
-    front: midnight
-    back: meia-noite (f)
-    chapter: —
-  - id: '0653'
-    skipped: "reason_phrase"
-    word: meio-dia (m)
-    front: midday, noon
-    back: meio-dia (m)
-    chapter: —
-  - id: '0654'
-    skipped: "reason_phrase"
-    word: de manhã
-    front: in the morning
-    back: de manhã
-    chapter: —
-  - id: '0655'
-    skipped: "reason_phrase"
-    word: de tarde, à tarde
-    front: in the afternoon
-    back: de tarde, à tarde
-    chapter: —
-  - id: '0656'
-    skipped: "reason_phrase"
-    word: de noite, à noite
-    front: at night
-    back: de noite, à noite
-    chapter: —
-  - id: '0657'
-    word: cedo
-    front: early
-    back: cedo
-    chapter: —
-  - id: 0658
-    word: tarde
-    front: late
-    back: tarde
-    chapter: —
-  - id: 0659
-    word: agora
-    front: now
-    back: agora
-    chapter: —
-  - id: '0660'
-    word: hoje
-    front: today
-    back: hoje
-    chapter: —
-  - id: '0661'
-    word: amanhã
-    front: tomorrow
-    back: amanhã
-    chapter: —
-  - id: '0662'
-    word: antes
-    front: before
-    back: antes
-    chapter: —
-  - id: '0663'
-    word: depois
-    front: after
-    back: depois
-    chapter: —
-  - id: '0664'
-    skipped: "reason_similar"
-    word: regularmente
-    front: regularly
-    back: regularmente
-    chapter: —
-  - id: '0665'
-    skipped: "reason_phrase"
-    word: muitas vezes
-    front: often
-    back: muitas vezes
-    chapter: —
-  - id: '0666'
-    skipped: "reason_phrase"
-    word: todos os dias
-    front: every day
-    back: todos os dias
-    chapter: —
-  - id: '0667'
-    word: nunca
-    front: never
-    back: nunca
-    chapter: —
-  - id: 0668
-    word: sempre
-    front: always
-    back: sempre
-    chapter: —
-  - id: 0669
-    skipped: "reason_phrase"
-    word: São duas horas.
-    front: It's two o'clock.
-    back: São duas horas.
-    chapter: —
-  - id: '0670'
-    skipped: "reason_phrase"
-    word: São duas e um quarto.
-    front: It's a quarter past two.
-    back: São duas e um quarto.
-    chapter: —
-  - id: '0671'
-    skipped: "reason_phrase"
-    word: São duas e meia.
-    front: It's half past two.
-    back: São duas e meia.
-    chapter: —
-  - id: '0672'
-    word: olá
-    front: hello, hi
-    back: olá
-    chapter: —
-  - id: '0673'
-    skipped: "reason_phrase"
-    word: bom dia
-    front: good morning
-    back: bom dia
-    chapter: —
-  - id: '0674'
-    skipped: "reason_phrase"
-    word: boa tarde
-    front: good afternoon
-    back: boa tarde
-    chapter: —
-  - id: '0675'
-    skipped: "reason_phrase"
-    word: boa noite
-    front: goodnight, good evening
-    back: boa noite
-    chapter: —
-  - id: '0676'
-    skipped: "reason_phrase"
-    word: muito prazer
-    front: nice to meet you
-    back: muito prazer
-    chapter: —
-  - id: '0677'
-    word: igualmente
-    front: likewise
-    back: igualmente
-    chapter: —
-  - id: 0678
-    suspended: Como está? is not simply “formal”; it is the 3rd-person/polite-address form and can be used with o senhor/a senhora/você or omitted subject. The register label is oversimplified.
-    skipped: "reason_phrase"
-    word: Como está?
-    front: How are you? (polite / 3rd-person address)
-    back: Como está?<br>How are you?<br><br><b>Como está?</b> uses the 3rd-person verb form and is appropriate with polite/implicit <i>você / o senhor / a senhora</i> depending context. Contrast informal <b>Como estás?</b>.
-    chapter: —
-  - id: 0679
-    suspended: Como estás? is specifically tu 2nd-person singular. “informal” is broadly right but the grammatical reason matters more than the label.
-    skipped: "reason_phrase"
-    word: Como estás?
-    front: How are you? (informal <i>tu</i>)
-    back: Como estás?<br>How are you?<br><br><b>estás</b> is the <i>tu</i> form of <i>estar</i>. Contrast polite/3rd-person <b>Como está?</b>.
-    chapter: —
-  - id: 0680
-    suspended: Bem, obrigado. is extremely basic and predictable.
-    skipped: "reason_phrase"
-    word: Bem, obrigado.
-    front: Well, thanks.
-    back: Bem, obrigado.
-    chapter: —
-  - id: 0681
-    skipped: "reason_similar"
-    word: Queria…
-    front: I would like…
-    back: Queria…
-    chapter: —
-  - id: 0682
-    skipped: "reason_similar"
-    word: Podia...?
-    front: Could you...?
-    back: Podia...?
-    chapter: —
-  - id: 0683
-    skipped: "reason_phrase"
-    word: não há problema
-    front: no problem
-    back: não há problema
-    chapter: —
-  - id: 0684
-    skipped: "reason_phrase"
-    word: um momento
-    front: one moment
-    back: um momento
-    chapter: —
-  - id: 0685
-    skipped: "reason_phrase"
-    word: por favor
-    front: please
-    back: por favor
-    chapter: —
-  - id: 0686
-    word: desculpe
-    front: sorry (formal)
-    back: desculpe
-    chapter: —
-  - id: 0687
-    word: desculpa
-    front: sorry (informal)
-    back: desculpa
-    chapter: —
-  - id: 0688
-    suspended: Peço desculpa is standard/polite “I’m sorry / I apologize”; calling it “formal” is too narrow.
-    skipped: "reason_phrase"
-    word: peço desculpa
-    front: I apologize / I'm sorry for the delay.
-    back: Peço desculpa pelo atraso.<br>I apologize / I'm sorry for the delay.<br><br><b>pedir desculpa</b> literally “ask forgiveness” = apologize/say sorry. <b>pelo = por + o</b>. Very normal in Portugal.
-    chapter: —
-  - id: 0689
-    word: (muito) obrigado
-    front: thank you (very much) (says a man)
-    back: (muito) obrigado
-    chapter: —
-  - id: 0690
-    suspended: The card teaches only obrigada, i.e. the form said by a female speaker. For production this is wrong for a male learner; for recognition it is incomplete.
-    word: (muito) obrigada
-    front: thank you (very much) (says a woman)
-    back: (muito) obrigada
-    chapter: —
-  - id: 0691
-    suspended: de nada is basic and highly overlearned.
-    skipped: "reason_phrase"
-    word: de nada
-    front: you're welcome
-    back: de nada
-    chapter: —
-  - id: 0692
-    skipped: "reason_phrase"
-    word: até já
-    front: see you soon
-    back: até já
-    chapter: —
-  - id: 0693
-    suspended: até logo is basic and likely already automatic.
-    skipped: "reason_phrase"
-    word: até logo
-    front: see you later
-    back: até logo
-    chapter: —
-  - id: 0694
-    skipped: "reason_phrase"
-    word: até amanhã
-    front: see you tomorrow
-    back: até amanhã
-    chapter: —
-  - id: 0695
-    skipped: "reason_phrase"
-    word: até à próxima
-    front: see you next time
-    back: até à próxima
-    chapter: —
-  - id: 0696
-    word: tchau
-    front: bye (informal)
-    back: tchau
-    chapter: —
-  - id: 0697
-    word: adeus
-    front: goodbye
-    back: adeus
-    chapter: —
-  - id: 0698
-    word: sim
-    front: 'yes'
-    back: sim
-    chapter: —
-  - id: 0699
-    word: não
-    front: 'no'
-    back: não
-    chapter: —
-  - id: '0700'
-    word: e
-    front: and
-    back: e
-    chapter: —
-  - id: '0701'
-    word: mas
-    front: but
-    back: mas
-    chapter: —
-  - id: '0702'
-    word: se
-    front: if
-    back: se
-    chapter: —
-  - id: '0703'
-    skipped: "reason_phrase"
-    word: por isso
-    front: so, for that reason
-    back: por isso
-    chapter: —
-  - id: '0704'
-    skipped: "reason_phrase"
-    word: tenho a certeza
-    front: I am sure
-    back: tenho a certeza
-    chapter: —
-  - id: '0705'
-    skipped: "reason_phrase"
-    word: acho que sim
-    front: I think so
-    back: acho que sim
-    chapter: —
-  - id: '0706'
-    skipped: "reason_phrase"
-    word: acho que não
-    front: I don't think so
-    back: acho que não
-    chapter: —
-  - id: '0707'
-    word: pois
-    front: right (agreement)
-    back: pois
-    chapter: —
-  - id: 0708
-    skipped: "reason_phrase"
-    word: com certeza
-    front: certainly
-    back: com certeza
-    chapter: —
-  - id: 0709
-    suspended: 'isso mesmo has several natural renderings: exactly, that’s right, that’s it, precisely. The English cue allows multiple interpretations and gives no usage context.'
-    skipped: "reason_phrase"
-    word: isso mesmo
-    front: — É esta rua? — {{That's right / exactly.}}
-    back: — É esta rua? — Isso mesmo.<br>— Is it this street? — That's right / Exactly.<br><br><b>isso mesmo</b> confirms that the other person has identified or understood the right thing.
-    chapter: —
-  - id: '0710'
-    word: talvez
-    front: maybe
-    back: talvez
-    chapter: —
-  - id: '0711'
-    suspended: se calhar is a very useful EP expression, but plain “maybe” collides directly with talvez and loses the colloquial/register nuance.
-    skipped: "reason_phrase"
-    word: se calhar
-    front: '{{Maybe}} amanhã chove.'
-    back: Se calhar amanhã chove.<br>Maybe it'll rain tomorrow.<br><br><b>se calhar</b> = maybe/perhaps, extremely common in conversational European Portuguese. Despite containing <i>se</i>, learn it as a fixed discourse chunk.
-    chapter: —
-  - id: '0712'
-    skipped: "reason_similar"
-    word: exato
-    front: exactly
-    back: exato
-    chapter: —
-  - id: '0713'
-    skipped: "reason_phrase"
-    word: está bem
-    front: alright
-    back: está bem
-    chapter: —
-  - id: '0714'
-    skipped: "reason_phrase"
-    word: faz sentido
-    front: it makes sense
-    back: faz sentido
-    chapter: —
-  - id: '0715'
-    word: cuidado
-    front: careful, watch out
-    back: cuidado
-    chapter: —
-  - id: '0716'
-    word: olhe
-    front: look, listen (to draw attention) (formal)
-    back: olhe
-    chapter: —
-  - id: '0717'
-    suspended: que disparate is valid but relatively situational; “what nonsense” is acceptable. Likely suspended as low priority, not because wrong.
-    skipped: "reason_phrase"
-    word: que disparate
-    front: what nonsense
-    back: que disparate
-    chapter: —
-  - id: 0718
-    suspended: que pena is often “what a pity / that’s too bad”. English “what a shame” can also suggest que vergonha, creating a semantic collision.
-    skipped: "reason_phrase"
-    word: que pena
-    front: — O concerto foi cancelado. — {{That's too bad.}}
-    back: — O concerto foi cancelado. — Que pena.<br>— The concert was cancelled. — That's too bad / What a pity.<br><br><b>que pena!</b> expresses regret or sympathy about an unfortunate situation.
-    chapter: —
-  - id: 0719
-    suspended: só conflates at least “only/just” and “alone”. A single English cue “just, only” does not teach its important ambiguity, and Level0 now covers só in context.
-    word: só
-    front: just, only
-    back: só
-    chapter: —
-  - id: '0720'
-    word: quase
-    front: almost
-    back: quase
-    chapter: —
-  - id: '0721'
-    word: ainda
-    front: still
-    back: ainda
-    chapter: —
-  - id: '0722'
-    suspended: ainda não = not yet is correct, but this was suspended after your Level0 work and is now directly redundant with richer contextual Level0 cards.
-    skipped: "reason_phrase"
-    word: ainda não
-    front: not yet
-    back: ainda não
-    chapter: —
-  - id: '0723'
-    word: já
-    front: already
-    back: já
-    chapter: —
-  - id: '0724'
-    skipped: "reason_phrase"
-    word: já não
-    front: not anymore
-    back: já não
-    chapter: —
+- id: '0620'
+  word: dia (m)
+  front: day
+  back: dia (m)
+  chapter: —
+- id: '0621'
+  word: semana (f)
+  front: week
+  back: semana (f)
+  chapter: —
+- id: '0622'
+  word: mês (m)
+  front: month
+  back: mês (m)
+  chapter: —
+- id: '0623'
+  word: ano (m)
+  front: year
+  back: ano (m)
+  chapter: —
+- id: '0624'
+  skipped: "reason_phrase"
+  word: segundo (m)
+  front: second
+  back: segundo (m)
+  chapter: —
+- id: '0625'
+  skipped: "reason_phrase"
+  word: minuto (m)
+  front: minute
+  back: minuto (m)
+  chapter: —
+- id: '0626'
+  word: hora (f)
+  front: hour
+  back: hora (f)
+  chapter: —
+- id: '0627'
+  word: segunda-feira (f)
+  front: Monday
+  back: segunda-feira (f)
+  chapter: —
+- id: 0628
+  word: terça-feira (f)
+  front: Tuesday
+  back: terça-feira (f)
+  chapter: —
+- id: 0629
+  word: quarta-feira (f)
+  front: Wednesday
+  back: quarta-feira (f)
+  chapter: —
+- id: '0630'
+  word: quinta-feira (f)
+  front: Thursday
+  back: quinta-feira (f)
+  chapter: —
+- id: '0631'
+  word: sexta-feira (f)
+  front: Friday
+  back: sexta-feira (f)
+  chapter: —
+- id: '0632'
+  skipped: "reason_phrase"
+  word: sábado (m)
+  front: Saturday
+  back: sábado (m)
+  chapter: —
+- id: '0633'
+  word: domingo (m)
+  front: Sunday
+  back: domingo (m)
+  chapter: —
+- id: '0634'
+  skipped: "reason_phrase"
+  word: janeiro (m)
+  front: January
+  back: janeiro (m)
+  chapter: —
+- id: '0635'
+  skipped: "reason_phrase"
+  word: fevereiro (m)
+  front: February
+  back: fevereiro (m)
+  chapter: —
+- id: '0636'
+  skipped: "reason_phrase"
+  word: março (m)
+  front: March
+  back: março (m)
+  chapter: —
+- id: '0637'
+  skipped: "reason_phrase"
+  word: abril (m)
+  front: April
+  back: abril (m)
+  chapter: —
+- id: 0638
+  skipped: "reason_phrase"
+  word: maio (m)
+  front: May
+  back: maio (m)
+  chapter: —
+- id: 0639
+  skipped: "reason_phrase"
+  word: junho (m)
+  front: June
+  back: junho (m)
+  chapter: —
+- id: '0640'
+  skipped: "reason_phrase"
+  word: julho (m)
+  front: July
+  back: julho (m)
+  chapter: —
+- id: '0641'
+  skipped: "reason_phrase"
+  word: agosto (m)
+  front: August
+  back: agosto (m)
+  chapter: —
+- id: '0642'
+  skipped: "reason_phrase"
+  word: setembro (m)
+  front: September
+  back: setembro (m)
+  chapter: —
+- id: '0643'
+  skipped: "reason_phrase"
+  word: outubro (m)
+  front: October
+  back: outubro (m)
+  chapter: —
+- id: '0644'
+  skipped: "reason_phrase"
+  word: novembro (m)
+  front: November
+  back: novembro (m)
+  chapter: —
+- id: '0645'
+  skipped: "reason_phrase"
+  word: dezembro (m)
+  front: December
+  back: dezembro (m)
+  chapter: —
+- id: '0646'
+  skipped: "reason_phrase"
+  word: estação do ano (f)
+  front: season
+  back: estação do ano (f)
+  chapter: —
+- id: '0647'
+  word: primavera (f)
+  front: Spring
+  back: primavera (f)
+  chapter: —
+- id: 0648
+  word: verão (m)
+  front: Summer
+  back: verão (m)
+  chapter: —
+- id: 0649
+  word: outono (m)
+  front: Autumn, Fall
+  back: outono (m)
+  chapter: —
+- id: '0650'
+  word: inverno (m)
+  front: Winter
+  back: inverno (m)
+  chapter: —
+- id: '0651'
+  word: relógio (m)
+  front: clock, watch
+  back: relógio (m)
+  chapter: —
+- id: '0652'
+  skipped: "reason_phrase"
+  word: meia-noite (f)
+  front: midnight
+  back: meia-noite (f)
+  chapter: —
+- id: '0653'
+  skipped: "reason_phrase"
+  word: meio-dia (m)
+  front: midday, noon
+  back: meio-dia (m)
+  chapter: —
+- id: '0654'
+  skipped: "reason_phrase"
+  word: de manhã
+  front: in the morning
+  back: de manhã
+  chapter: —
+- id: '0655'
+  skipped: "reason_phrase"
+  word: de tarde, à tarde
+  front: in the afternoon
+  back: de tarde, à tarde
+  chapter: —
+- id: '0656'
+  skipped: "reason_phrase"
+  word: de noite, à noite
+  front: at night
+  back: de noite, à noite
+  chapter: —
+- id: '0657'
+  word: cedo
+  front: early
+  back: cedo
+  chapter: —
+- id: 0658
+  word: tarde
+  front: late
+  back: tarde
+  chapter: —
+- id: 0659
+  word: agora
+  front: now
+  back: agora
+  chapter: —
+- id: '0660'
+  word: hoje
+  front: today
+  back: hoje
+  chapter: —
+- id: '0661'
+  word: amanhã
+  front: tomorrow
+  back: amanhã
+  chapter: —
+- id: '0662'
+  word: antes
+  front: before
+  back: antes
+  chapter: —
+- id: '0663'
+  word: depois
+  front: after
+  back: depois
+  chapter: —
+- id: '0664'
+  skipped: "reason_similar"
+  word: regularmente
+  front: regularly
+  back: regularmente
+  chapter: —
+- id: '0665'
+  skipped: "reason_phrase"
+  word: muitas vezes
+  front: often
+  back: muitas vezes
+  chapter: —
+- id: '0666'
+  skipped: "reason_phrase"
+  word: todos os dias
+  front: every day
+  back: todos os dias
+  chapter: —
+- id: '0667'
+  word: nunca
+  front: never
+  back: nunca
+  chapter: —
+- id: 0668
+  word: sempre
+  front: always
+  back: sempre
+  chapter: —
+- id: 0669
+  skipped: "reason_phrase"
+  word: São duas horas.
+  front: It's two o'clock.
+  back: São duas horas.
+  chapter: —
+- id: '0670'
+  skipped: "reason_phrase"
+  word: São duas e um quarto.
+  front: It's a quarter past two.
+  back: São duas e um quarto.
+  chapter: —
+- id: '0671'
+  skipped: "reason_phrase"
+  word: São duas e meia.
+  front: It's half past two.
+  back: São duas e meia.
+  chapter: —
+- id: '0672'
+  word: olá
+  front: hello, hi
+  back: olá
+  chapter: —
+- id: '0673'
+  skipped: "reason_phrase"
+  word: bom dia
+  front: good morning
+  back: bom dia
+  chapter: —
+- id: '0674'
+  skipped: "reason_phrase"
+  word: boa tarde
+  front: good afternoon
+  back: boa tarde
+  chapter: —
+- id: '0675'
+  skipped: "reason_phrase"
+  word: boa noite
+  front: goodnight, good evening
+  back: boa noite
+  chapter: —
+- id: '0676'
+  skipped: "reason_phrase"
+  word: muito prazer
+  front: nice to meet you
+  back: muito prazer
+  chapter: —
+- id: '0677'
+  word: igualmente
+  front: likewise
+  back: igualmente
+  chapter: —
+- id: 0678
+  suspended: "Como está? is not simply “formal”; it is the 3rd-person/polite-address form and can be used with o senhor/a senhora/você or omitted subject. The register label is oversimplified."
+  skipped: "reason_phrase"
+  word: Como está?
+  front: "How are you? (polite / 3rd-person address)"
+  back: "Como está?<br>How are you?<br><br><b>Como está?</b> uses the 3rd-person verb form and is appropriate with polite/implicit <i>você / o senhor / a senhora</i> depending context. Contrast informal <b>Como estás?</b>."
+  chapter: —
+- id: 0679
+  suspended: "Como estás? is specifically tu 2nd-person singular. “informal” is broadly right but the grammatical reason matters more than the label."
+  skipped: "reason_phrase"
+  word: Como estás?
+  front: "How are you? (informal <i>tu</i>)"
+  back: "Como estás?<br>How are you?<br><br><b>estás</b> is the <i>tu</i> form of <i>estar</i>. Contrast polite/3rd-person <b>Como está?</b>."
+  chapter: —
+- id: 0680
+  suspended: "Bem, obrigado. is extremely basic and predictable."
+  skipped: "reason_phrase"
+  word: Bem, obrigado.
+  front: Well, thanks.
+  back: Bem, obrigado.
+  chapter: —
+- id: 0681
+  skipped: "reason_similar"
+  word: Queria…
+  front: I would like…
+  back: Queria…
+  chapter: —
+- id: 0682
+  skipped: "reason_similar"
+  word: Podia...?
+  front: Could you...?
+  back: Podia...?
+  chapter: —
+- id: 0683
+  skipped: "reason_phrase"
+  word: não há problema
+  front: no problem
+  back: não há problema
+  chapter: —
+- id: 0684
+  skipped: "reason_phrase"
+  word: um momento
+  front: one moment
+  back: um momento
+  chapter: —
+- id: 0685
+  skipped: "reason_phrase"
+  word: por favor
+  front: please
+  back: por favor
+  chapter: —
+- id: 0686
+  word: desculpe
+  front: sorry (formal)
+  back: desculpe
+  chapter: —
+- id: 0687
+  word: desculpa
+  front: sorry (informal)
+  back: desculpa
+  chapter: —
+- id: 0688
+  suspended: "Peço desculpa is standard/polite “I’m sorry / I apologize”; calling it “formal” is too narrow."
+  skipped: "reason_phrase"
+  word: peço desculpa
+  front: "I apologize / I'm sorry for the delay."
+  back: "Peço desculpa pelo atraso.<br>I apologize / I'm sorry for the delay.<br><br><b>pedir desculpa</b> literally “ask forgiveness” = apologize/say sorry. <b>pelo = por + o</b>. Very normal in Portugal."
+  chapter: —
+- id: 0689
+  word: (muito) obrigado
+  front: thank you (very much) (says a man)
+  back: (muito) obrigado
+  chapter: —
+- id: 0690
+  suspended: "The card teaches only obrigada, i.e. the form said by a female speaker. For production this is wrong for a male learner; for recognition it is incomplete."
+  word: (muito) obrigada
+  front: thank you (very much) (says a woman)
+  back: (muito) obrigada
+  chapter: —
+- id: 0691
+  suspended: "de nada is basic and highly overlearned."
+  skipped: "reason_phrase"
+  word: de nada
+  front: you're welcome
+  back: de nada
+  chapter: —
+- id: 0692
+  skipped: "reason_phrase"
+  word: até já
+  front: see you soon
+  back: até já
+  chapter: —
+- id: 0693
+  suspended: "até logo is basic and likely already automatic."
+  skipped: "reason_phrase"
+  word: até logo
+  front: see you later
+  back: até logo
+  chapter: —
+- id: 0694
+  skipped: "reason_phrase"
+  word: até amanhã
+  front: see you tomorrow
+  back: até amanhã
+  chapter: —
+- id: 0695
+  skipped: "reason_phrase"
+  word: até à próxima
+  front: see you next time
+  back: até à próxima
+  chapter: —
+- id: 0696
+  word: tchau
+  front: bye (informal)
+  back: tchau
+  chapter: —
+- id: 0697
+  word: adeus
+  front: goodbye
+  back: adeus
+  chapter: —
+- id: 0698
+  word: sim
+  front: 'yes'
+  back: sim
+  chapter: —
+- id: 0699
+  word: não
+  front: 'no'
+  back: não
+  chapter: —
+- id: '0700'
+  word: e
+  front: and
+  back: e
+  chapter: —
+- id: '0701'
+  word: mas
+  front: but
+  back: mas
+  chapter: —
+- id: '0702'
+  word: se
+  front: if
+  back: se
+  chapter: —
+- id: '0703'
+  skipped: "reason_phrase"
+  word: por isso
+  front: so, for that reason
+  back: por isso
+  chapter: —
+- id: '0704'
+  skipped: "reason_phrase"
+  word: tenho a certeza
+  front: I am sure
+  back: tenho a certeza
+  chapter: —
+- id: '0705'
+  skipped: "reason_phrase"
+  word: acho que sim
+  front: I think so
+  back: acho que sim
+  chapter: —
+- id: '0706'
+  skipped: "reason_phrase"
+  word: acho que não
+  front: I don't think so
+  back: acho que não
+  chapter: —
+- id: '0707'
+  word: pois
+  front: right (agreement)
+  back: pois
+  chapter: —
+- id: 0708
+  skipped: "reason_phrase"
+  word: com certeza
+  front: certainly
+  back: com certeza
+  chapter: —
+- id: 0709
+  suspended: "isso mesmo has several natural renderings: exactly, that’s right, that’s it, precisely. The English cue allows multiple interpretations and gives no usage context."
+  skipped: "reason_phrase"
+  word: isso mesmo
+  front: "— É esta rua? — {{That's right / exactly.}}"
+  back: "— É esta rua? — Isso mesmo.<br>— Is it this street? — That's right / Exactly.<br><br><b>isso mesmo</b> confirms that the other person has identified or understood the right thing."
+  chapter: —
+- id: '0710'
+  word: talvez
+  front: maybe
+  back: talvez
+  chapter: —
+- id: '0711'
+  suspended: "se calhar is a very useful EP expression, but plain “maybe” collides directly with talvez and loses the colloquial/register nuance."
+  skipped: "reason_phrase"
+  word: se calhar
+  front: "{{Maybe}} amanhã chove."
+  back: "Se calhar amanhã chove.<br>Maybe it'll rain tomorrow.<br><br><b>se calhar</b> = maybe/perhaps, extremely common in conversational European Portuguese. Despite containing <i>se</i>, learn it as a fixed discourse chunk."
+  chapter: —
+- id: '0712'
+  skipped: "reason_similar"
+  word: exato
+  front: exactly
+  back: exato
+  chapter: —
+- id: '0713'
+  skipped: "reason_phrase"
+  word: está bem
+  front: alright
+  back: está bem
+  chapter: —
+- id: '0714'
+  skipped: "reason_phrase"
+  word: faz sentido
+  front: it makes sense
+  back: faz sentido
+  chapter: —
+- id: '0715'
+  word: cuidado
+  front: careful, watch out
+  back: cuidado
+  chapter: —
+- id: '0716'
+  word: olhe
+  front: look, listen (to draw attention) (formal)
+  back: olhe
+  chapter: —
+- id: '0717'
+  suspended: "que disparate is valid but relatively situational; “what nonsense” is acceptable. Likely suspended as low priority, not because wrong."
+  skipped: "reason_phrase"
+  word: que disparate
+  front: what nonsense
+  back: que disparate
+  chapter: —
+- id: 0718
+  suspended: "que pena is often “what a pity / that’s too bad”. English “what a shame” can also suggest que vergonha, creating a semantic collision."
+  skipped: "reason_phrase"
+  word: que pena
+  front: "— O concerto foi cancelado. — {{That's too bad.}}"
+  back: "— O concerto foi cancelado. — Que pena.<br>— The concert was cancelled. — That's too bad / What a pity.<br><br><b>que pena!</b> expresses regret or sympathy about an unfortunate situation."
+  chapter: —
+- id: 0719
+  suspended: "só conflates at least “only/just” and “alone”. A single English cue “just, only” does not teach its important ambiguity, and Level0 now covers só in context."
+  word: só
+  front: just, only
+  back: só
+  chapter: —
+- id: '0720'
+  word: quase
+  front: almost
+  back: quase
+  chapter: —
+- id: '0721'
+  word: ainda
+  front: still
+  back: ainda
+  chapter: —
+- id: '0722'
+  suspended: "ainda não = not yet is correct, but this was suspended after your Level0 work and is now directly redundant with richer contextual Level0 cards."
+  skipped: "reason_phrase"
+  word: ainda não
+  front: not yet
+  back: ainda não
+  chapter: —
+- id: '0723'
+  word: já
+  front: already
+  back: já
+  chapter: —
+- id: '0724'
+  skipped: "reason_phrase"
+  word: já não
+  front: not anymore
+  back: já não
+  chapter: —

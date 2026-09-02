@@ -1,932 +1,932 @@
 deck: words
 model: words
 cards:
-  - id: 0469
-    word: aberto
-    front: A porta está {{open}}.
-    back: 'A porta está aberta.
-
-      The door is open.
-
-      (m: aberto · f: aberta · pl: abertos/abertas)'
-    chapter: —
-  - id: '0470'
-    word: afiado
-    front: Isto é {{sharp}}.
-    back: 'Isto é afiado.
-
-      This is sharp.
-
-      (m: afiado · f: afiada · pl: afiados/afiadas)'
-    chapter: —
-  - id: '0471'
-    suspended: agradável = pleasant/nice is useful, but “Isto é pleasant” is generic and several adjectives could fit.
-    word: agradável
-    front: Foi uma conversa {{pleasant}}.
-    back: 'Foi uma conversa agradável.<br>It was a pleasant conversation.<br><br><b>agradável</b> = pleasant/agreeable/nice. A concrete noun makes the adjective easier to interpret.'
-    chapter: —
-  - id: '0472'
-    word: alto
-    front: Isto é {{high}}.
-    back: 'Isto é alto.
-
-      This is high.
-
-      (m: alto · f: alta · pl: altos/altas)'
-    chapter: —
-  - id: '0473'
-    word: apertado
-    front: Isto é {{tight}}.
-    back: 'Isto é apertado.
-
-      This is tight.
-
-      (m: apertado · f: apertada · pl: apertados/apertadas)'
-    chapter: —
-  - id: '0474'
-    word: assustado
-    front: Ele está {{scared}}.
-    back: 'Ele está assustado.
-
-      He is scared.
-
-      (m: assustado · f: assustada · pl: assustados/assustadas)'
-    chapter: —
-  - id: '0475'
-    word: atrasado
-    front: Ele está {{late}}.
-    back: 'Ele está atrasado.
-
-      He is late.
-
-      (m: atrasado · f: atrasada · pl: atrasados/atrasadas)'
-    chapter: —
-  - id: '0476'
-    suspended: atribulado is not neutral “eventful”; it usually suggests troubled/hectic/full of difficulties. The English cue can be positively 'eventful', so it is semantically off.
-    word: atribulado
-    front: Foi um dia {{hectic}}.
-    back: 'Foi um dia atribulado.<br>It was a hectic/troubled day.<br><br><b>atribulado</b> means troubled, hectic, full of difficulties/events — stronger and less neutral than generic English “eventful”.'
-    chapter: —
-  - id: '0477'
-    word: baixo
-    front: Isto é {{low}}.
-    back: 'Isto é baixo.
-
-      This is low.
-
-      (m: baixo · f: baixa · pl: baixos/baixas)'
-    chapter: —
-  - id: 0478
-    word: barato
-    front: Isto é {{cheap}}.
-    back: 'Isto é barato.
-
-      This is cheap.
-
-      (m: barato · f: barata · pl: baratos/baratas)'
-    chapter: —
-  - id: 0479
-    word: bom
-    front: Isto é {{good}}.
-    back: 'Isto é bom.
-
-      This is good.
-
-      (m: bom · f: boa · pl: bons/boas)'
-    chapter: —
-  - id: 0480
-    word: bonito
-    front: Isto é {{pretty}}.
-    back: 'Isto é bonito.
-
-      This is pretty.
-
-      (m: bonito · f: bonita · pl: bonitos/bonitas)'
-    chapter: —
-  - id: 0481
-    skipped: "reason_similar"
-    word: brilhante
-    front: Isto é {{bright}}.
-    back: 'Isto é brilhante.
-
-      This is bright.
-
-      (m/f: brilhante · pl: brilhantes)'
-    chapter: —
-  - id: 0482
-    word: caro
-    front: Isto é {{expensive}}.
-    back: 'Isto é caro.
-
-      This is expensive.
-
-      (m: caro · f: cara · pl: caros/caras)'
-    chapter: —
-  - id: 0483
-    word: cansado
-    front: Ele está {{tired}}.
-    back: 'Ele está cansado.
-
-      He is tired.
-
-      (m: cansado · f: cansada · pl: cansados/cansadas)'
-    chapter: —
-  - id: 0484
-    word: chateado
-    front: Ele está {{upset}}.
-    back: 'Ele está chateado.
-
-      He is upset.
-
-      (m: chateado · f: chateada · pl: chateados/chateadas)'
-    chapter: —
-  - id: 0485
-    word: cheio
-    front: A garrafa está {{full}}.
-    back: 'A garrafa está cheia.
-
-      The bottle is full.
-
-      (m: cheio · f: cheia · pl: cheios/cheias)'
-    chapter: —
-  - id: 0486
-    skipped: "reason_similar"
-    word: colorido
-    front: Isto é {{colorful}}.
-    back: 'Isto é colorido.
-
-      This is colorful.
-
-      (m: colorido · f: colorida · pl: coloridos/coloridas)'
-    chapter: —
-  - id: 0487
-    skipped: "reason_similar"
-    word: complicado
-    front: Isto é {{complicated}}.
-    back: 'Isto é complicado.
-
-      This is complicated.
-
-      (m: complicado · f: complicada · pl: complicados/complicadas)'
-    chapter: —
-  - id: 0488
-    word: comprido
-    front: Isto é {{long}}.
-    back: 'Isto é comprido.
-
-      This is long.
-
-      (m: comprido · f: comprida · pl: compridos/compridas)'
-    chapter: —
-  - id: 0489
-    skipped: "reason_similar"
-    word: confuso
-    front: Ele está {{confused}}.
-    back: 'Ele está confuso.
-
-      He is confused.
-
-      (m: confuso · f: confusa · pl: confusos/confusas)'
-    chapter: —
-  - id: 0490
-    suspended: contente and feliz are both currently cued as “happy”, creating a direct synonym collision.
-    word: contente
-    front: Estou muito {{pleased}} com o resultado.
-    back: 'Estou muito contente com o resultado.<br>I''m very pleased with the result.<br><br><b>contente</b> often means pleased/content/satisfied with a situation. This helps separate it from the broader <b>feliz</b> = happy.'
-    chapter: —
-  - id: 0491
-    skipped: "reason_similar"
-    word: correto
-    front: Isto é {{correct}}.
-    back: 'Isto é correto.
-
-      This is correct.
-
-      (m: correto · f: correta · pl: corretos/corretas)'
-    chapter: —
-  - id: 0492
-    word: cuidadoso
-    front: Ele é {{careful}}.
-    back: 'Ele é cuidadoso.
-
-      He is careful.
-
-      (m: cuidadoso · f: cuidadosa · pl: cuidadosos/cuidadosas)'
-    chapter: —
-  - id: 0493
-    skipped: "reason_similar"
-    word: curioso
-    front: Ele é {{curious}}.
-    back: 'Ele é curioso.
-
-      He is curious.
-
-      (m: curioso · f: curiosa · pl: curiosos/curiosas)'
-    chapter: —
-  - id: 0494
-    word: curto
-    front: Isto é {{short}}.
-    back: 'Isto é curto.
-
-      This is short.
-
-      (m: curto · f: curta · pl: curtos/curtas)'
-    chapter: —
-  - id: 0495
-    word: deitado
-    front: Ele está {{lying down}}.
-    back: 'Ele está deitado.
-
-      He is lying down.
-
-      (m: deitado · f: deitada · pl: deitados/deitadas)'
-    chapter: —
-  - id: 0496
-    word: desarrumado
-    front: A casa está {{messy}}.
-    back: 'A casa está desarrumada.
-
-      The house is messy.
-
-      (m: desarrumado · f: desarrumada · pl: desarrumados/desarrumadas)'
-    chapter: —
-  - id: 0497
-    skipped: "reason_similar"
-    word: desconfortável
-    front: Isto é {{uncomfortable}}.
-    back: 'Isto é desconfortável.
-
-      This is uncomfortable.
-
-      (m/f: desconfortável · pl: desconfortáveis)'
-    chapter: —
-  - id: 0498
-    word: desconhecido
-    front: Isto é {{unknown}}.
-    back: 'Isto é desconhecido.
-
-      This is unknown.
-
-      (m: desconhecido · f: desconhecida · pl: desconhecidos/desconhecidas)'
-    chapter: —
-  - id: 0499
-    word: desiludido
-    front: Ele está {{disappointed}}.
-    back: 'Ele está desiludido.
-
-      He is disappointed.
-
-      (m: desiludido · f: desiludida · pl: desiludidos/desiludidas)'
-    chapter: —
-  - id: '0500'
-    suspended: despenteado literally focuses on uncombed/messy hair; English “disheveled” can imply clothes/general appearance too.
-    word: despenteado
-    front: Acordei com o cabelo {{messy / uncombed}}.
-    back: 'Acordei com o cabelo despenteado.<br>I woke up with messy/uncombed hair.<br><br><b>despenteado</b> specifically concerns hair that is untidy/uncombed; generic “dishevelled” is too broad.'
-    chapter: —
-  - id: '0501'
-    skipped: "reason_similar"
-    word: distraído
-    front: Ele está {{distracted}}.
-    back: 'Ele está distraído.
-
-      He is distracted.
-
-      (m: distraído · f: distraída · pl: distraídos/distraídas)'
-    chapter: —
-  - id: '0502'
-    word: doente
-    front: Ele está {{sick}}.
-    back: 'Ele está doente.
-
-      He is sick.
-
-      (m/f: doente · pl: doentes)'
-    chapter: —
-  - id: '0503'
-    skipped: "reason_similar"
-    word: enorme
-    front: Isto é {{huge}}.
-    back: 'Isto é enorme.
-
-      This is huge.
-
-      (m/f: enorme · pl: enormes)'
-    chapter: —
-  - id: '0504'
-    word: escondido
-    front: A chave está {{hidden}}.
-    back: 'A chave está escondida.
-
-      The key is hidden.
-
-      (m: escondido · f: escondida · pl: escondidos/escondidas)'
-    chapter: —
-  - id: '0505'
-    word: escuro
-    front: Isto é {{dark}}.
-    back: 'Isto é escuro.
-
-      This is dark.
-
-      (m: escuro · f: escura · pl: escuros/escuras)'
-    chapter: —
-  - id: '0506'
-    word: espantado
-    front: Ele está {{surprised}}.
-    back: 'Ele está espantado.
-
-      He is surprised.
-
-      (m: espantado · f: espantada · pl: espantados/espantadas)'
-    chapter: —
-  - id: '0507'
-    word: estranho
-    front: Isto é {{strange}}.
-    back: 'Isto é estranho.
-
-      This is strange.
-
-      (m: estranho · f: estranha · pl: estranhos/estranhas)'
-    chapter: —
-  - id: 0508
-    word: fácil
-    front: Isto é {{easy}}.
-    back: 'Isto é fácil.
-
-      This is easy.
-
-      (m/f: fácil · pl: fáceis)'
-    chapter: —
-  - id: 0509
-    word: fechado
-    front: A porta está {{closed}}.
-    back: 'A porta está fechada.
-
-      The door is closed.
-
-      (m: fechado · f: fechada · pl: fechados/fechadas)'
-    chapter: —
-  - id: '0510'
-    suspended: feliz duplicates contente under the exact English cue “happy”.
-    word: feliz
-    front: Ela parece {{happy}} com a vida.
-    back: 'Ela parece feliz com a vida.<br>She seems happy with life.<br><br><b>feliz</b> = happy. Contrast <b>contente com X</b> = pleased/content with X.'
-    chapter: —
-  - id: '0511'
-    skipped: "reason_similar"
-    word: final
-    front: Isto é {{final}}.
-    back: 'Isto é final.
-
-      This is final.
-
-      (m/f: final · pl: finais)'
-    chapter: —
-  - id: '0512'
-    word: fresco
-    front: A água está {{fresh}}.
-    back: 'A água está fresca.
-
-      The water is fresh.
-
-      (m: fresco · f: fresca · pl: frescos/frescas)'
-    chapter: —
-  - id: '0513'
-    word: frio
-    front: A água está {{cold}}.
-    back: 'A água está fria.
-
-      The water is cold.
-
-      (m: frio · f: fria · pl: frios/frias)'
-    chapter: —
-  - id: '0514'
-    word: gelado
-    front: A água está {{freezing}}.
-    back: 'A água está gelada.
-
-      The water is freezing.
-
-      (m: gelado · f: gelada · pl: gelados/geladas)'
-    chapter: —
-  - id: '0515'
-    skipped: "reason_similar"
-    word: gigante
-    front: Isto é {{gigantic}}.
-    back: 'Isto é gigante.
-
-      This is gigantic.
-
-      (m/f: gigante · pl: gigantes)'
-    chapter: —
-  - id: '0516'
-    word: grande
-    front: Isto é {{big}}.
-    back: 'Isto é grande.
-
-      This is big.
-
-      (m/f: grande · pl: grandes)'
-    chapter: —
-  - id: '0517'
-    word: grelhado
-    front: Isto é {{grilled}}.
-    back: 'Isto é grelhado.
-
-      This is grilled.
-
-      (m: grelhado · f: grelhada · pl: grelhados/grelhadas)'
-    chapter: —
-  - id: 0518
-    skipped: "reason_similar"
-    word: incrível
-    front: Isto é {{incredible}}.
-    back: 'Isto é incrível.
-
-      This is incredible.
-
-      (m/f: incrível · pl: incríveis)'
-    chapter: —
-  - id: 0519
-    skipped: "reason_similar"
-    word: indeciso
-    front: Ele é {{indecisive}}.
-    back: 'Ele é indeciso.
-
-      He is indecisive.
-
-      (m: indeciso · f: indecisa · pl: indecisos/indecisas)'
-    chapter: —
-  - id: '0520'
-    skipped: "reason_similar"
-    word: inteligente
-    front: Ele é {{intelligent}}.
-    back: 'Ele é inteligente.
-
-      He is intelligent.
-
-      (m/f: inteligente · pl: inteligentes)'
-    chapter: —
-  - id: '0521'
-    skipped: "reason_similar"
-    word: interessante
-    front: Isto é {{interesting}}.
-    back: 'Isto é interessante.
-
-      This is interesting.
-
-      (m/f: interessante · pl: interessantes)'
-    chapter: —
-  - id: '0522'
-    word: inútil
-    front: Isto é {{useless}}.
-    back: 'Isto é inútil.
-
-      This is useless.
-
-      (m/f: inútil · pl: inúteis)'
-    chapter: —
-  - id: '0523'
-    word: lento
-    front: Isto é {{slow}}.
-    back: 'Isto é lento.
-
-      This is slow.
-
-      (m: lento · f: lenta · pl: lentos/lentas)'
-    chapter: —
-  - id: '0524'
-    suspended: lindo overlaps with bonito/belo under “beautiful”. Without nuance/context the answer is not unique.
-    word: lindo
-    front: Que vista {{beautiful / lovely}}!
-    back: 'Que vista linda!<br>What a beautiful/lovely view!<br><br><b>lindo/linda</b> is strongly positive and very natural in compliments/exclamations; context separates it from other “beautiful” synonyms.'
-    chapter: —
-  - id: '0525'
-    suspended: luminoso is a transparent cognate and can mean luminous/bright/light-filled. Generic sentence gives no clue which sense.
-    skipped: "reason_similar"
-    word: luminoso
-    front: Este quarto é muito {{bright}}.
-    back: 'Este quarto é muito luminoso.<br>This room is very bright.<br><br><b>luminoso</b> = full of light / bright / luminous. A room is a natural everyday context.'
-    chapter: —
-  - id: '0526'
-    word: maluco
-    front: Ele é {{crazy}}.
-    back: 'Ele é maluco.
-
-      He is crazy.
-
-      (m: maluco · f: maluca · pl: malucos/malucas)'
-    chapter: —
-  - id: '0527'
-    word: mau
-    front: Isto é {{bad}}.
-    back: 'Isto é mau.
-
-      This is bad.
-
-      (m: mau · f: má · pl: maus/más)'
-    chapter: —
-  - id: 0528
-    skipped: "reason_similar"
-    word: moderno
-    front: Isto é {{modern}}.
-    back: 'Isto é moderno.
-
-      This is modern.
-
-      (m: moderno · f: moderna · pl: modernos/modernas)'
-    chapter: —
-  - id: 0529
-    skipped: "reason_similar"
-    word: nervoso
-    front: Ele está {{nervous}}.
-    back: 'Ele está nervoso.
-
-      He is nervous.
-
-      (m: nervoso · f: nervosa · pl: nervosos/nervosas)'
-    chapter: —
-  - id: '0530'
-    word: novo
-    front: Isto é {{new}}.
-    back: 'Isto é novo.
-
-      This is new.
-
-      (m: novo · f: nova · pl: novos/novas)'
-    chapter: —
-  - id: '0531'
-    word: ocupado
-    front: Ele está {{busy}}.
-    back: 'Ele está ocupado.
-
-      He is busy.
-
-      (m: ocupado · f: ocupada · pl: ocupados/ocupadas)'
-    chapter: —
-  - id: '0532'
-    word: ótimo
-    front: Isto é {{great}}.
-    back: 'Isto é ótimo.
-
-      This is great.
-
-      (m: ótimo · f: ótima · pl: ótimos/ótimas)'
-    chapter: —
-  - id: '0533'
-    word: partido
-    front: A chávena está {{broken}}.
-    back: 'A chávena está partida.
-
-      The cup is broken.
-
-      (m: partido · f: partida · pl: partidos/partidas)'
-    chapter: —
-  - id: '0534'
-    word: perigoso
-    front: Isto é {{dangerous}}.
-    back: 'Isto é perigoso.
-
-      This is dangerous.
-
-      (m: perigoso · f: perigosa · pl: perigosos/perigosas)'
-    chapter: —
-  - id: '0535'
-    word: pesado
-    front: Isto é {{heavy}}.
-    back: 'Isto é pesado.
-
-      This is heavy.
-
-      (m: pesado · f: pesada · pl: pesados/pesadas)'
-    chapter: —
-  - id: '0536'
-    skipped: "reason_similar"
-    word: precioso
-    front: Isto é {{precious}}.
-    back: 'Isto é precioso.
-
-      This is precious.
-
-      (m: precioso · f: preciosa · pl: preciosos/preciosas)'
-    chapter: —
-  - id: '0537'
-    word: preocupado
-    front: Ele está {{worried}}.
-    back: 'Ele está preocupado.
-
-      He is worried.
-
-      (m: preocupado · f: preocupada · pl: preocupados/preocupadas)'
-    chapter: —
-  - id: 0538
-    word: pronto
-    front: Ele está {{ready}}.
-    back: 'Ele está pronto.
-
-      He is ready.
-
-      (m: pronto · f: pronta · pl: prontos/prontas)'
-    chapter: —
-  - id: 0539
-    word: quente
-    front: A sopa está {{warm}}.
-    back: 'A sopa está quente.
-
-      The soup is warm.
-
-      (m/f: quente · pl: quentes)'
-    chapter: —
-  - id: '0540'
-    suspended: rabugento is a valid word but relatively low-value compared with more common mood vocabulary; 21 reps + 2 lapses suggest high scheduling cost for little payoff.
-    word: rabugento
-    front: Ele é {{grumpy}}.
-    back: 'Ele é rabugento.
-
-      He is grumpy.
-
-      (m: rabugento · f: rabugenta · pl: rabugentos/rabugentas)'
-    chapter: —
-  - id: '0541'
-    skipped: "reason_similar"
-    word: rápido
-    front: Isto é {{fast}}.
-    back: 'Isto é rápido.
-
-      This is fast.
-
-      (m: rápido · f: rápida · pl: rápidos/rápidas)'
-    chapter: —
-  - id: '0542'
-    word: redondo
-    front: Isto é {{round}}.
-    back: 'Isto é redondo.
-
-      This is round.
-
-      (m: redondo · f: redonda · pl: redondos/redondas)'
-    chapter: —
-  - id: '0543'
-    skipped: "reason_similar"
-    word: relaxado
-    front: Ele está {{relaxed}}.
-    back: 'Ele está relaxado.
-
-      He is relaxed.
-
-      (m: relaxado · f: relaxada · pl: relaxados/relaxadas)'
-    chapter: —
-  - id: '0544'
-    skipped: "reason_similar"
-    word: restrito
-    front: Isto é {{restricted}}.
-    back: 'Isto é restrito.
-
-      This is restricted.
-
-      (m: restrito · f: restrita · pl: restritos/restritas)'
-    chapter: —
-  - id: '0545'
-    suspended: English “secret” can be noun or adjective; secreto is adjective, while segredo is the noun. Current cue does not mark part of speech clearly.
-    skipped: "reason_similar"
-    word: secreto
-    front: É um documento {{secret}}.
-    back: 'É um documento secreto.<br>It''s a secret document.<br><br><b>secreto</b> is the adjective “secret”. The noun “a secret” is <b>segredo</b>.'
-    chapter: —
-  - id: '0546'
-    word: seguro
-    front: Isto é {{safe}}.
-    back: 'Isto é seguro.
-
-      This is safe.
-
-      (m: seguro · f: segura · pl: seguros/seguras)'
-    chapter: —
-  - id: '0547'
-    skipped: "reason_similar"
-    word: simpático
-    front: Ele é {{nice}}.
-    back: 'Ele é simpático.
-
-      He is nice.
-
-      (m: simpático · f: simpática · pl: simpáticos/simpáticas)'
-    chapter: —
-  - id: 0548
-    suspended: simples is transparent and very basic; generic sentence is unnecessary.
-    skipped: "reason_similar"
-    word: simples
-    front: Isto é {{simple}}.
-    back: 'Isto é simples.
-
-      This is simple.
-
-      (m/f: simples · pl: simples)'
-    chapter: —
-  - id: 0549
-    word: sozinho
-    front: Ele está {{alone}}.
-    back: 'Ele está sozinho.
-
-      He is alone.
-
-      (m: sozinho · f: sozinha · pl: sozinhos/sozinhas)'
-    chapter: —
-  - id: '0550'
-    word: suave
-    front: Isto é {{soft}}.
-    back: 'Isto é suave.
-
-      This is soft.
-
-      (m/f: suave · pl: suaves)'
-    chapter: —
-  - id: '0551'
-    skipped: "reason_similar"
-    word: submerso
-    front: A cidade está {{submerged}}.
-    back: 'A cidade está submersa.
-
-      The city is submerged.
-
-      (m: submerso · f: submersa · pl: submersos/submersas)'
-    chapter: —
-  - id: '0552'
-    word: sujo
-    front: A roupa está {{dirty}}.
-    back: 'A roupa está suja.
-
-      The clothing is dirty.
-
-      (m: sujo · f: suja · pl: sujos/sujas)'
-    chapter: —
-  - id: '0553'
-    suspended: surpreso is useful, but generic template makes it easy/forgettable rather than contextual.
-    skipped: "reason_similar"
-    word: surpreso
-    front: Ele está {{surprised}}.
-    back: 'Ele está surpreso.
-
-      He is surprised.
-
-      (m: surpreso · f: surpresa · pl: surpresos/surpresas)'
-    chapter: —
-  - id: '0554'
-    suspended: 'ténue is relatively advanced and polysemous: faint, slight, tenuous, dim. “tenuous” is only one sense and not very A1-relevant.'
-    skipped: "reason_similar"
-    word: ténue
-    front: Isto é {{tenuous}}.
-    back: 'Isto é ténue.
-
-      This is tenuous.
-
-      (m/f: ténue · pl: ténues)'
-    chapter: —
-  - id: '0555'
-    skipped: "reason_similar"
-    word: transparente
-    front: Isto é {{transparent}}.
-    back: 'Isto é transparente.
-
-      This is transparent.
-
-      (m/f: transparente · pl: transparentes)'
-    chapter: —
-  - id: '0556'
-    word: triste
-    front: Ele está {{sad}}.
-    back: 'Ele está triste.
-
-      He is sad.
-
-      (m/f: triste · pl: tristes)'
-    chapter: —
-  - id: '0557'
-    skipped: "reason_similar"
-    word: urgente
-    front: Isto é {{urgent}}.
-    back: 'Isto é urgente.
-
-      This is urgent.
-
-      (m/f: urgente · pl: urgentes)'
-    chapter: —
-  - id: 0558
-    word: velho
-    front: Isto é {{old}}.
-    back: 'Isto é velho.
-
-      This is old.
-
-      (m: velho · f: velha · pl: velhos/velhas)'
-    chapter: —
-  - id: 0559
-    suspended: venenoso = poisonous is valid, but low-frequency for daily A1 and overlaps conceptually with tóxico.
-    word: venenoso
-    front: Isto é {{poisonous}}.
-    back: 'Isto é venenoso.
-
-      This is poisonous.
-
-      (m: venenoso · f: venenosa · pl: venenosos/venenosas)'
-    chapter: —
-  - id: '0560'
-    word: amarelo
-    front: Isto é {{yellow}}.
-    back: 'Isto é amarelo.
-
-      This is yellow.
-
-      (m: amarelo · f: amarela · pl: amarelos/amarelas)'
-    chapter: —
-  - id: '0561'
-    word: azul
-    front: Isto é {{blue}}.
-    back: 'Isto é azul.
-
-      This is blue.
-
-      (m/f: azul · pl: azuis)'
-    chapter: —
-  - id: '0562'
-    word: branco
-    front: Isto é {{white}}.
-    back: 'Isto é branco.
-
-      This is white.
-
-      (m: branco · f: branca · pl: brancos/brancas)'
-    chapter: —
-  - id: '0563'
-    word: castanho
-    front: Isto é {{brown}}.
-    back: 'Isto é castanho.
-
-      This is brown.
-
-      (m: castanho · f: castanha · pl: castanhos/castanhas)'
-    chapter: —
-  - id: '0564'
-    word: cinzento
-    front: Isto é {{gray}}.
-    back: 'Isto é cinzento.
-
-      This is gray.
-
-      (m: cinzento · f: cinzenta · pl: cinzentos/cinzentas)'
-    chapter: —
-  - id: '0565'
-    word: cor-de-laranja
-    front: Isto é {{orange}}.
-    back: 'Isto é cor-de-laranja.
-
-      This is orange.
-
-      (m/f: cor-de-laranja · pl: cor-de-laranja)'
-    chapter: —
-  - id: '0566'
-    word: cor-de-rosa
-    front: Isto é {{pink}}.
-    back: 'Isto é cor-de-rosa.
-
-      This is pink.
-
-      (m/f: cor-de-rosa · pl: cor-de-rosa)'
-    chapter: —
-  - id: '0567'
-    word: preto
-    front: Isto é {{black}}.
-    back: 'Isto é preto.
-
-      This is black.
-
-      (m: preto · f: preta · pl: pretos/pretas)'
-    chapter: —
-  - id: 0568
-    word: roxo
-    front: Isto é {{purple}}.
-    back: 'Isto é roxo.
-
-      This is purple.
-
-      (m: roxo · f: roxa · pl: roxos/roxas)'
-    chapter: —
-  - id: 0569
-    word: verde
-    front: Isto é {{green}}.
-    back: 'Isto é verde.
-
-      This is green.
-
-      (m/f: verde · pl: verdes)'
-    chapter: —
-  - id: '0570'
-    word: vermelho
-    front: Isto é {{red}}.
-    back: 'Isto é vermelho.
-
-      This is red.
-
-      (m: vermelho · f: vermelha · pl: vermelhos/vermelhas)'
-    chapter: —
+- id: 0469
+  word: aberto
+  front: A porta está {{open}}.
+  back: 'A porta está aberta.
+
+    The door is open.
+
+    (m: aberto · f: aberta · pl: abertos/abertas)'
+  chapter: —
+- id: '0470'
+  word: afiado
+  front: Isto é {{sharp}}.
+  back: 'Isto é afiado.
+
+    This is sharp.
+
+    (m: afiado · f: afiada · pl: afiados/afiadas)'
+  chapter: —
+- id: '0471'
+  suspended: "agradável = pleasant/nice is useful, but “Isto é pleasant” is generic and several adjectives could fit."
+  word: agradável
+  front: "Foi uma conversa {{pleasant}}."
+  back: "Foi uma conversa agradável.<br>It was a pleasant conversation.<br><br><b>agradável</b> = pleasant/agreeable/nice. A concrete noun makes the adjective easier to interpret."
+  chapter: —
+- id: '0472'
+  word: alto
+  front: Isto é {{high}}.
+  back: 'Isto é alto.
+
+    This is high.
+
+    (m: alto · f: alta · pl: altos/altas)'
+  chapter: —
+- id: '0473'
+  word: apertado
+  front: Isto é {{tight}}.
+  back: 'Isto é apertado.
+
+    This is tight.
+
+    (m: apertado · f: apertada · pl: apertados/apertadas)'
+  chapter: —
+- id: '0474'
+  word: assustado
+  front: Ele está {{scared}}.
+  back: 'Ele está assustado.
+
+    He is scared.
+
+    (m: assustado · f: assustada · pl: assustados/assustadas)'
+  chapter: —
+- id: '0475'
+  word: atrasado
+  front: Ele está {{late}}.
+  back: 'Ele está atrasado.
+
+    He is late.
+
+    (m: atrasado · f: atrasada · pl: atrasados/atrasadas)'
+  chapter: —
+- id: '0476'
+  suspended: "atribulado is not neutral “eventful”; it usually suggests troubled/hectic/full of difficulties. The English cue can be positively 'eventful', so it is semantically off."
+  word: atribulado
+  front: "Foi um dia {{hectic}}."
+  back: "Foi um dia atribulado.<br>It was a hectic/troubled day.<br><br><b>atribulado</b> means troubled, hectic, full of difficulties/events — stronger and less neutral than generic English “eventful”."
+  chapter: —
+- id: '0477'
+  word: baixo
+  front: Isto é {{low}}.
+  back: 'Isto é baixo.
+
+    This is low.
+
+    (m: baixo · f: baixa · pl: baixos/baixas)'
+  chapter: —
+- id: 0478
+  word: barato
+  front: Isto é {{cheap}}.
+  back: 'Isto é barato.
+
+    This is cheap.
+
+    (m: barato · f: barata · pl: baratos/baratas)'
+  chapter: —
+- id: 0479
+  word: bom
+  front: Isto é {{good}}.
+  back: 'Isto é bom.
+
+    This is good.
+
+    (m: bom · f: boa · pl: bons/boas)'
+  chapter: —
+- id: 0480
+  word: bonito
+  front: Isto é {{pretty}}.
+  back: 'Isto é bonito.
+
+    This is pretty.
+
+    (m: bonito · f: bonita · pl: bonitos/bonitas)'
+  chapter: —
+- id: 0481
+  skipped: "reason_similar"
+  word: brilhante
+  front: Isto é {{bright}}.
+  back: 'Isto é brilhante.
+
+    This is bright.
+
+    (m/f: brilhante · pl: brilhantes)'
+  chapter: —
+- id: 0482
+  word: caro
+  front: Isto é {{expensive}}.
+  back: 'Isto é caro.
+
+    This is expensive.
+
+    (m: caro · f: cara · pl: caros/caras)'
+  chapter: —
+- id: 0483
+  word: cansado
+  front: Ele está {{tired}}.
+  back: 'Ele está cansado.
+
+    He is tired.
+
+    (m: cansado · f: cansada · pl: cansados/cansadas)'
+  chapter: —
+- id: 0484
+  word: chateado
+  front: Ele está {{upset}}.
+  back: 'Ele está chateado.
+
+    He is upset.
+
+    (m: chateado · f: chateada · pl: chateados/chateadas)'
+  chapter: —
+- id: 0485
+  word: cheio
+  front: A garrafa está {{full}}.
+  back: 'A garrafa está cheia.
+
+    The bottle is full.
+
+    (m: cheio · f: cheia · pl: cheios/cheias)'
+  chapter: —
+- id: 0486
+  skipped: "reason_similar"
+  word: colorido
+  front: Isto é {{colorful}}.
+  back: 'Isto é colorido.
+
+    This is colorful.
+
+    (m: colorido · f: colorida · pl: coloridos/coloridas)'
+  chapter: —
+- id: 0487
+  skipped: "reason_similar"
+  word: complicado
+  front: Isto é {{complicated}}.
+  back: 'Isto é complicado.
+
+    This is complicated.
+
+    (m: complicado · f: complicada · pl: complicados/complicadas)'
+  chapter: —
+- id: 0488
+  word: comprido
+  front: Isto é {{long}}.
+  back: 'Isto é comprido.
+
+    This is long.
+
+    (m: comprido · f: comprida · pl: compridos/compridas)'
+  chapter: —
+- id: 0489
+  skipped: "reason_similar"
+  word: confuso
+  front: Ele está {{confused}}.
+  back: 'Ele está confuso.
+
+    He is confused.
+
+    (m: confuso · f: confusa · pl: confusos/confusas)'
+  chapter: —
+- id: 0490
+  suspended: "contente and feliz are both currently cued as “happy”, creating a direct synonym collision."
+  word: contente
+  front: "Estou muito {{pleased}} com o resultado."
+  back: "Estou muito contente com o resultado.<br>I'm very pleased with the result.<br><br><b>contente</b> often means pleased/content/satisfied with a situation. This helps separate it from the broader <b>feliz</b> = happy."
+  chapter: —
+- id: 0491
+  skipped: "reason_similar"
+  word: correto
+  front: Isto é {{correct}}.
+  back: 'Isto é correto.
+
+    This is correct.
+
+    (m: correto · f: correta · pl: corretos/corretas)'
+  chapter: —
+- id: 0492
+  word: cuidadoso
+  front: Ele é {{careful}}.
+  back: 'Ele é cuidadoso.
+
+    He is careful.
+
+    (m: cuidadoso · f: cuidadosa · pl: cuidadosos/cuidadosas)'
+  chapter: —
+- id: 0493
+  skipped: "reason_similar"
+  word: curioso
+  front: Ele é {{curious}}.
+  back: 'Ele é curioso.
+
+    He is curious.
+
+    (m: curioso · f: curiosa · pl: curiosos/curiosas)'
+  chapter: —
+- id: 0494
+  word: curto
+  front: Isto é {{short}}.
+  back: 'Isto é curto.
+
+    This is short.
+
+    (m: curto · f: curta · pl: curtos/curtas)'
+  chapter: —
+- id: 0495
+  word: deitado
+  front: Ele está {{lying down}}.
+  back: 'Ele está deitado.
+
+    He is lying down.
+
+    (m: deitado · f: deitada · pl: deitados/deitadas)'
+  chapter: —
+- id: 0496
+  word: desarrumado
+  front: A casa está {{messy}}.
+  back: 'A casa está desarrumada.
+
+    The house is messy.
+
+    (m: desarrumado · f: desarrumada · pl: desarrumados/desarrumadas)'
+  chapter: —
+- id: 0497
+  skipped: "reason_similar"
+  word: desconfortável
+  front: Isto é {{uncomfortable}}.
+  back: 'Isto é desconfortável.
+
+    This is uncomfortable.
+
+    (m/f: desconfortável · pl: desconfortáveis)'
+  chapter: —
+- id: 0498
+  word: desconhecido
+  front: Isto é {{unknown}}.
+  back: 'Isto é desconhecido.
+
+    This is unknown.
+
+    (m: desconhecido · f: desconhecida · pl: desconhecidos/desconhecidas)'
+  chapter: —
+- id: 0499
+  word: desiludido
+  front: Ele está {{disappointed}}.
+  back: 'Ele está desiludido.
+
+    He is disappointed.
+
+    (m: desiludido · f: desiludida · pl: desiludidos/desiludidas)'
+  chapter: —
+- id: '0500'
+  suspended: "despenteado literally focuses on uncombed/messy hair; English “disheveled” can imply clothes/general appearance too."
+  word: despenteado
+  front: "Acordei com o cabelo {{messy / uncombed}}."
+  back: "Acordei com o cabelo despenteado.<br>I woke up with messy/uncombed hair.<br><br><b>despenteado</b> specifically concerns hair that is untidy/uncombed; generic “dishevelled” is too broad."
+  chapter: —
+- id: '0501'
+  skipped: "reason_similar"
+  word: distraído
+  front: Ele está {{distracted}}.
+  back: 'Ele está distraído.
+
+    He is distracted.
+
+    (m: distraído · f: distraída · pl: distraídos/distraídas)'
+  chapter: —
+- id: '0502'
+  word: doente
+  front: Ele está {{sick}}.
+  back: 'Ele está doente.
+
+    He is sick.
+
+    (m/f: doente · pl: doentes)'
+  chapter: —
+- id: '0503'
+  skipped: "reason_similar"
+  word: enorme
+  front: Isto é {{huge}}.
+  back: 'Isto é enorme.
+
+    This is huge.
+
+    (m/f: enorme · pl: enormes)'
+  chapter: —
+- id: '0504'
+  word: escondido
+  front: A chave está {{hidden}}.
+  back: 'A chave está escondida.
+
+    The key is hidden.
+
+    (m: escondido · f: escondida · pl: escondidos/escondidas)'
+  chapter: —
+- id: '0505'
+  word: escuro
+  front: Isto é {{dark}}.
+  back: 'Isto é escuro.
+
+    This is dark.
+
+    (m: escuro · f: escura · pl: escuros/escuras)'
+  chapter: —
+- id: '0506'
+  word: espantado
+  front: Ele está {{surprised}}.
+  back: 'Ele está espantado.
+
+    He is surprised.
+
+    (m: espantado · f: espantada · pl: espantados/espantadas)'
+  chapter: —
+- id: '0507'
+  word: estranho
+  front: Isto é {{strange}}.
+  back: 'Isto é estranho.
+
+    This is strange.
+
+    (m: estranho · f: estranha · pl: estranhos/estranhas)'
+  chapter: —
+- id: 0508
+  word: fácil
+  front: Isto é {{easy}}.
+  back: 'Isto é fácil.
+
+    This is easy.
+
+    (m/f: fácil · pl: fáceis)'
+  chapter: —
+- id: 0509
+  word: fechado
+  front: A porta está {{closed}}.
+  back: 'A porta está fechada.
+
+    The door is closed.
+
+    (m: fechado · f: fechada · pl: fechados/fechadas)'
+  chapter: —
+- id: '0510'
+  suspended: "feliz duplicates contente under the exact English cue “happy”."
+  word: feliz
+  front: "Ela parece {{happy}} com a vida."
+  back: "Ela parece feliz com a vida.<br>She seems happy with life.<br><br><b>feliz</b> = happy. Contrast <b>contente com X</b> = pleased/content with X."
+  chapter: —
+- id: '0511'
+  skipped: "reason_similar"
+  word: final
+  front: Isto é {{final}}.
+  back: 'Isto é final.
+
+    This is final.
+
+    (m/f: final · pl: finais)'
+  chapter: —
+- id: '0512'
+  word: fresco
+  front: A água está {{fresh}}.
+  back: 'A água está fresca.
+
+    The water is fresh.
+
+    (m: fresco · f: fresca · pl: frescos/frescas)'
+  chapter: —
+- id: '0513'
+  word: frio
+  front: A água está {{cold}}.
+  back: 'A água está fria.
+
+    The water is cold.
+
+    (m: frio · f: fria · pl: frios/frias)'
+  chapter: —
+- id: '0514'
+  word: gelado
+  front: A água está {{freezing}}.
+  back: 'A água está gelada.
+
+    The water is freezing.
+
+    (m: gelado · f: gelada · pl: gelados/geladas)'
+  chapter: —
+- id: '0515'
+  skipped: "reason_similar"
+  word: gigante
+  front: Isto é {{gigantic}}.
+  back: 'Isto é gigante.
+
+    This is gigantic.
+
+    (m/f: gigante · pl: gigantes)'
+  chapter: —
+- id: '0516'
+  word: grande
+  front: Isto é {{big}}.
+  back: 'Isto é grande.
+
+    This is big.
+
+    (m/f: grande · pl: grandes)'
+  chapter: —
+- id: '0517'
+  word: grelhado
+  front: Isto é {{grilled}}.
+  back: 'Isto é grelhado.
+
+    This is grilled.
+
+    (m: grelhado · f: grelhada · pl: grelhados/grelhadas)'
+  chapter: —
+- id: 0518
+  skipped: "reason_similar"
+  word: incrível
+  front: Isto é {{incredible}}.
+  back: 'Isto é incrível.
+
+    This is incredible.
+
+    (m/f: incrível · pl: incríveis)'
+  chapter: —
+- id: 0519
+  skipped: "reason_similar"
+  word: indeciso
+  front: Ele é {{indecisive}}.
+  back: 'Ele é indeciso.
+
+    He is indecisive.
+
+    (m: indeciso · f: indecisa · pl: indecisos/indecisas)'
+  chapter: —
+- id: '0520'
+  skipped: "reason_similar"
+  word: inteligente
+  front: Ele é {{intelligent}}.
+  back: 'Ele é inteligente.
+
+    He is intelligent.
+
+    (m/f: inteligente · pl: inteligentes)'
+  chapter: —
+- id: '0521'
+  skipped: "reason_similar"
+  word: interessante
+  front: Isto é {{interesting}}.
+  back: 'Isto é interessante.
+
+    This is interesting.
+
+    (m/f: interessante · pl: interessantes)'
+  chapter: —
+- id: '0522'
+  word: inútil
+  front: Isto é {{useless}}.
+  back: 'Isto é inútil.
+
+    This is useless.
+
+    (m/f: inútil · pl: inúteis)'
+  chapter: —
+- id: '0523'
+  word: lento
+  front: Isto é {{slow}}.
+  back: 'Isto é lento.
+
+    This is slow.
+
+    (m: lento · f: lenta · pl: lentos/lentas)'
+  chapter: —
+- id: '0524'
+  suspended: "lindo overlaps with bonito/belo under “beautiful”. Without nuance/context the answer is not unique."
+  word: lindo
+  front: "Que vista {{beautiful / lovely}}!"
+  back: "Que vista linda!<br>What a beautiful/lovely view!<br><br><b>lindo/linda</b> is strongly positive and very natural in compliments/exclamations; context separates it from other “beautiful” synonyms."
+  chapter: —
+- id: '0525'
+  suspended: "luminoso is a transparent cognate and can mean luminous/bright/light-filled. Generic sentence gives no clue which sense."
+  skipped: "reason_similar"
+  word: luminoso
+  front: "Este quarto é muito {{bright}}."
+  back: "Este quarto é muito luminoso.<br>This room is very bright.<br><br><b>luminoso</b> = full of light / bright / luminous. A room is a natural everyday context."
+  chapter: —
+- id: '0526'
+  word: maluco
+  front: Ele é {{crazy}}.
+  back: 'Ele é maluco.
+
+    He is crazy.
+
+    (m: maluco · f: maluca · pl: malucos/malucas)'
+  chapter: —
+- id: '0527'
+  word: mau
+  front: Isto é {{bad}}.
+  back: 'Isto é mau.
+
+    This is bad.
+
+    (m: mau · f: má · pl: maus/más)'
+  chapter: —
+- id: 0528
+  skipped: "reason_similar"
+  word: moderno
+  front: Isto é {{modern}}.
+  back: 'Isto é moderno.
+
+    This is modern.
+
+    (m: moderno · f: moderna · pl: modernos/modernas)'
+  chapter: —
+- id: 0529
+  skipped: "reason_similar"
+  word: nervoso
+  front: Ele está {{nervous}}.
+  back: 'Ele está nervoso.
+
+    He is nervous.
+
+    (m: nervoso · f: nervosa · pl: nervosos/nervosas)'
+  chapter: —
+- id: '0530'
+  word: novo
+  front: Isto é {{new}}.
+  back: 'Isto é novo.
+
+    This is new.
+
+    (m: novo · f: nova · pl: novos/novas)'
+  chapter: —
+- id: '0531'
+  word: ocupado
+  front: Ele está {{busy}}.
+  back: 'Ele está ocupado.
+
+    He is busy.
+
+    (m: ocupado · f: ocupada · pl: ocupados/ocupadas)'
+  chapter: —
+- id: '0532'
+  word: ótimo
+  front: Isto é {{great}}.
+  back: 'Isto é ótimo.
+
+    This is great.
+
+    (m: ótimo · f: ótima · pl: ótimos/ótimas)'
+  chapter: —
+- id: '0533'
+  word: partido
+  front: A chávena está {{broken}}.
+  back: 'A chávena está partida.
+
+    The cup is broken.
+
+    (m: partido · f: partida · pl: partidos/partidas)'
+  chapter: —
+- id: '0534'
+  word: perigoso
+  front: Isto é {{dangerous}}.
+  back: 'Isto é perigoso.
+
+    This is dangerous.
+
+    (m: perigoso · f: perigosa · pl: perigosos/perigosas)'
+  chapter: —
+- id: '0535'
+  word: pesado
+  front: Isto é {{heavy}}.
+  back: 'Isto é pesado.
+
+    This is heavy.
+
+    (m: pesado · f: pesada · pl: pesados/pesadas)'
+  chapter: —
+- id: '0536'
+  skipped: "reason_similar"
+  word: precioso
+  front: Isto é {{precious}}.
+  back: 'Isto é precioso.
+
+    This is precious.
+
+    (m: precioso · f: preciosa · pl: preciosos/preciosas)'
+  chapter: —
+- id: '0537'
+  word: preocupado
+  front: Ele está {{worried}}.
+  back: 'Ele está preocupado.
+
+    He is worried.
+
+    (m: preocupado · f: preocupada · pl: preocupados/preocupadas)'
+  chapter: —
+- id: 0538
+  word: pronto
+  front: Ele está {{ready}}.
+  back: 'Ele está pronto.
+
+    He is ready.
+
+    (m: pronto · f: pronta · pl: prontos/prontas)'
+  chapter: —
+- id: 0539
+  word: quente
+  front: A sopa está {{warm}}.
+  back: 'A sopa está quente.
+
+    The soup is warm.
+
+    (m/f: quente · pl: quentes)'
+  chapter: —
+- id: '0540'
+  suspended: "rabugento is a valid word but relatively low-value compared with more common mood vocabulary; 21 reps + 2 lapses suggest high scheduling cost for little payoff."
+  word: rabugento
+  front: Ele é {{grumpy}}.
+  back: 'Ele é rabugento.
+
+    He is grumpy.
+
+    (m: rabugento · f: rabugenta · pl: rabugentos/rabugentas)'
+  chapter: —
+- id: '0541'
+  skipped: "reason_similar"
+  word: rápido
+  front: Isto é {{fast}}.
+  back: 'Isto é rápido.
+
+    This is fast.
+
+    (m: rápido · f: rápida · pl: rápidos/rápidas)'
+  chapter: —
+- id: '0542'
+  word: redondo
+  front: Isto é {{round}}.
+  back: 'Isto é redondo.
+
+    This is round.
+
+    (m: redondo · f: redonda · pl: redondos/redondas)'
+  chapter: —
+- id: '0543'
+  skipped: "reason_similar"
+  word: relaxado
+  front: Ele está {{relaxed}}.
+  back: 'Ele está relaxado.
+
+    He is relaxed.
+
+    (m: relaxado · f: relaxada · pl: relaxados/relaxadas)'
+  chapter: —
+- id: '0544'
+  skipped: "reason_similar"
+  word: restrito
+  front: Isto é {{restricted}}.
+  back: 'Isto é restrito.
+
+    This is restricted.
+
+    (m: restrito · f: restrita · pl: restritos/restritas)'
+  chapter: —
+- id: '0545'
+  suspended: "English “secret” can be noun or adjective; secreto is adjective, while segredo is the noun. Current cue does not mark part of speech clearly."
+  skipped: "reason_similar"
+  word: secreto
+  front: "É um documento {{secret}}."
+  back: "É um documento secreto.<br>It's a secret document.<br><br><b>secreto</b> is the adjective “secret”. The noun “a secret” is <b>segredo</b>."
+  chapter: —
+- id: '0546'
+  word: seguro
+  front: Isto é {{safe}}.
+  back: 'Isto é seguro.
+
+    This is safe.
+
+    (m: seguro · f: segura · pl: seguros/seguras)'
+  chapter: —
+- id: '0547'
+  skipped: "reason_similar"
+  word: simpático
+  front: Ele é {{nice}}.
+  back: 'Ele é simpático.
+
+    He is nice.
+
+    (m: simpático · f: simpática · pl: simpáticos/simpáticas)'
+  chapter: —
+- id: 0548
+  suspended: "simples is transparent and very basic; generic sentence is unnecessary."
+  skipped: "reason_similar"
+  word: simples
+  front: Isto é {{simple}}.
+  back: 'Isto é simples.
+
+    This is simple.
+
+    (m/f: simples · pl: simples)'
+  chapter: —
+- id: 0549
+  word: sozinho
+  front: Ele está {{alone}}.
+  back: 'Ele está sozinho.
+
+    He is alone.
+
+    (m: sozinho · f: sozinha · pl: sozinhos/sozinhas)'
+  chapter: —
+- id: '0550'
+  word: suave
+  front: Isto é {{soft}}.
+  back: 'Isto é suave.
+
+    This is soft.
+
+    (m/f: suave · pl: suaves)'
+  chapter: —
+- id: '0551'
+  skipped: "reason_similar"
+  word: submerso
+  front: A cidade está {{submerged}}.
+  back: 'A cidade está submersa.
+
+    The city is submerged.
+
+    (m: submerso · f: submersa · pl: submersos/submersas)'
+  chapter: —
+- id: '0552'
+  word: sujo
+  front: A roupa está {{dirty}}.
+  back: 'A roupa está suja.
+
+    The clothing is dirty.
+
+    (m: sujo · f: suja · pl: sujos/sujas)'
+  chapter: —
+- id: '0553'
+  suspended: "surpreso is useful, but generic template makes it easy/forgettable rather than contextual."
+  skipped: "reason_similar"
+  word: surpreso
+  front: Ele está {{surprised}}.
+  back: 'Ele está surpreso.
+
+    He is surprised.
+
+    (m: surpreso · f: surpresa · pl: surpresos/surpresas)'
+  chapter: —
+- id: '0554'
+  suspended: "ténue is relatively advanced and polysemous: faint, slight, tenuous, dim. “tenuous” is only one sense and not very A1-relevant."
+  skipped: "reason_similar"
+  word: ténue
+  front: Isto é {{tenuous}}.
+  back: 'Isto é ténue.
+
+    This is tenuous.
+
+    (m/f: ténue · pl: ténues)'
+  chapter: —
+- id: '0555'
+  skipped: "reason_similar"
+  word: transparente
+  front: Isto é {{transparent}}.
+  back: 'Isto é transparente.
+
+    This is transparent.
+
+    (m/f: transparente · pl: transparentes)'
+  chapter: —
+- id: '0556'
+  word: triste
+  front: Ele está {{sad}}.
+  back: 'Ele está triste.
+
+    He is sad.
+
+    (m/f: triste · pl: tristes)'
+  chapter: —
+- id: '0557'
+  skipped: "reason_similar"
+  word: urgente
+  front: Isto é {{urgent}}.
+  back: 'Isto é urgente.
+
+    This is urgent.
+
+    (m/f: urgente · pl: urgentes)'
+  chapter: —
+- id: 0558
+  word: velho
+  front: Isto é {{old}}.
+  back: 'Isto é velho.
+
+    This is old.
+
+    (m: velho · f: velha · pl: velhos/velhas)'
+  chapter: —
+- id: 0559
+  suspended: "venenoso = poisonous is valid, but low-frequency for daily A1 and overlaps conceptually with tóxico."
+  word: venenoso
+  front: Isto é {{poisonous}}.
+  back: 'Isto é venenoso.
+
+    This is poisonous.
+
+    (m: venenoso · f: venenosa · pl: venenosos/venenosas)'
+  chapter: —
+- id: '0560'
+  word: amarelo
+  front: Isto é {{yellow}}.
+  back: 'Isto é amarelo.
+
+    This is yellow.
+
+    (m: amarelo · f: amarela · pl: amarelos/amarelas)'
+  chapter: —
+- id: '0561'
+  word: azul
+  front: Isto é {{blue}}.
+  back: 'Isto é azul.
+
+    This is blue.
+
+    (m/f: azul · pl: azuis)'
+  chapter: —
+- id: '0562'
+  word: branco
+  front: Isto é {{white}}.
+  back: 'Isto é branco.
+
+    This is white.
+
+    (m: branco · f: branca · pl: brancos/brancas)'
+  chapter: —
+- id: '0563'
+  word: castanho
+  front: Isto é {{brown}}.
+  back: 'Isto é castanho.
+
+    This is brown.
+
+    (m: castanho · f: castanha · pl: castanhos/castanhas)'
+  chapter: —
+- id: '0564'
+  word: cinzento
+  front: Isto é {{gray}}.
+  back: 'Isto é cinzento.
+
+    This is gray.
+
+    (m: cinzento · f: cinzenta · pl: cinzentos/cinzentas)'
+  chapter: —
+- id: '0565'
+  word: cor-de-laranja
+  front: Isto é {{orange}}.
+  back: 'Isto é cor-de-laranja.
+
+    This is orange.
+
+    (m/f: cor-de-laranja · pl: cor-de-laranja)'
+  chapter: —
+- id: '0566'
+  word: cor-de-rosa
+  front: Isto é {{pink}}.
+  back: 'Isto é cor-de-rosa.
+
+    This is pink.
+
+    (m/f: cor-de-rosa · pl: cor-de-rosa)'
+  chapter: —
+- id: '0567'
+  word: preto
+  front: Isto é {{black}}.
+  back: 'Isto é preto.
+
+    This is black.
+
+    (m: preto · f: preta · pl: pretos/pretas)'
+  chapter: —
+- id: 0568
+  word: roxo
+  front: Isto é {{purple}}.
+  back: 'Isto é roxo.
+
+    This is purple.
+
+    (m: roxo · f: roxa · pl: roxos/roxas)'
+  chapter: —
+- id: 0569
+  word: verde
+  front: Isto é {{green}}.
+  back: 'Isto é verde.
+
+    This is green.
+
+    (m/f: verde · pl: verdes)'
+  chapter: —
+- id: '0570'
+  word: vermelho
+  front: Isto é {{red}}.
+  back: 'Isto é vermelho.
+
+    This is red.
+
+    (m: vermelho · f: vermelha · pl: vermelhos/vermelhas)'
+  chapter: —
