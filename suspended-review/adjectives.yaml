@@ -1,0 +1,82 @@
+cards:
+- id: '0471'
+  word: agradável
+  suspended: agradável = pleasant/nice is useful, but “Isto é pleasant” is generic and several adjectives could fit.
+  recommendation: rewrite_then_review
+  review_note: Rewrite with weather/place/person context that makes agradável natural.
+  proposed_front: Foi uma conversa {{pleasant}}.
+  proposed_back: Foi uma conversa agradável.<br>It was a pleasant conversation.<br><br><b>agradável</b> = pleasant/agreeable/nice. A concrete noun makes the adjective easier to interpret.
+- id: '0476'
+  word: atribulado
+  suspended: atribulado is not neutral “eventful”; it usually suggests troubled/hectic/full of difficulties. The English cue can be positively 'eventful', so it is semantically off.
+  recommendation: rewrite_then_review
+  review_note: REWRITE translation to hectic/troubled/eventful-in-a-chaotic-way, with a concrete day/week context.
+  proposed_front: Foi um dia {{hectic}}.
+  proposed_back: Foi um dia atribulado.<br>It was a hectic/troubled day.<br><br><b>atribulado</b> means troubled, hectic, full of difficulties/events — stronger and less neutral than generic English “eventful”.
+- id: 0490
+  word: contente
+  suspended: contente and feliz are both currently cued as “happy”, creating a direct synonym collision.
+  recommendation: rewrite_then_review
+  review_note: Rewrite contente as pleased/content about a situation; keep feliz for general happy.
+  proposed_front: Estou muito {{pleased}} com o resultado.
+  proposed_back: Estou muito contente com o resultado.<br>I'm very pleased with the result.<br><br><b>contente</b> often means pleased/content/satisfied with a situation. This helps separate it from the broader <b>feliz</b> = happy.
+- id: '0500'
+  word: despenteado
+  suspended: despenteado literally focuses on uncombed/messy hair; English “disheveled” can imply clothes/general appearance too.
+  recommendation: rewrite_then_review
+  review_note: Rewrite cue to “with messy/uncombed hair” and use a person context.
+  proposed_front: Acordei com o cabelo {{messy / uncombed}}.
+  proposed_back: Acordei com o cabelo despenteado.<br>I woke up with messy/uncombed hair.<br><br><b>despenteado</b> specifically concerns hair that is untidy/uncombed; generic “dishevelled” is too broad.
+- id: '0510'
+  word: feliz
+  suspended: feliz duplicates contente under the exact English cue “happy”.
+  recommendation: rewrite_then_review
+  review_note: 'Differentiate: feliz = happy; contente = pleased/content/satisfied in context.'
+  proposed_front: Ela parece {{happy}} com a vida.
+  proposed_back: Ela parece feliz com a vida.<br>She seems happy with life.<br><br><b>feliz</b> = happy. Contrast <b>contente com X</b> = pleased/content with X.
+- id: '0524'
+  word: lindo
+  suspended: lindo overlaps with bonito/belo under “beautiful”. Without nuance/context the answer is not unique.
+  recommendation: rewrite_then_review
+  review_note: Rewrite with an expressive compliment and explain lindo is often 'lovely/beautiful'.
+  proposed_front: Que vista {{beautiful / lovely}}!
+  proposed_back: Que vista linda!<br>What a beautiful/lovely view!<br><br><b>lindo/linda</b> is strongly positive and very natural in compliments/exclamations; context separates it from other “beautiful” synonyms.
+- id: '0525'
+  word: luminoso
+  suspended: luminoso is a transparent cognate and can mean luminous/bright/light-filled. Generic sentence gives no clue which sense.
+  recommendation: keep_suspended
+  review_note: Rewrite around a bright room/place or keep suspended.
+  proposed_front: Este quarto é muito {{bright}}.
+  proposed_back: Este quarto é muito luminoso.<br>This room is very bright.<br><br><b>luminoso</b> = full of light / bright / luminous. A room is a natural everyday context.
+- id: '0540'
+  word: rabugento
+  suspended: rabugento is a valid word but relatively low-value compared with more common mood vocabulary; 21 reps + 2 lapses suggest high scheduling cost for little payoff.
+  recommendation: keep_suspended
+  review_note: Keep suspended unless you meet it in reading; optionally replace with a more useful context or synonym comparison.
+- id: '0545'
+  word: secreto
+  suspended: English “secret” can be noun or adjective; secreto is adjective, while segredo is the noun. Current cue does not mark part of speech clearly.
+  recommendation: rewrite_then_review
+  review_note: Rewrite cue to “secret (adjective)” or teach secreto vs segredo.
+  proposed_front: É um documento {{secret}}.
+  proposed_back: É um documento secreto.<br>It's a secret document.<br><br><b>secreto</b> is the adjective “secret”. The noun “a secret” is <b>segredo</b>.
+- id: 0548
+  word: simples
+  suspended: simples is transparent and very basic; generic sentence is unnecessary.
+  recommendation: keep_suspended
+  review_note: Keep suspended.
+- id: '0553'
+  word: surpreso
+  suspended: surpreso is useful, but generic template makes it easy/forgettable rather than contextual.
+  recommendation: rewrite_then_review
+  review_note: Rewrite “Fiquei surpreendido/surpreso…” depending the form you actually want to learn.
+- id: '0554'
+  word: ténue
+  suspended: 'ténue is relatively advanced and polysemous: faint, slight, tenuous, dim. “tenuous” is only one sense and not very A1-relevant.'
+  recommendation: keep_suspended
+  review_note: Keep suspended for now or split by sense later.
+- id: 0559
+  word: venenoso
+  suspended: venenoso = poisonous is valid, but low-frequency for daily A1 and overlaps conceptually with tóxico.
+  recommendation: keep_suspended
+  review_note: Keep suspended unless animals/plants/safety vocabulary matters.
