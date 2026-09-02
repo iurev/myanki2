@@ -1,0 +1,164 @@
+cards:
+- id: '0011'
+  word: acreditar em
+  suspended: 'The English cue “believe in” is slippery: acreditar em can mean believe/trust/have faith in, while English ''believe'' can also suggest acreditar que. The card also tests a prepositional verb through the contraction no, which makes the mapping less transparent.'
+  recommendation: rewrite_then_review
+  review_note: 'REWRITE: use a context that forces acreditar em, e.g. “Eu acredito no que ele diz” or contrast acreditar em vs acreditar que.'
+  proposed_front: Eu {{believe what he says}}.
+  proposed_back: 'Eu acredito no que ele diz.<br>I believe what he says.<br><br><b>acreditar em</b> = believe in / trust the truth of something. Here <b>em + o = no</b>: <i>acredito em o que</i> → <b>acredito no que</b>. Contrast <b>acreditar que...</b> = believe that a statement is true.'
+- id: '0065'
+  word: dormir
+  suspended: The sentence is correct, but “dormir oito horas” gives almost no contextual information beyond the bare verb. Likely it became an annoying easy card rather than a useful one.
+  recommendation: keep_suspended
+  review_note: 'OPTIONAL REWRITE: use a realistic contrast such as “Ontem dormi só cinco horas.” Otherwise leave suspended.'
+- id: 0079
+  word: estender
+  suspended: 'Estender is broad: extend, stretch out, spread, hang out, hand over. “stretch out a hand” can also be expressed with other verbs/collocations, so the English cue does not uniquely retrieve estender. 15 reviews + 3 lapses fits a friction card.'
+  recommendation: rewrite_then_review
+  review_note: 'REWRITE: teach a specific collocation, e.g. “Ele estendeu a mão para me cumprimentar.” Back should explain estender a mão = extend/hold out one’s hand.'
+  proposed_front: Ele {{held out his hand}} para me cumprimentar.
+  proposed_back: 'Ele estendeu a mão para me cumprimentar.<br>He held out his hand to greet me.<br><br><b>estender</b> = extend, stretch out, spread. <b>estender a mão</b> is a very common concrete collocation: hold out / extend one''s hand.'
+- id: 0081
+  word: estudar
+  suspended: Estudar is extremely basic and the sentence “Eu estudo português” is maximally predictable. After 10 reviews it probably stopped adding value.
+  recommendation: keep_suspended
+  review_note: KEEP SUSPENDED or convert into a grammar card only if you need a conjugation contrast.
+- id: 0091
+  word: guardar
+  suspended: '“save” has several Portuguese answers: guardar = keep/store, poupar = save money/economize, salvar = save/rescue. “Guardar dinheiro no banco” is closer to keep/store money in the bank than the generic English cue “save”.'
+  recommendation: rewrite_then_review
+  review_note: 'REWRITE: cue “keep/store” or use “Guardo os documentos numa gaveta.” If you want “save money”, teach poupar separately.'
+  proposed_front: Eu {{keep}} os documentos numa gaveta.
+  proposed_back: 'Eu guardo os documentos numa gaveta.<br>I keep the documents in a drawer.<br><br><b>guardar</b> = keep, store, put away, keep safe. Do not use this card for “save money”: that is usually <b>poupar dinheiro</b>.'
+- id: 0093
+  word: iluminar-se
+  suspended: “O céu ilumina-se com o sol” is grammatical-ish but sounds constructed, and it forces the pronominal iluminar-se without giving a natural event. The learner may reasonably expect iluminar or ficar iluminado.
+  recommendation: rewrite_then_review
+  review_note: 'REWRITE: “O céu iluminou-se ao nascer do sol.” Explain iluminar-se = become/light up.'
+  proposed_front: Ao nascer do sol, o céu {{lit up}}.
+  proposed_back: Ao nascer do sol, o céu iluminou-se.<br>At sunrise, the sky lit up.<br><br><b>iluminar</b> = illuminate/light something; <b>iluminar-se</b> = become lit / light up. The <b>se</b> makes the sky the thing undergoing the change.
+- id: 0096
+  word: ir embora
+  suspended: Ir embora is useful and the sentence is fine, but “Eu vou embora agora” is so easy that you may have suspended it before studying it.
+  recommendation: rewrite_then_review
+  review_note: 'UNSUSPEND after a small rewrite: “Tenho de ir embora agora.” This makes the chunk more useful.'
+  proposed_front: Tenho de {{leave / go away}} agora.
+  proposed_back: Tenho de ir embora agora.<br>I have to leave now.<br><br><b>ir embora</b> is the normal chunk “go away / leave”. <b>embora</b> historically comes from <i>em boa hora</i>, but synchronically learn the whole expression.
+- id: '0113'
+  word: olhar por
+  suspended: The label olhar por is wrong for this example. In EP, olhar por alguém means look after/take care of someone. “Olhar pela janela” means look through/out the window because por + a janela contracts to pela; that is not the phrasal meaning olhar por.
+  recommendation: rewrite_then_review
+  review_note: FIX BEFORE UNSUSPENDING. Either teach olhar por = look after (“Ela olha pelo bebé”) or rename the item to olhar pela janela / olhar através de.
+  proposed_front: Ela {{looks after}} o bebé enquanto os pais trabalham.
+  proposed_back: Ela olha pelo bebé enquanto os pais trabalham.<br>She looks after the baby while the parents work.<br><br><b>olhar por</b> = look after / take care of. Before <i>o bebé</i>, <b>por + o → pelo</b>. Looking <i>through</i> a window is a different construction and should not be taught as <i>olhar por</i>.
+- id: '0123'
+  word: pensar em
+  suspended: The note is called pensar em, but the front already leaves “em ti” visible, so the missing answer is only penso. That means the card does not actually test the preposition em although the lemma says it does.
+  recommendation: rewrite_then_review
+  review_note: 'REWRITE to hide the whole chunk or make the item simply pensar. Example: “Eu {{think about you}} todos os dias.” → “Penso em ti…”'
+  proposed_front: Eu {{think about you}} todos os dias.
+  proposed_back: 'Eu penso em ti todos os dias.<br>I think about you every day.<br><br><b>pensar em + noun/pronoun</b> = think about. After a preposition, <i>tu</i> becomes <b>ti</b>: <i>em ti</i>.'
+- id: '0124'
+  word: perceber
+  suspended: “to understand” can be perceber, entender, or compreender. In European Portuguese perceber is very common for “get/understand”, but the English cue gives no reason to choose it.
+  recommendation: rewrite_then_review
+  review_note: REWRITE with a natural EP situation and explanation, e.g. “Desculpe, não percebi.” = Sorry, I didn’t understand / catch that.
+  proposed_front: Desculpe, não {{understood / caught that}}.
+  proposed_back: Desculpe, não percebi.<br>Sorry, I didn't understand / catch that.<br><br>In European Portuguese <b>perceber</b> very often means “understand / get / catch what someone said”. This context separates it from the more abstract <i>compreender</i>.
+- id: '0134'
+  word: pôr a mesa
+  suspended: Pôr a mesa is a useful fixed expression, but the sentence adds little and the card was never reviewed.
+  recommendation: rewrite_then_review
+  review_note: 'REWRITE lightly: “Podes pôr a mesa enquanto faço o jantar?” Then unsuspend.'
+  proposed_front: Podes {{set the table}} enquanto faço o jantar?
+  proposed_back: 'Podes pôr a mesa enquanto faço o jantar?<br>Can you set the table while I make dinner?<br><br><b>pôr a mesa</b> is a fixed everyday expression: literally “put the table”, idiomatically “set the table”.'
+- id: '0142'
+  word: querer
+  suspended: Querer + água is one of the most basic possible cards; likely suspended because it was already known.
+  recommendation: keep_suspended
+  review_note: KEEP SUSPENDED. The verb appears constantly elsewhere.
+- id: 0148
+  word: respirar
+  suspended: Respirar is useful, but “Eu respiro fundo” mainly teaches the collocation respirar fundo. The current English cue only asks for the bare verb.
+  recommendation: rewrite_then_review
+  review_note: REWRITE as the chunk respirar fundo, especially for real-life/medical use.
+  proposed_front: Tenta {{take a deep breath}}.
+  proposed_back: Tenta respirar fundo.<br>Try to take a deep breath.<br><br><b>respirar fundo</b> literally “breathe deep” is the common phrase for taking a deep breath.
+- id: '0154'
+  word: sair
+  suspended: English “leave” maps to sair when someone exits/goes out, but also deixar when someone leaves an object/person behind. The sentence disambiguates somewhat, but the cue itself is too broad.
+  recommendation: rewrite_then_review
+  review_note: REWRITE cue to “go out / leave the house” or make the back explicitly contrast sair vs deixar.
+  proposed_front: Eu {{go out / leave the house}} às oito.
+  proposed_back: Eu saio de casa às oito.<br>I leave the house / go out at eight.<br><br><b>sair</b> = leave a place / go out. Contrast <b>deixar</b>, which often means leave something/someone behind or allow something.
+- id: '0156'
+  word: segurar
+  suspended: “hold” may be segurar, pegar, sustentar, agarrar, ter, etc. “Hold the baby” does not uniquely force segurar.
+  recommendation: rewrite_then_review
+  review_note: 'REWRITE with a physical-control meaning: “Segura isto um segundo, por favor.” Explain segurar = hold/keep from moving.'
+  proposed_front: '{{Hold}} isto um segundo, por favor.'
+  proposed_back: Segura isto um segundo, por favor.<br>Hold this for a second, please.<br><br><b>segurar</b> = hold, support, keep from moving/falling. This physical context makes the intended sense clear.
+- id: 0158
+  word: sentir-se
+  suspended: The target is sentir-se, but English “feel” also maps to sentir. “Eu sinto-me bem” is correct, yet the cue does not explain why the reflexive/pronominal form is needed.
+  recommendation: rewrite_then_review
+  review_note: REWRITE as “Como te sentes?” / “Hoje sinto-me melhor.” Explain sentir-se + adjective/state.
+  proposed_front: Hoje {{I feel}} melhor.
+  proposed_back: 'Hoje sinto-me melhor.<br>Today I feel better.<br><br><b>sentir-se + adjective/state</b> = feel/be feeling. In an affirmative main clause in European Portuguese the clitic commonly follows the verb: <b>sinto-me</b>.'
+- id: '0161'
+  word: servir para
+  suspended: Servir para is better “be used for / be suitable for”, not generic “be good for”. “Isto serve para cozinhar” = this is used for cooking.
+  recommendation: rewrite_then_review
+  review_note: REWRITE translation and back explanation; this is worth keeping.
+  proposed_front: Isto {{is used for}} cortar pão.
+  proposed_back: Isto serve para cortar pão.<br>This is used for cutting bread.<br><br><b>servir para + infinitive</b> = be used for / serve to / be for a purpose. Do not reduce it to the vague English cue “be good for”.
+- id: '0163'
+  word: sonhar
+  suspended: The note is sonhar, but the useful grammar is sonhar com. The front leaves “com o mar” visible and only asks for the verb, so the card does not teach the preposition.
+  recommendation: rewrite_then_review
+  review_note: REWRITE to target sonhar com as a chunk, e.g. “Sonhei com o mar.”
+  proposed_front: Ontem {{I dreamed about}} o mar.
+  proposed_back: Ontem sonhei com o mar.<br>Yesterday I dreamed about the sea.<br><br><b>sonhar com</b> = dream about/of. The preposition <b>com</b> is part of the useful chunk.
+- id: '0165'
+  word: subir
+  suspended: Subir as escadas is natural and useful. The card was likely pre-suspended because the vocabulary is simple rather than because it is wrong.
+  recommendation: unsuspend
+  review_note: UNSUSPEND as-is or improve with a past/future form if you want grammar value.
+- id: '0166'
+  word: telefonar a
+  suspended: Telefonar a alguém is standard EP and “telefono à minha mãe” is correct, but everyday speech very often uses ligar. So this may have felt bookish or lower-value.
+  recommendation: keep_suspended
+  review_note: KEEP for recognition, but rewrite back to note “telefonar a” is correct; “ligar a/para” is also very common.
+- id: 0169
+  word: ter a ver com
+  suspended: Ter a ver com is an important idiom and the sentence is correct. Zero reviews suggests priority culling rather than an error.
+  recommendation: unsuspend
+  review_note: 'UNSUSPEND with a richer context: “Isso não tem nada a ver comigo.”'
+  proposed_front: Isso não {{has anything to do with me}}.
+  proposed_back: Isso não tem nada a ver comigo.<br>That has nothing to do with me.<br><br><b>ter a ver com</b> = have to do with / be related to. <b>comigo</b> is the special form of <i>com + mim</i>.
+- id: '0173'
+  word: tirar de
+  suspended: Tirar de is not really a fixed verb phrase here; tirar is the verb and da mala is simply a source complement (de + a). Labeling the item “tirar de” makes the learner overgeneralize.
+  recommendation: rewrite_then_review
+  review_note: REWRITE item as tirar; use several meanings or one clear context.
+  proposed_front: Ela {{took the keys out of}} a mala.
+  proposed_back: Ela tirou as chaves da mala.<br>She took the keys out of the bag.<br><br><b>tirar</b> has a broad “take/remove” meaning. Here <b>tirar X de Y</b> = take/remove X from Y; <i>de + a mala → da mala</i>.
+- id: '0175'
+  word: tomar
+  suspended: Tomar um café is natural EP, but translating tomar as generic “take” is misleading. In this context English says have/drink a coffee.
+  recommendation: rewrite_then_review
+  review_note: REWRITE cue to “have a coffee” and explain tomar + drink/meal/medicine collocations.
+  proposed_front: De manhã, {{I have}} um café.
+  proposed_back: 'De manhã, tomo um café.<br>In the morning, I have a coffee.<br><br><b>tomar</b> is used in many everyday collocations: <i>tomar café</i>, <i>tomar o pequeno-almoço</i>, <i>tomar um medicamento</i>, <i>tomar banho</i>. English “take” is not a good general cue.'
+- id: 0178
+  word: ultrapassar
+  suspended: Ultrapassar can mean overtake, pass, exceed, surpass, overcome. The driving sentence is valid but teaches only one branch of a broad verb.
+  recommendation: keep_suspended
+  review_note: KEEP SUSPENDED unless driving vocabulary matters; otherwise rewrite with explicit “overtake another vehicle”.
+- id: 0185
+  word: viver
+  suspended: “live in Lisbon” can be viver em Lisboa or morar em Lisboa. For residence, morar is often the more specific choice; viver is broader “live/be alive/live one’s life”. 17 reviews + 2 lapses strongly suggests a persistent answer collision.
+  recommendation: rewrite_then_review
+  review_note: 'REWRITE to separate meanings: morar = reside; viver = live/be alive / live a life. Avoid “live in Lisbon” as the cue for viver.'
+  proposed_front: Quero {{live}} uma vida tranquila.
+  proposed_back: Quero viver uma vida tranquila.<br>I want to live a quiet life.<br><br><b>viver</b> = live / be alive / live a life. For simply residing at an address or in a city, <b>morar</b> is often the cleaner beginner choice.
