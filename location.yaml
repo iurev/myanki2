@@ -110,6 +110,7 @@ cards:
     (em cima de)'
   chapter: —
 - id: 0583
+  skipped: "reason_phrase"
   word: em direção a
   front: O gato está {{toward}} casa.
   back: 'O gato está em direção à casa.
@@ -119,6 +120,7 @@ cards:
     (em direção a)'
   chapter: —
 - id: 0584
+  skipped: "reason_phrase"
   word: em frente
   front: O gato está {{in front}}.
   back: 'O gato está em frente.

@@ -144,6 +144,11 @@ def sync_file(path, only_id):
                                             "fields": fields,
                                             "tags": tags,
                                             "options": {"allowDuplicate": False}})
+            # note types can carry a "deck override" that beats addNote's deckName,
+            # so double-check where the card actually landed and force it back.
+            note_cards = anki("findCards", query=f"nid:{note_id}")
+            if note_cards:
+                anki("changeDeck", cards=note_cards, deck=deck)
             added += 1
             print(f"  + {c['id']} {c['word']}")
     return added, updated

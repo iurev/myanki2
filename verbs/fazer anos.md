@@ -1,0 +1,3 @@
+**fazer anos** — to have a birthday<br>
+From Latin *facere* ("to make, to do", PIE *\*dʰeh₁-* "to set, put") + Latin *annus* ("year", PIE *\*h₂et-* "to go", i.e. "the going-around") → Old Galician-Portuguese *fazer anos* → Portuguese *fazer anos*<br>
+*Fazer* descends from Latin *facere* via Old Galician-Portuguese; *anos* (plural of *ano*) descends from Latin *annus*, itself rooted in the idea of a year as a cycle that "goes around". The phrase literally means "to make/do years" — the same construction found in French *faire des années* — framing the accumulation of birthdays as an act of completing annual cycles.

@@ -2,81 +2,97 @@ deck: words
 model: words
 cards:
 - id: 0590
+  skipped: "reason_numbers"
   word: um / uma
   front: '1'
   back: um / uma
   chapter: —
 - id: 0591
+  skipped: "reason_numbers"
   word: dois / duas
   front: '2'
   back: dois / duas
   chapter: —
 - id: 0592
+  skipped: "reason_numbers"
   word: três
   front: '3'
   back: três
   chapter: —
 - id: 0593
+  skipped: "reason_numbers"
   word: quatro
   front: '4'
   back: quatro
   chapter: —
 - id: 0594
+  skipped: "reason_numbers"
   word: cinco
   front: '5'
   back: cinco
   chapter: —
 - id: 0595
+  skipped: "reason_numbers"
   word: seis
   front: '6'
   back: seis
   chapter: —
 - id: 0596
+  skipped: "reason_numbers"
   word: sete
   front: '7'
   back: sete
   chapter: —
 - id: 0597
+  skipped: "reason_numbers"
   word: oito
   front: '8'
   back: oito
   chapter: —
 - id: 0598
+  skipped: "reason_numbers"
   word: nove
   front: '9'
   back: nove
   chapter: —
 - id: 0599
+  skipped: "reason_numbers"
   word: dez
   front: '10'
   back: dez
   chapter: —
 - id: '0600'
+  skipped: "reason_numbers"
   word: onze
   front: '11'
   back: onze
   chapter: —
 - id: '0601'
+  skipped: "reason_numbers"
   word: doze
   front: '12'
   back: doze
   chapter: —
 - id: '0602'
+  skipped: "reason_numbers"
   word: treze
   front: '13'
   back: treze
   chapter: —
 - id: '0603'
+  skipped: "reason_numbers"
   word: catorze
   front: '14'
   back: catorze
   chapter: —
 - id: '0604'
+  skipped: "reason_numbers"
   word: quinze
   front: '15'
   back: quinze
   chapter: —
 - id: '0605'
+  skipped: "reason_numbers"
   word: dezasseis
   front: '16'
   back: 'dezasseis
@@ -85,6 +101,7 @@ cards:
     rule: 16–19 = dez + a + unit'
   chapter: —
 - id: '0606'
+  skipped: "reason_numbers"
   word: dezassete
   front: '17'
   back: 'dezassete
@@ -93,6 +110,7 @@ cards:
     rule: 16–19 = dez + a + unit'
   chapter: —
 - id: '0607'
+  skipped: "reason_numbers"
   word: dezoito
   front: '18'
   back: 'dezoito
@@ -101,6 +119,7 @@ cards:
     rule: dez + oito → dezoito'
   chapter: —
 - id: 0608
+  skipped: "reason_numbers"
   word: dezanove
   front: '19'
   back: 'dezanove
@@ -109,16 +128,19 @@ cards:
     rule: dez + a + nove → dezanove'
   chapter: —
 - id: 0609
+  skipped: "reason_numbers"
   word: vinte
   front: '20'
   back: vinte
   chapter: —
 - id: '0610'
+  skipped: "reason_numbers"
   word: trinta
   front: '30'
   back: trinta
   chapter: —
 - id: '0611'
+  skipped: "reason_numbers"
   word: trinta e um
   front: '31'
   back: 'trinta e um
@@ -127,6 +149,7 @@ cards:
     rule: 21–99: tens + e + unit'
   chapter: —
 - id: '0612'
+  skipped: "reason_numbers"
   word: trinta e sete
   front: '37'
   back: 'trinta e sete
@@ -135,6 +158,7 @@ cards:
     rule: 21–99: tens + e + unit  (30 + 7)'
   chapter: —
 - id: '0613'
+  skipped: "reason_numbers"
   word: quarenta
   front: '40'
   back: 'quarenta
@@ -143,6 +167,7 @@ cards:
     rule: combine: quarenta e um = 41'
   chapter: —
 - id: '0614'
+  skipped: "reason_numbers"
   word: cinquenta
   front: '50'
   back: 'cinquenta
@@ -151,26 +176,31 @@ cards:
     rule: combine: cinquenta e dois = 52'
   chapter: —
 - id: '0615'
+  skipped: "reason_numbers"
   word: sessenta
   front: '60'
   back: sessenta
   chapter: —
 - id: '0616'
+  skipped: "reason_numbers"
   word: setenta
   front: '70'
   back: setenta
   chapter: —
 - id: '0617'
+  skipped: "reason_numbers"
   word: oitenta
   front: '80'
   back: oitenta
   chapter: —
 - id: 0618
+  skipped: "reason_numbers"
   word: noventa
   front: '90'
   back: noventa
   chapter: —
 - id: 0619
+  skipped: "reason_numbers"
   word: cem
   front: '100'
   back: 'cem

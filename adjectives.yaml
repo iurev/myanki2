@@ -110,6 +110,7 @@ cards:
     (m: bonito · f: bonita · pl: bonitos/bonitas)'
   chapter: —
 - id: 0481
+  skipped: "reason_similar"
   word: brilhante
   front: Isto é {{bright}}.
   back: 'Isto é brilhante.
@@ -155,6 +156,7 @@ cards:
     (m: cheio · f: cheia · pl: cheios/cheias)'
   chapter: —
 - id: 0486
+  skipped: "reason_similar"
   word: colorido
   front: Isto é {{colorful}}.
   back: 'Isto é colorido.
@@ -164,6 +166,7 @@ cards:
     (m: colorido · f: colorida · pl: coloridos/coloridas)'
   chapter: —
 - id: 0487
+  skipped: "reason_similar"
   word: complicado
   front: Isto é {{complicated}}.
   back: 'Isto é complicado.
@@ -182,6 +185,7 @@ cards:
     (m: comprido · f: comprida · pl: compridos/compridas)'
   chapter: —
 - id: 0489
+  skipped: "reason_similar"
   word: confuso
   front: Ele está {{confused}}.
   back: 'Ele está confuso.
@@ -200,6 +204,7 @@ cards:
     (m/f: contente · pl: contentes)'
   chapter: —
 - id: 0491
+  skipped: "reason_similar"
   word: correto
   front: Isto é {{correct}}.
   back: 'Isto é correto.
@@ -218,6 +223,7 @@ cards:
     (m: cuidadoso · f: cuidadosa · pl: cuidadosos/cuidadosas)'
   chapter: —
 - id: 0493
+  skipped: "reason_similar"
   word: curioso
   front: Ele é {{curious}}.
   back: 'Ele é curioso.
@@ -254,6 +260,7 @@ cards:
     (m: desarrumado · f: desarrumada · pl: desarrumados/desarrumadas)'
   chapter: —
 - id: 0497
+  skipped: "reason_similar"
   word: desconfortável
   front: Isto é {{uncomfortable}}.
   back: 'Isto é desconfortável.
@@ -290,6 +297,7 @@ cards:
     (m: despenteado · f: despenteada · pl: despenteados/despenteadas)'
   chapter: —
 - id: '0501'
+  skipped: "reason_similar"
   word: distraído
   front: Ele está {{distracted}}.
   back: 'Ele está distraído.
@@ -308,6 +316,7 @@ cards:
     (m/f: doente · pl: doentes)'
   chapter: —
 - id: '0503'
+  skipped: "reason_similar"
   word: enorme
   front: Isto é {{huge}}.
   back: 'Isto é enorme.
@@ -380,6 +389,7 @@ cards:
     (m/f: feliz · pl: felizes)'
   chapter: —
 - id: '0511'
+  skipped: "reason_similar"
   word: final
   front: Isto é {{final}}.
   back: 'Isto é final.
@@ -416,6 +426,7 @@ cards:
     (m: gelado · f: gelada · pl: gelados/geladas)'
   chapter: —
 - id: '0515'
+  skipped: "reason_similar"
   word: gigante
   front: Isto é {{gigantic}}.
   back: 'Isto é gigante.
@@ -443,6 +454,7 @@ cards:
     (m: grelhado · f: grelhada · pl: grelhados/grelhadas)'
   chapter: —
 - id: 0518
+  skipped: "reason_similar"
   word: incrível
   front: Isto é {{incredible}}.
   back: 'Isto é incrível.
@@ -452,6 +464,7 @@ cards:
     (m/f: incrível · pl: incríveis)'
   chapter: —
 - id: 0519
+  skipped: "reason_similar"
   word: indeciso
   front: Ele é {{indecisive}}.
   back: 'Ele é indeciso.
@@ -461,6 +474,7 @@ cards:
     (m: indeciso · f: indecisa · pl: indecisos/indecisas)'
   chapter: —
 - id: '0520'
+  skipped: "reason_similar"
   word: inteligente
   front: Ele é {{intelligent}}.
   back: 'Ele é inteligente.
@@ -470,6 +484,7 @@ cards:
     (m/f: inteligente · pl: inteligentes)'
   chapter: —
 - id: '0521'
+  skipped: "reason_similar"
   word: interessante
   front: Isto é {{interesting}}.
   back: 'Isto é interessante.
@@ -506,6 +521,7 @@ cards:
     (m: lindo · f: linda · pl: lindos/lindas)'
   chapter: —
 - id: '0525'
+  skipped: "reason_similar"
   word: luminoso
   front: Isto é {{luminous}}.
   back: 'Isto é luminoso.
@@ -533,6 +549,7 @@ cards:
     (m: mau · f: má · pl: maus/más)'
   chapter: —
 - id: 0528
+  skipped: "reason_similar"
   word: moderno
   front: Isto é {{modern}}.
   back: 'Isto é moderno.
@@ -542,6 +559,7 @@ cards:
     (m: moderno · f: moderna · pl: modernos/modernas)'
   chapter: —
 - id: 0529
+  skipped: "reason_similar"
   word: nervoso
   front: Ele está {{nervous}}.
   back: 'Ele está nervoso.
@@ -605,6 +623,7 @@ cards:
     (m: pesado · f: pesada · pl: pesados/pesadas)'
   chapter: —
 - id: '0536'
+  skipped: "reason_similar"
   word: precioso
   front: Isto é {{precious}}.
   back: 'Isto é precioso.
@@ -650,6 +669,7 @@ cards:
     (m: rabugento · f: rabugenta · pl: rabugentos/rabugentas)'
   chapter: —
 - id: '0541'
+  skipped: "reason_similar"
   word: rápido
   front: Isto é {{fast}}.
   back: 'Isto é rápido.
@@ -668,6 +688,7 @@ cards:
     (m: redondo · f: redonda · pl: redondos/redondas)'
   chapter: —
 - id: '0543'
+  skipped: "reason_similar"
   word: relaxado
   front: Ele está {{relaxed}}.
   back: 'Ele está relaxado.
@@ -677,6 +698,7 @@ cards:
     (m: relaxado · f: relaxada · pl: relaxados/relaxadas)'
   chapter: —
 - id: '0544'
+  skipped: "reason_similar"
   word: restrito
   front: Isto é {{restricted}}.
   back: 'Isto é restrito.
@@ -686,6 +708,7 @@ cards:
     (m: restrito · f: restrita · pl: restritos/restritas)'
   chapter: —
 - id: '0545'
+  skipped: "reason_similar"
   word: secreto
   front: Isto é {{secret}}.
   back: 'Isto é secreto.
@@ -704,6 +727,7 @@ cards:
     (m: seguro · f: segura · pl: seguros/seguras)'
   chapter: —
 - id: '0547'
+  skipped: "reason_similar"
   word: simpático
   front: Ele é {{nice}}.
   back: 'Ele é simpático.
@@ -713,6 +737,7 @@ cards:
     (m: simpático · f: simpática · pl: simpáticos/simpáticas)'
   chapter: —
 - id: 0548
+  skipped: "reason_similar"
   word: simples
   front: Isto é {{simple}}.
   back: 'Isto é simples.
@@ -740,6 +765,7 @@ cards:
     (m/f: suave · pl: suaves)'
   chapter: —
 - id: '0551'
+  skipped: "reason_similar"
   word: submerso
   front: A cidade está {{submerged}}.
   back: 'A cidade está submersa.
@@ -758,6 +784,7 @@ cards:
     (m: sujo · f: suja · pl: sujos/sujas)'
   chapter: —
 - id: '0553'
+  skipped: "reason_similar"
   word: surpreso
   front: Ele está {{surprised}}.
   back: 'Ele está surpreso.
@@ -767,6 +794,7 @@ cards:
     (m: surpreso · f: surpresa · pl: surpresos/surpresas)'
   chapter: —
 - id: '0554'
+  skipped: "reason_similar"
   word: ténue
   front: Isto é {{tenuous}}.
   back: 'Isto é ténue.
@@ -776,6 +804,7 @@ cards:
     (m/f: ténue · pl: ténues)'
   chapter: —
 - id: '0555'
+  skipped: "reason_similar"
   word: transparente
   front: Isto é {{transparent}}.
   back: 'Isto é transparente.
@@ -794,6 +823,7 @@ cards:
     (m/f: triste · pl: tristes)'
   chapter: —
 - id: '0557'
+  skipped: "reason_similar"
   word: urgente
   front: Isto é {{urgent}}.
   back: 'Isto é urgente.

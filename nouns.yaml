@@ -2,6 +2,7 @@ deck: words
 model: words
 cards:
 - id: 0186
+  skipped: "reason_similar"
   word: arqueologia
   front: A {{archeology}} é importante.
   back: 'A arqueologia é importante.
@@ -9,6 +10,7 @@ cards:
     Archeology is important.  (arqueologia, f)'
   chapter: —
 - id: 0187
+  skipped: "reason_similar"
   word: arte
   front: A {{art}} é importante.
   back: 'A arte é importante.
@@ -16,6 +18,7 @@ cards:
     Art is important.  (arte, f)'
   chapter: —
 - id: 0188
+  skipped: "reason_similar"
   word: aventura
   front: A {{adventure}} é importante.
   back: 'A aventura é importante.
@@ -23,6 +26,7 @@ cards:
     Adventure is important.  (aventura, f)'
   chapter: —
 - id: 0189
+  skipped: "reason_similar"
   word: burocracia
   front: A {{bureaucracy}} é importante.
   back: 'A burocracia é importante.
@@ -30,6 +34,7 @@ cards:
     Bureaucracy is important.  (burocracia, f)'
   chapter: —
 - id: 0190
+  skipped: "reason_similar"
   word: ciência
   front: A {{science}} é importante.
   back: 'A ciência é importante.
@@ -37,6 +42,7 @@ cards:
     Science is important.  (ciência, f)'
   chapter: —
 - id: 0191
+  skipped: "reason_similar"
   word: coincidência
   front: A {{coincidence}} é importante.
   back: 'A coincidência é importante.
@@ -44,6 +50,7 @@ cards:
     Coincidence is important.  (coincidência, f)'
   chapter: —
 - id: 0192
+  skipped: "reason_similar"
   word: explicação
   front: A {{explanation}} é importante.
   back: 'A explicação é importante.
@@ -51,6 +58,7 @@ cards:
     Explanation is important.  (explicação, f)'
   chapter: —
 - id: 0193
+  skipped: "reason_similar"
   word: hipótese
   front: A {{hypothesis}} é importante.
   back: 'A hipótese é importante.
@@ -58,6 +66,7 @@ cards:
     Hypothesis is important.  (hipótese, f)'
   chapter: —
 - id: 0194
+  skipped: "reason_similar"
   word: história
   front: A {{history}} é importante.
   back: 'A história é importante.
@@ -65,6 +74,7 @@ cards:
     History is important.  (história, f)'
   chapter: —
 - id: 0195
+  skipped: "reason_similar"
   word: informação
   front: A {{information}} é importante.
   back: 'A informação é importante.
@@ -72,6 +82,7 @@ cards:
     Information is important.  (informação, f)'
   chapter: —
 - id: 0196
+  skipped: "reason_similar"
   word: lenda
   front: A {{legend}} é importante.
   back: 'A lenda é importante.
@@ -79,6 +90,7 @@ cards:
     Legend is important.  (lenda, f)'
   chapter: —
 - id: 0197
+  skipped: "reason_similar"
   word: literatura
   front: A {{literature}} é importante.
   back: 'A literatura é importante.
@@ -86,6 +98,7 @@ cards:
     Literature is important.  (literatura, f)'
   chapter: —
 - id: 0198
+  skipped: "reason_similar"
   word: matemática
   front: A {{mathematics}} é importante.
   back: 'A matemática é importante.
@@ -93,6 +106,7 @@ cards:
     Mathematics is important.  (matemática, f)'
   chapter: —
 - id: 0199
+  skipped: "reason_similar"
   word: mistério
   front: O {{mystery}} é importante.
   back: 'O mistério é importante.
@@ -100,6 +114,7 @@ cards:
     Mystery is important.  (mistério, m)'
   chapter: —
 - id: '0200'
+  skipped: "reason_similar"
   word: mito
   front: O {{myth}} é importante.
   back: 'O mito é importante.
@@ -114,6 +129,7 @@ cards:
     News is important.  (notícia, f)'
   chapter: —
 - id: '0202'
+  skipped: "reason_similar"
   word: oportunidade
   front: A {{opportunity}} é importante.
   back: 'A oportunidade é importante.
@@ -121,6 +137,7 @@ cards:
     Opportunity is important.  (oportunidade, f)'
   chapter: —
 - id: '0203'
+  skipped: "reason_similar"
   word: paciência
   front: A {{patience}} é importante.
   back: 'A paciência é importante.
@@ -142,6 +159,7 @@ cards:
     Joke is important.  (piada, f)'
   chapter: —
 - id: '0206'
+  skipped: "reason_similar"
   word: poesia
   front: A {{poetry}} é importante.
   back: 'A poesia é importante.
@@ -149,6 +167,7 @@ cards:
     Poetry is important.  (poesia, f)'
   chapter: —
 - id: '0207'
+  skipped: "reason_similar"
   word: proposta
   front: A {{proposal}} é importante.
   back: 'A proposta é importante.
@@ -156,6 +175,7 @@ cards:
     Proposal is important.  (proposta, f)'
   chapter: —
 - id: 0208
+  skipped: "reason_similar"
   word: salvação
   front: A {{salvation}} é importante.
   back: 'A salvação é importante.
@@ -177,6 +197,7 @@ cards:
     Meaning is important.  (significado, m)'
   chapter: —
 - id: '0211'
+  skipped: "reason_similar"
   word: símbolo
   front: O {{symbol}} é importante.
   back: 'O símbolo é importante.
@@ -191,6 +212,7 @@ cards:
     Dream is important.  (sonho, m)'
   chapter: —
 - id: '0213'
+  skipped: "reason_similar"
   word: teoria
   front: A {{theory}} é importante.
   back: 'A teoria é importante.
@@ -198,6 +220,7 @@ cards:
     Theory is important.  (teoria, f)'
   chapter: —
 - id: '0214'
+  skipped: "reason_similar"
   word: texto
   front: O {{text}} é importante.
   back: 'O texto é importante.
@@ -268,6 +291,7 @@ cards:
     I see the snake.  (cobra, f)'
   chapter: —
 - id: '0224'
+  skipped: "reason_similar"
   word: coral
   front: Eu vejo o {{coral}}.
   back: 'Eu vejo o coral.
@@ -275,6 +299,7 @@ cards:
     I see the coral.  (coral, m)'
   chapter: —
 - id: '0225'
+  skipped: "reason_similar"
   word: criatura
   front: Eu vejo a {{creature}}.
   back: 'Eu vejo a criatura.
@@ -345,6 +370,7 @@ cards:
     I see the sea.  (mar, m)'
   chapter: —
 - id: '0235'
+  skipped: "reason_similar"
   word: natureza
   front: Eu vejo a {{nature}}.
   back: 'Eu vejo a natureza.
@@ -373,6 +399,7 @@ cards:
     I see the stone.  (pedra, f)'
   chapter: —
 - id: 0239
+  skipped: "reason_similar"
   word: planta
   front: Eu vejo a {{plant}}.
   back: 'Eu vejo a planta.
@@ -401,6 +428,7 @@ cards:
     I see the sun.  (sol, m)'
   chapter: —
 - id: '0243'
+  skipped: "reason_similar"
   word: temperatura
   front: Eu vejo a {{temperature}}.
   back: 'Eu vejo a temperatura.
@@ -436,6 +464,7 @@ cards:
     I see the belly.  (barriga, f)'
   chapter: —
 - id: 0248
+  skipped: "reason_similar"
   word: bebé
   front: Eu vejo o {{baby}}.
   back: 'Eu vejo o bebé.
@@ -506,6 +535,7 @@ cards:
     I see the man.  (homem, m)'
   chapter: —
 - id: 0258
+  skipped: "reason_similar"
   word: humano
   front: Eu vejo o {{human}}.
   back: 'Eu vejo o humano.
@@ -604,6 +634,7 @@ cards:
     I see the blood.  (sangue, m)'
   chapter: —
 - id: '0272'
+  skipped: "reason_similar"
   word: arco
   front: Eu vejo o {{arch}}.
   back: 'Eu vejo o arco.
@@ -611,6 +642,7 @@ cards:
     I see the arch.  (arco, m)'
   chapter: —
 - id: '0273'
+  skipped: "reason_similar"
   word: atração
   front: Eu vejo a {{attraction}}.
   back: 'Eu vejo a atração.
@@ -625,6 +657,7 @@ cards:
     I see the class.  (aula, f)'
   chapter: —
 - id: '0275'
+  skipped: "reason_similar"
   word: banco
   front: Eu vejo o {{bank}}.
   back: 'Eu vejo o banco.
@@ -646,6 +679,7 @@ cards:
     I see the ticket.  (bilhete, m)'
   chapter: —
 - id: 0278
+  skipped: "reason_similar"
   word: café
   front: Eu vejo o {{coffee}}.
   back: 'Eu vejo o café.
@@ -667,6 +701,7 @@ cards:
     I see the path.  (caminho, m)'
   chapter: —
 - id: 0281
+  skipped: "reason_similar"
   word: cêntimo
   front: Eu vejo o {{cent}}.
   back: 'Eu vejo o cêntimo.
@@ -681,6 +716,7 @@ cards:
     I see the city.  (cidade, f)'
   chapter: —
 - id: 0283
+  skipped: "reason_similar"
   word: cinema
   front: Eu vejo o {{movie theater}}.
   back: 'Eu vejo o cinema.
@@ -730,6 +766,7 @@ cards:
     I see the school.  (escola, f)'
   chapter: —
 - id: 0290
+  skipped: "reason_similar"
   word: espetáculo
   front: Eu vejo o {{show}}.
   back: 'Eu vejo o espetáculo.
@@ -744,6 +781,7 @@ cards:
     I see the station.  (estação, f)'
   chapter: —
 - id: 0292
+  skipped: "reason_similar"
   word: farmácia
   front: Eu vejo a {{pharmacy}}.
   back: 'Eu vejo a farmácia.
@@ -751,6 +789,7 @@ cards:
     I see the pharmacy.  (farmácia, f)'
   chapter: —
 - id: 0293
+  skipped: "reason_similar"
   word: ginásio
   front: Eu vejo o {{gym}}.
   back: 'Eu vejo o ginásio.
@@ -758,6 +797,7 @@ cards:
     I see the gym.  (ginásio, m)'
   chapter: —
 - id: 0294
+  skipped: "reason_similar"
   word: hospital
   front: Eu vejo o {{hospital}}.
   back: 'Eu vejo o hospital.
@@ -765,6 +805,7 @@ cards:
     I see the hospital.  (hospital, m)'
   chapter: —
 - id: 0295
+  skipped: "reason_similar"
   word: hotel
   front: Eu vejo o {{hotel}}.
   back: 'Eu vejo o hotel.
@@ -793,6 +834,7 @@ cards:
     I see the place.  (lugar, m)'
   chapter: —
 - id: 0299
+  skipped: "reason_similar"
   word: mapa
   front: Eu vejo o {{map}}.
   back: 'Eu vejo o mapa.
@@ -814,6 +856,7 @@ cards:
     I see the address.  (morada, f)'
   chapter: —
 - id: '0302'
+  skipped: "reason_similar"
   word: museu
   front: Eu vejo o {{museum}}.
   back: 'Eu vejo o museu.
@@ -821,6 +864,7 @@ cards:
     I see the museum.  (museu, m)'
   chapter: —
 - id: '0303'
+  skipped: "reason_similar"
   word: palácio
   front: Eu vejo o {{palace}}.
   back: 'Eu vejo o palácio.
@@ -835,6 +879,7 @@ cards:
     I see the bus stop.  (paragem, f)'
   chapter: —
 - id: '0305'
+  skipped: "reason_similar"
   word: parque
   front: Eu vejo o {{park}}.
   back: 'Eu vejo o parque.
@@ -842,6 +887,7 @@ cards:
     I see the park.  (parque, m)'
   chapter: —
 - id: '0306'
+  skipped: "reason_similar"
   word: polícia
   front: Eu vejo a {{police (institution)}}.
   back: 'Eu vejo a polícia.
@@ -849,6 +895,7 @@ cards:
     I see the police (institution).  (polícia, f)'
   chapter: —
 - id: '0307'
+  skipped: "reason_similar"
   word: polícia
   front: Eu vejo o {{police officer}}.
   back: 'Eu vejo o polícia.
@@ -870,6 +917,7 @@ cards:
     I see the price.  (preço, m)'
   chapter: —
 - id: '0310'
+  skipped: "reason_similar"
   word: reserva
   front: Eu vejo a {{reservation}}.
   back: 'Eu vejo a reserva.
@@ -877,6 +925,7 @@ cards:
     I see the reservation.  (reserva, f)'
   chapter: —
 - id: '0311'
+  skipped: "reason_similar"
   word: restaurante
   front: Eu vejo o {{restaurant}}.
   back: 'Eu vejo o restaurante.
@@ -891,6 +940,7 @@ cards:
     I see the road.  (rua, f)'
   chapter: —
 - id: '0313'
+  skipped: "reason_similar"
   word: supermercado
   front: Eu vejo o {{supermarket}}.
   back: 'Eu vejo o supermercado.
@@ -898,6 +948,7 @@ cards:
     I see the supermarket.  (supermercado, m)'
   chapter: —
 - id: '0314'
+  skipped: "reason_similar"
   word: templo
   front: Eu vejo o {{temple}}.
   back: 'Eu vejo o templo.
@@ -912,6 +963,7 @@ cards:
     I see the tower.  (torre, f)'
   chapter: —
 - id: '0316'
+  skipped: "reason_similar"
   word: blusa
   front: Eu uso a {{blouse}}.
   back: 'Eu uso a blusa.
@@ -996,6 +1048,7 @@ cards:
     My grandfather is at home.  (avô, m)'
   chapter: —
 - id: 0328
+  skipped: "reason_similar"
   word: família
   front: A minha {{family}} está em casa.
   back: 'A minha família está em casa.
@@ -1094,6 +1147,7 @@ cards:
     I like cake.  (bolo, m)'
   chapter: —
 - id: '0342'
+  skipped: "reason_similar"
   word: café
   front: Eu gosto de {{coffee}}.
   back: 'Eu gosto de café.
@@ -1122,6 +1176,7 @@ cards:
     I like tea.  (chá, m)'
   chapter: —
 - id: '0346'
+  skipped: "reason_similar"
   word: chocolate
   front: Eu gosto de {{chocolate}}.
   back: 'Eu gosto de chocolate.
@@ -1178,6 +1233,7 @@ cards:
     I like seafood.  (marisco, m)'
   chapter: —
 - id: '0354'
+  skipped: "reason_similar"
   word: menu
   front: Eu gosto de {{menu}}.
   back: 'Eu gosto de menu.
@@ -1213,6 +1269,7 @@ cards:
     I like breakfast.  (pequeno-almoço, m)'
   chapter: —
 - id: 0359
+  skipped: "reason_similar"
   word: pizza
   front: Eu gosto de {{pizza}}.
   back: 'Eu gosto de pizza.
@@ -1234,6 +1291,7 @@ cards:
     I like recipe.  (receita, f)'
   chapter: —
 - id: '0362'
+  skipped: "reason_similar"
   word: salada
   front: Eu gosto de {{salad}}.
   back: 'Eu gosto de salada.
@@ -1423,6 +1481,7 @@ cards:
     I clean the room.  (sala, f)'
   chapter: —
 - id: 0389
+  skipped: "reason_similar"
   word: televisão
   front: Eu limpo a {{television}}.
   back: 'Eu limpo a televisão.
@@ -1430,6 +1489,7 @@ cards:
     I clean the television.  (televisão, f)'
   chapter: —
 - id: 0390
+  skipped: "reason_similar"
   word: terraço
   front: Eu limpo o {{terrace}}.
   back: 'Eu limpo o terraço.
@@ -1444,6 +1504,7 @@ cards:
     I clean the ceiling.  (teto, m)'
   chapter: —
 - id: 0392
+  skipped: "reason_similar"
   word: álbum
   front: Eu uso o {{album}}.
   back: 'Eu uso o álbum.
@@ -1528,6 +1589,7 @@ cards:
     I use the necklace.  (colar, m)'
   chapter: —
 - id: '0404'
+  skipped: "reason_similar"
   word: documento
   front: Eu uso o {{document}}.
   back: 'Eu uso o documento.
@@ -1542,6 +1604,7 @@ cards:
     I use the parcel.  (encomenda, f)'
   chapter: —
 - id: '0406'
+  skipped: "reason_similar"
   word: envelope
   front: Eu uso o {{envelope}}.
   back: 'Eu uso o envelope.
@@ -1556,6 +1619,7 @@ cards:
     I use the tool.  (ferramenta, f)'
   chapter: —
 - id: 0408
+  skipped: "reason_similar"
   word: formulário
   front: Eu uso o {{form}}.
   back: 'Eu uso o formulário.
@@ -1563,6 +1627,7 @@ cards:
     I use the form.  (formulário, m)'
   chapter: —
 - id: 0409
+  skipped: "reason_similar"
   word: fotografia
   front: Eu uso a {{photography}}.
   back: 'Eu uso a fotografia.
@@ -1612,6 +1677,7 @@ cards:
     I use the bag.  (mala, f)'
   chapter: —
 - id: '0416'
+  skipped: "reason_similar"
   word: máscara
   front: Eu uso a {{mask}}.
   back: 'Eu uso a máscara.
@@ -1619,6 +1685,7 @@ cards:
     I use the mask.  (máscara, f)'
   chapter: —
 - id: '0417'
+  skipped: "reason_similar"
   word: medalha
   front: Eu uso a {{medal}}.
   back: 'Eu uso a medalha.
@@ -1640,6 +1707,7 @@ cards:
     I use the glasses.  (óculos, pl)'
   chapter: —
 - id: '0420'
+  skipped: "reason_similar"
   word: página
   front: Eu uso a {{page}}.
   back: 'Eu uso a página.
@@ -1654,6 +1722,7 @@ cards:
     I use the paper.  (papel, m)'
   chapter: —
 - id: '0422'
+  skipped: "reason_similar"
   word: passaporte
   front: Eu uso o {{passport}}.
   back: 'Eu uso o passaporte.
@@ -1668,6 +1737,7 @@ cards:
     I use the part.  (peça, f)'
   chapter: —
 - id: '0424'
+  skipped: "reason_similar"
   word: piano
   front: Eu uso o {{piano}}.
   back: 'Eu uso o piano.
@@ -1682,6 +1752,7 @@ cards:
     I use the magazine.  (revista, f)'
   chapter: —
 - id: '0426'
+  skipped: "reason_similar"
   word: telefone
   front: Eu uso o {{telephone}}.
   back: 'Eu uso o telefone.
@@ -1724,6 +1795,7 @@ cards:
     He is a friend.  (amigo, m)'
   chapter: —
 - id: '0432'
+  skipped: "reason_similar"
   word: biólogo
   front: Ele é {{biologist}}.
   back: 'Ele é biólogo.
@@ -1738,6 +1810,7 @@ cards:
     He is a singer.  (cantor, m)'
   chapter: —
 - id: '0434'
+  skipped: "reason_similar"
   word: cliente
   front: Ele é {{client}}.
   back: 'Ele é cliente.
@@ -1752,6 +1825,7 @@ cards:
     He is a cook.  (cozinheiro, m)'
   chapter: —
 - id: '0436'
+  skipped: "reason_similar"
   word: diretor
   front: Ele é {{director}}.
   back: 'Ele é diretor.
@@ -1773,6 +1847,7 @@ cards:
     He is a nurse.  (enfermeiro, m)'
   chapter: —
 - id: 0439
+  skipped: "reason_similar"
   word: engenheiro
   front: Ele é {{engineer}}.
   back: 'Ele é engenheiro.
@@ -1808,6 +1883,7 @@ cards:
     He is a guardian.  (guardião, m)'
   chapter: —
 - id: '0444'
+  skipped: "reason_similar"
   word: guia
   front: Ele é {{guide}}.
   back: 'Ele é guia.
@@ -1815,6 +1891,7 @@ cards:
     He is a guide.  (guia, m)'
   chapter: —
 - id: '0445'
+  skipped: "reason_similar"
   word: historiador
   front: Ele é {{historian}}.
   back: 'Ele é historiador.
@@ -1836,6 +1913,7 @@ cards:
     He is a doctor.  (médico, m)'
   chapter: —
 - id: 0448
+  skipped: "reason_similar"
   word: paciente
   front: Ele é {{patient}}.
   back: 'Ele é paciente.
@@ -1850,6 +1928,7 @@ cards:
     He is a fisherman.  (pescador, m)'
   chapter: —
 - id: '0450'
+  skipped: "reason_similar"
   word: polícia
   front: Ele é {{police officer}}.
   back: 'Ele é polícia.
@@ -1857,6 +1936,7 @@ cards:
     He is a police officer.  (polícia, m)'
   chapter: —
 - id: '0451'
+  skipped: "reason_similar"
   word: príncipe
   front: Ele é {{prince}}.
   back: 'Ele é príncipe.
@@ -1864,6 +1944,7 @@ cards:
     He is a prince.  (príncipe, m)'
   chapter: —
 - id: '0452'
+  skipped: "reason_similar"
   word: prisioneiro
   front: Ele é {{prisoner}}.
   back: 'Ele é prisioneiro.
@@ -1871,6 +1952,7 @@ cards:
     He is a prisoner.  (prisioneiro, m)'
   chapter: —
 - id: '0453'
+  skipped: "reason_similar"
   word: professor
   front: Ele é {{teacher}}.
   back: 'Ele é professor.
@@ -1899,6 +1981,7 @@ cards:
     He is a retired.  (reformado, m)'
   chapter: —
 - id: '0457'
+  skipped: "reason_similar"
   word: secretário
   front: Ele é {{secretary}}.
   back: 'Ele é secretário.
@@ -1906,6 +1989,7 @@ cards:
     He is a secretary.  (secretário, m)'
   chapter: —
 - id: 0458
+  skipped: "reason_similar"
   word: turista
   front: Ele é {{tourist}}.
   back: 'Ele é turista.
@@ -1948,6 +2032,7 @@ cards:
     I go by boat.  (barco, m)'
   chapter: —
 - id: '0464'
+  skipped: "reason_similar"
   word: bicicleta
   front: Eu vou de {{bicycle}}.
   back: 'Eu vou de bicicleta.

@@ -22,11 +22,13 @@ cards:
   back: ano (m)
   chapter: —
 - id: '0624'
+  skipped: "reason_phrase"
   word: segundo (m)
   front: second
   back: segundo (m)
   chapter: —
 - id: '0625'
+  skipped: "reason_phrase"
   word: minuto (m)
   front: minute
   back: minuto (m)
@@ -62,6 +64,7 @@ cards:
   back: sexta-feira (f)
   chapter: —
 - id: '0632'
+  skipped: "reason_phrase"
   word: sábado (m)
   front: Saturday
   back: sábado (m)
@@ -72,66 +75,79 @@ cards:
   back: domingo (m)
   chapter: —
 - id: '0634'
+  skipped: "reason_phrase"
   word: janeiro (m)
   front: January
   back: janeiro (m)
   chapter: —
 - id: '0635'
+  skipped: "reason_phrase"
   word: fevereiro (m)
   front: February
   back: fevereiro (m)
   chapter: —
 - id: '0636'
+  skipped: "reason_phrase"
   word: março (m)
   front: March
   back: março (m)
   chapter: —
 - id: '0637'
+  skipped: "reason_phrase"
   word: abril (m)
   front: April
   back: abril (m)
   chapter: —
 - id: 0638
+  skipped: "reason_phrase"
   word: maio (m)
   front: May
   back: maio (m)
   chapter: —
 - id: 0639
+  skipped: "reason_phrase"
   word: junho (m)
   front: June
   back: junho (m)
   chapter: —
 - id: '0640'
+  skipped: "reason_phrase"
   word: julho (m)
   front: July
   back: julho (m)
   chapter: —
 - id: '0641'
+  skipped: "reason_phrase"
   word: agosto (m)
   front: August
   back: agosto (m)
   chapter: —
 - id: '0642'
+  skipped: "reason_phrase"
   word: setembro (m)
   front: September
   back: setembro (m)
   chapter: —
 - id: '0643'
+  skipped: "reason_phrase"
   word: outubro (m)
   front: October
   back: outubro (m)
   chapter: —
 - id: '0644'
+  skipped: "reason_phrase"
   word: novembro (m)
   front: November
   back: novembro (m)
   chapter: —
 - id: '0645'
+  skipped: "reason_phrase"
   word: dezembro (m)
   front: December
   back: dezembro (m)
   chapter: —
 - id: '0646'
+  skipped: "reason_phrase"
   word: estação do ano (f)
   front: season
   back: estação do ano (f)
@@ -162,26 +178,31 @@ cards:
   back: relógio (m)
   chapter: —
 - id: '0652'
+  skipped: "reason_phrase"
   word: meia-noite (f)
   front: midnight
   back: meia-noite (f)
   chapter: —
 - id: '0653'
+  skipped: "reason_phrase"
   word: meio-dia (m)
   front: midday, noon
   back: meio-dia (m)
   chapter: —
 - id: '0654'
+  skipped: "reason_phrase"
   word: de manhã
   front: in the morning
   back: de manhã
   chapter: —
 - id: '0655'
+  skipped: "reason_phrase"
   word: de tarde, à tarde
   front: in the afternoon
   back: de tarde, à tarde
   chapter: —
 - id: '0656'
+  skipped: "reason_phrase"
   word: de noite, à noite
   front: at night
   back: de noite, à noite
@@ -222,16 +243,19 @@ cards:
   back: depois
   chapter: —
 - id: '0664'
+  skipped: "reason_similar"
   word: regularmente
   front: regularly
   back: regularmente
   chapter: —
 - id: '0665'
+  skipped: "reason_phrase"
   word: muitas vezes
   front: often
   back: muitas vezes
   chapter: —
 - id: '0666'
+  skipped: "reason_phrase"
   word: todos os dias
   front: every day
   back: todos os dias
@@ -247,16 +271,19 @@ cards:
   back: sempre
   chapter: —
 - id: 0669
+  skipped: "reason_phrase"
   word: São duas horas.
   front: It's two o'clock.
   back: São duas horas.
   chapter: —
 - id: '0670'
+  skipped: "reason_phrase"
   word: São duas e um quarto.
   front: It's a quarter past two.
   back: São duas e um quarto.
   chapter: —
 - id: '0671'
+  skipped: "reason_phrase"
   word: São duas e meia.
   front: It's half past two.
   back: São duas e meia.
@@ -267,21 +294,25 @@ cards:
   back: olá
   chapter: —
 - id: '0673'
+  skipped: "reason_phrase"
   word: bom dia
   front: good morning
   back: bom dia
   chapter: —
 - id: '0674'
+  skipped: "reason_phrase"
   word: boa tarde
   front: good afternoon
   back: boa tarde
   chapter: —
 - id: '0675'
+  skipped: "reason_phrase"
   word: boa noite
   front: goodnight, good evening
   back: boa noite
   chapter: —
 - id: '0676'
+  skipped: "reason_phrase"
   word: muito prazer
   front: nice to meet you
   back: muito prazer
@@ -292,41 +323,49 @@ cards:
   back: igualmente
   chapter: —
 - id: 0678
+  skipped: "reason_phrase"
   word: Como está?
   front: How are you? (formal)
   back: Como está?
   chapter: —
 - id: 0679
+  skipped: "reason_phrase"
   word: Como estás?
   front: How are you? (informal)
   back: Como estás?
   chapter: —
 - id: 0680
+  skipped: "reason_phrase"
   word: Bem, obrigado.
   front: Well, thanks.
   back: Bem, obrigado.
   chapter: —
 - id: 0681
+  skipped: "reason_similar"
   word: Queria…
   front: I would like…
   back: Queria…
   chapter: —
 - id: 0682
+  skipped: "reason_similar"
   word: Podia...?
   front: Could you...?
   back: Podia...?
   chapter: —
 - id: 0683
+  skipped: "reason_phrase"
   word: não há problema
   front: no problem
   back: não há problema
   chapter: —
 - id: 0684
+  skipped: "reason_phrase"
   word: um momento
   front: one moment
   back: um momento
   chapter: —
 - id: 0685
+  skipped: "reason_phrase"
   word: por favor
   front: please
   back: por favor
@@ -342,6 +381,7 @@ cards:
   back: desculpa
   chapter: —
 - id: 0688
+  skipped: "reason_phrase"
   word: peço desculpa
   front: I apologize (formal)
   back: peço desculpa
@@ -357,26 +397,31 @@ cards:
   back: (muito) obrigada
   chapter: —
 - id: 0691
+  skipped: "reason_phrase"
   word: de nada
   front: you're welcome
   back: de nada
   chapter: —
 - id: 0692
+  skipped: "reason_phrase"
   word: até já
   front: see you soon
   back: até já
   chapter: —
 - id: 0693
+  skipped: "reason_phrase"
   word: até logo
   front: see you later
   back: até logo
   chapter: —
 - id: 0694
+  skipped: "reason_phrase"
   word: até amanhã
   front: see you tomorrow
   back: até amanhã
   chapter: —
 - id: 0695
+  skipped: "reason_phrase"
   word: até à próxima
   front: see you next time
   back: até à próxima
@@ -417,21 +462,25 @@ cards:
   back: se
   chapter: —
 - id: '0703'
+  skipped: "reason_phrase"
   word: por isso
   front: so, for that reason
   back: por isso
   chapter: —
 - id: '0704'
+  skipped: "reason_phrase"
   word: tenho a certeza
   front: I am sure
   back: tenho a certeza
   chapter: —
 - id: '0705'
+  skipped: "reason_phrase"
   word: acho que sim
   front: I think so
   back: acho que sim
   chapter: —
 - id: '0706'
+  skipped: "reason_phrase"
   word: acho que não
   front: I don't think so
   back: acho que não
@@ -442,11 +491,13 @@ cards:
   back: pois
   chapter: —
 - id: 0708
+  skipped: "reason_phrase"
   word: com certeza
   front: certainly
   back: com certeza
   chapter: —
 - id: 0709
+  skipped: "reason_phrase"
   word: isso mesmo
   front: that's right, that’s it
   back: isso mesmo
@@ -457,21 +508,25 @@ cards:
   back: talvez
   chapter: —
 - id: '0711'
+  skipped: "reason_phrase"
   word: se calhar
   front: maybe
   back: se calhar
   chapter: —
 - id: '0712'
+  skipped: "reason_similar"
   word: exato
   front: exactly
   back: exato
   chapter: —
 - id: '0713'
+  skipped: "reason_phrase"
   word: está bem
   front: alright
   back: está bem
   chapter: —
 - id: '0714'
+  skipped: "reason_phrase"
   word: faz sentido
   front: it makes sense
   back: faz sentido
@@ -487,11 +542,13 @@ cards:
   back: olhe
   chapter: —
 - id: '0717'
+  skipped: "reason_phrase"
   word: que disparate
   front: what nonsense
   back: que disparate
   chapter: —
 - id: 0718
+  skipped: "reason_phrase"
   word: que pena
   front: what a shame
   back: que pena
@@ -512,6 +569,7 @@ cards:
   back: ainda
   chapter: —
 - id: '0722'
+  skipped: "reason_phrase"
   word: ainda não
   front: not yet
   back: ainda não
@@ -522,6 +580,7 @@ cards:
   back: já
   chapter: —
 - id: '0724'
+  skipped: "reason_phrase"
   word: já não
   front: not anymore
   back: já não
