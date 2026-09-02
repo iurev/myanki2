@@ -1,0 +1,811 @@
+deck: words
+model: words
+cards:
+- id: ''
+  ta_id: 1
+  front: 1. - Quer comer aqui ou é para levar? - É para levar
+  audio: ta/audio/1.mp3
+- id: ''
+  ta_id: 2
+  front: 2. Podemos sentar-nos aqui?
+  audio: ta/audio/2.mp3
+- id: ''
+  ta_id: 3
+  front: 3. - Tem uma reserva? - Não tenho.
+  audio: ta/audio/3.mp3
+- id: ''
+  ta_id: 4
+  front: 4. Tenho uma reserva em nome de Anna
+  audio: ta/audio/4.mp3
+- id: ''
+  ta_id: 5
+  front: 5. É preciso reservar uma mesa com antecedência?
+  audio: ta/audio/5.mp3
+- id: ''
+  ta_id: 6
+  front: 6. Tem mesa para três pessoas para hoje às 19h00 (sete horas da tarde)?
+  audio: ta/audio/6.mp3
+- id: ''
+  ta_id: 7
+  front: 7. Posso sentar-me cá dentro/lá fora?
+  audio: ta/audio/7.mp3
+- id: ''
+  ta_id: 8
+  front: 8. Este estabelecimento é pet friendly?
+  audio: ta/audio/8.mp3
+- id: ''
+  ta_id: 9
+  front: 9. Posso tirar esta cadeira?
+  audio: ta/audio/9.mp3
+- id: ''
+  ta_id: 10
+  front: 10. Tem cadeira para bebé?
+  audio: ta/audio/10.mp3
+- id: ''
+  ta_id: 11
+  front: 11. A que horas abre?
+  audio: ta/audio/11.mp3
+- id: ''
+  ta_id: 12
+  front: 12. Fecha a que horas?
+  audio: ta/audio/12.mp3
+- id: ''
+  ta_id: 13
+  front: 13. O que vai beber? E para beber?
+  audio: ta/audio/13.mp3
+- id: ''
+  ta_id: 14
+  front: 14. Precisamos de mais tempo para ver a ementa/carta
+  audio: ta/audio/14.mp3
+- id: ''
+  ta_id: 15
+  front: 15. Dê-me mais dois minutos
+  audio: ta/audio/15.mp3
+- id: ''
+  ta_id: 16
+  front: 16. Gostava de fazer um pedido
+  audio: ta/audio/16.mp3
+- id: ''
+  ta_id: 17
+  front: 17. Tem pratos vegetarianos?
+  audio: ta/audio/17.mp3
+- id: ''
+  ta_id: 18
+  front: 18. Sou alégico(a) a...
+  audio: ta/audio/18.mp3
+- id: ''
+  ta_id: 19
+  front: 19. Este prato tem leite / frutos secos / ovos / carne / soja / trigo?
+  audio: ta/audio/19.mp3
+- id: ''
+  ta_id: 20
+  front: 20. Pode trazer um copo de água da torneira?
+  audio: ta/audio/20.mp3
+- id: ''
+  ta_id: 21
+  front: 21. Uma água natural, se faz favor / Uma água com gás sem gelo, se faz favor.
+  audio: ta/audio/21.mp3
+- id: ''
+  ta_id: 22
+  front: 22. Vou pedir um prato de...
+  audio: ta/audio/22.mp3
+- id: ''
+  ta_id: 23
+  front: '23. Os pontos da carne: Mal Passado / Médio-Mal / Médio / Médio-Bem / Bem Passado'
+  audio: ta/audio/23.mp3
+- id: ''
+  ta_id: 24
+  front: 24. Quanto tempo vai demorar?
+  audio: ta/audio/24.mp3
+- id: ''
+  ta_id: 25
+  front: 25. Mais nada / (É) só isso
+  audio: ta/audio/25.mp3
+- id: ''
+  ta_id: 26
+  front: 26. Já pedi / Ainda não pedi
+  audio: ta/audio/26.mp3
+- id: ''
+  ta_id: 27
+  front: 27. Aqui há wifi?
+  audio: ta/audio/27.mp3
+- id: ''
+  ta_id: 28
+  front: 28. Qual é a senha do wifi?
+  audio: ta/audio/28.mp3
+- id: ''
+  ta_id: 29
+  front: 29. Podia ligar / desligar o ar condicionado?
+  audio: ta/audio/29.mp3
+- id: ''
+  ta_id: 30
+  front: 30. Mais um copo, se faz favor
+  audio: ta/audio/30.mp3
+- id: ''
+  ta_id: 31
+  front: 31. Podia trazer os talheres? Podia trazer um garfo, uma colher, uma faca?
+  audio: ta/audio/31.mp3
+- id: ''
+  ta_id: 32
+  front: 32. Pode trazer-me o sal, se faz favor?
+  audio: ta/audio/32.wav
+- id: ''
+  ta_id: 33
+  front: 33. Onde posso arranjar guardanapos?
+  audio: ta/audio/33.mp3
+- id: ''
+  ta_id: 34
+  front: 34. Obrigado(a). Tudo estava delicioso / saboroso / ótimo / muito bom
+  audio: ta/audio/34.mp3
+- id: ''
+  ta_id: 35
+  front: 35. Já terminei / Já terminamos
+  audio: ta/audio/35.mp3
+- id: ''
+  ta_id: 36
+  front: 36. Não tenho fome
+  audio: ta/audio/36.mp3
+- id: ''
+  ta_id: 37
+  front: 37. Obrigado, já não consigo comer mais
+  audio: ta/audio/37.mp3
+- id: ''
+  ta_id: 38
+  front: 38. Estou cheio(a) / Estou satisfeito(a)
+  audio: ta/audio/38.mp3
+- id: ''
+  ta_id: 39
+  front: 39. Vai querer uma sobremesa?
+  audio: ta/audio/39.mp3
+- id: ''
+  ta_id: 40
+  front: 40. Posso usar a vossa casa de banho?
+  audio: ta/audio/40.mp3
+- id: ''
+  ta_id: 41
+  front: 41. Queria pagar
+  audio: ta/audio/41.mp3
+- id: ''
+  ta_id: 42
+  front: 42. Vamos dividir a conta / pagamos em separado
+  audio: ta/audio/42.mp3
+- id: ''
+  ta_id: 43
+  front: 43. Traga a conta, se faz favor / Pode trazer a conta?
+  audio: ta/audio/43.mp3
+- id: ''
+  ta_id: 44
+  front: 44. Posso pagar com cartão / com multibanco?
+  audio: ta/audio/44.mp3
+- id: ''
+  ta_id: 45
+  front: 45. Pode adicionar gorjeta à conta?
+  audio: ta/audio/45.mp3
+- id: ''
+  ta_id: 46
+  front: 46. Não preciso do troco / Pode ficar com o troco
+  audio: ta/audio/46.mp3
+- id: ''
+  ta_id: 47
+  front: 47. Quanto custa? Quanto é?
+  audio: ta/audio/47.mp3
+- id: ''
+  ta_id: 48
+  front: 48. Qual é o preço de um quilo?
+  audio: ta/audio/48.mp3
+- id: ''
+  ta_id: 49
+  front: 49. Posso provar? (comida) / Posso experimentar? (outro)
+  audio: ta/audio/49.mp3
+- id: ''
+  ta_id: 50
+  front: 50. Pode limpar / arranjar o peixe, se faz favor?
+  audio: ta/audio/50.mp3
+- id: ''
+  ta_id: 51
+  front: 51. Trezentos gramas de camarão, por favor
+  audio:
+  - ta/audio/51-1.mp3
+  - ta/audio/51-2.mp4
+- id: ''
+  ta_id: 52
+  front: 52. Um frango grande com miúdos / sem miúdos
+  audio: ta/audio/52.mp3
+- id: ''
+  ta_id: 53
+  front: 53. Está bom, obrigado(a)
+  audio: ta/audio/53.mp3
+- id: ''
+  ta_id: 54
+  front: 54. Pode cortar em pedaços grandes?
+  audio: ta/audio/54.mp3
+- id: ''
+  ta_id: 55
+  front: 55. Onde posso pesar isto?
+  audio: ta/audio/55.mp3
+- id: ''
+  ta_id: 56
+  front: 56. Vou dar uma vista de olhos
+  audio: ta/audio/56.mp3
+- id: ''
+  ta_id: 57
+  front: 57. Tem noutra cor?
+  audio: ta/audio/57.mp3
+- id: ''
+  ta_id: 58
+  front: 58. Tem isto no tamanho M (médio)?
+  audio: ta/audio/58.mp3
+- id: ''
+  ta_id: 59
+  front: 59. Tem o meu tamanho?
+  audio: ta/audio/59.mp3
+- id: ''
+  ta_id: 60
+  front: 60. Onde ficam os provadores?
+  audio: ta/audio/60.mp3
+- id: ''
+  ta_id: 61
+  front: 61. É preciso tirar senha?
+  audio: ta/audio/61.mp3
+- id: ''
+  ta_id: 62
+  front: 62. Qual é o número da sua senha?
+  audio: ta/audio/62.mp3
+- id: ''
+  ta_id: 63
+  front: 63. Quer água fresca ou natural?
+  audio: ta/audio/63.mp3
+- id: ''
+  ta_id: 64
+  front: 64. Quero fazer um cartão de fidelidade
+  audio: ta/audio/64.mp3
+- id: ''
+  ta_id: 65
+  front: 65. É para oferta?
+  audio: ta/audio/65.mp3
+- id: ''
+  ta_id: 66
+  front: 66. - Precisa de saco? - Sim, dê-me um saco, se faz favor
+  audio: ta/audio/66.mp3
+- id: ''
+  ta_id: 67
+  front: 67. Pode ser com número de contribuinte?
+  audio: ta/audio/67.mp3
+- id: ''
+  ta_id: 68
+  front: 68. (Não) estou na fila
+  audio: ta/audio/68.mp3
+- id: ''
+  ta_id: 69
+  front: 69. Desculpe, está na fila?
+  audio: ta/audio/69.mp3
+- id: ''
+  ta_id: 70
+  front: 70. Pode trocar os cinquenta (50) euros com notas de dez (10)? Pode trocar cinco (5) euros com moedas?
+  audio: ta/audio/70.mp3
+- id: ''
+  ta_id: 71
+  front: 71. Vai ter troco de vinte 20/ trinta 30/ cinquenta 50 euros?
+  audio: ta/audio/71.mp3
+- id: ''
+  ta_id: 72
+  front: 72. Desculpe, mas a etiqueta tinha um preço diferente
+  audio: ta/audio/72.mp3
+- id: ''
+  ta_id: 73
+  front: 73. Onde é a saída?
+  audio: ta/audio/73.mp3
+- id: ''
+  ta_id: 74
+  front: 74. A que horas vão entregar? Quando chega a encomenda?
+  audio: ta/audio/74.mp3
+- id: ''
+  ta_id: 75
+  front: 75. Faz entregas (ao domicílio)?
+  audio: ta/audio/75.mp3
+- id: ''
+  ta_id: 76
+  front: 76. Pode enviar um e-mail / uma mensagem com esta informação?
+  audio: ta/audio/76.mp3
+- id: ''
+  ta_id: 77
+  front: 77. Pode fazer-me uma cópia deste documento?
+  audio: ta/audio/77.mp3
+- id: ''
+  ta_id: 78
+  front: 78. Preciso de imprimir este ficheiro em preto e branco / a cores
+  audio: ta/audio/78.mp3
+- id: ''
+  ta_id: 79
+  front: 79. - Só uma rúbrica / assinatura. - É aqui?
+  audio: ta/audio/79.mp3
+- id: ''
+  ta_id: 80
+  front: 80. Pode escrever isso?
+  audio: ta/audio/80.mp3
+- id: ''
+  ta_id: 81
+  front: 81. Como se escreve?
+  audio: ta/audio/81.mp3
+- id: ''
+  ta_id: 82
+  front: 82. Escreva aqui o seu número de telefone / e-mail
+  audio: ta/audio/82.mp3
+- id: ''
+  ta_id: 83
+  front: 83. Acho que há um erro aqui
+  audio: ta/audio/83.mp3
+- id: ''
+  ta_id: 84
+  front: 84. Temos de chamar a ambulância
+  audio: ta/audio/84.mp3
+- id: ''
+  ta_id: 85
+  front: 85. É possível marcar-me para uma data mais próxima?
+  audio: ta/audio/85.mp3
+- id: ''
+  ta_id: 86
+  front: 86. Preciso de reagendar a minha consulta médica.
+  audio: ta/audio/86.mp3
+- id: ''
+  ta_id: 87
+  front: 87. Este médico tem um acordo com alguma seguradora?
+  audio: ta/audio/87.mp3
+- id: ''
+  ta_id: 88
+  front: 88. Quero marcar uma consulta para o meu médico de família
+  audio: ta/audio/88.mp3
+- id: ''
+  ta_id: 89
+  front: 89. A que horas devo chegar?
+  audio: ta/audio/89.mp3
+- id: ''
+  ta_id: 90
+  front: 90. O médico atende às quintas-feiras
+  audio: ta/audio/90.mp3
+- id: ''
+  ta_id: 91
+  front: 91. Tem medicamentos desta lista?
+  audio: ta/audio/91.mp3
+- id: ''
+  ta_id: 92
+  front: 92. Onde fica...o supermercado/a farmácia?
+  audio: ta/audio/92.mp3
+- id: ''
+  ta_id: 93
+  front: 93. Passe, se faz favor / Força!
+  audio: ta/audio/93.mp3
+- id: ''
+  ta_id: 94
+  front: 94. Pode passar à frente
+  audio: ta/audio/94.mp3
+- id: ''
+  ta_id: 95
+  front: 95. Com licença / desculpe
+  audio: ta/audio/95.mp3
+- id: ''
+  ta_id: 96
+  front: 96. Pode tirar uma foto? No horizontal / no vertical
+  audio: ta/audio/96.mp3
+- id: ''
+  ta_id: 97
+  front: 97. Pode ajudar-me? Preciso da sua ajuda
+  audio: ta/audio/97.mp3
+- id: ''
+  ta_id: 98
+  front: 98. Onde posso levantar dinheiro?
+  audio: ta/audio/98.mp3
+- id: ''
+  ta_id: 99
+  front: 99. O meu nome é Konstantin e sou programador. O meu nome é Ekaterina e sou psicóloga
+  audio:
+  - ta/audio/99-1.mp3
+  - ta/audio/99-2.mp4
+- id: ''
+  ta_id: 100
+  front: 100. Qual é a sua profissão?
+  audio:
+  - ta/audio/100-1.mp3
+  - ta/audio/100-2.mp4
+- id: ''
+  ta_id: 101
+  front: 101. Eu sou de...
+  audio: ta/audio/101.mp3
+- id: ''
+  ta_id: 102
+  front: 102. O meu número é 987 654 321 0 (nove, oito, sete, seis, cinco, quatro, três, dois um zero)
+  audio: ta/audio/102.mp3
+- id: ''
+  ta_id: 103
+  front: 103. O meu NIF (número de contribuinte) é 123456789
+  audio: ta/audio/103.mp3
+- id: ''
+  ta_id: 104
+  front: 104. Bom dia! Boa tarde!
+  audio: ta/audio/104.mp3
+- id: ''
+  ta_id: 105
+  front: 105. Até terça!
+  audio: ta/audio/105.mp3
+- id: ''
+  ta_id: 106
+  front: 106. Bom fim de semana!
+  audio: ta/audio/106.mp3
+- id: ''
+  ta_id: 107
+  front: 107. Boa sexta!
+  audio: ta/audio/107.mp3
+- id: ''
+  ta_id: 108
+  front: 108. Manda cumprimentos à Alexandra / ao Ricardo!
+  audio: ta/audio/108.mp3
+- id: ''
+  ta_id: 109
+  front: 109. Até à próxima! até breve! até amanhã
+  audio: ta/audio/109.mp3
+- id: ''
+  ta_id: 110
+  front: 110. Vemo-nos daqui a meia-hora
+  audio: ta/audio/110.mp3
+- id: ''
+  ta_id: 111
+  front: 111. Boa noite!
+  audio: ta/audio/111.mp3
+- id: ''
+  ta_id: 112
+  front: 112. Desculpe, não posso falar agora
+  audio: ta/audio/112.mp3
+- id: ''
+  ta_id: 113
+  front: 113. Quem é? Quem fala?
+  audio: ta/audio/113.mp3
+- id: ''
+  ta_id: 114
+  front: 114. Estou? Está?
+  audio: ta/audio/114.mp3
+- id: ''
+  ta_id: 115
+  front: 115. Não estou interessado(a), desculpe
+  audio: ta/audio/115.mp3
+- id: ''
+  ta_id: 116
+  front: 116. Desculpe, estou muito ocupado(a)
+  audio: ta/audio/116.mp3
+- id: ''
+  ta_id: 117
+  front: 117. Pode soletrar?
+  audio: ta/audio/117.mp3
+- id: ''
+  ta_id: 118
+  front: 118. Desculpe, não tenho tempo para isso
+  audio: ta/audio/118.mp3
+- id: ''
+  ta_id: 119
+  front: 119. Podia falar mais devagar?
+  audio: ta/audio/119.mp3
+- id: ''
+  ta_id: 120
+  front: 120. Mais uma vez, se faz favor
+  audio: ta/audio/120.mp3
+- id: ''
+  ta_id: 121
+  front: 121. Pode falar mais baixo / mais alto?
+  audio: ta/audio/121.mp3
+- id: ''
+  ta_id: 122
+  front: 122. Com quem posso falar sobre...
+  audio: ta/audio/122.mp3
+- id: ''
+  ta_id: 123
+  front: 123. Parabéns! Feliz Aniversário!
+  audio: ta/audio/123.mp3
+- id: ''
+  ta_id: 124
+  front: 124. Feliz Natal e Bom Ano Novo!
+  audio:
+  - ta/audio/124-1.mp3
+  - ta/audio/124-2.mp4
+- id: ''
+  ta_id: 125
+  front: 125. Não falo inglês
+  audio: ta/audio/125.mp3
+- id: ''
+  ta_id: 126
+  front: 126. Desculpe, ainda estou a aprender português, fala inglês?
+  audio: ta/audio/126.mp3
+- id: ''
+  ta_id: 127
+  front: 127. Como se diz isto em português?
+  audio: ta/audio/127.mp3
+- id: ''
+  ta_id: 128
+  front: 128. Conheces o João?
+  audio: ta/audio/128.mp3
+- id: ''
+  ta_id: 129
+  front: 129. Muito prazer!
+  audio: ta/audio/129.mp3
+- id: ''
+  ta_id: 130
+  front: 130. Tem multibanco? / Posso pagar com cartão?
+  audio: ta/audio/130.mp3
+- id: ''
+  ta_id: 131
+  front: 131. Desculpe, o multibanco / a casa de banho está fora de serviço
+  audio: ta/audio/131.mp3
+- id: ''
+  ta_id: 132
+  front: 132. Desculpe pelo incómodo
+  audio: ta/audio/132.mp3
+- id: ''
+  ta_id: 133
+  front: 133. Não se preocupe / Não te preocupes
+  audio: ta/audio/133.mp3
+- id: ''
+  ta_id: 134
+  front: 134. Eu queria...
+  audio: ta/audio/134.mp3
+- id: ''
+  ta_id: 135
+  front: 135. Desculpe, foi sem querer
+  audio: ta/audio/135.mp3
+- id: ''
+  ta_id: 136
+  front: 136. O que é que se passa?
+  audio: ta/audio/136.mp3
+- id: ''
+  ta_id: 137
+  front: 137. Não faz mal / não tem problema
+  audio: ta/audio/137.mp3
+- id: ''
+  ta_id: 138
+  front: 138. Hoje está calor/está frio
+  audio: ta/audio/138.mp3
+- id: ''
+  ta_id: 139
+  front: 139. Estás confortável?
+  audio: ta/audio/139.mp3
+- id: ''
+  ta_id: 140
+  front: 140. Então, volto mais tarde
+  audio: ta/audio/140.mp3
+- id: ''
+  ta_id: 141
+  front: 141. Não me importo
+  audio: ta/audio/141.mp3
+- id: ''
+  ta_id: 142
+  front: 142. Obrigado(a) pela sua ajuda / agradeço a sua ajuda
+  audio: ta/audio/142.mp3
+- id: ''
+  ta_id: 143
+  front: 143. Tenho a certeza
+  audio: ta/audio/143.mp3
+- id: ''
+  ta_id: 144
+  front: 144. Espere, por favor
+  audio: ta/audio/144.mp3
+- id: ''
+  ta_id: 145
+  front: 145. Onde fica a casa de banho?
+  audio: ta/audio/145.mp3
+- id: ''
+  ta_id: 146
+  front: 146. Que horas são?
+  audio: ta/audio/146.mp3
+- id: ''
+  ta_id: 147
+  front: 147. O que é isto / isso?
+  audio: ta/audio/147.mp3
+- id: ''
+  ta_id: 148
+  front: 148. Desculpe, você trabalha aqui? O senhor / a senhora trabalha aqui?
+  audio: ta/audio/148.mp3
+- id: ''
+  ta_id: 149
+  front: 149. É muito simpático!
+  audio: ta/audio/149.mp3
+- id: ''
+  ta_id: 150
+  front: 150. Posso tirar uma foto?
+  audio: ta/audio/150.mp3
+- id: ''
+  ta_id: 151
+  front: 151. Mostra-me como é
+  audio: ta/audio/151.mp3
+- id: ''
+  ta_id: 152
+  front: 152. Não tenho dinheiro comigo
+  audio: ta/audio/152.mp3
+- id: ''
+  ta_id: 153
+  front: 153. Sabe quem é o dono deste cão?
+  audio: ta/audio/153.mp3
+- id: ''
+  ta_id: 154
+  front: 154. Pode fechar a porta/janela se faz favor?
+  audio: ta/audio/154.mp3
+- id: ''
+  ta_id: 155
+  front: 155. Precisa de ajuda?
+  audio: ta/audio/155.mp3
+- id: ''
+  ta_id: 156
+  front: 156. Não sei
+  audio: ta/audio/156.mp3
+- id: ''
+  ta_id: 157
+  front: 157. Tenho de ir
+  audio: ta/audio/157.mp3
+- id: ''
+  ta_id: 158
+  front: 158. Não posso fazer nada
+  audio: ta/audio/158.mp3
+- id: ''
+  ta_id: 159
+  front: 159. O que eu posso fazer? Como posso ajudar?
+  audio: ta/audio/159.mp3
+- id: ''
+  ta_id: 160
+  front: 160. Obrigado(a). De nada
+  audio: ta/audio/160.mp3
+- id: ''
+  ta_id: 161
+  front: 161. Posso entrar?
+  audio: ta/audio/161.mp3
+- id: ''
+  ta_id: 162
+  front: 162. Não trabalhamos por causa da greve / por causa do feriado
+  audio: ta/audio/162.mp3
+- id: ''
+  ta_id: 163
+  front: 163. Sinto muito / Lamento / Os meus sentimentos
+  audio: ta/audio/163.mp3
+- id: ''
+  ta_id: 164
+  front: 164. Pois, faz sentido
+  audio: ta/audio/164.mp3
+- id: ''
+  ta_id: 165
+  front: 165. Estou muito embaraçado(a)
+  audio: ta/audio/165.mp3
+- id: ''
+  ta_id: 166
+  front: 166. Não estou a perceber / Não percebo
+  audio: ta/audio/166.mp3
+- id: ''
+  ta_id: 167
+  front: 167. Esta água é potável?
+  audio: ta/audio/167.mp3
+- id: ''
+  ta_id: 168
+  front: 168. O que vais fazer hoje? Quais são os teus planos?
+  audio: ta/audio/168.mp3
+- id: ''
+  ta_id: 169
+  front: 169. Tenho de esperar quanto tempo?
+  audio: ta/audio/169.mp3
+- id: ''
+  ta_id: 170
+  front: 170. Tudo bem, não tenho pressa
+  audio: ta/audio/170.mp3
+- id: ''
+  ta_id: 171
+  front: 171. A entrada é gratuita às segundas-feiras
+  audio: ta/audio/171.mp3
+- id: ''
+  ta_id: 172
+  front: 172. Trabalha às quartas-feiras? Está aberto às quartas?
+  audio: ta/audio/172.mp3
+- id: ''
+  ta_id: 173
+  front: 173. Eles não trabalham aos sábados e domingos
+  audio: ta/audio/173.mp3
+- id: ''
+  ta_id: 174
+  front: 174. Desculpe pelo atraso
+  audio: ta/audio/174.mp3
+- id: ''
+  ta_id: 175
+  front: 175. Saúde! Santinho! Santinha!
+  audio: ta/audio/175.mp3
+- id: ''
+  ta_id: 176
+  front: 176. Posso fumar aqui? Pode trazer um cinzeiro?
+  audio: ta/audio/176.mp3
+- id: ''
+  ta_id: 177
+  front: 177. O meu carro avariou / O teu computador avariou
+  audio: ta/audio/177.mp3
+- id: ''
+  ta_id: 178
+  front: 178. Vai subir ou descer?
+  audio: ta/audio/178.mp3
+- id: ''
+  ta_id: 179
+  front: 179. Desculpe, tem carregador de telemóvel?
+  audio: ta/audio/179.mp3
+- id: ''
+  ta_id: 180
+  front: 180. Quem é que está a seguir?
+  audio: ta/audio/180.mp3
+- id: ''
+  ta_id: 181
+  front: 181. A entrada é interdita / proibida
+  audio: ta/audio/181.mp3
+- id: ''
+  ta_id: 182
+  front: 182. Um bilhete para... se faz favor
+  audio: ta/audio/182.mp3
+- id: ''
+  ta_id: 183
+  front: 183. Um bilhete de ida e volta
+  audio: ta/audio/183.mp3
+- id: ''
+  ta_id: 184
+  front: 184. Há algum desconto para crianças / reformados?
+  audio: ta/audio/184.mp3
+- id: ''
+  ta_id: 185
+  front: 185. De que plataforma parte o autocarro / a camioneta?
+  audio: ta/audio/185.mp3
+- id: ''
+  ta_id: 186
+  front: 186. Desculpe, acho que este lugar é meu
+  audio: ta/audio/186.mp3
+- id: ''
+  ta_id: 187
+  front: 187. Quero fazer / carregar um passe mensal
+  audio: ta/audio/187.mp3
+- id: ''
+  ta_id: 188
+  front: 188. Pode puxar o banco mais para a frente?
+  audio: ta/audio/188.mp3
+- id: ''
+  ta_id: 189
+  front: 189. Podia levar-me para esta morada, se faz favor?
+  audio: ta/audio/189.mp3
+- id: ''
+  ta_id: 190
+  front: 190. Vire à direita
+  audio: ta/audio/190.mp3
+- id: ''
+  ta_id: 191
+  front: 191. Vire à esquerda
+  audio: ta/audio/191.mp3
+- id: ''
+  ta_id: 192
+  front: 192. Pode seguir o GPS
+  audio: ta/audio/192.mp3
+- id: ''
+  ta_id: 193
+  front: 193. Siga em frente.
+  audio: ta/audio/193.mp3
+- id: ''
+  ta_id: 194
+  front: 194. Pode baixar um pouco a música?
+  audio: ta/audio/194.mp3
+- id: ''
+  ta_id: 195
+  front: 195. Pode parar aqui?
+  audio: ta/audio/195.mp3
+- id: ''
+  ta_id: 196
+  front: 196. Bomba 5 (cinco), 10 (dez) litros de gasolina simples, 95 (noventa e cinco)
+  audio: ta/audio/196.mp3
+- id: ''
+  ta_id: 197
+  front: 197. Bomba 3 (três), vinte euros de gasóleo
+  audio: ta/audio/197.mp3
+- id: ''
+  ta_id: 198
+  front: 198. Queria encher o depósito
+  audio: ta/audio/198.mp3
+- id: ''
+  ta_id: 199
+  front: 199. Este estacionamento é pago? É gratuito?
+  audio: ta/audio/199.mp3
+- id: ''
+  ta_id: 200
+  front: 200. Onde posso pagar o estacionamento?
+  audio: ta/audio/200.mp3
