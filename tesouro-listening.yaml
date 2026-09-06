@@ -1,0 +1,93 @@
+deck: tesouro-listening
+model: words
+cards:
+- id: ts0001
+  word: ts0001
+  front: ''
+  audio: tesouro/audio/ch01/ts0001.mp3
+  back: <b>O João é biólogo.</b><br>João is a biologist.
+  tags: [tesouro, listening, chapter01]
+- id: ts0002
+  word: ts0002
+  front: ''
+  audio: tesouro/audio/ch01/ts0002.mp3
+  back: <b>A Antónia é reformada.</b><br>Antónia is retired.
+  tags: [tesouro, listening, chapter01]
+- id: ts0003
+  word: ts0003
+  front: ''
+  audio: tesouro/audio/ch01/ts0003.mp3
+  back: <b>O João é primo da Antónia.</b><br>João is Antónia’s cousin.
+  tags: [tesouro, listening, chapter01]
+- id: ts0004
+  word: ts0004
+  front: ''
+  audio: tesouro/audio/ch01/ts0004.mp3
+  back: <b>O João está em Portugal.</b><br>João is in Portugal.
+  tags: [tesouro, listening, chapter01]
+- id: ts0005
+  word: ts0005
+  front: ''
+  audio: tesouro/audio/ch01/ts0005.mp3
+  back: <b>Ele está nos Açores.</b><br>He is in the Azores.
+  tags: [tesouro, listening, chapter01]
+- id: ts0006
+  word: ts0006
+  front: ''
+  audio: tesouro/audio/ch01/ts0006.mp3
+  back: <b>Os Açores são em Portugal.</b><br>The Azores are in Portugal.
+  tags: [tesouro, listening, chapter01]
+- id: ts0007
+  word: ts0007
+  front: ''
+  audio: tesouro/audio/ch01/ts0007.mp3
+  back: <b>Ele está em casa da Antónia.</b><br>He is at Antónia’s house.
+  tags: [tesouro, listening, chapter01]
+- id: ts0008
+  word: ts0008
+  front: ''
+  audio: tesouro/audio/ch01/ts0008.mp3
+  back: <b>E ele está de férias.</b><br>And he is on holiday.
+  tags: [tesouro, listening, chapter01]
+- id: ts0009
+  word: ts0009
+  front: ''
+  audio: tesouro/audio/ch01/ts0009.mp3
+  back: <b>Olá, João.</b><br>Hello, João.
+  tags: [tesouro, listening, chapter01]
+- id: ts0010
+  word: ts0010
+  front: ''
+  audio: tesouro/audio/ch01/ts0010.mp3
+  back: <b>Olá, Antónia.</b><br>Hello, Antónia.
+  tags: [tesouro, listening, chapter01]
+- id: ts0011
+  word: ts0011
+  front: ''
+  audio: tesouro/audio/ch01/ts0011.mp3
+  back: <b>Oh, não!</b><br>Oh, no!
+  tags: [tesouro, listening, chapter01]
+- id: ts0012
+  word: ts0012
+  front: ''
+  audio: tesouro/audio/ch01/ts0012.mp3
+  back: <b>O vinho tinto não está aqui.</b><br>The red wine isn’t here.
+  tags: [tesouro, listening, chapter01]
+- id: ts0013
+  word: ts0013
+  front: ''
+  audio: tesouro/audio/ch01/ts0013.mp3
+  back: <b>Eu sou distraída e estou cansada.</b><br>I’m absent-minded and I’m tired.
+  tags: [tesouro, listening, chapter01]
+- id: ts0014
+  word: ts0014
+  front: ''
+  audio: tesouro/audio/ch01/ts0014.mp3
+  back: <b>Mas não há problema!</b><br>But there’s no problem!
+  tags: [tesouro, listening, chapter01]
+- id: ts0015
+  word: ts0015
+  front: ''
+  audio: tesouro/audio/ch01/ts0015.mp3
+  back: <b>Aqui está o vinho branco.</b><br>Here’s the white wine.
+  tags: [tesouro, listening, chapter01]
