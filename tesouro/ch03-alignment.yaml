@@ -1,0 +1,116 @@
+source_file: Storyglot-O_Tesouro_Submerso_chpt3.mp3
+chapter: 3
+method: WebRTC VAD + exact section timecodes from EPUB; sentence units mapped in order; headings excluded
+cards:
+- id: ts0038
+  start: 4.47
+  end: 6.84
+  text: A Marina é turista.
+- id: ts0039
+  start: 7.02
+  end: 10.47
+  text: Ela está no hotel em Faro.
+- id: ts0040
+  start: 10.98
+  end: 13.92
+  text: Boa noite.
+- id: ts0041
+  start: 13.95
+  end: 16.44
+  text: Eu tenho uma reserva.
+- id: ts0042
+  start: 17.43
+  end: 18.66
+  text: Boa noite.
+- id: ts0043
+  start: 18.72
+  end: 20.55
+  text: Qual é o nome?
+- id: ts0044
+  start: 21.3
+  end: 23.04
+  text: Marina Alva.
+- id: ts0045
+  start: 24.24
+  end: 26.22
+  text: Um momento, por favor.
+- id: ts0046
+  start: 26.82
+  end: 29.97
+  text: Um quarto para duas pessoas?
+- id: ts0047
+  start: 31.41
+  end: 32.78
+  text: Não, não.
+- id: ts0048
+  start: 32.78
+  end: 34.53
+  text: Para uma pessoa.
+- id: ts0049
+  start: 35.64
+  end: 38.16
+  text: Ah, sim.
+- id: ts0050
+  start: 39.06
+  end: 40.77
+  text: Desculpe.
+- id: ts0051
+  start: 41.49
+  end: 43.2
+  text: Três noites?
+- id: ts0052
+  start: 44.01
+  end: 46.47
+  text: Sim, correto.
+- id: ts0053
+  start: 47.34
+  end: 49.02
+  text: A senhora tem uma mala?
+- id: ts0054
+  start: 49.68
+  end: 51.12
+  text: Sim, tenho.
+- id: ts0055
+  start: 52.29
+  end: 54.21
+  text: Aqui está.
+- id: ts0056
+  start: 55.83
+  end: 57.0
+  text: Muito obrigada.
+- id: ts0057
+  start: 61.38
+  end: 63.69
+  text: A Marina está no quarto.
+- id: ts0058
+  start: 64.26
+  end: 67.29
+  text: Está muito cansada.
+- id: ts0059
+  start: 68.25
+  end: 71.61
+  text: Ela quer tomar um duche.
+- id: ts0060
+  start: 71.79
+  end: 74.31
+  text: Ela quer abrir a mala.
+- id: ts0061
+  start: 75.3
+  end: 77.64
+  text: Ela quer roupa limpa.
+- id: ts0062
+  start: 77.88
+  end: 81.03
+  text: Ela abre a mala.
+- id: ts0063
+  start: 81.27
+  end: 83.28
+  text: Ela olha para o fecho da mala.
+- id: ts0064
+  start: 83.82
+  end: 84.93
+  text: Está partido.
+- id: ts0065
+  start: 84.93
+  end: 86.4
+  text: A Marina está confusa.
