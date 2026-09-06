@@ -5,3 +5,6 @@ __pycache__/
 *.pyc
 
 ta/*.html
+
+tesouro/audio/
+tesouro/source/
