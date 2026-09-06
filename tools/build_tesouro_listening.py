@@ -116,6 +116,36 @@ def load_alignment() -> list[dict[str, str]]:
         return list(csv.DictReader(f))
 
 
+def reconcile_units(cards: list[dict[str, str]], units: list[str]) -> list[str]:
+    """Reconcile a small punctuation-only difference in PT/EN segmentation.
+
+    The audio sometimes keeps an ellipsis-linked pair in one card (for example
+    ``Olhe… Cuidado!``), while the English book puts the two parts in adjacent
+    translated paragraphs. Merge those adjacent English units when that is the
+    only count difference.
+    """
+    units = list(units)
+    while len(units) > len(cards):
+        merged = False
+        # Work backwards so a final ellipsis-linked card naturally consumes the
+        # final two English units.
+        for i in range(len(cards) - 1, -1, -1):
+            text = cards[i]["text"]
+            if "…" not in text and "..." not in text:
+                continue
+            extra = len(units) - len(cards)
+            # Before card i there should normally be i units. With only a small
+            # positive count delta, merge the pair that lands at this card.
+            j = i + extra - 1
+            if 0 <= j < len(units) - 1:
+                units[j : j + 2] = [f"{units[j]} {units[j + 1]}".strip()]
+                merged = True
+                break
+        if not merged:
+            break
+    return units
+
+
 def map_translations(rows: list[dict[str, str]]) -> tuple[dict[str, str], list[dict[str, str]]]:
     by_chapter: dict[int, list[dict[str, str]]] = {}
     for row in rows:
@@ -145,8 +175,6 @@ def map_translations(rows: list[dict[str, str]]) -> tuple[dict[str, str], list[d
                 end += 1
 
             if end >= len(cards) or joined != target:
-                # Do not silently drift: a later group cannot safely be mapped
-                # until the current Portuguese source group is accounted for.
                 raise RuntimeError(
                     f"Chapter {chapter}: source group did not match at {cards[pos]['id']}: {pt_source!r}"
                 )
@@ -155,6 +183,7 @@ def map_translations(rows: list[dict[str, str]]) -> tuple[dict[str, str], list[d
             en_units: list[str] = []
             for chunk in en_chunks:
                 en_units.extend(split_en(chunk))
+            en_units = reconcile_units(group_cards, en_units)
 
             if len(group_cards) == 1:
                 translations[group_cards[0]["id"]] = " ".join(clean_en(x) for x in en_chunks)
