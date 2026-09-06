@@ -19,7 +19,7 @@ import urllib.request
 
 import yaml
 
-ANKI_URL = "http://localhost:8765"
+ANKI_URL = os.environ.get("ANKI_CONNECT_URL", "http://localhost:8765")
 
 
 def anki(action, **params):

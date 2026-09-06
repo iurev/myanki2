@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Unsuspend Anki cards by note `id` using AnkiConnect. Dry-run by default."""
-import argparse, json, urllib.request
+import argparse, json, os, urllib.request
 from pathlib import Path
-ANKI_URL="http://localhost:8765"
+ANKI_URL=os.environ.get("ANKI_CONNECT_URL", "http://localhost:8765")
 
 def anki(action, **params):
     body=json.dumps({"action":action,"version":6,"params":params}).encode()
