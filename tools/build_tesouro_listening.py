@@ -43,6 +43,10 @@ def clean_en(s: str) -> str:
 
 def split_en(s: str) -> list[str]:
     s = html.unescape(s).replace("\u200e", "").replace("\u200f", "").strip()
+    # Parenthetical literal glosses are explanatory notes, not extra spoken
+    # sentence translations; dropping them also prevents ``lit.`` being seen
+    # as a false sentence boundary.
+    s = re.sub(r"\s*\(lit\.[^)]*\)", "", s, flags=re.IGNORECASE)
     parts = re.split(r"(?<=[.!?])\s+(?=[A-Z0-9“\"‘])", s)
     return [clean_en(p) for p in parts if clean_en(p)]
 
@@ -117,25 +121,15 @@ def load_alignment() -> list[dict[str, str]]:
 
 
 def reconcile_units(cards: list[dict[str, str]], units: list[str]) -> list[str]:
-    """Reconcile a small punctuation-only difference in PT/EN segmentation.
-
-    The audio sometimes keeps an ellipsis-linked pair in one card (for example
-    ``Olhe… Cuidado!``), while the English book puts the two parts in adjacent
-    translated paragraphs. Merge those adjacent English units when that is the
-    only count difference.
-    """
+    """Reconcile small punctuation-only differences in PT/EN segmentation."""
     units = list(units)
     while len(units) > len(cards):
         merged = False
-        # Work backwards so a final ellipsis-linked card naturally consumes the
-        # final two English units.
         for i in range(len(cards) - 1, -1, -1):
             text = cards[i]["text"]
             if "…" not in text and "..." not in text:
                 continue
             extra = len(units) - len(cards)
-            # Before card i there should normally be i units. With only a small
-            # positive count delta, merge the pair that lands at this card.
             j = i + extra - 1
             if 0 <= j < len(units) - 1:
                 units[j : j + 2] = [f"{units[j]} {units[j + 1]}".strip()]
