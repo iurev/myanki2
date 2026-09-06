@@ -5,89 +5,1871 @@ cards:
   word: ts0001
   front: ''
   audio: tesouro/audio/ch01/ts0001.mp3
-  back: <b>O João é biólogo.</b><br>João is a biologist.
+  back: "<b>O João é biólogo.</b><br>João is a biologist."
   tags: [tesouro, listening, chapter01]
 - id: ts0002
   word: ts0002
   front: ''
   audio: tesouro/audio/ch01/ts0002.mp3
-  back: <b>A Antónia é reformada.</b><br>Antónia is retired.
+  back: "<b>A Antónia é reformada.</b><br>Antónia is retired."
   tags: [tesouro, listening, chapter01]
 - id: ts0003
   word: ts0003
   front: ''
   audio: tesouro/audio/ch01/ts0003.mp3
-  back: <b>O João é primo da Antónia.</b><br>João is Antónia’s cousin.
+  back: "<b>O João é primo da Antónia.</b><br>João is Antónia’s cousin."
   tags: [tesouro, listening, chapter01]
 - id: ts0004
   word: ts0004
   front: ''
   audio: tesouro/audio/ch01/ts0004.mp3
-  back: <b>O João está em Portugal.</b><br>João is in Portugal.
+  back: "<b>O João está em Portugal.</b><br>João is in Portugal."
   tags: [tesouro, listening, chapter01]
 - id: ts0005
   word: ts0005
   front: ''
   audio: tesouro/audio/ch01/ts0005.mp3
-  back: <b>Ele está nos Açores.</b><br>He is in the Azores.
+  back: "<b>Ele está nos Açores.</b><br>He is in the Azores."
   tags: [tesouro, listening, chapter01]
 - id: ts0006
   word: ts0006
   front: ''
   audio: tesouro/audio/ch01/ts0006.mp3
-  back: <b>Os Açores são em Portugal.</b><br>The Azores are in Portugal.
+  back: "<b>Os Açores são em Portugal.</b><br>The Azores are in Portugal."
   tags: [tesouro, listening, chapter01]
 - id: ts0007
   word: ts0007
   front: ''
   audio: tesouro/audio/ch01/ts0007.mp3
-  back: <b>Ele está em casa da Antónia.</b><br>He is at Antónia’s house.
+  back: "<b>Ele está em casa da Antónia.</b><br>He is at Antonia’s (house)."
   tags: [tesouro, listening, chapter01]
 - id: ts0008
   word: ts0008
   front: ''
   audio: tesouro/audio/ch01/ts0008.mp3
-  back: <b>E ele está de férias.</b><br>And he is on holiday.
+  back: "<b>E ele está de férias.</b><br>And he is on vacation."
   tags: [tesouro, listening, chapter01]
 - id: ts0009
   word: ts0009
   front: ''
   audio: tesouro/audio/ch01/ts0009.mp3
-  back: <b>Olá, João.</b><br>Hello, João.
+  back: "<b>Olá, João.</b><br>Hello, João."
   tags: [tesouro, listening, chapter01]
 - id: ts0010
   word: ts0010
   front: ''
   audio: tesouro/audio/ch01/ts0010.mp3
-  back: <b>Olá, Antónia.</b><br>Hello, Antónia.
+  back: "<b>Olá, Antónia.</b><br>Hello, Antónia."
   tags: [tesouro, listening, chapter01]
 - id: ts0011
   word: ts0011
   front: ''
   audio: tesouro/audio/ch01/ts0011.mp3
-  back: <b>Oh, não!</b><br>Oh, no!
+  back: "<b>Oh, não!</b><br>Oh, no!"
   tags: [tesouro, listening, chapter01]
 - id: ts0012
   word: ts0012
   front: ''
   audio: tesouro/audio/ch01/ts0012.mp3
-  back: <b>O vinho tinto não está aqui.</b><br>The red wine isn’t here.
+  back: "<b>O vinho tinto não está aqui.</b><br>The red wine is not here."
   tags: [tesouro, listening, chapter01]
 - id: ts0013
   word: ts0013
   front: ''
   audio: tesouro/audio/ch01/ts0013.mp3
-  back: <b>Eu sou distraída e estou cansada.</b><br>I’m absent-minded and I’m tired.
+  back: "<b>Eu sou distraída e estou cansada.</b><br>I am distracted and I am tired."
   tags: [tesouro, listening, chapter01]
 - id: ts0014
   word: ts0014
   front: ''
   audio: tesouro/audio/ch01/ts0014.mp3
-  back: <b>Mas não há problema!</b><br>But there’s no problem!
+  back: "<b>Mas não há problema!</b><br>But, no problem!"
   tags: [tesouro, listening, chapter01]
 - id: ts0015
   word: ts0015
   front: ''
   audio: tesouro/audio/ch01/ts0015.mp3
-  back: <b>Aqui está o vinho branco.</b><br>Here’s the white wine.
+  back: "<b>Aqui está o vinho branco.</b><br>Here is the white wine."
   tags: [tesouro, listening, chapter01]
+- id: ts0016
+  word: ts0016
+  front: ''
+  audio: tesouro/audio/ch02/ts0016.mp3
+  back: "<b>O João está no terraço.</b><br>João is on the terrace."
+  tags: [tesouro, listening, chapter02]
+- id: ts0017
+  word: ts0017
+  front: ''
+  audio: tesouro/audio/ch02/ts0017.mp3
+  back: "<b>Ele está feliz.</b><br>He is happy."
+  tags: [tesouro, listening, chapter02]
+- id: ts0018
+  word: ts0018
+  front: ''
+  audio: tesouro/audio/ch02/ts0018.mp3
+  back: "<b>Ele está a ver o mar.</b><br>He is watching the sea."
+  tags: [tesouro, listening, chapter02]
+- id: ts0019
+  word: ts0019
+  front: ''
+  audio: tesouro/audio/ch02/ts0019.mp3
+  back: "<b>A prima Antónia está a cozinhar.</b><br>Cousin Antónia is cooking."
+  tags: [tesouro, listening, chapter02]
+- id: ts0020
+  word: ts0020
+  front: ''
+  audio: tesouro/audio/ch02/ts0020.mp3
+  back: "<b>O jantar está pronto!</b><br>Dinner is ready!"
+  tags: [tesouro, listening, chapter02]
+- id: ts0021
+  word: ts0021
+  front: ''
+  audio: tesouro/audio/ch02/ts0021.mp3
+  back: "<b>Tu estás com fome?</b><br>Are you hungry?"
+  tags: [tesouro, listening, chapter02]
+- id: ts0022
+  word: ts0022
+  front: ''
+  audio: tesouro/audio/ch02/ts0022.mp3
+  back: "<b>Sim, eu estou com fome.</b><br>Yes, I am hungry."
+  tags: [tesouro, listening, chapter02]
+- id: ts0023
+  word: ts0023
+  front: ''
+  audio: tesouro/audio/ch02/ts0023.mp3
+  back: "<b>E tu és simpática.</b><br>And you are nice."
+  tags: [tesouro, listening, chapter02]
+- id: ts0024
+  word: ts0024
+  front: ''
+  audio: tesouro/audio/ch02/ts0024.mp3
+  back: "<b>O João olha para o mar.</b><br>João looks at the sea."
+  tags: [tesouro, listening, chapter02]
+- id: ts0025
+  word: ts0025
+  front: ''
+  audio: tesouro/audio/ch02/ts0025.mp3
+  back: "<b>Ele chama a Antónia.</b><br>He calls Antónia."
+  tags: [tesouro, listening, chapter02]
+- id: ts0026
+  word: ts0026
+  front: ''
+  audio: tesouro/audio/ch02/ts0026.mp3
+  back: "<b>Antónia!</b><br>Antónia!"
+  tags: [tesouro, listening, chapter02]
+- id: ts0027
+  word: ts0027
+  front: ''
+  audio: tesouro/audio/ch02/ts0027.mp3
+  back: "<b>Sim?</b><br>Yes?"
+  tags: [tesouro, listening, chapter02]
+- id: ts0028
+  word: ts0028
+  front: ''
+  audio: tesouro/audio/ch02/ts0028.mp3
+  back: "<b>Ali!</b><br>There!"
+  tags: [tesouro, listening, chapter02]
+- id: ts0029
+  word: ts0029
+  front: ''
+  audio: tesouro/audio/ch02/ts0029.mp3
+  back: "<b>Uma coisa no mar.</b><br>Something (a thing) in the sea."
+  tags: [tesouro, listening, chapter02]
+- id: ts0030
+  word: ts0030
+  front: ''
+  audio: tesouro/audio/ch02/ts0030.mp3
+  back: "<b>Uma ilha?</b><br>An island?"
+  tags: [tesouro, listening, chapter02]
+- id: ts0031
+  word: ts0031
+  front: ''
+  audio: tesouro/audio/ch02/ts0031.mp3
+  back: "<b>Ali?</b><br>There?"
+  tags: [tesouro, listening, chapter02]
+- id: ts0032
+  word: ts0032
+  front: ''
+  audio: tesouro/audio/ch02/ts0032.mp3
+  back: "<b>Não é possível.</b><br>It’s not possible."
+  tags: [tesouro, listening, chapter02]
+- id: ts0033
+  word: ts0033
+  front: ''
+  audio: tesouro/audio/ch02/ts0033.mp3
+  back: "<b>Ali, ali!</b><br>There, there!"
+  tags: [tesouro, listening, chapter02]
+- id: ts0034
+  word: ts0034
+  front: ''
+  audio: tesouro/audio/ch02/ts0034.mp3
+  back: "<b>Onde?</b><br>Where?"
+  tags: [tesouro, listening, chapter02]
+- id: ts0035
+  word: ts0035
+  front: ''
+  audio: tesouro/audio/ch02/ts0035.mp3
+  back: "<b>Eu não vejo nada.</b><br>I don’t see anything."
+  tags: [tesouro, listening, chapter02]
+- id: ts0036
+  word: ts0036
+  front: ''
+  audio: tesouro/audio/ch02/ts0036.mp3
+  back: "<b>Que estranho.</b><br>That’s weird."
+  tags: [tesouro, listening, chapter02]
+- id: ts0037
+  word: ts0037
+  front: ''
+  audio: tesouro/audio/ch02/ts0037.mp3
+  back: "<b>Agora o João também não vê a coisa.</b><br>Now João also doesn’t see the thing."
+  tags: [tesouro, listening, chapter02]
+- id: ts0038
+  word: ts0038
+  front: ''
+  audio: tesouro/audio/ch03/ts0038.mp3
+  back: "<b>A Marina é turista.</b><br>Marina is a tourist."
+  tags: [tesouro, listening, chapter03]
+- id: ts0039
+  word: ts0039
+  front: ''
+  audio: tesouro/audio/ch03/ts0039.mp3
+  back: "<b>Ela está no hotel em Faro.</b><br>She is at the hotel in Faro."
+  tags: [tesouro, listening, chapter03]
+- id: ts0040
+  word: ts0040
+  front: ''
+  audio: tesouro/audio/ch03/ts0040.mp3
+  back: "<b>Boa noite.</b><br>Good evening."
+  tags: [tesouro, listening, chapter03]
+- id: ts0041
+  word: ts0041
+  front: ''
+  audio: tesouro/audio/ch03/ts0041.mp3
+  back: "<b>Eu tenho uma reserva.</b><br>I have a reservation."
+  tags: [tesouro, listening, chapter03]
+- id: ts0042
+  word: ts0042
+  front: ''
+  audio: tesouro/audio/ch03/ts0042.mp3
+  back: "<b>Boa noite.</b><br>Good evening."
+  tags: [tesouro, listening, chapter03]
+- id: ts0043
+  word: ts0043
+  front: ''
+  audio: tesouro/audio/ch03/ts0043.mp3
+  back: "<b>Qual é o nome?</b><br>What is the name?"
+  tags: [tesouro, listening, chapter03]
+- id: ts0044
+  word: ts0044
+  front: ''
+  audio: tesouro/audio/ch03/ts0044.mp3
+  back: "<b>Marina Alva.</b><br>Marina Alva."
+  tags: [tesouro, listening, chapter03]
+- id: ts0045
+  word: ts0045
+  front: ''
+  audio: tesouro/audio/ch03/ts0045.mp3
+  back: "<b>Um momento, por favor.</b><br>One moment, please."
+  tags: [tesouro, listening, chapter03]
+- id: ts0046
+  word: ts0046
+  front: ''
+  audio: tesouro/audio/ch03/ts0046.mp3
+  back: "<b>Um quarto para duas pessoas?</b><br>A room for two (people)?"
+  tags: [tesouro, listening, chapter03]
+- id: ts0047
+  word: ts0047
+  front: ''
+  audio: tesouro/audio/ch03/ts0047.mp3
+  back: "<b>Não, não.</b><br>No, no."
+  tags: [tesouro, listening, chapter03]
+- id: ts0048
+  word: ts0048
+  front: ''
+  audio: tesouro/audio/ch03/ts0048.mp3
+  back: "<b>Para uma pessoa.</b><br>For one person."
+  tags: [tesouro, listening, chapter03]
+- id: ts0049
+  word: ts0049
+  front: ''
+  audio: tesouro/audio/ch03/ts0049.mp3
+  back: "<b>Ah, sim.</b><br>Oh, yes."
+  tags: [tesouro, listening, chapter03]
+- id: ts0050
+  word: ts0050
+  front: ''
+  audio: tesouro/audio/ch03/ts0050.mp3
+  back: "<b>Desculpe.</b><br>Sorry."
+  tags: [tesouro, listening, chapter03]
+- id: ts0051
+  word: ts0051
+  front: ''
+  audio: tesouro/audio/ch03/ts0051.mp3
+  back: "<b>Três noites?</b><br>Three nights?"
+  tags: [tesouro, listening, chapter03]
+- id: ts0052
+  word: ts0052
+  front: ''
+  audio: tesouro/audio/ch03/ts0052.mp3
+  back: "<b>Sim, correto.</b><br>Yes, correct."
+  tags: [tesouro, listening, chapter03]
+- id: ts0053
+  word: ts0053
+  front: ''
+  audio: tesouro/audio/ch03/ts0053.mp3
+  back: "<b>A senhora tem uma mala?</b><br>Do you have a suitcase?"
+  tags: [tesouro, listening, chapter03]
+- id: ts0054
+  word: ts0054
+  front: ''
+  audio: tesouro/audio/ch03/ts0054.mp3
+  back: "<b>Sim, tenho.</b><br>Yes, I do."
+  tags: [tesouro, listening, chapter03]
+- id: ts0055
+  word: ts0055
+  front: ''
+  audio: tesouro/audio/ch03/ts0055.mp3
+  back: "<b>Aqui está.</b><br>Here it is."
+  tags: [tesouro, listening, chapter03]
+- id: ts0056
+  word: ts0056
+  front: ''
+  audio: tesouro/audio/ch03/ts0056.mp3
+  back: "<b>Muito obrigada.</b><br>Thank you very much."
+  tags: [tesouro, listening, chapter03]
+- id: ts0057
+  word: ts0057
+  front: ''
+  audio: tesouro/audio/ch03/ts0057.mp3
+  back: "<b>A Marina está no quarto.</b><br>Marina is in the room."
+  tags: [tesouro, listening, chapter03]
+- id: ts0058
+  word: ts0058
+  front: ''
+  audio: tesouro/audio/ch03/ts0058.mp3
+  back: "<b>Está muito cansada.</b><br>She is very tired."
+  tags: [tesouro, listening, chapter03]
+- id: ts0059
+  word: ts0059
+  front: ''
+  audio: tesouro/audio/ch03/ts0059.mp3
+  back: "<b>Ela quer tomar um duche.</b><br>She wants to take a shower."
+  tags: [tesouro, listening, chapter03]
+- id: ts0060
+  word: ts0060
+  front: ''
+  audio: tesouro/audio/ch03/ts0060.mp3
+  back: "<b>Ela quer abrir a mala.</b><br>She wants to open the suitcase."
+  tags: [tesouro, listening, chapter03]
+- id: ts0061
+  word: ts0061
+  front: ''
+  audio: tesouro/audio/ch03/ts0061.mp3
+  back: "<b>Ela quer roupa limpa.</b><br>She wants clean clothes."
+  tags: [tesouro, listening, chapter03]
+- id: ts0062
+  word: ts0062
+  front: ''
+  audio: tesouro/audio/ch03/ts0062.mp3
+  back: "<b>Ela abre a mala.</b><br>She opens the suitcase."
+  tags: [tesouro, listening, chapter03]
+- id: ts0063
+  word: ts0063
+  front: ''
+  audio: tesouro/audio/ch03/ts0063.mp3
+  back: "<b>Ela olha para o fecho da mala.</b><br>She looks at the bag’s zipper."
+  tags: [tesouro, listening, chapter03]
+- id: ts0064
+  word: ts0064
+  front: ''
+  audio: tesouro/audio/ch03/ts0064.mp3
+  back: "<b>Está partido.</b><br>It’s broken."
+  tags: [tesouro, listening, chapter03]
+- id: ts0065
+  word: ts0065
+  front: ''
+  audio: tesouro/audio/ch03/ts0065.mp3
+  back: "<b>A Marina está confusa.</b><br>Marina is confused."
+  tags: [tesouro, listening, chapter03]
+- id: ts0066
+  word: ts0066
+  front: ''
+  audio: tesouro/audio/ch04/ts0066.mp3
+  back: "<b>Bom dia.</b><br>Good Morning."
+  tags: [tesouro, listening, chapter04]
+- id: ts0067
+  word: ts0067
+  front: ''
+  audio: tesouro/audio/ch04/ts0067.mp3
+  back: "<b>Aqui está o barco. — diz o pescador.</b><br>Here’s the boat,” says the fisherman."
+  tags: [tesouro, listening, chapter04]
+- id: ts0068
+  word: ts0068
+  front: ''
+  audio: tesouro/audio/ch04/ts0068.mp3
+  back: "<b>Bom dia.</b><br>Good Morning."
+  tags: [tesouro, listening, chapter04]
+- id: ts0069
+  word: ts0069
+  front: ''
+  audio: tesouro/audio/ch04/ts0069.mp3
+  back: "<b>Muito obrigado! — diz o João.</b><br>Thank you very much!” says João."
+  tags: [tesouro, listening, chapter04]
+- id: ts0070
+  word: ts0070
+  front: ''
+  audio: tesouro/audio/ch04/ts0070.mp3
+  back: "<b>O senhor vai ao mar? — pergunta o pescador, incrédulo.</b><br>Are you going to sea?” asks the fisherman, incredulous."
+  tags: [tesouro, listening, chapter04]
+- id: ts0071
+  word: ts0071
+  front: ''
+  audio: tesouro/audio/ch04/ts0071.mp3
+  back: "<b>Vou, vou.</b><br>Yes, I am."
+  tags: [tesouro, listening, chapter04]
+- id: ts0072
+  word: ts0072
+  front: ''
+  audio: tesouro/audio/ch04/ts0072.mp3
+  back: "<b>O senhor vai pescar?</b><br>Are you going fishing?"
+  tags: [tesouro, listening, chapter04]
+- id: ts0073
+  word: ts0073
+  front: ''
+  audio: tesouro/audio/ch04/ts0073.mp3
+  back: "<b>Aqui há peixes!</b><br>There are fish here!"
+  tags: [tesouro, listening, chapter04]
+- id: ts0074
+  word: ts0074
+  front: ''
+  audio: tesouro/audio/ch04/ts0074.mp3
+  back: "<b>Uh, não, não vou pescar.</b><br>Uh, no, I’m not going fishing."
+  tags: [tesouro, listening, chapter04]
+- id: ts0075
+  word: ts0075
+  front: ''
+  audio: tesouro/audio/ch04/ts0075.mp3
+  back: "<b>Vai passear, então?</b><br>Are you going for a ride, then?"
+  tags: [tesouro, listening, chapter04]
+- id: ts0076
+  word: ts0076
+  front: ''
+  audio: tesouro/audio/ch04/ts0076.mp3
+  back: "<b>Eu vou… a uma ilha.</b><br>I’m going… to an island."
+  tags: [tesouro, listening, chapter04]
+- id: ts0077
+  word: ts0077
+  front: ''
+  audio: tesouro/audio/ch04/ts0077.mp3
+  back: "<b>Ali.</b><br>There."
+  tags: [tesouro, listening, chapter04]
+- id: ts0078
+  word: ts0078
+  front: ''
+  audio: tesouro/audio/ch04/ts0078.mp3
+  back: "<b>Ali?</b><br>There?"
+  tags: [tesouro, listening, chapter04]
+- id: ts0079
+  word: ts0079
+  front: ''
+  audio: tesouro/audio/ch04/ts0079.mp3
+  back: "<b>Ali não há nada.</b><br>There is nothing there."
+  tags: [tesouro, listening, chapter04]
+- id: ts0080
+  word: ts0080
+  front: ''
+  audio: tesouro/audio/ch04/ts0080.mp3
+  back: "<b>Tem a certeza?</b><br>Are you sure?"
+  tags: [tesouro, listening, chapter04]
+- id: ts0081
+  word: ts0081
+  front: ''
+  audio: tesouro/audio/ch04/ts0081.mp3
+  back: "<b>Tenho, tenho.</b><br>Yes, I am."
+  tags: [tesouro, listening, chapter04]
+- id: ts0082
+  word: ts0082
+  front: ''
+  audio: tesouro/audio/ch04/ts0082.mp3
+  back: "<b>Ali só há mar.</b><br>There is only sea there."
+  tags: [tesouro, listening, chapter04]
+- id: ts0083
+  word: ts0083
+  front: ''
+  audio: tesouro/audio/ch04/ts0083.mp3
+  back: "<b>É aqui? — pergunta o guia.</b><br>Is it here?” asks the guide."
+  tags: [tesouro, listening, chapter04]
+- id: ts0084
+  word: ts0084
+  front: ''
+  audio: tesouro/audio/ch04/ts0084.mp3
+  back: "<b>Sim.</b><br>Yes."
+  tags: [tesouro, listening, chapter04]
+- id: ts0085
+  word: ts0085
+  front: ''
+  audio: tesouro/audio/ch04/ts0085.mp3
+  back: "<b>Aqui desaparecem muitos barcos de pescadores.</b><br>Many fishing boats disappear here."
+  tags: [tesouro, listening, chapter04]
+- id: ts0086
+  word: ts0086
+  front: ''
+  audio: tesouro/audio/ch04/ts0086.mp3
+  back: "<b>Por isso vêm poucos barcos aqui.</b><br>That’s why few boats come here."
+  tags: [tesouro, listening, chapter04]
+- id: ts0087
+  word: ts0087
+  front: ''
+  audio: tesouro/audio/ch04/ts0087.mp3
+  back: "<b>A água não é segura.</b><br>The water is not safe."
+  tags: [tesouro, listening, chapter04]
+- id: ts0088
+  word: ts0088
+  front: ''
+  audio: tesouro/audio/ch04/ts0088.mp3
+  back: "<b>O João olha para a água.</b><br>João looks at the water."
+  tags: [tesouro, listening, chapter04]
+- id: ts0089
+  word: ts0089
+  front: ''
+  audio: tesouro/audio/ch04/ts0089.mp3
+  back: "<b>Ele vê uma luz na água.</b><br>He sees a light in the water."
+  tags: [tesouro, listening, chapter04]
+- id: ts0090
+  word: ts0090
+  front: ''
+  audio: tesouro/audio/ch04/ts0090.mp3
+  back: "<b>Olhe, ali!</b><br>Look, there!"
+  tags: [tesouro, listening, chapter04]
+- id: ts0091
+  word: ts0091
+  front: ''
+  audio: tesouro/audio/ch04/ts0091.mp3
+  back: "<b>O João estica o braço.</b><br>João stretches out his (the) arm."
+  tags: [tesouro, listening, chapter04]
+- id: ts0092
+  word: ts0092
+  front: ''
+  audio: tesouro/audio/ch04/ts0092.mp3
+  back: "<b>Ele quer tocar na água.</b><br>He wants to touch the water."
+  tags: [tesouro, listening, chapter04]
+- id: ts0093
+  word: ts0093
+  front: ''
+  audio: tesouro/audio/ch04/ts0093.mp3
+  back: "<b>Cuidado! — diz o guia.</b><br>Watch out!” says the guide."
+  tags: [tesouro, listening, chapter04]
+- id: ts0094
+  word: ts0094
+  front: ''
+  audio: tesouro/audio/ch04/ts0094.mp3
+  back: "<b>É uma caravela-portuguesa.</b><br>It’s a Portuguese man o’ war*."
+  tags: [tesouro, listening, chapter04]
+- id: ts0095
+  word: ts0095
+  front: ''
+  audio: tesouro/audio/ch04/ts0095.mp3
+  back: "<b>É muito venenosa.</b><br>It’s very poisonous."
+  tags: [tesouro, listening, chapter04]
+- id: ts0096
+  word: ts0096
+  front: ''
+  audio: tesouro/audio/ch04/ts0096.mp3
+  back: "<b>Eu sei.</b><br>I know."
+  tags: [tesouro, listening, chapter04]
+- id: ts0097
+  word: ts0097
+  front: ''
+  audio: tesouro/audio/ch04/ts0097.mp3
+  back: "<b>Eu sou biólogo.</b><br>I’m a biologist."
+  tags: [tesouro, listening, chapter04]
+- id: ts0098
+  word: ts0098
+  front: ''
+  audio: tesouro/audio/ch04/ts0098.mp3
+  back: "<b>Vou mergulhar aqui.</b><br>I am going to dive here."
+  tags: [tesouro, listening, chapter04]
+- id: ts0099
+  word: ts0099
+  front: ''
+  audio: tesouro/audio/ch04/ts0099.mp3
+  back: "<b>Eu quero ver o que está debaixo de água.</b><br>I want to see what’s underwater."
+  tags: [tesouro, listening, chapter04]
+- id: ts0100
+  word: ts0100
+  front: ''
+  audio: tesouro/audio/ch04/ts0100.mp3
+  back: "<b>Não!</b><br>No!"
+  tags: [tesouro, listening, chapter04]
+- id: ts0101
+  word: ts0101
+  front: ''
+  audio: tesouro/audio/ch04/ts0101.mp3
+  back: "<b>Está maluco?</b><br>Are you crazy?"
+  tags: [tesouro, listening, chapter04]
+- id: ts0102
+  word: ts0102
+  front: ''
+  audio: tesouro/audio/ch04/ts0102.mp3
+  back: "<b>Não é só uma.</b><br>It’s not just one."
+  tags: [tesouro, listening, chapter04]
+- id: ts0103
+  word: ts0103
+  front: ''
+  audio: tesouro/audio/ch04/ts0103.mp3
+  back: "<b>São muitas caravelas-portuguesas.</b><br>There are many Portuguese man o’ war."
+  tags: [tesouro, listening, chapter04]
+- id: ts0104
+  word: ts0104
+  front: ''
+  audio: tesouro/audio/ch04/ts0104.mp3
+  back: "<b>Olhe… Cuidado!</b><br>Look… Watch out!"
+  tags: [tesouro, listening, chapter04]
+- id: ts0105
+  word: ts0105
+  front: ''
+  audio: tesouro/audio/ch04/ts0105.mp3
+  back: "<b>O João mergulha.</b><br>João dives."
+  tags: [tesouro, listening, chapter04]
+- id: ts0106
+  word: ts0106
+  front: ''
+  audio: tesouro/audio/ch04/ts0106.mp3
+  back: "<b>O João está dentro de água.</b><br>João is in (inside) the water."
+  tags: [tesouro, listening, chapter04]
+- id: ts0107
+  word: ts0107
+  front: ''
+  audio: tesouro/audio/ch04/ts0107.mp3
+  back: "<b>Ele vê um peixe ao lado dele e uma alga em cima da água.</b><br>He sees a fish next to him and (a) seaweed on the water."
+  tags: [tesouro, listening, chapter04]
+- id: ts0108
+  word: ts0108
+  front: ''
+  audio: tesouro/audio/ch04/ts0108.mp3
+  back: "<b>Ele também vê uma luz dentro de água.</b><br>He also sees a light in (inside) the water."
+  tags: [tesouro, listening, chapter04]
+- id: ts0109
+  word: ts0109
+  front: ''
+  audio: tesouro/audio/ch04/ts0109.mp3
+  back: "<b>Ele nada até à luz.</b><br>He swims to the light."
+  tags: [tesouro, listening, chapter04]
+- id: ts0110
+  word: ts0110
+  front: ''
+  audio: tesouro/audio/ch04/ts0110.mp3
+  back: "<b>A luz é muito brilhante, mas está muito longe.</b><br>The light is very bright, but it is very far away."
+  tags: [tesouro, listening, chapter04]
+- id: ts0111
+  word: ts0111
+  front: ''
+  audio: tesouro/audio/ch04/ts0111.mp3
+  back: "<b>Ele quer ir para cima, mas não consegue ir.</b><br>He wants to go up, but he can’t (go)."
+  tags: [tesouro, listening, chapter04]
+- id: ts0112
+  word: ts0112
+  front: ''
+  audio: tesouro/audio/ch04/ts0112.mp3
+  back: "<b>Há muitas caravelas-portuguesas na superfície.</b><br>There are many Portuguese man o’ war on the surface."
+  tags: [tesouro, listening, chapter04]
+- id: ts0113
+  word: ts0113
+  front: ''
+  audio: tesouro/audio/ch04/ts0113.mp3
+  back: "<b>Mas ele precisa de ar.</b><br>But he needs air."
+  tags: [tesouro, listening, chapter04]
+- id: ts0114
+  word: ts0114
+  front: ''
+  audio: tesouro/audio/ch04/ts0114.mp3
+  back: "<b>Precisa de respirar.</b><br>He needs to breathe."
+  tags: [tesouro, listening, chapter04]
+- id: ts0115
+  word: ts0115
+  front: ''
+  audio: tesouro/audio/ch04/ts0115.mp3
+  back: "<b>Ele sente uma coisa na perna e depois perde os sentidos.</b><br>He feels something in his (the) leg and then loses consciousness."
+  tags: [tesouro, listening, chapter04]
+- id: ts0116
+  word: ts0116
+  front: ''
+  audio: tesouro/audio/ch05/ts0116.mp3
+  back: "<b>A Marina está no restaurante.</b><br>Marina is at the restaurant."
+  tags: [tesouro, listening, chapter05]
+- id: ts0117
+  word: ts0117
+  front: ''
+  audio: tesouro/audio/ch05/ts0117.mp3
+  back: "<b>Boa noite.</b><br>Good evening."
+  tags: [tesouro, listening, chapter05]
+- id: ts0118
+  word: ts0118
+  front: ''
+  audio: tesouro/audio/ch05/ts0118.mp3
+  back: "<b>É uma mesa para uma pessoa?</b><br>Is it a table for one person?"
+  tags: [tesouro, listening, chapter05]
+- id: ts0119
+  word: ts0119
+  front: ''
+  audio: tesouro/audio/ch05/ts0119.mp3
+  back: "<b>Sim, por favor.</b><br>Yes, please."
+  tags: [tesouro, listening, chapter05]
+- id: ts0120
+  word: ts0120
+  front: ''
+  audio: tesouro/audio/ch05/ts0120.mp3
+  back: "<b>Pode ficar aqui.</b><br>You can stay here."
+  tags: [tesouro, listening, chapter05]
+- id: ts0121
+  word: ts0121
+  front: ''
+  audio: tesouro/audio/ch05/ts0121.mp3
+  back: "<b>Queria o menu, por favor.</b><br>I’d like the menu, please."
+  tags: [tesouro, listening, chapter05]
+- id: ts0122
+  word: ts0122
+  front: ''
+  audio: tesouro/audio/ch05/ts0122.mp3
+  back: "<b>Aqui tem.</b><br>Here you go (have)."
+  tags: [tesouro, listening, chapter05]
+- id: ts0123
+  word: ts0123
+  front: ''
+  audio: tesouro/audio/ch05/ts0123.mp3
+  back: "<b>A Marina vê um homem desconhecido.</b><br>Marina sees an unknown man."
+  tags: [tesouro, listening, chapter05]
+- id: ts0124
+  word: ts0124
+  front: ''
+  audio: tesouro/audio/ch05/ts0124.mp3
+  back: "<b>Ele está a olhar para ela.</b><br>He is looking at her."
+  tags: [tesouro, listening, chapter05]
+- id: ts0125
+  word: ts0125
+  front: ''
+  audio: tesouro/audio/ch05/ts0125.mp3
+  back: "<b>A Marina fala com o empregado.</b><br>Marina talks with the waiter."
+  tags: [tesouro, listening, chapter05]
+- id: ts0126
+  word: ts0126
+  front: ''
+  audio: tesouro/audio/ch05/ts0126.mp3
+  back: "<b>Desculpe.</b><br>Excuse me."
+  tags: [tesouro, listening, chapter05]
+- id: ts0127
+  word: ts0127
+  front: ''
+  audio: tesouro/audio/ch05/ts0127.mp3
+  back: "<b>Conhece o homem de barba?</b><br>Do you know the man with the beard?"
+  tags: [tesouro, listening, chapter05]
+- id: ts0128
+  word: ts0128
+  front: ''
+  audio: tesouro/audio/ch05/ts0128.mp3
+  back: "<b>Eu?</b><br>Me?"
+  tags: [tesouro, listening, chapter05]
+- id: ts0129
+  word: ts0129
+  front: ''
+  audio: tesouro/audio/ch05/ts0129.mp3
+  back: "<b>Não, não conheço.</b><br>No, I don’t (know)."
+  tags: [tesouro, listening, chapter05]
+- id: ts0130
+  word: ts0130
+  front: ''
+  audio: tesouro/audio/ch05/ts0130.mp3
+  back: "<b>Então, queria pedir.</b><br>Then, I would like to order."
+  tags: [tesouro, listening, chapter05]
+- id: ts0131
+  word: ts0131
+  front: ''
+  audio: tesouro/audio/ch05/ts0131.mp3
+  back: "<b>Com certeza.</b><br>Certainly."
+  tags: [tesouro, listening, chapter05]
+- id: ts0132
+  word: ts0132
+  front: ''
+  audio: tesouro/audio/ch05/ts0132.mp3
+  back: "<b>O que recomenda?</b><br>What do you recommend?"
+  tags: [tesouro, listening, chapter05]
+- id: ts0133
+  word: ts0133
+  front: ''
+  audio: tesouro/audio/ch05/ts0133.mp3
+  back: "<b>Os pratos são todos bons.</b><br>The dishes are all good."
+  tags: [tesouro, listening, chapter05]
+- id: ts0134
+  word: ts0134
+  front: ''
+  audio: tesouro/audio/ch05/ts0134.mp3
+  back: "<b>Têm algum prato de carne?</b><br>Do you have any meat dishes?"
+  tags: [tesouro, listening, chapter05]
+- id: ts0135
+  word: ts0135
+  front: ''
+  audio: tesouro/audio/ch05/ts0135.mp3
+  back: "<b>Não.</b><br>No."
+  tags: [tesouro, listening, chapter05]
+- id: ts0136
+  word: ts0136
+  front: ''
+  audio: tesouro/audio/ch05/ts0136.mp3
+  back: "<b>Infelizmente não temos nenhum.</b><br>Unfortunately, we don’t have any."
+  tags: [tesouro, listening, chapter05]
+- id: ts0137
+  word: ts0137
+  front: ''
+  audio: tesouro/audio/ch05/ts0137.mp3
+  back: "<b>Então, para comer é uma sopa de legumes, e para beber é uma água.</b><br>Then, to eat it’s a vegetable soup, and to drink it’s (a) water."
+  tags: [tesouro, listening, chapter05]
+- id: ts0138
+  word: ts0138
+  front: ''
+  audio: tesouro/audio/ch05/ts0138.mp3
+  back: "<b>Aqui está.</b><br>Here it is."
+  tags: [tesouro, listening, chapter05]
+- id: ts0139
+  word: ts0139
+  front: ''
+  audio: tesouro/audio/ch05/ts0139.mp3
+  back: "<b>Uma sopa de legumes e uma água.</b><br>A vegetable soup and (a) water."
+  tags: [tesouro, listening, chapter05]
+- id: ts0140
+  word: ts0140
+  front: ''
+  audio: tesouro/audio/ch05/ts0140.mp3
+  back: "<b>Obrigada.</b><br>Thank you."
+  tags: [tesouro, listening, chapter05]
+- id: ts0141
+  word: ts0141
+  front: ''
+  audio: tesouro/audio/ch05/ts0141.mp3
+  back: "<b>A Marina come a sopa e bebe a água.</b><br>Marina eats the soup and drinks the water."
+  tags: [tesouro, listening, chapter05]
+- id: ts0142
+  word: ts0142
+  front: ''
+  audio: tesouro/audio/ch05/ts0142.mp3
+  back: "<b>O homem continua a olhar para ela.</b><br>The man continues to look at her."
+  tags: [tesouro, listening, chapter05]
+- id: ts0143
+  word: ts0143
+  front: ''
+  audio: tesouro/audio/ch05/ts0143.mp3
+  back: "<b>Desculpe!</b><br>Excuse me!"
+  tags: [tesouro, listening, chapter05]
+- id: ts0144
+  word: ts0144
+  front: ''
+  audio: tesouro/audio/ch05/ts0144.mp3
+  back: "<b>Sim?</b><br>Yes?"
+  tags: [tesouro, listening, chapter05]
+- id: ts0145
+  word: ts0145
+  front: ''
+  audio: tesouro/audio/ch05/ts0145.mp3
+  back: "<b>Queria pagar, por favor.</b><br>I would like to pay, please."
+  tags: [tesouro, listening, chapter05]
+- id: ts0146
+  word: ts0146
+  front: ''
+  audio: tesouro/audio/ch05/ts0146.mp3
+  back: "<b>Com certeza.</b><br>Certainly."
+  tags: [tesouro, listening, chapter05]
+- id: ts0147
+  word: ts0147
+  front: ''
+  audio: tesouro/audio/ch05/ts0147.mp3
+  back: "<b>A Marina está distraída.</b><br>Marina is distracted."
+  tags: [tesouro, listening, chapter05]
+- id: ts0148
+  word: ts0148
+  front: ''
+  audio: tesouro/audio/ch05/ts0148.mp3
+  back: "<b>Rapidamente, o homem de barba rouba a mala da Marina.</b><br>Quickly, the bearded man steals Marina’s bag."
+  tags: [tesouro, listening, chapter05]
+- id: ts0149
+  word: ts0149
+  front: ''
+  audio: tesouro/audio/ch05/ts0149.mp3
+  back: "<b>Um homem de fato no restaurante tenta apanhar o ladrão.</b><br>A man in a suit at the restaurant tries to catch the thief."
+  tags: [tesouro, listening, chapter05]
+- id: ts0150
+  word: ts0150
+  front: ''
+  audio: tesouro/audio/ch05/ts0150.mp3
+  back: "<b>O ladrão corre à frente do homem de fato.</b><br>The thief runs ahead of the man in the suit."
+  tags: [tesouro, listening, chapter05]
+- id: ts0151
+  word: ts0151
+  front: ''
+  audio: tesouro/audio/ch05/ts0151.mp3
+  back: "<b>O homem de fato corre rapidamente atrás dele.</b><br>The man in the suit runs quickly after him."
+  tags: [tesouro, listening, chapter05]
+- id: ts0152
+  word: ts0152
+  front: ''
+  audio: tesouro/audio/ch05/ts0152.mp3
+  back: "<b>Um minuto, dois minutos, três minutos, quatro minutos, cinco minutos.</b><br>One minute, two minutes, three minutes, four minutes, five minutes."
+  tags: [tesouro, listening, chapter05]
+- id: ts0153
+  word: ts0153
+  front: ''
+  audio: tesouro/audio/ch05/ts0153.mp3
+  back: "<b>Finalmente, o homem de fato aparece.</b><br>Finally, the man in a suit appears."
+  tags: [tesouro, listening, chapter05]
+- id: ts0154
+  word: ts0154
+  front: ''
+  audio: tesouro/audio/ch05/ts0154.mp3
+  back: "<b>Ele está cansado.</b><br>He is tired."
+  tags: [tesouro, listening, chapter05]
+- id: ts0155
+  word: ts0155
+  front: ''
+  audio: tesouro/audio/ch05/ts0155.mp3
+  back: "<b>Peço desculpa.</b><br>I apologize."
+  tags: [tesouro, listening, chapter05]
+- id: ts0156
+  word: ts0156
+  front: ''
+  audio: tesouro/audio/ch05/ts0156.mp3
+  back: "<b>Mas o ladrão corre muito depressa.</b><br>But the thief runs very fast."
+  tags: [tesouro, listening, chapter05]
+- id: ts0157
+  word: ts0157
+  front: ''
+  audio: tesouro/audio/ch05/ts0157.mp3
+  back: "<b>Oh não... — diz a Marina.</b><br>Oh no…” says Marina."
+  tags: [tesouro, listening, chapter05]
+- id: ts0158
+  word: ts0158
+  front: ''
+  audio: tesouro/audio/ch05/ts0158.mp3
+  back: "<b>O passaporte e o resto do dinheiro estão no hotel.</b><br>The passport and the rest of the money are at the hotel."
+  tags: [tesouro, listening, chapter05]
+- id: ts0159
+  word: ts0159
+  front: ''
+  audio: tesouro/audio/ch05/ts0159.mp3
+  back: "<b>Não tenho mais dinheiro aqui.</b><br>I have no more money here."
+  tags: [tesouro, listening, chapter05]
+- id: ts0160
+  word: ts0160
+  front: ''
+  audio: tesouro/audio/ch05/ts0160.mp3
+  back: "<b>Eu posso ajudar. — diz o homem de fato.</b><br>I can help,” says the man in a suit."
+  tags: [tesouro, listening, chapter05]
+- id: ts0161
+  word: ts0161
+  front: ''
+  audio: tesouro/audio/ch05/ts0161.mp3
+  back: "<b>Eu sou o Ricardo.</b><br>I’m Ricardo."
+  tags: [tesouro, listening, chapter05]
+- id: ts0162
+  word: ts0162
+  front: ''
+  audio: tesouro/audio/ch05/ts0162.mp3
+  back: "<b>E sou polícia.</b><br>And I’m a policeman."
+  tags: [tesouro, listening, chapter05]
+- id: ts0163
+  word: ts0163
+  front: ''
+  audio: tesouro/audio/ch05/ts0163.mp3
+  back: "<b>Muito prazer.</b><br>Nice to meet you."
+  tags: [tesouro, listening, chapter05]
+- id: ts0164
+  word: ts0164
+  front: ''
+  audio: tesouro/audio/ch05/ts0164.mp3
+  back: "<b>Igualmente.</b><br>Likewise."
+  tags: [tesouro, listening, chapter05]
+- id: ts0165
+  word: ts0165
+  front: ''
+  audio: tesouro/audio/ch05/ts0165.mp3
+  back: "<b>É turista? — pergunta o Ricardo.</b><br>Are you a tourist?” asks Ricardo."
+  tags: [tesouro, listening, chapter05]
+- id: ts0166
+  word: ts0166
+  front: ''
+  audio: tesouro/audio/ch05/ts0166.mp3
+  back: "<b>Sim. — responde a Marina.</b><br>Yes,” answers Marina."
+  tags: [tesouro, listening, chapter05]
+- id: ts0167
+  word: ts0167
+  front: ''
+  audio: tesouro/audio/ch05/ts0167.mp3
+  back: "<b>Há quanto tempo está em Portugal?</b><br>How long have you been in Portugal?"
+  tags: [tesouro, listening, chapter05]
+- id: ts0168
+  word: ts0168
+  front: ''
+  audio: tesouro/audio/ch05/ts0168.mp3
+  back: "<b>Estou em Portugal há um dia.</b><br>I’ve been in Portugal for a day."
+  tags: [tesouro, listening, chapter05]
+- id: ts0169
+  word: ts0169
+  front: ''
+  audio: tesouro/audio/ch05/ts0169.mp3
+  back: "<b>Só há um dia?</b><br>Only for a day?"
+  tags: [tesouro, listening, chapter05]
+- id: ts0170
+  word: ts0170
+  front: ''
+  audio: tesouro/audio/ch05/ts0170.mp3
+  back: "<b>Então, ainda não conhece nada.</b><br>So, you still haven’t seen anything."
+  tags: [tesouro, listening, chapter05]
+- id: ts0171
+  word: ts0171
+  front: ''
+  audio: tesouro/audio/ch05/ts0171.mp3
+  back: "<b>É verdade.</b><br>That’s right.” (lt. it is true)"
+  tags: [tesouro, listening, chapter05]
+- id: ts0172
+  word: ts0172
+  front: ''
+  audio: tesouro/audio/ch05/ts0172.mp3
+  back: "<b>Eu posso mostrar as atrações amanhã. — oferece ele.</b><br>I can show (you) the attractions tomorrow,” he offers."
+  tags: [tesouro, listening, chapter05]
+- id: ts0173
+  word: ts0173
+  front: ''
+  audio: tesouro/audio/ch05/ts0173.mp3
+  back: "<b>Obrigada, mas eu tenho um encontro amanhã.</b><br>Thank you, but I have a meeting tomorrow."
+  tags: [tesouro, listening, chapter05]
+- id: ts0174
+  word: ts0174
+  front: ''
+  audio: tesouro/audio/ch05/ts0174.mp3
+  back: "<b>Compreendo.</b><br>I understand."
+  tags: [tesouro, listening, chapter05]
+- id: ts0175
+  word: ts0175
+  front: ''
+  audio: tesouro/audio/ch05/ts0175.mp3
+  back: "<b>O encontro é na ponta de Sagres.</b><br>The meeting is at (the) Sagres Point."
+  tags: [tesouro, listening, chapter05]
+- id: ts0176
+  word: ts0176
+  front: ''
+  audio: tesouro/audio/ch05/ts0176.mp3
+  back: "<b>Se calhar podemos dar um passeio depois. — diz a Marina.</b><br>Maybe we can go for a walk later,” says Marina."
+  tags: [tesouro, listening, chapter05]
+- id: ts0177
+  word: ts0177
+  front: ''
+  audio: tesouro/audio/ch05/ts0177.mp3
+  back: "<b>Adoraria.</b><br>I would love that."
+  tags: [tesouro, listening, chapter05]
+- id: ts0178
+  word: ts0178
+  front: ''
+  audio: tesouro/audio/ch06/ts0178.mp3
+  back: "<b>A Antónia está na polícia.</b><br>Antónia is at the police (station)."
+  tags: [tesouro, listening, chapter06]
+- id: ts0179
+  word: ts0179
+  front: ''
+  audio: tesouro/audio/ch06/ts0179.mp3
+  back: "<b>Qual é o nome? — pergunta o polícia.</b><br>What is the name?” asks the policeman."
+  tags: [tesouro, listening, chapter06]
+- id: ts0180
+  word: ts0180
+  front: ''
+  audio: tesouro/audio/ch06/ts0180.mp3
+  back: "<b>João.</b><br>João."
+  tags: [tesouro, listening, chapter06]
+- id: ts0181
+  word: ts0181
+  front: ''
+  audio: tesouro/audio/ch06/ts0181.mp3
+  back: "<b>Onde é que ele está?</b><br>Where is he?"
+  tags: [tesouro, listening, chapter06]
+- id: ts0182
+  word: ts0182
+  front: ''
+  audio: tesouro/audio/ch06/ts0182.mp3
+  back: "<b>Não sei.</b><br>I don’t know."
+  tags: [tesouro, listening, chapter06]
+- id: ts0183
+  word: ts0183
+  front: ''
+  audio: tesouro/audio/ch06/ts0183.mp3
+  back: "<b>Ele está desaparecido.</b><br>He is missing."
+  tags: [tesouro, listening, chapter06]
+- id: ts0184
+  word: ts0184
+  front: ''
+  audio: tesouro/audio/ch06/ts0184.mp3
+  back: "<b>Então, tem de preencher o formulário.</b><br>Then, you have to fill out the form."
+  tags: [tesouro, listening, chapter06]
+- id: ts0185
+  word: ts0185
+  front: ''
+  audio: tesouro/audio/ch06/ts0185.mp3
+  back: "<b>Está bem.</b><br>Alright."
+  tags: [tesouro, listening, chapter06]
+- id: ts0186
+  word: ts0186
+  front: ''
+  audio: tesouro/audio/ch06/ts0186.mp3
+  back: "<b>Mas isto é urgente.</b><br>But this is urgent."
+  tags: [tesouro, listening, chapter06]
+- id: ts0187
+  word: ts0187
+  front: ''
+  audio: tesouro/audio/ch06/ts0187.mp3
+  back: "<b>Estou preocupada.</b><br>I am worried."
+  tags: [tesouro, listening, chapter06]
+- id: ts0188
+  word: ts0188
+  front: ''
+  audio: tesouro/audio/ch06/ts0188.mp3
+  back: "<b>O João acorda num lugar estranho.</b><br>João wakes up in a strange place."
+  tags: [tesouro, listening, chapter06]
+- id: ts0189
+  word: ts0189
+  front: ''
+  audio: tesouro/audio/ch06/ts0189.mp3
+  back: "<b>Onde é que eu estou?</b><br>Where am I?"
+  tags: [tesouro, listening, chapter06]
+- id: ts0190
+  word: ts0190
+  front: ''
+  audio: tesouro/audio/ch06/ts0190.mp3
+  back: "<b>Ele está numa sala moderna.</b><br>He’s in a modern (living) room."
+  tags: [tesouro, listening, chapter06]
+- id: ts0191
+  word: ts0191
+  front: ''
+  audio: tesouro/audio/ch06/ts0191.mp3
+  back: "<b>A sala tem estantes com livros, mas não tem janelas.</b><br>The (living) room has bookshelves but doesn’t have windows."
+  tags: [tesouro, listening, chapter06]
+- id: ts0192
+  word: ts0192
+  front: ''
+  audio: tesouro/audio/ch06/ts0192.mp3
+  back: "<b>O João procura uma porta.</b><br>João looks for a door."
+  tags: [tesouro, listening, chapter06]
+- id: ts0193
+  word: ts0193
+  front: ''
+  audio: tesouro/audio/ch06/ts0193.mp3
+  back: "<b>Ele encontra a porta, mas está fechada.</b><br>He finds the door, but it’s closed."
+  tags: [tesouro, listening, chapter06]
+- id: ts0194
+  word: ts0194
+  front: ''
+  audio: tesouro/audio/ch06/ts0194.mp3
+  back: "<b>Ele bate na porta.</b><br>He knocks on the door."
+  tags: [tesouro, listening, chapter06]
+- id: ts0195
+  word: ts0195
+  front: ''
+  audio: tesouro/audio/ch06/ts0195.mp3
+  back: "<b>Hei!</b><br>Hey!"
+  tags: [tesouro, listening, chapter06]
+- id: ts0196
+  word: ts0196
+  front: ''
+  audio: tesouro/audio/ch06/ts0196.mp3
+  back: "<b>Está aí alguém?</b><br>Is anyone there?"
+  tags: [tesouro, listening, chapter06]
+- id: ts0197
+  word: ts0197
+  front: ''
+  audio: tesouro/audio/ch06/ts0197.mp3
+  back: "<b>Eu quero sair!</b><br>I want to get out!"
+  tags: [tesouro, listening, chapter06]
+- id: ts0198
+  word: ts0198
+  front: ''
+  audio: tesouro/audio/ch06/ts0198.mp3
+  back: "<b>O João não ouve nada.</b><br>João doesn’t hear anything."
+  tags: [tesouro, listening, chapter06]
+- id: ts0199
+  word: ts0199
+  front: ''
+  audio: tesouro/audio/ch06/ts0199.mp3
+  back: "<b>Ninguém abre a porta.</b><br>Nobody opens the door."
+  tags: [tesouro, listening, chapter06]
+- id: ts0200
+  word: ts0200
+  front: ''
+  audio: tesouro/audio/ch07/ts0200.mp3
+  back: "<b>O Ricardo vai levar a Marina a Sagres.</b><br>Ricardo is going to take Marina to Sagres."
+  tags: [tesouro, listening, chapter07]
+- id: ts0201
+  word: ts0201
+  front: ''
+  audio: tesouro/audio/ch07/ts0201.mp3
+  back: "<b>Ele tem um descapotável grande e vermelho.</b><br>He has a big red convertible. (lit. a convertible big and red)"
+  tags: [tesouro, listening, chapter07]
+- id: ts0202
+  word: ts0202
+  front: ''
+  audio: tesouro/audio/ch07/ts0202.mp3
+  back: "<b>Bom dia, Marina.</b><br>Good morning, Marina."
+  tags: [tesouro, listening, chapter07]
+- id: ts0203
+  word: ts0203
+  front: ''
+  audio: tesouro/audio/ch07/ts0203.mp3
+  back: "<b>Pronta?</b><br>Ready?"
+  tags: [tesouro, listening, chapter07]
+- id: ts0204
+  word: ts0204
+  front: ''
+  audio: tesouro/audio/ch07/ts0204.mp3
+  back: "<b>Bom dia, Ricardo.</b><br>Good morning, Ricardo."
+  tags: [tesouro, listening, chapter07]
+- id: ts0205
+  word: ts0205
+  front: ''
+  audio: tesouro/audio/ch07/ts0205.mp3
+  back: "<b>Sim, estou pronta.</b><br>Yes, I’m ready."
+  tags: [tesouro, listening, chapter07]
+- id: ts0206
+  word: ts0206
+  front: ''
+  audio: tesouro/audio/ch07/ts0206.mp3
+  back: "<b>Ah!</b><br>Oh!"
+  tags: [tesouro, listening, chapter07]
+- id: ts0207
+  word: ts0207
+  front: ''
+  audio: tesouro/audio/ch07/ts0207.mp3
+  back: "<b>O dia está ótimo!</b><br>The day is great!"
+  tags: [tesouro, listening, chapter07]
+- id: ts0208
+  word: ts0208
+  front: ''
+  audio: tesouro/audio/ch07/ts0208.mp3
+  back: "<b>Sim, está bom.</b><br>Yes, it’s good."
+  tags: [tesouro, listening, chapter07]
+- id: ts0209
+  word: ts0209
+  front: ''
+  audio: tesouro/audio/ch07/ts0209.mp3
+  back: "<b>Está calor e não está vento.</b><br>It’s hot and not windy."
+  tags: [tesouro, listening, chapter07]
+- id: ts0210
+  word: ts0210
+  front: ''
+  audio: tesouro/audio/ch07/ts0210.mp3
+  back: "<b>E estão vinte graus.</b><br>And it’s twenty degrees."
+  tags: [tesouro, listening, chapter07]
+- id: ts0211
+  word: ts0211
+  front: ''
+  audio: tesouro/audio/ch07/ts0211.mp3
+  back: "<b>Parece verão.</b><br>It feels (seems) like summer."
+  tags: [tesouro, listening, chapter07]
+- id: ts0212
+  word: ts0212
+  front: ''
+  audio: tesouro/audio/ch07/ts0212.mp3
+  back: "<b>E é primavera.</b><br>And it’s spring."
+  tags: [tesouro, listening, chapter07]
+- id: ts0213
+  word: ts0213
+  front: ''
+  audio: tesouro/audio/ch07/ts0213.mp3
+  back: "<b>O tempo está bom para ir à praia.</b><br>The weather is fine to go to the beach."
+  tags: [tesouro, listening, chapter07]
+- id: ts0214
+  word: ts0214
+  front: ''
+  audio: tesouro/audio/ch07/ts0214.mp3
+  back: "<b>Pois.</b><br>Right."
+  tags: [tesouro, listening, chapter07]
+- id: ts0215
+  word: ts0215
+  front: ''
+  audio: tesouro/audio/ch07/ts0215.mp3
+  back: "<b>Mas eu não gosto de nadar.</b><br>But I don’t like to swim."
+  tags: [tesouro, listening, chapter07]
+- id: ts0216
+  word: ts0216
+  front: ''
+  audio: tesouro/audio/ch07/ts0216.mp3
+  back: "<b>Eu não gosto do mar.</b><br>I don’t like the sea."
+  tags: [tesouro, listening, chapter07]
+- id: ts0217
+  word: ts0217
+  front: ''
+  audio: tesouro/audio/ch07/ts0217.mp3
+  back: "<b>Não?</b><br>No?"
+  tags: [tesouro, listening, chapter07]
+- id: ts0218
+  word: ts0218
+  front: ''
+  audio: tesouro/audio/ch07/ts0218.mp3
+  back: "<b>Impossível!</b><br>Impossible!"
+  tags: [tesouro, listening, chapter07]
+- id: ts0219
+  word: ts0219
+  front: ''
+  audio: tesouro/audio/ch07/ts0219.mp3
+  back: "<b>Eu adoro nadar.</b><br>I love to swim."
+  tags: [tesouro, listening, chapter07]
+- id: ts0220
+  word: ts0220
+  front: ''
+  audio: tesouro/audio/ch07/ts0220.mp3
+  back: "<b>Na verdade, não sei nadar.</b><br>Actually, I can’t swim (I don’t know how to swim)."
+  tags: [tesouro, listening, chapter07]
+- id: ts0221
+  word: ts0221
+  front: ''
+  audio: tesouro/audio/ch07/ts0221.mp3
+  back: "<b>Tenho medo da água.</b><br>I’m afraid of the water."
+  tags: [tesouro, listening, chapter07]
+- id: ts0222
+  word: ts0222
+  front: ''
+  audio: tesouro/audio/ch07/ts0222.mp3
+  back: "<b>Eles chegam à ponta de Sagres.</b><br>They arrive at (the) Sagres Point."
+  tags: [tesouro, listening, chapter07]
+- id: ts0223
+  word: ts0223
+  front: ''
+  audio: tesouro/audio/ch07/ts0223.mp3
+  back: "<b>A Marina tem um encontro com o faroleiro.</b><br>Marina has a meeting with the lighthouse keeper."
+  tags: [tesouro, listening, chapter07]
+- id: ts0224
+  word: ts0224
+  front: ''
+  audio: tesouro/audio/ch07/ts0224.mp3
+  back: "<b>Conheces o faroleiro? — pergunta o Ricardo.</b><br>Do you know the lighthouse keeper?” Ricardo asks."
+  tags: [tesouro, listening, chapter07]
+- id: ts0225
+  word: ts0225
+  front: ''
+  audio: tesouro/audio/ch07/ts0225.mp3
+  back: "<b>Sim.</b><br>Yes."
+  tags: [tesouro, listening, chapter07]
+- id: ts0226
+  word: ts0226
+  front: ''
+  audio: tesouro/audio/ch07/ts0226.mp3
+  back: "<b>Ele é um velho amigo da família.</b><br>He’s an old friend of the family."
+  tags: [tesouro, listening, chapter07]
+- id: ts0227
+  word: ts0227
+  front: ''
+  audio: tesouro/audio/ch07/ts0227.mp3
+  back: "<b>Esperas aqui?</b><br>Are you going to wait here?"
+  tags: [tesouro, listening, chapter07]
+- id: ts0228
+  word: ts0228
+  front: ''
+  audio: tesouro/audio/ch07/ts0228.mp3
+  back: "<b>Sim, fico aqui.</b><br>Yes, I’ll stay (remain) here."
+  tags: [tesouro, listening, chapter07]
+- id: ts0229
+  word: ts0229
+  front: ''
+  audio: tesouro/audio/ch07/ts0229.mp3
+  back: "<b>Eu gosto de ver o mar. — responde ele.</b><br>I like to watch the sea,” he replies."
+  tags: [tesouro, listening, chapter07]
+- id: ts0230
+  word: ts0230
+  front: ''
+  audio: tesouro/audio/ch07/ts0230.mp3
+  back: "<b>Até já.</b><br>See you soon."
+  tags: [tesouro, listening, chapter07]
+- id: ts0231
+  word: ts0231
+  front: ''
+  audio: tesouro/audio/ch07/ts0231.mp3
+  back: "<b>O Ricardo observa o mar, mas também observa a Marina.</b><br>Ricardo watches the sea, but he also watches Marina."
+  tags: [tesouro, listening, chapter07]
+- id: ts0232
+  word: ts0232
+  front: ''
+  audio: tesouro/audio/ch07/ts0232.mp3
+  back: "<b>Ela abraça o faroleiro e os dois falam.</b><br>She hugs the lighthouse keeper, and the two talk."
+  tags: [tesouro, listening, chapter07]
+- id: ts0233
+  word: ts0233
+  front: ''
+  audio: tesouro/audio/ch07/ts0233.mp3
+  back: "<b>Há quanto tempo!</b><br>Long time no see!"
+  tags: [tesouro, listening, chapter07]
+- id: ts0234
+  word: ts0234
+  front: ''
+  audio: tesouro/audio/ch07/ts0234.mp3
+  back: "<b>Como estás, Marina? — pergunta o faroleiro José.</b><br>How are you, Marina?” asks the lighthouse keeper José."
+  tags: [tesouro, listening, chapter07]
+- id: ts0235
+  word: ts0235
+  front: ''
+  audio: tesouro/audio/ch07/ts0235.mp3
+  back: "<b>Bem, obrigada.</b><br>Well, thank you."
+  tags: [tesouro, listening, chapter07]
+- id: ts0236
+  word: ts0236
+  front: ''
+  audio: tesouro/audio/ch07/ts0236.mp3
+  back: "<b>E tu?</b><br>And you?"
+  tags: [tesouro, listening, chapter07]
+- id: ts0237
+  word: ts0237
+  front: ''
+  audio: tesouro/audio/ch07/ts0237.mp3
+  back: "<b>Estou velho, mas estou bem!</b><br>I’m old, but I’m fine!"
+  tags: [tesouro, listening, chapter07]
+- id: ts0238
+  word: ts0238
+  front: ''
+  audio: tesouro/audio/ch07/ts0238.mp3
+  back: "<b>A Marina tem um colar ao pescoço.</b><br>Marina has a necklace around her (the) neck."
+  tags: [tesouro, listening, chapter07]
+- id: ts0239
+  word: ts0239
+  front: ''
+  audio: tesouro/audio/ch07/ts0239.mp3
+  back: "<b>Ela mostra o colar.</b><br>She shows the necklace."
+  tags: [tesouro, listening, chapter07]
+- id: ts0240
+  word: ts0240
+  front: ''
+  audio: tesouro/audio/ch07/ts0240.mp3
+  back: "<b>Estás a ver?</b><br>Do you see?"
+  tags: [tesouro, listening, chapter07]
+- id: ts0241
+  word: ts0241
+  front: ''
+  audio: tesouro/audio/ch07/ts0241.mp3
+  back: "<b>O que é isto?</b><br>What is this?"
+  tags: [tesouro, listening, chapter07]
+- id: ts0242
+  word: ts0242
+  front: ''
+  audio: tesouro/audio/ch07/ts0242.mp3
+  back: "<b>Isto é uma medalha.</b><br>This is a medal."
+  tags: [tesouro, listening, chapter07]
+- id: ts0243
+  word: ts0243
+  front: ''
+  audio: tesouro/audio/ch07/ts0243.mp3
+  back: "<b>É antiga e tem uma imagem.</b><br>It is ancient, and it has an image."
+  tags: [tesouro, listening, chapter07]
+- id: ts0244
+  word: ts0244
+  front: ''
+  audio: tesouro/audio/ch07/ts0244.mp3
+  back: "<b>É muito bonita.</b><br>It’s very pretty."
+  tags: [tesouro, listening, chapter07]
+- id: ts0245
+  word: ts0245
+  front: ''
+  audio: tesouro/audio/ch07/ts0245.mp3
+  back: "<b>Mas qual é o problema?</b><br>But what is the problem?"
+  tags: [tesouro, listening, chapter07]
+- id: ts0246
+  word: ts0246
+  front: ''
+  audio: tesouro/audio/ch07/ts0246.mp3
+  back: "<b>Esta medalha guarda um segredo.</b><br>This medal holds a secret."
+  tags: [tesouro, listening, chapter07]
+- id: ts0247
+  word: ts0247
+  front: ''
+  audio: tesouro/audio/ch07/ts0247.mp3
+  back: "<b>Qual é o segredo?</b><br>What is the secret?"
+  tags: [tesouro, listening, chapter07]
+- id: ts0248
+  word: ts0248
+  front: ''
+  audio: tesouro/audio/ch07/ts0248.mp3
+  back: "<b>Eu não sei...</b><br>I don’t know..."
+  tags: [tesouro, listening, chapter07]
+- id: ts0249
+  word: ts0249
+  front: ''
+  audio: tesouro/audio/ch07/ts0249.mp3
+  back: "<b>Este segredo é complicado.</b><br>This secret is complicated."
+  tags: [tesouro, listening, chapter07]
+- id: ts0250
+  word: ts0250
+  front: ''
+  audio: tesouro/audio/ch07/ts0250.mp3
+  back: "<b>Eu preciso de ajuda.</b><br>I need help."
+  tags: [tesouro, listening, chapter07]
+- id: ts0251
+  word: ts0251
+  front: ''
+  audio: tesouro/audio/ch07/ts0251.mp3
+  back: "<b>Eu conheço um historiador em Évora.</b><br>I know a historian in Évora."
+  tags: [tesouro, listening, chapter07]
+- id: ts0252
+  word: ts0252
+  front: ''
+  audio: tesouro/audio/ch07/ts0252.mp3
+  back: "<b>Ele pode ajudar.</b><br>He can help."
+  tags: [tesouro, listening, chapter07]
+- id: ts0253
+  word: ts0253
+  front: ''
+  audio: tesouro/audio/ch08/ts0253.mp3
+  back: "<b>O Ricardo e a Marina dão um passeio na praia.</b><br>Ricardo and Marina take a walk on the beach."
+  tags: [tesouro, listening, chapter08]
+- id: ts0254
+  word: ts0254
+  front: ''
+  audio: tesouro/audio/ch08/ts0254.mp3
+  back: "<b>A Marina fica longe da água porque tem medo.</b><br>Marina stays away from the water because she is afraid."
+  tags: [tesouro, listening, chapter08]
+- id: ts0255
+  word: ts0255
+  front: ''
+  audio: tesouro/audio/ch08/ts0255.mp3
+  back: "<b>É uma hora da tarde.</b><br>It’s one o’clock in the afternoon."
+  tags: [tesouro, listening, chapter08]
+- id: ts0256
+  word: ts0256
+  front: ''
+  audio: tesouro/audio/ch08/ts0256.mp3
+  back: "<b>Eles têm fome.</b><br>They’re hungry."
+  tags: [tesouro, listening, chapter08]
+- id: ts0257
+  word: ts0257
+  front: ''
+  audio: tesouro/audio/ch08/ts0257.mp3
+  back: "<b>O que é isso? — pergunta o Ricardo.</b><br>What is that?” asks Ricardo."
+  tags: [tesouro, listening, chapter08]
+- id: ts0258
+  word: ts0258
+  front: ''
+  audio: tesouro/audio/ch08/ts0258.mp3
+  back: "<b>Ele aponta para o pescoço da Marina.</b><br>He points to Marina’s neck. (lit. to the neck of Marina)"
+  tags: [tesouro, listening, chapter08]
+- id: ts0259
+  word: ts0259
+  front: ''
+  audio: tesouro/audio/ch08/ts0259.mp3
+  back: "<b>Isto? — pergunta a Marina a tocar no colar.</b><br>This?” asks Marina touching the necklace."
+  tags: [tesouro, listening, chapter08]
+- id: ts0260
+  word: ts0260
+  front: ''
+  audio: tesouro/audio/ch08/ts0260.mp3
+  back: "<b>Isto é um colar.</b><br>This is a necklace."
+  tags: [tesouro, listening, chapter08]
+- id: ts0261
+  word: ts0261
+  front: ''
+  audio: tesouro/audio/ch08/ts0261.mp3
+  back: "<b>A Marina não quer mostrar o colar.</b><br>Marina doesn’t want to show the necklace."
+  tags: [tesouro, listening, chapter08]
+- id: ts0262
+  word: ts0262
+  front: ''
+  audio: tesouro/audio/ch08/ts0262.mp3
+  back: "<b>Esse colar é muito bonito?</b><br>Is that necklace very pretty?"
+  tags: [tesouro, listening, chapter08]
+- id: ts0263
+  word: ts0263
+  front: ''
+  audio: tesouro/audio/ch08/ts0263.mp3
+  back: "<b>Não.</b><br>No."
+  tags: [tesouro, listening, chapter08]
+- id: ts0264
+  word: ts0264
+  front: ''
+  audio: tesouro/audio/ch08/ts0264.mp3
+  back: "<b>Este colar é muito simples.</b><br>This necklace is very simple."
+  tags: [tesouro, listening, chapter08]
+- id: ts0265
+  word: ts0265
+  front: ''
+  audio: tesouro/audio/ch08/ts0265.mp3
+  back: "<b>Só tem uma medalha.</b><br>It only has a medal."
+  tags: [tesouro, listening, chapter08]
+- id: ts0266
+  word: ts0266
+  front: ''
+  audio: tesouro/audio/ch08/ts0266.mp3
+  back: "<b>Essa medalha é valiosa?</b><br>Is that medal valuable?"
+  tags: [tesouro, listening, chapter08]
+- id: ts0267
+  word: ts0267
+  front: ''
+  audio: tesouro/audio/ch08/ts0267.mp3
+  back: "<b>Não, esta medalha só tem valor pessoal.</b><br>No, this medal has only personal value."
+  tags: [tesouro, listening, chapter08]
+- id: ts0268
+  word: ts0268
+  front: ''
+  audio: tesouro/audio/ch08/ts0268.mp3
+  back: "<b>Tenho fome.</b><br>I’m hungry ."
+  tags: [tesouro, listening, chapter08]
+- id: ts0269
+  word: ts0269
+  front: ''
+  audio: tesouro/audio/ch08/ts0269.mp3
+  back: "<b>Vamos almoçar?</b><br>Let’s have lunch?"
+  tags: [tesouro, listening, chapter08]
+- id: ts0270
+  word: ts0270
+  front: ''
+  audio: tesouro/audio/ch08/ts0270.mp3
+  back: "<b>Claro.</b><br>Sure."
+  tags: [tesouro, listening, chapter08]
+- id: ts0271
+  word: ts0271
+  front: ''
+  audio: tesouro/audio/ch08/ts0271.mp3
+  back: "<b>Eu quero comer marisco e beber vinho branco! — diz ele.</b><br>I want to eat seafood and drink white wine!” he says."
+  tags: [tesouro, listening, chapter08]
+- id: ts0272
+  word: ts0272
+  front: ''
+  audio: tesouro/audio/ch08/ts0272.mp3
+  back: "<b>O Ricardo parece feliz, mas não está satisfeito.</b><br>Ricardo looks happy, but he’s not satisfied."
+  tags: [tesouro, listening, chapter08]
+- id: ts0273
+  word: ts0273
+  front: ''
+  audio: tesouro/audio/ch09/ts0273.mp3
+  back: "<b>O João olha para os livros nas estantes.</b><br>João looks at the books on the shelves."
+  tags: [tesouro, listening, chapter09]
+- id: ts0274
+  word: ts0274
+  front: ''
+  audio: tesouro/audio/ch09/ts0274.mp3
+  back: "<b>Há livros de história, arte e ciência.</b><br>There are history, art and science books."
+  tags: [tesouro, listening, chapter09]
+- id: ts0275
+  word: ts0275
+  front: ''
+  audio: tesouro/audio/ch09/ts0275.mp3
+  back: "<b>Também há livros de literatura e poesia.</b><br>There are also literature, and poetry books. (lit. there are also books of…)"
+  tags: [tesouro, listening, chapter09]
+- id: ts0276
+  word: ts0276
+  front: ''
+  audio: tesouro/audio/ch09/ts0276.mp3
+  back: "<b>Alguém gosta muito de ler.</b><br>Someone really likes to read."
+  tags: [tesouro, listening, chapter09]
+- id: ts0277
+  word: ts0277
+  front: ''
+  audio: tesouro/audio/ch09/ts0277.mp3
+  back: "<b>O João ouve um barulho.</b><br>João hears a noise."
+  tags: [tesouro, listening, chapter09]
+- id: ts0278
+  word: ts0278
+  front: ''
+  audio: tesouro/audio/ch09/ts0278.mp3
+  back: "<b>A porta da sala está a abrir.</b><br>The (living) room door is opening."
+  tags: [tesouro, listening, chapter09]
+- id: ts0279
+  word: ts0279
+  front: ''
+  audio: tesouro/audio/ch09/ts0279.mp3
+  back: "<b>Alguém entra na sala.</b><br>Someone enters the room."
+  tags: [tesouro, listening, chapter09]
+- id: ts0280
+  word: ts0280
+  front: ''
+  audio: tesouro/audio/ch09/ts0280.mp3
+  back: "<b>Parece uma mulher, mas tem uma máscara na cara.</b><br>It looks like a woman, but she has a mask on her (the) face."
+  tags: [tesouro, listening, chapter09]
+- id: ts0281
+  word: ts0281
+  front: ''
+  audio: tesouro/audio/ch09/ts0281.mp3
+  back: "<b>Eu sou o João.</b><br>I am João."
+  tags: [tesouro, listening, chapter09]
+- id: ts0282
+  word: ts0282
+  front: ''
+  audio: tesouro/audio/ch09/ts0282.mp3
+  back: "<b>Onde é que eu estou? — pergunta o João.</b><br>Where am I?” asks João."
+  tags: [tesouro, listening, chapter09]
+- id: ts0283
+  word: ts0283
+  front: ''
+  audio: tesouro/audio/ch09/ts0283.mp3
+  back: "<b>A mulher não responde.</b><br>The woman does not respond."
+  tags: [tesouro, listening, chapter09]
+- id: ts0284
+  word: ts0284
+  front: ''
+  audio: tesouro/audio/ch09/ts0284.mp3
+  back: "<b>Ela anda até a uma estante de livros e pega num livro.</b><br>She walks to a bookshelf and picks up a book."
+  tags: [tesouro, listening, chapter09]
+- id: ts0285
+  word: ts0285
+  front: ''
+  audio: tesouro/audio/ch09/ts0285.mp3
+  back: "<b>O que é isso? — pergunta o João.</b><br>What is that?” asks João."
+  tags: [tesouro, listening, chapter09]
+- id: ts0286
+  word: ts0286
+  front: ''
+  audio: tesouro/audio/ch09/ts0286.mp3
+  back: "<b>Isto é um livro. — responde a mulher misteriosa.</b><br>This is a book,” replies the mysterious woman."
+  tags: [tesouro, listening, chapter09]
+- id: ts0287
+  word: ts0287
+  front: ''
+  audio: tesouro/audio/ch09/ts0287.mp3
+  back: "<b>Este livro é muito interessante.</b><br>This book is very interesting."
+  tags: [tesouro, listening, chapter09]
+- id: ts0288
+  word: ts0288
+  front: ''
+  audio: tesouro/audio/ch09/ts0288.mp3
+  back: "<b>Que livro é?</b><br>What book is it?"
+  tags: [tesouro, listening, chapter09]
+- id: ts0289
+  word: ts0289
+  front: ''
+  audio: tesouro/audio/ch09/ts0289.mp3
+  back: "<b>O livro chama-se “A curiosidade matou o gato”.</b><br>The book is called ‘Curiosity Killed the Cat’."
+  tags: [tesouro, listening, chapter09]
+- id: ts0290
+  word: ts0290
+  front: ''
+  audio: tesouro/audio/ch09/ts0290.mp3
+  back: "<b>Isso é mesmo muito interessante.</b><br>That’s really very interesting."
+  tags: [tesouro, listening, chapter09]
+- id: ts0291
+  word: ts0291
+  front: ''
+  audio: tesouro/audio/ch09/ts0291.mp3
+  back: "<b>Mas onde é que eu estou?</b><br>But where am I?"
+  tags: [tesouro, listening, chapter09]
+- id: ts0292
+  word: ts0292
+  front: ''
+  audio: tesouro/audio/ch09/ts0292.mp3
+  back: "<b>Eu quero sair daqui.</b><br>I want to get out of here."
+  tags: [tesouro, listening, chapter09]
+- id: ts0293
+  word: ts0293
+  front: ''
+  audio: tesouro/audio/ch09/ts0293.mp3
+  back: "<b>Não deve ser tão curioso, João.</b><br>You must not be so curious, João."
+  tags: [tesouro, listening, chapter09]
+- id: ts0294
+  word: ts0294
+  front: ''
+  audio: tesouro/audio/ch09/ts0294.mp3
+  back: "<b>A mulher dá o livro ao João.</b><br>The woman gives João the book. (lit. gives the book to João)"
+  tags: [tesouro, listening, chapter09]
+- id: ts0295
+  word: ts0295
+  front: ''
+  audio: tesouro/audio/ch09/ts0295.mp3
+  back: "<b>Ele pega no livro.</b><br>He takes the book."
+  tags: [tesouro, listening, chapter09]
+- id: ts0296
+  word: ts0296
+  front: ''
+  audio: tesouro/audio/ch09/ts0296.mp3
+  back: "<b>Devia ler este livro.</b><br>You should read this book."
+  tags: [tesouro, listening, chapter09]
+- id: ts0297
+  word: ts0297
+  front: ''
+  audio: tesouro/audio/ch09/ts0297.mp3
+  back: "<b>Porque é que eu devia ler este livro?</b><br>Why should I read this book?"
+  tags: [tesouro, listening, chapter09]
+- id: ts0298
+  word: ts0298
+  front: ''
+  audio: tesouro/audio/ch09/ts0298.mp3
+  back: "<b>Porque o João também é muito curioso.</b><br>Because you (João) are also very curious."
+  tags: [tesouro, listening, chapter09]
+- id: ts0299
+  word: ts0299
+  front: ''
+  audio: tesouro/audio/ch09/ts0299.mp3
+  back: "<b>E isso é perigoso.</b><br>And that’s dangerous."
+  tags: [tesouro, listening, chapter09]
+- id: ts0300
+  word: ts0300
+  front: ''
+  audio: tesouro/audio/ch10/ts0300.mp3
+  back: "<b>Um guarda empurra o João e saem da sala.</b><br>A guard pushes João, and they leave the room."
+  tags: [tesouro, listening, chapter10]
+- id: ts0301
+  word: ts0301
+  front: ''
+  audio: tesouro/audio/ch10/ts0301.mp3
+  back: "<b>Eles passam num corredor escuro e entram numa sala redonda.</b><br>They go through a dark corridor and enter a round room."
+  tags: [tesouro, listening, chapter10]
+- id: ts0302
+  word: ts0302
+  front: ''
+  audio: tesouro/audio/ch10/ts0302.mp3
+  back: "<b>Este lugar é secreto e o segredo não pode sair daqui.</b><br>This place is secret, and the secret can’t leave here."
+  tags: [tesouro, listening, chapter10]
+- id: ts0303
+  word: ts0303
+  front: ''
+  audio: tesouro/audio/ch10/ts0303.mp3
+  back: "<b>Por isso, o João também não pode sair daqui. — diz a mulher.</b><br>That’s why you (João) can’t leave here either,” says the woman."
+  tags: [tesouro, listening, chapter10]
+- id: ts0304
+  word: ts0304
+  front: ''
+  audio: tesouro/audio/ch10/ts0304.mp3
+  back: "<b>No meio da sala há um poço com água.</b><br>In the middle of the room, there is a well with water."
+  tags: [tesouro, listening, chapter10]
+- id: ts0305
+  word: ts0305
+  front: ''
+  audio: tesouro/audio/ch10/ts0305.mp3
+  back: "<b>A água é escura.</b><br>The water is dark."
+  tags: [tesouro, listening, chapter10]
+- id: ts0306
+  word: ts0306
+  front: ''
+  audio: tesouro/audio/ch10/ts0306.mp3
+  back: "<b>O que é que eu estou aqui a fazer? — pergunta o João.</b><br>What am I doing here?” asks João."
+  tags: [tesouro, listening, chapter10]
+- id: ts0307
+  word: ts0307
+  front: ''
+  audio: tesouro/audio/ch10/ts0307.mp3
+  back: "<b>Ele olha para o poço.</b><br>He looks into the well."
+  tags: [tesouro, listening, chapter10]
+- id: ts0308
+  word: ts0308
+  front: ''
+  audio: tesouro/audio/ch10/ts0308.mp3
+  back: "<b>Há qualquer coisa na água.</b><br>There’s something in the water."
+  tags: [tesouro, listening, chapter10]
+- id: ts0309
+  word: ts0309
+  front: ''
+  audio: tesouro/audio/ch10/ts0309.mp3
+  back: "<b>Parece uma cobra gigante.</b><br>It looks like a giant snake."
+  tags: [tesouro, listening, chapter10]
+- id: ts0310
+  word: ts0310
+  front: ''
+  audio: tesouro/audio/ch10/ts0310.mp3
+  back: "<b>A cobra olha para o João e abre a boca.</b><br>The snake looks at João and opens its (the) mouth."
+  tags: [tesouro, listening, chapter10]
+- id: ts0311
+  word: ts0311
+  front: ''
+  audio: tesouro/audio/ch10/ts0311.mp3
+  back: "<b>O guarda empurra o João.</b><br>The guard pushes João."
+  tags: [tesouro, listening, chapter10]
+- id: ts0312
+  word: ts0312
+  front: ''
+  audio: tesouro/audio/ch10/ts0312.mp3
+  back: "<b>Tem de saltar para a água. — diz o guarda.</b><br>You have to jump into the water,” says the guard."
+  tags: [tesouro, listening, chapter10]
