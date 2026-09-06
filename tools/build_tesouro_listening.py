@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Build Tesouro Submerso listening cards from alignment + bilingual book text.
 
-The alignment CSV defines the final Portuguese audio-card boundaries. Chapter
-XHTML files contain the corresponding English translation. Most story content
-is stored as PT/EN paragraph pairs, which lets us split a paragraph only when
-its Portuguese side was split into multiple listening cards.
+The alignment CSV defines the Portuguese audio-card boundaries. In the EPUB,
+a logical story unit ends at an ``implicit-break`` paragraph. Inside such a
+unit the layout varies: some units alternate PT/EN paragraphs, while others
+contain a block of Portuguese followed by a block of English. Parsing by these
+logical boundaries makes both layouts deterministic.
 """
 from __future__ import annotations
 
@@ -21,17 +22,6 @@ OUT = ROOT / "tesouro-listening.yaml"
 REPORT = ROOT / "tesouro" / "translation-report.csv"
 XHTML = "{http://www.w3.org/1999/xhtml}"
 
-# Chapter 1 section 1.2 is laid out unusually in the EPUB (a block of PT lines
-# followed by a block of EN lines rather than alternating paragraphs). These
-# five translations are the same natural translations used in the approved PoC.
-OVERRIDES = {
-    "ts0011": "Oh, no!",
-    "ts0012": "The red wine isn’t here.",
-    "ts0013": "I’m absent-minded and I’m tired.",
-    "ts0014": "But there’s no problem!",
-    "ts0015": "Here’s the white wine.",
-}
-
 
 def local(tag: str) -> str:
     return tag.rsplit("}", 1)[-1]
@@ -46,27 +36,19 @@ def norm(s: str) -> str:
     return re.sub(r"[^\w]+", "", s, flags=re.UNICODE)
 
 
-def strip_outer_quotes(s: str) -> str:
-    s = s.strip().replace("\u200e", "").replace("\u200f", "")
-    for a, b in [("“", "”"), ('"', '"'), ("‘", "’")]:
-        if s.startswith(a) and s.endswith(b):
-            return s[1:-1].strip()
-    return s
+def clean_en(s: str) -> str:
+    s = html.unescape(s).replace("\u200e", "").replace("\u200f", "").strip()
+    return s.strip('“”"‘’').strip()
 
 
 def split_en(s: str) -> list[str]:
-    s = html.unescape(strip_outer_quotes(s))
+    s = html.unescape(s).replace("\u200e", "").replace("\u200f", "").strip()
     parts = re.split(r"(?<=[.!?])\s+(?=[A-Z0-9“\"‘])", s)
-    return [strip_outer_quotes(p.strip()) for p in parts if p.strip()]
+    return [clean_en(p) for p in parts if clean_en(p)]
 
 
-def story_pairs(chapter: int) -> list[tuple[str, str]]:
-    """Extract ordinary alternating PT/EN story paragraph pairs.
-
-    Italic story paragraphs are the English translation. Notes and exercises
-    are excluded. A few identity translations such as a person's name are not
-    italicized, so adjacent equal-normalized paragraphs are accepted too.
-    """
+def story_groups(chapter: int) -> list[tuple[str, list[str]]]:
+    """Return logical ``(Portuguese text, English chunks)`` story groups."""
     path = ROOT / "extracted" / "OEBPS" / f"upart-002-chapter-{chapter}.xhtml"
     root = ET.parse(path).getroot()
     text_div = next(
@@ -76,40 +58,57 @@ def story_pairs(chapter: int) -> list[tuple[str, str]]:
     if text_div is None:
         raise RuntimeError(f"No story text div in {path}")
 
-    pairs: list[tuple[str, str]] = []
+    groups: list[tuple[str, list[str]]] = []
+    raw: list[tuple[str, bool]] = []
     in_story = False
-    pending: str | None = None
+
+    def flush() -> None:
+        nonlocal raw
+        if not raw:
+            return
+        english = [txt for txt, italic in raw if italic and not txt.lstrip().startswith("*")]
+        plain = [txt for txt, italic in raw if not italic]
+
+        # Rare identity translation (typically a proper name) is not italicized.
+        if not english and len(plain) == 2 and norm(plain[0]) == norm(plain[1]):
+            english = [plain[1]]
+            plain = [plain[0]]
+
+        if plain and english:
+            groups.append((" ".join(plain), english))
+        raw = []
+
     for child in list(text_div):
         tag = local(child.tag)
         txt = text_of(child)
+        classes = set((child.get("class") or "").split())
 
         if tag == "h2":
+            flush()
             in_story = txt.startswith("Section ")
-            pending = None
             continue
-        if tag == "div" and in_story and txt == "NOTES":
-            in_story = False
-            pending = None
+
+        if tag == "div":
+            if in_story and txt == "NOTES":
+                flush()
+                in_story = False
+            elif in_story and "ornamental-break" in classes:
+                flush()
             continue
+
         if not in_story or tag != "p":
+            continue
+        if "implicit-break" in classes:
+            flush()
             continue
         if not txt or txt in {"...", "* * *"} or txt.startswith("(audio "):
             continue
 
         italic = any(local(d.tag) == "i" for d in child.iter())
-        if italic:
-            if pending is not None:
-                pairs.append((pending, txt))
-                pending = None
-            continue
+        raw.append((txt, italic))
 
-        if pending is not None and norm(pending) == norm(txt):
-            pairs.append((pending, txt))
-            pending = None
-            continue
-        pending = txt
-
-    return pairs
+    flush()
+    return groups
 
 
 def load_alignment() -> list[dict[str, str]]:
@@ -122,18 +121,15 @@ def map_translations(rows: list[dict[str, str]]) -> tuple[dict[str, str], list[d
     for row in rows:
         by_chapter.setdefault(int(row["chapter"]), []).append(row)
 
-    translations = dict(OVERRIDES)
+    translations: dict[str, str] = {}
     report: list[dict[str, str]] = []
 
     for chapter, cards in sorted(by_chapter.items()):
-        pairs = story_pairs(chapter)
+        groups = story_groups(chapter)
         pos = 0
         fallbacks = 0
 
-        for pt_source, en_source in pairs:
-            # Skip already-overridden cards when searching forward.
-            while pos < len(cards) and cards[pos]["id"] in translations:
-                pos += 1
+        for pt_source, en_chunks in groups:
             if pos >= len(cards):
                 break
 
@@ -147,25 +143,32 @@ def map_translations(rows: list[dict[str, str]]) -> tuple[dict[str, str], list[d
                 if len(joined) > len(target) + 4:
                     break
                 end += 1
-            if end >= len(cards) or joined != target:
-                continue
 
-            group = cards[pos : end + 1]
-            en_parts = split_en(en_source)
-            if len(group) == 1:
-                # A single listening card may intentionally contain multiple
-                # clauses/sentences (e.g. "Olhe… Cuidado!"). Keep the book's
-                # complete translation together in that case.
-                translations[group[0]["id"]] = strip_outer_quotes(en_source)
-            elif len(en_parts) == len(group):
-                for card, en in zip(group, en_parts):
+            if end >= len(cards) or joined != target:
+                # Do not silently drift: a later group cannot safely be mapped
+                # until the current Portuguese source group is accounted for.
+                raise RuntimeError(
+                    f"Chapter {chapter}: source group did not match at {cards[pos]['id']}: {pt_source!r}"
+                )
+
+            group_cards = cards[pos : end + 1]
+            en_units: list[str] = []
+            for chunk in en_chunks:
+                en_units.extend(split_en(chunk))
+
+            if len(group_cards) == 1:
+                translations[group_cards[0]["id"]] = " ".join(clean_en(x) for x in en_chunks)
+            elif len(en_units) == len(group_cards):
+                for card, en in zip(group_cards, en_units):
                     translations[card["id"]] = en
             else:
-                # Preserve the author's complete translation, but make this
-                # visible in the report because it is less granular than ideal.
-                fallbacks += len(group)
-                for card in group:
-                    translations[card["id"]] = strip_outer_quotes(en_source)
+                fallbacks += len(group_cards)
+                raise RuntimeError(
+                    f"Chapter {chapter}: {group_cards[0]['id']}..{group_cards[-1]['id']} has "
+                    f"{len(group_cards)} PT cards but {len(en_units)} EN units; "
+                    f"PT={pt_source!r}; EN={en_chunks!r}"
+                )
+
             pos = end + 1
 
         missing = [c["id"] for c in cards if c["id"] not in translations]
