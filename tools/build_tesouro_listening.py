@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
-"""Build the Tesouro Submerso listening deck from aligned Portuguese clips and
-English translations embedded in the EPUB chapter XHTML files.
+"""Build Tesouro Submerso listening cards from sentence alignment + book English.
 
-The alignment CSV defines the final sentence/utterance boundaries. This script
-maps those utterances back to the book's bilingual story pairs, reuses the
-book's English translation whenever it can split it one-to-one, and records any
-fallbacks that need review.
+The alignment CSV is the source of truth for Portuguese card boundaries. The
+chapter XHTML already contains the author's English story translation, but its
+layout is not consistent: some sections alternate PT/EN paragraphs and others
+place several Portuguese lines before their English translations. Instead of
+pairing DOM paragraphs, this script extracts English story units in order and
+maps them to the already-aligned Portuguese cards.
 """
 from __future__ import annotations
 
 import csv
 import html
+import json
 import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -18,7 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ALIGNMENT = ROOT / "tesouro" / "alignment-ch01-10.csv"
 OUT = ROOT / "tesouro-listening.yaml"
-FALLBACKS = ROOT / "tesouro" / "translation-fallbacks.csv"
+REPORT = ROOT / "tesouro" / "translation-report.csv"
 XHTML = "{http://www.w3.org/1999/xhtml}"
 
 
@@ -30,81 +32,85 @@ def text_of(el: ET.Element) -> str:
     return re.sub(r"\s+", " ", "".join(el.itertext())).strip()
 
 
-def norm_match(s: str) -> str:
-    """Loose PT matching: alignment and EPUB sometimes differ only in punctuation."""
-    s = html.unescape(s).casefold()
+def norm(s: str) -> str:
+    s = html.unescape(s).casefold().replace("\u200e", "").replace("\u200f", "")
     return re.sub(r"[^\w]+", "", s, flags=re.UNICODE)
 
 
 def strip_outer_quotes(s: str) -> str:
-    s = s.strip()
-    pairs = [("“", "”"), ('"', '"'), ("‘", "’")]
-    for a, b in pairs:
+    s = s.strip().replace("\u200e", "").replace("\u200f", "")
+    for a, b in [("“", "”"), ('"', '"'), ("‘", "’")]:
         if s.startswith(a) and s.endswith(b):
             return s[1:-1].strip()
     return s
 
 
 def split_en(s: str) -> list[str]:
+    """Split an English story paragraph into card-sized sentence/utterance units."""
     s = html.unescape(strip_outer_quotes(s))
-    # Most source pairs are ordinary sentence sequences. Split only on strong
-    # sentence punctuation followed by the beginning of another sentence.
+    # The book occasionally has dialogue quotes spanning multiple sentences.
+    # Keep punctuation on each sentence but strip quote characters at edges.
     parts = re.split(r"(?<=[.!?])\s+(?=[A-Z0-9“\"‘])", s)
-    return [p.strip() for p in parts if p.strip()]
+    return [strip_outer_quotes(p.strip()) for p in parts if p.strip()]
 
 
-def story_pairs(chapter: int) -> list[tuple[str, str]]:
+def story_paragraphs(chapter: int) -> list[tuple[str, bool]]:
+    """Return (text, has_italic) story paragraphs only, excluding notes/exercises."""
     path = ROOT / "extracted" / "OEBPS" / f"upart-002-chapter-{chapter}.xhtml"
     root = ET.parse(path).getroot()
-    text_div = None
-    for div in root.iter(f"{XHTML}div"):
-        if "text" in (div.get("class") or "").split():
-            text_div = div
-            break
+    text_div = next(
+        (d for d in root.iter(f"{XHTML}div") if "text" in (d.get("class") or "").split()),
+        None,
+    )
     if text_div is None:
         raise RuntimeError(f"No story text div in {path}")
 
-    pairs: list[tuple[str, str]] = []
+    out: list[tuple[str, bool]] = []
     in_story = False
-    pending: str | None = None
-
     for child in list(text_div):
         tag = local(child.tag)
         txt = text_of(child)
-
         if tag == "h2":
             in_story = txt.startswith("Section ")
-            pending = None
             continue
-
         if tag == "div" and in_story and txt == "NOTES":
             in_story = False
-            pending = None
             continue
-
         if not in_story or tag != "p":
             continue
         if not txt or txt in {"...", "* * *"} or txt.startswith("(audio "):
             continue
+        out.append((txt, any(local(d.tag) == "i" for d in child.iter())))
+    return out
 
-        has_italic = any(local(desc.tag) == "i" for desc in child.iter())
-        if has_italic:
-            if pending is None:
-                continue
-            pairs.append((pending, txt))
-            pending = None
+
+def english_units(chapter: int) -> list[str]:
+    """Extract author English story units in reading order.
+
+    Most translations contain <i>. A few identity translations (names such as
+    João.) are plain text; those are detected when two adjacent plain story
+    paragraphs normalize to the same content.
+    """
+    paras = story_paragraphs(chapter)
+    chunks: list[str] = []
+    pending_plain: str | None = None
+
+    for txt, italic in paras:
+        if italic:
+            chunks.append(txt)
+            pending_plain = None
             continue
 
-        # Almost every English translation is italicized. A handful of lines
-        # such as a person's name are intentionally identical in both
-        # languages and may lack <i>; recognize those as the translation.
-        if pending is not None and norm_match(pending) == norm_match(txt):
-            pairs.append((pending, txt))
-            pending = None
-            continue
-        pending = txt
+        if pending_plain is not None and norm(pending_plain) == norm(txt):
+            chunks.append(txt)
+            pending_plain = None
+        else:
+            pending_plain = txt
 
-    return pairs
+    units: list[str] = []
+    for chunk in chunks:
+        units.extend(split_en(chunk))
+    return units
 
 
 def load_alignment() -> list[dict[str, str]]:
@@ -113,72 +119,37 @@ def load_alignment() -> list[dict[str, str]]:
 
 
 def map_translations(rows: list[dict[str, str]]) -> tuple[dict[str, str], list[dict[str, str]]]:
-    translations: dict[str, str] = {}
-    fallbacks: list[dict[str, str]] = []
-
     by_chapter: dict[int, list[dict[str, str]]] = {}
     for row in rows:
         by_chapter.setdefault(int(row["chapter"]), []).append(row)
 
+    translations: dict[str, str] = {}
+    report: list[dict[str, str]] = []
+
     for chapter, cards in sorted(by_chapter.items()):
-        pairs = story_pairs(chapter)
-        pos = 0
-
-        for pt_source, en_source in pairs:
-            if pos >= len(cards):
-                break
-
-            target = norm_match(pt_source)
-            joined = ""
-            end = pos
-            while end < len(cards):
-                joined = norm_match(" ".join(c["text"] for c in cards[pos : end + 1]))
-                if joined == target:
-                    break
-                if len(joined) > len(target) + 4:
-                    break
-                end += 1
-
-            if end >= len(cards) or joined != target:
-                continue
-
-            group = cards[pos : end + 1]
-            en_parts = split_en(en_source)
-            if len(en_parts) == len(group):
-                for card, en in zip(group, en_parts):
-                    translations[card["id"]] = en
-            elif len(group) == 1:
-                translations[group[0]["id"]] = en_source.strip()
-            else:
-                # Keep the author's translation rather than inventing one.
-                # This is deliberately noisy so every mismatch is visible in
-                # translation-fallbacks.csv for manual cleanup.
-                for card in group:
-                    translations[card["id"]] = en_source.strip()
-                    fallbacks.append(
-                        {
-                            "id": card["id"],
-                            "chapter": str(chapter),
-                            "text": card["text"],
-                            "source_portuguese": pt_source,
-                            "source_english": en_source,
-                            "reason": f"{len(group)} PT cards vs {len(en_parts)} EN sentence(s)",
-                        }
-                    )
-            pos = end + 1
-
-        if pos != len(cards):
-            missing = [c["id"] for c in cards[pos:] if c["id"] not in translations]
+        en = english_units(chapter)
+        report.append({
+            "chapter": str(chapter),
+            "cards": str(len(cards)),
+            "english_units": str(len(en)),
+            "status": "ok" if len(cards) == len(en) else "count-mismatch",
+        })
+        print(f"chapter {chapter}: cards={len(cards)}, english_units={len(en)}")
+        if len(cards) != len(en):
+            print("ENGLISH UNITS:")
+            for i, unit in enumerate(en, 1):
+                print(f"  {i:03d}: {unit}")
             raise RuntimeError(
-                f"Chapter {chapter}: failed to map {len(missing)} aligned card(s): {missing[:10]}"
+                f"Chapter {chapter}: {len(cards)} aligned cards but {len(en)} English units"
             )
+        for card, translation in zip(cards, en):
+            translations[card["id"]] = translation
 
-    return translations, fallbacks
+    return translations, report
 
 
 def yaml_quote(s: str) -> str:
-    # JSON string syntax is valid YAML and avoids multiline/colon surprises.
-    import json
+    # JSON string syntax is valid YAML and robust around colons/quotes/unicode.
     return json.dumps(s, ensure_ascii=False)
 
 
@@ -187,7 +158,7 @@ def write_deck(rows: list[dict[str, str]], translations: dict[str, str]) -> None
     for row in rows:
         cid = row["id"]
         ch = int(row["chapter"])
-        pt = row["text"]
+        pt = row["text"].strip()
         en = translations[cid]
         lines += [
             f"- id: {cid}",
@@ -200,23 +171,21 @@ def write_deck(rows: list[dict[str, str]], translations: dict[str, str]) -> None
     OUT.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def write_fallbacks(rows: list[dict[str, str]]) -> None:
-    fields = ["id", "chapter", "text", "source_portuguese", "source_english", "reason"]
-    with FALLBACKS.open("w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=fields)
+def write_report(rows: list[dict[str, str]]) -> None:
+    with REPORT.open("w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["chapter", "cards", "english_units", "status"])
         w.writeheader()
         w.writerows(rows)
 
 
 def main() -> None:
     rows = load_alignment()
-    translations, fallbacks = map_translations(rows)
-    if len(translations) != len(rows):
-        raise RuntimeError(f"Mapped {len(translations)} translations for {len(rows)} cards")
+    translations, report = map_translations(rows)
+    assert len(rows) == 312, len(rows)
+    assert len(translations) == len(rows), (len(translations), len(rows))
     write_deck(rows, translations)
-    write_fallbacks(fallbacks)
-    print(f"generated {len(rows)} cards")
-    print(f"translation fallbacks needing review: {len(fallbacks)}")
+    write_report(report)
+    print(f"generated {len(rows)} cards with author English translations")
 
 
 if __name__ == "__main__":
