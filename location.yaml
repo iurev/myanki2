@@ -110,24 +110,18 @@ cards:
     (em cima de)'
   chapter: —
 - id: 0583
+  suspended: "“O gato está em direção à casa” is unnatural because em direção a expresses movement/orientation toward a goal; estar is a poor verb here. English “toward” is also a preposition while the Portuguese target is a phrase."
   skipped: "reason_phrase"
   word: em direção a
-  front: O gato está {{toward}} casa.
-  back: 'O gato está em direção à casa.
-
-    The cat is toward the house.
-
-    (em direção a)'
+  front: "O gato caminha {{toward}} a casa."
+  back: "O gato caminha em direção à casa.<br>The cat walks toward the house.<br><br><b>em direção a</b> = toward / in the direction of. Before feminine <i>a casa</i>: <b>a + a → à</b>."
   chapter: —
 - id: 0584
+  suspended: "em frente is ambiguous/incomplete here: it can mean straight ahead / opposite / in front depending construction. “O gato está em frente” lacks the reference point expected by English “in front”."
   skipped: "reason_phrase"
   word: em frente
-  front: O gato está {{in front}}.
-  back: 'O gato está em frente.
-
-    The cat is in front.
-
-    (em frente)'
+  front: "Siga {{straight ahead}}."
+  back: "Siga em frente.<br>Go straight ahead.<br><br><b>em frente</b> is the fixed directions phrase “straight ahead/forward”. This is more useful and less ambiguous than the original location fragment."
   chapter: —
 - id: 0585
   word: fora de
