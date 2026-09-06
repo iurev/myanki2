@@ -23,6 +23,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Debug chapter 1 pairs
+        run: |
+          python3 - <<'PY'
+          from tools.build_tesouro_listening import story_pairs
+          for i, pair in enumerate(story_pairs(1), 1):
+              print(i, repr(pair[0]), '=>', repr(pair[1]))
+          PY
       - name: Generate deck
         run: python3 tools/build_tesouro_listening.py
       - name: Validate YAML
