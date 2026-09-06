@@ -30,13 +30,10 @@ def text_of(el: ET.Element) -> str:
     return re.sub(r"\s+", " ", "".join(el.itertext())).strip()
 
 
-def norm_pt(s: str) -> str:
-    s = html.unescape(s).strip()
-    s = s.replace("...", "…")
-    s = re.sub(r"^[—–-]\s*", "", s)
-    s = re.sub(r"\s+", " ", s)
-    s = re.sub(r"\s+([,.!?;:])", r"\1", s)
-    return s.strip().casefold()
+def norm_match(s: str) -> str:
+    """Loose PT matching: alignment and EPUB sometimes differ only in punctuation."""
+    s = html.unescape(s).casefold()
+    return re.sub(r"[^\w]+", "", s, flags=re.UNICODE)
 
 
 def strip_outer_quotes(s: str) -> str:
@@ -101,13 +98,10 @@ def story_pairs(chapter: int) -> list[tuple[str, str]]:
         # Almost every English translation is italicized. A handful of lines
         # such as a person's name are intentionally identical in both
         # languages and may lack <i>; recognize those as the translation.
-        if pending is not None:
-            a = re.sub(r"[^\w]+", "", pending, flags=re.UNICODE).casefold()
-            b = re.sub(r"[^\w]+", "", txt, flags=re.UNICODE).casefold()
-            if a and a == b:
-                pairs.append((pending, txt))
-                pending = None
-                continue
+        if pending is not None and norm_match(pending) == norm_match(txt):
+            pairs.append((pending, txt))
+            pending = None
+            continue
         pending = txt
 
     return pairs
@@ -134,16 +128,14 @@ def map_translations(rows: list[dict[str, str]]) -> tuple[dict[str, str], list[d
             if pos >= len(cards):
                 break
 
-            target = norm_pt(pt_source)
+            target = norm_match(pt_source)
             joined = ""
             end = pos
             while end < len(cards):
-                joined = norm_pt(" ".join(c["text"] for c in cards[pos : end + 1]))
+                joined = norm_match(" ".join(c["text"] for c in cards[pos : end + 1]))
                 if joined == target:
                     break
-                # If it has already become longer than the source, this source
-                # pair is not the next aligned group; leave it for a later pair.
-                if len(joined) > len(target) + 8:
+                if len(joined) > len(target) + 4:
                     break
                 end += 1
 
@@ -187,7 +179,6 @@ def map_translations(rows: list[dict[str, str]]) -> tuple[dict[str, str], list[d
 def yaml_quote(s: str) -> str:
     # JSON string syntax is valid YAML and avoids multiline/colon surprises.
     import json
-
     return json.dumps(s, ensure_ascii=False)
 
 
