@@ -43,9 +43,6 @@ def clean_en(s: str) -> str:
 
 def split_en(s: str) -> list[str]:
     s = html.unescape(s).replace("\u200e", "").replace("\u200f", "").strip()
-    # Parenthetical literal glosses are explanatory notes, not extra spoken
-    # sentence translations; dropping them also prevents ``lit.`` being seen
-    # as a false sentence boundary.
     s = re.sub(r"\s*\(lit\.[^)]*\)", "", s, flags=re.IGNORECASE)
     parts = re.split(r"(?<=[.!?])\s+(?=[A-Z0-9“\"‘])", s)
     return [clean_en(p) for p in parts if clean_en(p)]
@@ -64,7 +61,9 @@ def story_groups(chapter: int) -> list[tuple[str, list[str]]]:
 
     groups: list[tuple[str, list[str]]] = []
     raw: list[tuple[str, bool]] = []
-    in_story = False
+    # Some short chapters (e.g. chapter 8) have no explicit Section heading;
+    # story content starts immediately after the audio marker.
+    in_story = True
 
     def flush() -> None:
         nonlocal raw
@@ -73,7 +72,6 @@ def story_groups(chapter: int) -> list[tuple[str, list[str]]]:
         english = [txt for txt, italic in raw if italic and not txt.lstrip().startswith("*")]
         plain = [txt for txt, italic in raw if not italic]
 
-        # Rare identity translation (typically a proper name) is not italicized.
         if not english and len(plain) == 2 and norm(plain[0]) == norm(plain[1]):
             english = [plain[1]]
             plain = [plain[0]]
