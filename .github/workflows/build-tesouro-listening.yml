@@ -23,13 +23,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Debug chapter 1 pairs
-        run: |
-          python3 - <<'PY'
-          from tools.build_tesouro_listening import story_pairs
-          for i, pair in enumerate(story_pairs(1), 1):
-              print(i, repr(pair[0]), '=>', repr(pair[1]))
-          PY
       - name: Generate deck
         run: python3 tools/build_tesouro_listening.py
       - name: Validate YAML
@@ -46,17 +39,19 @@ jobs:
           assert len({c['id'] for c in cards}) == 312
           assert all(c['front'] == '' for c in cards)
           assert all('<br>' in c['back'] for c in cards)
-          fallbacks = list(csv.DictReader(open('tesouro/translation-fallbacks.csv', encoding='utf-8')))
-          print(f'validated 312 cards; translation fallbacks={len(fallbacks)}')
+          report = list(csv.DictReader(open('tesouro/translation-report.csv', encoding='utf-8')))
+          assert len(report) == 10
+          assert all(r['status'] == 'ok' for r in report), report
+          print('validated 312 cards across chapters 1-10')
           PY
       - name: Commit generated files
         run: |
-          if git diff --quiet -- tesouro-listening.yaml tesouro/translation-fallbacks.csv; then
+          if git diff --quiet -- tesouro-listening.yaml tesouro/translation-report.csv; then
             echo 'generated files already up to date'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add tesouro-listening.yaml tesouro/translation-fallbacks.csv
+          git add tesouro-listening.yaml tesouro/translation-report.csv
           git commit -m 'Generate chapters 1-10 Tesouro listening cards'
           git push origin HEAD:feature/tesouro-listening-ch1
