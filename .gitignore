@@ -8,3 +8,5 @@ ta/*.html
 
 tesouro/audio/
 tesouro/source/
+tesouro/whisper-cache/
+.venv-audio/
