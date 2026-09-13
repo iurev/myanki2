@@ -46,9 +46,22 @@ MANUAL_OVERRIDES: dict[tuple[int, str], tuple[float, float]] = {
     (9, "ts0297"): (117.59, 123.05),
 }
 
-START_PAD = 0.12
+# Whisper's word-end timestamp for a vowel-final word is often measurably
+# early, and Portuguese sentences overwhelmingly end in vowels -- confirmed
+# by ear on ts0001: "biólog[o]" cut half-heard even with 0.11-0.15s of
+# gap-proportional trailing pad (the earlier approach, which capped the pad
+# at half the natural inter-sentence gap). Fix: always add a *fixed* pad
+# regardless of neighbor timing, so the trailing edge isn't held hostage to
+# however much silence happens to exist -- but bound how far that's allowed
+# to overshoot the actual gap, so a rare near-zero-gap sentence can't
+# swallow a neighbor's entire next word. A guaranteed 0.15s minimum trailing
+# pad even at zero gap, up to the full 0.22s when there's room, is a much
+# better tradeoff than the previous proportional split: a listening
+# flashcard bleeding a faint fraction of a neighboring word is a minor,
+# often inaudible cost; a clipped target word is not.
+START_PAD = 0.06
 END_PAD = 0.22
-MIN_PAD = 0.06  # always applied, even when neighbors leave zero gap
+OVERSHOOT_ALLOWANCE = 0.15  # how far the pad may exceed the measured gap
 
 
 def normalize(tok: str) -> str:
@@ -187,7 +200,7 @@ def align_chapter(chapter: int) -> list[dict]:
 
 
 def apply_padding(aligned: list[dict]) -> None:
-    """Pad sentence boundaries into inter-sentence silence, clamped to neighbors."""
+    """Pad each sentence boundary. See START_PAD/END_PAD/OVERSHOOT_ALLOWANCE comment."""
     for i, s in enumerate(aligned):
         if s["start"] is None:
             continue
@@ -197,8 +210,8 @@ def apply_padding(aligned: list[dict]) -> None:
         )
         gap_before = max(0.0, s["start"] - prev_end)
         gap_after = max(0.0, next_start - s["end"])
-        s["start"] = s["start"] - max(MIN_PAD, min(START_PAD, gap_before / 2))
-        s["end"] = s["end"] + max(MIN_PAD, min(END_PAD, gap_after / 2))
+        s["start"] = max(0.0, s["start"] - min(START_PAD, gap_before + OVERSHOOT_ALLOWANCE))
+        s["end"] = s["end"] + min(END_PAD, gap_after + OVERSHOOT_ALLOWANCE)
 
 
 def cut_clips(chapter: int, aligned: list[dict]) -> None:
