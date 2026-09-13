@@ -198,12 +198,12 @@ def sync_file(path, only_id):
 
         back = br(back)
         if c.get("back_audio"):
-            # Replay the front's audio, then the new back-only audio (e.g. an
-            # English translation clip), so both play in sequence when the
-            # answer side is shown.
+            # Anki plays every sound tag on the card (front's included) when
+            # the answer side is shown, so the front's audio would otherwise
+            # play a second time -- only add the new back-only audio here.
             back_media = audio_markup(path, c["back_audio"])
             if back_media:
-                back = f"{back}<br>{media}{back_media}"
+                back = f"{back}<br>{back_media}"
 
         fields = {
             "id": c["id"],
