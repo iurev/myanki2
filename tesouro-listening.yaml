@@ -6,6 +6,7 @@ cards:
   front: ''
   audio: tesouro/audio/ch01/ts0001.mp3
   back: "<b>O João é biólogo.</b><br>João is a biologist."
+  back_audio: tesouro/audio-en/ts0001.mp3
   tags: [tesouro, listening, chapter01]
 - id: ts0002
   word: ts0002

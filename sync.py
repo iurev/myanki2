@@ -190,16 +190,26 @@ def sync_file(path, only_id):
             back = f"{back}<br><br><hr><br><br>{extra}"
 
         front = br(c["front"])
+        media = ""
         if c.get("audio"):
             media = audio_markup(path, c["audio"])
             if media:
                 front = f"{front}<br><br>{media}"
 
+        back = br(back)
+        if c.get("back_audio"):
+            # Replay the front's audio, then the new back-only audio (e.g. an
+            # English translation clip), so both play in sequence when the
+            # answer side is shown.
+            back_media = audio_markup(path, c["back_audio"])
+            if back_media:
+                back = f"{back}<br>{media}{back_media}"
+
         fields = {
             "id": c["id"],
             "word": word,
             "front": front,
-            "back": br(back),
+            "back": back,
         }
 
         tags = [str(tag) for tag in c.get("tags", [])]
