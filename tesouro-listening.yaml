@@ -1,12 +1,12 @@
 deck: listening
-model: words
+model: listening
 cards:
 - id: ts0001
   word: ts0001
   front: ''
   audio: tesouro/audio/ch01/ts0001.mp3
   back: <b>O João é biólogo.</b><br>João is a biologist.
-  back_audio: tesouro/audio-en/ts0001.mp3
+  back_audio: tesouro/audio-combined/ts0001.mp3
   tags:
   - tesouro
   - listening
@@ -20,7 +20,7 @@ cards:
   - tesouro
   - listening
   - chapter01
-  back_audio: tesouro/audio-en/ts0002.mp3
+  back_audio: tesouro/audio-combined/ts0002.mp3
 - id: ts0003
   word: ts0003
   front: ''
@@ -30,7 +30,7 @@ cards:
   - tesouro
   - listening
   - chapter01
-  back_audio: tesouro/audio-en/ts0003.mp3
+  back_audio: tesouro/audio-combined/ts0003.mp3
 - id: ts0004
   word: ts0004
   front: ''
@@ -40,7 +40,7 @@ cards:
   - tesouro
   - listening
   - chapter01
-  back_audio: tesouro/audio-en/ts0004.mp3
+  back_audio: tesouro/audio-combined/ts0004.mp3
 - id: ts0005
   word: ts0005
   front: ''
@@ -50,7 +50,7 @@ cards:
   - tesouro
   - listening
   - chapter01
-  back_audio: tesouro/audio-en/ts0005.mp3
+  back_audio: tesouro/audio-combined/ts0005.mp3
 - id: ts0006
   word: ts0006
   front: ''
@@ -60,7 +60,7 @@ cards:
   - tesouro
   - listening
   - chapter01
-  back_audio: tesouro/audio-en/ts0006.mp3
+  back_audio: tesouro/audio-combined/ts0006.mp3
 - id: ts0007
   word: ts0007
   front: ''
@@ -70,7 +70,7 @@ cards:
   - tesouro
   - listening
   - chapter01
-  back_audio: tesouro/audio-en/ts0007.mp3
+  back_audio: tesouro/audio-combined/ts0007.mp3
 - id: ts0008
   word: ts0008
   front: ''
@@ -80,7 +80,7 @@ cards:
   - tesouro
   - listening
   - chapter01
-  back_audio: tesouro/audio-en/ts0008.mp3
+  back_audio: tesouro/audio-combined/ts0008.mp3
 - id: ts0009
   word: ts0009
   front: ''
@@ -90,7 +90,7 @@ cards:
   - tesouro
   - listening
   - chapter01
-  back_audio: tesouro/audio-en/ts0009.mp3
+  back_audio: tesouro/audio-combined/ts0009.mp3
 - id: ts0010
   word: ts0010
   front: ''
@@ -100,7 +100,7 @@ cards:
   - tesouro
   - listening
   - chapter01
-  back_audio: tesouro/audio-en/ts0010.mp3
+  back_audio: tesouro/audio-combined/ts0010.mp3
 - id: ts0011
   word: ts0011
   front: ''
@@ -110,7 +110,7 @@ cards:
   - tesouro
   - listening
   - chapter01
-  back_audio: tesouro/audio-en/ts0011.mp3
+  back_audio: tesouro/audio-combined/ts0011.mp3
 - id: ts0012
   word: ts0012
   front: ''
@@ -120,7 +120,7 @@ cards:
   - tesouro
   - listening
   - chapter01
-  back_audio: tesouro/audio-en/ts0012.mp3
+  back_audio: tesouro/audio-combined/ts0012.mp3
 - id: ts0013
   word: ts0013
   front: ''
@@ -130,7 +130,7 @@ cards:
   - tesouro
   - listening
   - chapter01
-  back_audio: tesouro/audio-en/ts0013.mp3
+  back_audio: tesouro/audio-combined/ts0013.mp3
 - id: ts0014
   word: ts0014
   front: ''
@@ -140,7 +140,7 @@ cards:
   - tesouro
   - listening
   - chapter01
-  back_audio: tesouro/audio-en/ts0014.mp3
+  back_audio: tesouro/audio-combined/ts0014.mp3
 - id: ts0015
   word: ts0015
   front: ''
@@ -150,7 +150,7 @@ cards:
   - tesouro
   - listening
   - chapter01
-  back_audio: tesouro/audio-en/ts0015.mp3
+  back_audio: tesouro/audio-combined/ts0015.mp3
 - id: ts0016
   word: ts0016
   front: ''
@@ -160,7 +160,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0016.mp3
+  back_audio: tesouro/audio-combined/ts0016.mp3
 - id: ts0017
   word: ts0017
   front: ''
@@ -170,7 +170,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0017.mp3
+  back_audio: tesouro/audio-combined/ts0017.mp3
 - id: ts0018
   word: ts0018
   front: ''
@@ -180,7 +180,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0018.mp3
+  back_audio: tesouro/audio-combined/ts0018.mp3
 - id: ts0019
   word: ts0019
   front: ''
@@ -190,7 +190,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0019.mp3
+  back_audio: tesouro/audio-combined/ts0019.mp3
 - id: ts0020
   word: ts0020
   front: ''
@@ -200,7 +200,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0020.mp3
+  back_audio: tesouro/audio-combined/ts0020.mp3
 - id: ts0021
   word: ts0021
   front: ''
@@ -210,7 +210,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0021.mp3
+  back_audio: tesouro/audio-combined/ts0021.mp3
 - id: ts0022
   word: ts0022
   front: ''
@@ -220,7 +220,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0022.mp3
+  back_audio: tesouro/audio-combined/ts0022.mp3
 - id: ts0023
   word: ts0023
   front: ''
@@ -230,7 +230,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0023.mp3
+  back_audio: tesouro/audio-combined/ts0023.mp3
 - id: ts0024
   word: ts0024
   front: ''
@@ -240,7 +240,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0024.mp3
+  back_audio: tesouro/audio-combined/ts0024.mp3
 - id: ts0025
   word: ts0025
   front: ''
@@ -250,7 +250,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0025.mp3
+  back_audio: tesouro/audio-combined/ts0025.mp3
 - id: ts0026
   word: ts0026
   front: ''
@@ -260,7 +260,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0026.mp3
+  back_audio: tesouro/audio-combined/ts0026.mp3
 - id: ts0027
   word: ts0027
   front: ''
@@ -270,7 +270,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0027.mp3
+  back_audio: tesouro/audio-combined/ts0027.mp3
 - id: ts0028
   word: ts0028
   front: ''
@@ -280,7 +280,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0028.mp3
+  back_audio: tesouro/audio-combined/ts0028.mp3
 - id: ts0029
   word: ts0029
   front: ''
@@ -290,7 +290,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0029.mp3
+  back_audio: tesouro/audio-combined/ts0029.mp3
 - id: ts0030
   word: ts0030
   front: ''
@@ -300,7 +300,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0030.mp3
+  back_audio: tesouro/audio-combined/ts0030.mp3
 - id: ts0031
   word: ts0031
   front: ''
@@ -310,7 +310,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0031.mp3
+  back_audio: tesouro/audio-combined/ts0031.mp3
 - id: ts0032
   word: ts0032
   front: ''
@@ -320,7 +320,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0032.mp3
+  back_audio: tesouro/audio-combined/ts0032.mp3
 - id: ts0033
   word: ts0033
   front: ''
@@ -330,7 +330,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0033.mp3
+  back_audio: tesouro/audio-combined/ts0033.mp3
 - id: ts0034
   word: ts0034
   front: ''
@@ -340,7 +340,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0034.mp3
+  back_audio: tesouro/audio-combined/ts0034.mp3
 - id: ts0035
   word: ts0035
   front: ''
@@ -350,7 +350,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0035.mp3
+  back_audio: tesouro/audio-combined/ts0035.mp3
 - id: ts0036
   word: ts0036
   front: ''
@@ -360,7 +360,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0036.mp3
+  back_audio: tesouro/audio-combined/ts0036.mp3
 - id: ts0037
   word: ts0037
   front: ''
@@ -370,7 +370,7 @@ cards:
   - tesouro
   - listening
   - chapter02
-  back_audio: tesouro/audio-en/ts0037.mp3
+  back_audio: tesouro/audio-combined/ts0037.mp3
 - id: ts0038
   word: ts0038
   front: ''
@@ -380,7 +380,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0038.mp3
+  back_audio: tesouro/audio-combined/ts0038.mp3
 - id: ts0039
   word: ts0039
   front: ''
@@ -390,7 +390,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0039.mp3
+  back_audio: tesouro/audio-combined/ts0039.mp3
 - id: ts0040
   word: ts0040
   front: ''
@@ -400,7 +400,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0040.mp3
+  back_audio: tesouro/audio-combined/ts0040.mp3
 - id: ts0041
   word: ts0041
   front: ''
@@ -410,7 +410,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0041.mp3
+  back_audio: tesouro/audio-combined/ts0041.mp3
 - id: ts0042
   word: ts0042
   front: ''
@@ -420,7 +420,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0042.mp3
+  back_audio: tesouro/audio-combined/ts0042.mp3
 - id: ts0043
   word: ts0043
   front: ''
@@ -430,7 +430,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0043.mp3
+  back_audio: tesouro/audio-combined/ts0043.mp3
 - id: ts0044
   word: ts0044
   front: ''
@@ -440,7 +440,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0044.mp3
+  back_audio: tesouro/audio-combined/ts0044.mp3
 - id: ts0045
   word: ts0045
   front: ''
@@ -450,7 +450,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0045.mp3
+  back_audio: tesouro/audio-combined/ts0045.mp3
 - id: ts0046
   word: ts0046
   front: ''
@@ -460,7 +460,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0046.mp3
+  back_audio: tesouro/audio-combined/ts0046.mp3
 - id: ts0047
   word: ts0047
   front: ''
@@ -470,7 +470,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0047.mp3
+  back_audio: tesouro/audio-combined/ts0047.mp3
 - id: ts0048
   word: ts0048
   front: ''
@@ -480,7 +480,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0048.mp3
+  back_audio: tesouro/audio-combined/ts0048.mp3
 - id: ts0049
   word: ts0049
   front: ''
@@ -490,7 +490,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0049.mp3
+  back_audio: tesouro/audio-combined/ts0049.mp3
 - id: ts0050
   word: ts0050
   front: ''
@@ -500,7 +500,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0050.mp3
+  back_audio: tesouro/audio-combined/ts0050.mp3
 - id: ts0051
   word: ts0051
   front: ''
@@ -510,7 +510,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0051.mp3
+  back_audio: tesouro/audio-combined/ts0051.mp3
 - id: ts0052
   word: ts0052
   front: ''
@@ -520,7 +520,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0052.mp3
+  back_audio: tesouro/audio-combined/ts0052.mp3
 - id: ts0053
   word: ts0053
   front: ''
@@ -530,7 +530,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0053.mp3
+  back_audio: tesouro/audio-combined/ts0053.mp3
 - id: ts0054
   word: ts0054
   front: ''
@@ -540,7 +540,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0054.mp3
+  back_audio: tesouro/audio-combined/ts0054.mp3
 - id: ts0055
   word: ts0055
   front: ''
@@ -550,7 +550,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0055.mp3
+  back_audio: tesouro/audio-combined/ts0055.mp3
 - id: ts0056
   word: ts0056
   front: ''
@@ -560,7 +560,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0056.mp3
+  back_audio: tesouro/audio-combined/ts0056.mp3
 - id: ts0057
   word: ts0057
   front: ''
@@ -570,7 +570,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0057.mp3
+  back_audio: tesouro/audio-combined/ts0057.mp3
 - id: ts0058
   word: ts0058
   front: ''
@@ -580,7 +580,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0058.mp3
+  back_audio: tesouro/audio-combined/ts0058.mp3
 - id: ts0059
   word: ts0059
   front: ''
@@ -590,7 +590,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0059.mp3
+  back_audio: tesouro/audio-combined/ts0059.mp3
 - id: ts0060
   word: ts0060
   front: ''
@@ -600,7 +600,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0060.mp3
+  back_audio: tesouro/audio-combined/ts0060.mp3
 - id: ts0061
   word: ts0061
   front: ''
@@ -610,7 +610,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0061.mp3
+  back_audio: tesouro/audio-combined/ts0061.mp3
 - id: ts0062
   word: ts0062
   front: ''
@@ -620,7 +620,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0062.mp3
+  back_audio: tesouro/audio-combined/ts0062.mp3
 - id: ts0063
   word: ts0063
   front: ''
@@ -630,7 +630,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0063.mp3
+  back_audio: tesouro/audio-combined/ts0063.mp3
 - id: ts0064
   word: ts0064
   front: ''
@@ -640,7 +640,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0064.mp3
+  back_audio: tesouro/audio-combined/ts0064.mp3
 - id: ts0065
   word: ts0065
   front: ''
@@ -650,7 +650,7 @@ cards:
   - tesouro
   - listening
   - chapter03
-  back_audio: tesouro/audio-en/ts0065.mp3
+  back_audio: tesouro/audio-combined/ts0065.mp3
 - id: ts0066
   word: ts0066
   front: ''
@@ -660,7 +660,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0066.mp3
+  back_audio: tesouro/audio-combined/ts0066.mp3
 - id: ts0067
   word: ts0067
   front: ''
@@ -670,7 +670,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0067.mp3
+  back_audio: tesouro/audio-combined/ts0067.mp3
 - id: ts0068
   word: ts0068
   front: ''
@@ -680,7 +680,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0068.mp3
+  back_audio: tesouro/audio-combined/ts0068.mp3
 - id: ts0069
   word: ts0069
   front: ''
@@ -690,7 +690,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0069.mp3
+  back_audio: tesouro/audio-combined/ts0069.mp3
 - id: ts0070
   word: ts0070
   front: ''
@@ -700,7 +700,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0070.mp3
+  back_audio: tesouro/audio-combined/ts0070.mp3
 - id: ts0071
   word: ts0071
   front: ''
@@ -710,7 +710,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0071.mp3
+  back_audio: tesouro/audio-combined/ts0071.mp3
 - id: ts0072
   word: ts0072
   front: ''
@@ -720,7 +720,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0072.mp3
+  back_audio: tesouro/audio-combined/ts0072.mp3
 - id: ts0073
   word: ts0073
   front: ''
@@ -730,7 +730,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0073.mp3
+  back_audio: tesouro/audio-combined/ts0073.mp3
 - id: ts0074
   word: ts0074
   front: ''
@@ -740,7 +740,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0074.mp3
+  back_audio: tesouro/audio-combined/ts0074.mp3
 - id: ts0075
   word: ts0075
   front: ''
@@ -750,7 +750,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0075.mp3
+  back_audio: tesouro/audio-combined/ts0075.mp3
 - id: ts0076
   word: ts0076
   front: ''
@@ -760,7 +760,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0076.mp3
+  back_audio: tesouro/audio-combined/ts0076.mp3
 - id: ts0077
   word: ts0077
   front: ''
@@ -770,7 +770,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0077.mp3
+  back_audio: tesouro/audio-combined/ts0077.mp3
 - id: ts0078
   word: ts0078
   front: ''
@@ -780,7 +780,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0078.mp3
+  back_audio: tesouro/audio-combined/ts0078.mp3
 - id: ts0079
   word: ts0079
   front: ''
@@ -790,7 +790,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0079.mp3
+  back_audio: tesouro/audio-combined/ts0079.mp3
 - id: ts0080
   word: ts0080
   front: ''
@@ -800,7 +800,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0080.mp3
+  back_audio: tesouro/audio-combined/ts0080.mp3
 - id: ts0081
   word: ts0081
   front: ''
@@ -810,7 +810,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0081.mp3
+  back_audio: tesouro/audio-combined/ts0081.mp3
 - id: ts0082
   word: ts0082
   front: ''
@@ -820,7 +820,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0082.mp3
+  back_audio: tesouro/audio-combined/ts0082.mp3
 - id: ts0083
   word: ts0083
   front: ''
@@ -830,7 +830,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0083.mp3
+  back_audio: tesouro/audio-combined/ts0083.mp3
 - id: ts0084
   word: ts0084
   front: ''
@@ -840,7 +840,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0084.mp3
+  back_audio: tesouro/audio-combined/ts0084.mp3
 - id: ts0085
   word: ts0085
   front: ''
@@ -850,7 +850,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0085.mp3
+  back_audio: tesouro/audio-combined/ts0085.mp3
 - id: ts0086
   word: ts0086
   front: ''
@@ -860,7 +860,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0086.mp3
+  back_audio: tesouro/audio-combined/ts0086.mp3
 - id: ts0087
   word: ts0087
   front: ''
@@ -870,7 +870,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0087.mp3
+  back_audio: tesouro/audio-combined/ts0087.mp3
 - id: ts0088
   word: ts0088
   front: ''
@@ -880,7 +880,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0088.mp3
+  back_audio: tesouro/audio-combined/ts0088.mp3
 - id: ts0089
   word: ts0089
   front: ''
@@ -890,7 +890,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0089.mp3
+  back_audio: tesouro/audio-combined/ts0089.mp3
 - id: ts0090
   word: ts0090
   front: ''
@@ -900,7 +900,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0090.mp3
+  back_audio: tesouro/audio-combined/ts0090.mp3
 - id: ts0091
   word: ts0091
   front: ''
@@ -910,7 +910,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0091.mp3
+  back_audio: tesouro/audio-combined/ts0091.mp3
 - id: ts0092
   word: ts0092
   front: ''
@@ -920,7 +920,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0092.mp3
+  back_audio: tesouro/audio-combined/ts0092.mp3
 - id: ts0093
   word: ts0093
   front: ''
@@ -930,7 +930,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0093.mp3
+  back_audio: tesouro/audio-combined/ts0093.mp3
 - id: ts0094
   word: ts0094
   front: ''
@@ -940,7 +940,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0094.mp3
+  back_audio: tesouro/audio-combined/ts0094.mp3
 - id: ts0095
   word: ts0095
   front: ''
@@ -950,7 +950,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0095.mp3
+  back_audio: tesouro/audio-combined/ts0095.mp3
 - id: ts0096
   word: ts0096
   front: ''
@@ -960,7 +960,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0096.mp3
+  back_audio: tesouro/audio-combined/ts0096.mp3
 - id: ts0097
   word: ts0097
   front: ''
@@ -970,7 +970,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0097.mp3
+  back_audio: tesouro/audio-combined/ts0097.mp3
 - id: ts0098
   word: ts0098
   front: ''
@@ -980,7 +980,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0098.mp3
+  back_audio: tesouro/audio-combined/ts0098.mp3
 - id: ts0099
   word: ts0099
   front: ''
@@ -990,7 +990,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0099.mp3
+  back_audio: tesouro/audio-combined/ts0099.mp3
 - id: ts0100
   word: ts0100
   front: ''
@@ -1000,7 +1000,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0100.mp3
+  back_audio: tesouro/audio-combined/ts0100.mp3
 - id: ts0101
   word: ts0101
   front: ''
@@ -1010,7 +1010,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0101.mp3
+  back_audio: tesouro/audio-combined/ts0101.mp3
 - id: ts0102
   word: ts0102
   front: ''
@@ -1020,7 +1020,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0102.mp3
+  back_audio: tesouro/audio-combined/ts0102.mp3
 - id: ts0103
   word: ts0103
   front: ''
@@ -1030,7 +1030,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0103.mp3
+  back_audio: tesouro/audio-combined/ts0103.mp3
 - id: ts0104
   word: ts0104
   front: ''
@@ -1040,7 +1040,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0104.mp3
+  back_audio: tesouro/audio-combined/ts0104.mp3
 - id: ts0105
   word: ts0105
   front: ''
@@ -1050,7 +1050,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0105.mp3
+  back_audio: tesouro/audio-combined/ts0105.mp3
 - id: ts0106
   word: ts0106
   front: ''
@@ -1060,7 +1060,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0106.mp3
+  back_audio: tesouro/audio-combined/ts0106.mp3
 - id: ts0107
   word: ts0107
   front: ''
@@ -1070,7 +1070,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0107.mp3
+  back_audio: tesouro/audio-combined/ts0107.mp3
 - id: ts0108
   word: ts0108
   front: ''
@@ -1080,7 +1080,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0108.mp3
+  back_audio: tesouro/audio-combined/ts0108.mp3
 - id: ts0109
   word: ts0109
   front: ''
@@ -1090,7 +1090,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0109.mp3
+  back_audio: tesouro/audio-combined/ts0109.mp3
 - id: ts0110
   word: ts0110
   front: ''
@@ -1100,7 +1100,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0110.mp3
+  back_audio: tesouro/audio-combined/ts0110.mp3
 - id: ts0111
   word: ts0111
   front: ''
@@ -1110,7 +1110,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0111.mp3
+  back_audio: tesouro/audio-combined/ts0111.mp3
 - id: ts0112
   word: ts0112
   front: ''
@@ -1120,7 +1120,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0112.mp3
+  back_audio: tesouro/audio-combined/ts0112.mp3
 - id: ts0113
   word: ts0113
   front: ''
@@ -1130,7 +1130,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0113.mp3
+  back_audio: tesouro/audio-combined/ts0113.mp3
 - id: ts0114
   word: ts0114
   front: ''
@@ -1140,7 +1140,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0114.mp3
+  back_audio: tesouro/audio-combined/ts0114.mp3
 - id: ts0115
   word: ts0115
   front: ''
@@ -1150,7 +1150,7 @@ cards:
   - tesouro
   - listening
   - chapter04
-  back_audio: tesouro/audio-en/ts0115.mp3
+  back_audio: tesouro/audio-combined/ts0115.mp3
 - id: ts0116
   word: ts0116
   front: ''
@@ -1160,7 +1160,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0116.mp3
+  back_audio: tesouro/audio-combined/ts0116.mp3
 - id: ts0117
   word: ts0117
   front: ''
@@ -1170,7 +1170,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0117.mp3
+  back_audio: tesouro/audio-combined/ts0117.mp3
 - id: ts0118
   word: ts0118
   front: ''
@@ -1180,7 +1180,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0118.mp3
+  back_audio: tesouro/audio-combined/ts0118.mp3
 - id: ts0119
   word: ts0119
   front: ''
@@ -1190,7 +1190,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0119.mp3
+  back_audio: tesouro/audio-combined/ts0119.mp3
 - id: ts0120
   word: ts0120
   front: ''
@@ -1200,7 +1200,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0120.mp3
+  back_audio: tesouro/audio-combined/ts0120.mp3
 - id: ts0121
   word: ts0121
   front: ''
@@ -1210,7 +1210,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0121.mp3
+  back_audio: tesouro/audio-combined/ts0121.mp3
 - id: ts0122
   word: ts0122
   front: ''
@@ -1220,7 +1220,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0122.mp3
+  back_audio: tesouro/audio-combined/ts0122.mp3
 - id: ts0123
   word: ts0123
   front: ''
@@ -1230,7 +1230,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0123.mp3
+  back_audio: tesouro/audio-combined/ts0123.mp3
 - id: ts0124
   word: ts0124
   front: ''
@@ -1240,7 +1240,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0124.mp3
+  back_audio: tesouro/audio-combined/ts0124.mp3
 - id: ts0125
   word: ts0125
   front: ''
@@ -1250,7 +1250,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0125.mp3
+  back_audio: tesouro/audio-combined/ts0125.mp3
 - id: ts0126
   word: ts0126
   front: ''
@@ -1260,7 +1260,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0126.mp3
+  back_audio: tesouro/audio-combined/ts0126.mp3
 - id: ts0127
   word: ts0127
   front: ''
@@ -1270,7 +1270,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0127.mp3
+  back_audio: tesouro/audio-combined/ts0127.mp3
 - id: ts0128
   word: ts0128
   front: ''
@@ -1280,7 +1280,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0128.mp3
+  back_audio: tesouro/audio-combined/ts0128.mp3
 - id: ts0129
   word: ts0129
   front: ''
@@ -1290,7 +1290,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0129.mp3
+  back_audio: tesouro/audio-combined/ts0129.mp3
 - id: ts0130
   word: ts0130
   front: ''
@@ -1300,7 +1300,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0130.mp3
+  back_audio: tesouro/audio-combined/ts0130.mp3
 - id: ts0131
   word: ts0131
   front: ''
@@ -1310,7 +1310,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0131.mp3
+  back_audio: tesouro/audio-combined/ts0131.mp3
 - id: ts0132
   word: ts0132
   front: ''
@@ -1320,7 +1320,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0132.mp3
+  back_audio: tesouro/audio-combined/ts0132.mp3
 - id: ts0133
   word: ts0133
   front: ''
@@ -1330,7 +1330,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0133.mp3
+  back_audio: tesouro/audio-combined/ts0133.mp3
 - id: ts0134
   word: ts0134
   front: ''
@@ -1340,7 +1340,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0134.mp3
+  back_audio: tesouro/audio-combined/ts0134.mp3
 - id: ts0135
   word: ts0135
   front: ''
@@ -1350,7 +1350,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0135.mp3
+  back_audio: tesouro/audio-combined/ts0135.mp3
 - id: ts0136
   word: ts0136
   front: ''
@@ -1360,7 +1360,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0136.mp3
+  back_audio: tesouro/audio-combined/ts0136.mp3
 - id: ts0137
   word: ts0137
   front: ''
@@ -1370,7 +1370,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0137.mp3
+  back_audio: tesouro/audio-combined/ts0137.mp3
 - id: ts0138
   word: ts0138
   front: ''
@@ -1380,7 +1380,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0138.mp3
+  back_audio: tesouro/audio-combined/ts0138.mp3
 - id: ts0139
   word: ts0139
   front: ''
@@ -1390,7 +1390,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0139.mp3
+  back_audio: tesouro/audio-combined/ts0139.mp3
 - id: ts0140
   word: ts0140
   front: ''
@@ -1400,7 +1400,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0140.mp3
+  back_audio: tesouro/audio-combined/ts0140.mp3
 - id: ts0141
   word: ts0141
   front: ''
@@ -1410,7 +1410,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0141.mp3
+  back_audio: tesouro/audio-combined/ts0141.mp3
 - id: ts0142
   word: ts0142
   front: ''
@@ -1420,7 +1420,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0142.mp3
+  back_audio: tesouro/audio-combined/ts0142.mp3
 - id: ts0143
   word: ts0143
   front: ''
@@ -1430,7 +1430,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0143.mp3
+  back_audio: tesouro/audio-combined/ts0143.mp3
 - id: ts0144
   word: ts0144
   front: ''
@@ -1440,7 +1440,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0144.mp3
+  back_audio: tesouro/audio-combined/ts0144.mp3
 - id: ts0145
   word: ts0145
   front: ''
@@ -1450,7 +1450,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0145.mp3
+  back_audio: tesouro/audio-combined/ts0145.mp3
 - id: ts0146
   word: ts0146
   front: ''
@@ -1460,7 +1460,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0146.mp3
+  back_audio: tesouro/audio-combined/ts0146.mp3
 - id: ts0147
   word: ts0147
   front: ''
@@ -1470,7 +1470,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0147.mp3
+  back_audio: tesouro/audio-combined/ts0147.mp3
 - id: ts0148
   word: ts0148
   front: ''
@@ -1480,7 +1480,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0148.mp3
+  back_audio: tesouro/audio-combined/ts0148.mp3
 - id: ts0149
   word: ts0149
   front: ''
@@ -1490,7 +1490,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0149.mp3
+  back_audio: tesouro/audio-combined/ts0149.mp3
 - id: ts0150
   word: ts0150
   front: ''
@@ -1500,7 +1500,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0150.mp3
+  back_audio: tesouro/audio-combined/ts0150.mp3
 - id: ts0151
   word: ts0151
   front: ''
@@ -1510,7 +1510,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0151.mp3
+  back_audio: tesouro/audio-combined/ts0151.mp3
 - id: ts0152
   word: ts0152
   front: ''
@@ -1520,7 +1520,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0152.mp3
+  back_audio: tesouro/audio-combined/ts0152.mp3
 - id: ts0153
   word: ts0153
   front: ''
@@ -1530,7 +1530,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0153.mp3
+  back_audio: tesouro/audio-combined/ts0153.mp3
 - id: ts0154
   word: ts0154
   front: ''
@@ -1540,7 +1540,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0154.mp3
+  back_audio: tesouro/audio-combined/ts0154.mp3
 - id: ts0155
   word: ts0155
   front: ''
@@ -1550,7 +1550,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0155.mp3
+  back_audio: tesouro/audio-combined/ts0155.mp3
 - id: ts0156
   word: ts0156
   front: ''
@@ -1560,7 +1560,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0156.mp3
+  back_audio: tesouro/audio-combined/ts0156.mp3
 - id: ts0157
   word: ts0157
   front: ''
@@ -1570,7 +1570,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0157.mp3
+  back_audio: tesouro/audio-combined/ts0157.mp3
 - id: ts0158
   word: ts0158
   front: ''
@@ -1580,7 +1580,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0158.mp3
+  back_audio: tesouro/audio-combined/ts0158.mp3
 - id: ts0159
   word: ts0159
   front: ''
@@ -1590,7 +1590,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0159.mp3
+  back_audio: tesouro/audio-combined/ts0159.mp3
 - id: ts0160
   word: ts0160
   front: ''
@@ -1600,7 +1600,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0160.mp3
+  back_audio: tesouro/audio-combined/ts0160.mp3
 - id: ts0161
   word: ts0161
   front: ''
@@ -1610,7 +1610,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0161.mp3
+  back_audio: tesouro/audio-combined/ts0161.mp3
 - id: ts0162
   word: ts0162
   front: ''
@@ -1620,7 +1620,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0162.mp3
+  back_audio: tesouro/audio-combined/ts0162.mp3
 - id: ts0163
   word: ts0163
   front: ''
@@ -1630,7 +1630,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0163.mp3
+  back_audio: tesouro/audio-combined/ts0163.mp3
 - id: ts0164
   word: ts0164
   front: ''
@@ -1640,7 +1640,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0164.mp3
+  back_audio: tesouro/audio-combined/ts0164.mp3
 - id: ts0165
   word: ts0165
   front: ''
@@ -1650,7 +1650,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0165.mp3
+  back_audio: tesouro/audio-combined/ts0165.mp3
 - id: ts0166
   word: ts0166
   front: ''
@@ -1660,7 +1660,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0166.mp3
+  back_audio: tesouro/audio-combined/ts0166.mp3
 - id: ts0167
   word: ts0167
   front: ''
@@ -1670,7 +1670,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0167.mp3
+  back_audio: tesouro/audio-combined/ts0167.mp3
 - id: ts0168
   word: ts0168
   front: ''
@@ -1680,7 +1680,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0168.mp3
+  back_audio: tesouro/audio-combined/ts0168.mp3
 - id: ts0169
   word: ts0169
   front: ''
@@ -1690,7 +1690,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0169.mp3
+  back_audio: tesouro/audio-combined/ts0169.mp3
 - id: ts0170
   word: ts0170
   front: ''
@@ -1700,7 +1700,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0170.mp3
+  back_audio: tesouro/audio-combined/ts0170.mp3
 - id: ts0171
   word: ts0171
   front: ''
@@ -1710,7 +1710,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0171.mp3
+  back_audio: tesouro/audio-combined/ts0171.mp3
 - id: ts0172
   word: ts0172
   front: ''
@@ -1720,7 +1720,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0172.mp3
+  back_audio: tesouro/audio-combined/ts0172.mp3
 - id: ts0173
   word: ts0173
   front: ''
@@ -1730,7 +1730,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0173.mp3
+  back_audio: tesouro/audio-combined/ts0173.mp3
 - id: ts0174
   word: ts0174
   front: ''
@@ -1740,7 +1740,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0174.mp3
+  back_audio: tesouro/audio-combined/ts0174.mp3
 - id: ts0175
   word: ts0175
   front: ''
@@ -1750,7 +1750,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0175.mp3
+  back_audio: tesouro/audio-combined/ts0175.mp3
 - id: ts0176
   word: ts0176
   front: ''
@@ -1760,7 +1760,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0176.mp3
+  back_audio: tesouro/audio-combined/ts0176.mp3
 - id: ts0177
   word: ts0177
   front: ''
@@ -1770,7 +1770,7 @@ cards:
   - tesouro
   - listening
   - chapter05
-  back_audio: tesouro/audio-en/ts0177.mp3
+  back_audio: tesouro/audio-combined/ts0177.mp3
 - id: ts0178
   word: ts0178
   front: ''
@@ -1780,7 +1780,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0178.mp3
+  back_audio: tesouro/audio-combined/ts0178.mp3
 - id: ts0179
   word: ts0179
   front: ''
@@ -1790,7 +1790,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0179.mp3
+  back_audio: tesouro/audio-combined/ts0179.mp3
 - id: ts0180
   word: ts0180
   front: ''
@@ -1800,7 +1800,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0180.mp3
+  back_audio: tesouro/audio-combined/ts0180.mp3
 - id: ts0181
   word: ts0181
   front: ''
@@ -1810,7 +1810,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0181.mp3
+  back_audio: tesouro/audio-combined/ts0181.mp3
 - id: ts0182
   word: ts0182
   front: ''
@@ -1820,7 +1820,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0182.mp3
+  back_audio: tesouro/audio-combined/ts0182.mp3
 - id: ts0183
   word: ts0183
   front: ''
@@ -1830,7 +1830,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0183.mp3
+  back_audio: tesouro/audio-combined/ts0183.mp3
 - id: ts0184
   word: ts0184
   front: ''
@@ -1840,7 +1840,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0184.mp3
+  back_audio: tesouro/audio-combined/ts0184.mp3
 - id: ts0185
   word: ts0185
   front: ''
@@ -1850,7 +1850,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0185.mp3
+  back_audio: tesouro/audio-combined/ts0185.mp3
 - id: ts0186
   word: ts0186
   front: ''
@@ -1860,7 +1860,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0186.mp3
+  back_audio: tesouro/audio-combined/ts0186.mp3
 - id: ts0187
   word: ts0187
   front: ''
@@ -1870,7 +1870,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0187.mp3
+  back_audio: tesouro/audio-combined/ts0187.mp3
 - id: ts0188
   word: ts0188
   front: ''
@@ -1880,7 +1880,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0188.mp3
+  back_audio: tesouro/audio-combined/ts0188.mp3
 - id: ts0189
   word: ts0189
   front: ''
@@ -1890,7 +1890,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0189.mp3
+  back_audio: tesouro/audio-combined/ts0189.mp3
 - id: ts0190
   word: ts0190
   front: ''
@@ -1900,7 +1900,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0190.mp3
+  back_audio: tesouro/audio-combined/ts0190.mp3
 - id: ts0191
   word: ts0191
   front: ''
@@ -1910,7 +1910,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0191.mp3
+  back_audio: tesouro/audio-combined/ts0191.mp3
 - id: ts0192
   word: ts0192
   front: ''
@@ -1920,7 +1920,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0192.mp3
+  back_audio: tesouro/audio-combined/ts0192.mp3
 - id: ts0193
   word: ts0193
   front: ''
@@ -1930,7 +1930,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0193.mp3
+  back_audio: tesouro/audio-combined/ts0193.mp3
 - id: ts0194
   word: ts0194
   front: ''
@@ -1940,7 +1940,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0194.mp3
+  back_audio: tesouro/audio-combined/ts0194.mp3
 - id: ts0195
   word: ts0195
   front: ''
@@ -1950,7 +1950,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0195.mp3
+  back_audio: tesouro/audio-combined/ts0195.mp3
 - id: ts0196
   word: ts0196
   front: ''
@@ -1960,7 +1960,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0196.mp3
+  back_audio: tesouro/audio-combined/ts0196.mp3
 - id: ts0197
   word: ts0197
   front: ''
@@ -1970,7 +1970,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0197.mp3
+  back_audio: tesouro/audio-combined/ts0197.mp3
 - id: ts0198
   word: ts0198
   front: ''
@@ -1980,7 +1980,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0198.mp3
+  back_audio: tesouro/audio-combined/ts0198.mp3
 - id: ts0199
   word: ts0199
   front: ''
@@ -1990,7 +1990,7 @@ cards:
   - tesouro
   - listening
   - chapter06
-  back_audio: tesouro/audio-en/ts0199.mp3
+  back_audio: tesouro/audio-combined/ts0199.mp3
 - id: ts0200
   word: ts0200
   front: ''
@@ -2000,7 +2000,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0200.mp3
+  back_audio: tesouro/audio-combined/ts0200.mp3
 - id: ts0201
   word: ts0201
   front: ''
@@ -2010,7 +2010,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0201.mp3
+  back_audio: tesouro/audio-combined/ts0201.mp3
 - id: ts0202
   word: ts0202
   front: ''
@@ -2020,7 +2020,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0202.mp3
+  back_audio: tesouro/audio-combined/ts0202.mp3
 - id: ts0203
   word: ts0203
   front: ''
@@ -2030,7 +2030,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0203.mp3
+  back_audio: tesouro/audio-combined/ts0203.mp3
 - id: ts0204
   word: ts0204
   front: ''
@@ -2040,7 +2040,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0204.mp3
+  back_audio: tesouro/audio-combined/ts0204.mp3
 - id: ts0205
   word: ts0205
   front: ''
@@ -2050,7 +2050,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0205.mp3
+  back_audio: tesouro/audio-combined/ts0205.mp3
 - id: ts0206
   word: ts0206
   front: ''
@@ -2060,7 +2060,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0206.mp3
+  back_audio: tesouro/audio-combined/ts0206.mp3
 - id: ts0207
   word: ts0207
   front: ''
@@ -2070,7 +2070,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0207.mp3
+  back_audio: tesouro/audio-combined/ts0207.mp3
 - id: ts0208
   word: ts0208
   front: ''
@@ -2080,7 +2080,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0208.mp3
+  back_audio: tesouro/audio-combined/ts0208.mp3
 - id: ts0209
   word: ts0209
   front: ''
@@ -2090,7 +2090,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0209.mp3
+  back_audio: tesouro/audio-combined/ts0209.mp3
 - id: ts0210
   word: ts0210
   front: ''
@@ -2100,7 +2100,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0210.mp3
+  back_audio: tesouro/audio-combined/ts0210.mp3
 - id: ts0211
   word: ts0211
   front: ''
@@ -2110,7 +2110,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0211.mp3
+  back_audio: tesouro/audio-combined/ts0211.mp3
 - id: ts0212
   word: ts0212
   front: ''
@@ -2120,7 +2120,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0212.mp3
+  back_audio: tesouro/audio-combined/ts0212.mp3
 - id: ts0213
   word: ts0213
   front: ''
@@ -2130,7 +2130,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0213.mp3
+  back_audio: tesouro/audio-combined/ts0213.mp3
 - id: ts0214
   word: ts0214
   front: ''
@@ -2140,7 +2140,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0214.mp3
+  back_audio: tesouro/audio-combined/ts0214.mp3
 - id: ts0215
   word: ts0215
   front: ''
@@ -2150,7 +2150,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0215.mp3
+  back_audio: tesouro/audio-combined/ts0215.mp3
 - id: ts0216
   word: ts0216
   front: ''
@@ -2160,7 +2160,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0216.mp3
+  back_audio: tesouro/audio-combined/ts0216.mp3
 - id: ts0217
   word: ts0217
   front: ''
@@ -2170,7 +2170,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0217.mp3
+  back_audio: tesouro/audio-combined/ts0217.mp3
 - id: ts0218
   word: ts0218
   front: ''
@@ -2180,7 +2180,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0218.mp3
+  back_audio: tesouro/audio-combined/ts0218.mp3
 - id: ts0219
   word: ts0219
   front: ''
@@ -2190,7 +2190,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0219.mp3
+  back_audio: tesouro/audio-combined/ts0219.mp3
 - id: ts0220
   word: ts0220
   front: ''
@@ -2200,7 +2200,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0220.mp3
+  back_audio: tesouro/audio-combined/ts0220.mp3
 - id: ts0221
   word: ts0221
   front: ''
@@ -2210,7 +2210,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0221.mp3
+  back_audio: tesouro/audio-combined/ts0221.mp3
 - id: ts0222
   word: ts0222
   front: ''
@@ -2220,7 +2220,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0222.mp3
+  back_audio: tesouro/audio-combined/ts0222.mp3
 - id: ts0223
   word: ts0223
   front: ''
@@ -2230,7 +2230,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0223.mp3
+  back_audio: tesouro/audio-combined/ts0223.mp3
 - id: ts0224
   word: ts0224
   front: ''
@@ -2240,7 +2240,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0224.mp3
+  back_audio: tesouro/audio-combined/ts0224.mp3
 - id: ts0225
   word: ts0225
   front: ''
@@ -2250,7 +2250,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0225.mp3
+  back_audio: tesouro/audio-combined/ts0225.mp3
 - id: ts0226
   word: ts0226
   front: ''
@@ -2260,7 +2260,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0226.mp3
+  back_audio: tesouro/audio-combined/ts0226.mp3
 - id: ts0227
   word: ts0227
   front: ''
@@ -2270,7 +2270,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0227.mp3
+  back_audio: tesouro/audio-combined/ts0227.mp3
 - id: ts0228
   word: ts0228
   front: ''
@@ -2280,7 +2280,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0228.mp3
+  back_audio: tesouro/audio-combined/ts0228.mp3
 - id: ts0229
   word: ts0229
   front: ''
@@ -2290,7 +2290,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0229.mp3
+  back_audio: tesouro/audio-combined/ts0229.mp3
 - id: ts0230
   word: ts0230
   front: ''
@@ -2300,7 +2300,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0230.mp3
+  back_audio: tesouro/audio-combined/ts0230.mp3
 - id: ts0231
   word: ts0231
   front: ''
@@ -2310,7 +2310,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0231.mp3
+  back_audio: tesouro/audio-combined/ts0231.mp3
 - id: ts0232
   word: ts0232
   front: ''
@@ -2320,7 +2320,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0232.mp3
+  back_audio: tesouro/audio-combined/ts0232.mp3
 - id: ts0233
   word: ts0233
   front: ''
@@ -2330,7 +2330,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0233.mp3
+  back_audio: tesouro/audio-combined/ts0233.mp3
 - id: ts0234
   word: ts0234
   front: ''
@@ -2340,7 +2340,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0234.mp3
+  back_audio: tesouro/audio-combined/ts0234.mp3
 - id: ts0235
   word: ts0235
   front: ''
@@ -2350,7 +2350,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0235.mp3
+  back_audio: tesouro/audio-combined/ts0235.mp3
 - id: ts0236
   word: ts0236
   front: ''
@@ -2360,7 +2360,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0236.mp3
+  back_audio: tesouro/audio-combined/ts0236.mp3
 - id: ts0237
   word: ts0237
   front: ''
@@ -2370,7 +2370,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0237.mp3
+  back_audio: tesouro/audio-combined/ts0237.mp3
 - id: ts0238
   word: ts0238
   front: ''
@@ -2380,7 +2380,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0238.mp3
+  back_audio: tesouro/audio-combined/ts0238.mp3
 - id: ts0239
   word: ts0239
   front: ''
@@ -2390,7 +2390,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0239.mp3
+  back_audio: tesouro/audio-combined/ts0239.mp3
 - id: ts0240
   word: ts0240
   front: ''
@@ -2400,7 +2400,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0240.mp3
+  back_audio: tesouro/audio-combined/ts0240.mp3
 - id: ts0241
   word: ts0241
   front: ''
@@ -2410,7 +2410,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0241.mp3
+  back_audio: tesouro/audio-combined/ts0241.mp3
 - id: ts0242
   word: ts0242
   front: ''
@@ -2420,7 +2420,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0242.mp3
+  back_audio: tesouro/audio-combined/ts0242.mp3
 - id: ts0243
   word: ts0243
   front: ''
@@ -2430,7 +2430,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0243.mp3
+  back_audio: tesouro/audio-combined/ts0243.mp3
 - id: ts0244
   word: ts0244
   front: ''
@@ -2440,7 +2440,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0244.mp3
+  back_audio: tesouro/audio-combined/ts0244.mp3
 - id: ts0245
   word: ts0245
   front: ''
@@ -2450,7 +2450,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0245.mp3
+  back_audio: tesouro/audio-combined/ts0245.mp3
 - id: ts0246
   word: ts0246
   front: ''
@@ -2460,7 +2460,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0246.mp3
+  back_audio: tesouro/audio-combined/ts0246.mp3
 - id: ts0247
   word: ts0247
   front: ''
@@ -2470,7 +2470,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0247.mp3
+  back_audio: tesouro/audio-combined/ts0247.mp3
 - id: ts0248
   word: ts0248
   front: ''
@@ -2480,7 +2480,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0248.mp3
+  back_audio: tesouro/audio-combined/ts0248.mp3
 - id: ts0249
   word: ts0249
   front: ''
@@ -2490,7 +2490,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0249.mp3
+  back_audio: tesouro/audio-combined/ts0249.mp3
 - id: ts0250
   word: ts0250
   front: ''
@@ -2500,7 +2500,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0250.mp3
+  back_audio: tesouro/audio-combined/ts0250.mp3
 - id: ts0251
   word: ts0251
   front: ''
@@ -2510,7 +2510,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0251.mp3
+  back_audio: tesouro/audio-combined/ts0251.mp3
 - id: ts0252
   word: ts0252
   front: ''
@@ -2520,7 +2520,7 @@ cards:
   - tesouro
   - listening
   - chapter07
-  back_audio: tesouro/audio-en/ts0252.mp3
+  back_audio: tesouro/audio-combined/ts0252.mp3
 - id: ts0253
   word: ts0253
   front: ''
@@ -2530,7 +2530,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0253.mp3
+  back_audio: tesouro/audio-combined/ts0253.mp3
 - id: ts0254
   word: ts0254
   front: ''
@@ -2540,7 +2540,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0254.mp3
+  back_audio: tesouro/audio-combined/ts0254.mp3
 - id: ts0255
   word: ts0255
   front: ''
@@ -2550,7 +2550,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0255.mp3
+  back_audio: tesouro/audio-combined/ts0255.mp3
 - id: ts0256
   word: ts0256
   front: ''
@@ -2560,7 +2560,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0256.mp3
+  back_audio: tesouro/audio-combined/ts0256.mp3
 - id: ts0257
   word: ts0257
   front: ''
@@ -2570,7 +2570,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0257.mp3
+  back_audio: tesouro/audio-combined/ts0257.mp3
 - id: ts0258
   word: ts0258
   front: ''
@@ -2580,7 +2580,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0258.mp3
+  back_audio: tesouro/audio-combined/ts0258.mp3
 - id: ts0259
   word: ts0259
   front: ''
@@ -2590,7 +2590,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0259.mp3
+  back_audio: tesouro/audio-combined/ts0259.mp3
 - id: ts0260
   word: ts0260
   front: ''
@@ -2600,7 +2600,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0260.mp3
+  back_audio: tesouro/audio-combined/ts0260.mp3
 - id: ts0261
   word: ts0261
   front: ''
@@ -2610,7 +2610,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0261.mp3
+  back_audio: tesouro/audio-combined/ts0261.mp3
 - id: ts0262
   word: ts0262
   front: ''
@@ -2620,7 +2620,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0262.mp3
+  back_audio: tesouro/audio-combined/ts0262.mp3
 - id: ts0263
   word: ts0263
   front: ''
@@ -2630,7 +2630,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0263.mp3
+  back_audio: tesouro/audio-combined/ts0263.mp3
 - id: ts0264
   word: ts0264
   front: ''
@@ -2640,7 +2640,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0264.mp3
+  back_audio: tesouro/audio-combined/ts0264.mp3
 - id: ts0265
   word: ts0265
   front: ''
@@ -2650,7 +2650,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0265.mp3
+  back_audio: tesouro/audio-combined/ts0265.mp3
 - id: ts0266
   word: ts0266
   front: ''
@@ -2660,7 +2660,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0266.mp3
+  back_audio: tesouro/audio-combined/ts0266.mp3
 - id: ts0267
   word: ts0267
   front: ''
@@ -2670,7 +2670,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0267.mp3
+  back_audio: tesouro/audio-combined/ts0267.mp3
 - id: ts0268
   word: ts0268
   front: ''
@@ -2680,7 +2680,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0268.mp3
+  back_audio: tesouro/audio-combined/ts0268.mp3
 - id: ts0269
   word: ts0269
   front: ''
@@ -2690,7 +2690,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0269.mp3
+  back_audio: tesouro/audio-combined/ts0269.mp3
 - id: ts0270
   word: ts0270
   front: ''
@@ -2700,7 +2700,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0270.mp3
+  back_audio: tesouro/audio-combined/ts0270.mp3
 - id: ts0271
   word: ts0271
   front: ''
@@ -2710,7 +2710,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0271.mp3
+  back_audio: tesouro/audio-combined/ts0271.mp3
 - id: ts0272
   word: ts0272
   front: ''
@@ -2720,7 +2720,7 @@ cards:
   - tesouro
   - listening
   - chapter08
-  back_audio: tesouro/audio-en/ts0272.mp3
+  back_audio: tesouro/audio-combined/ts0272.mp3
 - id: ts0273
   word: ts0273
   front: ''
@@ -2730,7 +2730,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0273.mp3
+  back_audio: tesouro/audio-combined/ts0273.mp3
 - id: ts0274
   word: ts0274
   front: ''
@@ -2740,7 +2740,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0274.mp3
+  back_audio: tesouro/audio-combined/ts0274.mp3
 - id: ts0275
   word: ts0275
   front: ''
@@ -2750,7 +2750,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0275.mp3
+  back_audio: tesouro/audio-combined/ts0275.mp3
 - id: ts0276
   word: ts0276
   front: ''
@@ -2760,7 +2760,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0276.mp3
+  back_audio: tesouro/audio-combined/ts0276.mp3
 - id: ts0277
   word: ts0277
   front: ''
@@ -2770,7 +2770,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0277.mp3
+  back_audio: tesouro/audio-combined/ts0277.mp3
 - id: ts0278
   word: ts0278
   front: ''
@@ -2780,7 +2780,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0278.mp3
+  back_audio: tesouro/audio-combined/ts0278.mp3
 - id: ts0279
   word: ts0279
   front: ''
@@ -2790,7 +2790,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0279.mp3
+  back_audio: tesouro/audio-combined/ts0279.mp3
 - id: ts0280
   word: ts0280
   front: ''
@@ -2800,7 +2800,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0280.mp3
+  back_audio: tesouro/audio-combined/ts0280.mp3
 - id: ts0281
   word: ts0281
   front: ''
@@ -2810,7 +2810,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0281.mp3
+  back_audio: tesouro/audio-combined/ts0281.mp3
 - id: ts0282
   word: ts0282
   front: ''
@@ -2820,7 +2820,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0282.mp3
+  back_audio: tesouro/audio-combined/ts0282.mp3
 - id: ts0283
   word: ts0283
   front: ''
@@ -2830,7 +2830,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0283.mp3
+  back_audio: tesouro/audio-combined/ts0283.mp3
 - id: ts0284
   word: ts0284
   front: ''
@@ -2840,7 +2840,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0284.mp3
+  back_audio: tesouro/audio-combined/ts0284.mp3
 - id: ts0285
   word: ts0285
   front: ''
@@ -2850,7 +2850,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0285.mp3
+  back_audio: tesouro/audio-combined/ts0285.mp3
 - id: ts0286
   word: ts0286
   front: ''
@@ -2860,7 +2860,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0286.mp3
+  back_audio: tesouro/audio-combined/ts0286.mp3
 - id: ts0287
   word: ts0287
   front: ''
@@ -2870,7 +2870,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0287.mp3
+  back_audio: tesouro/audio-combined/ts0287.mp3
 - id: ts0288
   word: ts0288
   front: ''
@@ -2880,7 +2880,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0288.mp3
+  back_audio: tesouro/audio-combined/ts0288.mp3
 - id: ts0289
   word: ts0289
   front: ''
@@ -2890,7 +2890,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0289.mp3
+  back_audio: tesouro/audio-combined/ts0289.mp3
 - id: ts0290
   word: ts0290
   front: ''
@@ -2900,7 +2900,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0290.mp3
+  back_audio: tesouro/audio-combined/ts0290.mp3
 - id: ts0291
   word: ts0291
   front: ''
@@ -2910,7 +2910,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0291.mp3
+  back_audio: tesouro/audio-combined/ts0291.mp3
 - id: ts0292
   word: ts0292
   front: ''
@@ -2920,7 +2920,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0292.mp3
+  back_audio: tesouro/audio-combined/ts0292.mp3
 - id: ts0293
   word: ts0293
   front: ''
@@ -2930,7 +2930,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0293.mp3
+  back_audio: tesouro/audio-combined/ts0293.mp3
 - id: ts0294
   word: ts0294
   front: ''
@@ -2940,7 +2940,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0294.mp3
+  back_audio: tesouro/audio-combined/ts0294.mp3
 - id: ts0295
   word: ts0295
   front: ''
@@ -2950,7 +2950,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0295.mp3
+  back_audio: tesouro/audio-combined/ts0295.mp3
 - id: ts0296
   word: ts0296
   front: ''
@@ -2960,7 +2960,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0296.mp3
+  back_audio: tesouro/audio-combined/ts0296.mp3
 - id: ts0297
   word: ts0297
   front: ''
@@ -2970,7 +2970,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0297.mp3
+  back_audio: tesouro/audio-combined/ts0297.mp3
 - id: ts0298
   word: ts0298
   front: ''
@@ -2980,7 +2980,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0298.mp3
+  back_audio: tesouro/audio-combined/ts0298.mp3
 - id: ts0299
   word: ts0299
   front: ''
@@ -2990,7 +2990,7 @@ cards:
   - tesouro
   - listening
   - chapter09
-  back_audio: tesouro/audio-en/ts0299.mp3
+  back_audio: tesouro/audio-combined/ts0299.mp3
 - id: ts0300
   word: ts0300
   front: ''
@@ -3000,7 +3000,7 @@ cards:
   - tesouro
   - listening
   - chapter10
-  back_audio: tesouro/audio-en/ts0300.mp3
+  back_audio: tesouro/audio-combined/ts0300.mp3
 - id: ts0301
   word: ts0301
   front: ''
@@ -3010,7 +3010,7 @@ cards:
   - tesouro
   - listening
   - chapter10
-  back_audio: tesouro/audio-en/ts0301.mp3
+  back_audio: tesouro/audio-combined/ts0301.mp3
 - id: ts0302
   word: ts0302
   front: ''
@@ -3020,7 +3020,7 @@ cards:
   - tesouro
   - listening
   - chapter10
-  back_audio: tesouro/audio-en/ts0302.mp3
+  back_audio: tesouro/audio-combined/ts0302.mp3
 - id: ts0303
   word: ts0303
   front: ''
@@ -3030,7 +3030,7 @@ cards:
   - tesouro
   - listening
   - chapter10
-  back_audio: tesouro/audio-en/ts0303.mp3
+  back_audio: tesouro/audio-combined/ts0303.mp3
 - id: ts0304
   word: ts0304
   front: ''
@@ -3040,7 +3040,7 @@ cards:
   - tesouro
   - listening
   - chapter10
-  back_audio: tesouro/audio-en/ts0304.mp3
+  back_audio: tesouro/audio-combined/ts0304.mp3
 - id: ts0305
   word: ts0305
   front: ''
@@ -3050,7 +3050,7 @@ cards:
   - tesouro
   - listening
   - chapter10
-  back_audio: tesouro/audio-en/ts0305.mp3
+  back_audio: tesouro/audio-combined/ts0305.mp3
 - id: ts0306
   word: ts0306
   front: ''
@@ -3060,7 +3060,7 @@ cards:
   - tesouro
   - listening
   - chapter10
-  back_audio: tesouro/audio-en/ts0306.mp3
+  back_audio: tesouro/audio-combined/ts0306.mp3
 - id: ts0307
   word: ts0307
   front: ''
@@ -3070,7 +3070,7 @@ cards:
   - tesouro
   - listening
   - chapter10
-  back_audio: tesouro/audio-en/ts0307.mp3
+  back_audio: tesouro/audio-combined/ts0307.mp3
 - id: ts0308
   word: ts0308
   front: ''
@@ -3080,7 +3080,7 @@ cards:
   - tesouro
   - listening
   - chapter10
-  back_audio: tesouro/audio-en/ts0308.mp3
+  back_audio: tesouro/audio-combined/ts0308.mp3
 - id: ts0309
   word: ts0309
   front: ''
@@ -3090,7 +3090,7 @@ cards:
   - tesouro
   - listening
   - chapter10
-  back_audio: tesouro/audio-en/ts0309.mp3
+  back_audio: tesouro/audio-combined/ts0309.mp3
 - id: ts0310
   word: ts0310
   front: ''
@@ -3100,7 +3100,7 @@ cards:
   - tesouro
   - listening
   - chapter10
-  back_audio: tesouro/audio-en/ts0310.mp3
+  back_audio: tesouro/audio-combined/ts0310.mp3
 - id: ts0311
   word: ts0311
   front: ''
@@ -3110,7 +3110,7 @@ cards:
   - tesouro
   - listening
   - chapter10
-  back_audio: tesouro/audio-en/ts0311.mp3
+  back_audio: tesouro/audio-combined/ts0311.mp3
 - id: ts0312
   word: ts0312
   front: ''
@@ -3120,4 +3120,4 @@ cards:
   - tesouro
   - listening
   - chapter10
-  back_audio: tesouro/audio-en/ts0312.mp3
+  back_audio: tesouro/audio-combined/ts0312.mp3
