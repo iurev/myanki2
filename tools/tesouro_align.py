@@ -20,6 +20,8 @@ from dataclasses import dataclass
 from difflib import SequenceMatcher
 from pathlib import Path
 
+import numpy as np
+
 ROOT = Path(__file__).resolve().parent.parent
 ALIGNMENT_CSV = ROOT / "tesouro" / "alignment-ch01-10.csv"
 SOURCE_DIR = ROOT / "tesouro" / "source"
@@ -34,7 +36,7 @@ NO_VAD_CHAPTERS = {10}
 # exactly match what whisper hears (e.g. because whisper mis-transcribes a
 # fast/blended word even though its timestamp still lands on the right
 # audio, or the audiobook narration genuinely diverges from the book text).
-# {(chapter, id): (start, end)} -- raw times, before apply_padding().
+# {(chapter, id): (start, end)} -- raw times, before refine_boundaries().
 MANUAL_OVERRIDES: dict[tuple[int, str], tuple[float, float]] = {
     # "Tem a certeza?" heard by whisper as "Tenha certeza." (phonetically
     # close blend); only "certeza" got an equal-anchor, truncating the
@@ -46,22 +48,127 @@ MANUAL_OVERRIDES: dict[tuple[int, str], tuple[float, float]] = {
     (9, "ts0297"): (117.59, 123.05),
 }
 
-# Whisper's word-end timestamp for a vowel-final word is often measurably
-# early, and Portuguese sentences overwhelmingly end in vowels -- confirmed
-# by ear on ts0001: "biólog[o]" cut half-heard even with 0.11-0.15s of
-# gap-proportional trailing pad (the earlier approach, which capped the pad
-# at half the natural inter-sentence gap). Fix: always add a *fixed* pad
-# regardless of neighbor timing, so the trailing edge isn't held hostage to
-# however much silence happens to exist -- but bound how far that's allowed
-# to overshoot the actual gap, so a rare near-zero-gap sentence can't
-# swallow a neighbor's entire next word. A guaranteed 0.15s minimum trailing
-# pad even at zero gap, up to the full 0.22s when there's room, is a much
-# better tradeoff than the previous proportional split: a listening
-# flashcard bleeding a faint fraction of a neighboring word is a minor,
-# often inaudible cost; a clipped target word is not.
-START_PAD = 0.06
-END_PAD = 0.22
-OVERSHOOT_ALLOWANCE = 0.15  # how far the pad may exceed the measured gap
+# Fixed/gap-proportional padding (both earlier approaches) guesses an offset
+# instead of looking at the actual audio, and a systematic check across all
+# 312 cut clips found 41% ending mid-sound and 11% starting mid-sound
+# (bleeding the previous sentence's tail in). Guessing a pad amount can never
+# reliably work across varying speech rates and pause lengths. Fixed below by
+# actually detecting silence in the source audio around each boundary --
+# see refine_boundaries().
+SR = 16000
+FRAME_MS = 10
+FRAME_LEN = SR * FRAME_MS // 1000
+# "Silence" is relative to *this word's own* peak volume, not a chapter-wide
+# floor: a global percentile gets dragged down to near-absolute-zero by true
+# digital silence elsewhere in the file (before the chapter title, etc),
+# giving a threshold nothing in a real inter-sentence gap ever crosses.
+RELATIVE_MARGIN_DB = 20   # "speech" = within this many dB of the word's own peak
+MIN_SILENCE_MS = 80        # sustained silence needed to call a gap real
+ANCHOR_WINDOW = 0.15       # tight window right at the raw boundary, used to confirm
+                           # and locate real speech before searching outward from it
+END_SEARCH_AFTER = 1.2     # how far past the anchor we search for trailing silence
+START_SEARCH_BEFORE = 0.4  # how far before the anchor we search for leading silence
+END_BUFFER = 0.04          # small trailing silence left after the cut, for a clean stop
+START_BUFFER = 0.04        # small lead-in silence left before the cut
+
+
+def load_envelope(chapter: int) -> np.ndarray:
+    """Per-10ms-frame RMS (dB) for the whole chapter, for boundary refinement."""
+    mp3 = SOURCE_DIR / f"Storyglot-O_Tesouro_Submerso_chpt{chapter}.mp3"
+    cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", str(mp3), "-f", "s16le", "-ar", str(SR), "-ac", "1", "pipe:1"]
+    raw = subprocess.run(cmd, capture_output=True, check=True).stdout
+    samples = np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0
+    n_frames = len(samples) // FRAME_LEN
+    frames = samples[: n_frames * FRAME_LEN].reshape(n_frames, FRAME_LEN)
+    rms = np.sqrt(np.mean(frames**2, axis=1) + 1e-12)
+    return 20 * np.log10(rms + 1e-12)
+
+
+def find_anchor(db: np.ndarray, lo: float, hi: float) -> tuple[int, float] | None:
+    """Loudest frame in [lo, hi] (seconds), used both as the local "this is
+    real speech" reference level and as a confirmed starting point to search
+    outward from. None if the window is silent (no real speech found there
+    at all -- e.g. whisper's raw timestamp landed in a gap)."""
+    i0 = max(0, int(lo * SR / FRAME_LEN))
+    i1 = min(len(db), int(hi * SR / FRAME_LEN))
+    if i1 <= i0:
+        return None
+    peak_i = i0 + int(np.argmax(db[i0:i1]))
+    return peak_i, float(db[peak_i])
+
+
+def find_speech_offset(db: np.ndarray, anchor_i: int, after: float, threshold: float) -> float | None:
+    """Search forward from a confirmed-speech anchor frame for where
+    sustained silence begins (the true end of speech). None if not found
+    within the window -- e.g. a long dramatic pause outlasts the search."""
+    min_frames = max(1, MIN_SILENCE_MS // FRAME_MS)
+    i1 = min(len(db), anchor_i + int(after * SR / FRAME_LEN))
+    for i in range(anchor_i, i1 - min_frames):
+        if np.all(db[i : i + min_frames] < threshold):
+            return i * FRAME_LEN / SR
+    return None
+
+
+def find_speech_onset(db: np.ndarray, anchor_i: int, before: float, threshold: float) -> float | None:
+    """Search backward from a confirmed-speech anchor frame for where the
+    preceding silence gap ends (the true onset), i.e. the last silence run
+    strictly before the anchor. None if not found within the window."""
+    min_frames = max(1, MIN_SILENCE_MS // FRAME_MS)
+    i0 = max(0, anchor_i - int(before * SR / FRAME_LEN))
+    for i in range(anchor_i - min_frames, i0 - 1, -1):
+        if np.all(db[i : i + min_frames] < threshold):
+            return (i + min_frames) * FRAME_LEN / SR
+    return None
+
+
+def refine_boundaries(chapter: int, aligned: list[dict]) -> list[str]:
+    """Replace each raw word-based start/end with the actual detected speech
+    boundary in the source audio. Returns ids where no clear anchor/boundary
+    was found (fell back to the raw timestamp) for the caller to flag."""
+    db = load_envelope(chapter)
+    fallback_ids = []
+
+    for s in aligned:
+        if s["start"] is None:
+            continue
+
+        # Anchor into *this sentence's own* audio first (forward from the raw
+        # start, backward from the raw end -- never toward the neighboring
+        # sentence), confirming real speech exists there, before searching
+        # outward from that confirmed point. Searching a fixed window without
+        # first anchoring on real speech risks landing entirely inside a
+        # neighboring silence (e.g. a long dramatic pause) and misreading
+        # "still silent way out here" as "the boundary."
+        start_anchor = find_anchor(db, s["start"] - 0.05, s["start"] + ANCHOR_WINDOW)
+        end_anchor = find_anchor(db, s["end"] - ANCHOR_WINDOW, s["end"] + 0.05)
+
+        onset = offset = None
+        if start_anchor is not None:
+            anchor_i, peak_db = start_anchor
+            onset = find_speech_onset(db, anchor_i, START_SEARCH_BEFORE, peak_db - RELATIVE_MARGIN_DB)
+        if end_anchor is not None:
+            anchor_i, peak_db = end_anchor
+            offset = find_speech_offset(db, anchor_i, END_SEARCH_AFTER, peak_db - RELATIVE_MARGIN_DB)
+
+        if onset is None or offset is None:
+            fallback_ids.append(s["id"])
+        s["start"] = max(0.0, (onset if onset is not None else s["start"]) - START_BUFFER)
+        s["end"] = (offset if offset is not None else s["end"]) + END_BUFFER
+
+    # Hard guarantee, independent of how good the detection above was: never
+    # let two consecutive clips overlap. A missed detection on one side can
+    # otherwise combine with a correct extension on the other into exactly
+    # the "starts with sounds from the previous line" bleed this whole
+    # rewrite exists to fix.
+    prev_end = None
+    for s in aligned:
+        if s["start"] is None:
+            continue
+        if prev_end is not None and s["start"] < prev_end:
+            s["start"] = prev_end
+        prev_end = s["end"]
+
+    return fallback_ids
 
 
 def normalize(tok: str) -> str:
@@ -199,19 +306,6 @@ def align_chapter(chapter: int) -> list[dict]:
     return results
 
 
-def apply_padding(aligned: list[dict]) -> None:
-    """Pad each sentence boundary. See START_PAD/END_PAD/OVERSHOOT_ALLOWANCE comment."""
-    for i, s in enumerate(aligned):
-        if s["start"] is None:
-            continue
-        prev_end = aligned[i - 1]["end"] if i > 0 and aligned[i - 1]["end"] is not None else 0.0
-        next_start = (
-            aligned[i + 1]["start"] if i + 1 < len(aligned) and aligned[i + 1]["start"] is not None else s["end"] + 10
-        )
-        gap_before = max(0.0, s["start"] - prev_end)
-        gap_after = max(0.0, next_start - s["end"])
-        s["start"] = max(0.0, s["start"] - min(START_PAD, gap_before + OVERSHOOT_ALLOWANCE))
-        s["end"] = s["end"] + min(END_PAD, gap_after + OVERSHOOT_ALLOWANCE)
 
 
 def cut_clips(chapter: int, aligned: list[dict]) -> None:
@@ -254,12 +348,16 @@ def flag_suspicious(aligned: list[dict]) -> list[dict]:
 def main() -> None:
     chapter = int(sys.argv[1])
     aligned = align_chapter(chapter)
-    apply_padding(aligned)
 
     unmatched = [s for s in aligned if s["start"] is None]
     print(f"chapter {chapter}: {len(aligned)} sentences, sequence match ratio={aligned[0]['match_ratio'] if aligned else 0:.3f}")
     if unmatched:
         print(f"  UNMATCHED ({len(unmatched)}): {[s['id'] for s in unmatched]}")
+
+    fallback_ids = refine_boundaries(chapter, aligned)
+    if fallback_ids:
+        print(f"  NO SILENCE FOUND, used fallback pad ({len(fallback_ids)}): {fallback_ids}")
+
     for s in aligned:
         if s["start"] is None:
             print(f"  ! {s['id']}: NO MATCH -- {s['text']!r}")
