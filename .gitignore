@@ -10,3 +10,11 @@ tesouro/audio/
 tesouro/source/
 tesouro/whisper-cache/
 .venv-audio/
+
+.claude/sessions/
+tesouro/full-book-local/
+tesouro/full-book-prepared/
+tesouro/remaining-book-prepared*/
+tesouro/review-fixed-10/
+tesouro/suspended-fixed-all/
+tesouro/gemini-voice-samples/
