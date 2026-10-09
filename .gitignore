@@ -20,6 +20,18 @@ __pycache__/
 /cidadela/stt-en-chirp/
 /cidadela/stt-en-unprompted/
 
+# Local Cidadela specifications, reports, and book-derived data
+/cidadela/*.json
+/cidadela/work/
+/cidadela/chapter-vocab.md
+/cidadela/glossary-gap.md
+/cidadela/words2-glosses.md
+
+# Personal/generated analysis snapshots
+/pt-stats/raw.json
+/pt-stats/data.json
+/anya_book/word-gap.json
+
 ta/*.html
 
 tesouro/audio/
