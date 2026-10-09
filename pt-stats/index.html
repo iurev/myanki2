@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portuguese — Anki study statistics</title>
+<!-- Drawn inline so the browser does not ask the server for a favicon it does not have. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2360a5fa'/%3E%3Ctext x='16' y='23' font-size='19' text-anchor='middle' fill='%23081018' font-family='sans-serif'%3E%C2%BA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="vendor/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="page-head">
+  <div class="container-xl">
+    <div class="d-flex flex-wrap align-items-end justify-content-between gap-3">
+      <div>
+        <h1>Portuguese, one card at a time</h1>
+        <p class="lede mb-0">
+          Every answer ever given in the Portuguese decks: <span id="range">…</span>
+        </p>
+      </div>
+      <div class="text-end small text-secondary">
+        <div>Anki read <span id="generated">…</span></div>
+        <div>numbers built <span id="built">…</span></div>
+      </div>
+    </div>
+    <div id="deck-picker" class="deck-picker mt-3" role="group" aria-label="Choose a deck"></div>
+  </div>
+</header>
+
+<main class="container-xl pb-5">
+  <section id="kpis" class="kpi-row" aria-label="Headline numbers"></section>
+  <div id="charts" class="row g-4 mt-1"></div>
+  <section id="tables" class="mt-4"></section>
+  <section id="notes" class="small text-secondary mt-5"></section>
+</main>
+
+<div id="error" class="container-xl d-none">
+  <div class="alert alert-warning">
+    <h2 class="h5">The numbers could not be loaded</h2>
+    <p class="mb-2" id="error-text"></p>
+    <p class="mb-0">Serve the folder rather than opening the file directly:
+      <code>python3 -m http.server 8899 --directory pt-stats</code> then open
+      <code>http://127.0.0.1:8899/</code>.</p>
+  </div>
+</div>
+
+<script src="vendor/echarts.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

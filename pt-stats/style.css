@@ -1,0 +1,135 @@
+/* The dashboard draws its own chrome: dark, quiet, and readable in a screenshot. */
+
+:root {
+  --ink: #e8edf7;
+  --muted: #93a3bb;
+  --line: rgba(148, 163, 184, .16);
+  --panel: rgba(17, 24, 39, .55);
+  --accent: #60a5fa;
+}
+
+body {
+  background:
+    radial-gradient(1100px 600px at 12% -12%, rgba(59, 130, 246, .16), transparent 60%),
+    radial-gradient(900px 500px at 92% 0%, rgba(168, 85, 247, .12), transparent 55%),
+    #080c16;
+  color: var(--ink);
+  font-feature-settings: "tnum" 1;   /* digits line up in the KPI row */
+  padding-bottom: 3rem;
+}
+
+/* ---------- header ---------- */
+
+.page-head {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding: 1.6rem 0 1rem;
+  margin-bottom: 1.4rem;
+  background: rgba(8, 12, 22, .82);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+
+.page-head h1 {
+  font-size: 1.65rem;
+  font-weight: 650;
+  letter-spacing: -.01em;
+  margin: 0 0 .25rem;
+}
+
+.lede { color: var(--muted); font-size: .95rem; }
+
+.deck-picker { display: flex; flex-wrap: wrap; gap: .5rem; }
+
+.deck-picker button {
+  border: 1px solid var(--line);
+  background: rgba(30, 41, 59, .5);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: .35rem .9rem;
+  font-size: .85rem;
+  line-height: 1.1;
+  transition: border-color .15s, background .15s, transform .15s;
+}
+
+.deck-picker button .n { color: var(--muted); font-size: .78rem; margin-left: .35rem; }
+.deck-picker button:hover { border-color: var(--accent); transform: translateY(-1px); }
+.deck-picker button.active {
+  background: linear-gradient(180deg, rgba(96, 165, 250, .28), rgba(96, 165, 250, .14));
+  border-color: rgba(96, 165, 250, .75);
+}
+
+/* ---------- KPI tiles ---------- */
+
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+  gap: .75rem;
+}
+
+.kpi {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: .8rem .9rem;
+}
+
+.kpi .label { color: var(--muted); font-size: .74rem; text-transform: uppercase; letter-spacing: .06em; }
+.kpi .value { font-size: 1.5rem; font-weight: 640; line-height: 1.25; }
+.kpi .sub { color: var(--muted); font-size: .78rem; }
+.kpi .sub .up { color: #4ade80; }
+.kpi .sub .down { color: #fb7185; }
+
+/* ---------- chart cards ---------- */
+
+.chart-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1rem 1.1rem .7rem;
+  height: 100%;
+}
+
+.chart-card h2 {
+  font-size: 1rem;
+  font-weight: 620;
+  margin: 0 0 .15rem;
+}
+
+.chart-card .why { color: var(--muted); font-size: .82rem; margin: 0 0 .35rem; min-height: 2.4em; }
+
+.chart { width: 100%; }
+
+/* ---------- tables ---------- */
+
+.table-wrap {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+  height: 100%;
+}
+
+.table-wrap h2 { font-size: 1rem; font-weight: 620; }
+.table-wrap .why { color: var(--muted); font-size: .82rem; }
+.table-wrap table { font-size: .86rem; margin-bottom: 0; }
+.table-wrap th { color: var(--muted); font-weight: 500; font-size: .76rem; text-transform: uppercase; letter-spacing: .05em; }
+.table-wrap td, .table-wrap th { border-color: var(--line) !important; padding: .34rem .5rem; }
+.table-wrap tbody tr:hover { background: rgba(96, 165, 250, .07); }
+.right { text-align: right; }
+.num { font-variant-numeric: tabular-nums; }
+
+.pill {
+  display: inline-block;
+  border-radius: 999px;
+  padding: .05rem .5rem;
+  font-size: .74rem;
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  .page-head h1 { font-size: 1.3rem; }
+  .kpi .value { font-size: 1.25rem; }
+}
