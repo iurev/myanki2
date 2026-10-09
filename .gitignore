@@ -4,6 +4,22 @@ node_modules
 __pycache__/
 *.pyc
 
+# Local books, audiobooks, and extracted EPUB contents
+/book.epub
+/extracted/
+/book2/
+/extracted2/
+/anya_book/*.epub
+
+# Cidadela source and generated media
+/cidadela/source/
+/cidadela/audio/
+/cidadela/audio2/
+/cidadela/audio-en/
+/cidadela/audio-en-original/
+/cidadela/stt-en-chirp/
+/cidadela/stt-en-unprompted/
+
 ta/*.html
 
 tesouro/audio/
